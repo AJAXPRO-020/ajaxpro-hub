@@ -7,9 +7,9 @@ const now=1_800_000_000;
 const validClaims={
   iss:"https://token.actions.githubusercontent.com",
   aud:"ajaxpro-motm-announcement",
-  repository:"ajaxpro020/ajaxpro-hub",
+  repository:"AJAXPRO-020/ajaxpro-hub",
   ref:"refs/heads/main",
-  workflow_ref:"ajaxpro020/ajaxpro-hub/.github/workflows/motm-announcement.yml@refs/heads/main",
+  workflow_ref:"AJAXPRO-020/ajaxpro-hub/.github/workflows/motm-announcement.yml@refs/heads/main",
   exp:now+300,
   nbf:now-30,
 };
@@ -17,8 +17,9 @@ const validClaims={
 test("alleen de vaste GitHub-workflow op main krijgt toegang",()=>{
   assert.equal(validGitHubOidcClaims(validClaims,now),true);
   assert.equal(validGitHubOidcClaims({...validClaims,repository:"aanvaller/repo"},now),false);
+  assert.equal(validGitHubOidcClaims({...validClaims,repository:"ajaxpro020/ajaxpro-hub"},now),false);
   assert.equal(validGitHubOidcClaims({...validClaims,ref:"refs/heads/feature"},now),false);
-  assert.equal(validGitHubOidcClaims({...validClaims,workflow_ref:"ajaxpro020/ajaxpro-hub/.github/workflows/other.yml@refs/heads/main"},now),false);
+  assert.equal(validGitHubOidcClaims({...validClaims,workflow_ref:"AJAXPRO-020/ajaxpro-hub/.github/workflows/other.yml@refs/heads/main"},now),false);
   assert.equal(validGitHubOidcClaims({...validClaims,exp:now-1},now),false);
 });
 

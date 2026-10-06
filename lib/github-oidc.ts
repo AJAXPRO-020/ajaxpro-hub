@@ -2,7 +2,7 @@ import { createPublicKey, verify, type JsonWebKey as NodeJsonWebKey } from "node
 
 const GITHUB_OIDC_ISSUER = "https://token.actions.githubusercontent.com";
 const GITHUB_OIDC_AUDIENCE = "ajaxpro-motm-announcement";
-const GITHUB_REPOSITORY = "ajaxpro020/ajaxpro-hub";
+const GITHUB_REPOSITORY = "AJAXPRO-020/ajaxpro-hub";
 const GITHUB_WORKFLOW_REF = `${GITHUB_REPOSITORY}/.github/workflows/motm-announcement.yml@refs/heads/main`;
 const GITHUB_JWKS_URL = `${GITHUB_OIDC_ISSUER}/.well-known/jwks`;
 
