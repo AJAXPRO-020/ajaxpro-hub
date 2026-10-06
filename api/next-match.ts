@@ -14,6 +14,7 @@ import {
 import { consumeNextMatchRateLimit } from "../lib/next-match-rate-limit";
 import { verifyGitHubOidcRequest } from "../lib/github-oidc";
 import { sendAutomaticAnnouncement } from "../lib/motm-announcements";
+import { announcementPlan } from "../lib/motm-announcement-plan";
 
 const AJAX_FIXTURES_URL = "https://www.ajax.nl/wedstrijden/";
 const TV_GUIDE_URL = "https://www.voetbaloptv.com/wp-json/vtv/v1/wedstrijden";
@@ -279,16 +280,25 @@ const automationResponse = (body: unknown, status = 200) => new Response(JSON.st
 export async function GET(request: Request) {
   if (request.method !== "GET") return jsonResponse({ error: "Method not allowed" }, 405);
   const now = new Date();
+  const url = new URL(request.url);
+  const view = url.searchParams.get("view");
   try {
-    const view = new URL(request.url).searchParams.get("view");
     if (view === "motm-announcement") {
       if (!await verifyGitHubOidcRequest(request)) return automationResponse({ error: "Unauthorized" }, 401);
+      if (url.searchParams.get("plan") === "1") {
+        await syncSourceFixtures();
+        return automationResponse(announcementPlan(await nextStoredFixture(), now));
+      }
       let fixture = await nextStoredFixture();
-      if (!fixture) return automationResponse({ status: "no_fixture" });
+      const plan = announcementPlan(fixture, now);
+      if (!plan.active || !plan.due) return automationResponse(plan);
+      if (!fixture) return automationResponse({ status: "no_fixture", active: false });
       await refreshProviderState(fixture, now);
       fixture = await nextStoredFixture();
-      if (!fixture) return automationResponse({ status: "no_fixture" });
-      return automationResponse(await sendAutomaticAnnouncement(fixture, request.url));
+      const refreshedPlan = announcementPlan(fixture, now);
+      if (!fixture || !refreshedPlan.active || !refreshedPlan.due) return automationResponse(refreshedPlan);
+      const result = await sendAutomaticAnnouncement(fixture, request.url);
+      return automationResponse({ ...result, active: result.status !== "sent" && result.status !== "already_sent" });
     }
     const rateLimit = await consumeNextMatchRateLimit(request);
     if (!rateLimit.allowed) return jsonResponse(
@@ -307,6 +317,7 @@ export async function GET(request: Request) {
     return jsonResponse(responseFor(fixture, now));
   } catch (error) {
     console.error("Unable to load matchday state", error);
+    if (view === "motm-announcement") return automationResponse({ error: "Announcement check failed" }, 500);
     try { return jsonResponse(responseFor(await nextStoredFixture(), now)); }
     catch { return jsonResponse({ match: null, message: "De volgende wedstrijd is nog niet bekend.", updatedAt: now.toISOString() }); }
   }

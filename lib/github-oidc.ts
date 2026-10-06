@@ -3,7 +3,8 @@ import { createPublicKey, verify, type JsonWebKey as NodeJsonWebKey } from "node
 const GITHUB_OIDC_ISSUER = "https://token.actions.githubusercontent.com";
 const GITHUB_OIDC_AUDIENCE = "ajaxpro-motm-announcement";
 const GITHUB_REPOSITORY = "AJAXPRO-020/ajaxpro-hub";
-const GITHUB_WORKFLOW_REF = `${GITHUB_REPOSITORY}/.github/workflows/motm-announcement.yml@refs/heads/main`;
+const GITHUB_WORKFLOW_REFS = ["motm-announcement.yml", "motm-announcement-plan.yml"]
+  .map(file => `${GITHUB_REPOSITORY}/.github/workflows/${file}@refs/heads/main`);
 const GITHUB_JWKS_URL = `${GITHUB_OIDC_ISSUER}/.well-known/jwks`;
 
 type GitHubOidcClaims = {
@@ -26,7 +27,8 @@ export const validGitHubOidcClaims = (claims: GitHubOidcClaims, nowSeconds = Mat
     && audience.includes(GITHUB_OIDC_AUDIENCE)
     && claims.repository === GITHUB_REPOSITORY
     && claims.ref === "refs/heads/main"
-    && claims.workflow_ref === GITHUB_WORKFLOW_REF
+    && typeof claims.workflow_ref === "string"
+    && GITHUB_WORKFLOW_REFS.includes(claims.workflow_ref)
     && typeof claims.exp === "number"
     && claims.exp > nowSeconds
     && (claims.nbf === undefined || (typeof claims.nbf === "number" && claims.nbf <= nowSeconds));

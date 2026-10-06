@@ -46,7 +46,7 @@ export const sendAutomaticAnnouncement = async (fixture: AnnouncementFixture, re
   const ajaxHome = normalizeTeamName(fixture.home_team).includes("ajax");
   const opponent = ajaxHome ? fixture.away_team : fixture.home_team;
   const matches = await db()`SELECT * FROM motm_matches
-    WHERE deleted_at IS NULL AND status='open' AND announcement_sent_at IS NULL
+    WHERE deleted_at IS NULL AND status='open'
       AND kickoff_at BETWEEN ${windowStart} AND ${windowEnd}
     ORDER BY kickoff_at LIMIT 4`;
   const candidate = matches.find((match: any) => sameTeam(String(match.opponent), opponent));

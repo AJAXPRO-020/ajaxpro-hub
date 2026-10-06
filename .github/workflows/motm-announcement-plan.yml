@@ -1,8 +1,9 @@
-name: MOTM announcement fallback
+name: MOTM matchday planner
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    # 06:17 CET / 07:17 CEST; avoid the busy start of the hour.
+    - cron: "17 5 * * *"
   workflow_dispatch:
 
 permissions:
@@ -15,11 +16,11 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  check:
+  plan:
     runs-on: ubuntu-latest
     timeout-minutes: 2
     steps:
-      - name: Check automatic MOTM announcement
+      - name: Enable checks only on match days
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
@@ -33,9 +34,11 @@ jobs:
           test "${oidc_token}" != "null"
           result="$(curl --fail-with-body --silent --show-error \
             -H "Authorization: Bearer ${oidc_token}" \
-            "https://ajaxpro.fans/api/next-match?view=motm-announcement")"
+            "https://ajaxpro.fans/api/next-match?view=motm-announcement&plan=1")"
           echo "${result}"
           active="$(jq -er '.active | if type == "boolean" then tostring else error("Missing active flag") end' <<< "${result}")"
-          if [[ "${active}" == "false" ]]; then
+          if [[ "${active}" == "true" ]]; then
+            gh workflow enable motm-announcement.yml
+          else
             gh workflow disable motm-announcement.yml
           fi
