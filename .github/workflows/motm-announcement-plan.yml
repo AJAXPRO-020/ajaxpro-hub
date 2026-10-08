@@ -37,8 +37,11 @@ jobs:
             "https://ajaxpro.fans/api/next-match?view=motm-announcement&plan=1")"
           echo "${result}"
           active="$(jq -er '.active | if type == "boolean" then tostring else error("Missing active flag") end' <<< "${result}")"
+          state="$(gh api "repos/${GH_REPO}/actions/workflows/motm-announcement.yml" --jq '.state')"
           if [[ "${active}" == "true" ]]; then
-            gh workflow enable motm-announcement.yml
-          else
+            if [[ "${state}" != "active" ]]; then
+              gh workflow enable motm-announcement.yml
+            fi
+          elif [[ "${state}" == "active" ]]; then
             gh workflow disable motm-announcement.yml
           fi
