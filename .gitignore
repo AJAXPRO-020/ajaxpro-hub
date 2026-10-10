@@ -17,14 +17,19 @@ node_modules/
 aqwire-email-reference/
 aqwire-email-reference.zip
 aqwire-typ-source/
-.env*
 
 # Local agent/editor metadata (not application source)
-.agents/
-.codex/
+.agents/*
+!.agents/skills/
+.codex/*
+!.codex/hooks.json
 .cursor/
-AGENTS.md
-START-PROMPT-BOUWEN.md
 
 # Local test artifacts
 test-results/
+playwright-report/
+coverage/
+*.log
+*.pem
+*.key
+/exports/

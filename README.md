@@ -3,12 +3,42 @@
 De centrale AjaxPro-hub voor Ajax-nieuws, tools, de volgende wedstrijd en
 contractinformatie.
 
+## Actuele projectcontext
+
+Lees `AGENTS.md`, `PRODUCT.md` en `START-PROMPT-BOUWEN.md` voor de werkwijze en
+productgrenzen. De Hub bevat de publieke website en beveiligde Club-tools,
+waaronder MOTM, Socials en Jeugddossiers. Frontendbestanden staan in de root en
+toolmappen; `api/`, `api-impl/`, `lib/`, `db/migrations/` en `tests/` bevatten de
+serverlaag, schemahistorie en controles. Behoud bestaande routes en permissions.
+Projectskills in `.agents/skills/` en de lokale hookdefinitie `.codex/hooks.json`
+zijn versieerbare context; providerlinks en sessie-/secretbestanden niet.
+
 ## Hosting
 
 De productieversie wordt automatisch vanuit `main` naar Vercel gedeployed.
 
 - Productie: https://ajaxpro-hub.vercel.app
 - Domein: https://ajaxpro.fans
+
+Vercel-project `ajaxpro-hub`, ID `prj_M5MmCE5TYk1ecA9r3bKiA4D9nX2S`, team
+`ajaxpro` / `team_zAAokeaxc6bbpUXAoHfJlWcl`. GitHub is
+`AJAXPRO-020/ajaxpro-hub`; de oude `ajaxpro020`-remote verwijst via GitHub naar
+dezelfde repository. **Pushes naar `main` kunnen productie deployen en vereisen
+expliciet akkoord.** De lokale `.vercel/project.json` blijft buiten Git.
+
+Huidige productie was bij de audit Gitcommit `b16aa75f`. De migratievoorbereiding
+bewaart context in een nieuwe lokale commit, zonder push of deployment. Het oude
+Vercel-project `ajax-pro-tools` en de Netlify-site
+`b66ac072-582f-4b20-bc4f-8d390bf736e0` zijn historische omgevingen; niet als
+publicatiedoel gebruiken. `.vercelignore` sluit instructies/skills al uit van
+CLI-publicatie; de bestaande deploymentconfig blijft intact.
+
+Hub-production gebruikt Neon `MOTM-Production` (`twilight-breeze-93820218`),
+preview gebruikt `MOTM` (`calm-bar-43783135`). Preview-main was archived bij de
+audit. Git bewaart geen databasegegevens. Gebruik lokaal een afgesproken
+testdatabase, Discord-testconfiguratie en credentials uit hun eigen beheerplek;
+pull niet automatisch productie-env. OIDC/Actions vertrouwen op
+`AJAXPRO-020/ajaxpro-hub` en `main`: behoud die namen en bestaande workflows.
 
 ## Discord-toegang en rechten
 
@@ -56,7 +86,12 @@ Stel de variabelen in Vercel per environment in. Omdat `DISCORD_REDIRECT_URI` pe
 omgeving verschilt, hoort de productie-URI alleen bij Production en een concrete
 Vercel Preview-URI alleen bij Preview.
 
-## Man of the Match – fase 1
+## Man of the Match – oorspronkelijke fase 1
+
+Onderstaande beschrijft de oorspronkelijke basis. De actuele repository bevat
+meer migraties en MOTM-/beheerfunctionaliteit. Voer de twee basisbestanden niet
+blind uit als volledige herstel- of productieprocedure: controleer bestaande
+schemahistorie en voer databaseacties alleen na expliciete opdracht uit.
 
 Installeer dependencies met `npm install`. Voer op een nieuwe database eerst
 migratie 001 en daarna migratie 002 uit:
@@ -71,7 +106,7 @@ MOTM-tabellen en unieke beperkingen aan. Migratie 002 voegt de geplande openings
 en sluitingstijden toe. PostgreSQL moet `gen_random_uuid()` ondersteunen (dit is
 standaard in moderne managed Postgres-installaties).
 
-### Production-checklist
+### Oorspronkelijke production-checklist
 
 1. Maak of koppel een afzonderlijke Production PostgreSQL-database en stel de
    Production-waarde van `DATABASE_URL` in Vercel in.
@@ -98,6 +133,17 @@ mogelijk. Een geldig Discord-serverlid stemt via `/club/stemmen/{slug}`. De unie
 databasebeperking werkt een bestaande stem bij in plaats van een tweede record te
 maken. Na sluiten toont dezelfde URL de server-side berekende winnaar en top drie.
 
-Fase 2 bevat pas de Ajacied-van-het-jaar-punten, seizoenranglijst, persoonlijke
-stemhistorie, botberichten, notificaties en uitgebreid beheer. Het `season`-veld is
-nu al aanwezig om die uitbreiding mogelijk te maken.
+De oude faseplanning is geen actuele volledigheidsclaim. Controleer de bestaande
+serverroutes, tests en migraties voor seizoenstand, aankondigingen en beheer.
+`npm test` is de lokale typecheck plus unit-tests; het voert geen deployment uit.
+`npx vercel dev` gebruikt de volledige lokale runtime, maar vereist vooraf veilig
+afgesproken testconfiguratie. Niet automatisch database- of cronroutes aanroepen.
+
+## Nog open voor accountwissel
+
+GitHub-schrijf-/organisatieautorisatie onder de nieuwe Codex-login bevestigen,
+naast providertoegang voor Neon, Discord en API-Football. Bron en context zijn
+in Git; externe gegevensherstel blijft apart. De lokale archiefbranch
+`archive/media-watch-before-removal` blijft behouden en is niet automatisch op
+GitHub gepubliceerd. Geen nieuwe hostingomgeving of database nodig voor alleen
+de accountwissel.
