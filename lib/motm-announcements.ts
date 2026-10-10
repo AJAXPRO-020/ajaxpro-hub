@@ -1,5 +1,6 @@
 import { db } from "./motm-db";
 import { normalizeTeamName } from "./matchday-live";
+import { synchronizeAllMatches } from "./motm-scheduling";
 
 export type AnnouncementFixture = {
   kickoff_at: Date | string;
@@ -40,6 +41,7 @@ const sameTeam = (left: string, right: string) => {
 
 export const sendAutomaticAnnouncement = async (fixture: AnnouncementFixture, requestUrl: string) => {
   if (!shouldTryAutomaticAnnouncement(fixture)) return { status: "not_due" as const };
+  await synchronizeAllMatches();
   const kickoff = new Date(fixture.kickoff_at);
   const windowStart = new Date(kickoff.getTime() - 30 * 60_000);
   const windowEnd = new Date(kickoff.getTime() + 30 * 60_000);
