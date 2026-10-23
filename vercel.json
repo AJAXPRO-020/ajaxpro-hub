@@ -140,6 +140,15 @@
           "value": "camera=(), microphone=(), geolocation=(), payment=()"
         }
       ]
+    },
+    {
+      "source": "/assets/social-video/storyboard-frame.html",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        }
+      ]
     }
   ]
 }
