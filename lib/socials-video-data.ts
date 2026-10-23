@@ -36,13 +36,13 @@ export function videoData(f:SocialMatchdayFixture,s:SocialsMatchStatsSnapshot|nu
  }
  if(stats.length<4)throw new VideoError("Er zijn minder dan vier complete statistieken beschikbaar voor beide teams. Ververs de stats.");
  for(const team of [home,away])if(validNumber(team.shotsOnTarget)&&validNumber(team.shots)&&team.shotsOnTarget>team.shots)throw new VideoError("Schoten op doel zijn hoger dan het totaal. Ververs de stats.");
- return {home:f.home_team.toUpperCase(),away:f.away_team.toUpperCase(),date:new Intl.DateTimeFormat("nl-NL",{day:"numeric",month:"long",year:"numeric",timeZone:"Europe/Amsterdam"}).format(kickoff).toUpperCase(),competition:f.competition.toUpperCase(),homeScore:f.goals_home,awayScore:f.goals_away,stats:stats.slice(0,4),followText:"VOLG AJAX PRO"};
+ return {home:f.home_team.toUpperCase(),away:f.away_team.toUpperCase(),date:new Intl.DateTimeFormat("nl-NL",{day:"numeric",month:"long",year:"numeric",timeZone:"Europe/Amsterdam"}).format(kickoff).toUpperCase(),competition:f.competition.toUpperCase(),homeScore:f.goals_home,awayScore:f.goals_away,stats:stats.slice(0,4),followText:"ajaxpro.fans"};
 }
-const text=(v:unknown,label:string,max:number)=>{if(typeof v!=="string"||!v.trim()||v.trim().length>max||/[\r\n]/.test(v))throw new VideoError(`${label} is ongeldig.`);return v.trim().toUpperCase()};
+const text=(v:unknown,label:string,max:number,uppercase=true)=>{if(typeof v!=="string"||!v.trim()||v.trim().length>max||/[\r\n]/.test(v))throw new VideoError(`${label} is ongeldig.`);return uppercase?v.trim().toUpperCase():v.trim()};
 /** Validates the isolated render copy only. It never writes into fixture or FotMob data. */
 export function editableVideoData(source:VideoData,input:unknown):VideoData{
  if(!input||typeof input!=="object"||Array.isArray(input))throw new VideoError("Videogegevens zijn ongeldig.",400);const v=input as Record<string,unknown>;
- const home=text(v.home,"Thuisteam",54),away=text(v.away,"Uitteam",54),date=text(v.date,"Wedstrijddatum",42),competition=text(v.competition,"Competitie",54),followText=text(v.followText,"Afsluitende tekst",34);
+ const home=text(v.home,"Thuisteam",54),away=text(v.away,"Uitteam",54),date=text(v.date,"Wedstrijddatum",42),competition=text(v.competition,"Competitie",54),followText=text(v.followText,"Afsluitende tekst",34,false);
  const score=(value:unknown,label:string)=>{if(!integer(value)||value>99)throw new VideoError(`${label} is ongeldig.`);return value};
  if(!Array.isArray(v.stats)||v.stats.length!==4)throw new VideoError("Vul precies vier statistieken in.");
  const stats=v.stats.map((row,index)=>{if(!row||typeof row!=="object"||Array.isArray(row))throw new VideoError(`Statistiek ${index+1} is ongeldig.`);const r=row as Record<string,unknown>,base=source.stats[index];if(!base)throw new VideoError("Statistiekopzet is ongeldig.");const label=text(r.label,`Label van statistiek ${index+1}`,30);const value=(n:unknown,side:string)=>{if(!validNumber(n)||n>5000||(!base.decimals&&!integer(n)))throw new VideoError(`${side} bij ${label} is ongeldig.`);return n};return {label,home:value(r.home,"Thuisteam"),away:value(r.away,"Uitteam"),suffix:base.suffix,decimals:base.decimals}});
