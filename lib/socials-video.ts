@@ -6,11 +6,11 @@ import { shotstackClient,videoConfig,SubmissionUncertain,trustedVideoUrl,renderS
 import { postgresVideoStore,isActive,type VideoStore,type VideoJob } from "./socials-video-store";
 export type VideoDependencies={store:VideoStore;fixtures:()=>Promise<SocialMatchdayFixture[]>;snapshot:(key:string)=>Promise<SocialsMatchStatsSnapshot|null>;client:ReturnType<typeof shotstackClient>;config:()=>{music:string};build:(data:VideoData,music:string)=>unknown;now:()=>number};
 const defaults=():VideoDependencies=>({store:postgresVideoStore(),fixtures:loadSocialMatchdayFixtures,snapshot:loadSocialsMatchStatsSnapshot,client:shotstackClient(),config:videoConfig,build:buildVideoEdit,now:Date.now});
-export const publicJob=(j:VideoJob)=>({id:j.id,fixtureKey:j.fixture_key,status:j.status,data:j.render_data,createdAt:j.created_at,updatedAt:j.updated_at,error:j.error,availableUntil:j.available_until,mediaUrl:j.status==="done"?`/api/club-tools?view=socials-video-media&id=${j.id}`:null});
+export const publicJob=(j:VideoJob & {providerStage?:string})=>({id:j.id,fixtureKey:j.fixture_key,status:j.status,stage:j.providerStage??j.status,data:j.render_data,createdAt:j.created_at,updatedAt:j.updated_at,error:j.error,availableUntil:j.available_until,mediaUrl:j.status==="done"?`/api/club-tools?view=socials-video-media&id=${j.id}`:null});
 export function videoService(overrides:Partial<VideoDependencies>={}){
  const d={...defaults(),...overrides};
  const fixture=async(key:string)=>{if(!key||key.length>300)throw new VideoError("Ongeldige wedstrijd.",400);const f=(await d.fixtures()).find(f=>f.fixture_key===key);if(!f)throw new VideoError("Wedstrijd niet gevonden.",404);return f};
- async function refresh(j:VideoJob):Promise<VideoJob>{
+ async function refresh(j:VideoJob):Promise<VideoJob & {providerStage?:string}>{
   if(j.status==="done"&&j.output_url?.startsWith("https://cdn.shotstack.io/")&&trustedVideoUrl(j.output_url))return j;
   if(j.status==="submitting"&&!j.render_id&&d.now()-new Date(j.created_at).getTime()>120_000)return d.store.patch(j.id,{status:"uncertain",error:"De verzending kon niet worden bevestigd. De beheerder moet deze opdracht bij Shotstack controleren voordat opnieuw genereren mogelijk is."});
   if(!j.render_id||!["queued","fetching","rendering","done","expired"].includes(j.status)||!await d.store.claimCheck(j.id))return j;
@@ -24,7 +24,7 @@ export function videoService(overrides:Partial<VideoDependencies>={}){
    if(until&&new Date(until).getTime()<=d.now())return d.store.patch(j.id,{status:"expired",output_url:null,error:"De download is verlopen. Je kunt bewust een nieuwe video genereren."});
    return d.store.patch(j.id,{status:"done",output_url:url,available_until:until,error:null});
   }
-  if(renderStates.has(result.status))return d.store.patch(j.id,{status:result.status==="queued"?"queued":["fetching","preprocessing"].includes(result.status)?"fetching":"rendering"});
+  if(renderStates.has(result.status))return {...await d.store.patch(j.id,{status:result.status==="queued"?"queued":["fetching","preprocessing"].includes(result.status)?"fetching":"rendering"}),providerStage:result.status};
   throw new VideoError("Shotstack gaf een onbekende status. Er is geen nieuwe render gestart.",502);
  }
  return {

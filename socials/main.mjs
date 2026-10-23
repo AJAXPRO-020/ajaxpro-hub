@@ -2,7 +2,7 @@ import { statsFormat } from "/socials/formats/stats.mjs";
 import { outblinkerFormat } from "/socials/formats/outblinker.mjs";
 import { topThreeFormat } from "/socials/formats/top-three.mjs";
 import { quoteFormat } from "/socials/formats/quote.mjs?v=20260915-quote-variants";
-import { videoFormat } from "/socials/formats/video.mjs?v=20261023-video-inline";
+import { videoFormat } from "/socials/formats/video.mjs?v=20261023-video-progress";
 import { initMatchStats } from "/socials/match-stats.mjs";
 
 const formatDefinitions=[statsFormat,outblinkerFormat,topThreeFormat,quoteFormat,videoFormat];
