@@ -79,9 +79,11 @@ export const initOutblinker=(root,sharedState)=>{
     preview.dataset.pngContext=`${context.competition} · ${context.home_team} ${context.goals_home??'–'}–${context.goals_away??'–'} ${context.away_team}`;
     status.textContent=!hasPayload?"Haal eerst de wedstrijdstats op.":!player?"Geen Ajax-spelers met wedstrijddata gevonden.":!usable?"Voor deze speler zijn geen wedstrijdstatistieken beschikbaar. Kies een andere speler.":`${providerPlayers.length} Ajax-spelers beschikbaar.`;
     status.dataset.state=hasPayload&&player&&!usable?"missing":"available";
+    status.hidden=usable;
     preview.hidden=!usable;workspace.querySelector("[data-outblinker-preview-empty]").hidden=usable||!player;
     photoStatus.textContent=!player?"Nog geen speler gekozen.":registry?.imageUrl?`Eigen AjaxPro-foto gekoppeld aan ${registry.name}.`:`Geen eigen foto gevonden voor ${player.name}.`;
     photoStatus.dataset.state=registry?.imageUrl?"available":player?"missing":"idle";
+    photoStatus.hidden=Boolean(registry?.imageUrl);
     statSelects.forEach((select,index)=>replaceOptions(select,usable?player:null,usable?selected:[],index));
     const photo=workspace.querySelector("[data-outblinker-photo]"),placeholder=workspace.querySelector("[data-outblinker-photo-placeholder]");
     if(registry?.imageUrl){photo.src=registry.imageUrl;photo.alt=`Foto van ${registry.name}`;photo.hidden=false;placeholder.hidden=true}else{photo.removeAttribute("src");photo.alt="";photo.hidden=true;placeholder.hidden=false}

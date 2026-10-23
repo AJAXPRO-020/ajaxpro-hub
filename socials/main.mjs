@@ -1,7 +1,7 @@
 import { statsFormat } from "/socials/formats/stats.mjs";
-import { outblinkerFormat,hasUsableStats } from "/socials/formats/outblinker.mjs?v=20261023-socials-polish";
-import { topThreeFormat } from "/socials/formats/top-three.mjs";
-import { quoteFormat } from "/socials/formats/quote.mjs?v=20260915-quote-variants";
+import { outblinkerFormat,hasUsableStats } from "/socials/formats/outblinker.mjs?v=20261023-ui-tidy";
+import { topThreeFormat } from "/socials/formats/top-three.mjs?v=20261023-ui-tidy";
+import { quoteFormat } from "/socials/formats/quote.mjs?v=20261023-ui-tidy";
 import { videoFormat } from "/socials/formats/video.mjs?v=20261023-socials-polish";
 import { initMatchStats } from "/socials/match-stats.mjs?v=20261023-socials-polish";
 import { mountPngPreviews } from "/socials/png.mjs?v=20261023-png-final";

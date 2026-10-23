@@ -31,7 +31,7 @@ export const initQuote=(root)=>{
     setImage(background,state.backgroundUrl,Boolean(state.backgroundUrl));setImage(inset,state.insetUrl,Boolean(state.insetUrl));insetFrame.hidden=!state.insetUrl;
     const output=outputInputs.find(input=>input.checked)??outputInputs[0];if(output)preview.dataset.aspect=output.value;
   };
-  select.replaceChildren(...people.map(person=>{const option=new Option(person.disabled?`${person.role} · nog te configureren`:`${person.name} · ${person.role}`,personKey(person));option.disabled=Boolean(person.disabled);return option}));select.value=state.personKey;
+  select.replaceChildren(...people.map(person=>{const label=person.role==="Ajax-speler"?person.name:`${person.name} · ${person.role}`;const option=new Option(person.disabled?`${person.role} · nog te configureren`:label,personKey(person));option.disabled=Boolean(person.disabled);return option}));select.value=state.personKey;
   select.addEventListener("change",()=>{state.personKey=select.value;render()});variantInputs.forEach(input=>input.addEventListener("change",()=>{if(input.checked){state.variant=input.value;render()}}));quote.addEventListener("input",render);backgroundInput.addEventListener("change",()=>setFile("background",backgroundInput));insetInput.addEventListener("change",()=>setFile("inset",insetInput));outputInputs.forEach(input=>input.addEventListener("change",render));
   window.addEventListener("beforeunload",()=>{revoke("backgroundUrl");revoke("insetUrl")},{once:true});
   render();

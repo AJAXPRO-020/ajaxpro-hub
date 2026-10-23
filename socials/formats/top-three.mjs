@@ -38,10 +38,12 @@ export const initTopThree=(root,sharedState)=>{
     const hasPayload=syncPlayers(),chosen=selectedPlayers(),count=chosen.filter(Boolean).length,context=fixtureForSelection();replaceOptions();
     preview.dataset.pngContext=`${context.competition} · ${context.home_team} ${context.goals_home??'–'}–${context.goals_away??'–'} ${context.away_team}`;
     status.textContent=count===3?"Compleet":`${count} van 3 spelers gekozen`;
+    status.hidden=count===3;
     const rendered=[...workspace.querySelectorAll("[data-top-three-preview-player]")].map((slot,index)=>renderPlayer(slot,chosen[index]));
     const missing=rendered.filter(item=>item.player&&!item.registry?.imageUrl).map(item=>item.player.name);
     photoStatus.textContent=!hasPayload?"Haal eerst de wedstrijdstats op.":missing.length?`Eigen foto ontbreekt voor ${missing.join(", ")}.`:count?`Eigen AjaxPro-foto's beschikbaar voor ${count} ${count===1?"speler":"spelers"}.`:"Kies spelers om hun AjaxPro-foto's te controleren.";
     photoStatus.dataset.state=missing.length?"missing":count?"available":"idle";
+    photoStatus.hidden=count>0&&!missing.length;
     workspace.querySelector("[data-top-three-match]").textContent=`${context.competition} · ${formatDate(context.kickoff_at)} · ${context.home_team} ${context.goals_home??"–"}–${context.goals_away??"–"} ${context.away_team}`.toLocaleUpperCase("nl-NL");
     const output=outputInputs.find(input=>input.checked)??outputInputs[0];if(output){preview.dataset.aspect=output.value;workspace.querySelector("[data-top-three-preview-ratio]").textContent=output.value==="vertical-9x16"?"9:16":"4:5";workspace.querySelector("[data-top-three-dimensions]").textContent=`${output.dataset.width} × ${output.dataset.height}`}
     root.dispatchEvent(new CustomEvent("socials:format-status-change",{detail:{formatId:"top-three"}}));
