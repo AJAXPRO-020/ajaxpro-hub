@@ -35,7 +35,7 @@ if(root){
       ["Teamstatistieken",states.matchStats?"available":["loading","upcoming"].includes(statsState)?"pending":statsState==="mismatch"?"mismatch":"missing",states.matchStats?"beschikbaar":statsState==="loading"?"worden geladen":statsState==="upcoming"?"nog niet beschikbaar":statsState==="mismatch"?"komen niet overeen":"ontbreken"],
       ["Spelerstatistieken",states.playerStats?"available":states.matchStats?"missing":"pending",states.playerStats?"beschikbaar":states.matchStats?"ontbreken":statsState==="loading"?"worden geladen":"nog niet gecontroleerd"],
     ];
-    formatStatus.replaceChildren(...sources.map(([label,state,detail])=>{const item=document.createElement("span");item.dataset.state=state;item.textContent=`${state==="available"?"✓ ":""}${label} ${detail}`;return item}));
+    formatStatus.replaceChildren(...sources.map(([label,state,detail])=>{const item=document.createElement("span");item.dataset.state=state;item.textContent=state==="available"?`✓ ${label}`:`${label} ${detail}`;return item}));
   };
   const refreshFormatStatus=()=>{
     const format=formats.get(activeId),states=format?.controller.getRequirementStatus?.()??{};

@@ -318,3 +318,6 @@
 .socials-video-flow[data-phase=result]{grid-template-columns:minmax(0,360px)!important;max-width:420px}
 .socials-video-flow[data-phase=result] .socials-video-preview-panel{max-width:320px!important}
 .socials-video-flow[data-phase=result] .socials-video-result .socials-download{order:1}
+.socials-video-flow[data-phase=result]{gap:14px}
+.socials-video-flow[data-phase=result] .socials-video-main h2{margin-bottom:0}
+.socials-video-flow[data-phase=result] .socials-video-actions{display:none}
