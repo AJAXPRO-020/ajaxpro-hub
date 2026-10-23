@@ -57,9 +57,19 @@ test("Brandt krijgt de vijf afgesproken automatische stats en nul blijft geldig"
 });
 
 test("ontbrekende waarden worden niet automatisch gekozen en blijven een streep",async()=>{
-  const {automaticStatsFor,displayStatValue}=await loadOutblinker();
+  const {automaticStatsFor,displayStatValue,hasUsableStats}=await loadOutblinker();
   assert.equal(automaticStatsFor({...brandt,rating:null,goals:null,xg:null,shots:null,shotsOnTarget:null}).includes("duelsWon"),false);
   assert.equal(displayStatValue(brandt,"duelsWon"),"—");
+  assert.equal(hasUsableStats(brandt),true);
+  assert.equal(hasUsableStats({name:"Zonder stats",rating:null,goals:null,minutes:null}),false);
+  assert.equal(hasUsableStats({name:"Nul is geldig",goals:0}),true);
+});
+
+test("Uitblinker toont namen zonder rugnummers en blokkeert een lege spelersvisual",()=>{
+  const source=read("../socials/formats/outblinker.mjs");
+  assert.match(source,/new Option\(player\.name,providerKey\(player\)\)/);
+  assert.match(source,/preview\.hidden=!usable/);
+  assert.match(source,/playerStats:hasUsableStats\(player\)/);
 });
 
 test("speler- en statwissels lezen alleen gedeelde editorstate en doen geen fetch",()=>{

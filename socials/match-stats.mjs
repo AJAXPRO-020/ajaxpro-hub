@@ -36,7 +36,7 @@ export const initMatchStats=(root,sharedState)=>{
   if(matchSelect)matchSelect.value=selectedFixtureKey;
   const loading=new Set();
   const selectedFixture=()=>fixtures.find(fixture=>fixture.fixture_key===selectedFixtureKey)??fixtures[0];
-  const setStatus=(message,state)=>{status.textContent=message;status.dataset.state=state;root.dataset.socialsStatsState=state};
+  const setStatus=(message,state)=>{status.textContent=message;status.dataset.state=state;root.dataset.socialsStatsState=state;root.dispatchEvent(new CustomEvent("socials:stats-status-change"))};
   const loadSaved=async fixture=>{
     if(sharedState.matchStatsByFixture.has(fixture.fixture_key)){if(selectedFixtureKey===fixture.fixture_key)setStatus("Stats beschikbaar.","available");return}
     if(loading.has(fixture.fixture_key))return;
@@ -84,7 +84,6 @@ export const initMatchStats=(root,sharedState)=>{
       if(!response.ok)throw new Error("request failed");
       available.add(fixture.fixture_key);
       stored.add(fixture.fixture_key);
-      if(matchSelect){const option=[...matchSelect.options].find(item=>item.value===fixture.fixture_key);if(option)option.textContent=`${matchLabel(fixture)} · Stats beschikbaar`}
       sharedState.matchStatsByFixture.set(fixture.fixture_key,payload);
       root.dispatchEvent(new CustomEvent("socials:match-stats",{detail:{fixtureKey:fixture.fixture_key}}));
       if(stillSelected())setStatus("Stats beschikbaar.","available");

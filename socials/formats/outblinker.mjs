@@ -36,6 +36,7 @@ export const registryPlayerFor=(providerPlayer,registryPlayers)=>{
   return matches.length===1?matches[0]:null;
 };
 export const automaticStatsFor=player=>automaticOrder.filter(id=>hasValue(player?.[id])).slice(0,5);
+export const hasUsableStats=player=>automaticStatsFor(player).length>0;
 export const displayStatValue=(player,id)=>{
   if(!player||!hasValue(player[id]))return "—";
   if(id==="passes")return hasValue(player.accuratePasses)?`${player.accuratePasses}/${player.passes}`:String(player.passes);
@@ -63,7 +64,7 @@ export const initOutblinker=(root,sharedState)=>{
   };
   const replacePlayers=()=>{
     const current=selectedPlayerKey;
-    playerSelect.replaceChildren(...providerPlayers.map(player=>{const registry=registryPlayerFor(player,registryPlayers),option=new Option(registry?.shirtNumber===null||registry?.shirtNumber===undefined?player.name:`${player.name} · #${registry.shirtNumber}`,providerKey(player));return option}));
+    playerSelect.replaceChildren(...providerPlayers.map(player=>new Option(player.name,providerKey(player))));
     selectedPlayerKey=providerPlayers.some(player=>providerKey(player)===current)?current:providerKey(providerPlayers[0]);
     playerSelect.value=selectedPlayerKey;playerSelect.disabled=!providerPlayers.length;
   };
@@ -74,10 +75,13 @@ export const initOutblinker=(root,sharedState)=>{
   };
   const render=()=>{
     const hasPayload=syncPlayers(),player=selectedPlayer(),registry=registryPlayerFor(player,registryPlayers),selected=selectionFor(player),context=fixtureForSelection();
-    status.textContent=!hasPayload?"Haal eerst de wedstrijdstats op.":player?`${providerPlayers.length} Ajax-spelers beschikbaar.`:"Geen Ajax-spelers met wedstrijddata gevonden.";
+    const usable=hasUsableStats(player);
+    status.textContent=!hasPayload?"Haal eerst de wedstrijdstats op.":!player?"Geen Ajax-spelers met wedstrijddata gevonden.":!usable?"Voor deze speler zijn geen wedstrijdstatistieken beschikbaar. Kies een andere speler.":`${providerPlayers.length} Ajax-spelers beschikbaar.`;
+    status.dataset.state=hasPayload&&player&&!usable?"missing":"available";
+    preview.hidden=!usable;workspace.querySelector("[data-outblinker-preview-empty]").hidden=usable||!player;
     photoStatus.textContent=!player?"Nog geen speler gekozen.":registry?.imageUrl?`Eigen AjaxPro-foto gekoppeld aan ${registry.name}.`:`Geen eigen foto gevonden voor ${player.name}.`;
     photoStatus.dataset.state=registry?.imageUrl?"available":player?"missing":"idle";
-    statSelects.forEach((select,index)=>replaceOptions(select,player,selected,index));
+    statSelects.forEach((select,index)=>replaceOptions(select,usable?player:null,usable?selected:[],index));
     const photo=workspace.querySelector("[data-outblinker-photo]"),placeholder=workspace.querySelector("[data-outblinker-photo-placeholder]");
     if(registry?.imageUrl){photo.src=registry.imageUrl;photo.alt=`Foto van ${registry.name}`;photo.hidden=false;placeholder.hidden=true}else{photo.removeAttribute("src");photo.alt="";photo.hidden=true;placeholder.hidden=false}
     workspace.querySelector("[data-outblinker-name]").textContent=registry?.name??player?.name??"UITBLINKER";
@@ -93,7 +97,7 @@ export const initOutblinker=(root,sharedState)=>{
   outputInputs.forEach(input=>input.addEventListener("change",render));
   root.addEventListener("socials:match-stats",event=>{if(event.detail?.fixtureKey===fixtureForSelection().fixture_key)render()});
   render();
-  return {activate:render,deactivate(){},reset(){selections.clear();selectedPlayerKey=providerKey(providerPlayers[0]);if(playerSelect)playerSelect.value=selectedPlayerKey;render()},getRequirementStatus(){const payload=sharedState.getMatchStats?.(fixtureForSelection().fixture_key),player=selectedPlayer(),registry=registryPlayerFor(player,registryPlayers);return {matchData:Boolean(fixtureForSelection()),matchStats:Boolean(payload),playerStats:Boolean(providerPlayers.length),playerPhoto:Boolean(registry?.imageUrl)}}};
+  return {activate:render,deactivate(){},reset(){selections.clear();selectedPlayerKey=providerKey(providerPlayers[0]);if(playerSelect)playerSelect.value=selectedPlayerKey;render()},getRequirementStatus(){const payload=sharedState.getMatchStats?.(fixtureForSelection().fixture_key),player=selectedPlayer(),registry=registryPlayerFor(player,registryPlayers);return {matchData:Boolean(fixtureForSelection()),matchStats:Boolean(payload),playerStats:hasUsableStats(player),playerPhoto:Boolean(registry?.imageUrl)}}};
 };
 
 export const outblinkerFormat={id:"outblinker",label:"Uitblinker",requirements:["matchData","matchStats","playerStats","playerPhoto"],init:initOutblinker};

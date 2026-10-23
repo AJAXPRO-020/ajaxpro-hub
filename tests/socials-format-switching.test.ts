@@ -55,10 +55,12 @@ test("de centrale editor verwerkt requirements zonder format-uitzonderingen",()=
 
 test("de globale datastatus is uitsluitend aan de geselecteerde wedstrijd gekoppeld",()=>{
   const main=read("../socials/main.mjs");
-  assert.match(main,/const globalDataRequirements=\["matchData","matchStats","playerStats"\]/);
   assert.match(main,/const globalDataStatus=\(\)=>/);
-  assert.match(main,/playerStats:Array\.isArray\(payload\?\.players\)&&payload\.players\.length>0/);
-  assert.doesNotMatch(main,/globalDataRequirements=.*playerPhoto/);
+  assert.match(main,/playerStats:Array\.isArray\(payload\?\.players\)&&payload\.players\.some\(hasUsableStats\)/);
+  assert.match(main,/\["Wedstrijddata"/);
+  assert.match(main,/\["Teamstatistieken"/);
+  assert.match(main,/\["Spelerstatistieken"/);
+  assert.doesNotMatch(main,/\["Spelerfoto"/);
   assert.match(main,/renderGlobalDataStatus\(\);/);
 });
 

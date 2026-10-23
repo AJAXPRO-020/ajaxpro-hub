@@ -1,12 +1,11 @@
 import { statsFormat } from "/socials/formats/stats.mjs";
-import { outblinkerFormat } from "/socials/formats/outblinker.mjs";
+import { outblinkerFormat,hasUsableStats } from "/socials/formats/outblinker.mjs?v=20261023-socials-polish";
 import { topThreeFormat } from "/socials/formats/top-three.mjs";
 import { quoteFormat } from "/socials/formats/quote.mjs?v=20260915-quote-variants";
-import { videoFormat } from "/socials/formats/video.mjs?v=20261023-video-progress-simple";
-import { initMatchStats } from "/socials/match-stats.mjs";
+import { videoFormat } from "/socials/formats/video.mjs?v=20261023-socials-polish";
+import { initMatchStats } from "/socials/match-stats.mjs?v=20261023-socials-polish";
 
 const formatDefinitions=[statsFormat,outblinkerFormat,topThreeFormat,quoteFormat,videoFormat];
-const globalDataRequirements=["matchData","matchStats","playerStats"];
 const readFixtures=root=>{
   const template=root.querySelector("template[data-socials-match-context]");
   if(!template)return [];
@@ -25,14 +24,18 @@ if(root){
   const globalDataStatus=()=>{
     const fixture=fixtures.find(item=>item.fixture_key===sharedState.selectedFixtureKey)??fixtures[0]??null;
     const payload=fixture?sharedState.getMatchStats?.(fixture.fixture_key):null;
-    return {matchData:Boolean(fixture),matchStats:Boolean(payload),playerStats:Array.isArray(payload?.players)&&payload.players.length>0};
+    return {matchData:Boolean(fixture),matchStats:Boolean(payload),playerStats:Array.isArray(payload?.players)&&payload.players.some(hasUsableStats)};
   };
   const renderGlobalDataStatus=()=>{
     if(!formatStatus)return;
     const states=globalDataStatus();
-    const usable=globalDataRequirements.slice(0,2).every(requirement=>states[requirement]);
-    formatStatus.hidden=!usable||statsStatus?.dataset.state!=="available";
-    formatStatus.textContent=states.playerStats?"Alle gegevens beschikbaar.":"Wedstrijdstats beschikbaar.";
+    const statsState=statsStatus?.dataset.state??"missing";
+    const sources=[
+      ["Wedstrijddata",states.matchData?"available":"missing",states.matchData?"beschikbaar":"ontbreekt"],
+      ["Teamstatistieken",states.matchStats?"available":["loading","upcoming"].includes(statsState)?"pending":statsState==="mismatch"?"mismatch":"missing",states.matchStats?"beschikbaar":statsState==="loading"?"worden geladen":statsState==="upcoming"?"nog niet beschikbaar":statsState==="mismatch"?"komen niet overeen":"ontbreken"],
+      ["Spelerstatistieken",states.playerStats?"available":states.matchStats?"missing":"pending",states.playerStats?"beschikbaar":states.matchStats?"ontbreken":statsState==="loading"?"worden geladen":"nog niet gecontroleerd"],
+    ];
+    formatStatus.replaceChildren(...sources.map(([label,state,detail])=>{const item=document.createElement("span");item.dataset.state=state;item.textContent=`${state==="available"?"✓ ":""}${label} ${detail}`;return item}));
   };
   const refreshFormatStatus=()=>{
     const format=formats.get(activeId),states=format?.controller.getRequirementStatus?.()??{};
@@ -58,6 +61,7 @@ if(root){
   root.querySelectorAll("[data-format-id]").forEach(button=>button.addEventListener("click",()=>activate(button.dataset.formatId)));
   resetFormat?.addEventListener("click",()=>{formats.get(activeId)?.controller.reset?.();refreshFormatStatus()});
   root.addEventListener("socials:match-stats",refreshFormatStatus);
+  root.addEventListener("socials:stats-status-change",refreshFormatStatus);
   root.addEventListener("socials:match-selection",refreshFormatStatus);
   root.addEventListener("socials:format-status-change",event=>{if(event.detail?.formatId===activeId)refreshFormatStatus()});
   if(requestedFormat&&formats.has(requestedFormat)&&!root.querySelector(`[data-format-id="${requestedFormat}"]`)?.disabled)activeId=requestedFormat;
