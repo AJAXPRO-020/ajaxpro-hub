@@ -8,6 +8,11 @@ const readAvailability=root=>{
   if(!template)return new Set();
   try{const value=JSON.parse(template.content.textContent||"[]");return new Set(Array.isArray(value)?value:[])}catch{return new Set()}
 };
+const readStored=root=>{
+  const template=root.querySelector('template[data-socials-stats-stored]');
+  if(!template)return new Set();
+  try{const value=JSON.parse(template.content.textContent||'[]');return new Set(Array.isArray(value)?value:[])}catch{return new Set()}
+};
 
 export const fixtureStatsState=(fixture,available,now=Date.now())=>available.has(fixture.fixture_key)?"available":new Date(fixture.kickoff_at).getTime()>now?"upcoming":"missing";
 
@@ -21,15 +26,17 @@ export const initMatchStats=(root,sharedState)=>{
   const status=root.querySelector("[data-socials-stats-status]");
   const selectedMatch=root.querySelector("[data-socials-stats-match]");
   const matchSelect=root.querySelector("[data-socials-match-select]");
-  const fixtures=readFixtures(root),available=readAvailability(root);
+  const fixtures=readFixtures(root),available=readAvailability(root),stored=readStored(root);
   sharedState.matchStatsByFixture=new Map();
   sharedState.getMatchStats=fixtureKey=>sharedState.matchStatsByFixture.get(fixtureKey)??null;
   if(!button||!status||!fixtures.length)return {activate(){}};
 
-  let selectedFixtureKey=fixtures[0].fixture_key;
+  const requestedFixture=new URL(location.href).searchParams.get("fixture");
+  let selectedFixtureKey=fixtures.some(f=>f.fixture_key===requestedFixture)?requestedFixture:fixtures[0].fixture_key;
+  if(matchSelect)matchSelect.value=selectedFixtureKey;
   const loading=new Set();
   const selectedFixture=()=>fixtures.find(fixture=>fixture.fixture_key===selectedFixtureKey)??fixtures[0];
-  const setStatus=(message,state)=>{status.textContent=message;status.dataset.state=state};
+  const setStatus=(message,state)=>{status.textContent=message;status.dataset.state=state;root.dataset.socialsStatsState=state};
   const loadSaved=async fixture=>{
     if(sharedState.matchStatsByFixture.has(fixture.fixture_key)){if(selectedFixtureKey===fixture.fixture_key)setStatus("Stats beschikbaar.","available");return}
     if(loading.has(fixture.fixture_key))return;
@@ -50,11 +57,14 @@ export const initMatchStats=(root,sharedState)=>{
     if(fixtures.some(fixture=>fixture.fixture_key===fixtureKey))selectedFixtureKey=fixtureKey;
     const fixture=selectedFixture();
     sharedState.selectedFixtureKey=fixture.fixture_key;
+    const currentUrl=new URL(location.href);currentUrl.searchParams.set("fixture",fixture.fixture_key);history.replaceState(null,"",currentUrl);
     if(selectedMatch)selectedMatch.textContent=matchLabel(fixture);
     const state=fixtureStatsState(fixture,available);
     button.hidden=state!=="missing";
+    button.textContent=stored.has(fixture.fixture_key)?'Stats vernieuwen':'Stats ophalen';
     if(state==="available")void loadSaved(fixture);
     else if(state==="upcoming")setStatus("Nog niet gespeeld.","upcoming");
+    else if(stored.has(fixture.fixture_key))setStatus("Opgeslagen stats passen niet bij deze wedstrijd. Vernieuw de stats.","mismatch");
     else setStatus("Nog geen stats opgeslagen.","missing");
     root.dispatchEvent(new CustomEvent("socials:match-selection",{detail:{fixtureKey:fixture.fixture_key}}));
   };
@@ -73,6 +83,8 @@ export const initMatchStats=(root,sharedState)=>{
       if(response.status===404){if(stillSelected())setStatus("Wedstrijd niet gevonden.","not-found");return}
       if(!response.ok)throw new Error("request failed");
       available.add(fixture.fixture_key);
+      stored.add(fixture.fixture_key);
+      if(matchSelect){const option=[...matchSelect.options].find(item=>item.value===fixture.fixture_key);if(option)option.textContent=`${matchLabel(fixture)} · Stats beschikbaar`}
       sharedState.matchStatsByFixture.set(fixture.fixture_key,payload);
       root.dispatchEvent(new CustomEvent("socials:match-stats",{detail:{fixtureKey:fixture.fixture_key}}));
       if(stillSelected())setStatus("Stats beschikbaar.","available");

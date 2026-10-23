@@ -21,6 +21,7 @@ const read=(path:string)=>readFileSync(new URL(path,import.meta.url),"utf8");
 test("Socials biedt Wedstrijd in cijfers, Uitblinker, Top 3 spelers en Quote aan",()=>{
   assert.deepEqual(socialFormats.map(({id,title})=>({id,title})),[
     {id:"stats",title:"Wedstrijd in cijfers"},
+    {id:"video",title:"Wedstrijd in cijfers: video"},
     {id:"outblinker",title:"Uitblinker"},
     {id:"top-three",title:"Top 3 spelers"},
     {id:"quote",title:"Quote"},

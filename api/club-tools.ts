@@ -1,3 +1,4 @@
+import { handleVideo } from "../lib/socials-video-http";
 import { redirect } from "../lib/discord-auth";
 import { permissions } from "../lib/permissions.config";
 import { getSessionWithCurrentRoles, getSessionWithPermission } from "../lib/server-permissions";
@@ -21,12 +22,18 @@ const cachedPlayerStats=async(fixtureKey:string)=>{
 export async function GET(request:Request){
   const view=new URL(request.url).searchParams.get("view");
   const returnTo=view==="socials"||view==="socials-player-stats"||view==="socials-match-stats"?"/club/tools/socials":"/club/tools";
+  if(view?.startsWith("socials-video")){
+    const allowed=await getSessionWithPermission(request,permissions.toolsSocials);
+    return allowed?handleVideo(request,allowed):json({error:"Geen toegang tot videogeneratie."},401);
+  }
   const session=await getSessionWithCurrentRoles(request);
   if(!session)return redirect(`/api/auth/discord-login?returnTo=${returnTo}`);
   if(view==="socials"){
     const allowed=await getSessionWithPermission(request,permissions.toolsSocials);
     if(!allowed)return errorPage("Geen toegang","Voor jouw Club-account is Socials niet beschikbaar.",403,session,"/club/tools","tools");
-    return renderSocials(allowed);
+    const url=new URL(request.url);
+    const localVideoPreview=process.env.NODE_ENV==="development"&&["localhost","127.0.0.1"].includes(url.hostname)&&url.searchParams.get("video-preview")==="1";
+    return renderSocials(allowed,undefined,undefined,undefined,localVideoPreview);
   }
   if(view==="socials-player-stats"){
     const allowed=await getSessionWithPermission(request,permissions.toolsSocials);
@@ -59,6 +66,10 @@ export async function POST(request:Request){
   const view=new URL(request.url).searchParams.get("view");
   const session=await getSessionWithPermission(request,permissions.portalAccess);
   if(!session)return new Response("Unauthorized",{status:401});
+  if(view==="socials-video"){
+    const allowed=await getSessionWithPermission(request,permissions.toolsSocials);
+    return allowed?handleVideo(request,allowed):json({error:"Geen toegang tot videogeneratie."},403);
+  }
   if(view!=="socials-match-stats-import")return new Response("Method not allowed",{status:405,headers:{Allow:"GET"}});
   const allowed=await getSessionWithPermission(request,permissions.toolsSocials);
   if(!allowed)return json({error:"forbidden"},403);

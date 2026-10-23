@@ -4,6 +4,10 @@
   "functions": {
     "api/next-match.ts": {
       "maxDuration": 15
+    },
+    "api/club-tools.ts": {
+      "maxDuration": 60,
+      "includeFiles": "assets/social-video/**"
     }
   },
   "crons": [

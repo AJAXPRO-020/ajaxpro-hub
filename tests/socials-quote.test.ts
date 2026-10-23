@@ -62,9 +62,9 @@ test("Quote-foto blijft lokaal en object-URL's worden opgeruimd",()=>{
 test("Quote-state leeft in een afzonderlijke formatmodule",()=>{
   const main=read("../socials/main.mjs"),page=read("../api-impl/socials/index.ts"),stats=read("../socials/formats/stats.mjs"),quote=read("../socials/formats/quote.mjs");
   assert.match(main,/quoteFormat/);
-  assert.match(page,/socials\/main\.mjs\?v=20260915-socials-data-v2/);
+  assert.match(page,/socials\/main\.mjs\?v=20261023-status/);
   assert.match(quote,/quote-people\.mjs\?v=20260915-people/);
-  assert.match(main,/formatDefinitions=\[statsFormat,outblinkerFormat,topThreeFormat,quoteFormat\]/);
+  assert.match(main,/formatDefinitions=\[statsFormat,outblinkerFormat,topThreeFormat,quoteFormat,videoFormat\]/);
   assert.match(main,/quote\.mjs\?v=20260915-quote-variants/);
   assert.doesNotMatch(stats,/data-quote-field|photoFile/);
   assert.doesNotMatch(quote,/data-stat-id|data-match-select/);

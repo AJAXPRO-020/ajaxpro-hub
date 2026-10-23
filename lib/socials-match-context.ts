@@ -15,13 +15,9 @@ export type SocialMatchdayFixture = {
 export const loadSocialMatchdayFixtures = async (): Promise<SocialMatchdayFixture[]> => {
   const rows=await db()`
     SELECT fixture_key,home_team,away_team,competition,kickoff_at,provider_status,goals_home,goals_away,finished_at
-    FROM (
-      (SELECT fixture_key,home_team,away_team,competition,kickoff_at,provider_status,goals_home,goals_away,finished_at,0 AS fixture_group
-        FROM matchday_fixtures WHERE kickoff_at<=now() ORDER BY kickoff_at DESC LIMIT 3)
-      UNION ALL
-      (SELECT fixture_key,home_team,away_team,competition,kickoff_at,provider_status,goals_home,goals_away,finished_at,1 AS fixture_group
-        FROM matchday_fixtures WHERE kickoff_at>now() ORDER BY kickoff_at ASC LIMIT 3)
-    ) selected_fixtures
+    FROM matchday_fixtures
+    WHERE kickoff_at > now() - interval '14 days'
+      AND kickoff_at < now() + interval '14 days'
     ORDER BY kickoff_at ASC
   `;
   return rows as unknown as SocialMatchdayFixture[];

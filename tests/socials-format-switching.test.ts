@@ -26,12 +26,12 @@ test("formatkaarten tonen geen extra wedstrijdcontext-tags",async()=>{
   const html=await renderSocials(session,async()=>[fixture]).then(response=>response.text());
   assert.doesNotMatch(html,/class="status"/);
   assert.match(html,/data-match-context="required"/);
-  assert.equal((html.match(/data-match-context="required"/g)??[]).length,3);
+  assert.equal((html.match(/data-match-context="required"/g)??[]).length,4);
 });
 
 test("formatwissel toggelt uitsluitend workspaces en bewaart de module-state",()=>{
   const main=read("../socials/main.mjs");
-  assert.match(main,/const formatDefinitions=\[statsFormat,outblinkerFormat,topThreeFormat,quoteFormat\]/);
+  assert.match(main,/const formatDefinitions=\[statsFormat,outblinkerFormat,topThreeFormat,quoteFormat,videoFormat\]/);
   assert.match(main,/new Map\(formatDefinitions\.map/);
   assert.match(main,/root\.querySelectorAll\("\[data-format-workspace\]"\)/);
   assert.match(main,/workspace\.hidden=workspace\.dataset\.formatWorkspace!==id/);
@@ -81,4 +81,25 @@ test("gedeelde previewcontrols verhuizen generiek mee met het actieve format",()
   assert.match(main,/data-socials-preview-controls/);
   assert.match(main,/preview\.querySelector\("\.socials-preview-heading"\)\?\.after\(previewControls\)/);
   assert.doesNotMatch(main,/activeId==="stats"|activeId==="outblinker"/);
+});
+
+test("lokale voorbeeldmodus is expliciet en blijft buiten de normale pagina",async()=>{
+  const normal=await renderSocials(session,async()=>[fixture],async()=>[],async()=>new Set(),false).then(response=>response.text());
+  const local=await renderSocials(session,async()=>[fixture],async()=>[],async()=>new Set(),true).then(response=>response.text());
+  assert.doesNotMatch(normal,/data-socials-local-video-preview/);
+  assert.match(local,/data-socials-local-video-preview="true"/);
+  const video=read("../socials/formats/video.mjs");
+  assert.match(video,/const previewMode=root\.dataset\.socialsLocalVideoPreview==='true'/);
+  assert.match(video,/if\(previewMode\|\|submitting/);
+  assert.match(video,/render uitgeschakeld/);
+});
+
+test("storyboard gebruikt de bestaande canvas-template en de volledige tijdlijn",()=>{
+  const storyboard=read("../socials/video-storyboard.mjs");
+  const builder=read("../scripts/build-socials-storyboard.mjs");
+  assert.match(builder,/assets\/social-video\/template\.json/);
+  assert.match(storyboard,/storyboard-frame\.html/);
+  assert.match(storyboard,/__shotstackSeek/);
+  assert.match(storyboard,/\['07','OUTRO','14–17 SEC',16\]/);
+  assert.match(storyboard,/canvas\.toBlob\(resolve,'image\/png'\)/);
 });

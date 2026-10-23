@@ -147,3 +147,7 @@ in Git; externe gegevensherstel blijft apart. De lokale archiefbranch
 `archive/media-watch-before-removal` blijft behouden en is niet automatisch op
 GitHub gepubliceerd. Geen nieuwe hostingomgeving of database nodig voor alleen
 de accountwissel.
+
+## Social Generator: wedstrijdvideo
+
+Shotstack-integratie, lokale review, configuratie en livegang: [SOCIALS-VIDEO.md](SOCIALS-VIDEO.md).

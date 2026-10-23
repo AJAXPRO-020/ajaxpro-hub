@@ -2,11 +2,11 @@ import { statsFormat } from "/socials/formats/stats.mjs";
 import { outblinkerFormat } from "/socials/formats/outblinker.mjs";
 import { topThreeFormat } from "/socials/formats/top-three.mjs";
 import { quoteFormat } from "/socials/formats/quote.mjs?v=20260915-quote-variants";
+import { videoFormat } from "/socials/formats/video.mjs?v=20261023-video-inline";
 import { initMatchStats } from "/socials/match-stats.mjs";
 
-const formatDefinitions=[statsFormat,outblinkerFormat,topThreeFormat,quoteFormat];
+const formatDefinitions=[statsFormat,outblinkerFormat,topThreeFormat,quoteFormat,videoFormat];
 const globalDataRequirements=["matchData","matchStats","playerStats"];
-const requirementLabels={matchData:"Wedstrijddata",matchStats:"Stats",playerStats:"Spelerstats"};
 const readFixtures=root=>{
   const template=root.querySelector("template[data-socials-match-context]");
   if(!template)return [];
@@ -19,7 +19,8 @@ if(root){
   const matchStats=initMatchStats(root,sharedState);
   const fixtures=readFixtures(root);
   const formats=new Map(formatDefinitions.map(definition=>[definition.id,{definition,controller:definition.init(root,sharedState)}]));
-  const formatStatus=root.querySelector("[data-socials-format-status]"),resetFormat=root.querySelector("[data-socials-format-reset]"),previewControls=root.querySelector("[data-socials-preview-controls]");
+  const formatStatus=root.querySelector("[data-socials-format-status]"),statsStatus=root.querySelector("[data-socials-stats-status]"),resetFormat=root.querySelector("[data-socials-format-reset]"),previewControls=root.querySelector("[data-socials-preview-controls]");
+  const requestedFormat=new URL(location.href).searchParams.get("format");
   let activeId=root.querySelector('[data-format-id][aria-pressed="true"]')?.dataset.formatId;
   const globalDataStatus=()=>{
     const fixture=fixtures.find(item=>item.fixture_key===sharedState.selectedFixtureKey)??fixtures[0]??null;
@@ -29,7 +30,9 @@ if(root){
   const renderGlobalDataStatus=()=>{
     if(!formatStatus)return;
     const states=globalDataStatus();
-    formatStatus.replaceChildren(...globalDataRequirements.map((requirement,index)=>{const available=states[requirement],item=document.createElement("span");item.dataset.state=available?"available":"missing";item.textContent=`${requirementLabels[requirement]} ${available?"beschikbaar":"ontbreekt"}`;if(index)item.dataset.separated="true";return item}));
+    const usable=globalDataRequirements.slice(0,2).every(requirement=>states[requirement]);
+    formatStatus.hidden=!usable||statsStatus?.dataset.state!=="available";
+    formatStatus.textContent=states.playerStats?"Alle gegevens beschikbaar.":"Wedstrijdstats beschikbaar.";
   };
   const refreshFormatStatus=()=>{
     const format=formats.get(activeId),states=format?.controller.getRequirementStatus?.()??{};
@@ -43,9 +46,11 @@ if(root){
     const next=formats.get(id);if(!button||button.disabled||!next)return;
     if(activeId&&activeId!==id)formats.get(activeId)?.controller.deactivate?.();
     activeId=id;
+    root.dataset.activeFormat=id;
+    const currentUrl=new URL(location.href);currentUrl.searchParams.set("format",id);history.replaceState(null,"",currentUrl);
     root.querySelectorAll("[data-format-id]").forEach(option=>{const active=option===button;option.classList.toggle("is-active",active);option.setAttribute("aria-pressed",String(active))});
     root.querySelectorAll("[data-format-workspace]").forEach(workspace=>{workspace.hidden=workspace.dataset.formatWorkspace!==id});
-    const preview=next.controller&&root.querySelector(`[data-format-workspace="${id}"] .socials-preview-panel`);if(preview&&previewControls){preview.querySelector(".socials-preview-heading")?.after(previewControls);previewControls.hidden=false}
+    const preview=next.controller&&root.querySelector(`[data-format-workspace="${id}"] .socials-preview-panel`);if(preview&&previewControls){preview.querySelector(".socials-preview-heading")?.after(previewControls);previewControls.hidden=next.definition.fixedOutput===true}
     if(next.definition.requirements.includes("matchData"))matchStats.activate(id);
     next.controller.activate?.();
     refreshFormatStatus();
@@ -55,5 +60,6 @@ if(root){
   root.addEventListener("socials:match-stats",refreshFormatStatus);
   root.addEventListener("socials:match-selection",refreshFormatStatus);
   root.addEventListener("socials:format-status-change",event=>{if(event.detail?.formatId===activeId)refreshFormatStatus()});
+  if(requestedFormat&&formats.has(requestedFormat)&&!root.querySelector(`[data-format-id="${requestedFormat}"]`)?.disabled)activeId=requestedFormat;
   if(activeId)activate(activeId);
 }
