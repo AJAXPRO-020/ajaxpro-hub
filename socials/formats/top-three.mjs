@@ -36,6 +36,7 @@ export const initTopThree=(root,sharedState)=>{
   };
   const render=()=>{
     const hasPayload=syncPlayers(),chosen=selectedPlayers(),count=chosen.filter(Boolean).length,context=fixtureForSelection();replaceOptions();
+    preview.dataset.pngContext=`${context.competition} · ${context.home_team} ${context.goals_home??'–'}–${context.goals_away??'–'} ${context.away_team}`;
     status.textContent=count===3?"Compleet":`${count} van 3 spelers gekozen`;
     const rendered=[...workspace.querySelectorAll("[data-top-three-preview-player]")].map((slot,index)=>renderPlayer(slot,chosen[index]));
     const missing=rendered.filter(item=>item.player&&!item.registry?.imageUrl).map(item=>item.player.name);

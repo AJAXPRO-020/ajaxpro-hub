@@ -16,10 +16,8 @@ const readStored=root=>{
 
 export const fixtureStatsState=(fixture,available,now=Date.now())=>available.has(fixture.fixture_key)?"available":new Date(fixture.kickoff_at).getTime()>now?"upcoming":"missing";
 
-const matchLabel=fixture=>{
-  const date=new Intl.DateTimeFormat("nl-NL",{day:"numeric",month:"short",year:"numeric",timeZone:"Europe/Amsterdam"}).format(new Date(fixture.kickoff_at));
-  return `${fixture.home_team} — ${fixture.away_team} · ${date}`;
-};
+const matchLabel=fixture=>`${fixture.home_team} — ${fixture.away_team}`;
+const matchAvailabilityLabel=(fixture,available,stored,now=Date.now())=>{const state=available.has(fixture.fixture_key)?"available":stored.has(fixture.fixture_key)?"mismatch":new Date(fixture.kickoff_at).getTime()>now?"upcoming":"missing";return `${matchLabel(fixture)} · ${state==="available"?"Stats beschikbaar":state==="mismatch"?"Stats vernieuwen nodig":state==="upcoming"?"Nog niet gespeeld":"Stats ontbreken"}`};
 
 export const initMatchStats=(root,sharedState)=>{
   const button=root.querySelector("[data-socials-stats-fetch]");
@@ -58,7 +56,7 @@ export const initMatchStats=(root,sharedState)=>{
     const fixture=selectedFixture();
     sharedState.selectedFixtureKey=fixture.fixture_key;
     const currentUrl=new URL(location.href);currentUrl.searchParams.set("fixture",fixture.fixture_key);history.replaceState(null,"",currentUrl);
-    if(selectedMatch)selectedMatch.textContent=matchLabel(fixture);
+    if(selectedMatch)selectedMatch.textContent=matchAvailabilityLabel(fixture,available,stored);
     const state=fixtureStatsState(fixture,available);
     button.hidden=state!=="missing";
     button.textContent=stored.has(fixture.fixture_key)?'Stats vernieuwen':'Stats ophalen';

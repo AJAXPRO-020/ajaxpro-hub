@@ -60,7 +60,7 @@ export const videoFormat={id:'video',fixedOutput:true,requirements:['matchData',
     spinner.setAttribute('aria-hidden','true');const copy=el('div','','socials-video-progress__copy'),stage=el('strong',progressLabel(submitting?'submitting':current?.status,submitting?'submitting':current?.stage)),elapsed=el('span',elapsedText(),'socials-video-progress__elapsed');stage.setAttribute('role','status');copy.append(stage,elapsed,el('small','Dit kan enkele minuten duren'));progress.append(spinner,copy);content.append(progress);elapsedTimer=setInterval(()=>{elapsed.textContent=elapsedText()},1000);
    }
   }
-  if(phase==='result'){title.textContent='Video gegenereerd'}
+  if(phase==='result'){title.textContent='Video'}
   root.dispatchEvent(new CustomEvent('socials:format-status-change',{detail:{formatId:'video'}}));
  };
  const invalidate=()=>{approved=null;attempt=null;storyboard.replaceChildren();confirm.hidden=true;if(phase==='preview')phase='edit'};

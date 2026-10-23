@@ -24,8 +24,9 @@ export const initQuote=(root)=>{
   const setImage=(image,url,visible)=>{image.hidden=!visible;if(visible)image.src=url;else image.removeAttribute("src")};
   const render=()=>{
     const person=selected(),text=quote.value.trim(),density=quoteDensity(text.length),personImage=workspace.querySelector("[data-quote-person-photo]"),personPlaceholder=workspace.querySelector("[data-quote-person-placeholder]"),background=workspace.querySelector("[data-quote-background-preview]"),inset=workspace.querySelector("[data-quote-inset-preview]"),insetFrame=workspace.querySelector("[data-quote-inset-frame]");
-    preview.dataset.density=density;preview.dataset.variant=state.variant;counter.textContent=String(quote.value.length);lengthNote.textContent=density==="long"?"lange quote — compacter gezet":density==="medium"?"middellange quote":"korte quote";
-    workspace.querySelector("[data-quote-preview-text]").textContent=text||"Vul een quote in";workspace.querySelector("[data-quote-preview-name]").textContent=person?.name??"Kies een persoon";workspace.querySelector("[data-quote-preview-role]").textContent=person?.role??"Ajax";
+    const role=person?.role==="Ajax-speler"?"":person?.role??"";
+    preview.dataset.density=density;preview.dataset.variant=state.variant;preview.dataset.pngContext=role;counter.textContent=String(quote.value.length);lengthNote.textContent=density==="long"?"lange quote — compacter gezet":density==="medium"?"middellange quote":"korte quote";
+    workspace.querySelector("[data-quote-preview-text]").textContent=text||"Vul een quote in";workspace.querySelector("[data-quote-preview-name]").textContent=person?.name??"Kies een persoon";workspace.querySelector("[data-quote-preview-role]").textContent=role;
     const hasPersonPhoto=Boolean(person?.photo);setImage(personImage,person?.photo,hasPersonPhoto);personImage.alt=hasPersonPhoto?`Foto van ${person.name}`:"";personPlaceholder.hidden=hasPersonPhoto;personPlaceholder.textContent=person?.disabled?"Asset ontbreekt":"Foto ontbreekt";
     setImage(background,state.backgroundUrl,Boolean(state.backgroundUrl));setImage(inset,state.insetUrl,Boolean(state.insetUrl));insetFrame.hidden=!state.insetUrl;
     const output=outputInputs.find(input=>input.checked)??outputInputs[0];if(output)preview.dataset.aspect=output.value;

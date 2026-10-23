@@ -4,6 +4,7 @@ import { topThreeFormat } from "/socials/formats/top-three.mjs";
 import { quoteFormat } from "/socials/formats/quote.mjs?v=20260915-quote-variants";
 import { videoFormat } from "/socials/formats/video.mjs?v=20261023-socials-polish";
 import { initMatchStats } from "/socials/match-stats.mjs?v=20261023-socials-polish";
+import { mountPngPreviews } from "/socials/png.mjs?v=20261023-png-final";
 
 const formatDefinitions=[statsFormat,outblinkerFormat,topThreeFormat,quoteFormat,videoFormat];
 const readFixtures=root=>{
@@ -18,6 +19,7 @@ if(root){
   const matchStats=initMatchStats(root,sharedState);
   const fixtures=readFixtures(root);
   const formats=new Map(formatDefinitions.map(definition=>[definition.id,{definition,controller:definition.init(root,sharedState)}]));
+  mountPngPreviews(root);
   const formatStatus=root.querySelector("[data-socials-format-status]"),statsStatus=root.querySelector("[data-socials-stats-status]"),resetFormat=root.querySelector("[data-socials-format-reset]"),previewControls=root.querySelector("[data-socials-preview-controls]");
   const requestedFormat=new URL(location.href).searchParams.get("format");
   let activeId=root.querySelector('[data-format-id][aria-pressed="true"]')?.dataset.formatId;
