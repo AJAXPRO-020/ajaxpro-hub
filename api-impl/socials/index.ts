@@ -115,5 +115,5 @@ export const renderSocials = async (session:Session,fixtureLoader=loadSocialMatc
     <template data-socials-stats-stored>${esc(JSON.stringify([...stored]))}</template>
     <template data-socials-players>${serializedPlayers(players)}</template>
   </main>`;
-  return page("Socials",body,"",session,"tools",undefined,{stylesheets:["/socials.css?v=20261023-video-progress","/socials-quote-large.css?v=20260915-quote-large-v4"],moduleScripts:["/socials/main.mjs?v=20261023-video-progress"],imageSources:["blob:"],frameSources:["'self'"]});
+  return page("Socials",body,"",session,"tools",undefined,{stylesheets:["/socials.css?v=20261023-video-progress-simple","/socials-quote-large.css?v=20260915-quote-large-v4"],moduleScripts:["/socials/main.mjs?v=20261023-video-progress-simple"],imageSources:["blob:"],frameSources:["'self'"]});
 };
