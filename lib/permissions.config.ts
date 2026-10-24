@@ -28,10 +28,10 @@ const idsFromEnv = (name: string) => new Set((process.env[name] ?? "").split(","
 export const rolesHavePermission = (
   roleIds: readonly string[],
   permission: Permission,
-) => {
+): boolean => {
   if (permission === permissions.membersAccess) {
     const allowed = idsFromEnv("PORTAL_MEMBERS_ROLE_IDS");
-    return roleIds.some(roleId => allowed.has(roleId));
+    return roleIds.some(roleId => allowed.has(roleId)) || rolesHavePermission(roleIds, permissions.staffAccess);
   }
   if (permission === permissions.staffAccess) {
     const configured = idsFromEnv("PORTAL_STAFF_ROLE_IDS");

@@ -1,8 +1,9 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { safeClubReturnTo } from "../lib/discord-auth";
+import { createSessionCookie, safeClubReturnTo } from "../lib/discord-auth";
 import { permissions, rolesHavePermission } from "../lib/permissions.config";
 import { getSessionWithPermission } from "../lib/server-permissions";
+import { GET as getContracts } from "../api/contracts";
 
 test("OAuth returnTo accepteert alleen interne Club-paden", () => {
   assert.equal(safeClubReturnTo("/club/stemmen/ajax-psv"), "/club/stemmen/ajax-psv");
@@ -48,7 +49,7 @@ test("Members en Staff blijven gescheiden van specifieke beheerrechten", () => {
   }
   for (const role of ["socials", "1268471493034246376", "1268471493046566986"]) {
     assert.equal(rolesHavePermission([role], permissions.staffAccess), true);
-    assert.equal(rolesHavePermission([role], permissions.membersAccess), false);
+    assert.equal(rolesHavePermission([role], permissions.membersAccess), true);
     assert.equal(rolesHavePermission([role], permissions.jeugddossiersManage), false);
   }
   assert.equal(rolesHavePermission(["dossier-manager"], permissions.jeugddossiersManage), true);
@@ -59,4 +60,25 @@ test("Members en Staff blijven gescheiden van specifieke beheerrechten", () => {
 
 test("direct MOTM-beheer openen zonder geldige sessie blijft geweigerd",async()=>{
   assert.equal(await getSessionWithPermission(new Request("https://ajaxpro.fans/club/motm/beheer"),permissions.motmManage),null);
+});
+
+test("contractroute behoudt de sessie bij ontbrekend Members-recht", async () => {
+  process.env.SESSION_SECRET = "test-session-secret-that-is-at-least-32-characters-long";
+  process.env.DISCORD_REDIRECT_URI = "https://ajaxpro.example/api/auth/discord-callback";
+  process.env.PORTAL_MEMBERS_ROLE_IDS = "supporter,booster";
+  process.env.PORTAL_STAFF_ROLE_IDS = "socials";
+  let userId = 123456789;
+  const requestFor = async (roles: string[]) => {
+    const user = { id: String(userId++), username: "ajaxpro", global_name: "AjaxPro Lid", avatar: null };
+    const cookie = await createSessionCookie(user, { roles });
+    return new Request("https://ajaxpro.fans/club/members/contracten", { headers: { cookie: cookie.split(";", 1)[0] } });
+  };
+  const ordinary = await getContracts(await requestFor(["ordinary"]));
+  assert.equal(ordinary.status, 403);
+  assert.equal(ordinary.headers.get("location"), null);
+  assert.equal(ordinary.headers.get("set-cookie"), null);
+  for (const role of ["supporter", "booster", "socials", "1268471493034246376", "1268471493046566986"]) {
+    const response = await getContracts(await requestFor([role]));
+    assert.equal(response.status, 200, role);
+  }
 });
