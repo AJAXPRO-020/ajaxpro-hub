@@ -23,6 +23,7 @@ test("een gewoon lid ziet MOTM en vergrendelde Members maar geen Staff",async()=
 test("de Club-shell toont Staff voor de geconfigureerde staffrol",async()=>{
   const html=await page("Tools","<main>Inhoud</main>","",analyst,"tools").text();
   assert.match(html,/>Staff<\/a>/);
+  assert.equal((html.match(/>Members 🔒<\/a>/g)??[]).length,2);
   assert.match(html,/href="\/club\/tools"/);
   assert.doesNotMatch(html,/>Analistentools<\/a>|>Teamtools<\/a>/);
   assert.equal((html.match(/class="mobile-menu"/g)??[]).length,1);

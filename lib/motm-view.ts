@@ -14,9 +14,8 @@ export const matchTitle = (match: { opponent?: unknown; home_or_away?: unknown }
 
 const nav = (active: ClubSection, user?: ClubUser) => {
   const hasStaff = Boolean(user?.discordRoleIds && rolesHavePermission(user.discordRoleIds, permissions.staffAccess));
-  const hasMembers = Boolean(user?.discordRoleIds && rolesHavePermission(user.discordRoleIds, permissions.membersAccess));
   const mainActive=active==="stand"?"motm":active;
-  return [["motm","/club/stand","MOTM"],["members","/club/members",`Members${hasMembers?"":" 🔒"}`],...(hasStaff?[["staff","/club/tools","Staff"]]:[])].map(([key,href,label]) => `<a href="${href}"${mainActive===key ? ' class="active" aria-current="page"' : ""}>${label}</a>`).join("");
+  return [["motm","/club/stand","MOTM"],["members","/club/members","Members 🔒"],...(hasStaff?[["staff","/club/tools","Staff"]]:[])].map(([key,href,label]) => `<a href="${href}"${mainActive===key ? ' class="active" aria-current="page"' : ""}>${label}</a>`).join("");
 };
 
 const subnav=(active:ClubSection,sub?:ClubSubSection)=>{
