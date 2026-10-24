@@ -37,6 +37,26 @@ test("onbekende rollen krijgen geen andere aanvullende rechten", () => {
   assert.equal(rolesHavePermission(["unknown"], permissions.adminManage), false);
 });
 
+test("Members en Staff blijven gescheiden van specifieke beheerrechten", () => {
+  process.env.PORTAL_MEMBERS_ROLE_IDS = "supporter,booster";
+  process.env.PORTAL_STAFF_ROLE_IDS = "socials";
+  process.env.PORTAL_TEAM_TOOL_ROLE_IDS = "dossier-manager";
+  for (const role of ["supporter", "booster"]) {
+    assert.equal(rolesHavePermission([role], permissions.membersAccess), true);
+    assert.equal(rolesHavePermission([role], permissions.staffAccess), false);
+    assert.equal(rolesHavePermission([role], permissions.jeugddossiersManage), false);
+  }
+  for (const role of ["socials", "1268471493034246376", "1268471493046566986"]) {
+    assert.equal(rolesHavePermission([role], permissions.staffAccess), true);
+    assert.equal(rolesHavePermission([role], permissions.membersAccess), false);
+    assert.equal(rolesHavePermission([role], permissions.jeugddossiersManage), false);
+  }
+  assert.equal(rolesHavePermission(["dossier-manager"], permissions.jeugddossiersManage), true);
+  assert.equal(rolesHavePermission(["dossier-manager"], permissions.membersAccess), false);
+  assert.equal(rolesHavePermission(["ordinary"], permissions.membersAccess), false);
+  assert.equal(rolesHavePermission(["ordinary"], permissions.staffAccess), false);
+});
+
 test("direct MOTM-beheer openen zonder geldige sessie blijft geweigerd",async()=>{
   assert.equal(await getSessionWithPermission(new Request("https://ajaxpro.fans/club/motm/beheer"),permissions.motmManage),null);
 });

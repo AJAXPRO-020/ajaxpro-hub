@@ -8,6 +8,8 @@ export const permissions = {
   motmManage: "motm.manage",
   motmDelete: "motm.delete",
   jeugddossiersManage: "jeugddossiers.manage",
+  membersAccess: "members.access",
+  staffAccess: "staff.access",
 } as const;
 
 export type Permission = (typeof permissions)[keyof typeof permissions];
@@ -27,6 +29,15 @@ export const rolesHavePermission = (
   roleIds: readonly string[],
   permission: Permission,
 ) => {
+  if (permission === permissions.membersAccess) {
+    const allowed = idsFromEnv("PORTAL_MEMBERS_ROLE_IDS");
+    return roleIds.some(roleId => allowed.has(roleId));
+  }
+  if (permission === permissions.staffAccess) {
+    const configured = idsFromEnv("PORTAL_STAFF_ROLE_IDS");
+    const builtInStaff = new Set(["1268471493034246376", "1268471493046566986"]);
+    return roleIds.some(roleId => configured.has(roleId) || builtInStaff.has(roleId));
+  }
   if (permission === permissions.motmManage) {
     const allowed = idsFromEnv("MOTM_MANAGER_ROLE_IDS");
     return roleIds.some(roleId => allowed.has(roleId));

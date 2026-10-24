@@ -4,24 +4,26 @@ import { errorPage, matchHeading, matchTitle, page } from "../lib/motm-view";
 
 const roles={analyst:"1422264769863221319"};
 process.env.PORTAL_TEAM_TOOL_ROLE_IDS=roles.analyst;
+process.env.PORTAL_STAFF_ROLE_IDS=roles.analyst;
 const member={username:"Ajacied",avatarUrl:"https://cdn.discordapp.com/avatar.png",discordRoleIds:[]};
 const analyst={...member,discordRoleIds:[roles.analyst]};
 
-test("een gewoon lid ziet MOTM maar geen Tools",async()=>{
+test("een gewoon lid ziet MOTM en vergrendelde Members maar geen Staff",async()=>{
   const html=await page("Stemmen","<main>Inhoud</main>","",member,"motm").text();
-  assert.match(html,/href="\/club"/);
+  assert.match(html,/portal-brand" href="\/club\/stand"/);
   assert.match(html,/href="\/club\/stand" class="active" aria-current="page"/);
   assert.match(html,/href="\/club\/stand" class="active" aria-current="page">MOTM<\/a>/);
+  assert.match(html,/>Members 🔒<\/a>/);
   assert.match(html,/aria-label="MOTM-navigatie"[\s\S]*href="\/club\/stand"/);
-  assert.doesNotMatch(html,/href="\/club\/tools"/);
+  assert.doesNotMatch(html,/>Staff<\/a>/);
   assert.match(html,/Ajacied/);
   assert.match(html,/action="\/api\/auth\/logout"/);
 });
 
-test("de Club-shell toont Tools alleen met een intern toolrecht",async()=>{
+test("de Club-shell toont Staff voor de geconfigureerde staffrol",async()=>{
   const html=await page("Tools","<main>Inhoud</main>","",analyst,"tools").text();
-  assert.match(html,/href="\/club\/tools" class="active" aria-current="page"/);
-  assert.match(html,/>Tools<\/a>/);
+  assert.match(html,/>Staff<\/a>/);
+  assert.match(html,/href="\/club\/tools"/);
   assert.doesNotMatch(html,/>Analistentools<\/a>|>Teamtools<\/a>/);
   assert.equal((html.match(/class="mobile-menu"/g)??[]).length,1);
   assert.equal((html.match(/class="desktop-nav"/g)??[]).length,1);
@@ -36,10 +38,10 @@ test("thuis- en uitwedstrijden gebruiken overal dezelfde centrale volgorde",()=>
   assert.match(matchHeading({...away,competition:"Eredivisie",kickoff_at:"2026-08-02T12:00:00Z",home_score:null}),/Feyenoord — Ajax/);
 });
 
-test("de Tools-403 gebruikt Home en markeert Stemmen niet actief",async()=>{
+test("een toegangsweigering blijft binnen de MOTM-context",async()=>{
   const html=await errorPage("Geen toegang","Geen Tools.",403,member,"/club","home").text();
-  assert.match(html,/href="\/club" class="active" aria-current="page"/);
-  assert.doesNotMatch(html,/href="\/club\/motm" class="active"/);
+  assert.match(html,/href="\/club\/stand"/);
+  assert.doesNotMatch(html,/href="\/club\/stand" class="active"/);
 });
 
 test("Club- en MOTM-pagina's laden stylesheetversie 36 en het mobiele menuscript",async()=>{
@@ -51,7 +53,7 @@ test("Club- en MOTM-pagina's laden stylesheetversie 36 en het mobiele menuscript
 test("de gedeelde Club-shell kan een afgeschermde tool een eigen stylesheet geven",async()=>{
   const html=await page("Socials","<main>Socials</main>","",analyst,"tools",undefined,{stylesheets:["/socials.css"]}).text();
   assert.match(html,/href="\/socials\.css"/);
-  assert.match(html,/href="\/club\/tools" class="active"/);
+  assert.match(html,/>Staff<\/a>/);
 });
 
 test("een tool kan blob-afbeeldingen toestaan zonder MOTM-pagina's te verruimen",async()=>{

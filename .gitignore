@@ -1,6 +1,7 @@
 # Local Netlify folder
 .netlify
 .vercel
+dist-public/
 node_modules/
 .worktrees/
 

@@ -47,20 +47,22 @@ test("OpenAPI describes only existing public read routes with unique operation I
   assert.ok(existsSync(new URL("../api/next-match.ts", import.meta.url)));
 });
 
-test("documented player contract matches actual handler responses including inactive selection", async () => {
+test("documented public player response omits Members-only contract data", async () => {
   const savedDatabase = process.env.DATABASE_URL;
   delete process.env.DATABASE_URL;
   try {
-    for (const query of ["", "&include=contracts"]) {
-      const response = await playersGET(new Request(`https://www.ajaxpro.fans/api/motm-public?action=players${query}`));
-      assert.equal(response.status, 200);
-      assert.match(response.headers.get("content-type") ?? "", /application\/json/);
-      const body = await response.json();
-      assert.ok(matches(body, spec.components.schemas.PlayersResponse));
-      assert.ok(body.players.length > 0);
-      if (!query) assert.ok(body.players.every((player: any) => player.active));
-      assert.equal(matches({ players: [{ id: 123 }], updatedAt: "" }, spec.components.schemas.PlayersResponse), false);
-    }
+    const response = await playersGET(new Request("https://www.ajaxpro.fans/api/motm-public?action=players"));
+    assert.equal(response.status, 200);
+    assert.match(response.headers.get("content-type") ?? "", /application\/json/);
+    const body = await response.json();
+    assert.ok(matches(body, spec.components.schemas.PlayersResponse));
+    assert.ok(body.players.length > 0);
+    assert.ok(body.players.every((player: any) => player.active));
+    assert.ok(body.players.every((player: any) => !Object.keys(player).some((key) => /^(contract|loan|arrival)/i.test(key))));
+    assert.equal(matches({ players: [{ id: 123 }], updatedAt: "" }, spec.components.schemas.PlayersResponse), false);
+    const denied = await playersGET(new Request("https://www.ajaxpro.fans/api/motm-public?action=players&include=contracts"));
+    assert.equal(denied.status, 403);
+    assert.equal(denied.headers.get("Cache-Control"), "private, no-store");
   } finally {
     if (savedDatabase === undefined) delete process.env.DATABASE_URL;
     else process.env.DATABASE_URL = savedDatabase;

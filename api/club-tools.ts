@@ -23,11 +23,17 @@ export async function GET(request:Request){
   const view=new URL(request.url).searchParams.get("view");
   const returnTo=view==="socials"||view==="socials-player-stats"||view==="socials-match-stats"?"/club/tools/socials":"/club/tools";
   if(view?.startsWith("socials-video")){
+    const session=await getSessionWithCurrentRoles(request);
+    if(!session)return json({error:"Geen toegang tot de staffomgeving."},401);
+    const staff=await getSessionWithPermission(request,permissions.staffAccess);
+    if(!staff)return json({error:"Geen toegang tot de staffomgeving."},403);
     const allowed=await getSessionWithPermission(request,permissions.toolsSocials);
     return allowed?handleVideo(request,allowed):json({error:"Geen toegang tot videogeneratie."},401);
   }
   const session=await getSessionWithCurrentRoles(request);
   if(!session)return redirect(`/api/auth/discord-login?returnTo=${returnTo}`);
+  const staff=await getSessionWithPermission(request,permissions.staffAccess);
+  if(!staff)return errorPage("Geen toegang","Deze staffomgeving is alleen beschikbaar voor Moderators, Admins en de Socials-rol.",403,session,"/club/stand","motm");
   if(view==="socials"){
     const allowed=await getSessionWithPermission(request,permissions.toolsSocials);
     if(!allowed)return errorPage("Geen toegang","Voor jouw Club-account is Socials niet beschikbaar.",403,session,"/club/tools","tools");
@@ -58,14 +64,15 @@ export async function GET(request:Request){
     }
   }
   const tools=toolsForSession(session);
-  if(!tools.length)return errorPage("Geen toegang","Voor jouw Club-account zijn geen interne tools beschikbaar.",403,session,"/club","home");
-  return page("Tools",`<main class="motm-main">${pageHeader("Tools","Intern")}<p class="page-intro">Hulpmiddelen die bij jouw rechten horen.</p>${renderToolsGrid(tools)}</main>`,"",session,"tools");
+  return page("Tools",`<main class="motm-main">${pageHeader("Tools","Intern")}<p class="page-intro">Hulpmiddelen die bij jouw rechten horen.</p>${tools.length?renderToolsGrid(tools):'<section class="empty"><h2>Geen tools beschikbaar</h2><p>Voor jouw rol zijn er momenteel geen afzonderlijke tools beschikbaar.</p></section>'}</main>`,"",session,"tools");
 }
 
 export async function POST(request:Request){
   const view=new URL(request.url).searchParams.get("view");
   const session=await getSessionWithPermission(request,permissions.portalAccess);
   if(!session)return new Response("Unauthorized",{status:401});
+  const staff=await getSessionWithPermission(request,permissions.staffAccess);
+  if(!staff)return new Response("Forbidden",{status:403});
   if(view==="socials-video"){
     const allowed=await getSessionWithPermission(request,permissions.toolsSocials);
     return allowed?handleVideo(request,allowed):json({error:"Geen toegang tot videogeneratie."},403);

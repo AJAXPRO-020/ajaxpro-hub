@@ -1,6 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
+  "buildCommand": "node scripts/build-public.mjs",
+  "outputDirectory": "dist-public",
   "functions": {
     "api/next-match.ts": {
       "maxDuration": 15
@@ -24,6 +26,14 @@
     {
       "source": "/club",
       "destination": "/api/club"
+    },
+    {
+      "source": "/club/members",
+      "destination": "/api/members"
+    },
+    {
+      "source": "/club/members/contracten",
+      "destination": "/api/contracts"
     },
     {
       "source": "/api/motm",

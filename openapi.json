@@ -16,21 +16,8 @@
       "get": {
         "operationId": "getAjaxPlayers",
         "summary": "Lees de Ajax-spelerslijst",
-        "description": "Geeft actieve spelers terug. Gebruik include=contracts om ook inactieve spelers voor het contractenoverzicht op te halen. Contract- en dealgegevens kunnen null zijn. Zonder database gebruikt de server een basisselectie met lege contractvelden. De response wordt kort gecachet.",
-        "parameters": [
-          {
-            "name": "include",
-            "in": "query",
-            "required": false,
-            "description": "Gebruik contracts om ook inactieve spelers op te halen; laat weg voor alleen actieve spelers.",
-            "schema": {
-              "type": "string",
-              "enum": [
-                "contracts"
-              ]
-            }
-          }
-        ],
+        "description": "Geeft actieve spelers zonder contract- en dealgegevens terug. De response wordt kort gecachet. De afgeschermde Members-variant valt buiten deze publieke specificatie.",
+        "parameters": [],
         "responses": {
           "200": {
             "description": "Spelerslijst; kan leeg zijn.",
@@ -244,63 +231,6 @@
           "active": {
             "type": "boolean"
           },
-          "contractEnd": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "contractPosition": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "contractNote": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "loanClub": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "loanEnd": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "loanNote": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "loanDeal": {
-            "anyOf": [
-              {
-                "$ref": "#/components/schemas/LoanDeal"
-              },
-              {
-                "type": "null"
-              }
-            ]
-          },
-          "arrivalDeal": {
-            "anyOf": [
-              {
-                "$ref": "#/components/schemas/ArrivalDeal"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "description": "Optionele aankomst- en transferdetails; kan ontbreken op oudere versies van de response."
-          },
           "updatedAt": {
             "type": "string",
             "format": "date-time"
@@ -313,13 +243,6 @@
           "position",
           "imageUrl",
           "active",
-          "contractEnd",
-          "contractPosition",
-          "contractNote",
-          "loanClub",
-          "loanEnd",
-          "loanNote",
-          "loanDeal",
           "updatedAt"
         ]
       },

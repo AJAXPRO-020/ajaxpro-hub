@@ -24,7 +24,7 @@ test("huurafspraken zijn centraal opgeslagen en transparant gelabeld",()=>{
   const migration=read("../db/migrations/017_add_loan_deal_details.sql");
   const registry=read("../lib/player-registry.ts");
   const contracts=read("../contracten-ui.js");
-  const contractsHtml=read("../contracten.html");
+  const contractsHtml=read("../lib/contracts-content.ts");
   assert.match(migration,/ADD COLUMN IF NOT EXISTS loan_deal JSONB/);
   assert.match(migration,/"status": "reported"/);
   assert.match(registry,/loanDeal:mapLoanDeal\(row\.loan_deal\)/);
@@ -35,9 +35,8 @@ test("huurafspraken zijn centraal opgeslagen en transparant gelabeld",()=>{
   assert.match(contractsHtml,/loan-deal__status--reported/);
   assert.doesNotMatch(contractsHtml,/Nog in te vullen/);
   assert.match(contractsHtml,/Tijdelijk elders<\/dt><dd>8 spelers/);
-  assert.match(contractsHtml,/href="\.\/contracten\.css\?v=/);
-  assert.match(contractsHtml,/src="\.\/contracten-ui\.js\?v=/);
-  assert.doesNotMatch(contractsHtml,/(?:href|src)="\/(?:styles|contracten|assets|Favicon)/);
+  assert.match(read("../api/contracts.ts"),/permissions\.membersAccess/);
+  assert.match(read("../api/contracts.ts"),/contracten-ui\.js/);
 });
 
 test("deadline day-mutaties worden via de centrale spelersregistratie uitgerold",()=>{
@@ -114,6 +113,7 @@ test("publieke spelersendpoint levert alleen actieve spelers en beperkte CORS",a
   assert.equal(payload.players.some((player:any)=>player.id==="itakura"),false);
   assert.equal(payload.players.some((player:any)=>player.id==="regeer"),false);
   assert.equal(payload.players.some((player:any)=>player.id==="carrizo"),false);
+  assert.ok(payload.players.every((player:any)=>!Object.keys(player).some((key)=>/^(contract|loan|arrival)/i.test(key))));
   const denied=await GET(new Request("https://ajaxpro.fans/api/motm-public?action=players",{headers:{Origin:"https://example.com"}}));
   assert.equal(denied.headers.has("Access-Control-Allow-Origin"),false);
   assert.equal(denied.headers.get("Vary"),"Origin");

@@ -61,6 +61,8 @@ SESSION_SECRET=
 DATABASE_URL=
 MOTM_MANAGER_ROLE_IDS=
 MOTM_DELETE_ROLE_IDS=
+PORTAL_MEMBERS_ROLE_IDS=
+PORTAL_STAFF_ROLE_IDS=
 ```
 
 Gebruik voor `SESSION_SECRET` een cryptografisch willekeurige waarde van minimaal
@@ -73,6 +75,11 @@ Vercel Preview gebruikt een aparte preview-URL en dus een eigen redirect URI.
 minimaal één van deze rollen krijgen server-side `motm.manage`. Laat de variabele
 leeg om niemand beheerrechten te geven. `DATABASE_URL` wijst naar een PostgreSQL-
 database die vanuit Vercel bereikbaar is (bijvoorbeeld Neon of Vercel Postgres).
+
+`PORTAL_MEMBERS_ROLE_IDS` bevat de Discord-rol-ID's voor AjaxPro Supporters en
+Server Boosters. `PORTAL_STAFF_ROLE_IDS` bevat de Socials-rol-ID; Moderators en
+Admins gebruiken de bestaande vaste rol-ID's. Beide mappings zijn fail-closed:
+zonder de juiste role-ID's wordt geen Members- of Staff-toegang verleend.
 
 Voeg in het Discord Developer Portal bij **OAuth2 → Redirects** elke gebruikte URI
 exact toe. Kopieer onder **General Information** de Application ID naar

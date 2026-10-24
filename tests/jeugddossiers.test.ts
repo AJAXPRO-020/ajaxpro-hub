@@ -8,6 +8,8 @@ const source = read("../api-impl/jeugddossiers.ts");
 
 test("Jeugddossiers vereist portal.access en gebruikt geen publiek data-endpoint", () => {
   assert.match(source, /getSessionWithCurrentRoles\(request\)/);
+  assert.match(source, /permissions\.membersAccess/);
+  assert.match(source, /permissions\.jeugddossiersManage/);
   assert.match(source, /redirect\(`\/api\/auth\/discord-login/);
 });
 
