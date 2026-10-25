@@ -229,6 +229,9 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 /* Keep the local MOTM tabs in document flow on mobile webviews. */
 @media(max-width:767px){.local-nav{position:relative;top:auto;z-index:1;background:var(--bg);margin-bottom:var(--space-sm)}}
 
+.portal-brand{min-height:44px;flex:0 0 auto}
+@media(max-width:767px){.mobile-menu nav a.active{position:relative}.mobile-menu nav a.active::after{content:"";position:absolute;right:14px;bottom:5px;left:14px;height:2px;border-radius:99px;background:var(--red-hover)}}
+
 /* Club v32: unified Impeccable UX pass for the complete MOTM flow. */
 .motm-main:not(.socials-shell)>.page-heading .eyebrow{display:none}
 .motm-main:not(.socials-shell)>.page-heading{padding-bottom:var(--space-lg);margin-bottom:var(--space-xl)}

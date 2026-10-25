@@ -64,7 +64,7 @@ export async function GET(request:Request){
     }
   }
   const tools=toolsForSession(session);
-  return page("Tools",`<main class="motm-main">${pageHeader("Tools","Intern")}<p class="page-intro">Hulpmiddelen die bij jouw rechten horen.</p>${tools.length?renderToolsGrid(tools):'<section class="empty"><h2>Geen tools beschikbaar</h2><p>Voor jouw rol zijn er momenteel geen afzonderlijke tools beschikbaar.</p></section>'}</main>`,"",session,"tools");
+  return page("Staff-tools",`<main class="motm-main">${pageHeader("Staff-tools","Intern")}<p class="page-intro">Hulpmiddelen die bij jouw rechten horen.</p>${tools.length?renderToolsGrid(tools):'<section class="empty"><h2>Geen tools beschikbaar</h2><p>Voor jouw rol zijn er momenteel geen afzonderlijke tools beschikbaar.</p></section>'}</main>`,"",session,"tools");
 }
 
 export async function POST(request:Request){
