@@ -36,6 +36,10 @@
       "destination": "/api/contracts"
     },
     {
+      "source": "/club/members/match-center",
+      "destination": "/api/members?view=match-center"
+    },
+    {
       "source": "/api/motm",
       "destination": "/api/motm-public?action=index"
     },

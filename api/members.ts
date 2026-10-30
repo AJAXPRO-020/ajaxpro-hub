@@ -1,7 +1,8 @@
 import { redirect } from "../lib/discord-auth";
 import { getSessionWithCurrentRoles, sessionHasPermission } from "../lib/server-permissions";
 import { permissions } from "../lib/permissions.config";
-import { esc, page } from "../lib/motm-view";
+import { errorPage, esc, page } from "../lib/motm-view";
+import { loadMatchCenter, matchCenterMarkup } from "../lib/match-center";
 
 type ArchiveVideo = {
   id: string;
@@ -49,8 +50,13 @@ const feature = (href: string, category: string, title: string, description: str
 export async function GET(request: Request) {
   const session = await getSessionWithCurrentRoles(request);
   if (!session) return redirect(`/api/auth/discord-login?returnTo=${encodeURIComponent("/club/members")}`);
+  if (new URL(request.url).searchParams.get("view") === "match-center") {
+    if (!sessionHasPermission(session, permissions.membersAccess)) return errorPage("Members is exclusief", "Deze content is beschikbaar voor AjaxPro Supporters en Discord Server Boosters.", 403, session, "/club/members", "members");
+    try { return page("Match Center", matchCenterMarkup(await loadMatchCenter(new URL(request.url).searchParams.get("match"))), "/match-center.js", session, "members", undefined, { stylesheets: ["/match-center.css?v=2"] }); }
+    catch (error) { console.error("Match Center failed", error); return errorPage("Match Center tijdelijk niet beschikbaar", "De wedstrijddata konden nu niet worden geladen. Probeer het later opnieuw.", 503, session, "/club/members", "members"); }
+  }
   const preview = !sessionHasPermission(session, permissions.membersAccess);
-  const links = `<section class="members-links" aria-label="Members-content">${feature("/club/members/contracten", "Ajax 1", "Contracten Ajax 1", "Wie ligt vast, wie loopt af en waar moet Ajax in actie komen?", "Bekijk contracten", preview, "contracts")}${feature("/club/jeugddossiers", "Jeugdopleiding", "Na De Toekomst", "Ooit een Ajax-talent. Maar hoe verging het de spelers die vertrokken?", "Bekijk dossiers", preview, "future")}</section>`;
+  const links = `<section class="members-links" aria-label="Members-content">${feature("/club/members/contracten", "Ajax 1", "Contracten Ajax 1", "Wie ligt vast, wie loopt af en waar moet Ajax in actie komen?", "Bekijk contracten", preview, "contracts")}${feature("/club/jeugddossiers", "Jeugdopleiding", "Na De Toekomst", "Ooit een Ajax-talent. Maar hoe verging het de spelers die vertrokken?", "Bekijk dossiers", preview, "future")}${feature("/club/members/match-center", "Match Center", "Wedstrijdstatistieken", "Duik in de cijfers, uitblinkers en het wedstrijdbeeld van Ajax.", "Bekijk wedstrijd", preview, "match-center")}</section>`;
   const categoryFilters = archive.categories.map(category => {
     const count = archive.videos.filter(video => video.category === category.id).length;
     return `<button type="button" class="members-filter" data-category="${esc(category.id)}" aria-pressed="false">${esc(category.label)} <span>${count}</span></button>`;
