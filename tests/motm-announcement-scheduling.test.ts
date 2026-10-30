@@ -11,12 +11,20 @@ test("automatische aankondiging opent een geplande stemming zonder bezoek en ver
     id: "test-match", slug: "test-match", status: "draft", deleted_at: null,
     opponent: "NEC", home_or_away: "home", kickoff_at: kickoff,
     scheduled_open_at: kickoff, scheduled_close_at: new Date(Date.now() + 60 * 60_000),
-    announcement_sent_at: null as Date | null,
+    announcement_sent_at: null as Date | null, announcement_status: "not_sent", announcement_attempted_at: null,
   };
   let sends = 0;
   const sql: any = async (parts: TemplateStringsArray, ...values: any[]) => {
     const query = parts.join("?");
     if (query.includes("INSERT INTO motm_audit_log")) return [];
+    if (query.includes("SET announcement_status='sending'")) {
+      match = { ...match, announcement_status: "sending", announcement_attempted_at: new Date() };
+      return [{ ...match }];
+    }
+    if (query.includes("SET announcement_status='sent'")) {
+      match = { ...match, announcement_status: "sent", announcement_sent_at: new Date() };
+      return [{ id: match.id }];
+    }
     if (query.includes("UPDATE motm_matches SET announcement_sent_at")) {
       match = { ...match, announcement_sent_at: new Date() };
       return [{ id: match.id }];

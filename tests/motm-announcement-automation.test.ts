@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { validGitHubOidcClaims } from "../lib/github-oidc";
-import { shouldTryAutomaticAnnouncement } from "../lib/motm-announcements";
+import { sendAnnouncement, shouldTryAutomaticAnnouncement } from "../lib/motm-announcements";
 import { announcementPlan } from "../lib/motm-announcement-plan";
 
 const now=1_800_000_000;
@@ -58,4 +58,18 @@ test("de automatische mededeling wordt pas in de tweede helft vanaf minuut 80 ge
   assert.equal(shouldTryAutomaticAnnouncement({elapsed:80,provider_status:"2H"}),true);
   assert.equal(shouldTryAutomaticAnnouncement({elapsed:85,provider_status:"HT"}),false);
   assert.equal(shouldTryAutomaticAnnouncement({elapsed:null,provider_status:"2H"}),false);
+});
+
+test("Discord onderscheidt bekende fouten van onbekende ontvangst", async () => {
+  const originalFetch = globalThis.fetch;
+  try {
+    globalThis.fetch = async () => new Response(null, { status: 400 });
+    assert.deepEqual(await sendAnnouncement("https://example.invalid/test-webhook", "tekst", "https://ajaxpro.fans/stem/test"), { status: "failed", error: "Discord webhook mislukt (400)" });
+    globalThis.fetch = async () => new Response(null, { status: 503 });
+    assert.deepEqual(await sendAnnouncement("https://example.invalid/test-webhook", "tekst", "https://ajaxpro.fans/stem/test"), { status: "unknown", error: "Discord webhook mislukt (503)" });
+    globalThis.fetch = async () => { throw new Error("timeout"); };
+    assert.deepEqual(await sendAnnouncement("https://example.invalid/test-webhook", "tekst", "https://ajaxpro.fans/stem/test"), { status: "unknown", error: "timeout" });
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
 });

@@ -15,6 +15,7 @@ import { consumeNextMatchRateLimit } from "../lib/next-match-rate-limit";
 import { verifyGitHubOidcRequest } from "../lib/github-oidc";
 import { sendAutomaticAnnouncement } from "../lib/motm-announcements";
 import { announcementPlan } from "../lib/motm-announcement-plan";
+import { synchronizeAllMatches } from "../lib/motm-scheduling";
 
 const AJAX_FIXTURES_URL = "https://www.ajax.nl/wedstrijden/";
 const TV_GUIDE_URL = "https://www.voetbaloptv.com/wp-json/vtv/v1/wedstrijden";
@@ -285,6 +286,8 @@ export async function GET(request: Request) {
   try {
     if (view === "motm-announcement") {
       if (!await verifyGitHubOidcRequest(request)) return automationResponse({ error: "Unauthorized" }, 401);
+      // The GitHub check is also the scheduler heartbeat: catch up every due MOTM transition.
+      await synchronizeAllMatches(now);
       if (url.searchParams.get("plan") === "1") {
         await syncSourceFixtures();
         return automationResponse(announcementPlan(await nextStoredFixture(), now));
