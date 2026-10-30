@@ -3,6 +3,7 @@ import { createHash } from "node:crypto";
 import type { SocialMatchdayFixture } from "./socials-match-context";
 import type { SocialsMatchStatsSnapshot } from "./socials-stats-snapshots";
 import type { FotMobSocialsTeamStats } from "./fotmob-socials-parser";
+import { teamNamesMatch } from "./team-name-match";
 
 export const VIDEO_TEMPLATE_VERSION="ajaxpro-v11-shotstack-1";
 export type VideoData={home:string;away:string;date:string;competition:string;homeScore:number;awayScore:number;stats:{label:string;home:number;away:number;suffix:string;decimals:number}[];followText:string};
@@ -23,7 +24,7 @@ export function videoData(f:SocialMatchdayFixture,s:SocialsMatchStatsSnapshot|nu
  if(!f.competition?.trim()||!f.home_team?.trim()||!f.away_team?.trim())throw new VideoError("Teamnamen of competitie ontbreken.");
  if(f.competition.length>120||Math.max(f.home_team.length,f.away_team.length)>150)throw new VideoError("Wedstrijdgegevens zijn ongeldig.");
  const ajaxHome=name(f.home_team)==="ajax",ajaxAway=name(f.away_team)==="ajax";
- if(ajaxHome===ajaxAway||s.fixtureKey!==f.fixture_key||!integer(s.match.fotmobId)||s.match.fotmobId===0||name(s.match.homeTeam??"")!==name(f.home_team)||name(s.match.awayTeam??"")!==name(f.away_team)||!Number.isFinite(parsed.getTime())||parsed.toISOString().slice(0,10)!==kickoff.toISOString().slice(0,10)||s.match.homeScore!==f.goals_home||s.match.awayScore!==f.goals_away)throw new VideoError("Snapshot en geselecteerde wedstrijd komen niet overeen. Ververs de stats en controleer de eindstand.");
+ if(ajaxHome===ajaxAway||s.fixtureKey!==f.fixture_key||!integer(s.match.fotmobId)||s.match.fotmobId===0||!teamNamesMatch(s.match.homeTeam??"",f.home_team)||!teamNamesMatch(s.match.awayTeam??"",f.away_team)||!Number.isFinite(parsed.getTime())||parsed.toISOString().slice(0,10)!==kickoff.toISOString().slice(0,10)||s.match.homeScore!==f.goals_home||s.match.awayScore!==f.goals_away)throw new VideoError("Snapshot en geselecteerde wedstrijd komen niet overeen. Ververs de stats en controleer de eindstand.");
  const home=ajaxHome?s.teamStats:s.opponentTeamStats,away=ajaxHome?s.opponentTeamStats:s.teamStats;
  if(!home||!away)throw new VideoError("Teamstatistieken ontbreken.");
  const stats:VideoData["stats"]=[];

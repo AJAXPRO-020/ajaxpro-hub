@@ -21,7 +21,9 @@ export async function handleVideo(request:Request,session:Session,service=videoS
    const range=request.headers.get("range");if(range){if(!/^bytes=(?:\d+-\d*|-\d+)$/.test(range))return json({error:"Ongeldig bereik."},416);headers.Range=range}
    const result=await fetcher(job.output_url!,{headers,redirect:"error",signal:AbortSignal.timeout(55_000)});
    if(!result.ok){if([403,404,410].includes(result.status))throw new VideoError("De downloadlink is niet meer beschikbaar. Controleer de renderstatus; genereer alleen bewust opnieuw.",410);throw new VideoError("De video kan tijdelijk niet worden gedownload.",502)}
-   const h=new Headers({"Content-Type":"video/mp4","Cache-Control":"private, no-store","X-Content-Type-Options":"nosniff","Content-Disposition":`${u.searchParams.get("download")==="1"?"attachment":"inline"}; filename="ajaxpro-${job.id}.mp4"`});
+  const slug=(value:string)=>value.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("nl-NL").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,50);
+  const filename=`ajaxpro-${slug(job.source_fixture.home_team)}-${slug(job.source_fixture.away_team)}-wedstrijd-in-cijfers-video-9x16.mp4`;
+  const h=new Headers({"Content-Type":"video/mp4","Cache-Control":"private, no-store","X-Content-Type-Options":"nosniff","Content-Disposition":`${u.searchParams.get("download")==="1"?"attachment":"inline"}; filename="${filename}"`});
    for(const name of ["Content-Length","Content-Range","Accept-Ranges"])if(result.headers.has(name))h.set(name,result.headers.get(name)!);
    return new Response(result.body,{status:result.status,headers:h});
   }

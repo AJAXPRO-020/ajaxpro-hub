@@ -77,6 +77,7 @@ export const initOutblinker=(root,sharedState)=>{
     const hasPayload=syncPlayers(),player=selectedPlayer(),registry=registryPlayerFor(player,registryPlayers),selected=selectionFor(player),context=fixtureForSelection();
     const usable=hasUsableStats(player);
     preview.dataset.pngContext=`${context.competition} · ${context.home_team} ${context.goals_home??'–'}–${context.goals_away??'–'} ${context.away_team}`;
+    preview.dataset.pngHome=context.home_team;preview.dataset.pngAway=context.away_team;
     status.textContent=!hasPayload?"Haal eerst de wedstrijdstats op.":!player?"Geen Ajax-spelers met wedstrijddata gevonden.":!usable?"Voor deze speler zijn geen wedstrijdstatistieken beschikbaar. Kies een andere speler.":`${providerPlayers.length} Ajax-spelers beschikbaar.`;
     status.dataset.state=hasPayload&&player&&!usable?"missing":"available";
     status.hidden=usable;

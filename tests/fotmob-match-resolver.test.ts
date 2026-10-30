@@ -28,6 +28,14 @@ test("matcht de wedstrijd exact op datum, thuisteam en uitteam", async () => {
   });
 });
 
+test("accepteert een korte fixtureclubnaam tegenover de officiële providernaam", async () => {
+  const result = await resolveFotMobMatch(
+    { date: "2026-09-12", homeTeam: "Sparta", awayTeam: "Ajax" },
+    { fetcher: fetcherFor([{ ...fortunaAjax, home: { id: 6422, name: "Sparta Rotterdam" } }]) },
+  );
+  assert.equal(result?.fotmobId, 5781747);
+});
+
 test("geeft geen resultaat bij een verkeerde datum of teamcombinatie", async () => {
   const options = { fetcher: fetcherFor([fortunaAjax]) };
   assert.equal(await resolveFotMobMatch(

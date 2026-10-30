@@ -81,7 +81,13 @@ export async function POST(request:Request){
   const allowed=await getSessionWithPermission(request,permissions.toolsSocials);
   if(!allowed)return json({error:"forbidden"},403);
   let fixtureKey="";try{fixtureKey=String((await request.json())?.fixture??"")}catch{return json({error:"Ongeldige wedstrijd."},400)}
-  try{return json(await saveSocialsMatchStatsSnapshot(await loadSocialsMatchStats(fixtureKey)));}
+  try{
+    const imported=await loadSocialsMatchStats(fixtureKey);
+    await saveSocialsMatchStatsSnapshot(imported);
+    const stored=await loadSocialsMatchStatsSnapshot(fixtureKey);
+    if(!stored||stored.match.fotmobId!==imported.match.fotmobId||stored.players.length!==imported.players.length)throw new SocialsMatchStatsError("Stats opgehaald, maar opslag kon niet worden bevestigd.",500);
+    return json(stored);
+  }
   catch(error){
     if(error instanceof SocialsMatchStatsError)return json({error:error.message},error.status);
     console.error("Unable to import Socials match statistics",error);

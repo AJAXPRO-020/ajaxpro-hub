@@ -57,6 +57,7 @@ export const initStats=(root,sharedState)=>{
   const render=()=>{
     const context=contextFor(fixtureForSelection());
     preview.dataset.pngContext=`${context.competition} · ${context.homeTeam} ${context.homeScore??'–'}–${context.awayScore??'–'} ${context.awayTeam}`;
+    preview.dataset.pngHome=context.homeTeam;preview.dataset.pngAway=context.awayTeam;
     preview.dataset.ajaxSide=context.ajaxIsHome?"home":"away";
     workspace.querySelector('[data-preview-team="home"]').textContent=context.homeTeam;
     workspace.querySelector('[data-preview-team="away"]').textContent=context.awayTeam;

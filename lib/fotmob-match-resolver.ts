@@ -1,4 +1,5 @@
 import { FOTMOB_AJAX_TEAM_ID } from "./fotmob-socials-parser";
+import { teamNamesMatch } from "./team-name-match";
 
 const FOTMOB_ORIGIN = "https://www.fotmob.com";
 const FOTMOB_AJAX_OVERVIEW_URL = `${FOTMOB_ORIGIN}/teams/${FOTMOB_AJAX_TEAM_ID}/overview`;
@@ -56,7 +57,13 @@ const teamMatches = (teamValue: unknown, expectedName: string, expectedAjax: boo
   const team = objectValue(teamValue);
   if (!team || typeof team.name !== "string") return false;
   if (expectedAjax && integerValue(team.id) !== FOTMOB_AJAX_TEAM_ID) return false;
-  return normalizedTeamName(team.name) === normalizedTeamName(expectedName);
+  const providerName = normalizedTeamName(team.name);
+  const fixtureName = normalizedTeamName(expectedName);
+  if (providerName === fixtureName) return true;
+  // Fixture administration uses short names (e.g. "Sparta"), while FotMob
+  // may expose the official club name (e.g. "Sparta Rotterdam"). Keep this
+  // bounded to name containment so we do not introduce a broad fuzzy match.
+  return teamNamesMatch(team.name, expectedName);
 };
 
 const fixturesFromPage = (html: string): JsonObject[] => {

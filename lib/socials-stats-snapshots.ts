@@ -1,7 +1,10 @@
 import type { FotMobSocialsMatch } from "./fotmob-socials-parser";
 import { db } from "./motm-db";
+import { teamNamesMatch } from "./team-name-match";
 
-export type SocialsMatchStatsSnapshot = FotMobSocialsMatch & { fixtureKey: string };
+export type SocialsMatchStatsSnapshot = FotMobSocialsMatch & {
+  fixtureKey: string;
+};
 
 const asSnapshot=(fixtureKey:string,value:unknown):SocialsMatchStatsSnapshot|null=>{
   const snapshot=typeof value==="string"?JSON.parse(value):value;
@@ -14,8 +17,7 @@ export const loadSocialsStatsAvailability=async(fixtureKeys:readonly string[])=>
   const rows=await db()`SELECT s.fixture_key,s.snapshot,f.home_team,f.away_team,f.goals_home,f.goals_away,f.kickoff_at
     FROM socials_match_stats_snapshots s JOIN matchday_fixtures f ON f.fixture_key=s.fixture_key
     WHERE s.fixture_key = ANY(${[...fixtureKeys]})`;
-  const normal=(value:unknown)=>String(value??"").normalize("NFKD").replace(/\p{M}/gu,"").toLowerCase().replace(/[^a-z0-9]/g,"");
-  return new Set(rows.filter(row=>{try{const snapshot=typeof row.snapshot==="string"?JSON.parse(row.snapshot):row.snapshot;const match=snapshot?.match;if(!match)return false;const date=new Date(match.date??"").toISOString().slice(0,10),kickoff=new Date(row.kickoff_at).toISOString().slice(0,10);return normal(match.homeTeam)===normal(row.home_team)&&normal(match.awayTeam)===normal(row.away_team)&&date===kickoff&&Number(match.homeScore)===Number(row.goals_home)&&Number(match.awayScore)===Number(row.goals_away)}catch{return false}}).map(row=>String(row.fixture_key)));
+  return new Set(rows.filter(row=>{try{const snapshot=typeof row.snapshot==="string"?JSON.parse(row.snapshot):row.snapshot;const match=snapshot?.match;if(!match)return false;const date=new Date(match.date??"").toISOString().slice(0,10),kickoff=new Date(row.kickoff_at).toISOString().slice(0,10);return teamNamesMatch(String(match.homeTeam??""),String(row.home_team??""))&&teamNamesMatch(String(match.awayTeam??""),String(row.away_team??""))&&date===kickoff&&Number(match.homeScore)===Number(row.goals_home)&&Number(match.awayScore)===Number(row.goals_away)}catch{return false}}).map(row=>String(row.fixture_key)));
 };
 
 export const loadSocialsStoredStatsKeys=async(fixtureKeys:readonly string[])=>{
@@ -26,7 +28,9 @@ export const loadSocialsStoredStatsKeys=async(fixtureKeys:readonly string[])=>{
 
 export const loadSocialsMatchStatsSnapshot=async(fixtureKey:string)=>{
   const [row]=await db()`SELECT snapshot FROM socials_match_stats_snapshots WHERE fixture_key=${fixtureKey} LIMIT 1`;
-  return row?asSnapshot(fixtureKey,row.snapshot):null;
+  if(!row)return null;
+  const snapshot=asSnapshot(fixtureKey,row.snapshot);
+  return snapshot;
 };
 
 export const saveSocialsMatchStatsSnapshot=async(snapshot:SocialsMatchStatsSnapshot)=>{

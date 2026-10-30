@@ -25,7 +25,7 @@ export const initTopThree=(root,sharedState)=>{
   const fixtureForSelection=()=>fixtures.find(fixture=>fixture.fixture_key===sharedState.selectedFixtureKey)??fixtures[0];
   const selectedPlayers=()=>selections.map(key=>providerPlayers.find(player=>providerKey(player)===key)??null);
   const replaceOptions=()=>playerSelects.forEach((select,index)=>{const current=selections[index];select.replaceChildren(new Option("Kies speler",""),...playerOptionsFor(providerPlayers,selections,index).map(item=>{const option=new Option(item.name,item.key);option.disabled=item.disabled;return option}));select.value=providerPlayers.some(player=>providerKey(player)===current)?current:"";select.disabled=!providerPlayers.length});
-  const syncPlayers=()=>{const payload=sharedState.getMatchStats?.(fixtureForSelection().fixture_key),next=Array.isArray(payload?.players)?payload.players.filter(player=>player&&player.name):[];const changed=next.length!==providerPlayers.length||next.some((player,index)=>providerKey(player)!==providerKey(providerPlayers[index]));providerPlayers=next;if(changed){selections=selections.map(key=>providerPlayers.some(player=>providerKey(player)===key)?key:"");replaceOptions()}return Boolean(payload)};
+  const syncPlayers=()=>{const payload=sharedState.getMatchStats?.(fixtureForSelection().fixture_key),next=Array.isArray(payload?.players)?payload.players.filter(player=>player&&player.name):[];const changed=next.length!==providerPlayers.length||next.some((player,index)=>providerKey(player)!==providerKey(providerPlayers[index]));providerPlayers=next;if(changed){selections=providerPlayers.slice().sort((a,b)=>(Number(b.rating??-1)-Number(a.rating??-1))).slice(0,3).map(providerKey);while(selections.length<3)selections.push("");replaceOptions()}return Boolean(payload)};
   const renderPlayer=(slot,player)=>{
     const registry=registryPhotoFor(player,registryPlayers),photo=slot.querySelector("[data-top-three-photo]"),placeholder=slot.querySelector("[data-top-three-placeholder]"),rating=slot.querySelector("[data-top-three-rating]");
     slot.dataset.selected=String(Boolean(player));slot.querySelector("[data-top-three-name]").textContent=registry?.name??player?.name??"KIES EEN SPELER";
@@ -37,6 +37,7 @@ export const initTopThree=(root,sharedState)=>{
   const render=()=>{
     const hasPayload=syncPlayers(),chosen=selectedPlayers(),count=chosen.filter(Boolean).length,context=fixtureForSelection();replaceOptions();
     preview.dataset.pngContext=`${context.competition} · ${context.home_team} ${context.goals_home??'–'}–${context.goals_away??'–'} ${context.away_team}`;
+    preview.dataset.pngHome=context.home_team;preview.dataset.pngAway=context.away_team;
     status.textContent=count===3?"Compleet":`${count} van 3 spelers gekozen`;
     status.hidden=count===3;
     const rendered=[...workspace.querySelectorAll("[data-top-three-preview-player]")].map((slot,index)=>renderPlayer(slot,chosen[index]));

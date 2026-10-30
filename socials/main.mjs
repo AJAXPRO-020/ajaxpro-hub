@@ -31,13 +31,17 @@ if(root){
   const renderGlobalDataStatus=()=>{
     if(!formatStatus)return;
     const states=globalDataStatus();
+    const fixture=fixtures.find(item=>item.fixture_key===sharedState.selectedFixtureKey)??fixtures[0]??null;
     const statsState=statsStatus?.dataset.state??"missing";
+    const payload=fixture?sharedState.getMatchStats?.(fixture.fixture_key):null;
+    const source=payload?"FotMob":"bron wordt gecontroleerd";
+    const played=Boolean(fixture&&new Date(fixture.kickoff_at).getTime()<=Date.now());
     const sources=[
-      ["Wedstrijddata",states.matchData?"available":"missing",states.matchData?"beschikbaar":"ontbreekt"],
-      ["Teamstatistieken",states.matchStats?"available":["loading","upcoming"].includes(statsState)?"pending":statsState==="mismatch"?"mismatch":"missing",states.matchStats?"beschikbaar":statsState==="loading"?"worden geladen":statsState==="upcoming"?"nog niet beschikbaar":statsState==="mismatch"?"komen niet overeen":"ontbreken"],
-      ["Spelerstatistieken",states.playerStats?"available":states.matchStats?"missing":"pending",states.playerStats?"beschikbaar":states.matchStats?"ontbreken":statsState==="loading"?"worden geladen":"nog niet gecontroleerd"],
+      ["Wedstrijddata",states.matchData?"available":"missing",states.matchData?(played?"centrale fixturebron":"nog niet gespeeld"):"ontbreekt"],
+      ["Teamstatistieken",states.matchStats?"available":["loading","upcoming"].includes(statsState)?"pending":statsState==="mismatch"?"mismatch":"missing",states.matchStats?source:played?(statsState==="loading"?"worden geladen":statsState==="mismatch"?"komen niet overeen":"API nog niet binnen"):"API nog niet binnen"],
+      ["Spelerstatistieken",states.playerStats?"available":states.matchStats?"missing":"pending",states.playerStats?source:played?(statsState==="loading"?"worden geladen":statsState==="mismatch"?"komen niet overeen":"API nog niet binnen"):"API nog niet binnen"],
     ];
-    formatStatus.replaceChildren(...sources.map(([label,state,detail])=>{const item=document.createElement("span");item.dataset.state=state;item.textContent=state==="available"?`✓ ${label}`:`${label} ${detail}`;return item}));
+    formatStatus.replaceChildren(...sources.map(([label,state,detail])=>{const item=document.createElement("span");item.dataset.state=state;item.innerHTML=`<b aria-hidden="true">${state==="available"?"✓":"—"}</b><span>${label}</span><small>${detail}</small>`;return item}));
   };
   const refreshFormatStatus=()=>{
     const format=formats.get(activeId),states=format?.controller.getRequirementStatus?.()??{};
