@@ -16,6 +16,7 @@ import { verifyGitHubOidcRequest } from "../lib/github-oidc";
 import { sendAutomaticAnnouncement } from "../lib/motm-announcements";
 import { announcementPlan } from "../lib/motm-announcement-plan";
 import { synchronizeAllMatches } from "../lib/motm-scheduling";
+import { apiFootballErrorDetails } from "../lib/api-football-observability";
 
 const AJAX_FIXTURES_URL = "https://www.ajax.nl/wedstrijden/";
 const TV_GUIDE_URL = "https://www.voetbaloptv.com/wp-json/vtv/v1/wedstrijden";
@@ -199,9 +200,15 @@ const refreshProviderState = async (fixture: StoredFixture, now: Date) => {
   if (!reservation) return;
   try {
     const response = await fetch(providerUrlFor(fixture), { headers: { "x-apisports-key": apiKey }, signal: AbortSignal.timeout(10_000) });
-    if (!response.ok) throw new Error(`API-Football returned ${response.status}`);
+    if (!response.ok) {
+      console.error("API-Football fixture request failed", apiFootballErrorDetails(new Error(`HTTP ${response.status}`), response));
+      throw new Error(`API-Football returned ${response.status}`);
+    }
     const payload = await response.json();
-    if (payload?.errors && Object.keys(payload.errors).length) throw new Error("API-Football returned an API error");
+    if (payload?.errors && Object.keys(payload.errors).length) {
+      console.error("API-Football fixture request rejected", apiFootballErrorDetails(new Error("API-Football returned provider errors"), response, payload.errors));
+      throw new Error("API-Football returned an API error");
+    }
     const candidates: ProviderFixture[] = Array.isArray(payload?.response) ? payload.response : [];
     const selected = fixture.provider_fixture_id ? candidates[0] : selectProviderFixture(candidates, { home: fixture.home_team, away: fixture.away_team, kickoff: fixture.kickoff_at });
     if (!selected) {
@@ -213,7 +220,7 @@ const refreshProviderState = async (fixture: StoredFixture, now: Date) => {
     const finished = FINISHED_STATUSES.has(status);
     await db()`UPDATE matchday_fixtures SET provider_fixture_id=${selected.fixture.id},provider_status=${status},elapsed=${selected.fixture.status.elapsed},elapsed_extra=${selected.fixture.status.extra??null},goals_home=${selected.goals.home},goals_away=${selected.goals.away},last_success_at=${now},next_refresh_at=${delay===null?null:new Date(now.getTime()+delay)},refresh_locked_until=NULL,finished_at=${finished?now:null},updated_at=now() WHERE fixture_key=${fixture.fixture_key}`;
   } catch (error) {
-    console.error("Unable to refresh API-Football fixture", error);
+    console.error("Unable to refresh API-Football fixture", apiFootballErrorDetails(error));
     if (await refreshOfficialResultFallback(fixture, now)) return;
     const delay = nextProviderDelayMs({ status: fixture.provider_status, calls: reservation.calls, failed: true }) ?? 5 * 60_000;
     await db()`UPDATE matchday_fixtures SET next_refresh_at=${new Date(now.getTime()+delay)},refresh_locked_until=NULL,updated_at=now() WHERE fixture_key=${fixture.fixture_key}`;

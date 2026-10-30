@@ -6,6 +6,7 @@ import {
   selectProviderFixture,
 } from "./matchday-live";
 import { seasonKeyFor } from "./motm-season";
+import { apiFootballErrorDetails } from "./api-football-observability";
 
 export type SocialPlayerMatchStats = {
   minutes: number | null;
@@ -111,15 +112,24 @@ type LoaderOptions = {
 };
 
 const providerRequest = async (url: string, apiKey: string, fetcher: typeof fetch, operation: "fixture" | "player-stats") => {
-  const response = await fetcher(url, {
-    headers: { "x-apisports-key": apiKey },
-    signal: AbortSignal.timeout(10_000),
-  });
-  if (!response.ok) throw new SocialPlayerStatsProviderError(`De statistiekenprovider antwoordde met ${response.status}.`, 502);
+  let response: Response;
+  try {
+    response = await fetcher(url, {
+      headers: { "x-apisports-key": apiKey },
+      signal: AbortSignal.timeout(10_000),
+    });
+  } catch (error) {
+    console.error("API-Football Socials request failed", { operation, ...apiFootballErrorDetails(error) });
+    throw error;
+  }
+  if (!response.ok) {
+    console.error("API-Football Socials request failed", apiFootballErrorDetails(new Error(`HTTP ${response.status}`), response));
+    throw new SocialPlayerStatsProviderError(`De statistiekenprovider antwoordde met ${response.status}.`, 502);
+  }
   const payload = await response.json();
   if (payload?.errors && Object.keys(payload.errors).length) {
     const messages=Object.values(payload.errors).filter((value):value is string=>typeof value==="string");
-    console.error("API-Football request rejected",{operation,errorTypes:Object.keys(payload.errors),messages});
+    console.error("API-Football request rejected",{operation,...apiFootballErrorDetails(new Error("API-Football returned provider errors"), response, payload.errors),errorTypes:Object.keys(payload.errors)});
     const joined=messages.join(" ").toLowerCase();
     if(joined.includes("plan")||joined.includes("subscription"))throw new SocialPlayerStatsProviderError("Het huidige API-Football-abonnement geeft geen toegang tot spelerstatistieken.",502);
     if(joined.includes("request")||joined.includes("limit"))throw new SocialPlayerStatsProviderError("De daglimiet van API-Football is bereikt.",429);
