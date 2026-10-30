@@ -102,9 +102,13 @@ test("Members toont gewone leden alleen een veilige preview en behoudt hun sessi
   assert.equal(preview.headers.get("location"), null);
   assert.equal(preview.headers.get("set-cookie"), null);
   assert.match(previewHtml, /class="members-preview"/);
-  assert.match(previewHtml, /href="https:\/\/buymeacoffee\.com\/ajaxpro"[^>]*>Petje Af<\/a>/);
-  assert.doesNotMatch(previewHtml, /href="\/club\/members\/contracten"|href="\/club\/jeugddossiers"|<iframe|AjaxPro Members/);
-  for (const [path, get] of [["/club/members/contracten", getContracts], ["/club/jeugddossiers", getJeugddossiers]] as const) {
+  assert.match(previewHtml, /class="members-preview__veil">[\s\S]*class="members-preview__content" aria-hidden="true">[\s\S]*class="members-preview__message support-strip"/);
+  assert.match(previewHtml, /class="members-preview__message support-strip"/);
+  assert.match(previewHtml, /Wil je AjaxPro steunen\? Dat kan via Petje Af, maandelijks of per jaar\./);
+  assert.match(previewHtml, /AjaxPro Supporters en Discord Server Boosters krijgen toegang tot Members\./);
+  assert.match(previewHtml, /href="https:\/\/buymeacoffee\.com\/ajaxpro"[^>]*>Petje Af <span aria-hidden="true">↗<\/span><\/a>/);
+  assert.doesNotMatch(previewHtml, /href="\/club\/members\/contracten"|href="\/club\/jeugddossiers"|<iframe|AjaxPro Members|DnMUfAFrWDQ|i\.ytimg\.com|members-video\.js/);
+  for (const [path, get] of [["/club/members/contracten", getContracts], ["/club/jeugddossiers", getJeugddossiers], ["/api/members?view=match-center", getMembers]] as const) {
     const denied = await get(await requestFor(path, ["ordinary"]));
     assert.equal(denied.status, 403, path);
     assert.equal(denied.headers.get("location"), null);
@@ -116,6 +120,12 @@ test("Members toont gewone leden alleen een veilige preview en behoudt hun sessi
     assert.equal(allowed.status, 200, role);
     assert.match(html, /href="\/club\/members\/contracten"/);
     assert.match(html, /href="\/club\/jeugddossiers"/);
+    assert.match(html, /href="\/club\/members\/match-center"/);
+    assert.match(html, /AjaxPro Videoarchief/);
+    assert.match(html, /data-video-archive/);
+    assert.equal((html.match(/data-video-card/g) ?? []).length, 62);
+    assert.match(html, /src="\/members-video\.js"/);
+    assert.match(allowed.headers.get("content-security-policy") ?? "", /frame-src https:\/\/www\.youtube-nocookie\.com/);
     assert.doesNotMatch(html, /class="members-preview"/);
   }
 });

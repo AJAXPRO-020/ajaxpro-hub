@@ -10,10 +10,10 @@ const analyst={...member,discordRoleIds:[roles.analyst]};
 
 test("een gewoon lid ziet MOTM en vergrendelde Members maar geen Staff",async()=>{
   const html=await page("Stemmen","<main>Inhoud</main>","",member,"motm").text();
-  assert.match(html,/portal-brand" href="\/club\/stand"/);
+  assert.match(html,/portal-brand" href="\/club"/);
   assert.match(html,/href="\/club\/stand" class="active" aria-current="page"/);
   assert.match(html,/href="\/club\/stand" class="active" aria-current="page">MOTM<\/a>/);
-  assert.match(html,/>Members 🔒<\/a>/);
+  assert.match(html,/>Members <span class="nav-lock" aria-hidden="true">🔒<\/span><\/a>/);
   assert.match(html,/aria-label="MOTM-navigatie"[\s\S]*href="\/club\/stand"/);
   assert.doesNotMatch(html,/>Staff<\/a>/);
   assert.match(html,/Ajacied/);
@@ -23,7 +23,7 @@ test("een gewoon lid ziet MOTM en vergrendelde Members maar geen Staff",async()=
 test("de Club-shell toont Staff voor de geconfigureerde staffrol",async()=>{
   const html=await page("Tools","<main>Inhoud</main>","",analyst,"tools").text();
   assert.match(html,/href="\/club\/tools" class="active" aria-current="page">Staff<\/a>/);
-  assert.equal((html.match(/>Members 🔒<\/a>/g)??[]).length,2);
+  assert.equal((html.match(/>Members <span class="nav-lock" aria-hidden="true">🔒<\/span><\/a>/g)??[]).length,2);
   assert.match(html,/href="\/club\/tools"/);
   assert.doesNotMatch(html,/>Analistentools<\/a>|>Teamtools<\/a>/);
   assert.equal((html.match(/class="mobile-menu"/g)??[]).length,1);
@@ -34,9 +34,9 @@ test("Staff-subpagina's en Members-dossiers houden de juiste hoofdnav actief",as
   const staff=await page("Socials","<main>Inhoud</main>","",analyst,"tools").text();
   const dossiers=await page("Na De Toekomst","<main>Inhoud</main>","",analyst,"jeugddossiers").text();
   assert.equal((staff.match(/href="\/club\/tools" class="active" aria-current="page">Staff<\/a>/g)??[]).length,2);
-  assert.equal((dossiers.match(/href="\/club\/members" class="active" aria-current="page">Members 🔒<\/a>/g)??[]).length,2);
-  assert.equal((staff.match(/class="portal-brand" href="\/club\/stand"/g)??[]).length,1);
-  assert.equal((dossiers.match(/class="portal-brand" href="\/club\/stand"/g)??[]).length,1);
+  assert.equal((dossiers.match(/href="\/club\/members" class="active" aria-current="page">Members <span class="nav-lock" aria-hidden="true">🔒<\/span><\/a>/g)??[]).length,2);
+  assert.equal((staff.match(/class="portal-brand" href="\/club"/g)??[]).length,1);
+  assert.equal((dossiers.match(/class="portal-brand" href="\/club"/g)??[]).length,1);
 });
 
 test("thuis- en uitwedstrijden gebruiken overal dezelfde centrale volgorde",()=>{
@@ -54,9 +54,9 @@ test("een toegangsweigering blijft binnen de MOTM-context",async()=>{
   assert.doesNotMatch(html,/href="\/club\/stand" class="active"/);
 });
 
-test("Club- en MOTM-pagina's laden stylesheetversie 37 en het mobiele menuscript",async()=>{
+test("Club- en MOTM-pagina's laden stylesheetversie 38 en het mobiele menuscript",async()=>{
   const html=await page("Club","<main>Inhoud</main>","",member,"home").text();
-  assert.match(html,/\/motm\.css\?v=37/);
+  assert.match(html,/\/motm\.css\?v=38/);
   assert.match(html,/\/portal-nav\.js/);
 });
 
