@@ -23,9 +23,11 @@ if (nextMatchBanner) {
   let currentPayload;
   let countdownTimer;
   let refreshTimer;
+  let refreshInFlight = false;
 
   const scheduleRefresh = (delay) => {
     window.clearTimeout(refreshTimer);
+    if (document.hidden) return;
     refreshTimer = window.setTimeout(loadMatchday, delay);
   };
 
@@ -97,6 +99,8 @@ if (nextMatchBanner) {
 
   function loadMatchday() {
     window.clearTimeout(refreshTimer);
+    if (document.hidden || refreshInFlight) return Promise.resolve();
+    refreshInFlight = true;
     return window.fetch("/api/next-match", { headers: { Accept: "application/json" }, cache: "no-store" })
       .then((response) => {
         if (!response.ok) throw new Error(`Next match returned ${response.status}`);
@@ -112,8 +116,16 @@ if (nextMatchBanner) {
           return;
         }
         nextMatchBanner.hidden = true;
+      })
+      .finally(() => {
+        refreshInFlight = false;
       });
   }
+
+  document.addEventListener("visibilitychange", () => {
+    window.clearTimeout(refreshTimer);
+    if (!document.hidden) loadMatchday();
+  });
 
   try {
     const cachedMatch = JSON.parse(window.localStorage.getItem(cacheKey));
