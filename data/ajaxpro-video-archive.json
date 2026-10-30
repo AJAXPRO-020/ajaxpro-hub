@@ -1,0 +1,664 @@
+{
+  "source": "https://www.youtube.com/@AjaxPro020/videos",
+  "retrievedAt": "2026-10-25",
+  "embedTemplate": "https://www.youtube.com/embed/{id}",
+  "selection": {
+    "videoCount": 62,
+    "order": "newest-first",
+    "styleBoundary": {
+      "includedThrough": {
+        "id": "eaBClhA848U",
+        "title": "\"Ajax heeft Feyenoord tactisch overklast!\" | Ajax - Feyenoord | TactiekCast",
+        "publishedAt": "2025-12-15T03:13:15-08:00",
+        "url": "https://www.youtube.com/watch?v=eaBClhA848U"
+      },
+      "excludedFrom": {
+        "id": "UqGTuBA11Do",
+        "title": "\"Grim maakte goed gebruik van zwakke plek Qarabag!\" | Qarabag - Ajax | TactiekCast",
+        "publishedAt": "2025-12-11T10:12:35-08:00",
+        "url": "https://www.youtube.com/watch?v=UqGTuBA11Do"
+      }
+    },
+    "styleNote": "Video 62 gebruikt nog de huidige compacte AjaxPro-opmaak met categorielabel, prominente titel en gekleurde onderbalk. Vanaf video 63 volgt structureel de oudere stijl met wit kader en een brede rode TactiekCast-balk."
+  },
+  "categories": [
+    {
+      "id": "wedstrijdanalyses",
+      "label": "Wedstrijdanalyses"
+    },
+    {
+      "id": "spelerprofielen",
+      "label": "Spelerprofielen"
+    },
+    {
+      "id": "tactiek-en-dossiers",
+      "label": "Tactiek & dossiers"
+    },
+    {
+      "id": "seizoen-en-club",
+      "label": "Seizoen & club"
+    }
+  ],
+  "videos": [
+    {
+      "id": "DnMUfAFrWDQ",
+      "url": "https://www.youtube.com/watch?v=DnMUfAFrWDQ",
+      "title": "Groningen - Ajax: Klaassen als sleutel in de zege van Míchel",
+      "thumbnail": "https://i.ytimg.com/vi/DnMUfAFrWDQ/maxresdefault.jpg",
+      "publishedAt": "2026-10-20T05:20:29-07:00",
+      "views": 3137,
+      "durationSeconds": 2375,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "FuN5lrJs8_M",
+      "url": "https://www.youtube.com/watch?v=FuN5lrJs8_M",
+      "title": "Hajduk Split - Ajax: een wake-upcall voor Míchel?",
+      "thumbnail": "https://i.ytimg.com/vi/FuN5lrJs8_M/maxresdefault.jpg",
+      "publishedAt": "2026-10-17T12:40:45-07:00",
+      "views": 2021,
+      "durationSeconds": 2013,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "5bp6wvUozyE",
+      "url": "https://www.youtube.com/watch?v=5bp6wvUozyE",
+      "title": "Ajax - NEC 1-1: was het echt zo slecht als iedereen zegt? | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/5bp6wvUozyE/maxresdefault.jpg",
+      "publishedAt": "2026-10-12T06:32:40-07:00",
+      "views": 3064,
+      "durationSeconds": 2235,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "ky9w14Zy1Kc",
+      "url": "https://www.youtube.com/watch?v=ky9w14Zy1Kc",
+      "title": "Ajax scoort 43 goals in 13 duels, maar achterin gaat het mis | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/ky9w14Zy1Kc/maxresdefault.jpg",
+      "publishedAt": "2026-10-07T10:58:23-07:00",
+      "views": 2270,
+      "durationSeconds": 2733,
+      "category": "tactiek-en-dossiers"
+    },
+    {
+      "id": "h335j1Nbrcg",
+      "url": "https://www.youtube.com/watch?v=h335j1Nbrcg",
+      "title": "Jordi Cruyff krijgt een 8: zo goed is Ajax bezig | Q&A",
+      "thumbnail": "https://i.ytimg.com/vi/h335j1Nbrcg/maxresdefault.jpg",
+      "publishedAt": "2026-10-04T07:15:30-07:00",
+      "views": 2688,
+      "durationSeconds": 2192,
+      "category": "seizoen-en-club"
+    },
+    {
+      "id": "zZZ375ylJv0",
+      "url": "https://www.youtube.com/watch?v=zZZ375ylJv0",
+      "title": "Hajduk, Atalanta & Midtjylland: dit wacht Ajax in Europa | Tactiekcast",
+      "thumbnail": "https://i.ytimg.com/vi/zZZ375ylJv0/maxresdefault.jpg",
+      "publishedAt": "2026-09-29T13:43:30-07:00",
+      "views": 1593,
+      "durationSeconds": 1640,
+      "category": "tactiek-en-dossiers"
+    },
+    {
+      "id": "_hKqWdEvtDw",
+      "url": "https://www.youtube.com/watch?v=_hKqWdEvtDw",
+      "title": "Bissouma kan veel toevoegen als hij bij de les blijft | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/_hKqWdEvtDw/maxresdefault.jpg",
+      "publishedAt": "2026-09-22T22:35:55-07:00",
+      "views": 5040,
+      "durationSeconds": 1641,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "cXFpKYDXXxI",
+      "url": "https://www.youtube.com/watch?v=cXFpKYDXXxI",
+      "title": "\"Nu moet je de finetuning gaan doen\" | Ajax - Excelsior | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/cXFpKYDXXxI/maxresdefault.jpg",
+      "publishedAt": "2026-09-22T08:41:34-07:00",
+      "views": 3340,
+      "durationSeconds": 1941,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "c5sG-FYKCRM",
+      "url": "https://www.youtube.com/watch?v=c5sG-FYKCRM",
+      "title": "\"Ondanks nederlaag toch positief gevoel! \" | Ajax - PSV | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/c5sG-FYKCRM/maxresdefault.jpg",
+      "publishedAt": "2026-09-07T04:50:40-07:00",
+      "views": 4149,
+      "durationSeconds": 1444,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "7ZM5ErW_XF8",
+      "url": "https://www.youtube.com/watch?v=7ZM5ErW_XF8",
+      "title": "Adingra heeft meer dan alleen maar snelheid | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/7ZM5ErW_XF8/maxresdefault.jpg",
+      "publishedAt": "2026-09-03T12:16:52-07:00",
+      "views": 8502,
+      "durationSeconds": 1756,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "qULNdG7di9s",
+      "url": "https://www.youtube.com/watch?v=qULNdG7di9s",
+      "title": "Meer dynamiek op de vleugel met Tsygankov! | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/qULNdG7di9s/maxresdefault.jpg",
+      "publishedAt": "2026-09-02T11:16:06-07:00",
+      "views": 7821,
+      "durationSeconds": 1523,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "Bi2zfooh0eU",
+      "url": "https://www.youtube.com/watch?v=Bi2zfooh0eU",
+      "title": "Amrabat voldoet aan het profiel van balansbewaker! | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/Bi2zfooh0eU/maxresdefault.jpg",
+      "publishedAt": "2026-08-30T11:21:24-07:00",
+      "views": 14845,
+      "durationSeconds": 1810,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "GtTkdklUcyE",
+      "url": "https://www.youtube.com/watch?v=GtTkdklUcyE",
+      "title": "\"Tolu geeft zo wel een visitekaartje af! \" | Ajax - Sion | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/GtTkdklUcyE/maxresdefault.jpg",
+      "publishedAt": "2026-08-28T11:13:18-07:00",
+      "views": 4633,
+      "durationSeconds": 1711,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "Nb0KuFO9nwE",
+      "url": "https://www.youtube.com/watch?v=Nb0KuFO9nwE",
+      "title": "\"Ouazane heeft iets dat anderen niet hebben\" | De Toekomst |",
+      "thumbnail": "https://i.ytimg.com/vi/Nb0KuFO9nwE/maxresdefault.jpg",
+      "publishedAt": "2026-08-23T07:24:11-07:00",
+      "views": 2303,
+      "durationSeconds": 1428,
+      "category": "seizoen-en-club"
+    },
+    {
+      "id": "afwn32ZFe3M",
+      "url": "https://www.youtube.com/watch?v=afwn32ZFe3M",
+      "title": "\"Elke wedstrijd kom je tot veel kansen, dat is positief! \" | Sion - Ajax | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/afwn32ZFe3M/maxresdefault.jpg",
+      "publishedAt": "2026-08-21T03:51:37-07:00",
+      "views": 2983,
+      "durationSeconds": 1632,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "qqIWJJg4c80",
+      "url": "https://www.youtube.com/watch?v=qqIWJJg4c80",
+      "title": "\"Bezetting is niet altijd logisch! \" | Ajax - Heerenveen | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/qqIWJJg4c80/maxresdefault.jpg",
+      "publishedAt": "2026-08-18T06:34:10-07:00",
+      "views": 1206,
+      "durationSeconds": 1854,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "BkE6-Z_OYms",
+      "url": "https://www.youtube.com/watch?v=BkE6-Z_OYms",
+      "title": "\"De afstemming moet nog stukken beter!\" | PEC Zwolle - Ajax | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/BkE6-Z_OYms/maxresdefault.jpg",
+      "publishedAt": "2026-08-11T06:16:39-07:00",
+      "views": 1611,
+      "durationSeconds": 1974,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "JpnOXMGhTcc",
+      "url": "https://www.youtube.com/watch?v=JpnOXMGhTcc",
+      "title": "\"Brandt liet in een paar minuten zijn klasse zien! \" | Ajax - Shelbourne | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/JpnOXMGhTcc/maxresdefault.jpg",
+      "publishedAt": "2026-08-07T11:14:21-07:00",
+      "views": 2289,
+      "durationSeconds": 1883,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "UVdQIr5tZhI",
+      "url": "https://www.youtube.com/watch?v=UVdQIr5tZhI",
+      "title": "Brandt is een buitengewone kwaliteitsimpuls!  | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/UVdQIr5tZhI/maxresdefault.jpg",
+      "publishedAt": "2026-08-01T13:25:58-07:00",
+      "views": 10792,
+      "durationSeconds": 2228,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "RX5BXYxGkrc",
+      "url": "https://www.youtube.com/watch?v=RX5BXYxGkrc",
+      "title": "\"Gloukh in deze rol komt in zijn kracht! \" | Ajax - Vojvodina | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/RX5BXYxGkrc/maxresdefault.jpg",
+      "publishedAt": "2026-08-01T02:45:47-07:00",
+      "views": 1818,
+      "durationSeconds": 2411,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "sT5KSOqIcKY",
+      "url": "https://www.youtube.com/watch?v=sT5KSOqIcKY",
+      "title": "Tolu is meer dan alleen een fysiek beest! | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/sT5KSOqIcKY/maxresdefault.jpg",
+      "publishedAt": "2026-07-30T02:23:09-07:00",
+      "views": 5147,
+      "durationSeconds": 2150,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "PDbKpwOnlVo",
+      "url": "https://www.youtube.com/watch?v=PDbKpwOnlVo",
+      "title": "De kracht en tekortkomingen van Gloukh als 10! | Dossier",
+      "thumbnail": "https://i.ytimg.com/vi/PDbKpwOnlVo/maxresdefault.jpg",
+      "publishedAt": "2026-07-27T02:00:16-07:00",
+      "views": 3498,
+      "durationSeconds": 1391,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "bX1VIAi7law",
+      "url": "https://www.youtube.com/watch?v=bX1VIAi7law",
+      "title": "\"Het fundament ligt best stevig\" | Vojvodina - Ajax | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/bX1VIAi7law/maxresdefault.jpg",
+      "publishedAt": "2026-07-25T00:00:05-07:00",
+      "views": 3112,
+      "durationSeconds": 1927,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "WGr_rK3GPUk",
+      "url": "https://www.youtube.com/watch?v=WGr_rK3GPUk",
+      "title": "Marcos Leonardo is een killer in de 16!  | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/WGr_rK3GPUk/maxresdefault.jpg",
+      "publishedAt": "2026-07-15T02:30:03-07:00",
+      "views": 8038,
+      "durationSeconds": 1355,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "FBIC0T8R5Sc",
+      "url": "https://www.youtube.com/watch?v=FBIC0T8R5Sc",
+      "title": "Krijgen we eindelijk de gewenste 6? | CVM | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/FBIC0T8R5Sc/maxresdefault.jpg",
+      "publishedAt": "2026-07-07T11:58:20-07:00",
+      "views": 5569,
+      "durationSeconds": 1928,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "zIt6HaUZm3c",
+      "url": "https://www.youtube.com/watch?v=zIt6HaUZm3c",
+      "title": "Ter Stegen is van topkwaliteit! | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/zIt6HaUZm3c/maxresdefault.jpg",
+      "publishedAt": "2026-07-03T03:03:49-07:00",
+      "views": 4534,
+      "durationSeconds": 2126,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "IqtKsCrNPM8",
+      "url": "https://www.youtube.com/watch?v=IqtKsCrNPM8",
+      "title": "\"Carrizo leek wel beter door hoe slecht het was\" | Seizoensterugblik (deel 2) | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/IqtKsCrNPM8/maxresdefault.jpg",
+      "publishedAt": "2026-06-26T08:30:54-07:00",
+      "views": 1684,
+      "durationSeconds": 2442,
+      "category": "seizoen-en-club"
+    },
+    {
+      "id": "dG5gbBZBYQU",
+      "url": "https://www.youtube.com/watch?v=dG5gbBZBYQU",
+      "title": "Caio Henrique is meer dan een linksback!  | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/dG5gbBZBYQU/maxresdefault.jpg",
+      "publishedAt": "2026-06-21T02:36:45-07:00",
+      "views": 4995,
+      "durationSeconds": 1552,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "QbS3Za9IINc",
+      "url": "https://www.youtube.com/watch?v=QbS3Za9IINc",
+      "title": "\"Je moet 2/3 gerichte aankopen doen\" | Seizoensterugblik (deel 1) | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/QbS3Za9IINc/maxresdefault.jpg",
+      "publishedAt": "2026-06-17T03:04:18-07:00",
+      "views": 1483,
+      "durationSeconds": 2774,
+      "category": "seizoen-en-club"
+    },
+    {
+      "id": "8iUo-e_7fHo",
+      "url": "https://www.youtube.com/watch?v=8iUo-e_7fHo",
+      "title": "Maakt Cruijff schoon schip? | Mislintat vs. Cruijff | Dossier",
+      "thumbnail": "https://i.ytimg.com/vi/8iUo-e_7fHo/maxresdefault.jpg",
+      "publishedAt": "2026-06-10T11:48:35-07:00",
+      "views": 2386,
+      "durationSeconds": 2367,
+      "category": "seizoen-en-club"
+    },
+    {
+      "id": "TWppHtGueyE",
+      "url": "https://www.youtube.com/watch?v=TWppHtGueyE",
+      "title": "Dani Ceballos overtuigt Jordi Cruijff WEL!  | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/TWppHtGueyE/maxresdefault.jpg",
+      "publishedAt": "2026-06-04T10:35:18-07:00",
+      "views": 4403,
+      "durationSeconds": 1904,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "xL3NqdbIRgE",
+      "url": "https://www.youtube.com/watch?v=xL3NqdbIRgE",
+      "title": "Past Michel in het profiel van Ajaxtrainer?  | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/xL3NqdbIRgE/maxresdefault.jpg",
+      "publishedAt": "2026-05-29T00:42:13-07:00",
+      "views": 6470,
+      "durationSeconds": 2523,
+      "category": "tactiek-en-dossiers"
+    },
+    {
+      "id": "lVD_wXY6wbQ",
+      "url": "https://www.youtube.com/watch?v=lVD_wXY6wbQ",
+      "title": "\"Het was een extreem angstig Ajax\" | Heerenveen - Ajax | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/lVD_wXY6wbQ/maxresdefault.jpg",
+      "publishedAt": "2026-05-20T02:07:07-07:00",
+      "views": 674,
+      "durationSeconds": 1636,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "L51ZaOmAGKw",
+      "url": "https://www.youtube.com/watch?v=L51ZaOmAGKw",
+      "title": "De erfenis van Mislintat | Mislintat vs. Cruijff | Dossier",
+      "thumbnail": "https://i.ytimg.com/vi/L51ZaOmAGKw/maxresdefault.jpg",
+      "publishedAt": "2026-05-13T12:01:44-07:00",
+      "views": 2327,
+      "durationSeconds": 1565,
+      "category": "seizoen-en-club"
+    },
+    {
+      "id": "akvLWFN5o9k",
+      "url": "https://www.youtube.com/watch?v=akvLWFN5o9k",
+      "title": "\"Aanvallend was het ook te vaak net niet goed\" | Ajax - PSV |TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/akvLWFN5o9k/maxresdefault.jpg",
+      "publishedAt": "2026-05-03T11:58:31-07:00",
+      "views": 717,
+      "durationSeconds": 1877,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "_uXHqtsW_qg",
+      "url": "https://www.youtube.com/watch?v=_uXHqtsW_qg",
+      "title": "Jorthy Mokio: Talent met vele kanten! | Dossier",
+      "thumbnail": "https://i.ytimg.com/vi/_uXHqtsW_qg/maxresdefault.jpg",
+      "publishedAt": "2026-04-28T07:16:49-07:00",
+      "views": 754,
+      "durationSeconds": 2127,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "Q1qIER3CysA",
+      "url": "https://www.youtube.com/watch?v=Q1qIER3CysA",
+      "title": "Prioriteit tussen de palen!? | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/Q1qIER3CysA/maxresdefault.jpg",
+      "publishedAt": "2026-04-17T05:07:13-07:00",
+      "views": 768,
+      "durationSeconds": 2521,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "-ScsOKM0wxA",
+      "url": "https://www.youtube.com/watch?v=-ScsOKM0wxA",
+      "title": "\"Deze Weghorst en Berghuis kunnen je verder brengen!\" | Heracles - Ajax |TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/-ScsOKM0wxA/maxresdefault.jpg",
+      "publishedAt": "2026-04-15T01:14:55-07:00",
+      "views": 627,
+      "durationSeconds": 1469,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "27ZGx3No6CI",
+      "url": "https://www.youtube.com/watch?v=27ZGx3No6CI",
+      "title": "Terugblik op de Future Cup!  | De Toekomst",
+      "thumbnail": "https://i.ytimg.com/vi/27ZGx3No6CI/maxresdefault.jpg",
+      "publishedAt": "2026-04-09T20:30:06-07:00",
+      "views": 442,
+      "durationSeconds": 2208,
+      "category": "seizoen-en-club"
+    },
+    {
+      "id": "y1pOQuSyEIk",
+      "url": "https://www.youtube.com/watch?v=y1pOQuSyEIk",
+      "title": "De breedtelijnen | TactiekClass",
+      "thumbnail": "https://i.ytimg.com/vi/y1pOQuSyEIk/maxresdefault.jpg",
+      "publishedAt": "2026-03-30T08:10:53-07:00",
+      "views": 601,
+      "durationSeconds": 1688,
+      "category": "tactiek-en-dossiers"
+    },
+    {
+      "id": "nv-Cx_pNQIE",
+      "url": "https://www.youtube.com/watch?v=nv-Cx_pNQIE",
+      "title": "\"De Klassieker werd gespeeld om niet te verliezen!\" | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/nv-Cx_pNQIE/maxresdefault.jpg",
+      "publishedAt": "2026-03-25T00:37:43-07:00",
+      "views": 437,
+      "durationSeconds": 849,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "flX3rP-D9lY",
+      "url": "https://www.youtube.com/watch?v=flX3rP-D9lY",
+      "title": "De vier fases van het voetbal | TactiekClass",
+      "thumbnail": "https://i.ytimg.com/vi/flX3rP-D9lY/maxresdefault.jpg",
+      "publishedAt": "2026-03-19T08:01:13-07:00",
+      "views": 697,
+      "durationSeconds": 1369,
+      "category": "tactiek-en-dossiers"
+    },
+    {
+      "id": "-ei-vZIDX8g",
+      "url": "https://www.youtube.com/watch?v=-ei-vZIDX8g",
+      "title": "\"De aanpassingen van Garcia bieden hoop voor het restant!\" | Ajax - Sparta | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/-ei-vZIDX8g/maxresdefault.jpg",
+      "publishedAt": "2026-03-16T14:36:24-07:00",
+      "views": 2683,
+      "durationSeconds": 1851,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "zIdyC9YOk2w",
+      "url": "https://www.youtube.com/watch?v=zIdyC9YOk2w",
+      "title": "Wat kunnen we verwachten van Oscar Garcia? | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/zIdyC9YOk2w/maxresdefault.jpg",
+      "publishedAt": "2026-03-09T07:10:37-07:00",
+      "views": 2630,
+      "durationSeconds": 1955,
+      "category": "tactiek-en-dossiers"
+    },
+    {
+      "id": "slEYCZehbQY",
+      "url": "https://www.youtube.com/watch?v=slEYCZehbQY",
+      "title": "'Het spel was nog slechter dan het veld in Zwolle' | PEC - Ajax  | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/slEYCZehbQY/maxresdefault.jpg",
+      "publishedAt": "2026-03-02T13:09:00-08:00",
+      "views": 584,
+      "durationSeconds": 1144,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "pwdXX98ZyVE",
+      "url": "https://www.youtube.com/watch?v=pwdXX98ZyVE",
+      "title": "De strijd om het drukzetten & hoofdpijn om corners! | Ajax - NEC | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/pwdXX98ZyVE/maxresdefault.jpg",
+      "publishedAt": "2026-02-22T13:36:35-08:00",
+      "views": 615,
+      "durationSeconds": 979,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "W4hmIrd_O_w",
+      "url": "https://www.youtube.com/watch?v=W4hmIrd_O_w",
+      "title": "Terug naar het vertrouwde systeem van Farioli?  | Ajax - Fortuna | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/W4hmIrd_O_w/maxresdefault.jpg",
+      "publishedAt": "2026-02-16T08:25:38-08:00",
+      "views": 935,
+      "durationSeconds": 1435,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "gMFGi4L96xQ",
+      "url": "https://www.youtube.com/watch?v=gMFGi4L96xQ",
+      "title": "Hoe kan Ajax zichzelf gaan belonen in wedstrijden? | AZ - Ajax |TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/gMFGi4L96xQ/maxresdefault.jpg",
+      "publishedAt": "2026-02-11T13:42:14-08:00",
+      "views": 839,
+      "durationSeconds": 2180,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "FpddjycThi4",
+      "url": "https://www.youtube.com/watch?v=FpddjycThi4",
+      "title": "\"Dit is een soort buitenspeler die je nog niet hebt!\" | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/FpddjycThi4/maxresdefault.jpg",
+      "publishedAt": "2026-01-31T05:13:45-08:00",
+      "views": 4434,
+      "durationSeconds": 763,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "74fQCq5lIK8",
+      "url": "https://www.youtube.com/watch?v=74fQCq5lIK8",
+      "title": "Huren nu is meer kans op kopen in de zomer!  | Dossier",
+      "thumbnail": "https://i.ytimg.com/vi/74fQCq5lIK8/maxresdefault.jpg",
+      "publishedAt": "2026-01-26T08:32:14-08:00",
+      "views": 670,
+      "durationSeconds": 2369,
+      "category": "seizoen-en-club"
+    },
+    {
+      "id": "7fEC0qBFadc",
+      "url": "https://www.youtube.com/watch?v=7fEC0qBFadc",
+      "title": "Zo hield Ajax kans op CL vervolg levend!  | Villarreal - Ajax | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/7fEC0qBFadc/maxresdefault.jpg",
+      "publishedAt": "2026-01-21T13:02:36-08:00",
+      "views": 719,
+      "durationSeconds": 1019,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "R_P2u6kjXkk",
+      "url": "https://www.youtube.com/watch?v=R_P2u6kjXkk",
+      "title": "\"Zinchenko is een buitenkansje!\" | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/R_P2u6kjXkk/maxresdefault.jpg",
+      "publishedAt": "2026-01-18T13:04:58-08:00",
+      "views": 3533,
+      "durationSeconds": 1091,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "ZLn7aOYh5qw",
+      "url": "https://www.youtube.com/watch?v=ZLn7aOYh5qw",
+      "title": "Grinta op de backpositie? Santos-talent op de radar!  | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/ZLn7aOYh5qw/maxresdefault.jpg",
+      "publishedAt": "2026-01-17T03:29:55-08:00",
+      "views": 887,
+      "durationSeconds": 1084,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "mgAWMjqL3W4",
+      "url": "https://www.youtube.com/watch?v=mgAWMjqL3W4",
+      "title": "Met deze 3 verbeterpunten maakt Ajax reëele kans op plek 2 | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/mgAWMjqL3W4/maxresdefault.jpg",
+      "publishedAt": "2026-01-14T07:53:59-08:00",
+      "views": 573,
+      "durationSeconds": 680,
+      "category": "tactiek-en-dossiers"
+    },
+    {
+      "id": "Tz5WU1FugdI",
+      "url": "https://www.youtube.com/watch?v=Tz5WU1FugdI",
+      "title": "\"De wissel van Regeer veranderde alles!\" | Telstar - Ajax | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/Tz5WU1FugdI/maxresdefault.jpg",
+      "publishedAt": "2026-01-12T11:25:59-08:00",
+      "views": 787,
+      "durationSeconds": 1066,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "BVH-MDJNpko",
+      "url": "https://www.youtube.com/watch?v=BVH-MDJNpko",
+      "title": "Nieuwe concurrent of vervanger voor Wijndal?!  (deel 2) | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/BVH-MDJNpko/maxresdefault.jpg",
+      "publishedAt": "2026-01-09T01:00:18-08:00",
+      "views": 1127,
+      "durationSeconds": 1497,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "nb1Xjrv1OcM",
+      "url": "https://www.youtube.com/watch?v=nb1Xjrv1OcM",
+      "title": "Vijf interessante huuropties voor de nummer 6 bij Ajax | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/nb1Xjrv1OcM/maxresdefault.jpg",
+      "publishedAt": "2026-01-07T01:57:37-08:00",
+      "views": 1698,
+      "durationSeconds": 1666,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "C421-1_Hh40",
+      "url": "https://www.youtube.com/watch?v=C421-1_Hh40",
+      "title": "Wie wordt de concurrent of vervanger voor Wijndal?!  (deel 1) | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/C421-1_Hh40/maxresdefault.jpg",
+      "publishedAt": "2025-12-30T10:52:17-08:00",
+      "views": 1329,
+      "durationSeconds": 1440,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "SO_20lZwatc",
+      "url": "https://www.youtube.com/watch?v=SO_20lZwatc",
+      "title": "Jordi Cruijff bezit meer kwaliteiten dan hem worden toegeschreven! | Dossier",
+      "thumbnail": "https://i.ytimg.com/vi/SO_20lZwatc/maxresdefault.jpg",
+      "publishedAt": "2025-12-29T04:23:13-08:00",
+      "views": 4177,
+      "durationSeconds": 2068,
+      "category": "seizoen-en-club"
+    },
+    {
+      "id": "WnVZWQra6pg",
+      "url": "https://www.youtube.com/watch?v=WnVZWQra6pg",
+      "title": "\"Huiswerk voor Grim tijdens de feestdagen!\" | NEC - Ajax | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/WnVZWQra6pg/maxresdefault.jpg",
+      "publishedAt": "2025-12-23T02:28:26-08:00",
+      "views": 568,
+      "durationSeconds": 1412,
+      "category": "wedstrijdanalyses"
+    },
+    {
+      "id": "t7kDYRRu5u4",
+      "url": "https://www.youtube.com/watch?v=t7kDYRRu5u4",
+      "title": "\"Multi-inzetbare Tomiyasu is mits fit een extreme aanwinst!\" | Profiel",
+      "thumbnail": "https://i.ytimg.com/vi/t7kDYRRu5u4/maxresdefault.jpg",
+      "publishedAt": "2025-12-16T05:04:20-08:00",
+      "views": 3754,
+      "durationSeconds": 1018,
+      "category": "spelerprofielen"
+    },
+    {
+      "id": "eaBClhA848U",
+      "url": "https://www.youtube.com/watch?v=eaBClhA848U",
+      "title": "\"Ajax heeft Feyenoord tactisch overklast!\" | Ajax - Feyenoord | TactiekCast",
+      "thumbnail": "https://i.ytimg.com/vi/eaBClhA848U/maxresdefault.jpg",
+      "publishedAt": "2025-12-15T03:13:15-08:00",
+      "views": 1594,
+      "durationSeconds": 1026,
+      "category": "wedstrijdanalyses"
+    }
+  ]
+}

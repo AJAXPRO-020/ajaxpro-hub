@@ -1,7 +1,24 @@
-.contracts-page {
-  background:
-    linear-gradient(180deg, rgba(179, 15, 36, 0.08), transparent 260px),
-    var(--bg);
+/* The Club route does not load the former public-site stylesheet. These
+   declarations restore the intended grids without changing contract content. */
+.contracts-page{max-width:980px}
+.contracts-hero{padding-block:18px 34px}
+.contracts-hero h1{max-width:760px;margin:0;font-size:clamp(2.55rem,5vw,3.6rem);font-weight:800;line-height:1.04;letter-spacing:-.035em}
+.contracts-hero__lead{max-width:62ch;margin-top:12px;font-size:1rem;line-height:1.6}
+.contracts-summary{display:grid;grid-template-columns:1fr;overflow:hidden;margin-top:26px;border:1px solid rgba(255,255,255,.12)}
+.contracts-content{padding-bottom:72px}
+.contracts-status-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;margin-bottom:42px}
+.contracts-grid{display:grid;grid-template-columns:1fr}
+.contract-card>.contract-card__identity{padding:18px 18px 0}
+.contract-card__date{margin:8px 0 0;padding:0 18px 18px;color:#aab3c2;font-size:.78rem;font-weight:700}
+@media (min-width: 620px) {
+  .contracts-summary { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* Keep the static registry markup self-contained inside the Club shell. */
+.contracts-page .contracts-summary{display:grid;grid-template-columns:1fr}
+.contracts-page .contracts-grid{display:grid}
+@media (min-width: 620px) {
+  .contracts-page .contracts-summary { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 .contracts-hero {
