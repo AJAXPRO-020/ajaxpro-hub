@@ -241,6 +241,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .match-section .section-heading h2{order:1}
 .match-section .section-heading .eyebrow{order:2;margin:4px 0 0;color:var(--muted);font-size:.78rem;font-weight:700;letter-spacing:0;text-transform:none}
 .standing-leaders .section-heading .eyebrow,.result-winner .eyebrow,.management-section>.eyebrow{display:none}
+.members-breadcrumb{display:flex;align-items:center;gap:8px;margin:6px 0 22px;color:var(--muted-soft);font-size:.78rem;font-weight:700}.members-breadcrumb a{color:var(--text);text-decoration:none}.members-breadcrumb a:hover,.members-breadcrumb a:focus-visible{color:#e37484}.members-breadcrumb span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .match-head{display:flex;min-width:0;flex-direction:column;border-radius:14px;background:rgba(17,25,38,.7)}
 .match-head>.status{order:1;align-self:flex-start;margin-bottom:var(--space-md)}
 .match-head>h1{order:2;max-width:100%;margin-bottom:var(--space-xs);overflow-wrap:break-word;word-break:normal}
