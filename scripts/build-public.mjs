@@ -13,7 +13,7 @@ const rootFiles = [
   "match-center.js", "members-video.js", "motm-admin.js", "portal-nav.js", "programma.js", "script.js",
   "contracten.css", "jeugddossiers.css", "match-center.css", "members.css", "motm.css",
   "programma.css", "socials-png.css", "socials-quote-large.css",
-  "socials.css", "styles.css",
+  "socials.css", "styles.css", "system-status.css",
   "llms.txt", "openapi.json", "robots.txt", "sitemap.xml",
 ];
 const publicExtensions = new Set([".png", ".jpg", ".jpeg", ".webp", ".svg", ".woff2", ".otf", ".ico"]);

@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 import { systemStatusMarkup } from "../lib/system-status";
 
@@ -16,5 +17,10 @@ test("systeemstatus toont actuele aandacht, bestaande herstelroute en onzekere s
   assert.match(html, /class="system-status-card system-status-card--attention"/);
   assert.match(html, /href="\/club\/motm\/beheer"/);
   assert.match(html, /system-status-card--unknown/);
-  assert.match(html, /GitHub Actions ↗/);
+  assert.match(html, />GitHub Actions<\/a>/);
+});
+
+test("productiebouw publiceert de systeemstatus-stylesheet", () => {
+  const buildScript = readFileSync(new URL("../scripts/build-public.mjs", import.meta.url), "utf8");
+  assert.match(buildScript, /"system-status\.css"/);
 });
