@@ -16,5 +16,5 @@ test("systeemstatus toont actuele aandacht, bestaande herstelroute en onzekere s
   assert.match(html, /class="system-status-card system-status-card--attention"/);
   assert.match(html, /href="\/club\/motm\/beheer"/);
   assert.match(html, /system-status-card--unknown/);
-  assert.match(html, /Open GitHub Actions/);
+  assert.match(html, /GitHub Actions ↗/);
 });
