@@ -14,6 +14,7 @@ export interface VideoStore{
  reserve(input:ReserveInput):Promise<{job:VideoJob;created:boolean}>;
  patch(id:string,patch:Partial<VideoJob>):Promise<VideoJob>;
  claimCheck(id:string):Promise<boolean>;
+  recover(id:string):Promise<VideoJob|null>;
 }
 export function postgresVideoStore():VideoStore{
  const get=async(id:string)=>{const [r]=await db()`SELECT * FROM socials_video_jobs WHERE id=${id}`;return r as VideoJob??null};
@@ -40,5 +41,6 @@ export function postgresVideoStore():VideoStore{
   })},
   async patch(id,p){const allowed=["status","render_id","output_url","available_until","error","checked_at"] as const;const values:Record<string,unknown>={updated_at:new Date()};for(const key of allowed)if(key in p)values[key]=p[key];const [r]=await db()`UPDATE socials_video_jobs SET ${db()(values)} WHERE id=${id} RETURNING *`;return r as VideoJob},
   async claimCheck(id){const rows=await db()`UPDATE socials_video_jobs SET checked_at=now() WHERE id=${id} AND (checked_at IS NULL OR checked_at<now()-interval '4 seconds') RETURNING id`;return rows.length>0},
+  async recover(id){const [r]=await db()`UPDATE socials_video_jobs SET status='failed',error='Deze render is door een beheerder vrijgegeven nadat de opdracht te lang actief bleef. Controleer Shotstack en probeer daarna bewust opnieuw.',updated_at=now() WHERE id=${id} AND status IN ('submitting','queued','fetching','rendering','uncertain') AND created_at<now()-interval '30 minutes' RETURNING *`;return r as VideoJob??null},
  };
 }

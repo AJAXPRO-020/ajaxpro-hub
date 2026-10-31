@@ -13,6 +13,10 @@ export async function handleVideo(request:Request,session:Session,service=videoS
    const reader=request.body?.getReader();let text="",bytes=0;const decoder=new TextDecoder();
    if(reader)try{while(true){const {done,value}=await reader.read();if(done)break;bytes+=value.byteLength;if(bytes>2048){await reader.cancel();return json({error:"Aanvraag is te groot."},413)}text+=decoder.decode(value,{stream:true})}text+=decoder.decode()}finally{reader.releaseLock()}
    let b:any;try{b=JSON.parse(text)}catch{return json({error:"Ongeldige aanvraag."},400)}
+   if(b.action==="recover"){
+    if(typeof b.jobId!=="string")return json({error:"Ongeldige aanvraag."},400);
+    return json({job:await service.recover(b.jobId)},200);
+   }
    if(typeof b.fixture!=="string"||typeof b.requestKey!=="string"||(b.regenerateOf!==undefined&&typeof b.regenerateOf!=="string")||(b.data!==undefined&&(typeof b.data!=="object"||b.data===null)))return json({error:"Ongeldige aanvraag."},400);
    return json({job:await service.start(b.fixture,session.userId,b.requestKey,b.regenerateOf,b.data)},202);
   }

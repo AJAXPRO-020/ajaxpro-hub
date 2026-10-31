@@ -7,6 +7,7 @@ import { postgresVideoStore,isActive,type VideoStore,type VideoJob } from "./soc
 export type VideoDependencies={store:VideoStore;fixtures:()=>Promise<SocialMatchdayFixture[]>;snapshot:(key:string)=>Promise<SocialsMatchStatsSnapshot|null>;client:ReturnType<typeof shotstackClient>;config:()=>{music:string};build:(data:VideoData,music:string)=>unknown;now:()=>number};
 const defaults=():VideoDependencies=>({store:postgresVideoStore(),fixtures:loadSocialMatchdayFixtures,snapshot:loadSocialsMatchStatsSnapshot,client:shotstackClient(),config:videoConfig,build:buildVideoEdit,now:Date.now});
 export const publicJob=(j:VideoJob & {providerStage?:string})=>({id:j.id,fixtureKey:j.fixture_key,status:j.status,stage:j.providerStage??j.status,data:j.render_data,createdAt:j.created_at,updatedAt:j.updated_at,error:j.error,availableUntil:j.available_until,mediaUrl:j.status==="done"?`/api/club-tools?view=socials-video-media&id=${j.id}`:null});
+export const STALE_RENDER_MS=30*60_000;
 export function videoService(overrides:Partial<VideoDependencies>={}){
  const d={...defaults(),...overrides};
  const fixture=async(key:string)=>{if(!key||key.length>300)throw new VideoError("Ongeldige wedstrijd.",400);const f=(await d.fixtures()).find(f=>f.fixture_key===key);if(!f)throw new VideoError("Wedstrijd niet gevonden.",404);return f};
@@ -29,6 +30,11 @@ export function videoService(overrides:Partial<VideoDependencies>={}){
  }
  return {
   refresh,
+  async recover(id:string){
+   const job=await d.store.get(id);
+   if(!job||!isActive(job)||d.now()-new Date(job.created_at).getTime()<STALE_RENDER_MS)throw new VideoError("Deze render is nog niet lang genoeg actief om vrij te geven.",409);
+   return publicJob(await d.store.recover(id)??job);
+  },
   async overview(key:string){const f=await fixture(key),s=await d.snapshot(key);let data:VideoData|null=null,validationError:string|null=null,configError:string|null=null;
    try{data=videoData(f,s,d.now())}catch(e){if(e instanceof VideoError)validationError=e.message;else throw e}
    try{d.config()}catch(e){configError=e instanceof VideoError?e.message:"Videogeneratie is nog niet ingesteld."}
