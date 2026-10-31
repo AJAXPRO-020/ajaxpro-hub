@@ -19,11 +19,13 @@ test("Socials registreert uitsluitend de twee afgesproken outputformaten",()=>{
   assert.deepEqual(socialOutputFormats.map(({width,height})=>[width,height]),[[1080,1350],[1080,1920]]);
 });
 
-test("Socials toont uitsluitend wedstrijden binnen veertien dagen rond nu",()=>{
+test("Socials toont recente afgeronde en aankomende wedstrijden uit de centrale context",()=>{
   const source=read("../lib/socials-match-context.ts");
   assert.match(source,/FROM matchday_fixtures/);
-  assert.match(source,/kickoff_at > now\(\) - interval '14 days'/);
-  assert.match(source,/kickoff_at < now\(\) \+ interval '14 days'/);
+  assert.match(source,/WITH recent_finished AS/);
+  assert.match(source,/LIMIT 2/);
+  assert.match(source,/WITH recent_finished AS[\s\S]*upcoming/);
+  assert.match(source,/LIMIT 3/);
   assert.match(source,/ORDER BY kickoff_at ASC/);
   assert.doesNotMatch(source,/INSERT|UPDATE|DELETE|CREATE TABLE/i);
 });

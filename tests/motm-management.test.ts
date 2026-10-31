@@ -41,12 +41,13 @@ test("beheerbron gebruikt soft delete, revision locking, audit en kopieert geen 
   assert.match(source,/deleted_at=now\(\)/);assert.match(source,/revision=revision\+1/);assert.match(source,/AND revision=\$\{/);assert.match(source,/motm_audit_log/);assert.doesNotMatch(source,/INSERT INTO motm_votes/);assert.doesNotMatch(source,/DELETE FROM motm_votes/);
 });
 
-test("Discord-mededeling gebruikt webhook, allowed_mentions en eenmalige databasevergrendeling",()=>{
+test("Discord-mededeling gebruikt webhook, allowed_mentions en eenmalige atomische claim",()=>{
   const source=readFileSync(new URL("../api-impl/motm/manage.ts",import.meta.url),"utf8");
   const announcements=readFileSync(new URL("../lib/motm-announcements.ts",import.meta.url),"utf8");
   const migration=readFileSync(new URL("../db/migrations/008_motm_announcements.sql",import.meta.url),"utf8");
-  for(const value of ["DISCORD_MOTM_ANNOUNCEMENT_WEBHOOK","allowed_mentions: { parse: [\"everyone\"] }","FOR UPDATE","announcement_sent_at","announcement_sent_by_discord_user_id","announcement_sent"])assert.ok(announcements.includes(value),value);
-  assert.match(source,/sendAnnouncement\(announcementWebhook\(\),text,link\)/);
+  for(const value of ["DISCORD_MOTM_ANNOUNCEMENT_WEBHOOK","allowed_mentions: { parse: [\"everyone\"] }","announcement_sent_at","announcement_sent_by_discord_user_id","announcement_sent"])assert.ok(announcements.includes(value),value);
+  assert.match(announcements,/announcement_status='sending'/);
+  assert.match(announcements,/sendAnnouncement\(announcementWebhook\(\), text, link\)/);
   assert.match(migration,/announcement_sent_at/);assert.match(migration,/announcement_sent_by_discord_user_id/);
 });
 
