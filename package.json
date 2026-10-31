@@ -6,6 +6,7 @@
     "db:migrate": "psql \"$DATABASE_URL\" -v ON_ERROR_STOP=1 -f db/migrations/001_motm.sql",
     "db:migrate:management": "tsx scripts/migrate-management.ts",
     "db:migrate:matchday": "tsx scripts/migrate-matchday.ts",
+    "db:migrate:future": "tsx scripts/migrate.ts",
     "dev:socials": "tsx scripts/dev-socials.ts",
     "db:migrate:socials-video": "tsx scripts/migrate-socials-video.ts"
   },
