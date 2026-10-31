@@ -10,7 +10,7 @@ const marker = join(output, ".ajaxpro-generated");
 const rootFiles = [
   "404.html", "geen-toegang.html", "index.html", "programma.html",
   "club.js", "contracten-ui.js", "jeugddossiers-manage.js", "jeugddossiers.js",
-  "match-center.js", "members-video.js", "motm-admin.js", "portal-nav.js", "programma.js", "script.js",
+  "match-center.js", "members-video.js", "motm-admin.js", "portal-nav.js", "programma.js", "script.js", "system-status.js",
   "contracten.css", "jeugddossiers.css", "match-center.css", "members.css", "motm.css",
   "programma.css", "socials-png.css", "socials-quote-large.css",
   "socials.css", "styles.css", "system-status.css",
