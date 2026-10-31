@@ -4,9 +4,9 @@ Historical SQL files remain immutable. Duplicate numbers `016`, `027` and `031`
 are preserved because renaming them would falsify the existing history.
 
 `035_migration_registry.sql` is a one-time bootstrap. It creates
-`schema_migrations` and records only the explicitly confirmed production
-baseline `034_motm_announcement_delivery.sql`. Earlier migrations are not
-silently marked as applied.
+`schema_migrations` and records the explicitly confirmed production baseline
+`034_motm_announcement_delivery.sql` plus its own `bootstrap-035` marker.
+Earlier migrations are not silently marked as applied.
 
 Future migrations start at `036`. Run them only with the explicit unpooled Neon
 connection and target identity:

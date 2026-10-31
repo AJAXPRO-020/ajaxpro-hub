@@ -10,10 +10,12 @@ test("migratiehistorie behoudt dubbele historische nummers maar kent geen dubbel
   assert.equal(new Set(future.map(file => file.slice(0, 3))).size, future.length);
 });
 
-test("migratieregistratie registreert alleen de bevestigde 034-baseline", () => {
+test("migratieregistratie registreert de bevestigde 034-baseline en bootstrap 035", () => {
   const source = readFileSync(new URL("../db/migrations/035_migration_registry.sql", import.meta.url), "utf8");
   assert.match(source, /CREATE TABLE IF NOT EXISTS schema_migrations/);
   assert.match(source, /034_motm_announcement_delivery\.sql/);
+  assert.match(source, /035_migration_registry\.sql/);
+  assert.match(source, /bootstrap-035/);
   assert.doesNotMatch(source, /'00[1-9]_|'01[0-9]_|'02[0-9]_|'031_/);
 });
 
