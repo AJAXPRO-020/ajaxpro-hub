@@ -1,24 +1,23 @@
-import { amsterdamDateKey, FINISHED_STATUSES } from "./matchday-live";
+import { amsterdamDateKey } from "./matchday-live";
 
-type PlannedFixture = {
-  kickoff_at: Date | string;
-  provider_status: string | null;
-  finished_at: Date | string | null;
+type PlannedMatch = {
+  status: string;
+  scheduled_open_at: Date | string | null;
+  scheduled_close_at: Date | string | null;
 };
 
-// Keep late matches eligible across midnight, with a bound if provider data stalls.
-export const announcementPlan = (fixture: PlannedFixture | undefined, now = new Date()) => {
-  if (!fixture || fixture.finished_at || FINISHED_STATUSES.has(fixture.provider_status ?? "")
-    || ["PST", "SUSP"].includes(fixture.provider_status ?? "")) {
+export const announcementPlan = (match: PlannedMatch | undefined, now = new Date()) => {
+  if (!match || !match.scheduled_open_at || !match.scheduled_close_at || match.status === "closed") {
     return { status: "no_match" as const, active: false, due: false };
   }
-  const kickoff = new Date(fixture.kickoff_at);
-  const elapsedMs = now.getTime() - kickoff.getTime();
-  const active = Number.isFinite(elapsedMs) && elapsedMs < 6 * 60 * 60_000
-    && (amsterdamDateKey(kickoff) === amsterdamDateKey(now) || elapsedMs >= 0);
+  const openAt = new Date(match.scheduled_open_at);
+  const closeAt = new Date(match.scheduled_close_at);
+  const active = Number.isFinite(openAt.getTime()) && Number.isFinite(closeAt.getTime())
+    && now.getTime() < closeAt.getTime()
+    && (amsterdamDateKey(openAt) === amsterdamDateKey(now) || now.getTime() >= openAt.getTime());
   return {
-    status: active ? "match_day" as const : "no_match" as const,
+    status: active ? "poll_day" as const : "no_match" as const,
     active,
-    due: active && elapsedMs >= 70 * 60_000,
+    due: active && match.status === "open" && now.getTime() >= openAt.getTime(),
   };
 };

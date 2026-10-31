@@ -1,13 +1,13 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { buildSystemStatusReport, footballStatusCard, systemStatusMarkup } from "../lib/system-status";
+import { buildSystemStatusReport, matchDataStatusCard, systemStatusMarkup } from "../lib/system-status";
 
 const cards = [
   { id: "motm", title: "MOTM", tone: "ok" as const, label: "In orde", summary: "Geen actuele problemen.", diagnostics: [{ label: "Actuele stemmingen", value: "0" }], manualAction: "Nee" as const },
   { id: "discord", title: "Discord", tone: "attention" as const, label: "Controle nodig", summary: "Een melding vraagt aandacht.", detail: "Controleer Discord.", href: "/club/motm/beheer", hrefLabel: "Open MOTM-beheer", diagnostics: [{ label: "Foutcategorie", value: "Status niet bevestigd" }], manualAction: "Ja" as const },
   { id: "video", title: "Video Generator", tone: "ok" as const, label: "Actief", summary: "Een render wordt verwerkt.", diagnostics: [], manualAction: "Nee" as const },
-  { id: "football", title: "API-Football", tone: "unknown" as const, label: "Onbekend", summary: "Quota niet beschikbaar.", diagnostics: [{ label: "Quota", value: "Niet betrouwbaar beschikbaar" }], manualAction: "Nee" as const },
+  { id: "matchday", title: "Wedstrijddata", tone: "unknown" as const, label: "Onbekend", summary: "Broncontrole niet beschikbaar.", diagnostics: [{ label: "Laatste broncontrole", value: "Niet geregistreerd" }], manualAction: "Nee" as const },
   { id: "database", title: "Database", tone: "ok" as const, label: "Bereikbaar", summary: "Migraties geregistreerd.", diagnostics: [], manualAction: "Nee" as const },
 ];
 
@@ -31,7 +31,7 @@ test("productiebouw publiceert de systeemstatus-assets", () => {
 
 test("rapport bevat vijf systemen, technische context en de analyseopdracht", () => {
   const report = buildSystemStatusReport(cards, new Date("2026-10-31T12:00:00Z"));
-  for (const title of ["MOTM", "Discord", "Video Generator", "API-Football", "Database"]) assert.match(report, new RegExp(`\\[${title.replace("-", "\\-")}\\]`));
+  for (const title of ["MOTM", "Discord", "Video Generator", "Wedstrijddata", "Database"]) assert.match(report, new RegExp(`\\[${title.replace("-", "\\-")}\\]`));
   assert.match(report, /Tijdzone: Europe\/Amsterdam/);
   assert.match(report, /Actuele aandachtspunten: Discord/);
   assert.match(report, /Handmatige actie noodzakelijk: Ja/);
@@ -45,9 +45,9 @@ test("rapport schermt geheimen, connectionstrings en stackregels af", () => {
   assert.match(report, /\[afgeschermd\]/);
 });
 
-test("een beschikbare refresh is zonder providerfout geen waarschuwing", () => {
-  const value = footballStatusCard({ provider_status: "NS", last_success_at: null, next_refresh_at: "2026-10-31T10:00:00Z", finished_at: null }, new Date("2026-10-31T12:00:00Z").getTime());
-  assert.equal(value.tone, "unknown");
+test("recente wedstrijdbrondata is gezond zonder externe providerstatus", () => {
+  const value = matchDataStatusCard({ source_checked_at: "2026-10-31T10:00:00Z", next_kickoff_at: "2026-11-01T12:00:00Z", upcoming_count: 3, latest_fotmob_import: null, latest_confirmed_result: null }, new Date("2026-10-31T12:00:00Z").getTime());
+  assert.equal(value.tone, "ok");
   assert.equal(value.manualAction, "Nee");
 });
 

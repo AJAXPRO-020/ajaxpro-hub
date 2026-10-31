@@ -53,7 +53,7 @@ test("Discord-mededeling gebruikt webhook, allowed_mentions en eenmalige atomisc
 
 test("automatische mededeling hergebruikt dezelfde lock en schrijft een systeem-audit",()=>{
   const source=readFileSync(new URL("../lib/motm-announcements.ts",import.meta.url),"utf8");
-  for(const value of ["system:auto-minute-80","Automatische mededeling","trigger: \"minute_80\"","status !== \"open\""])assert.ok(source.includes(value),value);
+  for(const value of ["system:auto-schedule","Automatische mededeling","trigger: \"scheduled_open\"","status !== \"open\""])assert.ok(source.includes(value),value);
 });
 
 test("alle publieke hoofdqueries filteren verwijderde stemmingen",()=>{

@@ -24,7 +24,7 @@ const html = (overrides: { teamRows?: unknown[]; players?: Record<string, unknow
       homeTeam: { id: 6422, name: "Fortuna Sittard" },
       awayTeam: { id: 8593, name: "Ajax" },
     },
-    header: { teams: [{ id: 6422, score: 1 }, { id: 8593, score: 5 }] },
+    header: { status: { finished: true }, teams: [{ id: 6422, score: 1 }, { id: 8593, score: 5 }] },
     content: {
       stats: { Periods: { All: { stats: [{ key: "top_stats", stats: overrides.teamRows ?? [
         { key: "BallPossesion", type: "graph", stats: [35, 65] },
@@ -65,6 +65,7 @@ test("parseert de FotMob-pagina naar het afgeschermde Socials-model", () => {
     homeScore: 1,
     awayScore: 5,
     date: "2026-09-12T18:00:00.000Z",
+    finished: true,
   });
   assert.deepEqual(result.teamStats, {
     possession: 65, xg: 4.5, xgot: 5.75, shots: 27, shotsOnTarget: 10, corners: 11,

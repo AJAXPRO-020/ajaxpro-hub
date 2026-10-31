@@ -46,8 +46,8 @@ if (nextMatchBanner) {
       clockField.textContent = formatCountdown(kickoff);
       if (kickoff.getTime() <= Date.now()) {
         window.clearInterval(countdownTimer);
-        stateField.textContent = "Live";
-        clockField.textContent = "AFTRAP";
+        stateField.textContent = "Programma bijwerken";
+        clockField.textContent = "AFGETRAPT";
         loadMatchday();
       }
     };
@@ -76,25 +76,14 @@ if (nextMatchBanner) {
       timeZone: "Europe/Amsterdam",
     }).format(kickoff);
 
-    const live = payload.match.mode === "live";
-    teamsField.textContent = live
-      ? `${payload.match.home} ${payload.match.score?.home ?? 0} – ${payload.match.score?.away ?? 0} ${payload.match.away}`
-      : `${payload.match.home} – ${payload.match.away}`;
+    teamsField.textContent = `${payload.match.home} – ${payload.match.away}`;
     metaField.textContent = `${date} · ${time} · ${payload.match.competition}`;
     tvField.textContent = payload.match.tv || "Zender nog niet bekend";
     nextMatchBanner.hidden = false;
-    nextMatchBanner.classList.toggle("is-live", live);
     nextMatchBanner.classList.remove("is-loading", "is-unavailable");
-    if (live) {
-      window.clearInterval(countdownTimer);
-      stateField.textContent = "Live";
-      clockField.textContent = payload.match.isBreak ? "RUST" : payload.match.minute != null ? `${payload.match.minute}'` : "NU";
-      scheduleRefresh(20000);
-    } else {
-      stateField.textContent = "Aftrap over";
-      startCountdown(kickoff);
-      scheduleRefresh(Math.min(5 * 60000, Math.max(15000, kickoff.getTime() - Date.now())));
-    }
+    stateField.textContent = "Aftrap over";
+    startCountdown(kickoff);
+    scheduleRefresh(Math.min(5 * 60000, Math.max(15000, kickoff.getTime() - Date.now())));
   };
 
   function loadMatchday() {
@@ -112,7 +101,7 @@ if (nextMatchBanner) {
       })
       .catch(() => {
         if (currentPayload?.match) {
-          scheduleRefresh(currentPayload.match.mode === "live" ? 60000 : 5 * 60000);
+          scheduleRefresh(5 * 60000);
           return;
         }
         nextMatchBanner.hidden = true;

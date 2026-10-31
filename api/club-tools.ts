@@ -5,24 +5,14 @@ import { getSessionWithCurrentRoles, getSessionWithPermission } from "../lib/ser
 import { errorPage, page, pageHeader } from "../lib/motm-view";
 import { renderToolsGrid, toolsForSession } from "../lib/portal-tools.config";
 import { renderSocials } from "../api-impl/socials/index";
-import { loadSocialPlayerStats, SocialPlayerStatsProviderError } from "../lib/socials-player-stats-provider";
 import { loadSocialsMatchStats, SocialsMatchStatsError } from "../lib/socials-match-stats";
 import { loadSocialsMatchStatsSnapshot, saveSocialsMatchStatsSnapshot } from "../lib/socials-stats-snapshots";
 import { loadSystemStatus, systemStatusMarkup } from "../lib/system-status";
 
 const json=(body:unknown,status=200)=>new Response(JSON.stringify(body),{status,headers:{"Content-Type":"application/json; charset=UTF-8","Cache-Control":"private, no-store","X-Content-Type-Options":"nosniff"}});
-const playerStatsCache=new Map<string,{expiresAt:number;payload:Awaited<ReturnType<typeof loadSocialPlayerStats>>}>();
-const cachedPlayerStats=async(fixtureKey:string)=>{
-  const cached=playerStatsCache.get(fixtureKey),now=Date.now();
-  if(cached&&cached.expiresAt>now)return cached.payload;
-  const payload=await loadSocialPlayerStats(fixtureKey);
-  playerStatsCache.set(fixtureKey,{expiresAt:now+5*60_000,payload});
-  return payload;
-};
-
 export async function GET(request:Request){
   const view=new URL(request.url).searchParams.get("view");
-  const returnTo=view==="socials"||view==="socials-player-stats"||view==="socials-match-stats"?"/club/tools/socials":"/club/tools";
+  const returnTo=view==="socials"||view==="socials-match-stats"?"/club/tools/socials":"/club/tools";
   if(view?.startsWith("socials-video")){
     const session=await getSessionWithCurrentRoles(request);
     if(!session)return json({error:"Geen toegang tot de staffomgeving."},401);
@@ -41,17 +31,6 @@ export async function GET(request:Request){
     const url=new URL(request.url);
     const localVideoPreview=process.env.NODE_ENV==="development"&&["localhost","127.0.0.1"].includes(url.hostname)&&url.searchParams.get("video-preview")==="1";
     return renderSocials(allowed,undefined,undefined,undefined,localVideoPreview);
-  }
-  if(view==="socials-player-stats"){
-    const allowed=await getSessionWithPermission(request,permissions.toolsSocials);
-    if(!allowed)return json({error:"forbidden"},403);
-    const fixtureKey=new URL(request.url).searchParams.get("fixture")??"";
-    try{return json(await cachedPlayerStats(fixtureKey));}
-    catch(error){
-      if(error instanceof SocialPlayerStatsProviderError)return json({error:error.message},error.status);
-      console.error("Unable to load Socials player statistics",error);
-      return json({error:"Spelerstatistieken zijn tijdelijk niet beschikbaar."},500);
-    }
   }
   if(view==="socials-match-stats"){
     const allowed=await getSessionWithPermission(request,permissions.toolsSocials);

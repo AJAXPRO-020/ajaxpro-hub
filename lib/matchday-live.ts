@@ -1,19 +1,3 @@
-export const API_FOOTBALL_BASE_URL = "https://v3.football.api-sports.io";
-export const API_FOOTBALL_AJAX_TEAM_ID = 194;
-export const MATCHDAY_DAILY_LIMIT = 100;
-
-export const LIVE_STATUSES = new Set(["1H", "2H", "ET", "P", "BT", "LIVE", "INT"]);
-export const BREAK_STATUSES = new Set(["HT"]);
-export const FINISHED_STATUSES = new Set(["FT", "AET", "PEN", "CANC", "ABD", "AWD", "WO"]);
-
-export type MatchdayMode = "countdown" | "live" | "hidden";
-
-export type MatchdayState = {
-  kickoff: Date | string;
-  providerStatus?: string | null;
-  finishedAt?: Date | string | null;
-};
-
 const partsInAmsterdam = (date: Date) => Object.fromEntries(
   new Intl.DateTimeFormat("en-CA", {
     timeZone: "Europe/Amsterdam",
@@ -43,21 +27,6 @@ export const amsterdamLocalToUtc = (year: number, month: number, day: number, ho
   return new Date(candidate);
 };
 
-export const modeForMatch = (state: MatchdayState, now = new Date()): MatchdayMode => {
-  const status = state.providerStatus ?? "NS";
-  if (state.finishedAt || FINISHED_STATUSES.has(status)) return "hidden";
-  if (LIVE_STATUSES.has(status) || BREAK_STATUSES.has(status) || now.getTime() >= new Date(state.kickoff).getTime()) return "live";
-  return "countdown";
-};
-
-export const nextProviderDelayMs = ({ status, calls, failed = false }: { status?: string | null; calls: number; failed?: boolean }) => {
-  if (calls >= MATCHDAY_DAILY_LIMIT || FINISHED_STATUSES.has(status ?? "")) return null;
-  if (failed) return 5 * 60_000;
-  if (BREAK_STATUSES.has(status ?? "")) return 16 * 60_000;
-  if (calls >= 94) return 5 * 60_000;
-  return 60_000;
-};
-
 export const countdownParts = (kickoff: Date | string, now = new Date()) => {
   const remaining = Math.max(0, new Date(kickoff).getTime() - now.getTime());
   const totalMinutes = Math.floor(remaining / 60_000);
@@ -75,13 +44,3 @@ export const normalizeTeamName = (value: string) => value
   .toLowerCase()
   .replace(/\b(afc|fc|fk|sc|amsterdam)\b/g, "")
   .replace(/[^a-z0-9]/g, "");
-
-export const selectProviderFixture = <T extends { fixture: { id: number; date: string }; teams: { home: { name: string }; away: { name: string } } }>(
-  fixtures: T[],
-  expected: { home: string; away: string; kickoff: Date | string },
-) => fixtures.find(item => {
-  const kickoffDifference = Math.abs(new Date(item.fixture.date).getTime() - new Date(expected.kickoff).getTime());
-  return kickoffDifference <= 30 * 60_000
-    && normalizeTeamName(item.teams.home.name).includes(normalizeTeamName(expected.home))
-    && normalizeTeamName(item.teams.away.name).includes(normalizeTeamName(expected.away));
-});

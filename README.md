@@ -149,7 +149,7 @@ afgesproken testconfiguratie. Niet automatisch database- of cronroutes aanroepen
 ## Nog open voor accountwissel
 
 GitHub-schrijf-/organisatieautorisatie onder de nieuwe Codex-login bevestigen,
-naast providertoegang voor Neon, Discord en API-Football. Bron en context zijn
+naast providertoegang voor Neon en Discord. Bron en context zijn
 in Git; externe gegevensherstel blijft apart. De lokale archiefbranch
 `archive/media-watch-before-removal` blijft behouden en is niet automatisch op
 GitHub gepubliceerd. Geen nieuwe hostingomgeving of database nodig voor alleen

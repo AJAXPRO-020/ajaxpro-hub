@@ -26,6 +26,7 @@ export type FotMobSocialsMatch = {
     homeScore: number | null;
     awayScore: number | null;
     date: string | null;
+    finished?: boolean;
   };
   teamStats: FotMobSocialsTeamStats;
   opponentTeamStats: FotMobSocialsTeamStats;
@@ -216,6 +217,7 @@ export const parseFotMobAjaxMatchHtml = (html: string): FotMobSocialsMatch => {
       homeScore: scoreFor(homeTeamId),
       awayScore: scoreFor(awayTeamId),
       date: nullableString(general.matchTimeUTCDate) ?? nullableString(objectValue(header.status)?.utcTime),
+      finished: objectValue(header.status)?.finished === true,
     },
     teamStats: parsedTeamStats(content, ajaxIndex),
     opponentTeamStats: parsedTeamStats(content, ajaxIndex === 0 ? 1 : 0),

@@ -5,9 +5,6 @@ import {
   amsterdamDateKey,
   amsterdamLocalToUtc,
   countdownParts,
-  modeForMatch,
-  nextProviderDelayMs,
-  selectProviderFixture,
 } from "../lib/matchday-live";
 import { parseAjaxFixtures, parseAjaxResults } from "../api/next-match";
 import { NEXT_MATCH_RATE_LIMIT_MAX, NEXT_MATCH_RATE_LIMIT_WINDOW_SECONDS, nextMatchSourceHash } from "../lib/next-match-rate-limit";
@@ -23,31 +20,6 @@ test("countdown ondersteunt meerdere dagen, minder dan een uur en wordt nooit ne
   assert.deepEqual(countdownParts("2026-08-07T12:43:00Z", now), { days: 2, hours: 2, minutes: 43, totalMilliseconds: 182_580_000 });
   assert.equal(countdownParts("2026-08-05T10:43:00Z", now).minutes, 43);
   assert.equal(countdownParts("2026-08-05T09:00:00Z", now).totalMilliseconds, 0);
-});
-
-test("topbar wisselt bij aftrap, live, rust, verlenging, penalty's en einde", () => {
-  const kickoff = "2026-08-05T18:00:00Z";
-  assert.equal(modeForMatch({ kickoff, providerStatus: "NS" }, new Date("2026-08-05T17:59:59Z")), "countdown");
-  assert.equal(modeForMatch({ kickoff, providerStatus: "NS" }, new Date(kickoff)), "live");
-  for (const status of ["1H", "2H", "HT", "ET", "P"]) assert.equal(modeForMatch({ kickoff, providerStatus: status }, new Date(kickoff)), "live");
-  for (const status of ["FT", "AET", "PEN"]) assert.equal(modeForMatch({ kickoff, providerStatus: status }, new Date(kickoff)), "hidden");
-});
-
-test("callstrategie bewaakt rust, fouten en grenscalls 94, 95, 99 en 100", () => {
-  assert.equal(nextProviderDelayMs({ status: "1H", calls: 93 }), 60_000);
-  assert.equal(nextProviderDelayMs({ status: "1H", calls: 94 }), 300_000);
-  assert.equal(nextProviderDelayMs({ status: "2H", calls: 95 }), 300_000);
-  assert.equal(nextProviderDelayMs({ status: "ET", calls: 99 }), 300_000);
-  assert.equal(nextProviderDelayMs({ status: "P", calls: 100 }), null);
-  assert.equal(nextProviderDelayMs({ status: "HT", calls: 20 }), 960_000);
-  assert.equal(nextProviderDelayMs({ status: "1H", calls: 20, failed: true }), 300_000);
-  assert.equal(nextProviderDelayMs({ status: "FT", calls: 20 }), null);
-});
-
-test("fixturekoppeling respecteert thuis- en uitvolgorde", () => {
-  const fixtures = [{ fixture: { id: 12, date: "2026-08-05T18:00:00Z" }, teams: { home: { name: "Ajax" }, away: { name: "Shelbourne FC" } } }];
-  assert.equal(selectProviderFixture(fixtures, { home: "Ajax", away: "Shelbourne FC", kickoff: "2026-08-05T18:00:00Z" })?.fixture.id, 12);
-  assert.equal(selectProviderFixture(fixtures, { home: "Shelbourne FC", away: "Ajax", kickoff: "2026-08-05T18:00:00Z" }), undefined);
 });
 
 test("officiële Ajax-uitslagen worden als noodfallback uitgelezen", () => {
@@ -88,20 +60,15 @@ test("officieel programma leest teams uit wedstrijdtekst wanneer een clublogo on
   ]);
 });
 
-test("servercache reserveert calls atomisch en frontend belt alleen AjaxPro", () => {
+test("matchday gebruikt alleen eigen bronnen en toont geen live providerdata", () => {
   const endpoint = readFileSync(new URL("../api/next-match.ts", import.meta.url), "utf8");
   const frontend = readFileSync(new URL("../script.js", import.meta.url), "utf8");
-  const migration = readFileSync(new URL("../db/migrations/005_matchday_live.sql", import.meta.url), "utf8");
-  assert.match(endpoint, /FOR UPDATE/);
-  assert.match(endpoint, /refresh_locked_until/);
-  assert.match(endpoint, /elapsed_extra/);
-  assert.match(endpoint, /x-apisports-key/);
   assert.match(endpoint, /stale-if-error=86400/);
   assert.match(endpoint, /Vercel-CDN-Cache-Control/);
   assert.match(endpoint, /consumeNextMatchRateLimit\(request\)/);
-  assert.doesNotMatch(frontend, /api-sports|API_FOOTBALL_KEY/);
+  assert.doesNotMatch(endpoint, /api-sports|API_FOOTBALL|x-apisports|refreshProviderState|matchday_api_budget/);
+  assert.doesNotMatch(frontend, /api-sports|API_FOOTBALL_KEY|is-live|match\.minute|match\.score/);
   assert.match(frontend, /fetch\("\/api\/next-match"/);
-  assert.match(migration, /CHECK \(calls >= 0 AND calls <= 100\)/);
 });
 
 test("publieke matchday-route begrenst cache-bypass per gehashte bron", () => {

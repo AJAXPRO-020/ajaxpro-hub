@@ -7,8 +7,8 @@ export type DiagnosticField = { label: string; value: string };
 export type StatusCard = { id: string; title: string; tone: StatusTone; label: string; summary: string; detail?: string; href?: string; hrefLabel?: string; diagnostics: DiagnosticField[]; manualAction: ManualAction };
 
 const toneLabel: Record<StatusTone, string> = { ok: "In orde", attention: "Waarschuwing", problem: "Probleem", unknown: "Ontbrekende informatie" };
-const ids = ["motm", "discord", "video", "football", "database"] as const;
-const titles = ["MOTM", "Discord", "Video Generator", "API-Football", "Database"] as const;
+const ids = ["motm", "discord", "video", "matchday", "database"] as const;
+const titles = ["MOTM", "Discord", "Video Generator", "Wedstrijddata", "Database"] as const;
 const moment = (value: Date | string | null | undefined) => value ? formatMoment(value) : "Niet geregistreerd";
 const field = (label: string, value: unknown): DiagnosticField => ({ label, value: value === null || value === undefined || value === "" ? "Niet beschikbaar" : String(value) });
 const card = (value: Omit<StatusCard, "diagnostics" | "manualAction"> & Partial<Pick<StatusCard, "diagnostics" | "manualAction">>): StatusCard => ({ ...value, label: value.label || toneLabel[value.tone], diagnostics: value.diagnostics ?? [], manualAction: value.manualAction ?? "Onbekend" });
@@ -50,13 +50,18 @@ const videoCard = async (): Promise<StatusCard> => {
   return card({ id: "video", title: "Video Generator", tone: "ok", label: "Actief", summary: `${rows.length} render${rows.length === 1 ? "" : "s"} wordt verwerkt.`, detail: "De opgeslagen providerstatus is actueel; deze controle vraagt Shotstack niet opnieuw op.", manualAction: "Nee", diagnostics });
 };
 
-type FootballStatusRow = { provider_status: string | null; last_success_at: Date | string | null; next_refresh_at: Date | string | null; finished_at: Date | string | null };
-export const footballStatusCard = (row: FootballStatusRow | undefined, now = Date.now()): StatusCard => {
-  if (!row) return card({ id: "football", title: "API-Football", tone: "unknown", label: "Geen actuele wedstrijd", summary: "Er is geen actuele fixture om de refreshstatus aan te toetsen.", detail: "Geen actie nodig.", manualAction: "Nee", diagnostics: [field("Actuele fixture", "Niet beschikbaar"), field("Quota", "Niet betrouwbaar beschikbaar")] });
-  const refreshDue = Boolean(row.next_refresh_at && new Date(row.next_refresh_at).getTime() < now && !row.finished_at);
-  return card({ id: "football", title: "API-Football", tone: row.last_success_at ? "ok" : "unknown", label: row.last_success_at ? (refreshDue ? "Refresh beschikbaar" : "In orde") : "Nog geen refreshdata", summary: refreshDue ? "De volgende aanvraag mag de fixturegegevens automatisch vernieuwen." : row.last_success_at ? `Fixturestatus: ${row.provider_status ?? "onbekend"}.` : "Nog geen succesvolle fixture-refresh vastgelegd.", detail: row.last_success_at ? "Geen staffactie nodig." : "Dit is zonder bevestigde providerfout geen storing.", manualAction: "Nee", diagnostics: [field("Providerstatus", row.provider_status ?? "Niet geregistreerd"), field("Laatste succesvolle refresh", moment(row.last_success_at)), field("Volgende refresh toegestaan", moment(row.next_refresh_at)), field("Refresh nu toegestaan", refreshDue ? "Ja" : "Nee"), field("Quota", "Niet betrouwbaar beschikbaar"), field("Providerfouten", "Niet persistent opgeslagen")] });
+type MatchDataStatusRow = { source_checked_at: Date | string | null; next_kickoff_at: Date | string | null; upcoming_count: number | string; latest_fotmob_import: Date | string | null; latest_confirmed_result: Date | string | null };
+export const matchDataStatusCard = (row: MatchDataStatusRow | undefined, now = Date.now()): StatusCard => {
+  if (!row?.source_checked_at) return card({ id: "matchday", title: "Wedstrijddata", tone: "unknown", label: "Niet geverifieerd", summary: "Er is nog geen betrouwbare broncontrole voor het wedstrijdprogramma vastgelegd.", detail: "Open het wedstrijdprogramma om de bestaande bronverversing te laten uitvoeren.", href: "/programma", hrefLabel: "Open wedstrijdprogramma", manualAction: "Ja", diagnostics: [field("Laatste broncontrole", "Niet geregistreerd"), field("Komende wedstrijden", row?.upcoming_count ?? 0), field("Laatste FotMob-import", moment(row?.latest_fotmob_import))] });
+  const stale = now - new Date(row.source_checked_at).getTime() > 24 * 60 * 60_000;
+  return card({ id: "matchday", title: "Wedstrijddata", tone: stale ? "attention" : "ok", label: stale ? "Broncontrole verouderd" : "In orde", summary: stale ? "Het opgeslagen wedstrijdprogramma is langer dan 24 uur niet gecontroleerd." : `${Number(row.upcoming_count)} komende wedstrijd${Number(row.upcoming_count) === 1 ? "" : "en"} beschikbaar.`, detail: stale ? "Open het wedstrijdprogramma om de bestaande bronverversing te laten uitvoeren." : "Programma uit Ajax.nl; eindstanden worden alleen bevestigd met gevalideerde FotMob-data.", href: stale ? "/programma" : undefined, hrefLabel: stale ? "Ververs wedstrijdprogramma" : undefined, manualAction: stale ? "Ja" : "Nee", diagnostics: [field("Laatste broncontrole", moment(row.source_checked_at)), field("Volgende aftrap", moment(row.next_kickoff_at)), field("Komende wedstrijden", row.upcoming_count), field("Laatste FotMob-import", moment(row.latest_fotmob_import)), field("Laatste bevestigde eindstand", moment(row.latest_confirmed_result))] });
 };
-const footballCard = async () => { const [row] = await db()`SELECT provider_status,last_success_at,next_refresh_at,finished_at FROM matchday_fixtures WHERE finished_at IS NULL ORDER BY kickoff_at ASC LIMIT 1` as Array<FootballStatusRow>; return footballStatusCard(row); };
+const matchDataCard = async () => { const [row] = await db()`SELECT
+  (SELECT max(source_checked_at) FROM matchday_fixtures) source_checked_at,
+  (SELECT min(kickoff_at) FROM matchday_fixtures WHERE kickoff_at>now()) next_kickoff_at,
+  (SELECT count(*) FROM matchday_fixtures WHERE kickoff_at>now()) upcoming_count,
+  (SELECT max(updated_at) FROM socials_match_stats_snapshots) latest_fotmob_import,
+  (SELECT max(finished_at) FROM matchday_fixtures WHERE finished_at IS NOT NULL) latest_confirmed_result` as Array<MatchDataStatusRow>; return matchDataStatusCard(row); };
 
 const databaseCard = async (): Promise<StatusCard> => {
   const rows = await db()`SELECT migration_name,checksum_sha256 FROM schema_migrations WHERE migration_name IN ('034_motm_announcement_delivery.sql','035_migration_registry.sql') ORDER BY migration_name` as Array<{ migration_name: string; checksum_sha256: string }>;
@@ -67,7 +72,7 @@ const databaseCard = async (): Promise<StatusCard> => {
 };
 
 export const loadSystemStatus = async () => {
-  const results = await Promise.allSettled([motmCard, discordCard, videoCard, footballCard, databaseCard].map(load => load()));
+  const results = await Promise.allSettled([motmCard, discordCard, videoCard, matchDataCard, databaseCard].map(load => load()));
   return results.map((result, index) => result.status === "fulfilled" ? result.value : card({ id: ids[index], title: titles[index], tone: "unknown", label: "Niet vast te stellen", summary: "Status kon niet betrouwbaar worden opgehaald.", detail: "Probeer opnieuw; de oorzaak is niet veilig beschikbaar in dit overzicht.", manualAction: "Onbekend", diagnostics: [field("Statusquery", "Mislukt"), field("Foutcategorie", "Statusquery mislukt; details afgeschermd")] }));
 };
 

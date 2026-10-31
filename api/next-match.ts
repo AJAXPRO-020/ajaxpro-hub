@@ -1,28 +1,17 @@
 import { db } from "../lib/motm-db";
 import {
-  amsterdamDateKey,
   amsterdamLocalToUtc,
-  API_FOOTBALL_AJAX_TEAM_ID,
-  API_FOOTBALL_BASE_URL,
-  BREAK_STATUSES,
-  FINISHED_STATUSES,
-  modeForMatch,
-  nextProviderDelayMs,
   normalizeTeamName,
-  selectProviderFixture,
 } from "../lib/matchday-live";
 import { consumeNextMatchRateLimit } from "../lib/next-match-rate-limit";
 import { verifyGitHubOidcRequest } from "../lib/github-oidc";
 import { sendAutomaticAnnouncement } from "../lib/motm-announcements";
 import { announcementPlan } from "../lib/motm-announcement-plan";
 import { synchronizeAllMatches } from "../lib/motm-scheduling";
-import { apiFootballErrorDetails } from "../lib/api-football-observability";
 
 const AJAX_FIXTURES_URL = "https://www.ajax.nl/wedstrijden/";
 const TV_GUIDE_URL = "https://www.voetbaloptv.com/wp-json/vtv/v1/wedstrijden";
 const SOURCE_MAX_AGE_MS = 6 * 60 * 60_000;
-const PROVIDER_START_MS = 5 * 60_000;
-const FIXTURE_LINK_WINDOW_MS = 36 * 60 * 60_000;
 
 const DUTCH_MONTHS: Record<string, number> = {
   januari: 1, februari: 2, maart: 3, april: 4, mei: 5, juni: 6,
@@ -128,109 +117,23 @@ const syncSourceFixtures = async () => {
 
 type StoredFixture = {
   fixture_key: string; home_team: string; away_team: string; competition: string; kickoff_at: Date | string; tv: string | null;
-  provider_fixture_id: string | number | null; provider_status: string | null; elapsed: number | null; elapsed_extra: number | null; goals_home: number | null; goals_away: number | null;
-  next_refresh_at: Date | string | null; refresh_locked_until: Date | string | null; finished_at: Date | string | null;
+  goals_home: number | null; goals_away: number | null; finished_at: Date | string | null;
 };
+type PlannedAnnouncementMatch = { status: string; scheduled_open_at: Date | string | null; scheduled_close_at: Date | string | null };
 
 const nextStoredFixture = async () => {
-  const [fixture] = await db()`SELECT * FROM matchday_fixtures WHERE finished_at IS NULL AND kickoff_at>${new Date(Date.now() - 6 * 60 * 60_000)} ORDER BY kickoff_at LIMIT 1`;
+  const [fixture] = await db()`SELECT * FROM matchday_fixtures WHERE kickoff_at>${new Date()} ORDER BY kickoff_at LIMIT 1`;
   return fixture as StoredFixture | undefined;
 };
 
 const storedFixtures = async () => {
-  const fixtures = await db()`SELECT * FROM matchday_fixtures WHERE kickoff_at>${new Date(Date.now() - 6 * 60 * 60_000)} ORDER BY kickoff_at`;
+  const fixtures = await db()`SELECT * FROM matchday_fixtures WHERE kickoff_at>${new Date()} ORDER BY kickoff_at`;
   return fixtures as unknown as StoredFixture[];
-};
-
-const reserveProviderCall = async (fixture: StoredFixture, now: Date) => {
-  const sql = db(), budgetDay = amsterdamDateKey(now);
-  return sql.begin(async tx => {
-    const [locked] = await tx`SELECT fixture_key,next_refresh_at,refresh_locked_until,finished_at FROM matchday_fixtures WHERE fixture_key=${fixture.fixture_key} FOR UPDATE`;
-    if (!locked || locked.finished_at || (locked.refresh_locked_until && new Date(locked.refresh_locked_until) > now) || (locked.next_refresh_at && new Date(locked.next_refresh_at) > now)) return null;
-    await tx`INSERT INTO matchday_api_budget(budget_day,calls) VALUES(${budgetDay},0) ON CONFLICT(budget_day) DO NOTHING`;
-    const [budget] = await tx`SELECT calls FROM matchday_api_budget WHERE budget_day=${budgetDay} FOR UPDATE`;
-    if (!budget || Number(budget.calls) >= 100) return null;
-    const calls = Number(budget.calls) + 1;
-    await tx`UPDATE matchday_api_budget SET calls=${calls},updated_at=now() WHERE budget_day=${budgetDay}`;
-    await tx`UPDATE matchday_fixtures SET refresh_locked_until=${new Date(now.getTime() + 30_000)},next_refresh_at=${new Date(now.getTime() + 5 * 60_000)},updated_at=now() WHERE fixture_key=${fixture.fixture_key}`;
-    return { calls };
-  });
-};
-
-type ProviderFixture = {
-  fixture: { id: number; date: string; status: { short: string; elapsed: number | null; extra?: number | null } };
-  league: { name: string };
-  teams: { home: { name: string }; away: { name: string } };
-  goals: { home: number | null; away: number | null };
-};
-
-const providerUrlFor = (fixture: StoredFixture) => {
-  if (fixture.provider_fixture_id) return `${API_FOOTBALL_BASE_URL}/fixtures?id=${fixture.provider_fixture_id}`;
-  return `${API_FOOTBALL_BASE_URL}/fixtures?team=${API_FOOTBALL_AJAX_TEAM_ID}&date=${amsterdamDateKey(new Date(fixture.kickoff_at))}&timezone=Europe%2FAmsterdam`;
-};
-
-const refreshOfficialResultFallback = async (fixture: StoredFixture, now: Date) => {
-  try {
-    const response = await fetch(AJAX_FIXTURES_URL, {
-      headers: { "User-Agent": "AjaxPro/1.0 (+https://www.ajaxpro.fans/)" },
-      signal: AbortSignal.timeout(10_000),
-    });
-    if (!response.ok) return false;
-    const result = parseAjaxResults(await response.text()).find(item =>
-      item.date === amsterdamDateKey(new Date(fixture.kickoff_at))
-      && normalizeTeamName(item.home) === normalizeTeamName(fixture.home_team)
-      && normalizeTeamName(item.away) === normalizeTeamName(fixture.away_team));
-    if (!result) return false;
-    await db()`UPDATE matchday_fixtures SET provider_status='FT',goals_home=${result.goalsHome},goals_away=${result.goalsAway},last_success_at=${now},next_refresh_at=NULL,refresh_locked_until=NULL,finished_at=${now},updated_at=now() WHERE fixture_key=${fixture.fixture_key}`;
-    return true;
-  } catch (error) {
-    console.error("Unable to refresh official Ajax result fallback", error);
-    return false;
-  }
-};
-
-const refreshProviderState = async (fixture: StoredFixture, now: Date) => {
-  const apiKey = process.env.API_FOOTBALL_KEY?.trim();
-  if (!apiKey) return;
-  const kickoff = new Date(fixture.kickoff_at).getTime();
-  const shouldLink = !fixture.provider_fixture_id && kickoff - now.getTime() <= FIXTURE_LINK_WINDOW_MS;
-  const shouldRefresh = Boolean(fixture.provider_fixture_id) && now.getTime() >= kickoff - PROVIDER_START_MS;
-  if (!shouldLink && !shouldRefresh) return;
-  const reservation = await reserveProviderCall(fixture, now);
-  if (!reservation) return;
-  try {
-    const response = await fetch(providerUrlFor(fixture), { headers: { "x-apisports-key": apiKey }, signal: AbortSignal.timeout(10_000) });
-    if (!response.ok) {
-      console.error("API-Football fixture request failed", apiFootballErrorDetails(new Error(`HTTP ${response.status}`), response));
-      throw new Error(`API-Football returned ${response.status}`);
-    }
-    const payload = await response.json();
-    if (payload?.errors && Object.keys(payload.errors).length) {
-      console.error("API-Football fixture request rejected", apiFootballErrorDetails(new Error("API-Football returned provider errors"), response, payload.errors));
-      throw new Error("API-Football returned an API error");
-    }
-    const candidates: ProviderFixture[] = Array.isArray(payload?.response) ? payload.response : [];
-    const selected = fixture.provider_fixture_id ? candidates[0] : selectProviderFixture(candidates, { home: fixture.home_team, away: fixture.away_team, kickoff: fixture.kickoff_at });
-    if (!selected) {
-      await db()`UPDATE matchday_fixtures SET next_refresh_at=${new Date(now.getTime()+6*60*60_000)},refresh_locked_until=NULL,updated_at=now() WHERE fixture_key=${fixture.fixture_key}`;
-      return;
-    }
-    const status = selected.fixture.status.short;
-    const delay = nextProviderDelayMs({ status, calls: reservation.calls });
-    const finished = FINISHED_STATUSES.has(status);
-    await db()`UPDATE matchday_fixtures SET provider_fixture_id=${selected.fixture.id},provider_status=${status},elapsed=${selected.fixture.status.elapsed},elapsed_extra=${selected.fixture.status.extra??null},goals_home=${selected.goals.home},goals_away=${selected.goals.away},last_success_at=${now},next_refresh_at=${delay===null?null:new Date(now.getTime()+delay)},refresh_locked_until=NULL,finished_at=${finished?now:null},updated_at=now() WHERE fixture_key=${fixture.fixture_key}`;
-  } catch (error) {
-    console.error("Unable to refresh API-Football fixture", apiFootballErrorDetails(error));
-    if (await refreshOfficialResultFallback(fixture, now)) return;
-    const delay = nextProviderDelayMs({ status: fixture.provider_status, calls: reservation.calls, failed: true }) ?? 5 * 60_000;
-    await db()`UPDATE matchday_fixtures SET next_refresh_at=${new Date(now.getTime()+delay)},refresh_locked_until=NULL,updated_at=now() WHERE fixture_key=${fixture.fixture_key}`;
-  }
 };
 
 const responseFor = (fixture: StoredFixture | undefined, now: Date) => {
   if (!fixture) return { match: null, message: "De volgende wedstrijd is nog niet bekend.", updatedAt: now.toISOString() };
   const isHome = normalizeTeamName(fixture.home_team).includes("ajax");
-  const mode = modeForMatch({ kickoff: fixture.kickoff_at, providerStatus: fixture.provider_status, finishedAt: fixture.finished_at }, now);
   return {
     match: {
       home: fixture.home_team,
@@ -240,11 +143,7 @@ const responseFor = (fixture: StoredFixture | undefined, now: Date) => {
       competition: fixture.competition,
       kickoff: new Date(fixture.kickoff_at).toISOString(),
       tv: fixture.tv,
-      mode,
-      status: fixture.provider_status,
-      minute: fixture.elapsed == null ? null : fixture.elapsed_extra ? `${fixture.elapsed}+${fixture.elapsed_extra}` : String(fixture.elapsed),
-      score: mode === "live" ? { home: fixture.goals_home ?? 0, away: fixture.goals_away ?? 0 } : null,
-      isBreak: BREAK_STATUSES.has(fixture.provider_status ?? ""),
+      mode: "countdown",
     },
     updatedAt: now.toISOString(),
   };
@@ -261,7 +160,6 @@ const programResponseFor = (fixtures: StoredFixture[], now: Date) => ({
       competition: fixture.competition,
       kickoff: new Date(fixture.kickoff_at).toISOString(),
       tv: fixture.tv,
-      status: fixture.provider_status,
       score: fixture.goals_home != null && fixture.goals_away != null
         ? { home: fixture.goals_home, away: fixture.goals_away }
         : null,
@@ -296,18 +194,17 @@ export async function GET(request: Request) {
       // The GitHub check is also the scheduler heartbeat: catch up every due MOTM transition.
       await synchronizeAllMatches(now);
       if (url.searchParams.get("plan") === "1") {
-        await syncSourceFixtures();
-        return automationResponse(announcementPlan(await nextStoredFixture(), now));
+        const [match] = await db()`SELECT status,scheduled_open_at,scheduled_close_at FROM motm_matches
+          WHERE deleted_at IS NULL AND status IN ('draft','open') AND scheduled_close_at>${now}
+          ORDER BY scheduled_open_at LIMIT 1`;
+        return automationResponse(announcementPlan(match as PlannedAnnouncementMatch | undefined, now));
       }
-      let fixture = await nextStoredFixture();
-      const plan = announcementPlan(fixture, now);
+      const [match] = await db()`SELECT status,scheduled_open_at,scheduled_close_at FROM motm_matches
+        WHERE deleted_at IS NULL AND status IN ('draft','open') AND scheduled_close_at>${now}
+        ORDER BY scheduled_open_at LIMIT 1`;
+      const plan = announcementPlan(match as PlannedAnnouncementMatch | undefined, now);
       if (!plan.active || !plan.due) return automationResponse(plan);
-      if (!fixture) return automationResponse({ status: "no_fixture", active: false });
-      await refreshProviderState(fixture, now);
-      fixture = await nextStoredFixture();
-      const refreshedPlan = announcementPlan(fixture, now);
-      if (!fixture || !refreshedPlan.active || !refreshedPlan.due) return automationResponse(refreshedPlan);
-      const result = await sendAutomaticAnnouncement(fixture, request.url);
+      const result = await sendAutomaticAnnouncement(request.url, now);
       return automationResponse({ ...result, active: result.status !== "sent" && result.status !== "already_sent" });
     }
     const rateLimit = await consumeNextMatchRateLimit(request);
@@ -320,11 +217,7 @@ export async function GET(request: Request) {
     if (view === "program") {
       return jsonResponse(programResponseFor(await storedFixtures(), now));
     }
-    let fixture = await nextStoredFixture();
-    if (!fixture) return jsonResponse(responseFor(undefined, now));
-    await refreshProviderState(fixture, now);
-    fixture = await nextStoredFixture();
-    return jsonResponse(responseFor(fixture, now));
+    return jsonResponse(responseFor(await nextStoredFixture(), now));
   } catch (error) {
     console.error("Unable to load matchday state", error);
     if (view === "motm-announcement") return automationResponse({ error: "Announcement check failed" }, 500);

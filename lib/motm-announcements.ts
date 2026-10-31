@@ -1,14 +1,5 @@
 import { db } from "./motm-db";
-import { normalizeTeamName } from "./matchday-live";
 import { synchronizeAllMatches } from "./motm-scheduling";
-
-export type AnnouncementFixture = {
-  kickoff_at: Date | string;
-  home_team: string;
-  away_team: string;
-  elapsed: number | null;
-  provider_status: string | null;
-};
 
 export const announcementDefault = (match: { home_or_away: string; opponent: string }) =>
   `Stem op je MOTM voor ${match.home_or_away === "home" ? `Ajax tegen ${match.opponent}` : `${match.opponent} tegen Ajax`}`;
@@ -41,33 +32,18 @@ export const sendAnnouncement = async (webhook: string, text: string, link: stri
   }
 };
 
-export const shouldTryAutomaticAnnouncement = (fixture: Pick<AnnouncementFixture, "elapsed" | "provider_status">) =>
-  fixture.elapsed !== null
-  && fixture.elapsed >= 80
-  && ["2H", "ET", "P", "LIVE", "INT"].includes(fixture.provider_status ?? "");
-
-const sameTeam = (left: string, right: string) => {
-  const a = normalizeTeamName(left), b = normalizeTeamName(right);
-  return Boolean(a && b && (a === b || a.includes(b) || b.includes(a)));
-};
-
-export const sendAutomaticAnnouncement = async (fixture: AnnouncementFixture, requestUrl: string) => {
-  if (!shouldTryAutomaticAnnouncement(fixture)) return { status: "not_due" as const };
-  await synchronizeAllMatches();
-  const kickoff = new Date(fixture.kickoff_at);
-  const windowStart = new Date(kickoff.getTime() - 30 * 60_000);
-  const windowEnd = new Date(kickoff.getTime() + 30 * 60_000);
-  const ajaxHome = normalizeTeamName(fixture.home_team).includes("ajax");
-  const opponent = ajaxHome ? fixture.away_team : fixture.home_team;
-  const matches = await db()`SELECT * FROM motm_matches
+export const sendAutomaticAnnouncement = async (requestUrl: string, now = new Date()) => {
+  await synchronizeAllMatches(now);
+  const [candidate] = await db()`SELECT * FROM motm_matches
     WHERE deleted_at IS NULL AND status='open'
-      AND kickoff_at BETWEEN ${windowStart} AND ${windowEnd}
-    ORDER BY kickoff_at LIMIT 4`;
-  const candidate = matches.find((match: any) => sameTeam(String(match.opponent), opponent));
+      AND scheduled_open_at IS NOT NULL AND scheduled_open_at<=${now}
+      AND scheduled_close_at IS NOT NULL AND scheduled_close_at>${now}
+      AND announcement_sent_at IS NULL
+    ORDER BY scheduled_open_at LIMIT 1`;
   if (!candidate) return { status: "no_open_match" as const };
 
-  return deliverAnnouncement(candidate.id, announcementDefault(candidate as any), requestUrl, "system:auto-minute-80", "Automatische mededeling", {
-    trigger: "minute_80", minute: fixture.elapsed,
+  return deliverAnnouncement(candidate.id, announcementDefault(candidate as any), requestUrl, "system:auto-schedule", "Automatische mededeling", {
+    trigger: "scheduled_open", scheduledOpenAt: candidate.scheduled_open_at,
   });
 };
 

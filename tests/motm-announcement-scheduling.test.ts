@@ -7,10 +7,11 @@ test("automatische aankondiging opent een geplande stemming zonder bezoek en ver
   const originalFetch = globalThis.fetch;
   const originalWebhook = process.env.DISCORD_MOTM_ANNOUNCEMENT_WEBHOOK;
   const kickoff = new Date(Date.now() - 100 * 60_000);
+  const openedAt = new Date(Date.now() + 5 * 60_000);
   let match = {
     id: "test-match", slug: "test-match", status: "draft", deleted_at: null,
     opponent: "NEC", home_or_away: "home", kickoff_at: kickoff,
-    scheduled_open_at: kickoff, scheduled_close_at: new Date(Date.now() + 60 * 60_000),
+    scheduled_open_at: openedAt, scheduled_close_at: new Date(Date.now() + 60 * 60_000),
     announcement_sent_at: null as Date | null, announcement_status: "not_sent", announcement_attempted_at: null,
   };
   let sends = 0;
@@ -45,10 +46,12 @@ test("automatische aankondiging opent een geplande stemming zonder bezoek en ver
   globalThis.fetch = async () => { sends++; return new Response(null, { status: 204 }); };
   try {
     const { sendAutomaticAnnouncement } = require("../lib/motm-announcements");
-    const fixture = { kickoff_at: kickoff, home_team: "Ajax", away_team: "NEC", elapsed: 80, provider_status: "2H" };
-    assert.equal((await sendAutomaticAnnouncement(fixture, "https://ajaxpro.fans/api/next-match")).status, "sent");
+    assert.equal((await sendAutomaticAnnouncement("https://ajaxpro.fans/api/next-match")).status, "no_open_match");
+    assert.equal(sends, 0);
+    match = { ...match, scheduled_open_at: new Date(Date.now() - 5 * 60_000) };
+    assert.equal((await sendAutomaticAnnouncement("https://ajaxpro.fans/api/next-match")).status, "sent");
     assert.equal(match.status, "open");
-    assert.equal((await sendAutomaticAnnouncement(fixture, "https://ajaxpro.fans/api/next-match")).status, "already_sent");
+    assert.equal((await sendAutomaticAnnouncement("https://ajaxpro.fans/api/next-match")).status, "already_sent");
     assert.equal(sends, 1);
   } finally {
     require.cache[dbPath]!.exports = originalDb;
