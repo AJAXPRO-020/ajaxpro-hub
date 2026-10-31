@@ -12,8 +12,9 @@ const ids=(roleIds:string[])=>toolsForSession(session(roleIds)).map(tool=>tool.i
 
 test("gewoon lid ziet geen tools of beheer",()=>assert.deepEqual(ids([]),[]));
 test("analist ziet alle teamtools en Jeugddossiers-beheer",()=>assert.deepEqual(ids([roles.analyst]),["tactics","screenshot","socials","jeugddossiers-admin"]));
-for(const role of ["helper","moderator"] as const)test(`${role} ziet teamtools en beheer`,()=>assert.deepEqual(new Set(ids([roles[role]])),new Set(["tactics","screenshot","socials","motm-admin","jeugddossiers-admin"])));
-test("Discord Admin-rol ziet de bestaande tools en beheer",()=>assert.deepEqual(new Set(ids([roles.admin])),new Set(["tactics","screenshot","socials","motm-admin","jeugddossiers-admin"])));
+test("helper ziet teamtools en beheer",()=>assert.deepEqual(new Set(ids([roles.helper])),new Set(["tactics","screenshot","socials","motm-admin","jeugddossiers-admin"])));
+test("moderator ziet teamtools en beheer",()=>assert.deepEqual(new Set(ids([roles.moderator])),new Set(["tactics","screenshot","socials","system-status","motm-admin","jeugddossiers-admin"])));
+test("Discord Admin-rol ziet de bestaande tools en beheer",()=>assert.deepEqual(new Set(ids([roles.admin])),new Set(["tactics","screenshot","socials","system-status","motm-admin","jeugddossiers-admin"])));
 test("meerdere rollen leveren gecombineerde rechten op",()=>assert.deepEqual(new Set(ids([roles.analyst,roles.helper])),new Set(["tactics","screenshot","socials","motm-admin","jeugddossiers-admin"])));
 test("lege Tools-grid bevat geen kaarten",()=>assert.doesNotMatch(renderToolsGrid(toolsForSession(session([]))),/tool-card--/));
 test("publieke tools komen niet voor in Club-config of HTML",()=>{const html=renderToolsGrid(toolsForSession(session([roles.owner])));for(const title of ["Opstellingmaker","Contractenoverzicht","Bingo"])assert.doesNotMatch(html,new RegExp(title))});

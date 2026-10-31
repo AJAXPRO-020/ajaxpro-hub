@@ -8,6 +8,7 @@ import { renderSocials } from "../api-impl/socials/index";
 import { loadSocialPlayerStats, SocialPlayerStatsProviderError } from "../lib/socials-player-stats-provider";
 import { loadSocialsMatchStats, SocialsMatchStatsError } from "../lib/socials-match-stats";
 import { loadSocialsMatchStatsSnapshot, saveSocialsMatchStatsSnapshot } from "../lib/socials-stats-snapshots";
+import { loadSystemStatus, systemStatusMarkup } from "../lib/system-status";
 
 const json=(body:unknown,status=200)=>new Response(JSON.stringify(body),{status,headers:{"Content-Type":"application/json; charset=UTF-8","Cache-Control":"private, no-store","X-Content-Type-Options":"nosniff"}});
 const playerStatsCache=new Map<string,{expiresAt:number;payload:Awaited<ReturnType<typeof loadSocialPlayerStats>>}>();
@@ -62,6 +63,10 @@ export async function GET(request:Request){
       console.error("Unable to load normalized Socials match statistics",error);
       return json({error:"Fout bij ophalen."},500);
     }
+  }
+  if(view==="system-status"){
+    const cards=await loadSystemStatus();
+    return page("Systeemstatus",systemStatusMarkup(cards),"",session,"tools",undefined,{stylesheets:["/system-status.css?v=1"]});
   }
   const tools=toolsForSession(session);
   return page("Staff-tools",`<main class="motm-main">${pageHeader("Staff-tools","Intern")}<p class="page-intro">Hulpmiddelen die bij jouw rechten horen.</p>${tools.length?renderToolsGrid(tools):'<section class="empty"><h2>Geen tools beschikbaar</h2><p>Voor jouw rol zijn er momenteel geen afzonderlijke tools beschikbaar.</p></section>'}</main>`,"",session,"tools");

@@ -17,6 +17,7 @@ export type PortalTool = {
 };
 
 export const portalTools: readonly PortalTool[] = [
+  {id:"system-status",title:"Systeemstatus",description:"Controleer de belangrijkste AjaxPro-systemen en automatiseringen.",href:"/club/tools?view=system-status",section:"admin",external:false,requiredPermission:permissions.staffAccess,order:0},
   {id:"tactics",title:"Tactiekbord",description:"Werk wedstrijdideeën uit op het digitale tactiekbord.",href:"https://ajaxpro-tactics-board.vercel.app",section:"team",external:true,requiredPermission:permissions.toolsTactics,order:10},
   {id:"screenshot",title:"Screenshot Editor",description:"Maak screenshots klaar voor AjaxPro-publicaties.",href:"https://screenshot-bewerker.vercel.app",section:"team",external:true,requiredPermission:permissions.toolsScreenshot,order:20},
   {id:"socials",title:"Socials",description:"Maak vaste AjaxPro-formats klaar voor social media.",href:"/club/tools/socials",section:"team",external:false,requiredPermission:permissions.toolsSocials,order:30},
