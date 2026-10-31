@@ -13,14 +13,21 @@ const cards = [
 
 test("systeemstatus toont actuele aandacht, bestaande herstelroute en onzekere status", () => {
   const html = systemStatusMarkup(cards);
-  assert.match(html, /1 aandachtspunt vraagt controle/);
+  assert.match(html, /class="system-status-overall system-status-overall--attention" role="status">1 aandachtspunt<\/span>/);
   assert.match(html, /class="system-status-card system-status-card--attention"/);
   assert.match(html, /href="\/club\/motm\/beheer"/);
   assert.match(html, /system-status-card--unknown/);
+  assert.doesNotMatch(html, /system-status-summary|system-status-attention/);
   assert.match(html, />GitHub Actions<\/a>/);
 });
 
 test("productiebouw publiceert de systeemstatus-stylesheet", () => {
   const buildScript = readFileSync(new URL("../scripts/build-public.mjs", import.meta.url), "utf8");
   assert.match(buildScript, /"system-status\.css"/);
+});
+
+test("systeemstatus vat een gezonde kaartenset compact samen", () => {
+  const healthyCards = cards.map(card => ({ ...card, tone: "ok" as const }));
+  const html = systemStatusMarkup(healthyCards);
+  assert.match(html, /system-status-overall--ok" role="status">Alles in orde<\/span>/);
 });
