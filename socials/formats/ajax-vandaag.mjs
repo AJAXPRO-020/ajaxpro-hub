@@ -36,7 +36,7 @@ const drawDay=(ctx,H,f,title,detail,photo)=>{const tall=H>1500;const top=tall?22
  text(ctx,f.eyebrow,65,195,34,RED,920);
  ctx.font=canvasFont(tall?330:280);ctx.fillStyle="#fff";ctx.shadowColor="rgba(0,0,0,.38)";ctx.shadowBlur=18;ctx.fillText(f.number,55,tall?790:650,940);ctx.shadowBlur=0;
  text(ctx,`${f.homeTeam??""}  —  ${f.awayTeam??""}`,65,tall?875:720,34,WHITE,900);
- const contextY=tall?955:790;ctx.fillStyle="rgba(6,7,11,.72)";ctx.fillRect(65,contextY,950,58);text(ctx,f.competition??"",88,contextY+38,25,"#d8d8dc",520);text(ctx,f.homeAway??"",760,contextY+38,25,"#d8d8dc",220);
+ const contextY=tall?955:790;text(ctx,f.competition??"",65,contextY,25,"#d8d8dc",520);text(ctx,f.homeAway??"",760,contextY,25,"#d8d8dc",220);
  const y=tall?1165:925;ctx.fillStyle=RED;ctx.fillRect(65,y-108,100,9);wrapped(ctx,title,65,y,940,tall?102:88,tall?96:84,3);wrapped(ctx,detail,65,tall?H-285:H-220,930,tall?39:34,47,3,"#d4d4d6");
 };
 const drawPlayer=(ctx,H,f,title,detail,photo)=>{const tall=H>1500,top=tall?230:200;
