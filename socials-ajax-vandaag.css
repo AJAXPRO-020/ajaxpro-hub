@@ -15,6 +15,7 @@
 .ajax-vandaag-empty{aspect-ratio:4/5;background:#090a0d;border:1px solid #373940;color:#aeb0b7;display:grid;place-items:center;font-size:20px}
 .ajax-vandaag-edit{display:grid;gap:12px;padding:18px 0 0}
 .ajax-vandaag-edit textarea,.ajax-vandaag-edit select{width:100%;box-sizing:border-box;border:1px solid #56585e;border-radius:3px;background:#101116;color:#fff;padding:10px;font:inherit}
+.ajax-vandaag-edit input[type="file"]{width:100%;box-sizing:border-box;color:#bfc0c6;font:inherit;font-size:13px}.ajax-vandaag-edit input[type="file"]::file-selector-button{margin-right:10px;border:1px solid #56585e;background:#171920;color:#fff;padding:8px 10px;cursor:pointer}
 .ajax-vandaag-edit textarea:focus,.ajax-vandaag-edit select:focus,.ajax-vandaag-toolbar input:focus{outline:2px solid #e0003c;outline-offset:2px}
 .ajax-vandaag-edit .button{justify-self:start}
 .ajax-vandaag-source{color:#fff;text-decoration:underline;text-underline-offset:3px;font-size:14px}

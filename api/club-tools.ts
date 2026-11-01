@@ -1,5 +1,5 @@
 import { handleVideo } from "../lib/socials-video-http";
-import {generateVandaag,historicalAsset} from "../lib/ajax-vandaag";
+import {generateVandaagContent,vandaagMedia} from "../lib/ajax-vandaag-content";
 import { redirect } from "../lib/discord-auth";
 import { permissions } from "../lib/permissions.config";
 import { getSessionWithCurrentRoles, getSessionWithPermission } from "../lib/server-permissions";
@@ -19,8 +19,8 @@ export async function GET(request:Request){
     if(!allowed)return json({error:"Geen toegang."},403);
     const url=new URL(request.url);
     try{
-      if(view==="ajax-vandaag-media")return await historicalAsset(url.searchParams.get("asset")??"")??json({error:"Beeld ontbreekt."},404);
-      return json(await generateVandaag(url.searchParams.get("date")??"",Number(url.searchParams.get("variation")??0)));
+      if(view==="ajax-vandaag-media")return await vandaagMedia(url.searchParams.get("asset")??"")??json({error:"Beeld ontbreekt."},404);
+      return json(await generateVandaagContent(url.searchParams.get("date")??"",Number(url.searchParams.get("variation")??0)));
     }catch(error){if(error instanceof RangeError)return json({error:error.message},400);console.error("Ajax Vandaag unavailable",error);return json({error:"Ajax Vandaag is tijdelijk niet beschikbaar."},503)}
   }
   const returnTo=view==="socials"||view==="socials-match-stats"?"/club/tools/socials":"/club/tools";

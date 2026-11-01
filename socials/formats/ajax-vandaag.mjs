@@ -21,7 +21,7 @@ const matchPanel=(ctx,H,f,title,detail,variant)=>{const tall=H>1500;
  wrapped(ctx,title,65,tall?400:390,945,tall?107:100,tall?102:96,3);
  const top=tall?760:665,bottom=tall?1330:1045;
  ctx.fillStyle="rgba(7,8,13,.75)";ctx.fillRect(65,top,950,bottom-top);
- ctx.strokeStyle=variant==="trivia"?"rgba(207,0,52,.78)":"rgba(255,255,255,.36)";ctx.lineWidth=2;ctx.strokeRect(65,top,950,bottom-top);
+ ctx.strokeStyle="rgba(255,255,255,.18)";ctx.lineWidth=2;ctx.strokeRect(65,top,950,bottom-top);
  text(ctx,variant==="trivia"?"UITSLAG UIT DE AJAX-GESCHIEDENIS":"DE UITSLAG",95,top+62,34,variant==="trivia"?RED:"#bfc0c5",840);
  text(ctx,f.number,95,top+(tall?395:285),tall?235:185,variant==="trivia"?WHITE:RED,490);
  text(ctx,f.homeTeam??"",tall?640:560,top+(tall?255:185),46,WHITE,tall?340:420);
@@ -31,34 +31,28 @@ const matchPanel=(ctx,H,f,title,detail,variant)=>{const tall=H>1500;
 };
 const drawDay=(ctx,H,f,title,detail,photo)=>{const tall=H>1500;const top=tall?220:195;
  if(!photo){matchPanel(ctx,H,f,title,detail,"day");return}
- if(photo){drawImage(ctx,photo,250,top,830,tall?1100:770);const fade=ctx.createLinearGradient(0,top,0,H-92);fade.addColorStop(0,"rgba(6,7,11,.05)");fade.addColorStop(.65,"rgba(6,7,11,.62)");fade.addColorStop(1,INK);ctx.fillStyle=fade;ctx.fillRect(0,top,W,H-top-92)}
+ drawImage(ctx,photo,0,top,W,tall?1120:820);const fade=ctx.createLinearGradient(0,top,0,H-92);fade.addColorStop(0,"rgba(6,7,11,.05)");fade.addColorStop(.54,"rgba(6,7,11,.42)");fade.addColorStop(1,INK);ctx.fillStyle=fade;ctx.fillRect(0,top,W,H-top-92);
  text(ctx,f.eyebrow,65,195,37,RED,920);
- ctx.font=canvasFont(tall?290:255);ctx.fillStyle="#eb1249";ctx.fillText(f.number,48,tall?690:600,940);
- const y=tall?1030:790;ctx.fillStyle=RED;ctx.fillRect(65,y-80,100,9);
- wrapped(ctx,title,65,y,940,tall?110:95,tall?102:89,3);
- wrapped(ctx,detail,65,tall?H-320:H-250,930,tall?40:35,47,3,"#d4d4d6");
+ ctx.font=canvasFont(tall?330:280);ctx.fillStyle="#fff";ctx.fillText(f.number,55,tall?790:650,940);ctx.strokeStyle=RED;ctx.lineWidth=8;ctx.strokeText(f.number,55,tall?790:650,940);
+ text(ctx,`${f.homeTeam??""} · ${f.awayTeam??""}`,65,tall?875:720,34,WHITE,900);
+ const y=tall?1135:890;ctx.fillStyle=RED;ctx.fillRect(65,y-78,100,9);wrapped(ctx,title,65,y,940,tall?102:88,tall?96:84,3);wrapped(ctx,detail,65,tall?H-285:H-220,930,tall?39:34,47,3,"#d4d4d6");
 };
 const drawPlayer=(ctx,H,f,title,detail,photo)=>{const tall=H>1500,top=tall?230:200;
- if(photo){drawImage(ctx,photo,350,top,730,tall?1350:1030);const wash=ctx.createLinearGradient(0,0,W,0);wash.addColorStop(0,"rgba(6,7,11,.96)");wash.addColorStop(.5,"rgba(6,7,11,.45)");wash.addColorStop(1,"rgba(6,7,11,.08)");ctx.fillStyle=wash;ctx.fillRect(0,top,W,H-top-92)}
+ if(photo){drawImage(ctx,photo,380,top,700,tall?1370:1040);const wash=ctx.createLinearGradient(0,0,W,0);wash.addColorStop(0,"rgba(6,7,11,.98)");wash.addColorStop(.48,"rgba(6,7,11,.56)");wash.addColorStop(1,"rgba(6,7,11,.04)");ctx.fillStyle=wash;ctx.fillRect(0,top,W,H-top-92)}
  text(ctx,f.eyebrow,65,200,36,RED,920);
- text(ctx,"31",55,tall?690:575,tall?450:360,"rgba(207,0,52,.75)",510);
- text(ctx,"OKT",68,tall?785:655,tall?100:80,WHITE,430);
- ctx.fillStyle=RED;ctx.fillRect(65,tall?1050:835,100,9);
- wrapped(ctx,title,65,tall?1170:935,900,tall?124:112,tall?112:100,3);
- wrapped(ctx,detail,65,tall?H-280:H-230,920,tall?39:34,46,3,"#d7d7db");
+ text(ctx,f.dayNumber,55,tall?660:540,tall?430:345,"rgba(207,0,52,.78)",510);text(ctx,f.monthShort,68,tall?755:625,tall?96:78,WHITE,430);
+ ctx.fillStyle=RED;ctx.fillRect(65,tall?950:780,100,9);wrapped(ctx,title,65,tall?1060:875,900,tall?112:98,tall?105:92,3);
+ const stats=Array.isArray(f.careerStats)?f.careerStats:[],statsY=tall?1560:1115;stats.slice(0,3).forEach((stat,index)=>{const x=65+index*315;line(ctx,x,statsY-75,x+260);text(ctx,stat.label,x,statsY-32,25,"#aeb2b9",270);text(ctx,stat.value,x,statsY+50,index===2?48:68,WHITE,285)});
 };
 const drawTrivia=(ctx,H,f,title,detail,photo)=>{const tall=H>1500;
  if(!photo){matchPanel(ctx,H,f,title,detail,"trivia");return}
- if(photo){ctx.save();ctx.globalAlpha=.25;drawImage(ctx,photo,0,185,W,H-277);ctx.restore()}
+ drawImage(ctx,photo,0,185,W,H-277);ctx.fillStyle="rgba(4,5,8,.54)";ctx.fillRect(0,185,W,H-277);const side=ctx.createLinearGradient(0,0,W,0);side.addColorStop(0,"rgba(4,5,8,.96)");side.addColorStop(.68,"rgba(4,5,8,.2)");side.addColorStop(1,"rgba(4,5,8,.05)");ctx.fillStyle=side;ctx.fillRect(0,185,W,H-277);
  text(ctx,f.eyebrow,65,200,36,RED,900);
- ctx.font=canvasFont(tall?560:450);ctx.fillStyle=WHITE;ctx.fillText(f.number,55,tall?900:720,900);
- ctx.fillStyle=RED;ctx.fillRect(65,tall?960:775,105,9);
- wrapped(ctx,title,65,tall?1100:870,930,tall?108:94,tall?101:88,3);
- line(ctx,65,tall?1375:1085,1015);
- wrapped(ctx,detail,65,tall?1475:1160,930,tall?41:35,49,3,"#d9d9dd");
+ ctx.font=canvasFont(tall?500:405);ctx.fillStyle="rgba(255,255,255,.93)";ctx.fillText(f.number,45,tall?840:685,970);
+ ctx.fillStyle=RED;ctx.fillRect(65,tall?930:755,105,9);wrapped(ctx,title,65,tall?1060:850,925,tall?108:92,tall?101:87,3);line(ctx,65,tall?1370:1080,1015);wrapped(ctx,detail,65,tall?1475:1160,930,tall?41:35,49,3,"#f0f0f2");
 };
 const draw=async(card)=>{const {fact,canvas,ratio,titleInput,detailInput}=card,H=ratio.value==="9:16"?1920:1350;canvas.width=W;canvas.height=H;const ctx=canvas.getContext("2d");await document.fonts.ready;
- const [logo,photo]=await Promise.all([imageLoad("/assets/ajaxpro-logo.png"),imageLoad(fact.assetId?`/api/club-tools?view=ajax-vandaag-media&asset=${encodeURIComponent(fact.assetId)}`:null)]);
+ const [logo,photo]=await Promise.all([imageLoad("/assets/ajaxpro-logo.png"),imageLoad(card.imageSrc??(fact.assetId?`/api/club-tools?view=ajax-vandaag-media&asset=${encodeURIComponent(fact.assetId)}`:null))]);
  background(ctx,H);header(ctx,H,fact.label,logo);
  const title=trim(titleInput.value,90),detail=trim(detailInput.value,220);
  if(fact.kind==="day")drawDay(ctx,H,fact,title,detail,photo);
@@ -74,15 +68,17 @@ const createCard=(fact,index,date)=>{const slot=document.createElement("section"
  const detail=document.createElement("label");detail.textContent="Toelichting";const detailInput=document.createElement("textarea");detailInput.rows=3;detailInput.maxLength=220;detailInput.value=fact.detail;detail.append(detailInput);
  const ratio=document.createElement("select");ratio.setAttribute("aria-label","Exportformaat");ratio.innerHTML='<option value="4:5">4:5 · 1080 × 1350</option><option value="9:16">9:16 · 1080 × 1920</option>';
  const download=document.createElement("button");download.className="button secondary";download.type="button";download.textContent="Download PNG";download.disabled=true;
+ const imageLabel=document.createElement("label");imageLabel.textContent="Afbeelding aanpassen";const imageInput=document.createElement("input");imageInput.type="file";imageInput.accept="image/jpeg,image/png,image/webp";imageLabel.append(imageInput);
  const source=document.createElement("a");source.href=fact.sourceUrl;source.target="_blank";source.rel="noopener noreferrer";source.textContent=fact.sourceLabel+" ↗";source.className="ajax-vandaag-source";
- const note=document.createElement("p");note.className="ajax-vandaag-image-note";note.textContent=fact.assetId?"Beeld uit historische mediabibliotheek · controleer publicatierechten":"Typografische compositie · geen passende foto";
- controls.append(title,detail,ratio,download,source,note);slot.append(canvas,controls);
- const card={fact,canvas,ratio,titleInput,detailInput};let ticket=0;const render=async()=>{const current=++ticket;download.disabled=true;await draw(card);if(current===ticket)download.disabled=false};
+ const note=document.createElement("p");note.className="ajax-vandaag-image-note";note.textContent=fact.imageRelation==="exact"?"Beeld hoort bij dit historische moment":fact.imageRelation==="player"?"Spelersfoto uit de historische beeldbank":fact.imageRelation==="related"?"Gerelateerd historisch beeld · niet de specifieke wedstrijd":"Typografische compositie · geen passende foto";
+ controls.append(title,detail,imageLabel,ratio,download,source,note);slot.append(canvas,controls);
+ const card={fact,canvas,ratio,titleInput,detailInput,imageSrc:null};let ticket=0;const render=async()=>{const current=++ticket;download.disabled=true;await draw(card);if(current===ticket)download.disabled=false};
  titleInput.addEventListener("input",()=>void render());detailInput.addEventListener("input",()=>void render());ratio.addEventListener("change",()=>void render());
+ imageInput.addEventListener("change",()=>{if(card.imageSrc?.startsWith("blob:"))URL.revokeObjectURL(card.imageSrc);card.imageSrc=imageInput.files?.[0]?URL.createObjectURL(imageInput.files[0]):null;note.textContent=card.imageSrc?"Eigen afbeelding voor deze export":"Beeldselectie hersteld";void render()});
  download.addEventListener("click",()=>{if(download.disabled)return;canvas.toBlob(blob=>{if(!blob)return;const url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=socialFilename({date,subject:titleInput.value,format:`ajax-vandaag-${fact.kind}`,ratio:ratio.value.replace(":","x")});a.click();setTimeout(()=>URL.revokeObjectURL(url),60000)},"image/png")});
  void render();return slot};
 export const ajaxVandaagFormat={id:"ajax-vandaag",fixedOutput:true,requirements:[],init(root){const workspace=root.querySelector('[data-format-workspace="ajax-vandaag"]'),date=workspace.querySelector("[data-vandaag-date]"),generate=workspace.querySelector("[data-vandaag-generate]"),status=workspace.querySelector("[data-vandaag-status]"),results=workspace.querySelector("[data-vandaag-results]");date.value=pageDate();let request=0;
- const run=async()=>{const id=++request,selectedDate=date.value;generate.disabled=true;status.textContent="Feiten en beeldsuggesties ophalen…";try{const response=await fetch(api(selectedDate,0),{headers:{Accept:"application/json"}}),data=await response.json();if(!response.ok)throw Error(data.error||"Ophalen mislukt");if(id!==request)return;results.replaceChildren(...data.facts.map((fact,index)=>createCard(fact,index,selectedDate)));status.textContent=`${data.facts.filter(Boolean).length} van 3 visuals beschikbaar voor ${new Intl.DateTimeFormat("nl-NL",{day:"numeric",month:"long",year:"numeric"}).format(new Date(selectedDate+"T12:00:00"))}.`}catch(error){if(id===request){results.replaceChildren();status.textContent=error.message||"Genereren mislukt."}}finally{if(id===request)generate.disabled=false}};
+ const run=async()=>{const id=++request,selectedDate=date.value;generate.disabled=true;results.replaceChildren();status.textContent="Feiten en beeldsuggesties ophalen…";try{const response=await fetch(api(selectedDate,0),{headers:{Accept:"application/json"}}),data=await response.json();if(!response.ok)throw Error(data.error||"Ophalen mislukt");if(id!==request)return;if(data.date!==selectedDate)throw Error("De ontvangen inhoud hoort niet bij de geselecteerde datum.");results.replaceChildren(...data.facts.map((fact,index)=>createCard(fact,index,data.date)));status.textContent=`${data.facts.filter(Boolean).length} van 3 visuals beschikbaar voor ${new Intl.DateTimeFormat("nl-NL",{day:"numeric",month:"long",year:"numeric"}).format(new Date(data.date+"T12:00:00"))}.`}catch(error){if(id===request){results.replaceChildren();status.textContent=error.message||"Genereren mislukt."}}finally{if(id===request)generate.disabled=false}};
  generate.addEventListener("click",()=>void run());date.addEventListener("change",()=>{results.replaceChildren();status.textContent="Klik op Genereer voor deze datum."});
  return {activate(){},deactivate(){},reset(){date.value=pageDate();results.replaceChildren();status.textContent="Kies een datum en klik op Genereer."},getRequirementStatus(){return {}}};
 }};
