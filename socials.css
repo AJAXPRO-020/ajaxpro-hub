@@ -332,3 +332,14 @@
 .socials-video-flow[data-phase=result]{gap:14px}
 .socials-video-flow[data-phase=result] .socials-video-main h2{margin-bottom:0}
 .socials-video-flow[data-phase=result] .socials-video-actions{display:none}
+
+/* Small layout repair: keep compact upload labels readable in the two-column editor. */
+.quote-upload-grid{align-items:start}
+.quote-upload{min-width:0;line-height:1.25}
+.quote-upload>span:first-child{display:block;min-width:0;overflow-wrap:anywhere}
+.quote-upload>span:first-child em{white-space:nowrap}
+
+/* Keep the active render state visible even when the progress body is below the fold. */
+.socials-video-flow[data-phase=processing] .socials-video-main>h2{display:flex;align-items:center;gap:12px}
+.socials-video-flow[data-phase=processing] .socials-video-main>h2::after{display:inline-block;width:18px;height:18px;border:3px solid rgba(245,242,235,.22);border-top-color:var(--red);border-radius:50%;content:"";animation:socials-video-spin .9s linear infinite}
+@media(prefers-reduced-motion:reduce){.socials-video-flow[data-phase=processing] .socials-video-main>h2::after{animation:none}}
