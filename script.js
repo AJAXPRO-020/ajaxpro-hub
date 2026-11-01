@@ -374,3 +374,15 @@ faqItems.forEach((details) => {
     });
   });
 });
+
+// Loop the decorative Lineup Maker preview only while the card is in view.
+const lineupDemoCard = document.querySelector('.lineup-tool-card');
+if (lineupDemoCard && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const lineupDemoObserver = new IntersectionObserver((entries) => {
+    lineupDemoCard.classList.toggle('is-demo-playing', entries[0].isIntersecting && !document.hidden);
+  }, { threshold: 0.35 });
+  lineupDemoObserver.observe(lineupDemoCard);
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) lineupDemoCard.classList.remove('is-demo-playing');
+  });
+}
