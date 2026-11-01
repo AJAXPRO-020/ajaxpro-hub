@@ -353,3 +353,15 @@
 .quote-upload>span:first-child em{display:block}
 .quote-upload__button{min-width:0;gap:10px;line-height:1.15}
 .quote-upload__button::after{flex:0 0 auto}
+
+/* Hallmark mobile spacing pass: one clear column, no compressed card gutters. */
+@media(max-width:700px){
+  .socials-shell{padding-inline:16px}
+  .socials-format-section{margin-bottom:22px}
+  .socials-format-grid{grid-template-columns:1fr!important;gap:10px}
+  .socials-format{min-height:0;padding:16px}
+  .socials-match-status-row{gap:14px}
+  .socials-match-status-row .socials-requirements{grid-template-columns:1fr;gap:8px}
+  .socials-workspace{gap:26px}
+  .socials-panel,.socials-preview-panel{width:100%;min-width:0}
+}
