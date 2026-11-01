@@ -343,3 +343,13 @@
 .socials-video-flow[data-phase=processing] .socials-video-main>h2{display:flex;align-items:center;gap:12px}
 .socials-video-flow[data-phase=processing] .socials-video-main>h2::after{display:inline-block;width:18px;height:18px;border:3px solid rgba(245,242,235,.22);border-top-color:var(--red);border-radius:50%;content:"";animation:socials-video-spin .9s linear infinite}
 @media(prefers-reduced-motion:reduce){.socials-video-flow[data-phase=processing] .socials-video-main>h2::after{animation:none}}
+
+/* Hallmark polish: active formats use a quiet surface change, not a red rail. */
+.socials-format.is-active{border-color:rgba(126,155,212,.7);background:rgba(20,29,44,.76);box-shadow:none}
+.socials-format.is-active:focus-visible{outline:2px solid #f5f2eb;outline-offset:3px}
+.quote-variant-field label span{box-shadow:none}
+.quote-variant-field input:checked+span{box-shadow:none;border-color:var(--blue);background:rgba(26,43,66,.72)}
+.quote-upload>span:first-child{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:baseline;gap:6px;line-height:1.2}
+.quote-upload>span:first-child em{display:block}
+.quote-upload__button{min-width:0;gap:10px;line-height:1.15}
+.quote-upload__button::after{flex:0 0 auto}
