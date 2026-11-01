@@ -33,22 +33,22 @@ const drawDay=(ctx,H,f,title,detail,photo)=>{const tall=H>1500;const top=tall?22
  if(!photo){matchPanel(ctx,H,f,title,detail,"day");return}
  drawImage(ctx,photo,0,top,W,tall?1120:820);const fade=ctx.createLinearGradient(0,top,0,H-92);fade.addColorStop(0,"rgba(6,7,11,.05)");fade.addColorStop(.54,"rgba(6,7,11,.42)");fade.addColorStop(1,INK);ctx.fillStyle=fade;ctx.fillRect(0,top,W,H-top-92);
  text(ctx,f.eyebrow,65,195,37,RED,920);
- ctx.font=canvasFont(tall?330:280);ctx.fillStyle="#fff";ctx.fillText(f.number,55,tall?790:650,940);ctx.strokeStyle=RED;ctx.lineWidth=8;ctx.strokeText(f.number,55,tall?790:650,940);
+ ctx.font=canvasFont(tall?330:280);ctx.fillStyle="#fff";ctx.shadowColor="rgba(0,0,0,.38)";ctx.shadowBlur=18;ctx.fillText(f.number,55,tall?790:650,940);ctx.shadowBlur=0;
  text(ctx,`${f.homeTeam??""} · ${f.awayTeam??""}`,65,tall?875:720,34,WHITE,900);
- const y=tall?1135:890;ctx.fillStyle=RED;ctx.fillRect(65,y-78,100,9);wrapped(ctx,title,65,y,940,tall?102:88,tall?96:84,3);wrapped(ctx,detail,65,tall?H-285:H-220,930,tall?39:34,47,3,"#d4d4d6");
+ const y=tall?1155:915;ctx.fillStyle=RED;ctx.fillRect(65,y-98,100,9);wrapped(ctx,title,65,y,940,tall?102:88,tall?96:84,3);wrapped(ctx,detail,65,tall?H-285:H-220,930,tall?39:34,47,3,"#d4d4d6");
 };
 const drawPlayer=(ctx,H,f,title,detail,photo)=>{const tall=H>1500,top=tall?230:200;
  if(photo){drawImage(ctx,photo,380,top,700,tall?1370:1040);const wash=ctx.createLinearGradient(0,0,W,0);wash.addColorStop(0,"rgba(6,7,11,.98)");wash.addColorStop(.48,"rgba(6,7,11,.56)");wash.addColorStop(1,"rgba(6,7,11,.04)");ctx.fillStyle=wash;ctx.fillRect(0,top,W,H-top-92)}
  text(ctx,f.eyebrow,65,200,36,RED,920);
  text(ctx,f.dayNumber,55,tall?660:540,tall?430:345,"rgba(207,0,52,.78)",510);text(ctx,f.monthShort,68,tall?755:625,tall?96:78,WHITE,430);
- ctx.fillStyle=RED;ctx.fillRect(65,tall?950:780,100,9);wrapped(ctx,title,65,tall?1060:875,900,tall?112:98,tall?105:92,3);
+ ctx.fillStyle=RED;ctx.fillRect(65,tall?975:805,100,9);wrapped(ctx,title,65,tall?1095:900,900,tall?112:98,tall?105:92,3);
  const stats=Array.isArray(f.careerStats)?f.careerStats:[],statsY=tall?1560:1115;stats.slice(0,3).forEach((stat,index)=>{const x=65+index*315;line(ctx,x,statsY-75,x+260);text(ctx,stat.label,x,statsY-32,25,"#aeb2b9",270);text(ctx,stat.value,x,statsY+50,index===2?48:68,WHITE,285)});
 };
 const drawTrivia=(ctx,H,f,title,detail,photo)=>{const tall=H>1500;
  if(!photo){matchPanel(ctx,H,f,title,detail,"trivia");return}
  drawImage(ctx,photo,0,185,W,H-277);ctx.fillStyle="rgba(4,5,8,.54)";ctx.fillRect(0,185,W,H-277);const side=ctx.createLinearGradient(0,0,W,0);side.addColorStop(0,"rgba(4,5,8,.96)");side.addColorStop(.68,"rgba(4,5,8,.2)");side.addColorStop(1,"rgba(4,5,8,.05)");ctx.fillStyle=side;ctx.fillRect(0,185,W,H-277);
  text(ctx,f.eyebrow,65,200,36,RED,900);
- ctx.font=canvasFont(tall?500:405);ctx.fillStyle="rgba(255,255,255,.93)";ctx.fillText(f.number,45,tall?840:685,970);
+ ctx.font=canvasFont(tall?250:205);ctx.fillStyle="rgba(255,255,255,.3)";ctx.fillText(f.number,65,tall?500:420,420);
  ctx.fillStyle=RED;ctx.fillRect(65,tall?930:755,105,9);wrapped(ctx,title,65,tall?1060:850,925,tall?108:92,tall?101:87,3);line(ctx,65,tall?1370:1080,1015);wrapped(ctx,detail,65,tall?1475:1160,930,tall?41:35,49,3,"#f0f0f2");
 };
 const draw=async(card)=>{const {fact,canvas,ratio,titleInput,detailInput}=card,H=ratio.value==="9:16"?1920:1350;canvas.width=W;canvas.height=H;const ctx=canvas.getContext("2d");await document.fonts.ready;
