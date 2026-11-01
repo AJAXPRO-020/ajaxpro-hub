@@ -22,7 +22,8 @@ const matchPanel=(ctx,H,f,title,detail,variant)=>{const tall=H>1500;
  const top=tall?760:665,bottom=tall?1330:1045;
  ctx.fillStyle="rgba(7,8,13,.75)";ctx.fillRect(65,top,950,bottom-top);
  ctx.strokeStyle="rgba(255,255,255,.18)";ctx.lineWidth=2;ctx.strokeRect(65,top,950,bottom-top);
- text(ctx,variant==="trivia"?"UITSLAG UIT DE AJAX-GESCHIEDENIS":"DE UITSLAG",95,top+62,34,variant==="trivia"?RED:"#bfc0c5",840);
+ text(ctx,variant==="trivia"?"UITSLAG UIT DE AJAX-GESCHIEDENIS":f.competition??"WEDSTRIJD",95,top+62,34,variant==="trivia"?RED:"#bfc0c5",620);
+ text(ctx,f.homeAway??"",tall?760:690,top+62,27,"#bfc0c5",220);
  text(ctx,f.number,95,top+(tall?395:285),tall?235:185,variant==="trivia"?WHITE:RED,490);
  text(ctx,f.homeTeam??"",tall?640:560,top+(tall?255:185),46,WHITE,tall?340:420);
  text(ctx,"TEGEN",tall?640:560,top+(tall?315:235),30,RED,tall?340:420);
@@ -32,10 +33,11 @@ const matchPanel=(ctx,H,f,title,detail,variant)=>{const tall=H>1500;
 const drawDay=(ctx,H,f,title,detail,photo)=>{const tall=H>1500;const top=tall?220:195;
  if(!photo){matchPanel(ctx,H,f,title,detail,"day");return}
  drawImage(ctx,photo,0,top,W,tall?1120:820);const fade=ctx.createLinearGradient(0,top,0,H-92);fade.addColorStop(0,"rgba(6,7,11,.05)");fade.addColorStop(.54,"rgba(6,7,11,.42)");fade.addColorStop(1,INK);ctx.fillStyle=fade;ctx.fillRect(0,top,W,H-top-92);
- text(ctx,f.eyebrow,65,195,37,RED,920);
+ text(ctx,f.eyebrow,65,195,34,RED,920);
  ctx.font=canvasFont(tall?330:280);ctx.fillStyle="#fff";ctx.shadowColor="rgba(0,0,0,.38)";ctx.shadowBlur=18;ctx.fillText(f.number,55,tall?790:650,940);ctx.shadowBlur=0;
- text(ctx,`${f.homeTeam??""} · ${f.awayTeam??""}`,65,tall?875:720,34,WHITE,900);
- const y=tall?1155:915;ctx.fillStyle=RED;ctx.fillRect(65,y-98,100,9);wrapped(ctx,title,65,y,940,tall?102:88,tall?96:84,3);wrapped(ctx,detail,65,tall?H-285:H-220,930,tall?39:34,47,3,"#d4d4d6");
+ text(ctx,`${f.homeTeam??""}  —  ${f.awayTeam??""}`,65,tall?875:720,34,WHITE,900);
+ const contextY=tall?955:790;ctx.fillStyle="rgba(6,7,11,.72)";ctx.fillRect(65,contextY,950,58);text(ctx,f.competition??"",88,contextY+38,25,"#d8d8dc",520);text(ctx,f.homeAway??"",760,contextY+38,25,"#d8d8dc",220);
+ const y=tall?1165:925;ctx.fillStyle=RED;ctx.fillRect(65,y-108,100,9);wrapped(ctx,title,65,y,940,tall?102:88,tall?96:84,3);wrapped(ctx,detail,65,tall?H-285:H-220,930,tall?39:34,47,3,"#d4d4d6");
 };
 const drawPlayer=(ctx,H,f,title,detail,photo)=>{const tall=H>1500,top=tall?230:200;
  if(photo){drawImage(ctx,photo,380,top,700,tall?1370:1040);const wash=ctx.createLinearGradient(0,0,W,0);wash.addColorStop(0,"rgba(6,7,11,.98)");wash.addColorStop(.48,"rgba(6,7,11,.56)");wash.addColorStop(1,"rgba(6,7,11,.04)");ctx.fillStyle=wash;ctx.fillRect(0,top,W,H-top-92)}
