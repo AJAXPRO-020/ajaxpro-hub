@@ -5,14 +5,19 @@ const readFixtures=root=>{
 };
 
 const ajaxIsHome=fixture=>String(fixture.home_team).toLocaleLowerCase("nl-NL").includes("ajax");
-const contextFor=fixture=>{
-  const home=ajaxIsHome(fixture);
+const validScore=value=>value!==null&&value!==undefined&&value!==""&&Number.isInteger(Number(value))&&Number(value)>=0?Number(value):null;
+export const resolvedScore=(fixture,payload)=>({
+  home:validScore(fixture?.goals_home)??validScore(payload?.match?.homeScore),
+  away:validScore(fixture?.goals_away)??validScore(payload?.match?.awayScore),
+});
+const contextFor=(fixture,payload)=>{
+  const home=ajaxIsHome(fixture),score=resolvedScore(fixture,payload);
   return {
     ajaxIsHome:home,
     homeTeam:fixture.home_team,
     awayTeam:fixture.away_team,
-    homeScore:fixture.goals_home,
-    awayScore:fixture.goals_away,
+    homeScore:score.home,
+    awayScore:score.away,
     competition:fixture.competition,
     kickoff:fixture.kickoff_at,
   };
@@ -55,7 +60,7 @@ export const initStats=(root,sharedState)=>{
   };
   const clearInputs=()=>inputs.forEach(input=>{input.value="";input.setCustomValidity("");input.removeAttribute("aria-invalid")});
   const render=()=>{
-    const context=contextFor(fixtureForSelection());
+    const fixture=fixtureForSelection(),payload=sharedState.getMatchStats?.(fixture.fixture_key),context=contextFor(fixture,payload);
     preview.dataset.pngContext=`${context.competition} · ${context.homeTeam} ${context.homeScore??'–'}–${context.awayScore??'–'} ${context.awayTeam}`;
     preview.dataset.pngHome=context.homeTeam;preview.dataset.pngAway=context.awayTeam;
     preview.dataset.ajaxSide=context.ajaxIsHome?"home":"away";

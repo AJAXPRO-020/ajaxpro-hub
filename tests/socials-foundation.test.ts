@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 import { socialFormats, socialOutputFormats } from "../lib/socials";
+import { resolvedScore } from "../socials/formats/stats.mjs";
 
 const read=(path:string)=>readFileSync(new URL(path,import.meta.url),"utf8");
 
@@ -38,4 +39,9 @@ test("Socials blijft onderdeel van club-tools en maakt geen eigen API-entrypoint
   assert.match(tools,/permissions\.toolsSocials/);
   assert.match(tools,/renderSocials/);
   assert.throws(()=>read("../api/socials.ts"));
+});
+
+test("Wedstrijd in cijfers gebruikt de snapshotscore wanneer de fixture nog leeg is",()=>{
+  assert.deepEqual(resolvedScore({goals_home:null,goals_away:null},{match:{homeScore:1,awayScore:1}}),{home:1,away:1});
+  assert.deepEqual(resolvedScore({goals_home:2,goals_away:0},{match:{homeScore:1,awayScore:1}}),{home:2,away:0});
 });
