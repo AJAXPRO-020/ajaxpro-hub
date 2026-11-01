@@ -21,6 +21,15 @@ export const loadSocialMatchdayFixtures = async (): Promise<SocialMatchdayFixtur
         AND (finished_at IS NOT NULL OR provider_status IN ('FT','AET','PEN','FINISHED','MATCH_FINISHED'))
       ORDER BY kickoff_at DESC
       LIMIT 2
+    ), recently_started AS (
+      SELECT fixture_key,home_team,away_team,competition,kickoff_at,provider_status,goals_home,goals_away,finished_at
+      FROM matchday_fixtures
+      WHERE kickoff_at <= now()
+        AND kickoff_at >= now() - interval '72 hours'
+        AND finished_at IS NULL
+        AND (provider_status IS NULL OR provider_status NOT IN ('FT','AET','PEN','FINISHED','MATCH_FINISHED'))
+      ORDER BY kickoff_at DESC
+      LIMIT 2
     ), upcoming AS (
       SELECT fixture_key,home_team,away_team,competition,kickoff_at,provider_status,goals_home,goals_away,finished_at
       FROM matchday_fixtures
@@ -29,6 +38,8 @@ export const loadSocialMatchdayFixtures = async (): Promise<SocialMatchdayFixtur
       LIMIT 3
     )
     SELECT * FROM recent_finished
+    UNION ALL
+    SELECT * FROM recently_started
     UNION ALL
     SELECT * FROM upcoming
     ORDER BY kickoff_at ASC

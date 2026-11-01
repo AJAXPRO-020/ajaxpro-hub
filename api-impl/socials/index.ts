@@ -33,6 +33,12 @@ const matchStatsAction=(fixtures:readonly SocialMatchdayFixture[],available:Read
   return `<section class="socials-data-panel" aria-labelledby="socials-data-title"><div class="socials-data-copy"><h2 id="socials-data-title">Wedstrijd</h2><div class="socials-match-status-row">${picker}<p class="socials-requirements" data-socials-format-status role="status" aria-live="polite"></p></div></div><div class="socials-data-action"><button class="button" type="button" data-socials-stats-fetch${initialAvailable||initialUpcoming&&!initialStored?" hidden":""}>${initialStored?"Stats vernieuwen":"Stats ophalen"}</button><p class="socials-sr-only" data-socials-stats-status data-state="${initialAvailable?"available":initialStored?"mismatch":initialUpcoming?"upcoming":"missing"}" role="status" aria-live="polite">${initialStatus}</p></div></section>`;
 };
 const previewControls=()=>`<div class="socials-preview-controls" data-socials-preview-controls hidden><div><span>Formaat</span><div class="socials-output-choices" role="radiogroup" aria-label="Uitvoerformaat">${outputChoices()}</div></div><button class="socials-reset" type="button" data-socials-format-reset>Reset format</button></div>`;
+const vandaagWorkspace=()=>`<div class="ajax-vandaag-workspace" data-format-workspace="ajax-vandaag" hidden>
+  <header class="ajax-vandaag-intro"><div><span class="eyebrow">Socials Generator</span><h2>AJAX VANDAAG</h2><p>Drie direct bruikbare socials uit de Ajax-geschiedenis.</p></div>
+  <div class="ajax-vandaag-toolbar"><label>Datum <input type="date" data-vandaag-date></label><button class="button" type="button" data-vandaag-generate>Genereer</button></div></header>
+  <p class="ajax-vandaag-status" data-vandaag-status role="status" aria-live="polite">Kies een datum en klik op Genereer.</p>
+  <div class="ajax-vandaag-results" data-vandaag-results></div>
+</div>`;
 
 const statsWorkspace=(fixtures:readonly SocialMatchdayFixture[],matchStatus:string)=>{
   if(!fixtures.length)return `<section class="socials-unavailable" data-stats-unavailable hidden><h2>Stats is nu niet beschikbaar</h2><p>${esc(matchStatus)} Zodra wedstrijdcontext beschikbaar is, kun je Stats invullen.</p></section><div data-format-workspace="stats" data-stats-workspace hidden></div>`;
@@ -109,11 +115,11 @@ export const renderSocials = async (session:Session,fixtureLoader=loadSocialMatc
       <div class="socials-format-grid" role="group" aria-label="Socialformat">${formatButtons(fixtures)}</div>
     </section>
     ${previewControls()}
-    ${statsWorkspace(fixtures,matchStatus)}${outblinkerWorkspace(fixtures,matchStatus)}${topThreeWorkspace(fixtures,matchStatus)}${quoteWorkspace(!fixtures.length)}${videoWorkspace()}
+    ${statsWorkspace(fixtures,matchStatus)}${outblinkerWorkspace(fixtures,matchStatus)}${topThreeWorkspace(fixtures,matchStatus)}${quoteWorkspace(!fixtures.length)}${videoWorkspace()}${vandaagWorkspace()}
     <template data-socials-match-context>${serializedFixtures(fixtures)}</template>
     <template data-socials-stats-availability>${esc(JSON.stringify([...available]))}</template>
     <template data-socials-stats-stored>${esc(JSON.stringify([...stored]))}</template>
     <template data-socials-players>${serializedPlayers(players)}</template>
   </main>`;
-  return page("Socials",body,"",session,"tools",undefined,{stylesheets:["/socials.css?v=20261023-video-heading","/socials-quote-large.css?v=20260915-quote-large-v4","/socials-png.css?v=20261023-ui-tidy"],moduleScripts:["/socials/main.mjs?v=20261023-ui-tidy"],imageSources:["blob:"],frameSources:["'self'"]});
+  return page("Socials",body,"",session,"tools",undefined,{stylesheets:["/socials.css?v=20261023-video-heading","/socials-quote-large.css?v=20260915-quote-large-v4","/socials-png.css?v=20261023-ui-tidy","/socials-ajax-vandaag.css?v=1","/socials-hallmark.css?v=1"],moduleScripts:["/socials/main.mjs?v=ajax-vandaag-1"],imageSources:["blob:"],frameSources:["'self'"]});
 };

@@ -1,7 +1,7 @@
 export type SocialMatchContextRequirement = "required" | "optional" | "none";
 
 export type SocialFormatDefinition = {
-  id: "stats" | "outblinker" | "top-three" | "quote" | "video";
+  id: "stats" | "outblinker" | "top-three" | "quote" | "video" | "ajax-vandaag";
   title: string;
   description: string;
   matchContext: SocialMatchContextRequirement;
@@ -28,6 +28,7 @@ export const socialFormats: readonly SocialFormatDefinition[] = [
   {id:"outblinker",title:"Uitblinker",description:"Eén Ajax-speler en zijn bepalende wedstrijdstatistieken.",matchContext:"required",availability:"available"},
   {id:"top-three",title:"Top 3 spelers",description:"Drie zelfgekozen Ajax-spelers in één editorial compositie.",matchContext:"required",availability:"available"},
   {id:"quote",title:"Quote",description:"Een redactionele quotevisual met eigen beeld en afzender.",matchContext:"none",availability:"available"},
+  {id:"ajax-vandaag",title:"Ajax Vandaag",description:"Drie dagelijkse Ajax-visuals uit gecontroleerde historische gegevens.",matchContext:"none",availability:"available"},
 ];
 
 export const socialOutputFormats: readonly SocialOutputFormat[] = [

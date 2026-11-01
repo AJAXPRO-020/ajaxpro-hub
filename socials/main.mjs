@@ -5,8 +5,9 @@ import { quoteFormat } from "/socials/formats/quote.mjs?v=20261023-ui-tidy";
 import { videoFormat } from "/socials/formats/video.mjs?v=20261023-socials-polish";
 import { initMatchStats } from "/socials/match-stats.mjs?v=20261023-socials-polish";
 import { mountPngPreviews } from "/socials/png.mjs?v=20261023-png-final";
+import { ajaxVandaagFormat } from "/socials/formats/ajax-vandaag.mjs?v=1";
 
-const formatDefinitions=[statsFormat,outblinkerFormat,topThreeFormat,quoteFormat,videoFormat];
+const formatDefinitions=[statsFormat,outblinkerFormat,topThreeFormat,quoteFormat,videoFormat,ajaxVandaagFormat];
 const readFixtures=root=>{
   const template=root.querySelector("template[data-socials-match-context]");
   if(!template)return [];

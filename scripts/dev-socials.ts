@@ -10,6 +10,7 @@ if(existsSync('.env.local'))Object.assign(process.env,parseEnv(readFileSync('.en
 process.env.SESSION_SECRET=randomBytes(32).toString('hex');
 process.env.DISCORD_REDIRECT_URI='http://localhost:3000/api/auth/discord-callback';
 process.env.PORTAL_TEAM_TOOL_ROLE_IDS='local-socials-review';
+process.env.PORTAL_STAFF_ROLE_IDS='local-socials-review';
 process.env.NODE_ENV='development';
 const main=async()=>{
  const {GET,POST}=await import('../api/club-tools');

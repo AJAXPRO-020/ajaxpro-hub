@@ -12,6 +12,7 @@ test("Socials registreert formats met een eigen matchContext-behoefte",()=>{
     {id:"outblinker",matchContext:"required"},
     {id:"top-three",matchContext:"required"},
     {id:"quote",matchContext:"none"},
+    {id:"ajax-vandaag",matchContext:"none"},
   ]);
 });
 
@@ -19,12 +20,14 @@ test("Socials registreert uitsluitend de twee afgesproken outputformaten",()=>{
   assert.deepEqual(socialOutputFormats.map(({width,height})=>[width,height]),[[1080,1350],[1080,1920]]);
 });
 
-test("Socials toont recente afgeronde en aankomende wedstrijden uit de centrale context",()=>{
+test("Socials toont recente afgeronde, recent begonnen en aankomende wedstrijden uit de centrale context",()=>{
   const source=read("../lib/socials-match-context.ts");
   assert.match(source,/FROM matchday_fixtures/);
   assert.match(source,/WITH recent_finished AS/);
   assert.match(source,/LIMIT 2/);
   assert.match(source,/WITH recent_finished AS[\s\S]*upcoming/);
+  assert.match(source,/recently_started AS/);
+  assert.match(source,/kickoff_at >= now\(\) - interval '72 hours'/);
   assert.match(source,/LIMIT 3/);
   assert.match(source,/ORDER BY kickoff_at ASC/);
   assert.doesNotMatch(source,/INSERT|UPDATE|DELETE|CREATE TABLE/i);
