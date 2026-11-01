@@ -121,5 +121,5 @@ export const renderSocials = async (session:Session,fixtureLoader=loadSocialMatc
     <template data-socials-stats-stored>${esc(JSON.stringify([...stored]))}</template>
     <template data-socials-players>${serializedPlayers(players)}</template>
   </main>`;
-  return page("Socials",body,"",session,"tools",undefined,{stylesheets:["/socials.css?v=20261023-video-heading","/socials-quote-large.css?v=20260915-quote-large-v4","/socials-png.css?v=20261023-ui-tidy","/socials-ajax-vandaag.css?v=1","/socials-hallmark.css?v=1"],moduleScripts:["/socials/main.mjs?v=ajax-vandaag-1"],imageSources:["blob:"],frameSources:["'self'"]});
+  return page("Socials",body,"",session,"tools",undefined,{stylesheets:["/socials.css?v=20261023-video-heading","/socials-quote-large.css?v=20260915-quote-large-v4","/socials-png.css?v=20261023-ui-tidy","/socials-ajax-vandaag.css?v=1","/socials-hallmark.css?v=1"],moduleScripts:["/socials/main.mjs?v=20261101-filenames"],imageSources:["blob:"],frameSources:["'self'"]});
 };

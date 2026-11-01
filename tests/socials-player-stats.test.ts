@@ -18,13 +18,14 @@ const fixture:SocialMatchdayFixture={fixture_key:"fortuna-ajax",home_team:"Fortu
 const brandt={fotmobId:516846,optaId:177591,name:"Julian Brandt",minutes:74,goals:1,assists:0,rating:8.07,xg:.77,xa:.09,xgot:1.51,shots:4,shotsOnTarget:4,chancesCreated:0,passes:58,accuratePasses:51,passAccuracy:87.9,tackles:0,interceptions:0,recoveries:2,groundDuelsWon:0,aerialDuelsWon:0,duelsWon:null};
 const read=(path:string)=>readFileSync(new URL(path,import.meta.url),"utf8");
 
-test("Socials biedt Wedstrijd in cijfers, Uitblinker, Top 3 spelers en Quote aan",()=>{
+test("Socials biedt alle actieve formats aan",()=>{
   assert.deepEqual(socialFormats.map(({id,title})=>({id,title})),[
     {id:"stats",title:"Wedstrijd in cijfers"},
     {id:"video",title:"Wedstrijd in cijfers: video"},
     {id:"outblinker",title:"Uitblinker"},
     {id:"top-three",title:"Top 3 spelers"},
     {id:"quote",title:"Quote"},
+    {id:"ajax-vandaag",title:"Ajax Vandaag"},
   ]);
 });
 

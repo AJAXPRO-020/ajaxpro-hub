@@ -1,3 +1,4 @@
+import {socialFilename} from "/socials/filename.mjs?v=20261101";
 const labels=["Op deze dag","Speler in de spotlight","Wist je dat"];
 const W=1080,RED="#cf0034",WHITE="#f8f7f5",INK="#06070b";
 const pageDate=()=>new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Amsterdam",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
@@ -64,7 +65,7 @@ const draw=async(card)=>{const {fact,canvas,ratio,titleInput,detailInput}=card,H
  else if(fact.kind==="player")drawPlayer(ctx,H,fact,title,detail,photo);
  else drawTrivia(ctx,H,fact,title,detail,photo);
 };
-const createCard=(fact,index)=>{const slot=document.createElement("section");slot.className="ajax-vandaag-slot";slot.dataset.kind=fact?.kind??"empty";
+const createCard=(fact,index,date)=>{const slot=document.createElement("section");slot.className="ajax-vandaag-slot";slot.dataset.kind=fact?.kind??"empty";
  const heading=document.createElement("h3");heading.textContent=labels[index];slot.append(heading);
  if(!fact){const empty=document.createElement("div");empty.className="ajax-vandaag-empty";empty.textContent="Geen data beschikbaar";slot.append(empty);return slot}
  const canvas=document.createElement("canvas");canvas.className="ajax-vandaag-canvas";canvas.setAttribute("role","img");canvas.setAttribute("aria-label",`Visual ${labels[index]}`);
@@ -78,10 +79,10 @@ const createCard=(fact,index)=>{const slot=document.createElement("section");slo
  controls.append(title,detail,ratio,download,source,note);slot.append(canvas,controls);
  const card={fact,canvas,ratio,titleInput,detailInput};let ticket=0;const render=async()=>{const current=++ticket;download.disabled=true;await draw(card);if(current===ticket)download.disabled=false};
  titleInput.addEventListener("input",()=>void render());detailInput.addEventListener("input",()=>void render());ratio.addEventListener("change",()=>void render());
- download.addEventListener("click",()=>{if(download.disabled)return;canvas.toBlob(blob=>{if(!blob)return;const url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=`ajax-vandaag-${fact.kind}-${ratio.value.replace(":","x")}.png`;a.click();setTimeout(()=>URL.revokeObjectURL(url),60000)},"image/png")});
+ download.addEventListener("click",()=>{if(download.disabled)return;canvas.toBlob(blob=>{if(!blob)return;const url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=socialFilename({date,subject:titleInput.value,format:`ajax-vandaag-${fact.kind}`,ratio:ratio.value.replace(":","x")});a.click();setTimeout(()=>URL.revokeObjectURL(url),60000)},"image/png")});
  void render();return slot};
 export const ajaxVandaagFormat={id:"ajax-vandaag",fixedOutput:true,requirements:[],init(root){const workspace=root.querySelector('[data-format-workspace="ajax-vandaag"]'),date=workspace.querySelector("[data-vandaag-date]"),generate=workspace.querySelector("[data-vandaag-generate]"),status=workspace.querySelector("[data-vandaag-status]"),results=workspace.querySelector("[data-vandaag-results]");date.value=pageDate();let request=0;
- const run=async()=>{const id=++request;generate.disabled=true;status.textContent="Feiten en beeldsuggesties ophalen…";try{const response=await fetch(api(date.value,0),{headers:{Accept:"application/json"}}),data=await response.json();if(!response.ok)throw Error(data.error||"Ophalen mislukt");if(id!==request)return;results.replaceChildren(...data.facts.map(createCard));status.textContent=`${data.facts.filter(Boolean).length} van 3 visuals beschikbaar voor ${new Intl.DateTimeFormat("nl-NL",{day:"numeric",month:"long",year:"numeric"}).format(new Date(date.value+"T12:00:00"))}.`}catch(error){if(id===request){results.replaceChildren();status.textContent=error.message||"Genereren mislukt."}}finally{if(id===request)generate.disabled=false}};
+ const run=async()=>{const id=++request,selectedDate=date.value;generate.disabled=true;status.textContent="Feiten en beeldsuggesties ophalen…";try{const response=await fetch(api(selectedDate,0),{headers:{Accept:"application/json"}}),data=await response.json();if(!response.ok)throw Error(data.error||"Ophalen mislukt");if(id!==request)return;results.replaceChildren(...data.facts.map((fact,index)=>createCard(fact,index,selectedDate)));status.textContent=`${data.facts.filter(Boolean).length} van 3 visuals beschikbaar voor ${new Intl.DateTimeFormat("nl-NL",{day:"numeric",month:"long",year:"numeric"}).format(new Date(selectedDate+"T12:00:00"))}.`}catch(error){if(id===request){results.replaceChildren();status.textContent=error.message||"Genereren mislukt."}}finally{if(id===request)generate.disabled=false}};
  generate.addEventListener("click",()=>void run());date.addEventListener("change",()=>{results.replaceChildren();status.textContent="Klik op Genereer voor deze datum."});
  return {activate(){},deactivate(){},reset(){date.value=pageDate();results.replaceChildren();status.textContent="Kies een datum en klik op Genereer."},getRequirementStatus(){return {}}};
 }};

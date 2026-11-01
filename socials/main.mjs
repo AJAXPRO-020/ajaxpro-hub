@@ -4,8 +4,8 @@ import { topThreeFormat } from "/socials/formats/top-three.mjs?v=20261023-ui-tid
 import { quoteFormat } from "/socials/formats/quote.mjs?v=20261023-ui-tidy";
 import { videoFormat } from "/socials/formats/video.mjs?v=20261023-socials-polish";
 import { initMatchStats } from "/socials/match-stats.mjs?v=20261023-socials-polish";
-import { mountPngPreviews } from "/socials/png.mjs?v=20261023-png-final";
-import { ajaxVandaagFormat } from "/socials/formats/ajax-vandaag.mjs?v=1";
+import { mountPngPreviews } from "/socials/png.mjs?v=20261101-filenames";
+import { ajaxVandaagFormat } from "/socials/formats/ajax-vandaag.mjs?v=20261101-filenames";
 
 const formatDefinitions=[statsFormat,outblinkerFormat,topThreeFormat,quoteFormat,videoFormat,ajaxVandaagFormat];
 const readFixtures=root=>{

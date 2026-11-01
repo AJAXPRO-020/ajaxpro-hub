@@ -31,7 +31,7 @@ test("formatkaarten tonen geen extra wedstrijdcontext-tags",async()=>{
 
 test("formatwissel toggelt uitsluitend workspaces en bewaart de module-state",()=>{
   const main=read("../socials/main.mjs");
-  assert.match(main,/const formatDefinitions=\[statsFormat,outblinkerFormat,topThreeFormat,quoteFormat,videoFormat\]/);
+  assert.match(main,/const formatDefinitions=\[statsFormat,outblinkerFormat,topThreeFormat,quoteFormat,videoFormat,ajaxVandaagFormat\]/);
   assert.match(main,/new Map\(formatDefinitions\.map/);
   assert.match(main,/root\.querySelectorAll\("\[data-format-workspace\]"\)/);
   assert.match(main,/workspace\.hidden=workspace\.dataset\.formatWorkspace!==id/);

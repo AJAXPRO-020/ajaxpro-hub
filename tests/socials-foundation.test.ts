@@ -3,6 +3,7 @@ import { readFileSync } from "node:fs";
 import test from "node:test";
 import { socialFormats, socialOutputFormats } from "../lib/socials";
 import { resolvedScore } from "../socials/formats/stats.mjs";
+import { socialFilename } from "../socials/filename.mjs";
 
 const read=(path:string)=>readFileSync(new URL(path,import.meta.url),"utf8");
 
@@ -44,4 +45,9 @@ test("Socials blijft onderdeel van club-tools en maakt geen eigen API-entrypoint
 test("Wedstrijd in cijfers gebruikt de snapshotscore wanneer de fixture nog leeg is",()=>{
   assert.deepEqual(resolvedScore({goals_home:null,goals_away:null},{match:{homeScore:1,awayScore:1}}),{home:1,away:1});
   assert.deepEqual(resolvedScore({goals_home:2,goals_away:0},{match:{homeScore:1,awayScore:1}}),{home:2,away:0});
+});
+
+test("Social exports bevatten datum, wedstrijd, format en verhouding",()=>{
+  assert.equal(socialFilename({date:"2026-10-31T20:00:00.000Z",home:"Ajax",away:"AZ",format:"wedstrijd-in-cijfers",ratio:"4x5"}),"ajax-az-2026-10-31-wedstrijd-in-cijfers-4x5.png");
+  assert.equal(socialFilename({date:"2026-10-31",subject:"Marco van Basten is jarig",format:"ajax-vandaag-player",ratio:"9x16"}),"marco-van-basten-is-jarig-2026-10-31-ajax-vandaag-player-9x16.png");
 });

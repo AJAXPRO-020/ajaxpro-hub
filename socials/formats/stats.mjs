@@ -62,7 +62,7 @@ export const initStats=(root,sharedState)=>{
   const render=()=>{
     const fixture=fixtureForSelection(),payload=sharedState.getMatchStats?.(fixture.fixture_key),context=contextFor(fixture,payload);
     preview.dataset.pngContext=`${context.competition} · ${context.homeTeam} ${context.homeScore??'–'}–${context.awayScore??'–'} ${context.awayTeam}`;
-    preview.dataset.pngHome=context.homeTeam;preview.dataset.pngAway=context.awayTeam;
+    preview.dataset.pngHome=context.homeTeam;preview.dataset.pngAway=context.awayTeam;preview.dataset.pngDate=context.kickoff;
     preview.dataset.ajaxSide=context.ajaxIsHome?"home":"away";
     workspace.querySelector('[data-preview-team="home"]').textContent=context.homeTeam;
     workspace.querySelector('[data-preview-team="away"]').textContent=context.awayTeam;
