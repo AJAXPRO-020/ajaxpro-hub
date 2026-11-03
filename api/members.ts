@@ -3,20 +3,8 @@ import { getSessionWithCurrentRoles, sessionHasPermission } from "../lib/server-
 import { permissions } from "../lib/permissions.config";
 import { errorPage, esc, page } from "../lib/motm-view";
 import { loadMatchCenter, matchCenterMarkup } from "../lib/match-center";
+import { loadMembersVideoArchive } from "../lib/members-video-archive";
 
-type ArchiveVideo = {
-  id: string;
-  title: string;
-  thumbnail: string;
-  publishedAt: string;
-  views: number;
-  durationSeconds: number;
-  category: string;
-};
-type ArchiveCategory = { id: string; label: string };
-type VideoArchive = { categories: readonly ArchiveCategory[]; videos: readonly ArchiveVideo[] };
-
-const archive = require("../data/ajaxpro-video-archive.json") as VideoArchive;
 const intro = "Exclusieve content voor AjaxPro Supporters en Server Boosters.";
 const archiveIntro = "Wedstrijdanalyses, spelersprofielen en tactische inzichten uit het AjaxPro-archief.";
 
@@ -56,6 +44,7 @@ export async function GET(request: Request) {
     catch (error) { console.error("Match Center failed", error); return errorPage("Match Center tijdelijk niet beschikbaar", "De wedstrijddata konden nu niet worden geladen. Probeer het later opnieuw.", 503, session, "/club/members", "members"); }
   }
   const preview = !sessionHasPermission(session, permissions.membersAccess);
+  const archive = preview ? require("../data/ajaxpro-video-archive.json") as Awaited<ReturnType<typeof loadMembersVideoArchive>> : await loadMembersVideoArchive();
   const links = `<section class="members-links" aria-label="Members-content">${feature("/club/members/contracten", "Ajax 1", "Contracten Ajax 1", "Wie ligt vast, wie loopt af en waar moet Ajax in actie komen?", "Bekijk contracten", preview, "contracts")}${feature("/club/jeugddossiers", "Jeugdopleiding", "Na De Toekomst", "Ooit een Ajax-talent. Maar hoe verging het de spelers die vertrokken?", "Bekijk dossiers", preview, "future")}${feature("/club/members/match-center", "Match Center", "Wedstrijdstatistieken", "Duik in de cijfers, uitblinkers en het wedstrijdbeeld van Ajax.", "Bekijk wedstrijd", preview, "match-center")}</section>`;
   const categoryFilters = archive.categories.map(category => {
     const count = archive.videos.filter(video => video.category === category.id).length;
