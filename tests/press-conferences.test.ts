@@ -34,6 +34,9 @@ test('local scheduling handles standard, match-eve and DST hours',()=>{
 test('robots disallow and more specific allow',()=>{
  assert.equal(allowedByRobots('User-agent: *\nDisallow: /artikelen/','/artikelen/a'),false);
  assert.equal(allowedByRobots('User-agent: *\nDisallow: /\nAllow: /artikelen/','/artikelen/a'),true);
+ assert.equal(allowedByRobots('User-agent: *\nDisallow: /*.axd','/artikelen/persco/'),true);
+ assert.equal(allowedByRobots('User-agent: *\nDisallow: /*.axd','/sitemap'),true);
+ assert.equal(allowedByRobots('User-agent: *\nDisallow: /*.axd','/file.axd'),false);
 });
 test('Cloudflare cron signs only the press endpoint; stale and wrong signatures fail',async()=>{
  const config=readFileSync(new URL('../cloudflare/press-conferences/wrangler.toml',import.meta.url),'utf8');

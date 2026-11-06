@@ -24,7 +24,7 @@ export const allowedByRobots = (robots: string, path: string) => {
     if (name === 'user-agent') { if (hasRules) { agents=[]; hasRules=false; } agents.push(value.toLowerCase()); }
     else { hasRules=true; if (agents.includes('*')) directives.push({allow:name==='allow',path:value}); }
   }
-  const matching = directives.filter(rule => rule.path && path.startsWith(rule.path.replace(/\*.*$/, ''))).sort((a,b) => b.path.length - a.path.length);
+  const matching = directives.filter(rule => rule.path && new RegExp(`^${rule.path.split('*').map(part => part.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('.*')}`).test(path)).sort((a,b) => b.path.length - a.path.length);
   return matching[0]?.allow ?? true;
 };
 export const dueLocalHour = (now: Date, fixtures: Fixture[], confirmedMoments: Date[] = []) => {
