@@ -1,8 +1,8 @@
-import { runPressConferenceCheck } from '../lib/press-conference-monitor';
-import { listCurrent, productionQuery } from '../lib/press-conference-store';
-import { getSessionWithPermission } from '../lib/server-permissions';
-import { permissions } from '../lib/permissions.config';
-import { verifyPressSchedulerRequest } from '../lib/press-scheduler-auth';
+import { runPressConferenceCheck } from './press-conference-monitor';
+import { listCurrent, productionQuery } from './press-conference-store';
+import { getSessionWithPermission } from './server-permissions';
+import { permissions } from './permissions.config';
+import { verifyPressSchedulerRequest } from './press-scheduler-auth';
 
 const json = (body: unknown, status = 200) => new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' } });
 const publicJson = (body: unknown) => new Response(JSON.stringify(body), { headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300' } });

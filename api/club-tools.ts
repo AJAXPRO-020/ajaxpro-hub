@@ -9,10 +9,12 @@ import { renderSocials } from "../api-impl/socials/index";
 import { loadSocialsMatchStats, SocialsMatchStatsError } from "../lib/socials-match-stats";
 import { loadSocialsMatchStatsSnapshot, saveSocialsMatchStatsSnapshot } from "../lib/socials-stats-snapshots";
 import { loadSystemStatus, systemStatusMarkup } from "../lib/system-status";
+import { GET as pressGET, POST as pressPOST } from "../lib/press-conference-http";
 
 const json=(body:unknown,status=200)=>new Response(JSON.stringify(body),{status,headers:{"Content-Type":"application/json; charset=UTF-8","Cache-Control":"private, no-store","X-Content-Type-Options":"nosniff"}});
 export async function GET(request:Request){
   const view=new URL(request.url).searchParams.get("view");
+  if(view==="press-conferences")return pressGET(request);
   if(view==="ajax-vandaag"||view==="ajax-vandaag-media"){
     const staff=await getSessionWithPermission(request,permissions.staffAccess);
     const allowed=staff&&await getSessionWithPermission(request,permissions.toolsSocials);
@@ -64,6 +66,7 @@ export async function GET(request:Request){
 
 export async function POST(request:Request){
   const view=new URL(request.url).searchParams.get("view");
+  if(view==="press-conferences")return pressPOST(request);
   const session=await getSessionWithPermission(request,permissions.portalAccess);
   if(!session)return new Response("Unauthorized",{status:401});
   const staff=await getSessionWithPermission(request,permissions.staffAccess);

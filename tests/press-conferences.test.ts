@@ -47,6 +47,7 @@ test('Cloudflare cron signs only the press endpoint; stale and wrong signatures 
    assert.equal(String(input),'https://ajaxpro.fans/api/press-conferences?action=check');
    const request=new Request(String(input),init);
    assert.equal(verifyPressSchedulerRequest(request,Math.floor(Date.now()/1000),secret),true);
+   assert.equal(verifyPressSchedulerRequest(new Request('https://ajaxpro.fans/api/club-tools?view=press-conferences&action=check',{headers:request.headers}),Math.floor(Date.now()/1000),secret),true);
    assert.equal(verifyPressSchedulerRequest(new Request('https://ajaxpro.fans/api/next-match?view=motm-announcement',{headers:request.headers}),Math.floor(Date.now()/1000),secret),false);
    assert.equal(verifyPressSchedulerRequest(request,Math.floor(Date.now()/1000)+301,secret),false);
    return Response.json({status:'not-due',count:0});

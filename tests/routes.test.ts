@@ -22,6 +22,11 @@ test("Socials gebruikt de bestaande club-tools serverless function",()=>{
   assert.equal(config.functions["api/socials.ts"],undefined);
 });
 
+test("Persconferenties hergebruikt de bestaande club-tools functie binnen Hobby-limiet",()=>{
+  assert.equal(config.rewrites.find((route:{source:string})=>route.source==="/api/press-conferences")?.destination,"/api/club-tools?view=press-conferences");
+  assert.equal(config.functions["api/press-conferences.ts"],undefined);
+});
+
 test("programma wordt dagelijks automatisch ververst via de bestaande match-API",()=>{
   assert.deepEqual(config.crons.find((cron:{path:string})=>cron.path==="/api/next-match?view=program"),{
     path:"/api/next-match?view=program",

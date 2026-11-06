@@ -10,9 +10,6 @@
     "api/club-tools.ts": {
       "maxDuration": 60,
       "includeFiles": "assets/social-video/**"
-    },
-    "api/press-conferences.ts": {
-      "maxDuration": 60
     }
   },
   "crons": [
@@ -22,6 +19,10 @@
     }
   ],
   "rewrites": [
+    {
+      "source": "/api/press-conferences",
+      "destination": "/api/club-tools?view=press-conferences"
+    },
     {
       "source": "/programma",
       "destination": "/programma.html"
