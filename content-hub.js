@@ -48,11 +48,17 @@ const bindContentHub = () => {
     const valid = type === "video" ? ["video/mp4", "video/quicktime"].includes(file?.type) && file.size <= 100 * 1024 * 1024 : ["image/jpeg", "image/png", "image/webp"].includes(file?.type) && file.size <= 15 * 1024 * 1024;
     if (!file || !valid) { setStatus("Kies een geldig bestand binnen de limiet."); return; }
     if (submit) { submit.disabled = true; submit.textContent = "Bezig…"; }
+    let step = "Uploadsessie aanvragen bij AjaxPro";
     try {
-      setStatus("1/3 Upload voorbereiden…");
+      setStatus(`1/3 ${step}…`);
       const session = await fetch(`/api/club-tools?view=content-hub-upload-session&type=${type}&mime=${encodeURIComponent(file.type)}&size=${file.size}&name=${encodeURIComponent(file.name)}`);
-      if (!session.ok) throw new Error("SESSION");
+      if (!session.ok) {
+        const body = await session.json().catch(() => null);
+        throw new Error(`AjaxPro HTTP ${session.status}: ${body?.error || "Uploadsessie kon niet worden aangemaakt."}`);
+      }
       const { uploadUrl } = await session.json();
+      if (typeof uploadUrl !== "string" || !uploadUrl.startsWith("https://www.googleapis.com/upload/drive/v3/files")) throw new Error("AjaxPro gaf geen geldige uploadsessie terug.");
+      step = "Bestand uploaden naar Google Drive";
       setStatus("2/3 Bestand uploaden naar Google Drive… 0%");
       const uploaded = await new Promise((resolve, reject) => {
         const request = new XMLHttpRequest();
@@ -60,15 +66,24 @@ const bindContentHub = () => {
         request.timeout = 120000;
         request.setRequestHeader("Content-Range", `bytes 0-${file.size - 1}/${file.size}`);
         request.upload.onprogress = (progress) => { if (progress.lengthComputable) setStatus(`2/3 Bestand uploaden naar Google Drive… ${Math.round(progress.loaded / progress.total * 100)}%`); };
-        request.onload = () => request.status >= 200 && request.status < 300 ? resolve(JSON.parse(request.responseText)) : reject(new Error("UPLOAD"));
-        request.onerror = () => reject(new Error("UPLOAD"));
-        request.ontimeout = () => reject(new Error("UPLOAD_TIMEOUT"));
+        request.onload = () => {
+          if (request.status < 200 || request.status >= 300) {
+            let reason = "Google API wees de upload af.";
+            try { reason = JSON.parse(request.responseText)?.error?.message || reason; } catch { /* Geen leesbare API-fout. */ }
+            reject(new Error(`Google API HTTP ${request.status}: ${reason.slice(0, 180)}`));
+            return;
+          }
+          try { resolve(JSON.parse(request.responseText)); } catch { reject(new Error("Google API gaf een onleesbare response terug.")); }
+        };
+        request.onerror = () => reject(new Error("Netwerkfout of CORS-blokkade (HTTP-status niet beschikbaar). Controleer de browserconsole."));
+        request.ontimeout = () => reject(new Error("Netwerk-timeout na 120 seconden (HTTP-status niet beschikbaar)."));
         request.send(file);
       });
-      setStatus("3/3 Post opslaan…");
+      step = "Upload afronden en post opslaan";
+      setStatus(`3/3 ${step}…`);
       for (const [name, value] of [["driveFileId", uploaded.id], ["driveFileName", uploaded.name || file.name], ["driveMimeType", uploaded.mimeType || file.type], ["driveFileSize", String(file.size)]]) { const input = document.createElement("input"); input.type = "hidden"; input.name = name; input.value = value; form.append(input); }
       form.submit();
-    } catch (error) { setStatus(error.message === "SESSION" ? "Upload voorbereiden mislukt. Probeer het opnieuw." : "Upload mislukt. Controleer je bestand en probeer het opnieuw."); if (submit) { submit.disabled = false; submit.textContent = "Post toevoegen"; } }
+    } catch (error) { setStatus(`${step} mislukt: ${error instanceof Error ? error.message : "Onbekende fout."}`); if (submit) { submit.disabled = false; submit.textContent = "Post toevoegen"; } }
   });
 };
 
