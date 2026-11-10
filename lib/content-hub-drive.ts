@@ -1,5 +1,6 @@
 const driveBase = "https://www.googleapis.com/drive/v3";
 const uploadBase = "https://www.googleapis.com/upload/drive/v3/files";
+import { createHmac, timingSafeEqual } from "node:crypto";
 
 const env = (name: string) => {
   const value = process.env[name]?.trim();
@@ -60,6 +61,33 @@ export const createResumableUpload = async (input: { name: string; mimeType: str
   const location = response.headers.get("location");
   if (!location || !location.startsWith("https://www.googleapis.com/upload/drive/v3/files")) throw new Error("Google gaf geen veilige uploadsessie terug.");
   return location;
+};
+
+const sign = (payload: string) => createHmac("sha256", env("GOOGLE_DRIVE_CLIENT_SECRET")).update(payload).digest("base64url");
+export const uploadTicket = (url: string, size: number, userId: string) => {
+  const payload = Buffer.from(JSON.stringify({ url, size, userId, expires: Date.now() + 60 * 60 * 1000 })).toString("base64url");
+  return `${payload}.${sign(payload)}`;
+};
+
+export const uploadChunk = async (ticket: string, userId: string, start: number, bytes: Uint8Array) => {
+  const [payload, signature] = ticket.split(".");
+  if (!payload || !signature || !/^[A-Za-z0-9_-]+$/.test(payload) || !/^[A-Za-z0-9_-]+$/.test(signature) || ticket.length > 4096) throw new Error("Ongeldige uploadsessie.");
+  const expected = Buffer.from(sign(payload));
+  const actual = Buffer.from(signature);
+  if (expected.length !== actual.length || !timingSafeEqual(expected, actual)) throw new Error("Ongeldige uploadsessie.");
+  const data = JSON.parse(Buffer.from(payload, "base64url").toString()) as { url: string; size: number; userId: string; expires: number };
+  const target = new URL(data.url);
+  if (data.userId !== userId || data.expires < Date.now() || target.protocol !== "https:" || target.hostname !== "www.googleapis.com" || target.pathname !== "/upload/drive/v3/files" || target.searchParams.get("uploadType") !== "resumable" || !Number.isSafeInteger(data.size) || data.size < 1 || !Number.isSafeInteger(start) || start < 0 || bytes.length < 1 || bytes.length > 2 * 1024 * 1024 || start + bytes.length > data.size) throw new Error("Ongeldige uploadchunk.");
+  const response = await fetch(data.url, { method: "PUT", redirect: "manual", headers: { "Content-Length": String(bytes.length), "Content-Range": `bytes ${start}-${start + bytes.length - 1}/${data.size}` }, body: Buffer.from(bytes) });
+  if (response.status === 308) {
+    const next = Number(response.headers.get("range")?.match(/^bytes=0-(\d+)$/)?.[1] ?? -1) + 1;
+    if (next <= start || next > start + bytes.length) throw new Error("Google Drive gaf geen geldige uploadvoortgang terug.");
+    return { complete: false, next };
+  }
+  if (!response.ok) throw new Error(`Google Drive-upload gaf HTTP ${response.status}.`);
+  const file = await response.json() as { id?: string; name?: string; mimeType?: string; size?: string };
+  if (!file.id) throw new Error("Google Drive gaf geen bestand terug.");
+  return { complete: true, file };
 };
 
 export const listUnclaimedUploads = async (claimedIds: string[]) => {

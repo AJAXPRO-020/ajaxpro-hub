@@ -56,29 +56,26 @@ const bindContentHub = () => {
         const body = await session.json().catch(() => null);
         throw new Error(`AjaxPro HTTP ${session.status}: ${body?.error || "Uploadsessie kon niet worden aangemaakt."}`);
       }
-      const { uploadUrl } = await session.json();
-      if (typeof uploadUrl !== "string" || !uploadUrl.startsWith("https://www.googleapis.com/upload/drive/v3/files")) throw new Error("AjaxPro gaf geen geldige uploadsessie terug.");
+      const { ticket } = await session.json();
+      if (typeof ticket !== "string" || !ticket) throw new Error("AjaxPro gaf geen geldige uploadsessie terug.");
       step = "Bestand uploaden naar Google Drive";
       setStatus("2/3 Bestand uploaden naar Google Drive… 0%");
-      const uploaded = await new Promise((resolve, reject) => {
-        const request = new XMLHttpRequest();
-        request.open("PUT", uploadUrl);
-        request.timeout = 120000;
-        request.setRequestHeader("Content-Range", `bytes 0-${file.size - 1}/${file.size}`);
-        request.upload.onprogress = (progress) => { if (progress.lengthComputable) setStatus(`2/3 Bestand uploaden naar Google Drive… ${Math.round(progress.loaded / progress.total * 100)}%`); };
-        request.onload = () => {
-          if (request.status < 200 || request.status >= 300) {
-            let reason = "Google API wees de upload af.";
-            try { reason = JSON.parse(request.responseText)?.error?.message || reason; } catch { /* Geen leesbare API-fout. */ }
-            reject(new Error(`Google API HTTP ${request.status}: ${reason.slice(0, 180)}`));
-            return;
-          }
-          try { resolve(JSON.parse(request.responseText)); } catch { reject(new Error("Google API gaf een onleesbare response terug.")); }
-        };
-        request.onerror = () => reject(new Error("Netwerkfout of CORS-blokkade (HTTP-status niet beschikbaar). Controleer de browserconsole."));
-        request.ontimeout = () => reject(new Error("Netwerk-timeout na 120 seconden (HTTP-status niet beschikbaar)."));
-        request.send(file);
-      });
+      let uploaded;
+      for (let offset = 0; offset < file.size;) {
+        const chunk = file.slice(offset, Math.min(offset + 2 * 1024 * 1024, file.size));
+        const response = await fetch("/api/club-tools?view=content-hub-upload-chunk", {
+          method: "POST",
+          headers: { "Content-Type": "application/octet-stream", "X-Content-Hub-Ticket": ticket, "X-Content-Hub-Start": String(offset) },
+          body: chunk,
+        });
+        const result = await response.json().catch(() => null);
+        if (!response.ok) throw new Error(`AjaxPro HTTP ${response.status}: ${result?.error || "Uploadchunk kon niet worden verwerkt."}`);
+        if (result?.complete) { uploaded = result.file; break; }
+        if (!Number.isSafeInteger(result?.next) || result.next <= offset || result.next > file.size) throw new Error("Google Drive gaf geen geldige uploadvoortgang terug.");
+        offset = result.next;
+        setStatus(`2/3 Bestand uploaden naar Google Drive… ${Math.round(offset / file.size * 100)}%`);
+      }
+      if (!uploaded?.id) throw new Error("Google Drive gaf geen voltooid bestand terug.");
       step = "Upload afronden en post opslaan";
       setStatus(`3/3 ${step}…`);
       for (const [name, value] of [["driveFileId", uploaded.id], ["driveFileName", uploaded.name || file.name], ["driveMimeType", uploaded.mimeType || file.type], ["driveFileSize", String(file.size)]]) { const input = document.createElement("input"); input.type = "hidden"; input.name = name; input.value = value; form.append(input); }
