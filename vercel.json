@@ -16,6 +16,10 @@
     {
       "path": "/api/next-match?view=program",
       "schedule": "0 5 * * *"
+    },
+    {
+      "path": "/api/content-hub-cleanup",
+      "schedule": "17 4 * * *"
     }
   ],
   "rewrites": [
@@ -78,6 +82,10 @@
     {
       "source": "/club/tools/socials",
       "destination": "/api/club-tools?view=socials"
+    },
+    {
+      "source": "/club/tools/content-hub",
+      "destination": "/api/club-tools?view=content-hub"
     },
     {
       "source": "/club/tools/jeugddossiers",

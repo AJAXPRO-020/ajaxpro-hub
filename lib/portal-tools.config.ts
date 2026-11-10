@@ -21,6 +21,7 @@ export const portalTools: readonly PortalTool[] = [
   {id:"tactics",title:"Tactiekbord",description:"Werk wedstrijdideeën uit op het digitale tactiekbord.",href:"https://ajaxpro-tactics-board.vercel.app",section:"team",external:true,requiredPermission:permissions.toolsTactics,order:10},
   {id:"screenshot",title:"Screenshot Editor",description:"Maak screenshots klaar voor AjaxPro-publicaties.",href:"https://screenshot-bewerker.vercel.app",section:"team",external:true,requiredPermission:permissions.toolsScreenshot,order:20},
   {id:"socials",title:"Socials",description:"Maak vaste AjaxPro-formats klaar voor social media.",href:"/club/tools/socials",section:"team",external:false,requiredPermission:permissions.toolsSocials,order:30},
+  {id:"content-hub",title:"Content Hub",description:"Plan en beheer bestanden voor AjaxPro-socials.",href:"/club/tools/content-hub",section:"team",external:false,requiredPermission:permissions.toolsSocials,order:40},
   {id:"jeugddossiers-admin",title:"Jeugddossiers beheren",description:"Genereer researchruns en publiceer gevalideerde dossierupdates.",href:"/club/tools/jeugddossiers",section:"admin",external:false,requiredPermission:permissions.jeugddossiersManage,order:20},
   {id:"motm-admin",title:"MOTM-stemmingen beheren",description:"Plan, open en beheer Man of the Match-stemmingen.",href:"/club/motm/beheer",section:"admin",external:false,requiredPermission:permissions.motmManage,order:10},
 ];

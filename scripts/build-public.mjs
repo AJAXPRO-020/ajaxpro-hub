@@ -9,10 +9,10 @@ const marker = join(output, ".ajaxpro-generated");
 // configuration remain available to Vercel Functions but outside the CDN root.
 const rootFiles = [
   "404.html", "geen-toegang.html", "index.html", "programma.html",
-  "club.js", "contracten-ui.js", "jeugddossiers-manage.js", "jeugddossiers.js",
+  "club.js", "content-hub.js", "contracten-ui.js", "jeugddossiers-manage.js", "jeugddossiers.js",
   "match-center.js", "members-video.js", "motm-admin.js", "portal-nav.js", "programma.js", "script.js", "system-status.js",
   "contracten.css", "jeugddossiers.css", "match-center.css", "members.css", "motm.css",
-  "programma.css", "socials-png.css", "socials-quote-large.css", "socials-ajax-vandaag.css", "socials-hallmark.css",
+  "programma.css", "content-hub.css", "socials-png.css", "socials-quote-large.css", "socials-ajax-vandaag.css", "socials-hallmark.css",
   "socials.css", "styles.css", "system-status.css",
   "llms.txt", "openapi.json", "robots.txt", "sitemap.xml",
 ];

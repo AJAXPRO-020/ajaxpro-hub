@@ -9,10 +9,16 @@ import { renderSocials } from "../api-impl/socials/index";
 import { loadSocialsMatchStats, SocialsMatchStatsError } from "../lib/socials-match-stats";
 import { loadSocialsMatchStatsSnapshot, saveSocialsMatchStatsSnapshot } from "../lib/socials-stats-snapshots";
 import { loadSystemStatus, systemStatusMarkup } from "../lib/system-status";
+import { contentHubPost } from "../api-impl/content-hub/index";
 
 const json=(body:unknown,status=200)=>new Response(JSON.stringify(body),{status,headers:{"Content-Type":"application/json; charset=UTF-8","Cache-Control":"private, no-store","X-Content-Type-Options":"nosniff"}});
 export async function GET(request:Request){
   const view=new URL(request.url).searchParams.get("view");
+  if(view==="content-hub"||view==="content-hub-upload-session"||view==="content-hub-download"){
+    const session=await getSessionWithPermission(request,permissions.toolsSocials);
+    if(!session)return redirect("/api/auth/discord-login?returnTo=/club/tools/content-hub");
+    return contentHubPost(request,session);
+  }
   if(view==="ajax-vandaag"||view==="ajax-vandaag-media"){
     const staff=await getSessionWithPermission(request,permissions.staffAccess);
     const allowed=staff&&await getSessionWithPermission(request,permissions.toolsSocials);
@@ -64,6 +70,11 @@ export async function GET(request:Request){
 
 export async function POST(request:Request){
   const view=new URL(request.url).searchParams.get("view");
+  if(view?.startsWith("content-hub")){
+    const session=await getSessionWithPermission(request,permissions.toolsSocials);
+    if(!session)return new Response("Forbidden",{status:403});
+    return contentHubPost(request,session);
+  }
   const session=await getSessionWithPermission(request,permissions.portalAccess);
   if(!session)return new Response("Unauthorized",{status:401});
   const staff=await getSessionWithPermission(request,permissions.staffAccess);
