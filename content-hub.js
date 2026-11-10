@@ -39,7 +39,7 @@ const bindContentHub = () => {
 
   const preview = root.querySelector("#content-hub-preview");
   const media = preview?.querySelector(".content-preview__media");
-  const closePreview = () => { preview?.close(); if (media) media.replaceChildren(); };
+  const closePreview = () => { preview?.close(); if (media) { media.replaceChildren(); media.style.width = ""; } };
   root.querySelectorAll("[data-open-content-preview]").forEach((button) => button.addEventListener("click", () => {
     if (!preview?.showModal || !media) return;
     const isVideo = button.dataset.type === "video";
@@ -47,13 +47,23 @@ const bindContentHub = () => {
     element.src = `/api/club-tools?view=content-hub-preview&id=${encodeURIComponent(button.dataset.id)}`;
     if (isVideo) { element.controls = true; element.preload = "metadata"; }
     else element.alt = button.dataset.name || "Geplande afbeelding";
-    preview.querySelector("[data-preview-title]").textContent = button.dataset.name || "Voorbeeld";
+    const fitMedia = () => {
+      const width = isVideo ? element.videoWidth : element.naturalWidth;
+      const height = isVideo ? element.videoHeight : element.naturalHeight;
+      if (width && height) media.style.width = `${Math.floor(Math.min(780, window.innerWidth - 72, width * Math.max(160, window.innerHeight - 200) / height))}px`;
+    };
+    element.addEventListener(isVideo ? "loadedmetadata" : "load", fitMedia, { once: true });
+    preview.querySelector("[data-preview-title]").textContent = button.dataset.fileName || "Bestand";
+    const note = preview.querySelector("[data-preview-note]");
+    note.textContent = button.dataset.note || "";
+    note.hidden = !note.textContent;
+    media.style.width = "min(360px, calc(100vw - 72px))";
     media.replaceChildren(element);
     preview.showModal();
   }));
   preview?.querySelector("[data-close-content-preview]")?.addEventListener("click", closePreview);
   preview?.addEventListener("click", (event) => { if (event.target === preview) closePreview(); });
-  preview?.addEventListener("close", () => { if (media) media.replaceChildren(); });
+  preview?.addEventListener("close", () => { if (media) { media.replaceChildren(); media.style.width = ""; } });
 
   const form = root.querySelector(".content-form");
   form?.addEventListener("submit", async (event) => {
