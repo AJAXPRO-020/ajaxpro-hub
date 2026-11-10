@@ -39,8 +39,8 @@ const driveRequest = async (path: string, init: RequestInit = {}) => {
 };
 
 export const assertInContentHub = async (fileId: string) => {
-  const response = await driveRequest(`/files/${encodeURIComponent(fileId)}?fields=id,parents,trashed`);
-  const file = await response.json() as { id?: string; parents?: string[]; trashed?: boolean };
+  const response = await driveRequest(`/files/${encodeURIComponent(fileId)}?fields=id,name,mimeType,size,parents,trashed,appProperties,createdTime`);
+  const file = await response.json() as { id?: string; name?: string; mimeType?: string; size?: string; parents?: string[]; trashed?: boolean; appProperties?: Record<string, string>; createdTime?: string };
   if (file.id !== fileId || file.trashed || !file.parents?.includes(contentHubFolderId())) throw new Error("Bestand staat niet in de Content Hub-map.");
   return file;
 };
@@ -54,12 +54,22 @@ export const createResumableUpload = async (input: { name: string; mimeType: str
       "X-Upload-Content-Type": input.mimeType,
       "X-Upload-Content-Length": String(input.size),
     },
-    body: JSON.stringify({ name: input.name, mimeType: input.mimeType, parents: [contentHubFolderId()] }),
+    body: JSON.stringify({ name: input.name, mimeType: input.mimeType, parents: [contentHubFolderId()], appProperties: { ajaxproContentHubUpload: "true" } }),
   });
   if (!response.ok) throw new Error(`Drive-uploadsessie kon niet worden gestart (${response.status}).`);
   const location = response.headers.get("location");
   if (!location || !location.startsWith("https://www.googleapis.com/upload/drive/v3/files")) throw new Error("Google gaf geen veilige uploadsessie terug.");
   return location;
+};
+
+export const listUnclaimedUploads = async (claimedIds: string[]) => {
+  const folderId = contentHubFolderId();
+  const q = `'${folderId.replace(/'/g, "\\'")}' in parents and trashed = false and appProperties has { key='ajaxproContentHubUpload' and value='true' }`;
+  const response = await driveRequest(`/files?q=${encodeURIComponent(q)}&fields=files(id,name,mimeType,size,parents,trashed,createdTime)&pageSize=100`);
+  const payload = await response.json() as { files?: Array<{ id?: string; name?: string; mimeType?: string; size?: string; parents?: string[]; trashed?: boolean; createdTime?: string }> };
+  const claimed = new Set(claimedIds);
+  const cutoff = Date.now() - 24 * 60 * 60 * 1000;
+  return (payload.files ?? []).filter((file) => file.id && !claimed.has(file.id) && !file.trashed && file.parents?.includes(folderId) && file.createdTime && Date.parse(file.createdTime) < cutoff);
 };
 
 export const getFile = async (fileId: string) => {
