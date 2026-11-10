@@ -8,7 +8,7 @@ const marker = join(output, ".ajaxpro-generated");
 // Only these files become public. Server modules, data, migrations, tests and
 // configuration remain available to Vercel Functions but outside the CDN root.
 const rootFiles = [
-  "404.html", "geen-toegang.html", "index.html", "programma.html",
+  "404.html", "geen-toegang.html", "index.html", "privacybeleid.html", "programma.html", "voorwaarden.html",
   "club.js", "content-hub.js", "contracten-ui.js", "jeugddossiers-manage.js", "jeugddossiers.js",
   "match-center.js", "members-video.js", "motm-admin.js", "portal-nav.js", "programma.js", "script.js", "system-status.js",
   "persconferenties.js",

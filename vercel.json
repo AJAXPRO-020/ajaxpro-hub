@@ -32,6 +32,10 @@
       "destination": "/programma.html"
     },
     {
+      "source": "/privacybeleid",
+      "destination": "/privacybeleid.html"
+    },
+    {
       "source": "/club",
       "destination": "/api/club"
     },
@@ -134,6 +138,10 @@
     {
       "source": "/geen-toegang",
       "destination": "/geen-toegang.html"
+    },
+    {
+      "source": "/voorwaarden",
+      "destination": "/voorwaarden.html"
     }
   ],
   "headers": [

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <title>Privacybeleid | AjaxPro</title>
+    <link rel="stylesheet" href="/styles.css?v=20261101">
+    <style>
+      .legal-page { position: relative; z-index: 2; max-width: 820px; margin: 0 auto; padding: 56px 24px 80px; }
+      .legal-page header { margin-bottom: 42px; }
+      .legal-page h1 { margin: 0 0 12px; font-size: clamp(2.5rem, 7vw, 5rem); line-height: .95; }
+      .legal-page h2 { margin: 38px 0 10px; font-size: 1.45rem; }
+      .legal-page p, .legal-page li { color: var(--muted); }
+      .legal-page a { color: var(--text); }
+      .legal-page__back { display: inline-block; margin-bottom: 28px; color: var(--muted); }
+      .legal-page__notice { padding: 16px 18px; border: 1px solid var(--line); border-radius: var(--radius-lg); background: rgba(17,25,38,.7); }
+      .legal-page__footer { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--line); }
+    </style>
+  </head>
+  <body>
+    <main class="legal-page">
+      <a class="legal-page__back" href="/">← Terug naar AjaxPro</a>
+      <header><p class="eyebrow">AjaxPro</p><h1>Privacybeleid</h1><p>Laatst bijgewerkt: 10 november 2026</p></header>
+      <div class="legal-page__notice"><strong>Belangrijke toelichting</strong><p>AjaxPro is een niet-commercieel fanproject dat door particulieren uit het team wordt beheerd. De volledige identiteit en het adres van de formele verwerkingsverantwoordelijke zijn op dit moment niet op deze pagina opgenomen. Daarom is dit een begrijpelijke beschrijving van de huidige verwerking, geen verklaring die als juridisch volledig moet worden beschouwd.</p></div>
+
+      <h2>Welke gegevens verwerken we?</h2>
+      <p>Voor de Discord-login ontvangen we van Discord gegevens die nodig zijn om je account en toegang te herkennen: je Discord-gebruikers-ID, gebruikersnaam, eventuele weergavenaam, avatar en de rollen die bij je AjaxPro-serverlidmaatschap horen. De site gebruikt deze gegevens voor inloggen, toegang tot Club-, Members- en stafffuncties en server-side toegangscontroles.</p>
+      <p>Bij communityfuncties kunnen gegevens aan een Discord-ID worden gekoppeld. Zo wordt bij een Man of the Match-stem de Discord-ID bij de stem opgeslagen. Bij stafftools kan de Discord-ID worden opgeslagen als maker van een item.</p>
+
+      <h2>Cookies en sessies</h2>
+      <p>De site gebruikt functionele cookies voor de Discord-login: een tijdelijke OAuth-statecookie en return-cookie van maximaal 10 minuten, en een ondertekende, HttpOnly sessiecookie van maximaal 30 dagen. De sessiecookie bevat onder meer een technische Discord-ID, gebruikersnaam, avatar-URL, rol-ID’s en uitgifte- en vervaltijd. We hebben in de onderzochte code geen advertentie- of marketingcookies vastgesteld.</p>
+
+      <h2>Content Hub</h2>
+      <p>Bevoegde AjaxPro-stafleden kunnen via de Content Hub één video- of fotobestand per geplande post uploaden. Het bestand wordt rechtstreeks vanuit de browser naar een privé Google Drive-map van AjaxPro gestuurd. De database bewaart de bijbehorende metadata, zoals naam, datum, type, bestand-ID, bestandstype, bestandsgrootte en maker.</p>
+      <p>Bestanden en de gekoppelde post worden automatisch verwijderd 30 dagen na de geplande publicatiedatum. Een nog niet aan een post gekoppeld bestand kan na minimaal 24 uur door de bestaande opschoning worden verwijderd. OAuth-credentials en tokens voor Google Drive worden server-side bewaard en niet aan stafleden verstrekt.</p>
+
+      <h2>Waar worden gegevens verwerkt?</h2>
+      <p>De huidige applicatie gebruikt Discord voor authenticatie en rolcontrole, Neon/PostgreSQL voor applicatiegegevens, Google Drive voor privébestanden uit de Content Hub en Vercel voor hosting en uitvoering van de applicatie. De publieke site laadt daarnaast Vercel Insights en gebruikt op sommige pagina’s externe media of links, waaronder YouTube. De precieze door deze externe diensten verzamelde gegevens worden door hun eigen privacybeleid bepaald.</p>
+
+      <h2>Bewaartermijnen</h2>
+      <p>De login-sessie verloopt na maximaal 30 dagen. OAuth-stategegevens verlopen na maximaal 10 minuten. Content Hub-bestanden en posts worden 30 dagen na de geplande publicatiedatum opgeruimd. Voor andere databasegegevens, zoals stemmen en historische beheergegevens, is in de huidige code geen algemene automatische verwijdertermijn vastgelegd.</p>
+
+      <h2>Vragen of verzoeken</h2>
+      <p>Voor privacyvragen kun je contact opnemen via <a href="mailto:ajaxpro020@gmail.com">ajaxpro020@gmail.com</a>. Vermeld in een verzoek zo duidelijk mogelijk op welke gegevens of functie je vraag betrekking heeft.</p>
+      <p>Deze pagina moet nog worden aangevuld zodra de formele identiteit en het adres van de verantwoordelijke zijn vastgesteld.</p>
+
+      <footer class="legal-page__footer"><a href="/voorwaarden">Gebruiksvoorwaarden</a> · <a href="/">AjaxPro</a></footer>
+    </main>
+  </body>
+</html>
