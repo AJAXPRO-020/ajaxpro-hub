@@ -18,7 +18,7 @@
       "schedule": "0 5 * * *"
     },
     {
-      "path": "/api/content-hub-cleanup",
+      "path": "/api/next-match?view=content-hub-cleanup",
       "schedule": "17 4 * * *"
     }
   ],

@@ -1,7 +1,7 @@
-import { dueContentHubPosts, deleteContentHubPost, markContentHubCleanupError } from "../lib/content-hub-db";
-import { deleteFile } from "../lib/content-hub-drive";
+import { dueContentHubPosts, deleteContentHubPost, markContentHubCleanupError } from "../../lib/content-hub-db";
+import { deleteFile } from "../../lib/content-hub-drive";
 
-export default async function handler(request: Request) {
+export async function runContentHubCleanup(request: Request) {
   if (!process.env.CRON_SECRET || request.headers.get("authorization") !== `Bearer ${process.env.CRON_SECRET}`) return new Response("Unauthorized", { status: 401 });
   const posts = await dueContentHubPosts();
   for (const post of posts) {
