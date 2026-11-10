@@ -1,4 +1,13 @@
 const form = document.querySelector(".content-form");
+const dialog = document.querySelector("#content-hub-form");
+document.querySelectorAll("[data-open-content-form]").forEach((trigger) => trigger.addEventListener("click", (event) => {
+  if (!dialog?.showModal) return;
+  event.preventDefault();
+  dialog.showModal();
+  dialog.querySelector("[name=scheduledFor]")?.focus();
+}));
+document.querySelector("[data-close-content-form]")?.addEventListener("click", () => dialog?.close());
+dialog?.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
 form?.addEventListener("submit", async (event) => {
   event.preventDefault();
   const file = form.querySelector("[data-content-hub-file]").files[0];
