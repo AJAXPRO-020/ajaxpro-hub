@@ -10,6 +10,7 @@ import { loadSocialsMatchStats, SocialsMatchStatsError } from "../lib/socials-ma
 import { loadSocialsMatchStatsSnapshot, saveSocialsMatchStatsSnapshot } from "../lib/socials-stats-snapshots";
 import { loadSystemStatus, systemStatusMarkup } from "../lib/system-status";
 import { contentHubPost } from "../api-impl/content-hub/index";
+import { GET as pressGET, POST as pressPOST } from "../lib/press-conference-http";
 
 const json=(body:unknown,status=200)=>new Response(JSON.stringify(body),{status,headers:{"Content-Type":"application/json; charset=UTF-8","Cache-Control":"private, no-store","X-Content-Type-Options":"nosniff"}});
 export async function GET(request:Request){
@@ -19,6 +20,7 @@ export async function GET(request:Request){
     if(!session)return redirect("/api/auth/discord-login?returnTo=/club/tools/content-hub");
     return contentHubPost(request,session);
   }
+  if(view==="press-conferences")return pressGET(request);
   if(view==="ajax-vandaag"||view==="ajax-vandaag-media"){
     const staff=await getSessionWithPermission(request,permissions.staffAccess);
     const allowed=staff&&await getSessionWithPermission(request,permissions.toolsSocials);
@@ -75,6 +77,7 @@ export async function POST(request:Request){
     if(!session)return new Response("Forbidden",{status:403});
     return contentHubPost(request,session);
   }
+  if(view==="press-conferences")return pressPOST(request);
   const session=await getSessionWithPermission(request,permissions.portalAccess);
   if(!session)return new Response("Unauthorized",{status:401});
   const staff=await getSessionWithPermission(request,permissions.staffAccess);

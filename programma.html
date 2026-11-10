@@ -26,10 +26,22 @@
         <p class="program-hero__lead">De komende wedstrijden van Ajax. Hoe dichterbij de aftrap, hoe meer je ziet.</p>
       </section>
       <section class="program-content section-shell" aria-live="polite">
-        <p class="program-status" data-program-status>Programma laden…</p>
-        <div class="program-list" data-program-list></div>
+        <div class="program-tabs" role="tablist" aria-label="Programmaonderdelen">
+          <button type="button" role="tab" id="tab-wedstrijden" aria-controls="panel-wedstrijden" aria-selected="true" data-program-tab="wedstrijden">Wedstrijden</button>
+          <button type="button" role="tab" id="tab-persconferenties" aria-controls="panel-persconferenties" aria-selected="false" data-program-tab="persconferenties">Persconferenties</button>
+        </div>
+        <div id="panel-wedstrijden" role="tabpanel" aria-labelledby="tab-wedstrijden" data-program-panel="wedstrijden">
+          <p class="program-status" data-program-status>Programma laden…</p>
+          <div class="program-list" data-program-list></div>
+        </div>
+        <div id="panel-persconferenties" role="tabpanel" aria-labelledby="tab-persconferenties" data-program-panel="persconferenties" hidden>
+          <div class="press-toolbar"><p class="program-status" data-press-status>Persconferenties laden…</p><button class="press-check" type="button" data-press-check hidden>Nu controleren</button></div>
+          <div class="press-list" data-press-list></div>
+          <p class="press-checked" data-press-checked></p>
+        </div>
       </section>
     </main>
     <script src="./programma.js?v=20260830-priority"></script>
+    <script src="./persconferenties.js?v=1"></script>
   </body>
 </html>

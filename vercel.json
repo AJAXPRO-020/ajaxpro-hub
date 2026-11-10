@@ -24,6 +24,10 @@
   ],
   "rewrites": [
     {
+      "source": "/api/press-conferences",
+      "destination": "/api/club-tools?view=press-conferences"
+    },
+    {
       "source": "/programma",
       "destination": "/programma.html"
     },

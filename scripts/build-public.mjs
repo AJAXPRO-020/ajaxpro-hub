@@ -11,6 +11,7 @@ const rootFiles = [
   "404.html", "geen-toegang.html", "index.html", "programma.html",
   "club.js", "content-hub.js", "contracten-ui.js", "jeugddossiers-manage.js", "jeugddossiers.js",
   "match-center.js", "members-video.js", "motm-admin.js", "portal-nav.js", "programma.js", "script.js", "system-status.js",
+  "persconferenties.js",
   "contracten.css", "jeugddossiers.css", "match-center.css", "members.css", "motm.css",
   "programma.css", "content-hub.css", "socials-png.css", "socials-quote-large.css", "socials-ajax-vandaag.css", "socials-hallmark.css",
   "socials.css", "styles.css", "system-status.css",
