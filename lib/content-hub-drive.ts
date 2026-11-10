@@ -100,9 +100,9 @@ export const listUnclaimedUploads = async (claimedIds: string[]) => {
   return (payload.files ?? []).filter((file) => file.id && !claimed.has(file.id) && !file.trashed && file.parents?.includes(folderId) && file.createdTime && Date.parse(file.createdTime) < cutoff);
 };
 
-export const getFile = async (fileId: string) => {
+export const getFile = async (fileId: string, range?: string) => {
   await assertInContentHub(fileId);
-  return driveRequest(`/files/${encodeURIComponent(fileId)}?alt=media`);
+  return driveRequest(`/files/${encodeURIComponent(fileId)}?alt=media`, range ? { headers: { Range: range } } : {});
 };
 
 export const deleteFile = async (fileId: string) => {

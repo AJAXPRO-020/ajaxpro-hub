@@ -15,7 +15,7 @@ import { GET as pressGET, POST as pressPOST } from "../lib/press-conference-http
 const json=(body:unknown,status=200)=>new Response(JSON.stringify(body),{status,headers:{"Content-Type":"application/json; charset=UTF-8","Cache-Control":"private, no-store","X-Content-Type-Options":"nosniff"}});
 export async function GET(request:Request){
   const view=new URL(request.url).searchParams.get("view");
-  if(view==="content-hub"||view==="content-hub-upload-session"||view==="content-hub-download"){
+  if(view==="content-hub"||view==="content-hub-upload-session"||view==="content-hub-download"||view==="content-hub-preview"){
     const session=await getSessionWithPermission(request,permissions.toolsSocials);
     if(!session)return redirect("/api/auth/discord-login?returnTo=/club/tools/content-hub");
     return contentHubPost(request,session);

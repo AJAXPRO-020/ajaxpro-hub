@@ -37,6 +37,24 @@ const bindContentHub = () => {
   root.querySelector("[data-close-content-form]")?.addEventListener("click", () => dialog?.close());
   dialog?.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
 
+  const preview = root.querySelector("#content-hub-preview");
+  const media = preview?.querySelector(".content-preview__media");
+  const closePreview = () => { preview?.close(); if (media) media.replaceChildren(); };
+  root.querySelectorAll("[data-open-content-preview]").forEach((button) => button.addEventListener("click", () => {
+    if (!preview?.showModal || !media) return;
+    const isVideo = button.dataset.type === "video";
+    const element = document.createElement(isVideo ? "video" : "img");
+    element.src = `/api/club-tools?view=content-hub-preview&id=${encodeURIComponent(button.dataset.id)}`;
+    if (isVideo) { element.controls = true; element.preload = "metadata"; }
+    else element.alt = button.dataset.name || "Geplande afbeelding";
+    preview.querySelector("[data-preview-title]").textContent = button.dataset.name || "Voorbeeld";
+    media.replaceChildren(element);
+    preview.showModal();
+  }));
+  preview?.querySelector("[data-close-content-preview]")?.addEventListener("click", closePreview);
+  preview?.addEventListener("click", (event) => { if (event.target === preview) closePreview(); });
+  preview?.addEventListener("close", () => { if (media) media.replaceChildren(); });
+
   const form = root.querySelector(".content-form");
   form?.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -58,8 +76,8 @@ const bindContentHub = () => {
       }
       const { ticket } = await session.json();
       if (typeof ticket !== "string" || !ticket) throw new Error("AjaxPro gaf geen geldige uploadsessie terug.");
-      step = "Bestand uploaden naar Google Drive";
-      setStatus("2/3 Bestand uploaden naar Google Drive… 0%");
+      step = "Bestand uploaden naar AjaxPro";
+      setStatus("2/3 Bestand uploaden naar AjaxPro… 0%");
       let uploaded;
       for (let offset = 0; offset < file.size;) {
         const chunk = file.slice(offset, Math.min(offset + 2 * 1024 * 1024, file.size));
@@ -73,7 +91,7 @@ const bindContentHub = () => {
         if (result?.complete) { uploaded = result.file; break; }
         if (!Number.isSafeInteger(result?.next) || result.next <= offset || result.next > file.size) throw new Error("Google Drive gaf geen geldige uploadvoortgang terug.");
         offset = result.next;
-        setStatus(`2/3 Bestand uploaden naar Google Drive… ${Math.round(offset / file.size * 100)}%`);
+        setStatus(`2/3 Bestand uploaden naar AjaxPro… ${Math.round(offset / file.size * 100)}%`);
       }
       if (!uploaded?.id) throw new Error("Google Drive gaf geen voltooid bestand terug.");
       step = "Upload afronden en post opslaan";
