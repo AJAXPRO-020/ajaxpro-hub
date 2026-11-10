@@ -58,7 +58,6 @@ const bindContentHub = () => {
         const request = new XMLHttpRequest();
         request.open("PUT", uploadUrl);
         request.timeout = 120000;
-        request.setRequestHeader("Content-Length", String(file.size));
         request.setRequestHeader("Content-Range", `bytes 0-${file.size - 1}/${file.size}`);
         request.upload.onprogress = (progress) => { if (progress.lengthComputable) setStatus(`2/3 Bestand uploaden naar Google Drive… ${Math.round(progress.loaded / progress.total * 100)}%`); };
         request.onload = () => request.status >= 200 && request.status < 300 ? resolve(JSON.parse(request.responseText)) : reject(new Error("UPLOAD"));
@@ -69,7 +68,7 @@ const bindContentHub = () => {
       setStatus("3/3 Post opslaan…");
       for (const [name, value] of [["driveFileId", uploaded.id], ["driveFileName", uploaded.name || file.name], ["driveMimeType", uploaded.mimeType || file.type], ["driveFileSize", String(file.size)]]) { const input = document.createElement("input"); input.type = "hidden"; input.name = name; input.value = value; form.append(input); }
       form.submit();
-    } catch { setStatus("Upload mislukt. Controleer je bestand en probeer het opnieuw."); if (submit) { submit.disabled = false; submit.textContent = "Post toevoegen"; } }
+    } catch (error) { setStatus(error.message === "SESSION" ? "Upload voorbereiden mislukt. Probeer het opnieuw." : "Upload mislukt. Controleer je bestand en probeer het opnieuw."); if (submit) { submit.disabled = false; submit.textContent = "Post toevoegen"; } }
   });
 };
 
