@@ -74,10 +74,14 @@
 .content-post__actions form button::before{content:"×";background:none;font-size:24px;font-weight:500}
 .content-action-icon{display:none}
 @media (min-width:601px){
-  .content-post__actions{align-items:center;gap:8px}
+  .content-post__actions{display:grid;grid-template-columns:auto auto;grid-template-rows:42px 42px;align-items:center;justify-content:end;gap:8px}
   .content-post__actions a[href*="content-hub-download"],.content-post__actions [data-open-content-preview]{display:inline-flex;align-items:center;gap:7px}
+  .content-post__actions a[href*="content-hub-download"]{grid-column:1;grid-row:1}
+  .content-post__actions [data-open-content-preview]{grid-column:2;grid-row:1}
   .content-post__actions a[href*="content-hub-download"] .content-action-icon,.content-post__actions [data-open-content-preview] .content-action-icon{display:block;width:17px;height:17px;flex:none}
   .content-post__actions a[href*="&edit="],.content-post__actions form{width:42px;height:42px;display:block}
+  .content-post__actions a[href*="&edit="]{grid-column:1;grid-row:2}
+  .content-post__actions form{grid-column:2;grid-row:2}
   .content-post__actions a[href*="&edit="],.content-post__actions form button{padding:0;font-size:0;display:inline-flex;align-items:center;justify-content:center}
   .content-post__actions form button{width:42px;height:42px}
   .content-post__actions a[href*="&edit="] .content-action-icon,.content-post__actions form button .content-action-icon{display:block;width:18px;height:18px}
