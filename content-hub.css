@@ -17,3 +17,7 @@
 .content-post__tags{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.content-channel{display:inline-block;border-radius:999px;padding:4px 7px;font-size:10px;font-weight:700;line-height:1}.content-channel--instagram{background:#d62976;color:#fff}.content-channel--tiktok{background:#111;color:#25f4ee;box-shadow:inset 0 0 0 1px #fe2c55}.content-calendar__day.is-selected b{background:transparent;color:var(--content-ink)}.content-calendar__channels{display:flex;flex-direction:column;align-items:flex-end;gap:3px;min-height:24px;margin-left:auto}.content-calendar__channels i{display:grid;place-items:center;width:15px;height:15px;border-radius:4px;color:#fff}.content-calendar__channels svg{display:block;width:10px;height:10px;fill:currentColor}.content-calendar__channel--instagram{background:#d62976}.content-calendar__channel--tiktok{background:#111;color:#25f4ee!important;box-shadow:inset 0 0 0 1px #fe2c55}
 .content-form__channels{display:flex;gap:10px;border:0;padding:0;margin:0}.content-form__channels legend{color:var(--content-muted);margin-bottom:7px}.content-form__channels label{display:flex;align-items:center;gap:6px;color:var(--content-ink)}.content-form__channels input{width:auto}
 .content-form[action*="content-hub-edit"] .content-form__hint{display:none}
+
+/* Channel marks stay out of the calendar layout. */
+.content-calendar__day{position:relative}.content-calendar__channels{position:absolute;top:8px;right:8px;margin:0}
+@media (max-width:600px){.content-calendar__channels{display:none}.content-calendar__day{min-height:50px}}
