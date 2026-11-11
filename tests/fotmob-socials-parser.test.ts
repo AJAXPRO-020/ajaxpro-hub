@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { parseFotMobAjaxMatchHtml } from "../lib/fotmob-socials-parser";
+import { fetchFotMobMatchDetails, parseFotMobAjaxMatchHtml } from "../lib/fotmob-socials-parser";
 
 const field = (key: string, value: number, total?: number) => ({
   key,
@@ -109,4 +109,24 @@ test("neemt uitsluitend spelers met het stabiele Ajax-team-ID op", () => {
     "30": player(30, 9999, "Andere speler", {}),
   } }));
   assert.deepEqual(result.players.map(candidate => candidate.name), ["Ajax-speler"]);
+});
+
+test("normaliseert aanvullende matchDetails-data zonder credentials", async () => {
+  const result = await fetchFotMobMatchDetails(5781803, {
+    now: () => new Date("2026-11-11T12:00:00Z"),
+    fetcher: async () => new Response(JSON.stringify({
+      general: { matchId: 5781803 },
+      content: {
+        matchFacts: { events: [{ type: "Goal", time: 3 }] },
+        lineup: { homeTeam: { formation: "4-3-3" }, awayTeam: { formation: "4-2-3-1" } },
+        shotmap: { shots: [{ id: 1, eventType: "Goal", playerId: 2, playerName: "Speler", min: 3, x: 98.4, y: 31, shotType: "Header", expectedGoals: .2, expectedGoalsOnTarget: .22, isOnTarget: true }] },
+        stats: { Periods: { All: { stats: [] }, FirstHalf: { stats: [] } } },
+      },
+    }), { status: 200, headers: { "content-type": "application/json" } }),
+  });
+  assert.equal(result.matchId, 5781803);
+  assert.deepEqual(result.formations, { home: "4-3-3", away: "4-2-3-1" });
+  assert.equal(result.shots[0].expectedGoals, .2);
+  assert.equal(result.events.length, 1);
+  assert.equal(result.fetchedAt, "2026-11-11T12:00:00.000Z");
 });

@@ -18,6 +18,20 @@ export type FotMobSocialsTeamStats = {
   redCards: number | null;
 };
 
+export type FotMobShot = {
+  id: number | null; eventType: string | null; playerId: number | null; playerName: string | null;
+  minute: number | null; x: number | null; y: number | null; shotType: string | null;
+  expectedGoals: number | null; expectedGoalsOnTarget: number | null; isOnTarget: boolean | null;
+};
+
+export type FotMobApiData = {
+  source: "fotmob-api"; matchId: number; fetchedAt: string;
+  events: any[]; shots: FotMobShot[]; lineups: any;
+  formations: { home: string | null; away: string | null };
+  teamStatsByPeriod: any;
+  raw: any;
+};
+
 export type FotMobSocialsMatch = {
   match: {
     fotmobId: number | null;
@@ -54,6 +68,7 @@ export type FotMobSocialsMatch = {
     duelsWon: number | null;
     rating: number | null;
   }>;
+  fotmobApi?: FotMobApiData;
 };
 
 type JsonObject = Record<string, unknown>;
@@ -156,6 +171,29 @@ const parsedTeamStats = (content: JsonObject, teamIndex: number): FotMobSocialsT
   };
 };
 
+const shotFrom = (value: unknown): FotMobShot => {
+  const shot = objectValue(value);
+  return {
+    id: nullableInteger(shot?.id), eventType: nullableString(shot?.eventType), playerId: nullableInteger(shot?.playerId),
+    playerName: nullableString(shot?.playerName), minute: nullableInteger(shot?.min), x: nullableNumber(shot?.x), y: nullableNumber(shot?.y),
+    shotType: nullableString(shot?.shotType), expectedGoals: nullableNumber(shot?.expectedGoals),
+    expectedGoalsOnTarget: nullableNumber(shot?.expectedGoalsOnTarget), isOnTarget: typeof shot?.isOnTarget === "boolean" ? shot.isOnTarget : null,
+  };
+};
+
+const parseFotMobApiPayload = (payload: JsonObject, now: () => Date): FotMobApiData | null => {
+  const general = objectValue(payload.general), content = objectValue(payload.content), id = nullableInteger(general?.matchId);
+  if (!content || id === null) return null;
+  const lineup = objectValue(content.lineup), home = objectValue(lineup?.homeTeam), away = objectValue(lineup?.awayTeam);
+  const periods = objectValue(objectValue(content.stats)?.Periods);
+  return {
+    source: "fotmob-api", matchId: id, fetchedAt: now().toISOString(), events: arrayValue(objectValue(content.matchFacts)?.events),
+    shots: arrayValue(objectValue(content.shotmap)?.shots).map(shotFrom), lineups: content.lineup ?? null,
+    formations: { home: nullableString(home?.formation), away: nullableString(away?.formation) },
+    teamStatsByPeriod: periods ?? {}, raw: payload,
+  };
+};
+
 export const parseFotMobAjaxMatchHtml = (html: string): FotMobSocialsMatch => {
   const nextData = extractNextData(html);
   const props = objectValue(nextData.props);
@@ -238,5 +276,25 @@ export const fetchFotMobAjaxMatch = async (url: string, options: FetchOptions = 
     signal: AbortSignal.timeout(15_000),
   });
   if (!response.ok) throw new FotMobParserError(`FotMob antwoordde met HTTP ${response.status}.`);
-  return parseFotMobAjaxMatchHtml(await response.text());
+  const parsed = parseFotMobAjaxMatchHtml(await response.text());
+  const matchId = parsed.match.fotmobId;
+  if (matchId === null) return parsed;
+  try {
+    const api = await fetchFotMobMatchDetails(matchId, options);
+    return api ? { ...parsed, fotmobApi: api } : parsed;
+  } catch {
+    return parsed;
+  }
+};
+
+export const fetchFotMobMatchDetails = async (matchId: number, options: FetchOptions & { now?: () => Date } = {}) => {
+  if (!Number.isInteger(matchId) || matchId <= 0) throw new FotMobParserError("Ongeldig FotMob-wedstrijd-ID.");
+  const response = await (options.fetcher ?? fetch)(`https://www.fotmob.com/api/data/matchDetails?matchId=${encodeURIComponent(matchId)}`, {
+    headers: { accept: "application/json, text/plain, */*", referer: "https://www.fotmob.com/" }, redirect: "follow", signal: AbortSignal.timeout(15_000),
+  });
+  if (!response.ok) throw new FotMobParserError(`FotMob API antwoordde met HTTP ${response.status}.`);
+  const payload: unknown = await response.json();
+  const parsed = parseFotMobApiPayload(objectValue(payload) ?? {}, options.now ?? (() => new Date()));
+  if (!parsed) throw new FotMobParserError("FotMob API antwoordde zonder geldige matchDetails-structuur.");
+  return parsed;
 };
