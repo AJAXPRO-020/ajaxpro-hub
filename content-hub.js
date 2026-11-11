@@ -66,6 +66,7 @@ const bindContentHub = () => {
   preview?.addEventListener("close", () => { if (media) { media.replaceChildren(); media.style.width = ""; } });
 
   const form = root.querySelector(".content-form");
+  if (!form?.querySelector("[data-content-hub-file]")) return;
   form?.addEventListener("submit", async (event) => {
     event.preventDefault();
     const file = form.querySelector("[data-content-hub-file]")?.files[0];
