@@ -52,7 +52,7 @@ export const rolesHavePermission = (
   }
   if (permission === permissions.toolsTactics || permission === permissions.toolsScreenshot || permission === permissions.toolsSocials) {
     const allowed = idsFromEnv("PORTAL_TEAM_TOOL_ROLE_IDS");
-    return roleIds.some(roleId => allowed.has(roleId));
+    return roleIds.some(roleId => allowed.has(roleId)) || rolesHavePermission(roleIds, permissions.staffAccess);
   }
   return roleIds.some((roleId) => discordRolePermissions.get(roleId)?.includes(permission));
 };
