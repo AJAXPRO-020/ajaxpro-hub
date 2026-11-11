@@ -97,7 +97,7 @@
     },
     {
       "source": "/club/tools/jeugddossiers",
-      "destination": "/api/jeugddossiers-manage"
+      "destination": "/api/jeugddossiers?view=manage"
     },
     {
       "source": "/club/jeugddossiers/speler/:id",
