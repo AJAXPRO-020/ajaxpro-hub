@@ -34,7 +34,7 @@ test("teamtoolrechten gelden voor teamrollen en staffrollen",()=>{
   assert.equal(rolesHavePermission(["333"],permissions.motmDelete),false);
   assert.equal(rolesHavePermission(["222"],permissions.toolsTactics),false);
   assert.equal(rolesHavePermission(["222"],permissions.toolsSocials),false);
-  for (const role of ["1268471493034246376", "1268471493046566986", "1340339885067993172"]) {
+  for (const role of ["1268471493046566987", "1268471493034246376", "1268471493046566986", "1340339885067993172"]) {
     assert.equal(rolesHavePermission([role],permissions.toolsSocials),true);
     assert.equal(rolesHavePermission([role],permissions.toolsTactics),true);
     assert.equal(rolesHavePermission([role],permissions.toolsScreenshot),true);
@@ -55,7 +55,7 @@ test("Members en Staff blijven gescheiden van specifieke beheerrechten", () => {
     assert.equal(rolesHavePermission([role], permissions.jeugddossiersManage), false);
     assert.equal(rolesHavePermission([role], permissions.toolsSocials), false);
   }
-  for (const role of ["socials", "1268471493034246376", "1268471493046566986"]) {
+  for (const role of ["socials", "1268471493046566987", "1268471493034246376", "1268471493046566986"]) {
     assert.equal(rolesHavePermission([role], permissions.staffAccess), true);
     assert.equal(rolesHavePermission([role], permissions.membersAccess), true);
     assert.equal(rolesHavePermission([role], permissions.jeugddossiersManage), false);
