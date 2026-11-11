@@ -83,4 +83,8 @@
   .content-post__actions [data-open-content-preview]::before{display:block;margin:0 auto;border-top-width:7px;border-bottom-width:7px;border-left-width:11px}
   .content-post__actions a[href*="&edit="]::before{margin:0 auto}
   .content-post__actions form button::before{margin:0 auto}
+  .content-post__actions a[href*="&edit="]{position:relative}
+  .content-post__actions a[href*="&edit="]::after{content:"";position:absolute;width:7px;height:2px;background:currentColor;transform:rotate(-45deg);top:13px;right:12px}
+  .content-post__actions form button{position:relative}
+  .content-post__actions form button::after{content:"";position:absolute;width:15px;height:2px;background:currentColor;top:11px;left:50%;transform:translateX(-50%)}
 }
