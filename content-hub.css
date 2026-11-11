@@ -87,4 +87,10 @@
   .content-post__actions a[href*="&edit="]::after{content:"";position:absolute;width:7px;height:2px;background:currentColor;transform:rotate(-45deg);top:13px;right:12px}
   .content-post__actions form button{position:relative}
   .content-post__actions form button::after{content:"";position:absolute;width:15px;height:2px;background:currentColor;top:11px;left:50%;transform:translateX(-50%)}
+  .content-post__actions .button::before{content:"";width:18px;height:18px;border:0;transform:none;background-color:currentColor;background-position:center;background-repeat:no-repeat;background-size:18px 18px;mask:none;-webkit-mask:none}
+  .content-post__actions a[href*="content-hub-download"]::before{background-image:url("/assets/icons/lucide-download.svg")}
+  .content-post__actions [data-open-content-preview]::before{background-image:url("/assets/icons/lucide-play.svg");border:0;width:18px;height:18px}
+  .content-post__actions a[href*="&edit="]::before{background-image:url("/assets/icons/lucide-pencil.svg");border:0;width:18px;height:18px}
+  .content-post__actions form button::before{background-image:url("/assets/icons/lucide-trash.svg");border:0;width:18px;height:18px}
+  .content-post__actions a[href*="&edit="]::after,.content-post__actions form button::after{display:none}
 }
