@@ -29,6 +29,13 @@ if(root){
     const payload=fixture?sharedState.getMatchStats?.(fixture.fixture_key):null;
     return {matchData:Boolean(fixture),matchStats:Boolean(payload),playerStats:Array.isArray(payload?.players)&&payload.players.some(hasUsableStats)};
   };
+  const renderProviderStatus=payload=>{
+    const statuses=payload?.providerStatuses??{},warnings=Array.isArray(payload?.providerWarnings)?payload.providerWarnings:[];
+    root.querySelectorAll("[data-socials-provider-status] [data-provider]").forEach(item=>{
+      const provider=item.dataset.provider,state=statuses[provider]??"missing",label=state==="success"?"Actueel opgehaald":state==="stored"?"Eerder opgeslagen data beschikbaar":state==="partial"?"Gedeeltelijk beschikbaar":state==="unavailable"?"Niet beschikbaar":"Nog niet opgehaald";
+      item.dataset.state=state;item.querySelector("b").textContent=state==="success"||state==="stored"||state==="partial"?"✓":"—";item.querySelector("small").textContent=provider==="sofascore"&&warnings.length&&state==="unavailable"?"Niet beschikbaar na ophalen":label;
+    });
+  };
   const renderGlobalDataStatus=()=>{
     if(!formatStatus)return;
     const states=globalDataStatus();
@@ -43,6 +50,7 @@ if(root){
       ["Spelerstatistieken",states.playerStats?"available":states.matchStats?"missing":"pending",states.playerStats?source:played?(statsState==="loading"?"worden geladen":statsState==="mismatch"?"komen niet overeen":"API nog niet binnen"):"API nog niet binnen"],
     ];
     formatStatus.replaceChildren(...sources.map(([label,state,detail])=>{const item=document.createElement("span");item.dataset.state=state;item.innerHTML=`<b aria-hidden="true">${state==="available"?"✓":"—"}</b><span>${label}</span><small>${detail}</small>`;return item}));
+    formats.forEach(({definition,controller})=>{const button=root.querySelector(`[data-format-id="${definition.id}"]`),note=button?.querySelector("[data-format-availability]"),states=controller.getRequirementStatus?.()??{};if(!note||definition.availability==="planned")return;const ready=definition.requirements.every(requirement=>Boolean(states[requirement]));note.textContent=ready?"Beschikbaar met huidige data":"Nog niet beschikbaar · gegevens ontbreken";button.dataset.dataReady=String(ready)});
   };
   const refreshFormatStatus=()=>{
     const format=formats.get(activeId),states=format?.controller.getRequirementStatus?.()??{};
@@ -67,7 +75,7 @@ if(root){
   };
   root.querySelectorAll("[data-format-id]").forEach(button=>button.addEventListener("click",()=>activate(button.dataset.formatId)));
   resetFormat?.addEventListener("click",()=>{formats.get(activeId)?.controller.reset?.();refreshFormatStatus()});
-  root.addEventListener("socials:match-stats",refreshFormatStatus);
+  root.addEventListener("socials:match-stats",event=>{renderProviderStatus(event.detail?.payload);refreshFormatStatus()});
   root.addEventListener("socials:stats-status-change",refreshFormatStatus);
   root.addEventListener("socials:match-selection",refreshFormatStatus);
   root.addEventListener("socials:format-status-change",event=>{if(event.detail?.formatId===activeId)refreshFormatStatus()});

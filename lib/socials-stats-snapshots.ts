@@ -1,10 +1,13 @@
 import type { FotMobSocialsMatch } from "./fotmob-socials-parser";
 import { db } from "./motm-db";
 import { teamNamesMatch } from "./team-name-match";
+import type { SofaScoreSnapshot } from "./sofascore-football";
 
 export type SocialsMatchStatsSnapshot = FotMobSocialsMatch & {
   fixtureKey: string;
 };
+
+export type ProviderSnapshots = { sofascore?: SofaScoreSnapshot };
 
 export const confirmedFotMobResult=(match:FotMobSocialsMatch["match"])=>{
   if(match.finished!==true||!Number.isInteger(match.homeScore)||!Number.isInteger(match.awayScore)
@@ -39,6 +42,13 @@ export const loadSocialsMatchStatsSnapshot=async(fixtureKey:string)=>{
   return snapshot;
 };
 
+export const loadProviderSnapshots=async(fixtureKey:string):Promise<ProviderSnapshots>=>{
+  const [row]=await db()`SELECT provider_snapshots FROM socials_match_stats_snapshots WHERE fixture_key=${fixtureKey} LIMIT 1`;
+  if(!row)return {};
+  const value=typeof row.provider_snapshots==="string"?JSON.parse(row.provider_snapshots):row.provider_snapshots;
+  return value&&typeof value==="object"&&!Array.isArray(value)?value as ProviderSnapshots:{};
+};
+
 export const saveSocialsMatchStatsSnapshot=async(snapshot:SocialsMatchStatsSnapshot)=>{
   if(snapshot.match.fotmobId===null)throw new Error("FotMob-wedstrijd-ID ontbreekt.");
   const {fixtureKey,...normalized}=snapshot,sql=db();
@@ -63,4 +73,11 @@ export const saveSocialsMatchStatsSnapshot=async(snapshot:SocialsMatchStatsSnaps
     }
   });
   return {fixtureKey,...normalized};
+};
+
+export const saveSofaScoreSnapshot=async(fixtureKey:string,snapshot:SofaScoreSnapshot)=>{
+  const [row]=await db()`SELECT fixture_key FROM socials_match_stats_snapshots WHERE fixture_key=${fixtureKey} LIMIT 1`;
+  if(!row)throw new Error("FotMob-snapshot ontbreekt; SofaScore kan niet los worden opgeslagen.");
+  await db()`UPDATE socials_match_stats_snapshots SET provider_snapshots=jsonb_set(COALESCE(provider_snapshots,'{}'::jsonb),'{sofascore}',${db().json(snapshot as any)}::jsonb,true),updated_at=now() WHERE fixture_key=${fixtureKey}`;
+  return snapshot;
 };

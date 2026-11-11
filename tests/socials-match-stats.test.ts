@@ -60,6 +60,22 @@ test("rendert precies één handmatige Stats ophalen-actie voor de bestaande con
   assert.match(html,/Stats ophalen/);
   assert.match(html,/Fortuna Sittard — Ajax/);
   assert.match(html,/Nog geen stats opgeslagen/);
+  assert.match(html,/data-socials-provider-status/);
+  assert.match(html,/data-provider="fotmob"/);
+  assert.match(html,/data-provider="sofascore"/);
+});
+
+test("statusoverzicht en kaartbeschikbaarheid blijven provider-onafhankelijk",()=>{
+  const api=readFileSync(new URL("../api/club-tools.ts",import.meta.url),"utf8");
+  const main=readFileSync(new URL("../socials/main.mjs",import.meta.url),"utf8");
+  assert.match(api,/providerStatuses/);
+  assert.match(api,/FotMob import unavailable; using stored snapshot/);
+  assert.match(api,/if\(!stored\)throw error/);
+  assert.match(api,/sofaScoreError\?\(providerSnapshots\.sofascore\?"stored":"unavailable"\):"success"/);
+  assert.match(main,/Actueel opgehaald/);
+  assert.match(main,/Eerder opgeslagen data beschikbaar/);
+  assert.match(main,/Niet beschikbaar na ophalen/);
+  assert.match(main,/Nog niet beschikbaar · gegevens ontbreken/);
 });
 
 test("houdt providerlogica buiten de UI en stats uitsluitend in editorstate",()=>{

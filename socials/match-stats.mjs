@@ -44,7 +44,7 @@ export const initMatchStats=(root,sharedState)=>{
       const response=await fetch(`/api/club-tools?view=socials-match-stats&fixture=${encodeURIComponent(fixture.fixture_key)}`,{headers:{Accept:"application/json"}}),payload=await response.json();
       if(!response.ok)throw new Error("snapshot unavailable");
       sharedState.matchStatsByFixture.set(fixture.fixture_key,payload);
-      root.dispatchEvent(new CustomEvent("socials:match-stats",{detail:{fixtureKey:fixture.fixture_key}}));
+      root.dispatchEvent(new CustomEvent("socials:match-stats",{detail:{fixtureKey:fixture.fixture_key,payload}}));
       if(selectedFixtureKey===fixture.fixture_key)setStatus("Stats beschikbaar.","available");
     }catch{
       available.delete(fixture.fixture_key);
@@ -83,7 +83,7 @@ export const initMatchStats=(root,sharedState)=>{
       available.add(fixture.fixture_key);
       stored.add(fixture.fixture_key);
       sharedState.matchStatsByFixture.set(fixture.fixture_key,payload);
-      root.dispatchEvent(new CustomEvent("socials:match-stats",{detail:{fixtureKey:fixture.fixture_key}}));
+      root.dispatchEvent(new CustomEvent("socials:match-stats",{detail:{fixtureKey:fixture.fixture_key,payload}}));
       if(stillSelected())setStatus("Stats opgeslagen en beschikbaar.","available");
     }catch{if(selectedFixtureKey===fixture.fixture_key)setStatus("Fout bij ophalen.","error")}
     finally{button.disabled=false;button.removeAttribute("aria-busy")}

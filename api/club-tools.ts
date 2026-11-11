@@ -7,7 +7,9 @@ import { errorPage, page, pageHeader } from "../lib/motm-view";
 import { renderToolsGrid, toolsForSession } from "../lib/portal-tools.config";
 import { renderSocials } from "../api-impl/socials/index";
 import { loadSocialsMatchStats, SocialsMatchStatsError } from "../lib/socials-match-stats";
-import { loadSocialsMatchStatsSnapshot, saveSocialsMatchStatsSnapshot } from "../lib/socials-stats-snapshots";
+import { loadProviderSnapshots, loadSocialsMatchStatsSnapshot, saveSofaScoreSnapshot, saveSocialsMatchStatsSnapshot } from "../lib/socials-stats-snapshots";
+import { importSofaScoreMatch, SofaScoreError } from "../lib/sofascore-football";
+import { loadSocialMatchdayFixtures } from "../lib/socials-match-context";
 import { loadSystemStatus, systemStatusMarkup } from "../lib/system-status";
 import { GET as pressGET, POST as pressPOST } from "../lib/press-conference-http";
 
@@ -49,7 +51,7 @@ export async function GET(request:Request){
     const allowed=await getSessionWithPermission(request,permissions.toolsSocials);
     if(!allowed)return json({error:"forbidden"},403);
     const fixtureKey=new URL(request.url).searchParams.get("fixture")??"";
-    try{const snapshot=await loadSocialsMatchStatsSnapshot(fixtureKey);return snapshot?json(snapshot):json({error:"Nog geen stats opgeslagen."},404);}
+    try{const snapshot=await loadSocialsMatchStatsSnapshot(fixtureKey),providerSnapshots=await loadProviderSnapshots(fixtureKey);return snapshot?json({...snapshot,providerSnapshots,providerStatuses:{fotmob:"stored",sofascore:providerSnapshots.sofascore?"stored":"missing"}}):json({error:"Nog geen stats opgeslagen."},404);}
     catch(error){
       if(error instanceof SocialsMatchStatsError)return json({error:error.message},error.status);
       console.error("Unable to load normalized Socials match statistics",error);
@@ -80,11 +82,24 @@ export async function POST(request:Request){
   if(!allowed)return json({error:"forbidden"},403);
   let fixtureKey="";try{fixtureKey=String((await request.json())?.fixture??"")}catch{return json({error:"Ongeldige wedstrijd."},400)}
   try{
-    const imported=await loadSocialsMatchStats(fixtureKey);
-    await saveSocialsMatchStatsSnapshot(imported);
-    const stored=await loadSocialsMatchStatsSnapshot(fixtureKey);
-    if(!stored||stored.match.fotmobId!==imported.match.fotmobId||stored.players.length!==imported.players.length)throw new SocialsMatchStatsError("Stats opgehaald, maar opslag kon niet worden bevestigd.",500);
-    return json(stored);
+    let stored=await loadSocialsMatchStatsSnapshot(fixtureKey),fotmobStatus:"success"|"stored"="stored";
+    try{
+      const imported=await loadSocialsMatchStats(fixtureKey);
+      await saveSocialsMatchStatsSnapshot(imported);
+      stored=await loadSocialsMatchStatsSnapshot(fixtureKey);
+      if(!stored||stored.match.fotmobId!==imported.match.fotmobId||stored.players.length!==imported.players.length)throw new SocialsMatchStatsError("Stats opgehaald, maar opslag kon niet worden bevestigd.",500);
+      fotmobStatus="success";
+    }catch(error){
+      if(!stored)throw error;
+      console.warn("FotMob import unavailable; using stored snapshot",error instanceof Error?error.name:"unknown");
+    }
+    let sofaScoreError:string|null=null;
+    try{
+      const fixture=(await loadSocialMatchdayFixtures()).find(candidate=>candidate.fixture_key===fixtureKey);
+      if(fixture)await saveSofaScoreSnapshot(fixtureKey,await importSofaScoreMatch(fixture));
+    }catch(error){sofaScoreError=error instanceof SofaScoreError?error.message:"SofaScore-import mislukt.";console.warn("SofaScore enrichment unavailable",error instanceof Error?error.name:"unknown")}
+    const providerSnapshots=await loadProviderSnapshots(fixtureKey);
+    return json({...stored,providerSnapshots,providerWarnings:sofaScoreError?[sofaScoreError]:[],providerStatuses:{fotmob:fotmobStatus,sofascore:sofaScoreError?(providerSnapshots.sofascore?"stored":"unavailable"):"success"}});
   }
   catch(error){
     if(error instanceof SocialsMatchStatsError)return json({error:error.message},error.status);
