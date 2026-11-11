@@ -76,13 +76,16 @@ test("statusoverzicht en kaartbeschikbaarheid blijven provider-onafhankelijk",()
   assert.match(main,/Eerder opgeslagen data beschikbaar/);
   assert.match(main,/Niet beschikbaar na ophalen/);
   assert.match(main,/Nog niet beschikbaar · gegevens ontbreken/);
+  assert.match(main,/Alle statistieken beschikbaar/);
+  assert.match(main,/providersReady/);
 });
 
 test("houdt providerlogica buiten de UI en stats uitsluitend in editorstate",()=>{
   const source=readFileSync(new URL("../socials/match-stats.mjs",import.meta.url),"utf8");
   assert.match(source,/view=socials-match-stats&fixture=/);
   assert.match(source,/matchStatsByFixture=new Map\(\)/);
-  assert.match(source,/Stats ophalen…|Stats beschikbaar\.|Nog geen wedstrijdstats beschikbaar\.|Wedstrijd niet gevonden\.|Fout bij ophalen\./);
+  assert.match(source,/Statistieken verversen…|Stats ophalen|Stats beschikbaar\.|Nog geen wedstrijdstats beschikbaar\.|Wedstrijd niet gevonden\.|Fout bij ophalen\./);
+  assert.match(source,/button\.hidden=state==="upcoming"/);
   assert.match(source,/stillSelected/);
   assert.doesNotMatch(source,/fotmob|expected_goals|localStorage|sessionStorage/);
 });

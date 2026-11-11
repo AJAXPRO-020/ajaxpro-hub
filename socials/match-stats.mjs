@@ -58,8 +58,8 @@ export const initMatchStats=(root,sharedState)=>{
     const currentUrl=new URL(location.href);currentUrl.searchParams.set("fixture",fixture.fixture_key);history.replaceState(null,"",currentUrl);
     if(selectedMatch)selectedMatch.textContent=matchLabel(fixture);
     const state=fixtureStatsState(fixture,available);
-    button.hidden=state!=="missing";
-    button.textContent=stored.has(fixture.fixture_key)?'Stats vernieuwen':'Stats ophalen';
+    button.hidden=state==="upcoming";
+    button.textContent=state==="available"||stored.has(fixture.fixture_key)?"Statistieken verversen":"Stats ophalen";
     if(state==="available")void loadSaved(fixture);
     else if(state==="upcoming")setStatus("Nog niet gespeeld.","upcoming");
     else if(stored.has(fixture.fixture_key))setStatus("Opgeslagen stats passen niet bij deze wedstrijd. Vernieuw de stats.","mismatch");
@@ -69,10 +69,11 @@ export const initMatchStats=(root,sharedState)=>{
 
   matchSelect?.addEventListener("change",()=>selectFixture(matchSelect.value));
   button.addEventListener("click",async()=>{
+    if(button.disabled)return;
     const fixture=selectedFixture();
     button.disabled=true;
     button.setAttribute("aria-busy","true");
-    setStatus("Stats ophalen…","loading");
+    setStatus("Statistieken verversen…","loading");
     try{
       const response=await fetch("/api/club-tools?view=socials-match-stats-import",{method:"POST",headers:{Accept:"application/json","Content-Type":"application/json"},body:JSON.stringify({fixture:fixture.fixture_key})});
       const payload=await response.json();
@@ -84,7 +85,7 @@ export const initMatchStats=(root,sharedState)=>{
       stored.add(fixture.fixture_key);
       sharedState.matchStatsByFixture.set(fixture.fixture_key,payload);
       root.dispatchEvent(new CustomEvent("socials:match-stats",{detail:{fixtureKey:fixture.fixture_key,payload}}));
-      if(stillSelected())setStatus("Stats opgeslagen en beschikbaar.","available");
+      if(stillSelected())setStatus(Array.isArray(payload?.providerWarnings)&&payload.providerWarnings.length?"Statistieken bijgewerkt; sommige bronnen zijn niet beschikbaar.":"Statistieken bijgewerkt en beschikbaar.","available");
     }catch{if(selectedFixtureKey===fixture.fixture_key)setStatus("Fout bij ophalen.","error")}
     finally{button.disabled=false;button.removeAttribute("aria-busy")}
   });

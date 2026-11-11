@@ -22,7 +22,8 @@ test("selector leest opgeslagen snapshots zonder import en importeert alleen via
   assert.match(source,/view=socials-match-stats&fixture=/);
   assert.match(source,/view=socials-match-stats-import/);
   assert.match(source,/method:"POST"/);
-  assert.match(source,/button\.hidden=state!=="missing"/);
+  assert.match(source,/button\.hidden=state==="upcoming"/);
+  assert.match(source,/Statistieken verversen/);
   assert.doesNotMatch(source,/fotmob|localStorage|sessionStorage/);
 });
 
