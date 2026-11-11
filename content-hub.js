@@ -21,6 +21,21 @@ const navigateContentHub = async (href, push = true) => {
 const bindContentHub = () => {
   const root = contentRoot();
   if (!root) return;
+  const actionIcons = [
+    ["a[href*='content-hub-download']", "download"],
+    ["[data-open-content-preview]", "play"],
+    ["a[href*='&edit=']", "pencil"],
+    ["form button.danger", "trash"],
+  ];
+  actionIcons.forEach(([selector, name]) => root.querySelectorAll(selector).forEach((action) => {
+    if (action.querySelector(".content-action-icon")) return;
+    const icon = document.createElement("img");
+    icon.className = "content-action-icon";
+    icon.src = `/assets/icons/lucide-${name}.svg`;
+    icon.alt = "";
+    icon.setAttribute("aria-hidden", "true");
+    action.prepend(icon);
+  }));
   root.querySelectorAll(".content-calendar__day[href], .content-calendar__toolbar a[href]").forEach((link) => link.addEventListener("click", (event) => {
     if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
