@@ -21,3 +21,5 @@
 /* Channel marks stay out of the calendar layout. */
 .content-calendar__day{position:relative}.content-calendar__channels{position:absolute;top:8px;right:8px;margin:0}
 @media (max-width:600px){.content-calendar__channels{display:none}.content-calendar__day{min-height:50px}}
+.content-hub,.content-hub *{box-sizing:border-box}.content-hub__layout,.content-calendar-panel,.content-day,.content-post,.content-post__head,.content-post__identity{min-width:0}
+@media (max-width:600px){.content-day__head h2{font-size:clamp(1.25rem,7vw,1.8rem);overflow-wrap:anywhere}.content-post__actions .button{max-width:100%;overflow:hidden;text-overflow:ellipsis}}
