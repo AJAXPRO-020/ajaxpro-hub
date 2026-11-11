@@ -84,6 +84,7 @@
   .content-post__actions a[href*="&edit="],.content-post__actions form{width:42px;height:42px;display:block}
   .content-post__actions a[href*="&edit="]{grid-column:1;grid-row:1}
   .content-post__actions form{grid-column:2;grid-row:1}
+  .content-post__actions a[href*="&edit="],.content-post__actions form{justify-self:end}
   .content-post__actions a[href*="&edit="],.content-post__actions form button{padding:0;font-size:0;display:inline-flex;align-items:center;justify-content:center}
   .content-post__actions form button{width:42px;height:42px}
   .content-post__actions a[href*="&edit="] .content-action-icon,.content-post__actions form button .content-action-icon{display:block;width:18px;height:18px}
