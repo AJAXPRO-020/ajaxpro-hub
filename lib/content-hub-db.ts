@@ -2,24 +2,24 @@ import { db } from "./motm-db";
 
 export type ContentHubPost = {
   id: string; name: string; scheduled_for: string; content_type: "video" | "photo"; notes: string;
-  drive_file_id: string; drive_file_name: string; drive_mime_type: string; drive_file_size: number;
+  drive_file_id: string; drive_file_name: string; drive_mime_type: string; drive_file_size: number; instagram: boolean; tiktok: boolean;
 };
 
 export const listContentHubPosts = async (from: string, to: string) => db()<ContentHubPost[]>`
-  SELECT id,name,scheduled_for,content_type,notes,drive_file_id,drive_file_name,drive_mime_type,drive_file_size
+  SELECT id,name,scheduled_for,content_type,notes,drive_file_id,drive_file_name,drive_mime_type,drive_file_size,instagram,tiktok
   FROM content_hub_posts WHERE scheduled_for BETWEEN ${from}::date AND ${to}::date ORDER BY scheduled_for,name,created_at`;
 
-export const createContentHubPost = async (input: { name: string; date: string; type: "video" | "photo"; notes: string; driveFileId: string; driveFileName: string; driveMimeType: string; driveFileSize: number; userId: string }) => {
+export const createContentHubPost = async (input: { name: string; date: string; type: "video" | "photo"; notes: string; instagram: boolean; tiktok: boolean; driveFileId: string; driveFileName: string; driveMimeType: string; driveFileSize: number; userId: string }) => {
   const cleanup = new Date(`${input.date}T00:00:00Z`); cleanup.setUTCDate(cleanup.getUTCDate() + 30);
   const [row] = await db()<ContentHubPost[]>`
-    INSERT INTO content_hub_posts(name,scheduled_for,content_type,notes,drive_file_id,drive_file_name,drive_mime_type,drive_file_size,drive_parent_folder_id,created_by_discord_user_id,cleanup_after)
-    VALUES(${input.name},${input.date}::date,${input.type},${input.notes},${input.driveFileId},${input.driveFileName},${input.driveMimeType},${input.driveFileSize},${process.env.GOOGLE_DRIVE_CONTENT_HUB_FOLDER_ID ?? ""},${input.userId},${cleanup.toISOString().slice(0,10)}) RETURNING *`;
+    INSERT INTO content_hub_posts(name,scheduled_for,content_type,notes,instagram,tiktok,drive_file_id,drive_file_name,drive_mime_type,drive_file_size,drive_parent_folder_id,created_by_discord_user_id,cleanup_after)
+    VALUES(${input.name},${input.date}::date,${input.type},${input.notes},${input.instagram},${input.tiktok},${input.driveFileId},${input.driveFileName},${input.driveMimeType},${input.driveFileSize},${process.env.GOOGLE_DRIVE_CONTENT_HUB_FOLDER_ID ?? ""},${input.userId},${cleanup.toISOString().slice(0,10)}) RETURNING *`;
   return row;
 };
 
-export const updateContentHubPost = async (id: string, input: { name: string; date: string; notes: string; userId: string }) => {
+export const updateContentHubPost = async (id: string, input: { name: string; date: string; notes: string; instagram: boolean; tiktok: boolean; userId: string }) => {
   const cleanup = new Date(`${input.date}T00:00:00Z`); cleanup.setUTCDate(cleanup.getUTCDate() + 30);
-  const [row] = await db()<ContentHubPost[]>`UPDATE content_hub_posts SET name=${input.name},scheduled_for=${input.date}::date,notes=${input.notes},cleanup_after=${cleanup.toISOString().slice(0,10)},updated_at=now() WHERE id=${id} RETURNING *`;
+  const [row] = await db()<ContentHubPost[]>`UPDATE content_hub_posts SET name=${input.name},scheduled_for=${input.date}::date,notes=${input.notes},instagram=${input.instagram},tiktok=${input.tiktok},cleanup_after=${cleanup.toISOString().slice(0,10)},updated_at=now() WHERE id=${id} RETURNING *`;
   return row;
 };
 
