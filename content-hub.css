@@ -75,7 +75,8 @@
 .content-action-icon{display:none}
 @media (min-width:601px){
   .content-post{position:relative;padding-right:330px;min-height:116px}
-  .content-post__actions{position:absolute;top:-100px;right:16px;display:grid;grid-template-columns:auto auto;grid-template-rows:42px 42px;align-items:center;justify-content:end;gap:8px}
+  .content-post__actions{position:absolute;top:16px;right:16px;display:grid;grid-template-columns:auto auto;grid-template-rows:42px 42px;align-items:center;justify-content:end;gap:8px}
+  .content-post:first-of-type .content-post__actions{top:-170px}
   .content-post__actions a[href*="content-hub-download"],.content-post__actions [data-open-content-preview]{display:inline-flex;align-items:center;gap:7px}
   .content-post__actions a[href*="content-hub-download"]{grid-column:1;grid-row:2}
   .content-post__actions [data-open-content-preview]{grid-column:2;grid-row:2}
