@@ -40,3 +40,14 @@
   .content-post__actions form .button{width:100%}
   .content-post__note{order:2;margin:14px 0 0;padding-top:12px;border-top:1px solid var(--content-line);font-size:13px;line-height:1.45}
 }
+
+.content-post__actions .button{display:inline-flex;align-items:center;justify-content:center;gap:7px}.content-post__actions a[href*="content-hub-download"]{font-weight:800}.content-post__actions a[href*="content-hub-download"]::before{content:"↓";font-size:18px;line-height:1}.content-post__actions [data-open-content-preview]::before{content:"◉";font-size:16px;line-height:1}.content-post__actions a[href*="&edit="]::before{content:"✎";font-size:17px;line-height:1}.content-post__actions form button::before{content:"×";font-size:20px;line-height:1}
+@media (max-width:600px){
+  .content-post__actions{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .content-post__actions a[href*="content-hub-download"]{grid-column:1 / -1;order:1;font-size:14px;padding:12px}
+  .content-post__actions [data-open-content-preview],.content-post__actions a[href*="&edit="],.content-post__actions form{order:2}
+  .content-post__actions [data-open-content-preview],.content-post__actions a[href*="&edit="],.content-post__actions form .button{font-size:0;padding:10px}
+  .content-post__actions [data-open-content-preview]::before,.content-post__actions a[href*="&edit="]::before,.content-post__actions form button::before{font-size:19px}
+  .content-post__actions form{display:block;min-width:0}
+  .content-post__actions form .button{width:100%}
+}
