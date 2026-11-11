@@ -35,7 +35,7 @@ export const rolesHavePermission = (
   }
   if (permission === permissions.staffAccess) {
     const configured = idsFromEnv("PORTAL_STAFF_ROLE_IDS");
-    const builtInStaff = new Set(["1268471493034246376", "1268471493046566986"]);
+    const builtInStaff = new Set(["1268471493034246376", "1268471493046566986", "1340339885067993172"]);
     return roleIds.some(roleId => configured.has(roleId) || builtInStaff.has(roleId));
   }
   if (permission === permissions.motmManage) {
