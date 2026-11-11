@@ -117,7 +117,7 @@ test("normaliseert aanvullende matchDetails-data zonder credentials", async () =
     fetcher: async () => new Response(JSON.stringify({
       general: { matchId: 5781803 },
       content: {
-        matchFacts: { events: [{ type: "Goal", time: 3 }] },
+        matchFacts: { events: { events: [{ eventId: 1, type: "Goal", time: 3, player: { id: 2, name: "Speler" }, isHome: false }] } },
         lineup: { homeTeam: { formation: "4-3-3" }, awayTeam: { formation: "4-2-3-1" } },
         shotmap: { shots: [{ id: 1, eventType: "Goal", playerId: 2, playerName: "Speler", min: 3, x: 98.4, y: 31, shotType: "Header", expectedGoals: .2, expectedGoalsOnTarget: .22, isOnTarget: true }] },
         stats: { Periods: { All: { stats: [] }, FirstHalf: { stats: [] } } },
@@ -129,4 +129,23 @@ test("normaliseert aanvullende matchDetails-data zonder credentials", async () =
   assert.equal(result.shots[0].expectedGoals, .2);
   assert.equal(result.events.length, 1);
   assert.equal(result.fetchedAt, "2026-11-11T12:00:00.000Z");
+});
+
+test("normaliseert gegroepeerde FotMob-gebeurtenissen zonder duplicaten", async () => {
+  const result = await fetchFotMobMatchDetails(5781803, {
+    fetcher: async () => new Response(JSON.stringify({
+      general: { matchId: 5781803, homeTeam: { id: 8611, name: "FC Twente" }, awayTeam: { id: 8593, name: "Ajax" } },
+      header: { events: { awayTeamGoals: { One: [{ eventId: 10, type: "Goal", time: 3, player: { id: 20, name: "Speler" }, isHome: false, shotmapEvent: { teamId: 8593 } }] } } },
+      content: { matchFacts: { events: { ongoing: false, events: [
+        { eventId: 10, type: "Goal", time: 3, player: { id: 20, name: "Speler" }, isHome: false, shotmapEvent: { teamId: 8593 } },
+        { eventId: 11, type: "Substitution", time: 59, isHome: false, swap: [{ id: "21", name: "In" }, { id: "22", name: "Uit" }] },
+        { eventId: 12, type: "Card", time: 60, player: { id: 22, name: "Uit" }, isHome: false, card: "Yellow" },
+      ] } }, lineup: { homeTeam: {}, awayTeam: {} }, shotmap: { shots: [] }, stats: { Periods: {} } },
+    }), { status: 200, headers: { "content-type": "application/json" } }),
+  });
+  assert.deepEqual(result.events.map(event => event.type), ["Goal", "Substitution", "Card"]);
+  assert.equal(result.events[0].teamName, "Ajax");
+  assert.equal(result.events[1].playerInName, "In");
+  assert.equal(result.events[1].playerOutId, 22);
+  assert.equal(result.events[2].card, "Yellow");
 });

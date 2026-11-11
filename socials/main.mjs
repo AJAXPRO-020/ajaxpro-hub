@@ -27,7 +27,10 @@ if(root){
   const globalDataStatus=()=>{
     const fixture=fixtures.find(item=>item.fixture_key===sharedState.selectedFixtureKey)??fixtures[0]??null;
     const payload=fixture?sharedState.getMatchStats?.(fixture.fixture_key):null;
-    return {matchData:Boolean(fixture),matchStats:Boolean(payload),playerStats:Array.isArray(payload?.players)&&payload.players.some(hasUsableStats)};
+    const api=payload?.fotmobApi,shots=Array.isArray(api?.shots)?api.shots:[],lineups=api?.lineups;
+    return {matchData:Boolean(fixture),matchStats:Boolean(payload),playerStats:Array.isArray(payload?.players)&&payload.players.some(hasUsableStats),
+      shotData:shots.some(shot=>Number.isFinite(shot?.x)&&Number.isFinite(shot?.y)&&Number.isFinite(shot?.expectedGoals)),
+      lineups:Boolean(lineups?.homeTeam||lineups?.awayTeam),events:Array.isArray(api?.events)&&api.events.length>0};
   };
   const renderProviderStatus=payload=>{
     const statuses=payload?.providerStatuses??{},warnings=Array.isArray(payload?.providerWarnings)?payload.providerWarnings:[];
@@ -48,6 +51,9 @@ if(root){
       ["Wedstrijddata",states.matchData?"available":"missing",states.matchData?(played?"centrale fixturebron":"nog niet gespeeld"):"ontbreekt"],
       ["Teamstatistieken",states.matchStats?"available":["loading","upcoming"].includes(statsState)?"pending":statsState==="mismatch"?"mismatch":"missing",states.matchStats?source:played?(statsState==="loading"?"worden geladen":statsState==="mismatch"?"komen niet overeen":"API nog niet binnen"):"API nog niet binnen"],
       ["Spelerstatistieken",states.playerStats?"available":states.matchStats?"missing":"pending",states.playerStats?source:played?(statsState==="loading"?"worden geladen":statsState==="mismatch"?"komen niet overeen":"API nog niet binnen"):"API nog niet binnen"],
+      ["Schotdata",states.shotData?"available":states.matchStats?"missing":"pending",states.shotData?"FotMob API":played?"API nog niet binnen":"nog niet gespeeld"],
+      ["Opstellingen",states.lineups?"available":states.matchStats?"missing":"pending",states.lineups?"FotMob API":played?"API nog niet binnen":"nog niet gespeeld"],
+      ["Wedstrijdgebeurtenissen",states.events?"available":states.matchStats?"missing":"pending",states.events?"FotMob API":played?"Geen gebeurtenissen opgeslagen":"nog niet gespeeld"],
     ];
     formatStatus.replaceChildren(...sources.map(([label,state,detail])=>{const item=document.createElement("span");item.dataset.state=state;item.innerHTML=`<b aria-hidden="true">${state==="available"?"✓":"—"}</b><span>${label}</span><small>${detail}</small>`;return item}));
     const fetchButton=root.querySelector("[data-socials-stats-fetch]"),fixturePlayed=Boolean(fixture&&new Date(fixture.kickoff_at).getTime()<=Date.now()),providerItems=[...root.querySelectorAll("[data-socials-provider-status] [data-provider]")],providersReady=providerItems.length===2&&providerItems.every(item=>["success","stored","partial"].includes(item.dataset.state)),allAvailable=sources.every(([,state])=>state==="available")&&providersReady;

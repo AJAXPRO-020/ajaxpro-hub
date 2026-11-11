@@ -24,9 +24,16 @@ export type FotMobShot = {
   expectedGoals: number | null; expectedGoalsOnTarget: number | null; isOnTarget: boolean | null;
 };
 
+export type FotMobMatchEvent = {
+  eventId: number | null; type: string; minute: number | null; minuteAdded: number | null;
+  playerId: number | null; playerName: string | null; assistPlayerId: number | null; assistPlayerName: string | null;
+  teamId: number | null; teamName: string | null; isHome: boolean | null; card: string | null;
+  playerInId: number | null; playerInName: string | null; playerOutId: number | null; playerOutName: string | null;
+};
+
 export type FotMobApiData = {
   source: "fotmob-api"; matchId: number; fetchedAt: string;
-  events: any[]; shots: FotMobShot[]; lineups: any;
+  events: FotMobMatchEvent[]; shots: FotMobShot[]; lineups: any;
   formations: { home: string | null; away: string | null };
   teamStatsByPeriod: any;
   raw: any;
@@ -181,15 +188,49 @@ const shotFrom = (value: unknown): FotMobShot => {
   };
 };
 
+const eventCandidates = (content: JsonObject): unknown[] => {
+  const matchFacts = objectValue(content.matchFacts), grouped = objectValue(matchFacts?.events);
+  if (Array.isArray(grouped?.events)) return grouped.events;
+  const header = objectValue(content.headerEvents);
+  return Object.values(header ?? {}).flatMap(value => Array.isArray(value) ? value : Object.values(objectValue(value) ?? {}).flatMap(nested => arrayValue(nested)));
+};
+
+const eventFrom = (value: unknown, home: JsonObject | null, away: JsonObject | null): FotMobMatchEvent | null => {
+  const event = objectValue(value), player = objectValue(event?.player), swap = arrayValue(event?.swap), incoming = objectValue(swap[0]), outgoing = objectValue(swap[1]);
+  const type = nullableString(event?.type);
+  if (!event || !type || !["Goal", "Card", "Substitution"].includes(type)) return null;
+  const isHome = typeof event.isHome === "boolean" ? event.isHome : null;
+  const explicitTeamId = nullableInteger(objectValue(event.shotmapEvent)?.teamId ?? event.teamId);
+  const teamId = explicitTeamId ?? (isHome === true ? nullableInteger(home?.id) : isHome === false ? nullableInteger(away?.id) : null);
+  const team = teamId !== null && teamId === nullableInteger(home?.id) ? home : teamId !== null && teamId === nullableInteger(away?.id) ? away : null;
+  return {
+    eventId: nullableInteger(event.eventId) || nullableInteger(event.id), type, minute: nullableInteger(event.time), minuteAdded: nullableInteger(event.overloadTime),
+    playerId: nullableInteger(event.playerId ?? player?.id), playerName: nullableString(player?.name ?? event.nameStr),
+    assistPlayerId: nullableInteger(event.assistPlayerId), assistPlayerName: nullableString(event.assistInput), teamId, teamName: nullableString(team?.name), isHome,
+    card: nullableString(event.card), playerInId: nullableInteger(incoming?.id), playerInName: nullableString(incoming?.name),
+    playerOutId: nullableInteger(outgoing?.id), playerOutName: nullableString(outgoing?.name),
+  };
+};
+
+const parsedEvents = (content: JsonObject, home: JsonObject | null, away: JsonObject | null): FotMobMatchEvent[] => {
+  const seen = new Set<string>();
+  return eventCandidates(content).map(value => {
+    const raw = objectValue(value), key = String(nullableInteger(raw?.eventId) || raw?.reactKey || `${raw?.type}:${raw?.time}:${raw?.playerId ?? ""}:${raw?.isHome ?? ""}`);
+    if (seen.has(key)) return null;
+    seen.add(key);
+    return eventFrom(value, home, away);
+  }).filter((value): value is FotMobMatchEvent => Boolean(value));
+};
+
 const parseFotMobApiPayload = (payload: JsonObject, now: () => Date): FotMobApiData | null => {
   const general = objectValue(payload.general), content = objectValue(payload.content), id = nullableInteger(general?.matchId);
-  if (!content || id === null) return null;
-  const lineup = objectValue(content.lineup), home = objectValue(lineup?.homeTeam), away = objectValue(lineup?.awayTeam);
+  if (!general || !content || id === null) return null;
+  const lineup = objectValue(content.lineup), lineupHome = objectValue(lineup?.homeTeam), lineupAway = objectValue(lineup?.awayTeam), home = objectValue(general.homeTeam), away = objectValue(general.awayTeam);
   const periods = objectValue(objectValue(content.stats)?.Periods);
   return {
-    source: "fotmob-api", matchId: id, fetchedAt: now().toISOString(), events: arrayValue(objectValue(content.matchFacts)?.events),
+    source: "fotmob-api", matchId: id, fetchedAt: now().toISOString(), events: parsedEvents({...content, headerEvents: objectValue(payload.header)?.events}, home, away),
     shots: arrayValue(objectValue(content.shotmap)?.shots).map(shotFrom), lineups: content.lineup ?? null,
-    formations: { home: nullableString(home?.formation), away: nullableString(away?.formation) },
+    formations: { home: nullableString(lineupHome?.formation), away: nullableString(lineupAway?.formation) },
     teamStatsByPeriod: periods ?? {}, raw: payload,
   };
 };
