@@ -67,7 +67,7 @@ test("Canvas-export gebruikt exact 1350 bij 1080 en wacht op fonts en afbeelding
 
 test("de generator wordt gedeeld door beheer en Club-home, maar niet door de stempagina", () => {
   const manage=readFileSync(new URL("../api-impl/motm/manage.ts",import.meta.url),"utf8");
-  const club=readFileSync(new URL("../api/club.ts",import.meta.url),"utf8");
+  const club=readFileSync(new URL("../api-impl/club.ts",import.meta.url),"utf8");
   const vote=readFileSync(new URL("../api-impl/motm/vote.ts",import.meta.url),"utf8");
   assert.match(manage,/getSessionWithPermission\(request, permissions\.motmManage\)/);
   assert.match(manage,/data-download-visual/);

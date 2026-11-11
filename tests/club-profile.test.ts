@@ -12,7 +12,7 @@ test("AjaxPro Verified toont de herkenbare Discord-rol",()=>{
 });
 
 test("Club-pagina's herhalen AjaxPro Club niet en noemen nergens gratis tools",()=>{
-  const source=["../api/club.ts","../api/club-tools.ts","../api-impl/motm/stand.ts","../lib/motm-view.ts","../lib/portal-tools.config.ts"].map(path=>readFileSync(new URL(path,import.meta.url),"utf8")).join("\n");
+  const source=["../api-impl/club.ts","../api/club-tools.ts","../api-impl/motm/stand.ts","../lib/motm-view.ts","../lib/portal-tools.config.ts"].map(path=>readFileSync(new URL(path,import.meta.url),"utf8")).join("\n");
   assert.doesNotMatch(source,/AjaxPro Club/i);
   assert.doesNotMatch(source,/gratis\s+tools?/i);
 });

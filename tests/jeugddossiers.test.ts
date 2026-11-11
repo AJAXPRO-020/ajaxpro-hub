@@ -5,6 +5,7 @@ import { esc } from "../lib/motm-view";
 
 const read = (path: string) => readFileSync(new URL(path, import.meta.url), "utf8");
 const source = read("../api-impl/jeugddossiers.ts");
+const router = read("../api/jeugddossiers.ts");
 
 test("Jeugddossiers vereist portal.access en gebruikt geen publiek data-endpoint", () => {
   assert.match(source, /getSessionWithCurrentRoles\(request\)/);
@@ -46,4 +47,11 @@ test("beheercontract staat uitsluitend beperkte foto-updates toe", () => {
 test("beheerimport bewaart de bestaande editorial-foto wanneer geen update is meegestuurd", () => {
   const manage = read("../api-impl/jeugddossiers-manage.ts");
   assert.match(manage, /photo=\$\{u\.editorialPhotoUpdate\?tx\.json\(u\.editorialPhotoUpdate\):old\.photo\}/);
+});
+
+test("centrale router houdt publieke GET en beheer GET/POST expliciet gescheiden", () => {
+  assert.match(router, /searchParams\.get\("view"\) === "manage"/);
+  assert.match(router, /return isManageRoute\(request\) \? manageGET\(request\) : publicGET\(request\)/);
+  assert.match(router, /return isManageRoute\(request\) \? managePOST\(request\) : methodNotAllowed\(\)/);
+  assert.match(read("../vercel.json"), /\/api\/jeugddossiers\?view=manage/);
 });

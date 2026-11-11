@@ -188,6 +188,10 @@ export async function GET(request: Request) {
   const now = new Date();
   const url = new URL(request.url);
   const view = url.searchParams.get("view");
+  if (view === "content-hub-cleanup") {
+    const { runContentHubCleanup } = await import("../api-impl/content-hub/cleanup");
+    return runContentHubCleanup(request);
+  }
   try {
     if (view === "motm-announcement") {
       if (!await verifyGitHubOidcRequest(request)) return automationResponse({ error: "Unauthorized" }, 401);

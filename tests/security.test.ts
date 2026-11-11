@@ -3,8 +3,8 @@ import test from "node:test";
 import { createSessionCookie, safeClubReturnTo } from "../lib/discord-auth";
 import { permissions, rolesHavePermission } from "../lib/permissions.config";
 import { getSessionWithPermission } from "../lib/server-permissions";
-import { GET as getContracts } from "../api/contracts";
-import { GET as getMembers } from "../api/members";
+import { GET as getContracts } from "../api-impl/contracts";
+import { GET as getMembers } from "../api-impl/members";
 import { GET as getJeugddossiers } from "../api-impl/jeugddossiers";
 
 test("OAuth returnTo accepteert alleen interne Club-paden", () => {
@@ -26,7 +26,7 @@ test("motm.delete komt uitsluitend uit de aparte Owner/Admin mapping",()=>{
   assert.equal(rolesHavePermission(["1271472085788786718"],permissions.motmDelete),false);
 });
 
-test("teamtoolrechten komen alleen uit de centrale environmentmapping",()=>{
+test("teamtoolrechten gelden voor teamrollen en staffrollen",()=>{
   process.env.PORTAL_TEAM_TOOL_ROLE_IDS="333, 444";
   assert.equal(rolesHavePermission(["333"],permissions.toolsTactics),true);
   assert.equal(rolesHavePermission(["444"],permissions.toolsScreenshot),true);
@@ -34,6 +34,11 @@ test("teamtoolrechten komen alleen uit de centrale environmentmapping",()=>{
   assert.equal(rolesHavePermission(["333"],permissions.motmDelete),false);
   assert.equal(rolesHavePermission(["222"],permissions.toolsTactics),false);
   assert.equal(rolesHavePermission(["222"],permissions.toolsSocials),false);
+  for (const role of ["1268471493034246376", "1268471493046566986", "1340339885067993172"]) {
+    assert.equal(rolesHavePermission([role],permissions.toolsSocials),true);
+    assert.equal(rolesHavePermission([role],permissions.toolsTactics),true);
+    assert.equal(rolesHavePermission([role],permissions.toolsScreenshot),true);
+  }
 });
 
 test("onbekende rollen krijgen geen andere aanvullende rechten", () => {
@@ -48,11 +53,13 @@ test("Members en Staff blijven gescheiden van specifieke beheerrechten", () => {
     assert.equal(rolesHavePermission([role], permissions.membersAccess), true);
     assert.equal(rolesHavePermission([role], permissions.staffAccess), false);
     assert.equal(rolesHavePermission([role], permissions.jeugddossiersManage), false);
+    assert.equal(rolesHavePermission([role], permissions.toolsSocials), false);
   }
   for (const role of ["socials", "1268471493034246376", "1268471493046566986"]) {
     assert.equal(rolesHavePermission([role], permissions.staffAccess), true);
     assert.equal(rolesHavePermission([role], permissions.membersAccess), true);
     assert.equal(rolesHavePermission([role], permissions.jeugddossiersManage), false);
+    assert.equal(rolesHavePermission([role], permissions.toolsSocials), true);
   }
   assert.equal(rolesHavePermission(["dossier-manager"], permissions.jeugddossiersManage), true);
   assert.equal(rolesHavePermission(["dossier-manager"], permissions.membersAccess), false);

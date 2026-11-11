@@ -16,6 +16,10 @@
     {
       "path": "/api/next-match?view=program",
       "schedule": "0 5 * * *"
+    },
+    {
+      "path": "/api/next-match?view=content-hub-cleanup",
+      "schedule": "17 4 * * *"
     }
   ],
   "rewrites": [
@@ -28,20 +32,24 @@
       "destination": "/programma.html"
     },
     {
+      "source": "/privacybeleid",
+      "destination": "/privacybeleid.html"
+    },
+    {
       "source": "/club",
-      "destination": "/api/club"
+      "destination": "/api/club-portal"
     },
     {
       "source": "/club/members",
-      "destination": "/api/members"
+      "destination": "/api/club-portal?view=members"
     },
     {
       "source": "/club/members/contracten",
-      "destination": "/api/contracts"
+      "destination": "/api/club-portal?view=contracts"
     },
     {
       "source": "/club/members/match-center",
-      "destination": "/api/members?view=match-center"
+      "destination": "/api/club-portal?view=members-match-center"
     },
     {
       "source": "/api/motm",
@@ -84,8 +92,12 @@
       "destination": "/api/club-tools?view=socials"
     },
     {
+      "source": "/club/tools/content-hub",
+      "destination": "/api/club-tools?view=content-hub"
+    },
+    {
       "source": "/club/tools/jeugddossiers",
-      "destination": "/api/jeugddossiers-manage"
+      "destination": "/api/jeugddossiers?view=manage"
     },
     {
       "source": "/club/jeugddossiers/speler/:id",
@@ -126,6 +138,10 @@
     {
       "source": "/geen-toegang",
       "destination": "/geen-toegang.html"
+    },
+    {
+      "source": "/voorwaarden",
+      "destination": "/voorwaarden.html"
     }
   ],
   "headers": [
