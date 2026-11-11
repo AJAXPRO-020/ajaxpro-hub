@@ -7,7 +7,7 @@ const match=(fixtureKey:string,homeTeam:string,awayTeam:string,homeScore:number,
 
 test("Match Center blijft een Members-route en gebruikt alleen een opgeslagen snapshot",()=>{
   const config=JSON.parse(readFileSync(new URL("../vercel.json",import.meta.url),"utf8"));
-  assert.equal(config.rewrites.find((route:any)=>route.source==="/club/members/match-center")?.destination,"/api/members?view=match-center");
+  assert.equal(config.rewrites.find((route:any)=>route.source==="/club/members/match-center")?.destination,"/api/club-portal?view=members-match-center");
   const source=readFileSync(new URL("../lib/match-center.ts",import.meta.url),"utf8");
   assert.match(source,/loadSocialsStatsAvailability/);
   assert.match(source,/loadSocialsMatchStatsSnapshot/);

@@ -5,7 +5,7 @@ import test from "node:test";
 const read=(path:string)=>readFileSync(new URL(path,import.meta.url),"utf8");
 
 test("MOTM-homekaart gebruikt een stabiele winnaarvisual zonder geforceerde woordbreuk",()=>{
-  const club=read("../api/club.ts"),css=read("../motm.css");
+  const club=read("../api-impl/club.ts"),css=read("../motm.css");
   assert.match(club,/winner-visual-frame/);assert.match(club,/result-visual-spotlight/);
   const polish=css.slice(css.indexOf("Phase 2.1 responsive polish"));
   assert.match(polish,/overflow-wrap:normal;word-break:normal/);
@@ -24,7 +24,7 @@ test("de Club-renderer gebruikt de actuele stylesheetversie",()=>{
 });
 
 test("ledenresultaten tonen percentages en geen ruwe stemaantallen",()=>{
-  const home=read("../api/club.ts"),result=read("../api-impl/motm/vote.ts"),stand=read("../api-impl/motm/stand.ts");
+  const home=read("../api-impl/club.ts"),result=read("../api-impl/motm/vote.ts"),stand=read("../api-impl/motm/stand.ts");
   assert.doesNotMatch(home,/winner\.votes/);
   assert.doesNotMatch(result,/voteLabel|row\.votes/);
   assert.doesNotMatch(stand,/Uitgebrachte stemmen|<span>Stemmen<\/span>|\(\$\{r\.votes\}\)/);
@@ -83,7 +83,7 @@ test("beheer zet de openbare stemlink direct boven de bewerkstappen",()=>{
 });
 
 test("Club-home houdt de visual tot een nieuwe stemming opent en gebruikt apparaateigen delen",()=>{
-  const home=read("../api/club.ts"),script=read("../club.js"),css=read("../motm.css");
+  const home=read("../api-impl/club.ts"),script=read("../club.js"),css=read("../motm.css");
   assert.match(home,/if\(last\).*else if\(planned\)/s);
   assert.match(home,/data-native-share/);
   assert.doesNotMatch(home,/wa\.me|twitter\.com\/intent\/tweet|facebook\.com\/sharer|Instagram staat in het deelmenu/);
@@ -116,7 +116,7 @@ test("Club-polish gebruikt gedeelde spacing, complete states en minder zware kaa
 });
 
 test("Home groepeert introductie en verificatie en de stand gebruikt één scheidingslijn",()=>{
-  const home=read("../api/club.ts"),css=read("../motm.css");
+  const home=read("../api-impl/club.ts"),css=read("../motm.css");
   assert.match(home,/class="club-intro"/);
   assert.match(home,/class="page-intro"/);
   assert.doesNotMatch(home,/class="club-welcome-meta"/);

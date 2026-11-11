@@ -57,7 +57,7 @@ test("automatische mededeling hergebruikt dezelfde lock en schrijft een systeem-
 });
 
 test("alle publieke hoofdqueries filteren verwijderde stemmingen",()=>{
-  for(const file of ["../api/club.ts","../api-impl/motm/index.ts","../api-impl/motm/share.ts","../api-impl/motm/vote.ts","../lib/motm-scheduling.ts"]){const source=readFileSync(new URL(file,import.meta.url),"utf8");assert.match(source,/deleted_at IS NULL/,file);}
+  for(const file of ["../api-impl/club.ts","../api-impl/motm/index.ts","../api-impl/motm/share.ts","../api-impl/motm/vote.ts","../lib/motm-scheduling.ts"]){const source=readFileSync(new URL(file,import.meta.url),"utf8");assert.match(source,/deleted_at IS NULL/,file);}
 });
 
 test("migratie is additive en bewaart stemmen",()=>{

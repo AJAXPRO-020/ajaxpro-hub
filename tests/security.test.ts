@@ -3,8 +3,8 @@ import test from "node:test";
 import { createSessionCookie, safeClubReturnTo } from "../lib/discord-auth";
 import { permissions, rolesHavePermission } from "../lib/permissions.config";
 import { getSessionWithPermission } from "../lib/server-permissions";
-import { GET as getContracts } from "../api/contracts";
-import { GET as getMembers } from "../api/members";
+import { GET as getContracts } from "../api-impl/contracts";
+import { GET as getMembers } from "../api-impl/members";
 import { GET as getJeugddossiers } from "../api-impl/jeugddossiers";
 
 test("OAuth returnTo accepteert alleen interne Club-paden", () => {

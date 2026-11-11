@@ -35,8 +35,8 @@ test("huurafspraken zijn centraal opgeslagen en transparant gelabeld",()=>{
   assert.match(contractsHtml,/loan-deal__status--reported/);
   assert.doesNotMatch(contractsHtml,/Nog in te vullen/);
   assert.match(contractsHtml,/Tijdelijk elders<\/dt><dd>8 spelers/);
-  assert.match(read("../api/contracts.ts"),/permissions\.membersAccess/);
-  assert.match(read("../api/contracts.ts"),/contracten-ui\.js/);
+  assert.match(read("../api-impl/contracts.ts"),/permissions\.membersAccess/);
+  assert.match(read("../api-impl/contracts.ts"),/contracten-ui\.js/);
 });
 
 test("deadline day-mutaties worden via de centrale spelersregistratie uitgerold",()=>{

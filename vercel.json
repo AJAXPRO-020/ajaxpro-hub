@@ -37,19 +37,19 @@
     },
     {
       "source": "/club",
-      "destination": "/api/club"
+      "destination": "/api/club-portal"
     },
     {
       "source": "/club/members",
-      "destination": "/api/members"
+      "destination": "/api/club-portal?view=members"
     },
     {
       "source": "/club/members/contracten",
-      "destination": "/api/contracts"
+      "destination": "/api/club-portal?view=contracts"
     },
     {
       "source": "/club/members/match-center",
-      "destination": "/api/members?view=match-center"
+      "destination": "/api/club-portal?view=members-match-center"
     },
     {
       "source": "/api/motm",
