@@ -5,7 +5,8 @@ import test from "node:test";
 test("migratiehistorie behoudt dubbele historische nummers maar kent geen dubbele toekomstnummers", () => {
   const files = readdirSync(new URL("../db/migrations/", import.meta.url));
   const numbers = files.map(file => file.match(/^(\d{3})_.*\.sql$/)?.[1]).filter(Boolean) as string[];
-  assert.deepEqual([...new Set(numbers.filter(number => numbers.indexOf(number) !== numbers.lastIndexOf(number)))].sort(), ["016", "027", "031"]);
+  const historicalDuplicates = numbers.filter(number => Number(number) < 36 && numbers.indexOf(number) !== numbers.lastIndexOf(number));
+  assert.deepEqual([...new Set(historicalDuplicates)].sort(), ["016", "027", "031"]);
   const future = files.filter(file => Number(file.slice(0, 3)) >= 36);
   assert.equal(new Set(future.map(file => file.slice(0, 3))).size, future.length);
 });
