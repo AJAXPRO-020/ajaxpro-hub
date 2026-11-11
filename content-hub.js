@@ -28,6 +28,10 @@ const bindContentHub = () => {
   }));
 
   const dialog = root.querySelector("#content-hub-form");
+  if (dialog?.hasAttribute("open") && dialog.showModal) {
+    dialog.removeAttribute("open");
+    dialog.showModal();
+  }
   root.querySelectorAll("[data-open-content-form]").forEach((trigger) => trigger.addEventListener("click", (event) => {
     if (!dialog?.showModal) return;
     event.preventDefault();
