@@ -1,0 +1,501 @@
+{
+  "local_id": "afc_ajax_jan-willem-lucas",
+  "slug": "jan-willem-lucas",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/jan-willem-lucas",
+    "https://www.afc-ajax.info/en/player/jan-willem-lucas/statistics",
+    "https://www.afc-ajax.info/en/player/jan-willem-lucas/matches",
+    "https://www.afc-ajax.info/en/player/jan-willem-lucas/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/jan-willem-lucas",
+    "name": "Jan-Willem Lucas",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": null,
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Forward)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Ajax",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/rinus-lucas",
+      "https://www.afc-ajax.info/en/player/gerard-ziegeler",
+      "https://www.afc-ajax.info/en/player/theo-brokmann-sr",
+      "https://www.afc-ajax.info/en/player/frans-schoevaart",
+      "https://www.afc-ajax.info/en/player/frits-terwee",
+      "https://www.afc-ajax.info/en/player/joop-pelser",
+      "https://www.afc-ajax.info/en/player/freek-gehrels",
+      "https://www.afc-ajax.info/en/player/jan-grootmeijer",
+      "https://www.afc-ajax.info/en/player/jan-goosen",
+      "https://www.afc-ajax.info/en/player/august-dona"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1914-15",
+          "comp.": "5",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "5",
+          "friendly": "3",
+          "total": "8"
+        },
+        {
+          "season": "1915-16",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "1",
+          "total": "1"
+        },
+        {
+          "season": "1916-17",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "1",
+          "total": "3"
+        },
+        {
+          "season": "Total",
+          "comp.": "5",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "7",
+          "friendly": "5",
+          "total": "12"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1914-15",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "3",
+          "total": ""
+        },
+        {
+          "season": "1916-17",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "3",
+          "total": "6"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "3",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "3",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "3"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "3"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1914-15",
+          "date": "10/4/1914",
+          "competition": "Second Division",
+          "match": "De Spartaan - Ajax 0 - 1",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1914-15",
+          "date": "10/18/1914",
+          "competition": "Second Division",
+          "match": "Blauw-Wit - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1914-15",
+          "date": "11/8/1914",
+          "competition": "Second Division",
+          "match": "Ajax - VRC 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1914-15",
+          "date": "3/7/1915",
+          "competition": "Second Division",
+          "match": "Ajax - AFC 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1914-15",
+          "date": "4/11/1915",
+          "competition": "Second Division",
+          "match": "AFC - Ajax 0 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1914-15",
+          "date": "5/2/1915",
+          "competition": "Friendly",
+          "match": "Tubantia - Ajax 0 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1914-15",
+          "date": "5/16/1915",
+          "competition": "Friendly",
+          "match": "Quick - Ajax 2 - 4 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1914-15",
+          "date": "5/24/1915",
+          "competition": "Friendly",
+          "match": "Ajax - Amsterdams Elftal 5 - 1 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1915-16",
+          "date": "2/20/1916",
+          "competition": "Friendly",
+          "match": "Ajax - Zuidelijk Elftal 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1915-16",
+          "date": "4/9/1916",
+          "competition": "Champions Competition 2nd Division West",
+          "match": "Ajax - Blauw-Wit 2 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "1916-17",
+          "date": "9/10/1916",
+          "competition": "Dutch Cup",
+          "match": "De Tubanters - Ajax 0 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "9/17/1916",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Hengelo 4 - 3 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "9/24/1916",
+          "competition": "Friendly",
+          "match": "AFC - Ajax 1 - 5",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 14
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Blauw-Wit",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/1914",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1914-15",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1915-16",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1916-17",
+          "contract type": "Unknown",
+          "team": "II",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 4
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 5,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name",
+      "photo"
+    ]
+  }
+}

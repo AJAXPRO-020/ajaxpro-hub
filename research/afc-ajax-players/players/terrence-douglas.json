@@ -1,0 +1,500 @@
+{
+  "local_id": "afc_ajax_terrence-douglas",
+  "slug": "terrence-douglas",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/terrence-douglas",
+    "https://www.afc-ajax.info/en/player/terrence-douglas/statistics",
+    "https://www.afc-ajax.info/en/player/terrence-douglas/matches",
+    "https://www.afc-ajax.info/en/player/terrence-douglas/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/terrence-douglas",
+    "name": "Terrence Douglas",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "2001-09-14",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Defender)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Roda JC Kerkrade",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/lisandro-magallan",
+      "https://www.afc-ajax.info/en/player/naci-unuvar",
+      "https://www.afc-ajax.info/en/player/zakaria-labyad",
+      "https://www.afc-ajax.info/en/player/danilo-pereira-da-silva",
+      "https://www.afc-ajax.info/en/player/arjany-martha",
+      "https://www.afc-ajax.info/en/player/youri-baas",
+      "https://www.afc-ajax.info/en/player/youri-regeer",
+      "https://www.afc-ajax.info/en/player/kian-fitz-jim",
+      "https://www.afc-ajax.info/en/player/christian-rasmussen",
+      "https://www.afc-ajax.info/en/player/anass-salah-eddine"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2018-19",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "1",
+          "total": "1"
+        },
+        {
+          "season": "2021-22",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "1",
+          "total": "1"
+        },
+        {
+          "season": "2022-23",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "1",
+          "total": "1"
+        },
+        {
+          "season": "Total",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "3",
+          "total": "3"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2018-19",
+          "date": "3/20/2019",
+          "competition": "Friendly",
+          "match": "Bayer Leverkusen - Ajax 2 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": "5"
+        },
+        {
+          "season": "2021-22",
+          "date": "7/3/2021",
+          "competition": "Friendly",
+          "match": "Ajax - HFC 6 - 0 (5 - 0)",
+          "active": "Bench",
+          "min": "17"
+        },
+        {
+          "season": "2022-23",
+          "date": "6/28/2022",
+          "competition": "Friendly",
+          "match": "SV Meppen - Ajax 0 - 3 (0 - 3)",
+          "active": "Bench",
+          "min": "44"
+        }
+      ],
+      "raw_row_count": 4
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Zeeburgia",
+          "next club": "Ajax",
+          "type": "Joins youth academy",
+          "start": "7/1/2009",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "First contract",
+          "start": "7/1/2020",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "FC Den Bosch",
+          "type": "Loan start",
+          "start": "1/31/2022",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "FC Den Bosch",
+          "next club": "Ajax",
+          "type": "Loan end",
+          "start": "7/1/2022",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Roda JC Kerkrade",
+          "type": "Transfer",
+          "start": "7/1/2022",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2009-10",
+          "contract type": "No Contract",
+          "team": "Youth",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2010-11",
+          "contract type": "No Contract",
+          "team": "Youth",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2011-12",
+          "contract type": "No Contract",
+          "team": "Youth",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2012-13",
+          "contract type": "No Contract",
+          "team": "Youth D2",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2013-14",
+          "contract type": "No Contract",
+          "team": "Youth D2",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2014-15",
+          "contract type": "No Contract",
+          "team": "Youth",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2015-16",
+          "contract type": "No Contract",
+          "team": "Youth C1",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2016-17",
+          "contract type": "No Contract",
+          "team": "Youth",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2017-18",
+          "contract type": "No Contract",
+          "team": "U17",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2018-19",
+          "contract type": "No Contract",
+          "team": "U19",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2019-20",
+          "contract type": "No Contract",
+          "team": "Young",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2020-21",
+          "contract type": "Contract",
+          "team": "Youth A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2021-22",
+          "contract type": "Contract",
+          "team": "Loan Out",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "1/31/2022",
+          "loan out to": "6/15/2022",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 14
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Terrence Douglas"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1439-terrence-douglas.png",
+        "alt": "Soccer player Terrence Douglas",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/terrence-douglas__001f722f2fab.png",
+        "status": "downloaded",
+        "bytes": 246360,
+        "sha256": "001f722f2fabdebca6cd3ad17effdfc99765eb3b075e583096a78259cfed80fe",
+        "mime_type": "image/png",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:06.297Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name"
+    ]
+  }
+}

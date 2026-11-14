@@ -1,0 +1,401 @@
+{
+  "local_id": "afc_ajax_desmond-gemert",
+  "slug": "desmond-gemert",
+  "collected_at": "2026-10-31T18:16:29.411Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/desmond-gemert",
+    "https://www.afc-ajax.info/en/player/desmond-gemert/statistics",
+    "https://www.afc-ajax.info/en/player/desmond-gemert/matches",
+    "https://www.afc-ajax.info/en/player/desmond-gemert/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/desmond-gemert",
+    "name": "Desmond Gemert",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1964-09-29",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Defender)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "NEC",
+    "external_links": [
+      {
+        "label": "Desmond Gemert",
+        "url": "http://nl.wikipedia.org/wiki/Desmond_Gemert"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/john-bosman",
+      "https://www.afc-ajax.info/en/player/frank-rijkaard",
+      "https://www.afc-ajax.info/en/player/stanley-menzo",
+      "https://www.afc-ajax.info/en/player/sonny-silooy",
+      "https://www.afc-ajax.info/en/player/peter-boeve",
+      "https://www.afc-ajax.info/en/player/rob-de-wit",
+      "https://www.afc-ajax.info/en/player/arnold-muhren",
+      "https://www.afc-ajax.info/en/player/john-van-t-schip",
+      "https://www.afc-ajax.info/en/player/ronald-koeman",
+      "https://www.afc-ajax.info/en/player/gerald-vanenburg"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1984-85",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        },
+        {
+          "season": "1985-86",
+          "comp.": "5",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "6",
+          "friendly": "",
+          "total": "6"
+        },
+        {
+          "season": "1986-87",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": "2"
+        },
+        {
+          "season": "Total",
+          "comp.": "7",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "9",
+          "friendly": "",
+          "total": "9"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "3"
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "3"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "7"
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1984-85",
+          "date": "3/19/1985",
+          "competition": "Dutch Cup",
+          "match": "PSV - Ajax 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "8"
+        },
+        {
+          "season": "1985-86",
+          "date": "2/9/1986",
+          "competition": "Dutch Cup",
+          "match": "Utrecht - Ajax 0 - 4 (0 - 2)",
+          "active": "Bench",
+          "min": "12"
+        },
+        {
+          "season": "1985-86",
+          "date": "3/25/1986",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 2 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "19"
+        },
+        {
+          "season": "1985-86",
+          "date": "3/29/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 5 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "33"
+        },
+        {
+          "season": "1985-86",
+          "date": "4/6/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1985-86",
+          "date": "4/27/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Bosch 4 - 1 (2 - 1)",
+          "active": "Bench",
+          "min": "18"
+        },
+        {
+          "season": "1985-86",
+          "date": "5/4/1986",
+          "competition": "Eredivisie",
+          "match": "Fortuna Sittard - Ajax 1 - 4 (0 - 2)",
+          "active": "Bench",
+          "min": "19"
+        },
+        {
+          "season": "1986-87",
+          "date": "4/5/1987",
+          "competition": "Eredivisie",
+          "match": "Go Ahead Eagles - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "4/12/1987",
+          "competition": "Eredivisie",
+          "match": "Ajax - Veendam 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 10
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "FC Amsterdam",
+          "next club": "Ajax",
+          "type": "Joins youth academy",
+          "start": "7/1/1982",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "First contract",
+          "start": "7/1/1985",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "NEC",
+          "type": "Transfer",
+          "start": "7/1/1987",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1985-86",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1986-87",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name",
+      "photo"
+    ]
+  }
+}

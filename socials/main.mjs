@@ -1,13 +1,16 @@
 import { statsFormat } from "/socials/formats/stats.mjs";
+import { shotsMapFormat } from "/socials/formats/shots-map.mjs";
+import { notableStatFormat } from "/socials/formats/notable-stat.mjs?v=20261113-outline";
+import { cardVideoFormat } from "/socials/formats/card-video.mjs?v=20261113-no-intro";
 import { outblinkerFormat,hasUsableStats } from "/socials/formats/outblinker.mjs?v=20261023-ui-tidy";
 import { topThreeFormat } from "/socials/formats/top-three.mjs?v=20261023-ui-tidy";
 import { quoteFormat } from "/socials/formats/quote.mjs?v=20261023-ui-tidy";
 import { videoFormat } from "/socials/formats/video.mjs?v=20261023-socials-polish";
-import { initMatchStats } from "/socials/match-stats.mjs?v=20261023-socials-polish";
-import { mountPngPreviews } from "/socials/png.mjs?v=20261101-filenames";
-import { ajaxVandaagFormat } from "/socials/formats/ajax-vandaag.mjs?v=20261101-content-v2";
+import { initMatchStats } from "/socials/match-stats.mjs?v=20261113-format-grid";
+import { mountPngPreviews } from "/socials/png.mjs?v=20261114-outblinker-depth";
+import { ajaxVandaagFormat } from "/socials/formats/ajax-vandaag.mjs?v=20261113-typography";
 
-const formatDefinitions=[statsFormat,outblinkerFormat,topThreeFormat,quoteFormat,videoFormat,ajaxVandaagFormat];
+const formatDefinitions=[statsFormat,shotsMapFormat,notableStatFormat,cardVideoFormat,outblinkerFormat,topThreeFormat,quoteFormat,videoFormat,ajaxVandaagFormat];
 const readFixtures=root=>{
   const template=root.querySelector("template[data-socials-match-context]");
   if(!template)return [];

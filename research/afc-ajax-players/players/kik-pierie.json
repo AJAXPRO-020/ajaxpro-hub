@@ -1,0 +1,592 @@
+{
+  "local_id": "afc_ajax_kik-pierie",
+  "slug": "kik-pierie",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/kik-pierie",
+    "https://www.afc-ajax.info/en/player/kik-pierie/statistics",
+    "https://www.afc-ajax.info/en/player/kik-pierie/matches",
+    "https://www.afc-ajax.info/en/player/kik-pierie/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/kik-pierie",
+    "name": "Kik Pierie",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "2000-07-20",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Defender)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Excelsior",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/lisandro-magallan",
+      "https://www.afc-ajax.info/en/player/perr-schuurs",
+      "https://www.afc-ajax.info/en/player/jurrien-timber",
+      "https://www.afc-ajax.info/en/player/noa-lang",
+      "https://www.afc-ajax.info/en/player/naci-unuvar",
+      "https://www.afc-ajax.info/en/player/klaas-jan-huntelaar",
+      "https://www.afc-ajax.info/en/player/jurgen-ekkelenkamp",
+      "https://www.afc-ajax.info/en/player/dani-de-wit",
+      "https://www.afc-ajax.info/en/player/kenneth-taylor",
+      "https://www.afc-ajax.info/en/player/zakaria-labyad"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2019-20",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "9",
+          "total": "9"
+        },
+        {
+          "season": "2022-23",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "5",
+          "total": "5"
+        },
+        {
+          "season": "Total",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "14",
+          "total": "14"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2019-20",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "2",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "2",
+          "total": "2"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2019-20",
+          "date": "6/25/2019",
+          "competition": "Friendly",
+          "match": "Quick 20 - Ajax 2 - 11 (2 - 7)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2019-20",
+          "date": "6/29/2019",
+          "competition": "Friendly",
+          "match": "Ajax - Aalborg BK 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2019-20",
+          "date": "7/6/2019",
+          "competition": "Friendly",
+          "match": "Ajax - Anderlecht 5 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "68"
+        },
+        {
+          "season": "2019-20",
+          "date": "7/14/2019",
+          "competition": "Friendly",
+          "match": "Ajax - Istanbul Basaksehir 2 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2019-20",
+          "date": "7/18/2019",
+          "competition": "Friendly",
+          "match": "Ajax - Watford FC 2 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "27"
+        },
+        {
+          "season": "2019-20",
+          "date": "7/22/2019",
+          "competition": "Friendly",
+          "match": "Ajax - OFI Kreta 6 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2019-20",
+          "date": "7/27/2019",
+          "competition": "Dutch Super Cup",
+          "match": "Ajax - PSV 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "7/29/2019",
+          "competition": "Friendly",
+          "match": "Ajax - Sivasspor 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2019-20",
+          "date": "8/3/2019",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 2 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "9/14/2019",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 4 - 1 (2 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "10/2/2019",
+          "competition": "Champions League",
+          "match": "Valencia - Ajax 0 - 3 (0 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "12/18/2019",
+          "competition": "Dutch Cup",
+          "match": "Telstar - Ajax 3 - 4 (1 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "1/9/2020",
+          "competition": "Friendly",
+          "match": "Ajax - KAS Eupen 2 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "29"
+        },
+        {
+          "season": "2019-20",
+          "date": "1/11/2020",
+          "competition": "Friendly",
+          "match": "Ajax - Club Brugge 3 - 1 (2 - 0)",
+          "active": "Bench",
+          "min": "5"
+        },
+        {
+          "season": "2019-20",
+          "date": "1/19/2020",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 2 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2022-23",
+          "date": "6/28/2022",
+          "competition": "Friendly",
+          "match": "SV Meppen - Ajax 0 - 3 (0 - 3)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2022-23",
+          "date": "7/2/2022",
+          "competition": "Friendly",
+          "match": "SC Paderborn 07 - Ajax 5 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "2022-23",
+          "date": "7/9/2022",
+          "competition": "Friendly",
+          "match": "Ajax - Lokomotiva Zagreb 3 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2022-23",
+          "date": "7/15/2022",
+          "competition": "Friendly",
+          "match": "KAS Eupen - Ajax 1 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "27"
+        },
+        {
+          "season": "2022-23",
+          "date": "7/31/2022",
+          "competition": "Friendly",
+          "match": "Almere City - Ajax 1 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "28"
+        }
+      ],
+      "raw_row_count": 21
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "SC Heerenveen",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/2019",
+          "amount": "€ 5M",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "FC Twente",
+          "type": "Loan start",
+          "start": "7/16/2020",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "FC Twente",
+          "next club": "Ajax",
+          "type": "Loan end",
+          "start": "7/1/2022",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Excelsior",
+          "type": "Loan start",
+          "start": "12/3/2022",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Excelsior",
+          "next club": "Ajax",
+          "type": "Loan end",
+          "start": "7/1/2023",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Excelsior",
+          "type": "Transfer",
+          "start": "7/11/2023",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 7
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2019-20",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2020-21",
+          "contract type": "Contract",
+          "team": "Loan Out",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "7/16/2020",
+          "loan out to": "6/30/2021",
+          "remark": ""
+        },
+        {
+          "season": "2021-22",
+          "contract type": "Contract",
+          "team": "Loan Out",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "7/1/2021",
+          "loan out to": "6/30/2022",
+          "remark": ""
+        },
+        {
+          "season": "2022-23",
+          "contract type": "Contract",
+          "team": "Loan Out",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "12/3/2022",
+          "loan out to": "6/30/2023",
+          "remark": ""
+        },
+        {
+          "season": "2023-24",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "7/11/2023",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Kik Pierie"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1412-kik-pierie.png",
+        "alt": "Soccer player Kik Pierie",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/kik-pierie__20767817b032.png",
+        "status": "downloaded",
+        "bytes": 220169,
+        "sha256": "20767817b03209f386881b5963b83b63178c52c004d6a82264b4a73a5e08ada5",
+        "mime_type": "image/png",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:02.618Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 3,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name"
+    ]
+  }
+}

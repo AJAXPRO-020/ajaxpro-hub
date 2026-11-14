@@ -1,0 +1,865 @@
+{
+  "local_id": "afc_ajax_aad-visser",
+  "slug": "aad-visser",
+  "collected_at": "2026-10-31T18:10:09.220Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/aad-visser",
+    "https://www.afc-ajax.info/en/player/aad-visser/statistics",
+    "https://www.afc-ajax.info/en/player/aad-visser/matches",
+    "https://www.afc-ajax.info/en/player/aad-visser/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/aad-visser",
+    "name": "Aad Visser",
+    "full_name": "Adrianus Christiaan Visser",
+    "alternative_names": [],
+    "birth_date": "1926-05-26",
+    "death_date": "2010-07-05",
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Keeper)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "BVC Amsterdam",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/ge-van-dijk",
+      "https://www.afc-ajax.info/en/player/klaas-bakker",
+      "https://www.afc-ajax.info/en/player/co-bouwens",
+      "https://www.afc-ajax.info/en/player/hans-boskamp",
+      "https://www.afc-ajax.info/en/player/gerrit-krist",
+      "https://www.afc-ajax.info/en/player/arend-van-der-wel",
+      "https://www.afc-ajax.info/en/player/henk-elzer",
+      "https://www.afc-ajax.info/en/player/rinus-michels",
+      "https://www.afc-ajax.info/en/player/jan-potharst",
+      "https://www.afc-ajax.info/en/player/leen-bartels"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1951-52",
+          "comp.": "26",
+          "play off": "6",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "32",
+          "friendly": "6",
+          "total": "38"
+        },
+        {
+          "season": "1952-53",
+          "comp.": "19",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "19",
+          "friendly": "2",
+          "total": "21"
+        },
+        {
+          "season": "1953-54",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "2",
+          "total": "4"
+        },
+        {
+          "season": "Total",
+          "comp.": "47",
+          "play off": "6",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "53",
+          "friendly": "10",
+          "total": "63"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1951-52",
+          "date": "8/22/1951",
+          "competition": "Friendly",
+          "match": "Ajax - Sabadell 2 - 4 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "8/26/1951",
+          "competition": "AROL Cup",
+          "match": "Ajax - VSV 3 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "1951-52",
+          "date": "9/2/1951",
+          "competition": "First Division",
+          "match": "Ajax - DOS 3 - 2 (3 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "9/9/1951",
+          "competition": "First Division",
+          "match": "Ajax - VSV 6 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "9/16/1951",
+          "competition": "First Division",
+          "match": "Achilles - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "9/23/1951",
+          "competition": "First Division",
+          "match": "Ajax - VV Sneek 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "9/30/1951",
+          "competition": "First Division",
+          "match": "Wageningen - Ajax 1 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "10/7/1951",
+          "competition": "First Division",
+          "match": "Ajax - Oosterparkers 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "10/14/1951",
+          "competition": "First Division",
+          "match": "Blauw-Wit - Ajax 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "10/21/1951",
+          "competition": "First Division",
+          "match": "Ajax - Zwolsche Boys 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "10/24/1951",
+          "competition": "Friendly",
+          "match": "Ajax - Hapoel Petah Tikva 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "10/28/1951",
+          "competition": "First Division",
+          "match": "Be Quick - Ajax 2 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "11/4/1951",
+          "competition": "First Division",
+          "match": "Ajax - Vitesse 2 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "11/18/1951",
+          "competition": "First Division",
+          "match": "SC Enschede - Ajax 1 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "12/2/1951",
+          "competition": "First Division",
+          "match": "Ajax - RC Heemstede 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "12/9/1951",
+          "competition": "Friendly",
+          "match": "Ajax - De Volewijckers 4 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "12/16/1951",
+          "competition": "First Division",
+          "match": "DOS - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "12/23/1951",
+          "competition": "First Division",
+          "match": "VSV - Ajax 1 - 6 (0 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "12/30/1951",
+          "competition": "First Division",
+          "match": "Ajax - Leeuwarden 7 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "1/6/1952",
+          "competition": "First Division B",
+          "match": "Ajax - Achilles 7 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "1/13/1952",
+          "competition": "First Division",
+          "match": "VV Sneek - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "1/20/1952",
+          "competition": "First Division",
+          "match": "Ajax - Wageningen 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "2/10/1952",
+          "competition": "First Division",
+          "match": "Oosterparkers - Ajax 0 - 6 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "2/17/1952",
+          "competition": "First Division",
+          "match": "Ajax - Blauw-Wit 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "2/24/1952",
+          "competition": "Friendly",
+          "match": "DWS - Ajax 3 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "3/1/1952",
+          "competition": "Friendly",
+          "match": "Feijenoord - Ajax 2 - 1",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "3/9/1952",
+          "competition": "First Division",
+          "match": "Zwolsche Boys - Ajax 0 - 3 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "3/16/1952",
+          "competition": "First Division",
+          "match": "Ajax - Be Quick 3 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "3/23/1952",
+          "competition": "First Division",
+          "match": "RC Heemstede - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "4/20/1952",
+          "competition": "First Division",
+          "match": "Ajax - SC Enschede 1 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "4/27/1952",
+          "competition": "First Division",
+          "match": "Vitesse - Ajax 3 - 3 (2 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "5/4/1952",
+          "competition": "First Division",
+          "match": "Leeuwarden - Ajax 4 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "5/18/1952",
+          "competition": "Champions Competition",
+          "match": "Ajax - Hermes DVS 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "5/25/1952",
+          "competition": "Champions Competition",
+          "match": "Willem II - Ajax 5 - 2 (4 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "6/2/1952",
+          "competition": "Champions Competition",
+          "match": "HFC Haarlem - Ajax 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "6/7/1952",
+          "competition": "Champions Competition",
+          "match": "Ajax - HFC Haarlem 2 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "6/15/1952",
+          "competition": "Champions Competition",
+          "match": "Ajax - Willem II 1 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "6/22/1952",
+          "competition": "Champions Competition",
+          "match": "Hermes DVS - Ajax 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "7/3/1952",
+          "competition": "Friendly",
+          "match": "Austria Salzburg - Ajax 3 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "8/13/1952",
+          "competition": "Friendly",
+          "match": "Ajax - Austria Salzburg 3 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "9/7/1952",
+          "competition": "First Division",
+          "match": "VSV - Ajax 3 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "9/14/1952",
+          "competition": "First Division",
+          "match": "Zwolsche Boys - Ajax 2 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "9/28/1952",
+          "competition": "First Division",
+          "match": "Ajax - Heracles 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "10/5/1952",
+          "competition": "First Division",
+          "match": "Wageningen - Ajax 4 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "10/12/1952",
+          "competition": "First Division",
+          "match": "Ajax - RC Heemstede 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "10/26/1952",
+          "competition": "First Division",
+          "match": "VV Sneek - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "11/2/1952",
+          "competition": "First Division",
+          "match": "Ajax - EDO 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "11/9/1952",
+          "competition": "First Division",
+          "match": "GVAV - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "11/23/1952",
+          "competition": "First Division",
+          "match": "Ajax - NEC 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "12/7/1952",
+          "competition": "First Division",
+          "match": "Ajax - Enschedese Boys 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "12/21/1952",
+          "competition": "First Division",
+          "match": "DOS - Ajax 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "1/4/1953",
+          "competition": "First Division",
+          "match": "De Volewijckers - Ajax 2 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "1/25/1953",
+          "competition": "First Division",
+          "match": "Ajax - VSV 2 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "2/22/1953",
+          "competition": "First Division",
+          "match": "Ajax - Zwolsche Boys 8 - 2 (5 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "3/1/1953",
+          "competition": "First Division",
+          "match": "Heracles - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "3/8/1953",
+          "competition": "First Division",
+          "match": "Ajax - Wageningen 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "3/15/1953",
+          "competition": "First Division",
+          "match": "RC Heemstede - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "3/29/1953",
+          "competition": "First Division",
+          "match": "Frisia - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "4/12/1953",
+          "competition": "First Division",
+          "match": "EDO - Ajax 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "8/15/1953",
+          "competition": "Friendly",
+          "match": "Ajax - Saarbrucken 4 - 4",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "8/23/1953",
+          "competition": "Friendly",
+          "match": "DFC - Ajax 2 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "10/11/1953",
+          "competition": "First Division",
+          "match": "Ajax - Stormvogels 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "10/18/1953",
+          "competition": "First Division",
+          "match": "Enschedese Boys - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 64
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Blauw-Wit",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/1951",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "BVC Amsterdam",
+          "type": "Transfer",
+          "start": "7/1/1954",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1951-52",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1952-53",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1953-54",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Aad Visser (From the squad photo before the match against Be Quick (March 15, 1952))"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": null,
+      "headers": [
+        "lineup photos"
+      ],
+      "rows": [
+        {
+          "lineup photos": "Ajax - DOS 3 - 2 (9/2/1951)"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1000-aad-visser.png",
+        "alt": "Soccer player Aad Visser",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/aad-visser__5f97de809054.png",
+        "status": "downloaded",
+        "bytes": 32961,
+        "sha256": "5f97de80905447f9ea2ad95f67e0ad15a84a1fed01c3211912ea434c59a278e6",
+        "mime_type": "image/png",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:36:56.940Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 4,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": []
+  }
+}

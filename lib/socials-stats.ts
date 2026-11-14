@@ -1,5 +1,5 @@
 export type StatsFieldKind = "decimal" | "percentage" | "integer";
-export type StatsFieldId = "xg" | "possession" | "shots" | "shotsOnTarget" | "bigChances";
+export type StatsFieldId = "xg" | "xgot" | "possession" | "shots" | "shotsOnTarget" | "bigChances" | "corners";
 
 export type StatsFieldDefinition = {
   id: StatsFieldId;
@@ -13,10 +13,12 @@ export type StatsFieldDefinition = {
 
 export const statsFields: readonly StatsFieldDefinition[] = [
   {id:"xg",label:"xG",kind:"decimal",min:0,max:20,step:0.01},
+  {id:"xgot",label:"xGOT",kind:"decimal",min:0,max:20,step:0.01},
   {id:"possession",label:"Balbezit",kind:"percentage",min:0,max:100,step:0.1,suffix:"%"},
   {id:"shots",label:"Schoten",kind:"integer",min:0,max:99,step:1},
   {id:"shotsOnTarget",label:"Schoten op doel",kind:"integer",min:0,max:99,step:1},
   {id:"bigChances",label:"Grote kansen",kind:"integer",min:0,max:99,step:1},
+  {id:"corners",label:"Corners",kind:"integer",min:0,max:99,step:1},
 ];
 
 export const statsFieldById = (id:string) => statsFields.find(field=>field.id===id);

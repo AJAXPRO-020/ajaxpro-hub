@@ -1,0 +1,964 @@
+{
+  "local_id": "afc_ajax_jaap-stam",
+  "slug": "jaap-stam",
+  "collected_at": "2026-10-31T18:21:14.479Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/jaap-stam",
+    "https://www.afc-ajax.info/en/player/jaap-stam/statistics",
+    "https://www.afc-ajax.info/en/player/jaap-stam/matches",
+    "https://www.afc-ajax.info/en/player/jaap-stam/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/jaap-stam",
+    "name": "Jaap Stam",
+    "full_name": "Jakob Stam",
+    "alternative_names": [],
+    "birth_date": "1972-07-17",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Defender) - Coach 2nd team"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Ajax",
+    "external_links": [
+      {
+        "label": "Jaap Stam",
+        "url": "http://nl.wikipedia.org/wiki/Jaap_Stam"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/klaas-jan-huntelaar",
+      "https://www.afc-ajax.info/en/player/john-heitinga",
+      "https://www.afc-ajax.info/en/player/maarten-stekelenburg",
+      "https://www.afc-ajax.info/en/player/urby-emanuelson",
+      "https://www.afc-ajax.info/en/player/gabri",
+      "https://www.afc-ajax.info/en/player/george-ogararu",
+      "https://www.afc-ajax.info/en/player/wesley-sneijder",
+      "https://www.afc-ajax.info/en/player/thomas-vermaelen",
+      "https://www.afc-ajax.info/en/player/kenneth-perez",
+      "https://www.afc-ajax.info/en/player/hedwiges-maduro"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2006-07",
+          "comp.": "25",
+          "play off": "2",
+          "dutch cup": "4",
+          "europa": "9",
+          "other off.": "1",
+          "off. mat.": "41",
+          "friendly": "1",
+          "total": "42"
+        },
+        {
+          "season": "2007-08",
+          "comp.": "6",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "4",
+          "other off.": "1",
+          "off. mat.": "11",
+          "friendly": "1",
+          "total": "12"
+        },
+        {
+          "season": "Total",
+          "comp.": "31",
+          "play off": "2",
+          "dutch cup": "4",
+          "europa": "13",
+          "other off.": "2",
+          "off. mat.": "52",
+          "friendly": "2",
+          "total": "54"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2006-07",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": "2"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "1",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "3",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "1",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "6",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "4",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "1",
+          "yellow": "5",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "2",
+          "assists": "1",
+          "yellow": "11",
+          "red": "",
+          "substitute out": "12",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [],
+      "raw_row_count": 1
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal (header)",
+          "number": "1"
+        },
+        {
+          "type": "Goal",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2006-07",
+          "date": "8/4/2006",
+          "competition": "Amsterdam Tournament",
+          "match": "Ajax - Internazionale 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "8/9/2006",
+          "competition": "Champions League",
+          "match": "FC Kopenhagen - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "8/13/2006",
+          "competition": "Dutch Super Cup",
+          "match": "PSV - Ajax 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "8/20/2006",
+          "competition": "Eredivisie",
+          "match": "Ajax - RKC Waalwijk 5 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "8/23/2006",
+          "competition": "Champions League",
+          "match": "Ajax - FC Kopenhagen 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "8/27/2006",
+          "competition": "Eredivisie",
+          "match": "NAC Breda - Ajax 1 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "9/10/2006",
+          "competition": "Eredivisie",
+          "match": "Ajax - Vitesse 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "52"
+        },
+        {
+          "season": "2006-07",
+          "date": "9/14/2006",
+          "competition": "UEFA Cup",
+          "match": "IK Start - Ajax 2 - 5 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "9/17/2006",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "9/24/2006",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "9/28/2006",
+          "competition": "UEFA Cup",
+          "match": "Ajax - IK Start 4 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "10/1/2006",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 2 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "10/14/2006",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 3 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "10/22/2006",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 0 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "25"
+        },
+        {
+          "season": "2006-07",
+          "date": "10/25/2006",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO Den Haag 2 - 0 (2 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2006-07",
+          "date": "10/28/2006",
+          "competition": "Eredivisie",
+          "match": "SC Heerenveen - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "11/2/2006",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Austria Wien 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "11/9/2006",
+          "competition": "Dutch Cup",
+          "match": "Ajax - ADO Den Haag 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "11/12/2006",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "11/19/2006",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "11/23/2006",
+          "competition": "UEFA Cup",
+          "match": "Sparta Prague - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "11/26/2006",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2006-07",
+          "date": "11/30/2006",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Espanyol 0 - 2 (0 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2006-07",
+          "date": "12/3/2006",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 6 - 0 (5 - 0)",
+          "active": "Start",
+          "min": "62"
+        },
+        {
+          "season": "2006-07",
+          "date": "12/10/2006",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "12/13/2006",
+          "competition": "UEFA Cup",
+          "match": "SV Zulte Waregem - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "12/17/2006",
+          "competition": "Eredivisie",
+          "match": "Excelsior - Ajax 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "67"
+        },
+        {
+          "season": "2006-07",
+          "date": "12/27/2006",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "12/30/2006",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 2 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "1/21/2007",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "1/24/2007",
+          "competition": "Dutch Cup",
+          "match": "Ajax - HFC Haarlem 4 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2006-07",
+          "date": "1/28/2007",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 2 - 3 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "2/11/2007",
+          "competition": "Eredivisie",
+          "match": "ADO Den Haag - Ajax 1 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "2/14/2007",
+          "competition": "UEFA Cup",
+          "match": "Werder Bremen - Ajax 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "2/18/2007",
+          "competition": "Eredivisie",
+          "match": "Ajax - Excelsior 2 - 2 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "2/22/2007",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Werder Bremen 3 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "2/25/2007",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "2/28/2007",
+          "competition": "Dutch Cup",
+          "match": "Willem II - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "39"
+        },
+        {
+          "season": "2006-07",
+          "date": "3/4/2007",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2006-07",
+          "date": "3/18/2007",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 1 - 5 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "4/1/2007",
+          "competition": "Eredivisie",
+          "match": "Ajax - Heracles Almelo 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "4/29/2007",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 0 - 2 (0 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2006-07",
+          "date": "5/6/2007",
+          "competition": "Dutch Cup",
+          "match": "AZ - Ajax 1 - 1 (penalties: 7 - 8)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "2006-07",
+          "date": "5/9/2007",
+          "competition": "Eredivisie",
+          "match": "SC Heerenveen - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "5/13/2007",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "75"
+        },
+        {
+          "season": "2006-07",
+          "date": "5/20/2007",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 2 - 1 (1 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2007-08",
+          "date": "8/2/2007",
+          "competition": "Amsterdam Tournament",
+          "match": "Ajax - Atletico Madrid 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2007-08",
+          "date": "8/11/2007",
+          "competition": "Dutch Super Cup",
+          "match": "Ajax - PSV 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2007-08",
+          "date": "8/15/2007",
+          "competition": "Champions League",
+          "match": "Ajax - Slavia Prague 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2007-08",
+          "date": "8/19/2007",
+          "competition": "Eredivisie",
+          "match": "De Graafschap - Ajax 1 - 8 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2007-08",
+          "date": "8/26/2007",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 4 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2007-08",
+          "date": "8/29/2007",
+          "competition": "Champions League",
+          "match": "Slavia Prague - Ajax 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2007-08",
+          "date": "9/2/2007",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2007-08",
+          "date": "9/15/2007",
+          "competition": "Eredivisie",
+          "match": "Heracles Almelo - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "69"
+        },
+        {
+          "season": "2007-08",
+          "date": "9/20/2007",
+          "competition": "UEFA Cup",
+          "match": "Dinamo Zagreb - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2007-08",
+          "date": "10/4/2007",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Dinamo Zagreb 2 - 3 (regular time:0 - 1)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "2007-08",
+          "date": "10/7/2007",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 2 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2007-08",
+          "date": "10/20/2007",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "46"
+        }
+      ],
+      "raw_row_count": 59
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Start",
+          "next club": "FC Zwolle",
+          "type": "Unknown",
+          "start": "7/1/1992",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "FC Zwolle",
+          "next club": "Cambuur Leeuwarden",
+          "type": "Transfer",
+          "start": "7/1/1993",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Cambuur Leeuwarden",
+          "next club": "Willem II",
+          "type": "Transfer",
+          "start": "7/1/1995",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Willem II",
+          "next club": "PSV",
+          "type": "Transfer",
+          "start": "1/1/1996",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "PSV",
+          "next club": "Manchester United",
+          "type": "Transfer",
+          "start": "7/1/1998",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Manchester United",
+          "next club": "Lazio Roma",
+          "type": "Transfer",
+          "start": "7/1/2001",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Lazio Roma",
+          "next club": "AC Milan",
+          "type": "Transfer",
+          "start": "7/1/2004",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "AC Milan",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/2006",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "None",
+          "type": "Contract terminated",
+          "start": "10/31/2007",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 10
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2006-07",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2007-08",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "10/31/2007",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Other Role)",
+      "headers": [
+        "season",
+        "role",
+        "contract type",
+        "contract from",
+        "contract to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2014-15",
+          "role": "Coach 2nd team",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "2015-16",
+          "role": "Coach 2nd team",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Jaap Stam"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1097-jaap-stam.jpg",
+        "alt": "Soccer player Jaap Stam",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/jaap-stam__a5722045c4f7.jpg",
+        "status": "downloaded",
+        "bytes": 25964,
+        "sha256": "a5722045c4f73a257543317e38e0bde80a26e2b1d6d69e8e69dd78265c7aed74",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:00.934Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 4,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date"
+    ]
+  }
+}

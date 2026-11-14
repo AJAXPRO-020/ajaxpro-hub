@@ -1,0 +1,309 @@
+{
+  "local_id": "afc_ajax_khalid-boulahrouz",
+  "slug": "khalid-boulahrouz",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/khalid-boulahrouz",
+    "https://www.afc-ajax.info/en/player/khalid-boulahrouz/statistics",
+    "https://www.afc-ajax.info/en/player/khalid-boulahrouz/matches",
+    "https://www.afc-ajax.info/en/player/khalid-boulahrouz/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/khalid-boulahrouz",
+    "name": "Khalid Boulahrouz",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1981-12-28",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Feyenoord",
+    "external_links": [
+      {
+        "label": "Khalid Boulahrouz",
+        "url": "http://nl.wikipedia.org/wiki/Khalid_boulahrouz"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": []
+  },
+  "statistics": [
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "NoClub",
+          "next club": "Excelsior Maassluis",
+          "type": "Joins youth academy",
+          "start": "",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Excelsior Maassluis",
+          "next club": "DSOV",
+          "type": "Joins youth academy",
+          "start": "",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "DSOV",
+          "next club": "Ajax",
+          "type": "Joins youth academy",
+          "start": "",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "HFC Haarlem",
+          "type": "Joins youth academy",
+          "start": "",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "HFC Haarlem",
+          "next club": "AZ",
+          "type": "Joins youth academy",
+          "start": "",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "AZ",
+          "next club": "RKC Waalwijk",
+          "type": "Transfer",
+          "start": "7/1/2001",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "RKC Waalwijk",
+          "next club": "Hamburger SV",
+          "type": "Transfer",
+          "start": "7/1/2004",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Hamburger SV",
+          "next club": "Chelsea",
+          "type": "Transfer",
+          "start": "7/1/2006",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Chelsea",
+          "next club": "Sevilla",
+          "type": "Loan start",
+          "start": "7/1/2007",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Sevilla",
+          "next club": "VfB Stuttgart",
+          "type": "Transfer",
+          "start": "7/1/2008",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "VfB Stuttgart",
+          "next club": "Sporting Portugal",
+          "type": "Transfer",
+          "start": "7/1/2012",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Sporting Portugal",
+          "next club": "Brondby",
+          "type": "Transfer",
+          "start": "7/1/2013",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Brondby",
+          "next club": "Feyenoord",
+          "type": "Transfer",
+          "start": "7/1/2014",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 14
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Khalid Boulahrouz"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1143-khalid-boulahrouz.jpg",
+        "alt": "Soccer player Khalid Boulahrouz",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/khalid-boulahrouz__4dd12b56e2bc.jpg",
+        "status": "downloaded",
+        "bytes": 17324,
+        "sha256": "4dd12b56e2bc2e35ff88e9388f0d6e464944f70ea778100e7a22eb05866a60fa",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:02.604Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 1,
+    "match_tables": 0,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": false,
+    "missing_fields": [
+      "death_date",
+      "full_name"
+    ]
+  }
+}

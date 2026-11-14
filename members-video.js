@@ -82,7 +82,9 @@
   });
 
   closeButton?.addEventListener("click", closePlayer);
-  dialog?.addEventListener("click", event => { if (event.target === dialog) closePlayer(); });
+  if (dialog && !("closedBy" in HTMLDialogElement.prototype)) {
+    dialog.addEventListener("click", event => { if (event.target === dialog) closePlayer(); });
+  }
   dialog?.addEventListener("close", clearPlayer);
   render();
 })();

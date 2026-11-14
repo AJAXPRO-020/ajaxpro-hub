@@ -1,0 +1,2851 @@
+{
+  "local_id": "afc_ajax_piet-ouderland",
+  "slug": "piet-ouderland",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/piet-ouderland",
+    "https://www.afc-ajax.info/en/player/piet-ouderland/statistics",
+    "https://www.afc-ajax.info/en/player/piet-ouderland/matches",
+    "https://www.afc-ajax.info/en/player/piet-ouderland/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/piet-ouderland",
+    "name": "Piet Ouderland",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1933-03-17",
+    "death_date": "2017-09-03",
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Forward)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "ZFC",
+    "external_links": [
+      {
+        "label": "Piet Ouderland",
+        "url": "http://nl.wikipedia.org/wiki/Piet_Ouderland"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/bennie-muller",
+      "https://www.afc-ajax.info/en/player/ger-van-mourik",
+      "https://www.afc-ajax.info/en/player/sjaak-swart",
+      "https://www.afc-ajax.info/en/player/bertus-hoogerman",
+      "https://www.afc-ajax.info/en/player/ton-pronk",
+      "https://www.afc-ajax.info/en/player/werner-schaaphok",
+      "https://www.afc-ajax.info/en/player/henk-groot",
+      "https://www.afc-ajax.info/en/player/cees-groot",
+      "https://www.afc-ajax.info/en/player/piet-keizer",
+      "https://www.afc-ajax.info/en/player/co-prins"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1955-56",
+          "comp.": "27",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "27",
+          "friendly": "1",
+          "total": "28"
+        },
+        {
+          "season": "1956-57",
+          "comp.": "14",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "15",
+          "friendly": "1",
+          "total": "16"
+        },
+        {
+          "season": "1957-58",
+          "comp.": "21",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "4",
+          "other off.": "",
+          "off. mat.": "25",
+          "friendly": "4",
+          "total": "29"
+        },
+        {
+          "season": "1958-59",
+          "comp.": "34",
+          "play off": "",
+          "dutch cup": "4",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "38",
+          "friendly": "",
+          "total": "38"
+        },
+        {
+          "season": "1959-60",
+          "comp.": "3",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "",
+          "total": "3"
+        },
+        {
+          "season": "1960-61",
+          "comp.": "29",
+          "play off": "",
+          "dutch cup": "8",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "37",
+          "friendly": "",
+          "total": "37"
+        },
+        {
+          "season": "1961-62",
+          "comp.": "33",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "11",
+          "other off.": "",
+          "off. mat.": "46",
+          "friendly": "",
+          "total": "46"
+        },
+        {
+          "season": "1962-63",
+          "comp.": "29",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "5",
+          "other off.": "",
+          "off. mat.": "34",
+          "friendly": "2",
+          "total": "36"
+        },
+        {
+          "season": "1963-64",
+          "comp.": "30",
+          "play off": "",
+          "dutch cup": "5",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "36",
+          "friendly": "",
+          "total": "36"
+        },
+        {
+          "season": "Total",
+          "comp.": "220",
+          "play off": "",
+          "dutch cup": "20",
+          "europa": "21",
+          "other off.": "",
+          "off. mat.": "261",
+          "friendly": "8",
+          "total": "269"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1955-56",
+          "comp.": "5",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "5",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1956-57",
+          "comp.": "5",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "6",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1957-58",
+          "comp.": "4",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "7",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1960-61",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1961-62",
+          "comp.": "3",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "4",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1962-63",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1963-64",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "20",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "5",
+          "other off.": "",
+          "off. mat.": "26",
+          "friendly": "",
+          "total": "26"
+        }
+      ],
+      "raw_row_count": 9
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "1",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "2",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "1"
+        },
+        {
+          "minute": "30-45",
+          "goals": "6",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "3"
+        },
+        {
+          "minute": "46-60",
+          "goals": "2",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "4"
+        },
+        {
+          "minute": "61-75",
+          "goals": "6",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "4",
+          "assists": "2",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "5",
+          "assists": "2",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "Totaal",
+          "goals": "26",
+          "assists": "7",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "9"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [
+        {
+          "assisted by": "Sjaak Swart",
+          "number": "3"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "25"
+        },
+        {
+          "type": "Goal (header)",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "24"
+        },
+        {
+          "origin": "from free kick (indirect)",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 3
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1955-56",
+          "date": "8/14/1955",
+          "competition": "Friendly",
+          "match": "Feijenoord - Ajax 3 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "8/28/1955",
+          "competition": "Hoofdklasse",
+          "match": "NOAD - Ajax 1 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "9/25/1955",
+          "competition": "Hoofdklasse",
+          "match": "Vitesse - Ajax 2 - 2 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "10/2/1955",
+          "competition": "Hoofdklasse",
+          "match": "Ajax - Sparta 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "10/9/1955",
+          "competition": "Hoofdklasse A",
+          "match": "NAC - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "10/23/1955",
+          "competition": "Hoofdklasse",
+          "match": "Ajax - VVV 1 - 3 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "10/30/1955",
+          "competition": "Hoofdklasse",
+          "match": "BVC Amsterdam - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "11/13/1955",
+          "competition": "Hoofdklasse A",
+          "match": "Ajax - DOS 6 - 3 (4 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "11/20/1955",
+          "competition": "Hoofdklasse A",
+          "match": "SV Limburgia - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "11/27/1955",
+          "competition": "Hoofdklasse",
+          "match": "Ajax - Roda Sport 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "12/4/1955",
+          "competition": "Hoofdklasse",
+          "match": "Fortuna '54 - Ajax 1 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "12/11/1955",
+          "competition": "Hoofdklasse",
+          "match": "Ajax - EVV 4 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "12/18/1955",
+          "competition": "Hoofdklasse A",
+          "match": "Excelsior - Ajax 4 - 6 (0 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "12/26/1955",
+          "competition": "Hoofdklasse",
+          "match": "Ajax - ADO 2 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "1/8/1956",
+          "competition": "Hoofdklasse",
+          "match": "Stormvogels - Ajax 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "1/15/1956",
+          "competition": "Hoofdklasse",
+          "match": "Ajax - NOAD 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "1/22/1956",
+          "competition": "Hoofdklasse",
+          "match": "HVC - Ajax 0 - 6 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "1/29/1956",
+          "competition": "Hoofdklasse",
+          "match": "Ajax - VV Rigtersbleek 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "3/11/1956",
+          "competition": "Hoofdklasse",
+          "match": "Ajax - Vitesse 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "3/18/1956",
+          "competition": "Hoofdklasse",
+          "match": "EBOH - Ajax 1 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "3/25/1956",
+          "competition": "Hoofdklasse",
+          "match": "Sparta - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "4/2/1956",
+          "competition": "Hoofdklasse",
+          "match": "Ajax - NAC 0 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "4/15/1956",
+          "competition": "Hoofdklasse A",
+          "match": "VVV - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "4/22/1956",
+          "competition": "Hoofdklasse",
+          "match": "Ajax - BVC Amsterdam 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "4/25/1956",
+          "competition": "Hoofdklasse",
+          "match": "DOS - Ajax 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "4/29/1956",
+          "competition": "Hoofdklasse A",
+          "match": "Ajax - SV Limburgia 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "5/19/1956",
+          "competition": "Hoofdklasse A",
+          "match": "Ajax - Fortuna '54 1 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "5/21/1956",
+          "competition": "Hoofdklasse",
+          "match": "EVV - Ajax 2 - 3 (1 - 2)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1956-57",
+          "date": "9/30/1956",
+          "competition": "Eredivisie",
+          "match": "EVV - Ajax 0 - 3 (0 - 2)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1956-57",
+          "date": "10/14/1956",
+          "competition": "Dutch Cup",
+          "match": "RKSV Volendam - Ajax 4 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "11/11/1956",
+          "competition": "Eredivisie",
+          "match": "Feijenoord - Ajax 7 - 3 (5 - 0)",
+          "active": "Bench",
+          "min": "50"
+        },
+        {
+          "season": "1956-57",
+          "date": "11/18/1956",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 5 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "12/9/1956",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 2 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "12/16/1956",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna '54 0 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "1/6/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - BVC Amsterdam 2 - 3 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "1/13/1957",
+          "competition": "Eredivisie",
+          "match": "NOAD - Ajax 1 - 4 (0 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "1/27/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "3/31/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - BVV 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1956-57",
+          "date": "4/22/1957",
+          "competition": "Eredivisie",
+          "match": "Fortuna '54 - Ajax 2 - 3 (0 - 2)",
+          "active": "Bench",
+          "min": "33"
+        },
+        {
+          "season": "1956-57",
+          "date": "5/5/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - VVV 1 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1956-57",
+          "date": "5/12/1957",
+          "competition": "Eredivisie",
+          "match": "DOS - Ajax 0 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": "74"
+        },
+        {
+          "season": "1956-57",
+          "date": "5/19/1957",
+          "competition": "Eredivisie",
+          "match": "BVC Amsterdam - Ajax 1 - 5 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "5/22/1957",
+          "competition": "Friendly",
+          "match": "Ajax - Sheffield United 1 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "5/30/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - NOAD 2 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "9/1/1957",
+          "competition": "Eredivisie",
+          "match": "SC Enschede - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "9/8/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "9/15/1957",
+          "competition": "Eredivisie",
+          "match": "Rapid JC - Ajax 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "9/22/1957",
+          "competition": "Eredivisie",
+          "match": "Elinkwijk - Ajax 0 - 3 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "9/29/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - VVV 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "10/27/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - BVC Amsterdam 3 - 4 (3 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "11/3/1957",
+          "competition": "Eredivisie",
+          "match": "BVV - Ajax 0 - 1 (0 - 1)",
+          "active": "Ill",
+          "min": ""
+        },
+        {
+          "season": "1957-58",
+          "date": "11/10/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 3 - 1 (2 - 0)",
+          "active": "Ill",
+          "min": ""
+        },
+        {
+          "season": "1957-58",
+          "date": "11/20/1957",
+          "competition": "Europa Cup I",
+          "match": "Wismut Karl-Marx-Stadt - Ajax 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "11/24/1957",
+          "competition": "Eredivisie",
+          "match": "GVAV - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "11/27/1957",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Wismut Karl-Marx-Stadt 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "12/1/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - DOS 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "12/8/1957",
+          "competition": "Eredivisie",
+          "match": "Sparta - Ajax 4 - 4 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "12/22/1957",
+          "competition": "Eredivisie",
+          "match": "ADO - Ajax 3 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "1/5/1958",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 3 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "52"
+        },
+        {
+          "season": "1957-58",
+          "date": "1/12/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Enschede 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "1/19/1958",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 0 - 5 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "2/2/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - Rapid JC 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "2/5/1958",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Vasas Budapest 2 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "2/9/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - Elinkwijk 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "2/26/1958",
+          "competition": "Europa Cup I",
+          "match": "Vasas Budapest - Ajax 4 - 0 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "3/16/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - NOAD 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "3/23/1958",
+          "competition": "Eredivisie",
+          "match": "VVV - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "4/7/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna '54 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "50"
+        },
+        {
+          "season": "1957-58",
+          "date": "5/11/1958",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "5/18/1958",
+          "competition": "Eredivisie",
+          "match": "DOS - Ajax 5 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "5/26/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta 2 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "6/14/1958",
+          "competition": "Friendly",
+          "match": "Ajax - Sandvikens IF 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "6/18/1958",
+          "competition": "Friendly",
+          "match": "Noord-Transvaal - Ajax 4 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "6/22/1958",
+          "competition": "Friendly",
+          "match": "Lourenco Marques - Ajax 0 - 3 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "6/28/1958",
+          "competition": "Friendly",
+          "match": "Transvaal - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "8/24/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - DWS/A 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "8/31/1958",
+          "competition": "Eredivisie",
+          "match": "Sparta - Ajax 4 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "9/7/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna '54 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "9/14/1958",
+          "competition": "Eredivisie",
+          "match": "Elinkwijk - Ajax 2 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "9/21/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 3 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "10/5/1958",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "10/12/1958",
+          "competition": "Eredivisie",
+          "match": "VVV - Ajax 3 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "10/19/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - SHS 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "10/26/1958",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 1 - 4 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "11/9/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feijenoord 3 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "11/16/1958",
+          "competition": "Eredivisie",
+          "match": "SC Enschede - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "11/23/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - Blauw-Wit 4 - 2 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "11/30/1958",
+          "competition": "Eredivisie",
+          "match": "DOS - Ajax 5 - 3 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "12/7/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - NOAD 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "12/14/1958",
+          "competition": "Eredivisie",
+          "match": "Rapid JC - Ajax 4 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "12/21/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 5 - 2 (5 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "12/26/1958",
+          "competition": "Eredivisie",
+          "match": "ADO - Ajax 3 - 4 (3 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "12/28/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO 3 - 3 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "1/4/1959",
+          "competition": "Eredivisie",
+          "match": "DWS/A - Ajax 1 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "1/25/1959",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "2/1/1959",
+          "competition": "Eredivisie",
+          "match": "Fortuna '54 - Ajax 3 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "2/22/1959",
+          "competition": "Eredivisie",
+          "match": "Ajax - Elinkwijk 1 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "3/1/1959",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 5 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "3/8/1959",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "3/15/1959",
+          "competition": "Eredivisie",
+          "match": "Ajax - VVV 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "3/22/1959",
+          "competition": "Eredivisie",
+          "match": "SHS - Ajax 2 - 9 (2 - 5)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "3/30/1959",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "4/5/1959",
+          "competition": "Eredivisie",
+          "match": "Feijenoord - Ajax 0 - 5 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "4/12/1959",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Enschede 2 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "4/19/1959",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Watergraafsmeer 2 - 1",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "4/26/1959",
+          "competition": "Eredivisie",
+          "match": "Blauw-Wit - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "5/3/1959",
+          "competition": "Eredivisie",
+          "match": "Ajax - DOS 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "5/10/1959",
+          "competition": "Dutch Cup",
+          "match": "Ajax - De Volewijckers 3 - 0",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "5/18/1959",
+          "competition": "Eredivisie",
+          "match": "NOAD - Ajax 2 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "5/24/1959",
+          "competition": "Eredivisie",
+          "match": "Ajax - Rapid JC 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "5/28/1959",
+          "competition": "Dutch Cup",
+          "match": "SHS - Ajax 1 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "5/31/1959",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 2 - 4 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "6/4/1959",
+          "competition": "Dutch Cup",
+          "match": "Sparta - Ajax 3 - 0",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1959-60",
+          "date": "8/23/1959",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1959-60",
+          "date": "8/30/1959",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1959-60",
+          "date": "9/6/1959",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 3 - 6 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "9/18/1960",
+          "competition": "Dutch Cup",
+          "match": "Ajax - De Volewijckers 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "9/25/1960",
+          "competition": "Eredivisie",
+          "match": "Elinkwijk - Ajax 3 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "10/9/1960",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 6 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "10/16/1960",
+          "competition": "Eredivisie",
+          "match": "Fortuna '54 - Ajax 2 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "11/6/1960",
+          "competition": "Eredivisie",
+          "match": "Alkmaar '54 - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "11/13/1960",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO 4 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "11/20/1960",
+          "competition": "Eredivisie",
+          "match": "Sparta - Ajax 1 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "11/27/1960",
+          "competition": "Eredivisie",
+          "match": "Ajax - GVAV 5 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "12/11/1960",
+          "competition": "Eredivisie",
+          "match": "DWS/A - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "12/18/1960",
+          "competition": "Eredivisie",
+          "match": "Ajax - DOS 3 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "12/26/1960",
+          "competition": "Eredivisie",
+          "match": "NOAD - Ajax 1 - 4 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "1/1/1961",
+          "competition": "Dutch Cup",
+          "match": "RKSV Volendam - Ajax 4 - 3 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "1/8/1961",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "1/15/1961",
+          "competition": "Eredivisie",
+          "match": "VVV - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "2/5/1961",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feijenoord 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "2/12/1961",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Rapiditas 10 - 0 (5 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "2/19/1961",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 1 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "2/26/1961",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 4 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "3/5/1961",
+          "competition": "Eredivisie",
+          "match": "Ajax - Elinkwijk 6 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "3/12/1961",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 3 - 5 (2 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "3/19/1961",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna '54 7 - 4 (4 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "3/26/1961",
+          "competition": "Eredivisie",
+          "match": "SC Enschede - Ajax 2 - 5 (1 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "4/1/1961",
+          "competition": "Eredivisie",
+          "match": "Rapid JC - Ajax 1 - 5 (0 - 5)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "4/3/1961",
+          "competition": "Eredivisie",
+          "match": "Ajax - Rapid JC 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "4/9/1961",
+          "competition": "Eredivisie",
+          "match": "Ajax - Alkmaar '54 3 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "4/16/1961",
+          "competition": "Eredivisie",
+          "match": "ADO - Ajax 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "4/23/1961",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "4/29/1961",
+          "competition": "Dutch Cup",
+          "match": "Ajax - KFC 4 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "5/7/1961",
+          "competition": "Eredivisie",
+          "match": "GVAV - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "5/20/1961",
+          "competition": "Eredivisie",
+          "match": "Ajax - DWS/A 2 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "5/22/1961",
+          "competition": "Eredivisie",
+          "match": "DOS - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "5/25/1961",
+          "competition": "Dutch Cup",
+          "match": "HFC Haarlem - Ajax 1 - 2",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "5/28/1961",
+          "competition": "Eredivisie",
+          "match": "Ajax - NOAD 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "6/1/1961",
+          "competition": "Dutch Cup",
+          "match": "Ajax - SC Heracles 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "6/4/1961",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 1 - 5 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "6/7/1961",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Cambuur 7 - 4 (4 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1960-61",
+          "date": "6/14/1961",
+          "competition": "Dutch Cup",
+          "match": "Ajax - NAC 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "6/17/1961",
+          "competition": "Intertoto",
+          "match": "Pirmasens - Ajax 4 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "6/25/1961",
+          "competition": "Intertoto",
+          "match": "Malm&ouml; FF - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "7/1/1961",
+          "competition": "Intertoto",
+          "match": "Ajax - Zurich 9 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "7/8/1961",
+          "competition": "Intertoto",
+          "match": "Zurich - Ajax 1 - 4 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "7/15/1961",
+          "competition": "Intertoto",
+          "match": "Ajax - Malm&ouml; FF 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "7/22/1961",
+          "competition": "Intertoto",
+          "match": "Ajax - Pirmasens 9 - 0 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "8/20/1961",
+          "competition": "Eredivisie",
+          "match": "DOS - Ajax 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "8/27/1961",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Enschede 6 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "9/3/1961",
+          "competition": "Eredivisie",
+          "match": "DWS/A - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "9/10/1961",
+          "competition": "Eredivisie",
+          "match": "Ajax - GVAV 4 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "9/17/1961",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 2 - 4 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "9/24/1961",
+          "competition": "Eredivisie",
+          "match": "Ajax - RKSV Volendam 9 - 1 (5 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "9/27/1961",
+          "competition": "Intertoto",
+          "match": "Ajax - First Vienna 4 - 3 (regular time:3 - 3)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "1961-62",
+          "date": "10/1/1961",
+          "competition": "Eredivisie",
+          "match": "Ajax - Blauw-Wit 2 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "10/8/1961",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "10/15/1961",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feijenoord 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "10/29/1961",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 1 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "11/2/1961",
+          "competition": "Europa Cup II",
+          "match": "Ajax - Ujpesti Dozsa 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "11/5/1961",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna '54 3 - 4 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "11/19/1961",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "11/29/1961",
+          "competition": "Europa Cup II",
+          "match": "Ujpesti Dozsa - Ajax 3 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "12/3/1961",
+          "competition": "Eredivisie",
+          "match": "ADO - Ajax 1 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "12/10/1961",
+          "competition": "Eredivisie",
+          "match": "Ajax - De Volewijckers 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "12/17/1961",
+          "competition": "Eredivisie",
+          "match": "Rapid JC - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "1/14/1962",
+          "competition": "Eredivisie",
+          "match": "Ajax - DOS 3 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "1/21/1962",
+          "competition": "Eredivisie",
+          "match": "SC Enschede - Ajax 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "1/28/1962",
+          "competition": "Eredivisie",
+          "match": "Ajax - DWS/A 8 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "2/4/1962",
+          "competition": "Eredivisie",
+          "match": "GVAV - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "2/11/1962",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "2/18/1962",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "2/25/1962",
+          "competition": "Eredivisie",
+          "match": "RKSV Volendam - Ajax 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "3/4/1962",
+          "competition": "Eredivisie",
+          "match": "Blauw-Wit - Ajax 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "3/7/1962",
+          "competition": "Intertoto",
+          "match": "Ajax - Slovan Bratislava 5 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "3/11/1962",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 3 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "3/18/1962",
+          "competition": "Eredivisie",
+          "match": "Feijenoord - Ajax 1 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "3/25/1962",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "4/8/1962",
+          "competition": "Eredivisie",
+          "match": "Fortuna '54 - Ajax 2 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "4/15/1962",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 4 - 5 (2 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "4/21/1962",
+          "competition": "Eredivisie",
+          "match": "VVV - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "4/23/1962",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO 1 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "4/26/1962",
+          "competition": "Intertoto",
+          "match": "Ajax - Feijenoord 4 - 2 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "4/28/1962",
+          "competition": "Dutch Cup",
+          "match": "Ajax - HVC 4 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "5/6/1962",
+          "competition": "Eredivisie",
+          "match": "De Volewijckers - Ajax 3 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "5/13/1962",
+          "competition": "Eredivisie",
+          "match": "Ajax - Rapid JC 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "5/20/1962",
+          "competition": "Eredivisie",
+          "match": "Sparta - Ajax 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "5/27/1962",
+          "competition": "Intertoto",
+          "match": "Ajax - Nancy 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1961-62",
+          "date": "5/31/1962",
+          "competition": "Dutch Cup",
+          "match": "'t Gooi - Ajax 1 - 0 (regular time:0 - 0)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "1962-63",
+          "date": "6/3/1962",
+          "competition": "Intertoto",
+          "match": "SC Tatabanya - Ajax 2 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "6/17/1962",
+          "competition": "Intertoto",
+          "match": "Ajax - 1. FC Kaiserslautern 6 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "6/24/1962",
+          "competition": "Intertoto",
+          "match": "Ajax - SC Tatabanya 1 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "7/1/1962",
+          "competition": "Intertoto",
+          "match": "Nancy - Ajax 2 - 3",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "8/12/1962",
+          "competition": "Friendly",
+          "match": "Ajax - Sheffield Wednesday 3 - 1",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "8/26/1962",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heracles 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "9/2/1962",
+          "competition": "Eredivisie",
+          "match": "Feijenoord - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "9/9/1962",
+          "competition": "Eredivisie",
+          "match": "RKSV Volendam - Ajax 4 - 5 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "9/16/1962",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "9/23/1962",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "9/30/1962",
+          "competition": "Eredivisie",
+          "match": "Ajax - GVAV 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "10/7/1962",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 2 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "10/17/1962",
+          "competition": "Friendly",
+          "match": "Sheffield Wednesday - Ajax 2 - 2 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "10/21/1962",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta 1 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "10/28/1962",
+          "competition": "Eredivisie",
+          "match": "SC Enschede - Ajax 0 - 6 (0 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "11/4/1962",
+          "competition": "Eredivisie",
+          "match": "Ajax - Blauw-Wit 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "11/18/1962",
+          "competition": "Eredivisie",
+          "match": "De Volewijckers - Ajax 0 - 5 (0 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "11/25/1962",
+          "competition": "Eredivisie",
+          "match": "Ajax - DOS 2 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "12/2/1962",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 2 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "12/23/1962",
+          "competition": "Eredivisie",
+          "match": "Fortuna '54 - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "12/26/1962",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "3/17/1963",
+          "competition": "Eredivisie",
+          "match": "SC Heracles - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "3/24/1963",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feijenoord 1 - 3 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "4/7/1963",
+          "competition": "Eredivisie",
+          "match": "Ajax - RKSV Volendam 1 - 3 (1 - 2)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1962-63",
+          "date": "4/13/1963",
+          "competition": "Eredivisie",
+          "match": "ADO - Ajax 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "4/21/1963",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "4/28/1963",
+          "competition": "Eredivisie",
+          "match": "GVAV - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "5/5/1963",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 3 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "25"
+        },
+        {
+          "season": "1962-63",
+          "date": "5/12/1963",
+          "competition": "Eredivisie",
+          "match": "Sparta - Ajax 2 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "5/19/1963",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Enschede 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "5/23/1963",
+          "competition": "Eredivisie",
+          "match": "Blauw-Wit - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "5/26/1963",
+          "competition": "Eredivisie",
+          "match": "Ajax - De Volewijckers 6 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "6/1/1963",
+          "competition": "Eredivisie",
+          "match": "DOS - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "6/3/1963",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 7 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "6/9/1963",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 5 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1962-63",
+          "date": "6/16/1963",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna '54 6 - 3 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "7/20/1963",
+          "competition": "Intertoto",
+          "match": "Tasmania Berlin - Ajax 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "8/25/1963",
+          "competition": "Eredivisie",
+          "match": "Fortuna '54 - Ajax 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "9/1/1963",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "9/8/1963",
+          "competition": "Eredivisie",
+          "match": "DWS - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "9/15/1963",
+          "competition": "Eredivisie",
+          "match": "Ajax - GVAV 4 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "9/22/1963",
+          "competition": "Eredivisie",
+          "match": "Feijenoord - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "9/29/1963",
+          "competition": "Dutch Cup",
+          "match": "VV Heerenveen - Ajax 2 - 3 (regular time:2 - 2)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "1963-64",
+          "date": "10/6/1963",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heracles 7 - 0 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "10/13/1963",
+          "competition": "Eredivisie",
+          "match": "Ajax - DOS 6 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "10/27/1963",
+          "competition": "Eredivisie",
+          "match": "RKSV Volendam - Ajax 2 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "11/3/1963",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "11/10/1963",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 2 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "11/17/1963",
+          "competition": "Dutch Cup",
+          "match": "Willem II - Ajax 0 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "11/24/1963",
+          "competition": "Eredivisie",
+          "match": "Ajax - Blauw-Wit 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "12/1/1963",
+          "competition": "Eredivisie",
+          "match": "Sparta - Ajax 2 - 5 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "12/8/1963",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Enschede 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "12/15/1963",
+          "competition": "Eredivisie",
+          "match": "Go Ahead - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "12/22/1963",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "1/5/1964",
+          "competition": "Eredivisie",
+          "match": "ADO - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "1/12/1964",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna '54 4 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "2/2/1964",
+          "competition": "Eredivisie",
+          "match": "GVAV - Ajax 3 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "2/9/1964",
+          "competition": "Dutch Cup",
+          "match": "Sparta - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "2/16/1964",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feijenoord 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "3/1/1964",
+          "competition": "Eredivisie",
+          "match": "SC Heracles - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "3/8/1964",
+          "competition": "Eredivisie",
+          "match": "Ajax - DWS 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "3/15/1964",
+          "competition": "Eredivisie",
+          "match": "DOS - Ajax 3 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "3/25/1964",
+          "competition": "Dutch Cup",
+          "match": "DWS - Ajax 1 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "3/30/1964",
+          "competition": "Eredivisie",
+          "match": "Ajax - RKSV Volendam 2 - 3 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "4/5/1964",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "4/19/1964",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 3 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "4/23/1964",
+          "competition": "Dutch Cup",
+          "match": "ADO - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "4/26/1964",
+          "competition": "Eredivisie",
+          "match": "Blauw-Wit - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "5/3/1964",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "5/7/1964",
+          "competition": "Eredivisie",
+          "match": "SC Enschede - Ajax 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "5/10/1964",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead 4 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1963-64",
+          "date": "5/18/1964",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 2 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 273
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "OVVO",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/8/1955",
+          "amount": "€ 1,4K",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "FC Zaanstreek",
+          "type": "Transfer",
+          "start": "7/16/1964",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "KFC",
+          "next club": "ZFC",
+          "type": "Transfer",
+          "start": "",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Special Action",
+      "headers": [
+        "date",
+        "type",
+        "remark"
+      ],
+      "rows": [
+        {
+          "date": "6/2/1964",
+          "type": "Transferlist",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1955-56",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1956-57",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1957-58",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1958-59",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1959-60",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1960-61",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1961-62",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1962-63",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1963-64",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 10
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Piet Ouderland"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": null,
+      "headers": [
+        "lineup photos"
+      ],
+      "rows": [
+        {
+          "lineup photos": "DOS - Ajax 2 - 2 (8/20/1961)"
+        },
+        {
+          "lineup photos": "Fortuna '54 - Ajax 2 - 1 (8/25/1963)"
+        }
+      ],
+      "raw_row_count": 3
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1285-piet-ouderland.jpg",
+        "alt": "Soccer player Piet Ouderland",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/piet-ouderland__03aab6240b45.jpg",
+        "status": "downloaded",
+        "bytes": 14918,
+        "sha256": "03aab6240b45f4d204332d625d019ea17ab7d3f49d9a0d497b71c49bf1d1e80f",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:04.799Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 5,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "full_name"
+    ]
+  }
+}

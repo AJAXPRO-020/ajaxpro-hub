@@ -1,0 +1,517 @@
+{
+  "local_id": "afc_ajax_zoltan-varga",
+  "slug": "zoltan-varga",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/zoltan-varga",
+    "https://www.afc-ajax.info/en/player/zoltan-varga/statistics",
+    "https://www.afc-ajax.info/en/player/zoltan-varga/matches",
+    "https://www.afc-ajax.info/en/player/zoltan-varga/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/zoltan-varga",
+    "name": "Zolt&#225;n Varga",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1945-01-01",
+    "death_date": "2010-04-09",
+    "nationality": "Hungary",
+    "roles": [
+      "Player (Midfielder)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Borussia Dortmund",
+    "external_links": [
+      {
+        "label": "Zolt&#225;n Varga",
+        "url": "http://nl.wikipedia.org/wiki/Zolt%C3%A1n_Varga_(voetballer)"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/ruud-krol",
+      "https://www.afc-ajax.info/en/player/arie-haan",
+      "https://www.afc-ajax.info/en/player/wim-suurbier",
+      "https://www.afc-ajax.info/en/player/horst-blankenburg",
+      "https://www.afc-ajax.info/en/player/arnold-muhren",
+      "https://www.afc-ajax.info/en/player/johnny-rep",
+      "https://www.afc-ajax.info/en/player/piet-keizer",
+      "https://www.afc-ajax.info/en/player/johan-neeskens",
+      "https://www.afc-ajax.info/en/player/gerrie-muhren",
+      "https://www.afc-ajax.info/en/player/arno-steffenhagen"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1973-74",
+          "comp.": "12",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "13",
+          "friendly": "",
+          "total": "13"
+        },
+        {
+          "season": "1974-75",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "2",
+          "total": "2"
+        },
+        {
+          "season": "Total",
+          "comp.": "12",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "13",
+          "friendly": "2",
+          "total": "15"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1973-74",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": "2"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "2",
+          "substitute in": "2"
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "3",
+          "substitute in": "3"
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "2",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "5",
+          "substitute in": "5"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [],
+      "raw_row_count": 1
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "1"
+        },
+        {
+          "type": "Goal (header)",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1973-74",
+          "date": "12/9/1973",
+          "competition": "Eredivisie",
+          "match": "Ajax - Telstar 7 - 2 (4 - 1)",
+          "active": "Bench",
+          "min": "25"
+        },
+        {
+          "season": "1973-74",
+          "date": "12/23/1973",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 3 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "22"
+        },
+        {
+          "season": "1973-74",
+          "date": "12/26/1973",
+          "competition": "Eredivisie",
+          "match": "Sparta - Ajax 1 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1973-74",
+          "date": "12/30/1973",
+          "competition": "Dutch Cup",
+          "match": "Roda JC - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "62"
+        },
+        {
+          "season": "1973-74",
+          "date": "1/13/1974",
+          "competition": "Eredivisie",
+          "match": "FC Amsterdam - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1973-74",
+          "date": "1/27/1974",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 2 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "35"
+        },
+        {
+          "season": "1973-74",
+          "date": "2/10/1974",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 3 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "1973-74",
+          "date": "3/10/1974",
+          "competition": "Eredivisie",
+          "match": "HFC Haarlem - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "61"
+        },
+        {
+          "season": "1973-74",
+          "date": "3/17/1974",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 5 - 2 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1973-74",
+          "date": "3/23/1974",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 3 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": "16"
+        },
+        {
+          "season": "1973-74",
+          "date": "3/31/1974",
+          "competition": "Eredivisie",
+          "match": "Go Ahead Eagles - Ajax 2 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": "9"
+        },
+        {
+          "season": "1973-74",
+          "date": "4/20/1974",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1973-74",
+          "date": "5/5/1974",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Haag 3 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1973-74",
+          "date": "5/12/1974",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "75"
+        },
+        {
+          "season": "1974-75",
+          "date": "8/10/1974",
+          "competition": "Friendly",
+          "match": "Hertha BSC - Ajax 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1974-75",
+          "date": "8/14/1974",
+          "competition": "Friendly",
+          "match": "Lausanne Sports - Ajax 1 - 1",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 17
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Aberdeen",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "12/1/1973",
+          "amount": "€ 363K",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Borussia Dortmund",
+          "type": "Transfer",
+          "start": "10/17/1974",
+          "amount": "€ 36,3K",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1973-74",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1974-75",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "full_name",
+      "photo"
+    ]
+  }
+}

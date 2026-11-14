@@ -1,0 +1,375 @@
+{
+  "local_id": "afc_ajax_pascal-heije",
+  "slug": "pascal-heije",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/pascal-heije",
+    "https://www.afc-ajax.info/en/player/pascal-heije/statistics",
+    "https://www.afc-ajax.info/en/player/pascal-heije/matches",
+    "https://www.afc-ajax.info/en/player/pascal-heije/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/pascal-heije",
+    "name": "Pascal Heije",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1979-10-02",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Defender)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Go Ahead Eagles",
+    "external_links": [
+      {
+        "label": "Pascal Heije",
+        "url": "http://nl.wikipedia.org/wiki/Pascal_Heije"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/frank-verlaat",
+      "https://www.afc-ajax.info/en/player/shota-arveladze",
+      "https://www.afc-ajax.info/en/player/brian-laudrup",
+      "https://www.afc-ajax.info/en/player/jesper-gronkjaer",
+      "https://www.afc-ajax.info/en/player/richard-witschge",
+      "https://www.afc-ajax.info/en/player/aron-winter",
+      "https://www.afc-ajax.info/en/player/jan-van-halst",
+      "https://www.afc-ajax.info/en/player/cristian-chivu",
+      "https://www.afc-ajax.info/en/player/fred-grim",
+      "https://www.afc-ajax.info/en/player/nikos-machlas"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1999-00",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": "2"
+        },
+        {
+          "season": "Total",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": "2"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "2"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "2"
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1999-00",
+          "date": "3/26/2000",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 5 - 2 (1 - 2)",
+          "active": "Bench",
+          "min": "7"
+        },
+        {
+          "season": "1999-00",
+          "date": "4/9/2000",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 3 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "1"
+        }
+      ],
+      "raw_row_count": 3
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Unknown",
+          "next club": "Ajax",
+          "type": "Joins youth academy",
+          "start": "",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "First contract",
+          "start": "7/1/1999",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "RBC",
+          "type": "Loan start",
+          "start": "7/1/2000",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "RBC Roosendaal",
+          "type": "Loan start",
+          "start": "7/1/2001",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "RBC Roosendaal",
+          "type": "Loan start",
+          "start": "7/1/2002",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "NEC",
+          "type": "Transfer",
+          "start": "7/1/2003",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "NEC",
+          "next club": "Go Ahead Eagles",
+          "type": "Transfer",
+          "start": "7/1/2005",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 8
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1999-00",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2000-01",
+          "contract type": "Contract",
+          "team": "Loan Out",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "7/1/2000",
+          "loan out to": "6/30/2001",
+          "remark": ""
+        },
+        {
+          "season": "2001-02",
+          "contract type": "Contract",
+          "team": "Loan Out",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "7/1/2001",
+          "loan out to": "6/30/2002",
+          "remark": ""
+        },
+        {
+          "season": "2002-03",
+          "contract type": "Contract",
+          "team": "Loan Out",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "7/1/2002",
+          "loan out to": "6/30/2003",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 5
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name",
+      "photo"
+    ]
+  }
+}

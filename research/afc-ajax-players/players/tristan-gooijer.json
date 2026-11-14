@@ -1,0 +1,832 @@
+{
+  "local_id": "afc_ajax_tristan-gooijer",
+  "slug": "tristan-gooijer",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/tristan-gooijer",
+    "https://www.afc-ajax.info/en/player/tristan-gooijer/statistics",
+    "https://www.afc-ajax.info/en/player/tristan-gooijer/matches",
+    "https://www.afc-ajax.info/en/player/tristan-gooijer/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/tristan-gooijer",
+    "name": "Tristan Gooijer",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "2004-09-02",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Defender)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Lommel SK",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/kenneth-taylor",
+      "https://www.afc-ajax.info/en/player/jorrel-hato",
+      "https://www.afc-ajax.info/en/player/kristian-hlynsson",
+      "https://www.afc-ajax.info/en/player/brian-brobbey",
+      "https://www.afc-ajax.info/en/player/devyne-rensch",
+      "https://www.afc-ajax.info/en/player/diant-ramaj",
+      "https://www.afc-ajax.info/en/player/benjamin-tahirovic",
+      "https://www.afc-ajax.info/en/player/carlos-borges",
+      "https://www.afc-ajax.info/en/player/anton-gaaei",
+      "https://www.afc-ajax.info/en/player/chuba-akpom"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2022-23",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "6",
+          "total": "6"
+        },
+        {
+          "season": "2023-24",
+          "comp.": "9",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "13",
+          "friendly": "3",
+          "total": "16"
+        },
+        {
+          "season": "2024-25",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "3",
+          "total": "3"
+        },
+        {
+          "season": "Total",
+          "comp.": "9",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "13",
+          "friendly": "12",
+          "total": "25"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "2",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "1",
+          "yellow": "1",
+          "red": "1",
+          "substitute out": "4",
+          "substitute in": "2"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "1",
+          "yellow": "2",
+          "red": "1",
+          "substitute out": "6",
+          "substitute in": "3"
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2022-23",
+          "date": "6/28/2022",
+          "competition": "Friendly",
+          "match": "SV Meppen - Ajax 0 - 3 (0 - 3)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2022-23",
+          "date": "7/2/2022",
+          "competition": "Friendly",
+          "match": "SC Paderborn 07 - Ajax 5 - 2 (1 - 2)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2022-23",
+          "date": "7/9/2022",
+          "competition": "Friendly",
+          "match": "Ajax - Lokomotiva Zagreb 3 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "28"
+        },
+        {
+          "season": "2022-23",
+          "date": "7/31/2022",
+          "competition": "Friendly",
+          "match": "Almere City - Ajax 1 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "15"
+        },
+        {
+          "season": "2022-23",
+          "date": "12/3/2022",
+          "competition": "Friendly",
+          "match": "Ajax - Blackburn Rovers 0 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "2022-23",
+          "date": "12/30/2022",
+          "competition": "Friendly",
+          "match": "Ajax - Telstar 5 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "27"
+        },
+        {
+          "season": "2022-23",
+          "date": "1/11/2023",
+          "competition": "Dutch Cup",
+          "match": "FC Den Bosch - Ajax 0 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2023-24",
+          "date": "7/8/2023",
+          "competition": "Friendly",
+          "match": "Ajax - FC Den Bosch 2 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2023-24",
+          "date": "7/18/2023",
+          "competition": "Friendly",
+          "match": "Ajax - Shakhtar Donetsk 3 - 0 (3 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2023-24",
+          "date": "7/22/2023",
+          "competition": "Friendly",
+          "match": "Anderlecht - Ajax 3 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2023-24",
+          "date": "7/25/2023",
+          "competition": "Friendly",
+          "match": "Ajax - SpVgg Unterhaching 5 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2023-24",
+          "date": "7/29/2023",
+          "competition": "Friendly",
+          "match": "FC Augsburg - Ajax 3 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2023-24",
+          "date": "8/6/2023",
+          "competition": "Friendly",
+          "match": "Borussia Dortmund - Ajax 3 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2023-24",
+          "date": "10/22/2023",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 4 - 3 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2023-24",
+          "date": "10/26/2023",
+          "competition": "Europa League",
+          "match": "Brighton & Hove Albion - Ajax 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2023-24",
+          "date": "10/29/2023",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 5 - 2 (1 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2023-24",
+          "date": "11/2/2023",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Volendam 2 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2023-24",
+          "date": "11/12/2023",
+          "competition": "Eredivisie",
+          "match": "Almere City - Ajax 2 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2023-24",
+          "date": "11/30/2023",
+          "competition": "Europa League",
+          "match": "Olympique Marseille - Ajax 4 - 3 (2 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2023-24",
+          "date": "12/9/2023",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 2 - 1 (2 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2023-24",
+          "date": "12/14/2023",
+          "competition": "Europa League",
+          "match": "Ajax - AEK Athene 3 - 1 (2 - 1)",
+          "active": "Bench",
+          "min": "16"
+        },
+        {
+          "season": "2023-24",
+          "date": "12/17/2023",
+          "competition": "Eredivisie",
+          "match": "Ajax - PEC Zwolle 2 - 2 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2023-24",
+          "date": "12/21/2023",
+          "competition": "Dutch Cup",
+          "match": "Hercules - Ajax 3 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "2023-24",
+          "date": "1/14/2024",
+          "competition": "Eredivisie",
+          "match": "Go Ahead Eagles - Ajax 2 - 3 (1 - 2)",
+          "active": "Bench",
+          "min": "5"
+        },
+        {
+          "season": "2023-24",
+          "date": "1/21/2024",
+          "competition": "Eredivisie",
+          "match": "Ajax - RKC Waalwijk 4 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "52"
+        },
+        {
+          "season": "2023-24",
+          "date": "1/27/2024",
+          "competition": "Eredivisie",
+          "match": "Heracles Almelo - Ajax 2 - 4 (1 - 1)",
+          "active": "Start",
+          "min": "84"
+        },
+        {
+          "season": "2023-24",
+          "date": "2/3/2024",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "80"
+        },
+        {
+          "season": "2023-24",
+          "date": "2/11/2024",
+          "competition": "Eredivisie",
+          "match": "SC Heerenveen - Ajax 3 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2023-24",
+          "date": "2/15/2024",
+          "competition": "Conference League",
+          "match": "Ajax - FK Bodo Glimt 2 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "89"
+        },
+        {
+          "season": "2023-24",
+          "date": "2/18/2024",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2023-24",
+          "date": "2/22/2024",
+          "competition": "Conference League",
+          "match": "FK Bodo Glimt - Ajax 1 - 2 (regular time:1 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2023-24",
+          "date": "2/25/2024",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 2 - 0 (1 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2023-24",
+          "date": "3/3/2024",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2023-24",
+          "date": "3/7/2024",
+          "competition": "Conference League",
+          "match": "Ajax - Aston Villa 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "86"
+        },
+        {
+          "season": "2023-24",
+          "date": "3/10/2024",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna Sittard 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "80"
+        },
+        {
+          "season": "2023-24",
+          "date": "3/14/2024",
+          "competition": "Conference League",
+          "match": "Aston Villa - Ajax 4 - 0 (1 - 0)",
+          "active": "Suspension",
+          "min": ""
+        },
+        {
+          "season": "2023-24",
+          "date": "3/31/2024",
+          "competition": "Eredivisie",
+          "match": "PEC Zwolle - Ajax 1 - 3 (0 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2023-24",
+          "date": "4/4/2024",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 1 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "1"
+        },
+        {
+          "season": "2023-24",
+          "date": "4/7/2024",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 6 - 0 (3 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2023-24",
+          "date": "4/28/2024",
+          "competition": "Eredivisie",
+          "match": "Ajax - Excelsior 2 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2024-25",
+          "date": "7/5/2024",
+          "competition": "Friendly",
+          "match": "Ajax - PEC Zwolle 0 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "30"
+        },
+        {
+          "season": "2024-25",
+          "date": "7/9/2024",
+          "competition": "Friendly",
+          "match": "Ajax - STVV 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "66"
+        },
+        {
+          "season": "2024-25",
+          "date": "7/13/2024",
+          "competition": "Friendly",
+          "match": "Ajax - Rangers FC 2 - 1 (2 - 1)",
+          "active": "Bench",
+          "min": "23"
+        }
+      ],
+      "raw_row_count": 44
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Almere City",
+          "next club": "Ajax",
+          "type": "Joins youth academy",
+          "start": "7/1/2016",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "First contract",
+          "start": "7/1/2021",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "Contract renewal",
+          "start": "9/1/2023",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "PEC Zwolle",
+          "type": "Loan start",
+          "start": "7/16/2024",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "PEC Zwolle",
+          "next club": "Ajax",
+          "type": "Loan end",
+          "start": "7/1/2025",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "Contract renewal",
+          "start": "7/1/2025",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "PEC Zwolle",
+          "type": "Loan start",
+          "start": "8/29/2025",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "PEC Zwolle",
+          "next club": "Ajax",
+          "type": "Loan end",
+          "start": "7/1/2026",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Lommel SK",
+          "type": "Transfer",
+          "start": "8/27/2026",
+          "amount": "€ 500K",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 10
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2016-17",
+          "contract type": "No Contract",
+          "team": "Youth",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2017-18",
+          "contract type": "No Contract",
+          "team": "Youth",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2018-19",
+          "contract type": "No Contract",
+          "team": "Youth",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2019-20",
+          "contract type": "No Contract",
+          "team": "Youth",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2020-21",
+          "contract type": "No Contract",
+          "team": "Youth",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2021-22",
+          "contract type": "Contract",
+          "team": "U18",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2022-23",
+          "contract type": "Contract",
+          "team": "U18",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2023-24",
+          "contract type": "Contract",
+          "team": "Young",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2024-25",
+          "contract type": "Contract",
+          "team": "Loan Out",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "7/16/2024",
+          "loan out to": "6/30/2025",
+          "remark": ""
+        },
+        {
+          "season": "2025-26",
+          "contract type": "Contract",
+          "team": "Loan Out",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "8/29/2025",
+          "loan out to": "6/30/2026",
+          "remark": ""
+        },
+        {
+          "season": "2026-27",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "8/27/2026",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 12
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Tristan Gooijer"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1398-tristan-gooijer.png",
+        "alt": "Soccer player Tristan Gooijer",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/tristan-gooijer__1649fc387305.png",
+        "status": "downloaded",
+        "bytes": 232147,
+        "sha256": "1649fc38730597bdbf74ba380590aacdce8d2b054e7988c1b41c7e505455b841",
+        "mime_type": "image/png",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:06.798Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name"
+    ]
+  }
+}

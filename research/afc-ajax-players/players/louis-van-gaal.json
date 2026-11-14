@@ -1,0 +1,466 @@
+{
+  "local_id": "afc_ajax_louis-van-gaal",
+  "slug": "louis-van-gaal",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/louis-van-gaal",
+    "https://www.afc-ajax.info/en/player/louis-van-gaal/statistics",
+    "https://www.afc-ajax.info/en/player/louis-van-gaal/matches",
+    "https://www.afc-ajax.info/en/player/louis-van-gaal/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/louis-van-gaal",
+    "name": "Louis van Gaal",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1951-08-08",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Midfielder) - Head coach - Assistant coach - Technical director"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Sparta Rotterdam",
+    "external_links": [
+      {
+        "label": "Louis van Gaal",
+        "url": "http://nl.wikipedia.org/wiki/Louis_van_Gaal"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/henk-heijt",
+      "https://www.afc-ajax.info/en/player/barend-kist",
+      "https://www.afc-ajax.info/en/player/pim-van-dord",
+      "https://www.afc-ajax.info/en/player/heinz-stuy",
+      "https://www.afc-ajax.info/en/player/gerrie-kleton",
+      "https://www.afc-ajax.info/en/player/johnny-rep",
+      "https://www.afc-ajax.info/en/player/arnold-muhren",
+      "https://www.afc-ajax.info/en/player/bram-braam",
+      "https://www.afc-ajax.info/en/player/johan-neeskens",
+      "https://www.afc-ajax.info/en/player/ruud-krol"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1972-73",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "1",
+          "total": "1"
+        },
+        {
+          "season": "Total",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "1",
+          "total": "1"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1972-73",
+          "date": "4/3/1973",
+          "competition": "Friendly",
+          "match": "Anderlecht - Ajax 2 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "De Meer",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/1971",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Antwerp FC",
+          "type": "Transfer",
+          "start": "7/1/1973",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Antwerp FC",
+          "next club": "Telstar",
+          "type": "Transfer",
+          "start": "9/6/1977",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Telstar",
+          "next club": "Sparta Rotterdam",
+          "type": "Transfer",
+          "start": "7/1/1978",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Sparta Rotterdam",
+          "next club": "AZ '67",
+          "type": "Transfer",
+          "start": "5/31/1986",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Special Action",
+      "headers": [
+        "date",
+        "type",
+        "remark"
+      ],
+      "rows": [
+        {
+          "date": "5/25/1973",
+          "type": "Transferlist",
+          "remark": "Op eigen verzoek"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1971-72",
+          "contract type": "Contract",
+          "team": "B",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1972-73",
+          "contract type": "Contract",
+          "team": "B",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Other Role)",
+      "headers": [
+        "season",
+        "role",
+        "contract type",
+        "contract from",
+        "contract to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1988-89",
+          "role": "Assistant coach",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1989-90",
+          "role": "Assistant coach",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1990-91",
+          "role": "Assistant coach",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1991-92",
+          "role": "Head coach",
+          "contract type": "Contract",
+          "contract from": "9/29/1991",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1992-93",
+          "role": "Head coach",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1993-94",
+          "role": "Head coach",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1994-95",
+          "role": "Head coach",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1995-96",
+          "role": "Head coach",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1996-97",
+          "role": "Head coach",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "2003-04",
+          "role": "Technical director",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Louis van Gaal"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1153-louis-van-gaal.jpg",
+        "alt": "Soccer player Louis van Gaal",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/louis-van-gaal__2d81265e5829.jpg",
+        "status": "downloaded",
+        "bytes": 12493,
+        "sha256": "2d81265e5829a362f12d188c0881c01f6193be6675c37095bda970dd2a27959f",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:03.045Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 5,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name"
+    ]
+  }
+}

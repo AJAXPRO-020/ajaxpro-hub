@@ -1,0 +1,533 @@
+{
+  "local_id": "afc_ajax_wim-hangard",
+  "slug": "wim-hangard",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/wim-hangard",
+    "https://www.afc-ajax.info/en/player/wim-hangard/statistics",
+    "https://www.afc-ajax.info/en/player/wim-hangard/matches",
+    "https://www.afc-ajax.info/en/player/wim-hangard/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/wim-hangard",
+    "name": "Wim Hangard",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": null,
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Midfielder)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": null,
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/bob-ten-have",
+      "https://www.afc-ajax.info/en/player/wim-volkers",
+      "https://www.afc-ajax.info/en/player/wim-anderiesen-sr",
+      "https://www.afc-ajax.info/en/player/henk-mulders",
+      "https://www.afc-ajax.info/en/player/joop-van-de-puttelaar",
+      "https://www.afc-ajax.info/en/player/jan-van-diepenbeek",
+      "https://www.afc-ajax.info/en/player/joop-martens",
+      "https://www.afc-ajax.info/en/player/piet-van-deijck",
+      "https://www.afc-ajax.info/en/player/cor-jurriaans",
+      "https://www.afc-ajax.info/en/player/jan-schubert"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1926-27",
+          "comp.": "",
+          "play off": "1",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "3",
+          "total": "4"
+        },
+        {
+          "season": "1928-29",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "1",
+          "total": "3"
+        },
+        {
+          "season": "1929-30",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "5",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "5",
+          "friendly": "",
+          "total": "5"
+        },
+        {
+          "season": "1932-33",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "2",
+          "total": "2"
+        },
+        {
+          "season": "1933-34",
+          "comp.": "7",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "7",
+          "friendly": "2",
+          "total": "9"
+        },
+        {
+          "season": "Total",
+          "comp.": "9",
+          "play off": "1",
+          "dutch cup": "5",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "15",
+          "friendly": "8",
+          "total": "23"
+        }
+      ],
+      "raw_row_count": 7
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "1"
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "2"
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1926-27",
+          "date": "4/17/1927",
+          "competition": "Friendly",
+          "match": "Ajax - Clapton FC 1 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1926-27",
+          "date": "4/26/1927",
+          "competition": "Friendly",
+          "match": "Clapton FC - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1926-27",
+          "date": "4/27/1927",
+          "competition": "Friendly",
+          "match": "Wimbledon - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1926-27",
+          "date": "5/22/1927",
+          "competition": "Champions Competition",
+          "match": "Feijenoord - Ajax 2 - 3 (1 - 3)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1928-29",
+          "date": "12/2/1928",
+          "competition": "Friendly",
+          "match": "Ajax - PSV 4 - 4 (2 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1928-29",
+          "date": "12/9/1928",
+          "competition": "First Division",
+          "match": "RC Haarlem - Ajax 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "23"
+        },
+        {
+          "season": "1928-29",
+          "date": "12/23/1928",
+          "competition": "First Division",
+          "match": "Ajax - Sparta 2 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "4/21/1930",
+          "competition": "Dutch Cup",
+          "match": "Stormvogels - Ajax 1 - 6",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "5/3/1930",
+          "competition": "Dutch Cup",
+          "match": "Ajax - PEC 1 - 0",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "5/10/1930",
+          "competition": "Dutch Cup",
+          "match": "Forward - Ajax 0 - 6",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "5/18/1930",
+          "competition": "Dutch Cup",
+          "match": "Palemig - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "5/29/1930",
+          "competition": "Dutch Cup",
+          "match": "Ajax - BVV 5 - 4",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "3/4/1933",
+          "competition": "Friendly",
+          "match": "Ajax - Vitesse 6 - 3 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "7/15/1933",
+          "competition": "Friendly",
+          "match": "Beogradski - Ajax 3 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "9/3/1933",
+          "competition": "AROL Cup",
+          "match": "Ajax - NAC 6 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "1933-34",
+          "date": "9/17/1933",
+          "competition": "First Division",
+          "match": "ADO - Ajax 1 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "9/24/1933",
+          "competition": "First Division",
+          "match": "Ajax - Sparta 3 - 4 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "10/1/1933",
+          "competition": "First Division",
+          "match": "Hermes DVS - Ajax 3 - 4 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "10/15/1933",
+          "competition": "First Division",
+          "match": "HFC Haarlem - Ajax 2 - 4 (1 - 3)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "1933-34",
+          "date": "11/12/1933",
+          "competition": "First Division",
+          "match": "Ajax - ZFC 3 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "11/26/1933",
+          "competition": "First Division West I",
+          "match": "Ajax - ADO 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "12/3/1933",
+          "competition": "First Division West I",
+          "match": "Sparta - Ajax 1 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "12/24/1933",
+          "competition": "Friendly",
+          "match": "Ajax - Beogradski 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 24
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1926-27",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1928-29",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1929-30",
+          "contract type": "Unknown",
+          "team": "II",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1930-31",
+          "contract type": "Unknown",
+          "team": "II",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1932-33",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1933-34",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 7
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 1,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name",
+      "photo"
+    ]
+  }
+}

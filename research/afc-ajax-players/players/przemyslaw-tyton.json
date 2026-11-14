@@ -1,0 +1,340 @@
+{
+  "local_id": "afc_ajax_przemyslaw-tyton",
+  "slug": "przemyslaw-tyton",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/przemyslaw-tyton",
+    "https://www.afc-ajax.info/en/player/przemyslaw-tyton/statistics",
+    "https://www.afc-ajax.info/en/player/przemyslaw-tyton/matches",
+    "https://www.afc-ajax.info/en/player/przemyslaw-tyton/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/przemyslaw-tyton",
+    "name": "Przemyslaw Tyton",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1987-01-04",
+    "death_date": null,
+    "nationality": "Poland",
+    "roles": [
+      "Player (Keeper)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "FC Twente",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": []
+  },
+  "statistics": [
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2021-22",
+          "date": "3/11/2022",
+          "competition": "Eredivisie",
+          "match": "SC Cambuur - Ajax 2 - 3 (0 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2021-22",
+          "date": "3/15/2022",
+          "competition": "Champions League",
+          "match": "Ajax - Benfica 0 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2021-22",
+          "date": "3/20/2022",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 3 - 2 (1 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2021-22",
+          "date": "4/2/2022",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 1 - 3 (1 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2021-22",
+          "date": "4/17/2022",
+          "competition": "Dutch Cup",
+          "match": "PSV - Ajax 2 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2021-22",
+          "date": "4/23/2022",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 0 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2021-22",
+          "date": "4/30/2022",
+          "competition": "Eredivisie",
+          "match": "Ajax - PEC Zwolle 3 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2021-22",
+          "date": "5/8/2022",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 2 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2021-22",
+          "date": "5/11/2022",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 5 - 0 (3 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2021-22",
+          "date": "5/15/2022",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 2 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "None",
+          "next club": "Ajax",
+          "type": "New contract",
+          "start": "3/7/2022",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "FC Twente",
+          "type": "Transfer",
+          "start": "7/1/2022",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2021-22",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "3/7/2022",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Przemyslaw Tyton"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1426-przemyslaw-tyton.png",
+        "alt": "Soccer player Przemyslaw Tyton",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/przemyslaw-tyton__ee68dd6b0c15.png",
+        "status": "downloaded",
+        "bytes": 331771,
+        "sha256": "ee68dd6b0c15b20003684a8f75263e3e692bb37863b26292ecc194a98aa34d43",
+        "mime_type": "image/png",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:05.030Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 1,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name"
+    ]
+  }
+}

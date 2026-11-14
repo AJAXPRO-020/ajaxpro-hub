@@ -1,0 +1,496 @@
+{
+  "local_id": "afc_ajax_ben-croon",
+  "slug": "ben-croon",
+  "collected_at": "2026-10-31T18:10:09.220Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/ben-croon",
+    "https://www.afc-ajax.info/en/player/ben-croon/statistics",
+    "https://www.afc-ajax.info/en/player/ben-croon/matches",
+    "https://www.afc-ajax.info/en/player/ben-croon/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/ben-croon",
+    "name": "Ben Croon",
+    "full_name": "Bernardus Hermanus Croon Jr.",
+    "alternative_names": [],
+    "birth_date": "1886-05-11",
+    "death_date": "1960-01-30",
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Unknown)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Ajax",
+    "external_links": [
+      {
+        "label": "Ben Croon",
+        "url": "http://en.wikipedia.org/wiki/Bernardus_Croon"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/jager-van-den-berg",
+      "https://www.afc-ajax.info/en/player/lou-van-der-vliet",
+      "https://www.afc-ajax.info/en/player/m-van-der-mark",
+      "https://www.afc-ajax.info/en/player/frans-schoevaart",
+      "https://www.afc-ajax.info/en/player/chris-holst",
+      "https://www.afc-ajax.info/en/player/ge-fortgens",
+      "https://www.afc-ajax.info/en/player/chris-kammeijer",
+      "https://www.afc-ajax.info/en/player/andries-bottelier",
+      "https://www.afc-ajax.info/en/player/pieter-breet",
+      "https://www.afc-ajax.info/en/player/h-rubens"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1905-06",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "",
+          "total": "3"
+        },
+        {
+          "season": "1906-07",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": "2"
+        },
+        {
+          "season": "1907-08",
+          "comp.": "5",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "5",
+          "friendly": "1",
+          "total": "6"
+        },
+        {
+          "season": "1909-10",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        },
+        {
+          "season": "Total",
+          "comp.": "10",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "11",
+          "friendly": "1",
+          "total": "12"
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1905-06",
+          "date": "12/17/1905",
+          "competition": "Second Division",
+          "match": "Ajax - UVV 5 - 1 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1905-06",
+          "date": "1/7/1906",
+          "competition": "Dutch Cup",
+          "match": "AVV - Ajax 9 - 0 (R)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1905-06",
+          "date": "2/18/1906",
+          "competition": "Second Division",
+          "match": "Ajax - AVV 2 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1905-06",
+          "date": "4/8/1906",
+          "competition": "Gouden Kruis",
+          "match": "AVV - Ajax 1 - 5",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1906-07",
+          "date": "10/7/1906",
+          "competition": "Second Division",
+          "match": "Ajax - USC 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1906-07",
+          "date": "3/3/1907",
+          "competition": "Second Division",
+          "match": "Ajax - HFC (2) 3 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1907-08",
+          "date": "10/26/1907",
+          "competition": "Gouden Kruis",
+          "match": "Ajax - RAP 3 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1907-08",
+          "date": "11/10/1907",
+          "competition": "Second Division",
+          "match": "Volharding - Ajax 3 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1907-08",
+          "date": "11/24/1907",
+          "competition": "Second Division",
+          "match": "Allen Weerbaar - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1907-08",
+          "date": "3/15/1908",
+          "competition": "Second Division",
+          "match": "Ajax - Allen Weerbaar 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1907-08",
+          "date": "3/22/1908",
+          "competition": "Second Division",
+          "match": "Ajax - Celeritas 8 - 1 (5 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1907-08",
+          "date": "4/5/1908",
+          "competition": "Second Division",
+          "match": "Ajax - Volharding 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1909-10",
+          "date": "9/26/1909",
+          "competition": "Second Division",
+          "match": "Ajax - Achilles (Rot) 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 14
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Unknown",
+          "next club": "Ajax",
+          "type": "Unknown",
+          "start": "7/1/1902",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Unknown",
+          "type": "Unknown",
+          "start": "7/1/1903",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Unknown",
+          "next club": "Ajax",
+          "type": "Unknown",
+          "start": "7/1/1904",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "AFC",
+          "type": "Transfer",
+          "start": "7/1/1908",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "AFC",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/1909",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Unknown",
+          "type": "Transfer",
+          "start": "7/1/1912",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 7
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1904-05",
+          "contract type": "Unknown",
+          "team": "II",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1905-06",
+          "contract type": "Unknown",
+          "team": "II",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1906-07",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1907-08",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1909-10",
+          "contract type": "Unknown",
+          "team": "II",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 6
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "photo"
+    ]
+  }
+}

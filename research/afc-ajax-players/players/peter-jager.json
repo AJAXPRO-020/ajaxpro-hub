@@ -1,0 +1,526 @@
+{
+  "local_id": "afc_ajax_peter-jager",
+  "slug": "peter-jager",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/peter-jager",
+    "https://www.afc-ajax.info/en/player/peter-jager/statistics",
+    "https://www.afc-ajax.info/en/player/peter-jager/matches",
+    "https://www.afc-ajax.info/en/player/peter-jager/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/peter-jager",
+    "name": "Peter Jager",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1957-11-25",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Keeper)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "AZ",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/frank-arnesen",
+      "https://www.afc-ajax.info/en/player/simon-tahamata",
+      "https://www.afc-ajax.info/en/player/dick-schoenaker",
+      "https://www.afc-ajax.info/en/player/jan-everse",
+      "https://www.afc-ajax.info/en/player/ruud-krol",
+      "https://www.afc-ajax.info/en/player/tscheu-la-ling",
+      "https://www.afc-ajax.info/en/player/soren-lerby",
+      "https://www.afc-ajax.info/en/player/hans-erkens",
+      "https://www.afc-ajax.info/en/player/pim-van-dord",
+      "https://www.afc-ajax.info/en/player/ruud-geels"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1977-78",
+          "comp.": "6",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "8",
+          "friendly": "1",
+          "total": "9"
+        },
+        {
+          "season": "1978-79",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "1",
+          "total": "3"
+        },
+        {
+          "season": "1979-80",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        },
+        {
+          "season": "Total",
+          "comp.": "8",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "11",
+          "friendly": "2",
+          "total": "13"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "2"
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1977-78",
+          "date": "9/18/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "9/25/1977",
+          "competition": "Eredivisie",
+          "match": "Telstar - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "9/28/1977",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Lillestrom SK 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "10/2/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Volendam 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "10/16/1977",
+          "competition": "Eredivisie",
+          "match": "FC Amsterdam - Ajax 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "10/19/1977",
+          "competition": "Europa Cup I",
+          "match": "Levski Sofia - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "1/8/1978",
+          "competition": "Eredivisie",
+          "match": "AZ '67 - Ajax 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "70"
+        },
+        {
+          "season": "1977-78",
+          "date": "4/16/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "5/27/1978",
+          "competition": "Friendly",
+          "match": "Barcelona - Ajax 3 - 1",
+          "active": "Start",
+          "min": "69"
+        },
+        {
+          "season": "1978-79",
+          "date": "11/7/1978",
+          "competition": "Friendly",
+          "match": "Ajax - Bayern Munchen 0 - 8 (0 - 2)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1978-79",
+          "date": "5/26/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Haag 4 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "12"
+        },
+        {
+          "season": "1978-79",
+          "date": "6/9/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 8 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "3/12/1980",
+          "competition": "Dutch Cup",
+          "match": "Roda JC - Ajax 4 - 4 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 14
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Unknown",
+          "next club": "Ajax",
+          "type": "Joins youth academy",
+          "start": "7/1/1968",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "First contract",
+          "start": "7/1/1976",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "Joins first team",
+          "start": "7/1/1976",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "Contract renewal",
+          "start": "7/1/1978",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "FC Den Haag",
+          "type": "Loan start",
+          "start": "7/23/1980",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Unknown",
+          "type": "Contract ended",
+          "start": "7/1/1981",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "AZS",
+          "next club": "AZ '67",
+          "type": "Transfer",
+          "start": "7/8/1985",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 8
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1971-72",
+          "contract type": "No Contract",
+          "team": "Youth B",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1976-77",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1977-78",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1978-79",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1979-80",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1980-81",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 7
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Peter Jager (Press day Ajax)"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1190-peter-jager.jpg",
+        "alt": "Soccer player Peter Jager",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/peter-jager__b3e3ddffe71e.jpg",
+        "status": "downloaded",
+        "bytes": 13340,
+        "sha256": "b3e3ddffe71e498ebeffabaeec895d10a1f35fcc67efbfae7bbcfdcb5031b621",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:04.729Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name"
+    ]
+  }
+}

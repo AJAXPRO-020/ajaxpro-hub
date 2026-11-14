@@ -13,7 +13,7 @@ const rootFiles = [
   "match-center.js", "members-video.js", "motm-admin.js", "portal-nav.js", "programma.js", "script.js", "system-status.js",
   "persconferenties.js",
   "contracten.css", "jeugddossiers.css", "match-center.css", "members.css", "motm.css",
-  "programma.css", "content-hub.css", "socials-png.css", "socials-quote-large.css", "socials-ajax-vandaag.css", "socials-hallmark.css",
+  "programma.css", "content-hub.css", "socials-png.css", "socials-quote-large.css", "socials-ajax-vandaag.css", "socials-hallmark.css", "socials-notable-stat.css", "socials-card-video.css",
   "socials.css", "styles.css", "system-status.css",
   "llms.txt", "openapi.json", "robots.txt", "sitemap.xml",
 ];
@@ -62,3 +62,5 @@ for (const entry of await readdir(join(root, "socials"), { withFileTypes: true }
   }
 }
 for (const file of ["storyboard-frame.html", "storyboard-frame.css", "storyboard-frame.js"]) await copyFile(join("assets", "social-video", file));
+await mkdir(join(output,"socials"),{recursive:true});
+await cp(join(root,"node_modules/mediabunny/dist/bundles/mediabunny.mjs"),join(output,"socials/mediabunny.mjs"));

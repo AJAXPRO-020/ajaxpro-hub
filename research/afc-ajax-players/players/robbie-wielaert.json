@@ -1,0 +1,658 @@
+{
+  "local_id": "afc_ajax_robbie-wielaert",
+  "slug": "robbie-wielaert",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/robbie-wielaert",
+    "https://www.afc-ajax.info/en/player/robbie-wielaert/statistics",
+    "https://www.afc-ajax.info/en/player/robbie-wielaert/matches",
+    "https://www.afc-ajax.info/en/player/robbie-wielaert/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/robbie-wielaert",
+    "name": "Robbie Wielaert",
+    "full_name": "Rob Wielaert",
+    "alternative_names": [],
+    "birth_date": "1978-12-29",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Defender)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Melbourne Heart",
+    "external_links": [
+      {
+        "label": "Robbie Wielaert",
+        "url": "http://nl.wikipedia.org/wiki/Robbie_Wielaert"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/miralem-sulejmani",
+      "https://www.afc-ajax.info/en/player/urby-emanuelson",
+      "https://www.afc-ajax.info/en/player/gregory-van-der-wiel",
+      "https://www.afc-ajax.info/en/player/luis-suarez",
+      "https://www.afc-ajax.info/en/player/leonardo",
+      "https://www.afc-ajax.info/en/player/thomas-vermaelen",
+      "https://www.afc-ajax.info/en/player/maarten-stekelenburg",
+      "https://www.afc-ajax.info/en/player/jan-vertonghen",
+      "https://www.afc-ajax.info/en/player/vurnon-anita",
+      "https://www.afc-ajax.info/en/player/dario-cvitanich"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2008-09",
+          "comp.": "16",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "16",
+          "friendly": "",
+          "total": "16"
+        },
+        {
+          "season": "2009-10",
+          "comp.": "3",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "4",
+          "friendly": "1",
+          "total": "5"
+        },
+        {
+          "season": "Total",
+          "comp.": "19",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "20",
+          "friendly": "1",
+          "total": "21"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2008-09",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "1",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "2",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "1",
+          "assists": "1",
+          "yellow": "4",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2008-09",
+          "date": "1/18/2009",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 2 - 4 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2008-09",
+          "date": "1/25/2009",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2008-09",
+          "date": "1/31/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2008-09",
+          "date": "2/3/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - Heracles Almelo 2 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2008-09",
+          "date": "2/8/2009",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 4 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2008-09",
+          "date": "2/15/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2008-09",
+          "date": "2/22/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Volendam 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2008-09",
+          "date": "3/1/2009",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2008-09",
+          "date": "3/8/2009",
+          "competition": "Eredivisie",
+          "match": "ADO Den Haag - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2008-09",
+          "date": "3/15/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - De Graafschap 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2008-09",
+          "date": "3/22/2009",
+          "competition": "Eredivisie",
+          "match": "NAC Breda - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2008-09",
+          "date": "4/5/2009",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2008-09",
+          "date": "4/12/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 7 - 0 (5 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2008-09",
+          "date": "4/19/2009",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 6 - 2 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2008-09",
+          "date": "4/26/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ 1 - 1 (0 - 1)",
+          "active": "Suspension",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "5/3/2009",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2008-09",
+          "date": "5/10/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "7/24/2009",
+          "competition": "Amsterdam Tournament",
+          "match": "Ajax - Atletico Madrid 3 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "8/2/2009",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "8/8/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - RKC Waalwijk 4 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "8/16/2009",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 4 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "8/20/2009",
+          "competition": "Europa League",
+          "match": "Ajax - Slovan Bratislava 5 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2009-10",
+          "date": "8/23/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2009-10",
+          "date": "8/27/2009",
+          "competition": "Europa League",
+          "match": "Slovan Bratislava - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "8/30/2009",
+          "competition": "Eredivisie",
+          "match": "Heracles Almelo - Ajax 0 - 3 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2009-10",
+          "date": "9/24/2009",
+          "competition": "Dutch Cup",
+          "match": "AGOVV - Ajax 1 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        }
+      ],
+      "raw_row_count": 27
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Unknown",
+          "next club": "PSV",
+          "type": "Unknown",
+          "start": "7/1/1997",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "PSV",
+          "next club": "FC Den Bosch",
+          "type": "Loan start",
+          "start": "1/1/2000",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "FC Den Bosch",
+          "next club": "PSV",
+          "type": "Loan end",
+          "start": "7/1/2001",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "PSV",
+          "next club": "NEC",
+          "type": "Loan start",
+          "start": "10/1/2001",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "PSV",
+          "next club": "NEC",
+          "type": "Transfer",
+          "start": "7/1/2002",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "NEC",
+          "next club": "FC Twente",
+          "type": "Transfer",
+          "start": "7/1/2006",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "FC Twente",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "1/13/2009",
+          "amount": "€ 3,2M",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Roda JC Kerkrade",
+          "type": "Loan start",
+          "start": "8/21/2010",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Roda JC Kerkrade",
+          "type": "Transfer",
+          "start": "7/1/2011",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Roda JC Kerkrade",
+          "next club": "Melbourne Heart",
+          "type": "Transfer",
+          "start": "7/1/2013",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2008-09",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "1/13/2009",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2009-10",
+          "contract type": "Contract",
+          "team": "Young",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2010-11",
+          "contract type": "Contract",
+          "team": "Loan Out",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "8/21/2010",
+          "loan out to": "6/30/2011",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 4
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 5,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "photo"
+    ]
+  }
+}

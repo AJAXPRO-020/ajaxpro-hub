@@ -1,0 +1,633 @@
+{
+  "local_id": "afc_ajax_jan-oudheusden",
+  "slug": "jan-oudheusden",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/jan-oudheusden",
+    "https://www.afc-ajax.info/en/player/jan-oudheusden/statistics",
+    "https://www.afc-ajax.info/en/player/jan-oudheusden/matches",
+    "https://www.afc-ajax.info/en/player/jan-oudheusden/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/jan-oudheusden",
+    "name": "Jan Oudheusden",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1884-06-28",
+    "death_date": "1946-05-09",
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Unknown) - Treasurer"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Ajax",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/chris-holst",
+      "https://www.afc-ajax.info/en/player/jesse-andries-olie-jr",
+      "https://www.afc-ajax.info/en/player/m-van-der-mark",
+      "https://www.afc-ajax.info/en/player/ge-fortgens",
+      "https://www.afc-ajax.info/en/player/lou-van-der-vliet",
+      "https://www.afc-ajax.info/en/player/frans-schoevaart",
+      "https://www.afc-ajax.info/en/player/jager-van-den-berg",
+      "https://www.afc-ajax.info/en/player/kees-fol",
+      "https://www.afc-ajax.info/en/player/ben-croon",
+      "https://www.afc-ajax.info/en/player/h-l-buijs"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1901-02",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        },
+        {
+          "season": "1905-06",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "",
+          "total": "3"
+        },
+        {
+          "season": "1906-07",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        },
+        {
+          "season": "1907-08",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "1",
+          "total": "3"
+        },
+        {
+          "season": "Total",
+          "comp.": "6",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "7",
+          "friendly": "1",
+          "total": "8"
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1905-06",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1906-07",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "",
+          "total": "3"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "3",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "3",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "3"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "3"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1901-02",
+          "date": "1/19/1902",
+          "competition": "AVB Afd. I",
+          "match": "Ajax - Quick (Amst.) (2) 4 - 0",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1905-06",
+          "date": "12/3/1905",
+          "competition": "Dutch Cup",
+          "match": "Ajax - PW 6 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1905-06",
+          "date": "3/18/1906",
+          "competition": "Second Division",
+          "match": "Ajax - Swift 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1905-06",
+          "date": "3/25/1906",
+          "competition": "Second Division",
+          "match": "Swift - Ajax 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1906-07",
+          "date": "1/6/1907",
+          "competition": "Second Division",
+          "match": "AVV - Ajax 3 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1907-08",
+          "date": "10/26/1907",
+          "competition": "Gouden Kruis",
+          "match": "Ajax - RAP 3 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1907-08",
+          "date": "11/24/1907",
+          "competition": "Second Division",
+          "match": "Allen Weerbaar - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1907-08",
+          "date": "2/23/1908",
+          "competition": "Second Division",
+          "match": "Ajax - HVV (2) 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 9
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Unknown",
+          "next club": "Ajax",
+          "type": "Unknown",
+          "start": "7/1/1901",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1901-02",
+          "contract type": "Unknown",
+          "team": "II",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1902-03",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1905-06",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1906-07",
+          "contract type": "Unknown",
+          "team": "II",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1907-08",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Season (Other Role)",
+      "headers": [
+        "season",
+        "role",
+        "contract type",
+        "contract from",
+        "contract to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1919-20",
+          "role": "Treasurer",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1920-21",
+          "role": "Treasurer",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1921-22",
+          "role": "Treasurer",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1922-23",
+          "role": "Treasurer",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1923-24",
+          "role": "Treasurer",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1924-25",
+          "role": "Treasurer",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1925-26",
+          "role": "Treasurer",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1926-27",
+          "role": "Treasurer",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1927-28",
+          "role": "Treasurer",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1928-29",
+          "role": "Treasurer",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1929-30",
+          "role": "Treasurer",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1930-31",
+          "role": "Treasurer",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1931-32",
+          "role": "Treasurer",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1935-36",
+          "role": "Treasurer",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1936-37",
+          "role": "Treasurer",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1937-38",
+          "role": "Treasurer",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 17
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 5,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "full_name",
+      "photo"
+    ]
+  }
+}

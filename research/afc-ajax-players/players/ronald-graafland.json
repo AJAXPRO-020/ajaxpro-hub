@@ -1,0 +1,287 @@
+{
+  "local_id": "afc_ajax_ronald-graafland",
+  "slug": "ronald-graafland",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/ronald-graafland",
+    "https://www.afc-ajax.info/en/player/ronald-graafland/statistics",
+    "https://www.afc-ajax.info/en/player/ronald-graafland/matches",
+    "https://www.afc-ajax.info/en/player/ronald-graafland/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/ronald-graafland",
+    "name": "Ronald Graafland",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1979-04-30",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Keeper)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Feyenoord",
+    "external_links": [
+      {
+        "label": "Ronald Graafland",
+        "url": "http://nl.wikipedia.org/wiki/Ronald_Graafland"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": []
+  },
+  "statistics": [
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2010-11",
+          "date": "3/13/2011",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 1 - 3 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2010-11",
+          "date": "3/17/2011",
+          "competition": "Europa League",
+          "match": "Spartak Moscow - Ajax 3 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2010-11",
+          "date": "3/20/2011",
+          "competition": "Eredivisie",
+          "match": "ADO Den Haag - Ajax 3 - 2 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        }
+      ],
+      "raw_row_count": 4
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Start",
+          "next club": "Feyenoord",
+          "type": "Unknown",
+          "start": "7/1/1998",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Feyenoord",
+          "next club": "Excelsior",
+          "type": "Transfer",
+          "start": "7/1/2000",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Excelsior",
+          "next club": "Vitesse",
+          "type": "Transfer",
+          "start": "7/1/2008",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Vitesse",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "9/9/2010",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Feyenoord",
+          "type": "Transfer",
+          "start": "7/1/2011",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2010-11",
+          "contract type": "Contract",
+          "team": "Young",
+          "contract from": "9/9/2010",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 1,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name",
+      "photo"
+    ]
+  }
+}

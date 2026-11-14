@@ -1,0 +1,303 @@
+{
+  "local_id": "afc_ajax_hans-van-de-haar",
+  "slug": "hans-van-de-haar",
+  "collected_at": "2026-10-31T18:21:14.479Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/hans-van-de-haar",
+    "https://www.afc-ajax.info/en/player/hans-van-de-haar/statistics",
+    "https://www.afc-ajax.info/en/player/hans-van-de-haar/matches",
+    "https://www.afc-ajax.info/en/player/hans-van-de-haar/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/hans-van-de-haar",
+    "name": "Hans van de Haar",
+    "full_name": "Johannes van de Haar",
+    "alternative_names": [],
+    "birth_date": "1975-02-01",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "SV Spakenburg",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": []
+  },
+  "statistics": [
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Start",
+          "next club": "SC Hoevelaken",
+          "type": "Joins youth academy",
+          "start": "",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "SC Hoevelaken",
+          "next club": "Elinkwijk",
+          "type": "Joins youth academy",
+          "start": "",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Elinkwijk",
+          "next club": "Ajax",
+          "type": "Joins youth academy",
+          "start": "7/1/1989",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "HFC Haarlem",
+          "type": "Transfer",
+          "start": "7/1/1994",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "HFC Haarlem",
+          "next club": "De Graafschap",
+          "type": "Transfer",
+          "start": "7/1/1996",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "De Graafschap",
+          "next club": "KFC Uerdingen 05",
+          "type": "Transfer",
+          "start": "1/1/1999",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "KFC Uerdingen 05",
+          "next club": "SSV Ulm",
+          "type": "Transfer",
+          "start": "7/1/1999",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "SSV Ulm",
+          "next club": "SW Bregenz",
+          "type": "Transfer",
+          "start": "7/1/2001",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "SW Bregenz",
+          "next club": "De Graafschap",
+          "type": "Transfer",
+          "start": "1/1/2002",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "De Graafschap",
+          "next club": "Utrecht",
+          "type": "Transfer",
+          "start": "7/1/2003",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Utrecht",
+          "next club": "RKC Waalwijk",
+          "type": "Transfer",
+          "start": "7/1/2005",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "RKC Waalwijk",
+          "next club": "ADO Den Haag",
+          "type": "Transfer",
+          "start": "7/1/2007",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "ADO Den Haag",
+          "next club": "AGOVV",
+          "type": "Loan start",
+          "start": "7/1/2008",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "ADO Den Haag",
+          "next club": "AGOVV",
+          "type": "Transfer",
+          "start": "7/1/2009",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "AGOVV",
+          "next club": "Dayton Dutch Lions",
+          "type": "Transfer",
+          "start": "5/1/2010",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Dayton Dutch Lions",
+          "next club": "SV Spakenburg",
+          "type": "Transfer",
+          "start": "8/15/2010",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 17
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 1,
+    "match_tables": 0,
+    "transfer_tables": 1,
+    "has_statistics": true,
+    "has_match_data": false,
+    "missing_fields": [
+      "death_date",
+      "photo"
+    ]
+  }
+}

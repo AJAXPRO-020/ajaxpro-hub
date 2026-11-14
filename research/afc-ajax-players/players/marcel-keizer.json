@@ -1,0 +1,422 @@
+{
+  "local_id": "afc_ajax_marcel-keizer",
+  "slug": "marcel-keizer",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/marcel-keizer",
+    "https://www.afc-ajax.info/en/player/marcel-keizer/statistics",
+    "https://www.afc-ajax.info/en/player/marcel-keizer/matches",
+    "https://www.afc-ajax.info/en/player/marcel-keizer/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/marcel-keizer",
+    "name": "Marcel Keizer",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1969-01-15",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Defender) - Head coach - Assistant coach - Coach 2nd team"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "FC Emmen",
+    "external_links": [
+      {
+        "label": "Marcel Keizer",
+        "url": "http://en.wikipedia.org/wiki/Marcel_Keizer"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/kees-keizer",
+      "https://www.afc-ajax.info/en/player/piet-keizer",
+      "https://www.afc-ajax.info/en/player/rob-witschge",
+      "https://www.afc-ajax.info/en/player/stanley-menzo",
+      "https://www.afc-ajax.info/en/player/arnold-scholten",
+      "https://www.afc-ajax.info/en/player/john-van-t-schip",
+      "https://www.afc-ajax.info/en/player/aron-winter",
+      "https://www.afc-ajax.info/en/player/dennis-bergkamp",
+      "https://www.afc-ajax.info/en/player/peter-larsson",
+      "https://www.afc-ajax.info/en/player/jan-wouters",
+      "https://www.afc-ajax.info/en/player/arnold-muhren",
+      "https://www.afc-ajax.info/en/player/frank-verlaat"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1987-88",
+          "comp.": "3",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "4",
+          "friendly": "",
+          "total": "4"
+        },
+        {
+          "season": "1988-89",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        },
+        {
+          "season": "Total",
+          "comp.": "4",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "5",
+          "friendly": "",
+          "total": "5"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "3"
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "3"
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1987-88",
+          "date": "4/10/1988",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 3 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "20"
+        },
+        {
+          "season": "1987-88",
+          "date": "4/16/1988",
+          "competition": "Eredivisie",
+          "match": "PEC Zwolle '82 - Ajax 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "23"
+        },
+        {
+          "season": "1987-88",
+          "date": "4/20/1988",
+          "competition": "Europa Cup II",
+          "match": "Ajax - Olympique Marseille 1 - 2 (1 - 0)",
+          "active": "Bench",
+          "min": "18"
+        },
+        {
+          "season": "1987-88",
+          "date": "4/24/1988",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1988-89",
+          "date": "5/15/1989",
+          "competition": "Eredivisie",
+          "match": "FC Den Bosch - Ajax 0 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 6
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Unknown",
+          "next club": "Ajax",
+          "type": "Joins youth academy",
+          "start": "",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "First contract",
+          "start": "7/1/1988",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Cambuur Leeuwarden",
+          "type": "Transfer",
+          "start": "7/1/1989",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Cambuur Leeuwarden",
+          "next club": "De Graafschap",
+          "type": "Transfer",
+          "start": "7/1/1998",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "De Graafschap",
+          "next club": "FC Emmen",
+          "type": "Transfer",
+          "start": "7/1/2000",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "FC Emmen",
+          "next club": "None",
+          "type": "Retirement",
+          "start": "7/1/2002",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 7
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1987-88",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1988-89",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Other Role)",
+      "headers": [
+        "season",
+        "role",
+        "contract type",
+        "contract from",
+        "contract to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2016-17",
+          "role": "Coach 2nd team",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "2017-18",
+          "role": "Head coach",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "12/21/2017",
+          "remark": ""
+        },
+        {
+          "season": "2025-26",
+          "role": "Assistant coach",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "11/6/2025",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 4
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name",
+      "photo"
+    ]
+  }
+}

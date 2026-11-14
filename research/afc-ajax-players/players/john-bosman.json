@@ -1,0 +1,2043 @@
+{
+  "local_id": "afc_ajax_john-bosman",
+  "slug": "john-bosman",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/john-bosman",
+    "https://www.afc-ajax.info/en/player/john-bosman/statistics",
+    "https://www.afc-ajax.info/en/player/john-bosman/matches",
+    "https://www.afc-ajax.info/en/player/john-bosman/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/john-bosman",
+    "name": "John Bosman",
+    "full_name": "Jakobus Johannes Bosman",
+    "alternative_names": [],
+    "birth_date": "1965-02-01",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Forward) - Youth assistant coach"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "AZ",
+    "external_links": [
+      {
+        "label": "John Bosman",
+        "url": "http://nl.wikipedia.org/wiki/John_Bosman"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/john-van-t-schip",
+      "https://www.afc-ajax.info/en/player/sonny-silooy",
+      "https://www.afc-ajax.info/en/player/frank-rijkaard",
+      "https://www.afc-ajax.info/en/player/stanley-menzo",
+      "https://www.afc-ajax.info/en/player/ronald-spelbos",
+      "https://www.afc-ajax.info/en/player/peter-boeve",
+      "https://www.afc-ajax.info/en/player/arnold-muhren",
+      "https://www.afc-ajax.info/en/player/marco-van-basten",
+      "https://www.afc-ajax.info/en/player/aron-winter",
+      "https://www.afc-ajax.info/en/player/danny-blind"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1983-84",
+          "comp.": "14",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "16",
+          "friendly": "",
+          "total": "16"
+        },
+        {
+          "season": "1984-85",
+          "comp.": "22",
+          "play off": "",
+          "dutch cup": "3",
+          "europa": "4",
+          "other off.": "",
+          "off. mat.": "29",
+          "friendly": "1",
+          "total": "30"
+        },
+        {
+          "season": "1985-86",
+          "comp.": "23",
+          "play off": "",
+          "dutch cup": "4",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "27",
+          "friendly": "",
+          "total": "27"
+        },
+        {
+          "season": "1986-87",
+          "comp.": "33",
+          "play off": "",
+          "dutch cup": "7",
+          "europa": "7",
+          "other off.": "",
+          "off. mat.": "47",
+          "friendly": "",
+          "total": "47"
+        },
+        {
+          "season": "1987-88",
+          "comp.": "32",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "11",
+          "other off.": "",
+          "off. mat.": "45",
+          "friendly": "2",
+          "total": "47"
+        },
+        {
+          "season": "Total",
+          "comp.": "124",
+          "play off": "",
+          "dutch cup": "18",
+          "europa": "22",
+          "other off.": "",
+          "off. mat.": "164",
+          "friendly": "3",
+          "total": "167"
+        }
+      ],
+      "raw_row_count": 7
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1983-84",
+          "comp.": "4",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "6",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1984-85",
+          "comp.": "7",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "12",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1985-86",
+          "comp.": "19",
+          "play off": "",
+          "dutch cup": "4",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "23",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1986-87",
+          "comp.": "23",
+          "play off": "",
+          "dutch cup": "5",
+          "europa": "8",
+          "other off.": "",
+          "off. mat.": "36",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1987-88",
+          "comp.": "25",
+          "play off": "",
+          "dutch cup": "3",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "29",
+          "friendly": "1",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "78",
+          "play off": "",
+          "dutch cup": "16",
+          "europa": "12",
+          "other off.": "",
+          "off. mat.": "106",
+          "friendly": "1",
+          "total": "107"
+        }
+      ],
+      "raw_row_count": 7
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "21",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "2"
+        },
+        {
+          "minute": "16-30",
+          "goals": "21",
+          "assists": "2",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "13",
+          "assists": "5",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "3"
+        },
+        {
+          "minute": "46-60",
+          "goals": "15",
+          "assists": "2",
+          "yellow": "",
+          "red": "",
+          "substitute out": "8",
+          "substitute in": "16"
+        },
+        {
+          "minute": "61-75",
+          "goals": "20",
+          "assists": "5",
+          "yellow": "",
+          "red": "",
+          "substitute out": "18",
+          "substitute in": "11"
+        },
+        {
+          "minute": "76-90",
+          "goals": "17",
+          "assists": "4",
+          "yellow": "",
+          "red": "1",
+          "substitute out": "14",
+          "substitute in": "9"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "4",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "107",
+          "assists": "18",
+          "yellow": "4",
+          "red": "1",
+          "substitute out": "42",
+          "substitute in": "42"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [
+        {
+          "assisted by": "John van 't Schip",
+          "number": "12"
+        },
+        {
+          "assisted by": "Marco van Basten",
+          "number": "9"
+        },
+        {
+          "assisted by": "Dennis Bergkamp",
+          "number": "4"
+        },
+        {
+          "assisted by": "Arnold M&#252;hren",
+          "number": "4"
+        },
+        {
+          "assisted by": "Gerald Vanenburg",
+          "number": "4"
+        },
+        {
+          "assisted by": "Aron Winter",
+          "number": "4"
+        },
+        {
+          "assisted by": "Peter Boeve",
+          "number": "3"
+        },
+        {
+          "assisted by": "Rob de Wit",
+          "number": "2"
+        },
+        {
+          "assisted by": "Frank Rijkaard",
+          "number": "2"
+        },
+        {
+          "assisted by": "Danny Blind",
+          "number": "2"
+        },
+        {
+          "assisted by": "Edo Ophof",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 12
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "72"
+        },
+        {
+          "type": "Goal (header)",
+          "number": "35"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "91"
+        },
+        {
+          "origin": "from free kick (indirect)",
+          "number": "5"
+        },
+        {
+          "origin": "from corner (indirect)",
+          "number": "7"
+        },
+        {
+          "origin": "from penalty",
+          "number": "3"
+        },
+        {
+          "origin": "from free kick (direct)",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 6
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1983-84",
+          "date": "11/20/1983",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 5 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1983-84",
+          "date": "11/30/1983",
+          "competition": "Eredivisie",
+          "match": "DS '79 - Ajax 1 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "61"
+        },
+        {
+          "season": "1983-84",
+          "date": "12/11/1983",
+          "competition": "Dutch Cup",
+          "match": "DWV - Ajax 0 - 6 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1983-84",
+          "date": "1/11/1984",
+          "competition": "Eredivisie",
+          "match": "Excelsior - Ajax 1 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": "7"
+        },
+        {
+          "season": "1983-84",
+          "date": "1/15/1984",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 5 - 2 (3 - 1)",
+          "active": "Start",
+          "min": "85"
+        },
+        {
+          "season": "1983-84",
+          "date": "1/21/1984",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 0 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "82"
+        },
+        {
+          "season": "1983-84",
+          "date": "2/5/1984",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Volendam 5 - 0 (5 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1983-84",
+          "date": "2/12/1984",
+          "competition": "Eredivisie",
+          "match": "Helmond Sport - Ajax 0 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": "31"
+        },
+        {
+          "season": "1983-84",
+          "date": "2/15/1984",
+          "competition": "Dutch Cup",
+          "match": "Feyenoord - Ajax 2 - 1 (regular time:1 - 1)",
+          "active": "Bench",
+          "min": "57"
+        },
+        {
+          "season": "1983-84",
+          "date": "2/26/1984",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 4 - 1 (2 - 0)",
+          "active": "Bench",
+          "min": "15"
+        },
+        {
+          "season": "1983-84",
+          "date": "3/11/1984",
+          "competition": "Eredivisie",
+          "match": "PEC Zwolle '82 - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1983-84",
+          "date": "3/18/1984",
+          "competition": "Eredivisie",
+          "match": "Ajax - HFC Haarlem 0 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1983-84",
+          "date": "3/25/1984",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 1 - 5 (0 - 2)",
+          "active": "Bench",
+          "min": "27"
+        },
+        {
+          "season": "1983-84",
+          "date": "4/1/1984",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Bosch 5 - 2 (3 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1983-84",
+          "date": "4/8/1984",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 3 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "9"
+        },
+        {
+          "season": "1983-84",
+          "date": "4/23/1984",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 1 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": "31"
+        },
+        {
+          "season": "1984-85",
+          "date": "8/26/1984",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Atletico Mineiro 2 - 2 (penalties: 5 - 6)",
+          "active": "Bench",
+          "min": "59"
+        },
+        {
+          "season": "1984-85",
+          "date": "9/2/1984",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 2 - 5 (1 - 1)",
+          "active": "Bench",
+          "min": "28"
+        },
+        {
+          "season": "1984-85",
+          "date": "9/9/1984",
+          "competition": "Eredivisie",
+          "match": "Ajax - Excelsior 3 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "37"
+        },
+        {
+          "season": "1984-85",
+          "date": "9/18/1984",
+          "competition": "UEFA Cup",
+          "match": "Red Boys Differdange - Ajax 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "25"
+        },
+        {
+          "season": "1984-85",
+          "date": "9/26/1984",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 1 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "10"
+        },
+        {
+          "season": "1984-85",
+          "date": "10/3/1984",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Red Boys Differdange 14 - 0 (5 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1984-85",
+          "date": "10/6/1984",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 7 - 2 (3 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1984-85",
+          "date": "10/13/1984",
+          "competition": "Eredivisie",
+          "match": "Ajax - HFC Haarlem 4 - 3 (2 - 1)",
+          "active": "Start",
+          "min": "58"
+        },
+        {
+          "season": "1984-85",
+          "date": "10/24/1984",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Bohemians Prague 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "64"
+        },
+        {
+          "season": "1984-85",
+          "date": "10/28/1984",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1984-85",
+          "date": "10/31/1984",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna Sittard 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "55"
+        },
+        {
+          "season": "1984-85",
+          "date": "11/4/1984",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1984-85",
+          "date": "11/7/1984",
+          "competition": "UEFA Cup",
+          "match": "Bohemians Prague - Ajax 1 - 0 (penalties: 4 - 2)",
+          "active": "Bench",
+          "min": "29"
+        },
+        {
+          "season": "1984-85",
+          "date": "11/17/1984",
+          "competition": "Dutch Cup",
+          "match": "DOVO - Ajax 0 - 5 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1984-85",
+          "date": "11/25/1984",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1984-85",
+          "date": "12/2/1984",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 7 - 0 (4 - 0)",
+          "active": "Bench",
+          "min": "6"
+        },
+        {
+          "season": "1984-85",
+          "date": "12/9/1984",
+          "competition": "Eredivisie",
+          "match": "FC Volendam - Ajax 1 - 3 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "1984-85",
+          "date": "12/11/1984",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Heerjansdam 6 - 0 (4 - 0)",
+          "active": "Start",
+          "min": "53"
+        },
+        {
+          "season": "1984-85",
+          "date": "12/16/1984",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 1 - 4 (0 - 2)",
+          "active": "Bench",
+          "min": "20"
+        },
+        {
+          "season": "1984-85",
+          "date": "3/3/1985",
+          "competition": "Eredivisie",
+          "match": "Excelsior - Ajax 0 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "1984-85",
+          "date": "3/5/1985",
+          "competition": "Eredivisie",
+          "match": "FC Den Bosch - Ajax 1 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1984-85",
+          "date": "3/17/1985",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ '67 4 - 2 (1 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1984-85",
+          "date": "3/19/1985",
+          "competition": "Dutch Cup",
+          "match": "PSV - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1984-85",
+          "date": "3/23/1985",
+          "competition": "Eredivisie",
+          "match": "Fortuna Sittard - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1984-85",
+          "date": "4/6/1985",
+          "competition": "Eredivisie",
+          "match": "Ajax - PEC Zwolle '82 2 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "53"
+        },
+        {
+          "season": "1984-85",
+          "date": "4/14/1985",
+          "competition": "Eredivisie",
+          "match": "Go Ahead Eagles - Ajax 0 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": "81"
+        },
+        {
+          "season": "1984-85",
+          "date": "4/17/1985",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Bosch 2 - 2 (1 - 0)",
+          "active": "Bench",
+          "min": "82"
+        },
+        {
+          "season": "1984-85",
+          "date": "4/21/1985",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1984-85",
+          "date": "4/23/1985",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1984-85",
+          "date": "5/5/1985",
+          "competition": "Eredivisie",
+          "match": "HFC Haarlem - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "1984-85",
+          "date": "5/7/1985",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 4 - 4 (3 - 2)",
+          "active": "Bench",
+          "min": "17"
+        },
+        {
+          "season": "1985-86",
+          "date": "9/1/1985",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 2 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "12"
+        },
+        {
+          "season": "1985-86",
+          "date": "9/8/1985",
+          "competition": "Eredivisie",
+          "match": "Ajax - VVV 7 - 1 (3 - 0)",
+          "active": "Bench",
+          "min": "28"
+        },
+        {
+          "season": "1985-86",
+          "date": "9/29/1985",
+          "competition": "Eredivisie",
+          "match": "Go Ahead Eagles - Ajax 1 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "5"
+        },
+        {
+          "season": "1985-86",
+          "date": "10/6/1985",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 1 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": "10"
+        },
+        {
+          "season": "1985-86",
+          "date": "10/27/1985",
+          "competition": "Eredivisie",
+          "match": "Ajax - HFC Haarlem 5 - 1 (3 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "1985-86",
+          "date": "11/13/1985",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 2 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1985-86",
+          "date": "12/1/1985",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 1 - 8 (0 - 6)",
+          "active": "Bench",
+          "min": "26"
+        },
+        {
+          "season": "1985-86",
+          "date": "12/21/1985",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 1 - 4 (0 - 3)",
+          "active": "Bench",
+          "min": "6"
+        },
+        {
+          "season": "1985-86",
+          "date": "2/2/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ '67 8 - 2 (4 - 0)",
+          "active": "Start",
+          "min": "73"
+        },
+        {
+          "season": "1985-86",
+          "date": "2/5/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 2 - 1 (2 - 0)",
+          "active": "Bench",
+          "min": "14"
+        },
+        {
+          "season": "1985-86",
+          "date": "2/9/1986",
+          "competition": "Dutch Cup",
+          "match": "Utrecht - Ajax 0 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1985-86",
+          "date": "3/9/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heracles '74 7 - 0 (4 - 0)",
+          "active": "Start",
+          "min": "61"
+        },
+        {
+          "season": "1985-86",
+          "date": "3/16/1986",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "1985-86",
+          "date": "3/23/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1985-86",
+          "date": "3/25/1986",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 2 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1985-86",
+          "date": "3/29/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 5 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1985-86",
+          "date": "3/31/1986",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 3 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1985-86",
+          "date": "4/6/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1985-86",
+          "date": "4/13/1986",
+          "competition": "Eredivisie",
+          "match": "HFC Haarlem - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1985-86",
+          "date": "4/20/1986",
+          "competition": "Eredivisie",
+          "match": "VVV - Ajax 1 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1985-86",
+          "date": "4/23/1986",
+          "competition": "Dutch Cup",
+          "match": "Ajax - FC Groningen 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "86"
+        },
+        {
+          "season": "1985-86",
+          "date": "4/27/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Bosch 4 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1985-86",
+          "date": "5/4/1986",
+          "competition": "Eredivisie",
+          "match": "Fortuna Sittard - Ajax 1 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1985-86",
+          "date": "5/7/1986",
+          "competition": "Dutch Cup",
+          "match": "NEC - Ajax 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1985-86",
+          "date": "5/11/1986",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1985-86",
+          "date": "5/25/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 6 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1985-86",
+          "date": "5/25/1986",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 3 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1985-86",
+          "date": "5/28/1986",
+          "competition": "Dutch Cup",
+          "match": "Ajax - RBC 3 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1986-87",
+          "date": "8/8/1986",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Botafogo 1 - 1 (penalties: 4 - 5)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1986-87",
+          "date": "8/10/1986",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Manchester United 1 - 0 (1 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1986-87",
+          "date": "8/24/1986",
+          "competition": "Eredivisie",
+          "match": "HFC Haarlem - Ajax 0 - 3 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1986-87",
+          "date": "8/27/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Haag 2 - 3 (0 - 1)",
+          "active": "Bench",
+          "min": "33"
+        },
+        {
+          "season": "1986-87",
+          "date": "8/31/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 3 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "31"
+        },
+        {
+          "season": "1986-87",
+          "date": "9/3/1986",
+          "competition": "Eredivisie",
+          "match": "Excelsior - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "75"
+        },
+        {
+          "season": "1986-87",
+          "date": "9/7/1986",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 2 - 6 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "9/14/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "61"
+        },
+        {
+          "season": "1986-87",
+          "date": "9/17/1986",
+          "competition": "Europa Cup II",
+          "match": "Bursaspor - Ajax 0 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1986-87",
+          "date": "9/21/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 3 - 2 (2 - 2)",
+          "active": "Bench",
+          "min": "56"
+        },
+        {
+          "season": "1986-87",
+          "date": "9/24/1986",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 1 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1986-87",
+          "date": "9/28/1986",
+          "competition": "Eredivisie",
+          "match": "Veendam - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "10/1/1986",
+          "competition": "Europa Cup II",
+          "match": "Ajax - Bursaspor 5 - 0 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "10/5/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna Sittard 6 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "10/11/1986",
+          "competition": "Dutch Cup",
+          "match": "Elinkwijk - Ajax 1 - 4 (0 - 4)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1986-87",
+          "date": "10/19/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - VVV 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "73"
+        },
+        {
+          "season": "1986-87",
+          "date": "10/22/1986",
+          "competition": "Europa Cup II",
+          "match": "Ajax - Olympiakos Piraeus 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "81"
+        },
+        {
+          "season": "1986-87",
+          "date": "10/26/1986",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 1 - 6 (0 - 2)",
+          "active": "Start",
+          "min": "78"
+        },
+        {
+          "season": "1986-87",
+          "date": "10/29/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 3 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "79"
+        },
+        {
+          "season": "1986-87",
+          "date": "11/2/1986",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 2 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "82"
+        },
+        {
+          "season": "1986-87",
+          "date": "11/5/1986",
+          "competition": "Europa Cup II",
+          "match": "Olympiakos Piraeus - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "36"
+        },
+        {
+          "season": "1986-87",
+          "date": "11/9/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Bosch 3 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "70"
+        },
+        {
+          "season": "1986-87",
+          "date": "11/16/1986",
+          "competition": "Dutch Cup",
+          "match": "Rheden - Ajax 0 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1986-87",
+          "date": "11/22/1986",
+          "competition": "Eredivisie",
+          "match": "PEC Zwolle '82 - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "72"
+        },
+        {
+          "season": "1986-87",
+          "date": "11/30/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "82"
+        },
+        {
+          "season": "1986-87",
+          "date": "12/7/1986",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 0 - 3 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "12/14/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "2/15/1987",
+          "competition": "Eredivisie",
+          "match": "VVV - Ajax 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "62"
+        },
+        {
+          "season": "1986-87",
+          "date": "2/22/1987",
+          "competition": "Eredivisie",
+          "match": "Ajax - HFC Haarlem 6 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "3/1/1987",
+          "competition": "Eredivisie",
+          "match": "FC Den Haag - Ajax 0 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "3/8/1987",
+          "competition": "Eredivisie",
+          "match": "Ajax - Excelsior 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1986-87",
+          "date": "3/11/1987",
+          "competition": "Dutch Cup",
+          "match": "Sparta Rotterdam - Ajax 0 - 0 (penalties: 3 - 4)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "1986-87",
+          "date": "3/14/1987",
+          "competition": "Europa Cup II",
+          "match": "Malm&ouml; FF - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "74"
+        },
+        {
+          "season": "1986-87",
+          "date": "3/18/1987",
+          "competition": "Europa Cup II",
+          "match": "Ajax - Malm&ouml; FF 3 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1986-87",
+          "date": "3/21/1987",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "78"
+        },
+        {
+          "season": "1986-87",
+          "date": "3/29/1987",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "4/1/1987",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Vitesse 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "4/5/1987",
+          "competition": "Eredivisie",
+          "match": "Go Ahead Eagles - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "4/8/1987",
+          "competition": "Europa Cup II",
+          "match": "Real Zaragoza - Ajax 2 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "88"
+        },
+        {
+          "season": "1986-87",
+          "date": "4/12/1987",
+          "competition": "Eredivisie",
+          "match": "Ajax - Veendam 4 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1986-87",
+          "date": "4/19/1987",
+          "competition": "Eredivisie",
+          "match": "Fortuna Sittard - Ajax 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "4/22/1987",
+          "competition": "Europa Cup II",
+          "match": "Ajax - Real Zaragoza 3 - 0 (1 - 0)",
+          "active": "Suspension",
+          "min": ""
+        },
+        {
+          "season": "1986-87",
+          "date": "5/2/1987",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "63"
+        },
+        {
+          "season": "1986-87",
+          "date": "5/5/1987",
+          "competition": "Dutch Cup",
+          "match": "Ajax - FC Groningen 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "80"
+        },
+        {
+          "season": "1986-87",
+          "date": "5/10/1987",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "5/13/1987",
+          "competition": "Europa Cup II",
+          "match": "Ajax - Lokomotive Leipzig 1 - 0 (1 - 0)",
+          "active": "Suspension",
+          "min": ""
+        },
+        {
+          "season": "1986-87",
+          "date": "5/17/1987",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 1 - 3 (0 - 1)",
+          "active": "Suspension",
+          "min": ""
+        },
+        {
+          "season": "1986-87",
+          "date": "5/19/1987",
+          "competition": "Dutch Cup",
+          "match": "FC Groningen - Ajax 0 - 3 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "5/24/1987",
+          "competition": "Eredivisie",
+          "match": "FC Den Bosch - Ajax 1 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "5/31/1987",
+          "competition": "Eredivisie",
+          "match": "Ajax - PEC Zwolle '82 5 - 2 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "6/5/1987",
+          "competition": "Dutch Cup",
+          "match": "FC Den Haag - Ajax 2 - 4 (regular time:2 - 2)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "1986-87",
+          "date": "6/8/1987",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "8/7/1987",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Torino Calcio 2 - 1 (2 - 1)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "1987-88",
+          "date": "8/9/1987",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - FC Porto 1 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "25"
+        },
+        {
+          "season": "1987-88",
+          "date": "8/12/1987",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "23"
+        },
+        {
+          "season": "1987-88",
+          "date": "8/16/1987",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 1 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1987-88",
+          "date": "8/23/1987",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "8/30/1987",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 4 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "9/2/1987",
+          "competition": "Eredivisie",
+          "match": "Ajax - DS '79 5 - 3 (2 - 2)",
+          "active": "Start",
+          "min": "61"
+        },
+        {
+          "season": "1987-88",
+          "date": "9/13/1987",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 2 - 1 (2 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1987-88",
+          "date": "9/16/1987",
+          "competition": "Europa Cup II",
+          "match": "Ajax - Dundalk 4 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "65"
+        },
+        {
+          "season": "1987-88",
+          "date": "9/20/1987",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Haag 4 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "9/27/1987",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Bosch 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "9/30/1987",
+          "competition": "Europa Cup II",
+          "match": "Dundalk - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "64"
+        },
+        {
+          "season": "1987-88",
+          "date": "10/4/1987",
+          "competition": "Eredivisie",
+          "match": "Fortuna Sittard - Ajax 3 - 3 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "10/10/1987",
+          "competition": "Dutch Cup",
+          "match": "Quick Boys - Ajax 0 - 7 (0 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "10/18/1987",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Volendam 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "10/21/1987",
+          "competition": "Europa Cup II",
+          "match": "Hamburger SV - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "71"
+        },
+        {
+          "season": "1987-88",
+          "date": "11/1/1987",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 3 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "11/4/1987",
+          "competition": "Europa Cup II",
+          "match": "Ajax - Hamburger SV 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "11/8/1987",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "11/15/1987",
+          "competition": "Dutch Cup",
+          "match": "FC Den Bosch - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "11/21/1987",
+          "competition": "Eredivisie",
+          "match": "Ajax - PEC Zwolle '82 6 - 4 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "11/24/1987",
+          "competition": "UEFA Super Cup",
+          "match": "Ajax - FC Porto 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "11/29/1987",
+          "competition": "Eredivisie",
+          "match": "HFC Haarlem - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "12/6/1987",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "12/13/1987",
+          "competition": "Eredivisie",
+          "match": "VVV - Ajax 3 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "12/20/1987",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "1/13/1988",
+          "competition": "UEFA Super Cup",
+          "match": "FC Porto - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "1/17/1988",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "81"
+        },
+        {
+          "season": "1987-88",
+          "date": "1/24/1988",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "79"
+        },
+        {
+          "season": "1987-88",
+          "date": "1/31/1988",
+          "competition": "Eredivisie",
+          "match": "DS '79 - Ajax 1 - 3 (0 - 3)",
+          "active": "Start",
+          "min": "66"
+        },
+        {
+          "season": "1987-88",
+          "date": "2/7/1988",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "2/21/1988",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "2/27/1988",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "69"
+        },
+        {
+          "season": "1987-88",
+          "date": "3/6/1988",
+          "competition": "Eredivisie",
+          "match": "FC Den Haag - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "3/9/1988",
+          "competition": "Europa Cup II",
+          "match": "BSC Young Boys - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "3/13/1988",
+          "competition": "Eredivisie",
+          "match": "FC Den Bosch - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "3/16/1988",
+          "competition": "Europa Cup II",
+          "match": "Ajax - BSC Young Boys 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "86"
+        },
+        {
+          "season": "1987-88",
+          "date": "3/20/1988",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna Sittard 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "3/27/1988",
+          "competition": "Eredivisie",
+          "match": "FC Volendam - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "4/2/1988",
+          "competition": "Eredivisie",
+          "match": "Ajax - VVV 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "4/6/1988",
+          "competition": "Europa Cup II",
+          "match": "Olympique Marseille - Ajax 0 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "84"
+        },
+        {
+          "season": "1987-88",
+          "date": "4/10/1988",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 3 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "25"
+        },
+        {
+          "season": "1987-88",
+          "date": "4/13/1988",
+          "competition": "Dutch Cup",
+          "match": "RKC Waalwijk - Ajax (2) 2 - 1 (2 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1987-88",
+          "date": "4/20/1988",
+          "competition": "Europa Cup II",
+          "match": "Ajax - Olympique Marseille 1 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "4/24/1988",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "5/1/1988",
+          "competition": "Eredivisie",
+          "match": "Ajax - HFC Haarlem 3 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "5/8/1988",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "5/11/1988",
+          "competition": "Europa Cup II",
+          "match": "KV Mechelen - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 176
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Unknown",
+          "next club": "Ajax",
+          "type": "Joins youth academy",
+          "start": "7/1/1982",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "First contract",
+          "start": "7/1/1984",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "Contract renewal",
+          "start": "7/1/1986",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "KV Mechelen",
+          "type": "Transfer",
+          "start": "6/30/1988",
+          "amount": "€ 499,2K",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "KV Mechelen",
+          "next club": "PSV",
+          "type": "Transfer",
+          "start": "7/1/1990",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "PSV",
+          "next club": "Anderlecht",
+          "type": "Transfer",
+          "start": "7/1/1991",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Anderlecht",
+          "next club": "FC Twente",
+          "type": "Transfer",
+          "start": "7/1/1996",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "FC Twente",
+          "next club": "AZ",
+          "type": "Transfer",
+          "start": "7/1/1999",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "AZ",
+          "next club": "None",
+          "type": "Retirement",
+          "start": "7/1/2002",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 10
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1983-84",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1984-85",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1985-86",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1986-87",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1987-88",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Season (Other Role)",
+      "headers": [
+        "season",
+        "role",
+        "contract type",
+        "contract from",
+        "contract to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2012-13",
+          "role": "Youth assistant coach",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "2013-14",
+          "role": "Youth assistant coach",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "photo"
+    ]
+  }
+}

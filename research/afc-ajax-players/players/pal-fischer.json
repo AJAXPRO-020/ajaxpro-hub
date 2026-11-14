@@ -1,0 +1,554 @@
+{
+  "local_id": "afc_ajax_pal-fischer",
+  "slug": "pal-fischer",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/pal-fischer",
+    "https://www.afc-ajax.info/en/player/pal-fischer/statistics",
+    "https://www.afc-ajax.info/en/player/pal-fischer/matches",
+    "https://www.afc-ajax.info/en/player/pal-fischer/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/pal-fischer",
+    "name": "P&#225;l Fischer",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1966-01-29",
+    "death_date": null,
+    "nationality": "Hungary",
+    "roles": [
+      "Player (Forward)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Ferencv&aacute;ros",
+    "external_links": [
+      {
+        "label": "P&#225;l Fischer",
+        "url": "http://nl.wikipedia.org/wiki/P%C3%A1l_Fischer"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/john-van-t-schip",
+      "https://www.afc-ajax.info/en/player/jan-wouters",
+      "https://www.afc-ajax.info/en/player/aron-winter",
+      "https://www.afc-ajax.info/en/player/danny-blind",
+      "https://www.afc-ajax.info/en/player/stanley-menzo",
+      "https://www.afc-ajax.info/en/player/bryan-roy",
+      "https://www.afc-ajax.info/en/player/ronald-de-boer",
+      "https://www.afc-ajax.info/en/player/frank-de-boer",
+      "https://www.afc-ajax.info/en/player/richard-witschge",
+      "https://www.afc-ajax.info/en/player/peter-larsson"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1989-90",
+          "comp.": "15",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "18",
+          "friendly": "2",
+          "total": "20"
+        },
+        {
+          "season": "Total",
+          "comp.": "15",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "18",
+          "friendly": "2",
+          "total": "20"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1989-90",
+          "comp.": "7",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "7",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "7",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "7",
+          "friendly": "",
+          "total": "7"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "2",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "1",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "2",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "3",
+          "substitute in": "1"
+        },
+        {
+          "minute": "61-75",
+          "goals": "2",
+          "assists": "2",
+          "yellow": "",
+          "red": "",
+          "substitute out": "4",
+          "substitute in": "3"
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "7",
+          "assists": "5",
+          "yellow": "",
+          "red": "",
+          "substitute out": "9",
+          "substitute in": "4"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [],
+      "raw_row_count": 1
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "6"
+        },
+        {
+          "type": "Goal (header)",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "7"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1989-90",
+          "date": "8/4/1989",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Sporting Portugal 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1989-90",
+          "date": "8/6/1989",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - KV Mechelen 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1989-90",
+          "date": "8/13/1989",
+          "competition": "Eredivisie",
+          "match": "FC Den Haag - Ajax 0 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "71"
+        },
+        {
+          "season": "1989-90",
+          "date": "8/16/1989",
+          "competition": "Eredivisie",
+          "match": "Ajax - Vitesse 5 - 2 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1989-90",
+          "date": "8/20/1989",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1989-90",
+          "date": "8/27/1989",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 5 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "65"
+        },
+        {
+          "season": "1989-90",
+          "date": "9/3/1989",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1989-90",
+          "date": "9/14/1989",
+          "competition": "UEFA Cup",
+          "match": "Austria Wien - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "65"
+        },
+        {
+          "season": "1989-90",
+          "date": "9/17/1989",
+          "competition": "Eredivisie",
+          "match": "Ajax - RKC Waalwijk 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1989-90",
+          "date": "9/24/1989",
+          "competition": "Eredivisie",
+          "match": "FC Volendam - Ajax 2 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1989-90",
+          "date": "9/27/1989",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Austria Wien 0 - 3 (R)",
+          "active": "Start",
+          "min": "104"
+        },
+        {
+          "season": "1989-90",
+          "date": "10/1/1989",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "31"
+        },
+        {
+          "season": "1989-90",
+          "date": "10/22/1989",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1989-90",
+          "date": "10/29/1989",
+          "competition": "Eredivisie",
+          "match": "HFC Haarlem - Ajax 0 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "89"
+        },
+        {
+          "season": "1989-90",
+          "date": "11/5/1989",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 3 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1989-90",
+          "date": "11/19/1989",
+          "competition": "Eredivisie",
+          "match": "FC Den Bosch - Ajax 0 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "22"
+        },
+        {
+          "season": "1989-90",
+          "date": "11/26/1989",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "70"
+        },
+        {
+          "season": "1989-90",
+          "date": "12/1/1989",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 1 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "23"
+        },
+        {
+          "season": "1989-90",
+          "date": "12/10/1989",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 1 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "17"
+        },
+        {
+          "season": "1989-90",
+          "date": "12/13/1989",
+          "competition": "Dutch Cup",
+          "match": "EVV - Ajax 0 - 4 (0 - 0)",
+          "active": "Start",
+          "min": "46"
+        }
+      ],
+      "raw_row_count": 21
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Ferencv&aacute;ros",
+          "next club": "Ajax",
+          "type": "Loan start",
+          "start": "7/1/1989",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ferencv&aacute;ros",
+          "type": "Loan end",
+          "start": "7/1/1990",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1989-90",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "P&#225;l Fischer"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1187-pal-fischer.jpg",
+        "alt": "Soccer player P&#225;l Fischer",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/pal-fischer__f09281d3d91a.jpg",
+        "status": "downloaded",
+        "bytes": 13956,
+        "sha256": "f09281d3d91a0cf3be66a11414a1bba6e824214a52a5fae7067f22dfde15b387",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:04.523Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name"
+    ]
+  }
+}

@@ -1,0 +1,460 @@
+{
+  "local_id": "afc_ajax_giorgi-kinkladze",
+  "slug": "giorgi-kinkladze",
+  "collected_at": "2026-10-31T18:21:14.479Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/giorgi-kinkladze",
+    "https://www.afc-ajax.info/en/player/giorgi-kinkladze/statistics",
+    "https://www.afc-ajax.info/en/player/giorgi-kinkladze/matches",
+    "https://www.afc-ajax.info/en/player/giorgi-kinkladze/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/giorgi-kinkladze",
+    "name": "Giorgi Kinkladze",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1973-11-06",
+    "death_date": null,
+    "nationality": "Georgia",
+    "roles": [
+      "Player (Midfielder)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Derby County",
+    "external_links": [
+      {
+        "label": "Giorgi Kinkladze",
+        "url": "http://nl.wikipedia.org/wiki/Giorgi_Kinkladze"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/edwin-van-der-sar",
+      "https://www.afc-ajax.info/en/player/richard-witschge",
+      "https://www.afc-ajax.info/en/player/dani",
+      "https://www.afc-ajax.info/en/player/wamberto",
+      "https://www.afc-ajax.info/en/player/frank-de-boer",
+      "https://www.afc-ajax.info/en/player/ronald-de-boer",
+      "https://www.afc-ajax.info/en/player/sunday-oliseh",
+      "https://www.afc-ajax.info/en/player/peter-hoekstra",
+      "https://www.afc-ajax.info/en/player/ole-tobiasen",
+      "https://www.afc-ajax.info/en/player/jari-litmanen"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1998-99",
+          "comp.": "12",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "2",
+          "other off.": "1",
+          "off. mat.": "16",
+          "friendly": "",
+          "total": "16"
+        },
+        {
+          "season": "Total",
+          "comp.": "12",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "2",
+          "other off.": "1",
+          "off. mat.": "16",
+          "friendly": "",
+          "total": "16"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "2",
+          "substitute in": "3"
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "3",
+          "substitute in": "1"
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "2"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "6",
+          "substitute in": "6"
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1998-99",
+          "date": "8/16/1998",
+          "competition": "Dutch Super Cup",
+          "match": "Ajax - PSV 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1998-99",
+          "date": "8/23/1998",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1998-99",
+          "date": "8/28/1998",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1998-99",
+          "date": "9/9/1998",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ 5 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "68"
+        },
+        {
+          "season": "1998-99",
+          "date": "9/16/1998",
+          "competition": "Champions League",
+          "match": "Croatia Zagreb - Ajax 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "13"
+        },
+        {
+          "season": "1998-99",
+          "date": "9/20/1998",
+          "competition": "Eredivisie",
+          "match": "Ajax - De Graafschap 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1998-99",
+          "date": "9/23/1998",
+          "competition": "Eredivisie",
+          "match": "Fortuna Sittard - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "64"
+        },
+        {
+          "season": "1998-99",
+          "date": "10/18/1998",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 5 - 0 (3 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1998-99",
+          "date": "10/21/1998",
+          "competition": "Champions League",
+          "match": "Olympiakos Piraeus - Ajax 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1998-99",
+          "date": "10/25/1998",
+          "competition": "Eredivisie",
+          "match": "Ajax - Cambuur Leeuwarden 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "74"
+        },
+        {
+          "season": "1998-99",
+          "date": "10/29/1998",
+          "competition": "Dutch Cup",
+          "match": "Ajax - UDI '19 9 - 0 (6 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1998-99",
+          "date": "11/1/1998",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 0 - 4 (0 - 2)",
+          "active": "Bench",
+          "min": "15"
+        },
+        {
+          "season": "1998-99",
+          "date": "11/8/1998",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1998-99",
+          "date": "11/15/1998",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 2 - 2 (1 - 2)",
+          "active": "Bench",
+          "min": "1"
+        },
+        {
+          "season": "1998-99",
+          "date": "11/22/1998",
+          "competition": "Eredivisie",
+          "match": "RKC Waalwijk - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "76"
+        },
+        {
+          "season": "1998-99",
+          "date": "11/29/1998",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 3 - 2 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 17
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Manchester City",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/1998",
+          "amount": "€ 6,8M",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Derby County",
+          "type": "Loan start",
+          "start": "11/1/1999",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Derby County",
+          "type": "Transfer",
+          "start": "6/30/2000",
+          "amount": "€ 5M",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1998-99",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1999-00",
+          "contract type": "Contract",
+          "team": "Loan Out",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "11/1/1999",
+          "loan out to": "6/30/2000",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Giorgi Kinkladze"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1077-giorgi-kinkladze.jpg",
+        "alt": "Soccer player Giorgi Kinkladze",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/giorgi-kinkladze__e010f5020099.jpg",
+        "status": "downloaded",
+        "bytes": 32886,
+        "sha256": "e010f502009916c144102e493c310264f8501709827a9b9c1c3a4e335e6527d6",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:00.454Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name"
+    ]
+  }
+}

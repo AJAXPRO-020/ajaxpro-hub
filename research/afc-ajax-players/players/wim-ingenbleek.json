@@ -1,0 +1,665 @@
+{
+  "local_id": "afc_ajax_wim-ingenbleek",
+  "slug": "wim-ingenbleek",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/wim-ingenbleek",
+    "https://www.afc-ajax.info/en/player/wim-ingenbleek/statistics",
+    "https://www.afc-ajax.info/en/player/wim-ingenbleek/matches",
+    "https://www.afc-ajax.info/en/player/wim-ingenbleek/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/wim-ingenbleek",
+    "name": "Wim Ingenbleek",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": null,
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Forward)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": null,
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/henk-anderiesen",
+      "https://www.afc-ajax.info/en/player/joop-martens",
+      "https://www.afc-ajax.info/en/player/wim-anderiesen-sr",
+      "https://www.afc-ajax.info/en/player/jan-de-boer",
+      "https://www.afc-ajax.info/en/player/henk-twelker",
+      "https://www.afc-ajax.info/en/player/wim-volkers",
+      "https://www.afc-ajax.info/en/player/dolf-van-kol",
+      "https://www.afc-ajax.info/en/player/eddy-hamel",
+      "https://www.afc-ajax.info/en/player/theo-schetters",
+      "https://www.afc-ajax.info/en/player/cor-jurriaans"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1926-27",
+          "comp.": "1",
+          "play off": "4",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "5",
+          "friendly": "4",
+          "total": "9"
+        },
+        {
+          "season": "1927-28",
+          "comp.": "12",
+          "play off": "2",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "14",
+          "friendly": "",
+          "total": "14"
+        },
+        {
+          "season": "1928-29",
+          "comp.": "3",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "",
+          "total": "3"
+        },
+        {
+          "season": "Total",
+          "comp.": "16",
+          "play off": "6",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "22",
+          "friendly": "4",
+          "total": "26"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1926-27",
+          "comp.": "1",
+          "play off": "2",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "2",
+          "total": ""
+        },
+        {
+          "season": "1927-28",
+          "comp.": "8",
+          "play off": "2",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "10",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1928-29",
+          "comp.": "3",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "12",
+          "play off": "4",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "16",
+          "friendly": "2",
+          "total": "18"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "15",
+          "assists": "2",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "1"
+        },
+        {
+          "minute": "Totaal",
+          "goals": "16",
+          "assists": "2",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "1"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [
+        {
+          "assisted by": "Eddy Hamel",
+          "number": "3"
+        },
+        {
+          "assisted by": "Wout Iseger",
+          "number": "2"
+        },
+        {
+          "assisted by": "Henk Twelker",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "14"
+        },
+        {
+          "type": "Goal (header)",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "15"
+        },
+        {
+          "origin": "from free kick (indirect)",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 3
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1926-27",
+          "date": "2/27/1927",
+          "competition": "First Division",
+          "match": "Ajax - DFC 8 - 2 (6 - 0)",
+          "active": "Bench",
+          "min": "67"
+        },
+        {
+          "season": "1926-27",
+          "date": "3/6/1927",
+          "competition": "Friendly",
+          "match": "Nederlands Elftal - Ajax 3 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "1926-27",
+          "date": "3/13/1927",
+          "competition": "Friendly",
+          "match": "Ajax - Woking FC 5 - 2 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1926-27",
+          "date": "3/20/1927",
+          "competition": "Champions Competition",
+          "match": "Velocitas 1897 - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1926-27",
+          "date": "3/27/1927",
+          "competition": "Champions Competition",
+          "match": "Ajax - Feijenoord 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "69"
+        },
+        {
+          "season": "1926-27",
+          "date": "4/3/1927",
+          "competition": "Champions Competition",
+          "match": "NAC - Ajax 3 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1926-27",
+          "date": "4/17/1927",
+          "competition": "Friendly",
+          "match": "Ajax - Clapton FC 1 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1926-27",
+          "date": "4/26/1927",
+          "competition": "Friendly",
+          "match": "Clapton FC - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1926-27",
+          "date": "5/29/1927",
+          "competition": "Champions Competition",
+          "match": "Heracles - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1927-28",
+          "date": "10/2/1927",
+          "competition": "First Division",
+          "match": "VOC - Ajax 0 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1927-28",
+          "date": "10/9/1927",
+          "competition": "First Division",
+          "match": "Ajax - Excelsior 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1927-28",
+          "date": "10/16/1927",
+          "competition": "First Division",
+          "match": "RC Haarlem - Ajax 3 - 4 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1927-28",
+          "date": "10/23/1927",
+          "competition": "First Division",
+          "match": "Ajax - UVV 7 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1927-28",
+          "date": "10/30/1927",
+          "competition": "First Division",
+          "match": "VUC - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1927-28",
+          "date": "11/27/1927",
+          "competition": "First Division West I",
+          "match": "Excelsior - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1927-28",
+          "date": "12/4/1927",
+          "competition": "First Division West I",
+          "match": "Ajax - EDO 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1927-28",
+          "date": "12/11/1927",
+          "competition": "First Division",
+          "match": "DFC - Ajax 1 - 2 (0 - 0)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1927-28",
+          "date": "1/8/1928",
+          "competition": "First Division",
+          "match": "Ajax - RC Haarlem 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1927-28",
+          "date": "1/15/1928",
+          "competition": "First Division",
+          "match": "UVV - Ajax 0 - 5 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1927-28",
+          "date": "1/22/1928",
+          "competition": "First Division West I",
+          "match": "Ajax - VUC 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1927-28",
+          "date": "2/26/1928",
+          "competition": "First Division",
+          "match": "Ajax - Hilversum 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1927-28",
+          "date": "3/4/1928",
+          "competition": "First Division",
+          "match": "HBS - Ajax 1 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1927-28",
+          "date": "4/15/1928",
+          "competition": "Champions Competition",
+          "match": "ZAC - Ajax 2 - 6 (1 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1927-28",
+          "date": "4/29/1928",
+          "competition": "Champions Competition",
+          "match": "Ajax - Velocitas 1897 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1928-29",
+          "date": "9/9/1928",
+          "competition": "First Division",
+          "match": "Ajax - UVV 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1928-29",
+          "date": "9/30/1928",
+          "competition": "First Division",
+          "match": "Hermes DVS - Ajax 4 - 3 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1928-29",
+          "date": "12/9/1928",
+          "competition": "First Division",
+          "match": "RC Haarlem - Ajax 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1928-29",
+          "date": "12/30/1928",
+          "competition": "First Division",
+          "match": "Ajax - ADO 4 - 1 (2 - 1)",
+          "active": "Injured",
+          "min": ""
+        }
+      ],
+      "raw_row_count": 29
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1926-27",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1927-28",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1928-29",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Wim Ingenbleek"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1261-wim-ingenbleek.jpg",
+        "alt": "Soccer player Wim Ingenbleek",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/wim-ingenbleek__1ca6cc740547.jpg",
+        "status": "downloaded",
+        "bytes": 19696,
+        "sha256": "1ca6cc740547dab93671921717f6eb071555215e8aeddb00580ffdd7d7b7c375",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:07.116Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name"
+    ]
+  }
+}

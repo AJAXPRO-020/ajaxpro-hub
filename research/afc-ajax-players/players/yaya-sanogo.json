@@ -1,0 +1,524 @@
+{
+  "local_id": "afc_ajax_yaya-sanogo",
+  "slug": "yaya-sanogo",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/yaya-sanogo",
+    "https://www.afc-ajax.info/en/player/yaya-sanogo/statistics",
+    "https://www.afc-ajax.info/en/player/yaya-sanogo/matches",
+    "https://www.afc-ajax.info/en/player/yaya-sanogo/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/yaya-sanogo",
+    "name": "Yaya Sanogo",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1993-01-27",
+    "death_date": null,
+    "nationality": "France",
+    "roles": [
+      "Player (Forward)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Arsenal",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/lasse-schone",
+      "https://www.afc-ajax.info/en/player/daley-sinkgraven",
+      "https://www.afc-ajax.info/en/player/nemanja-gudelj",
+      "https://www.afc-ajax.info/en/player/davy-klaassen",
+      "https://www.afc-ajax.info/en/player/anwar-el-ghazi",
+      "https://www.afc-ajax.info/en/player/arek-milik",
+      "https://www.afc-ajax.info/en/player/jasper-cillessen",
+      "https://www.afc-ajax.info/en/player/kenny-tete",
+      "https://www.afc-ajax.info/en/player/joel-veltman",
+      "https://www.afc-ajax.info/en/player/jairo-riedewald"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2015-16",
+          "comp.": "3",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "6",
+          "friendly": "6",
+          "total": "12"
+        },
+        {
+          "season": "Total",
+          "comp.": "3",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "6",
+          "friendly": "6",
+          "total": "12"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2015-16",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "4",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "4",
+          "total": "4"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "2"
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "4"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "6"
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2015-16",
+          "date": "7/17/2015",
+          "competition": "Friendly",
+          "match": "Ajax - Vfl Wolfsburg (2) 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2015-16",
+          "date": "7/22/2015",
+          "competition": "Friendly",
+          "match": "Saint Etienne - Ajax 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "26"
+        },
+        {
+          "season": "2015-16",
+          "date": "7/29/2015",
+          "competition": "Champions League",
+          "match": "Rapid Wien - Ajax 2 - 2 (0 - 2)",
+          "active": "Bench",
+          "min": "6"
+        },
+        {
+          "season": "2015-16",
+          "date": "8/4/2015",
+          "competition": "Champions League",
+          "match": "Ajax - Rapid Wien 2 - 3 (0 - 2)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "2015-16",
+          "date": "8/9/2015",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 0 - 3 (0 - 3)",
+          "active": "Bench",
+          "min": "26"
+        },
+        {
+          "season": "2015-16",
+          "date": "8/10/2015",
+          "competition": "Friendly",
+          "match": "Ajax - Umm-Salal SC 6 - 1 (6 - 0)",
+          "active": "Start",
+          "min": "64"
+        },
+        {
+          "season": "2015-16",
+          "date": "8/15/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 3 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "8"
+        },
+        {
+          "season": "2015-16",
+          "date": "8/27/2015",
+          "competition": "Europa League",
+          "match": "FK Jablonec - Ajax 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "8/30/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO Den Haag 4 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "9/3/2015",
+          "competition": "Friendly",
+          "match": "Ajax - FC Volendam 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "9/12/2015",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 2 - 2 (1 - 0)",
+          "active": "Bench",
+          "min": "12"
+        },
+        {
+          "season": "2015-16",
+          "date": "10/17/2015",
+          "competition": "Eredivisie",
+          "match": "Heracles Almelo - Ajax 0 - 2 (0 - 2)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "10/22/2015",
+          "competition": "Europa League",
+          "match": "Fenerbahce - Ajax 1 - 0 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "10/25/2015",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 1 - 3 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "10/28/2015",
+          "competition": "Dutch Cup",
+          "match": "Feyenoord - Ajax 1 - 0 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "10/31/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC Kerkrade 6 - 0 (3 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "11/5/2015",
+          "competition": "Europa League",
+          "match": "Ajax - Fenerbahce 0 - 0 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "11/8/2015",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 1 - 1 (1 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "11/12/2015",
+          "competition": "Friendly",
+          "match": "Ajax - Almere City 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2015-16",
+          "date": "11/21/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Cambuur 5 - 1 (4 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "11/26/2015",
+          "competition": "Europa League",
+          "match": "Celtic - Ajax 1 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "10"
+        },
+        {
+          "season": "2015-16",
+          "date": "11/29/2015",
+          "competition": "Eredivisie",
+          "match": "PEC Zwolle - Ajax 0 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "12/5/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 5 - 2 (3 - 0)",
+          "active": "Ill",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "1/9/2016",
+          "competition": "Friendly",
+          "match": "Ajax - Hamburger SV 3 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "1/13/2016",
+          "competition": "Friendly",
+          "match": "Ajax - AZ 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "46"
+        }
+      ],
+      "raw_row_count": 26
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Arsenal",
+          "next club": "Ajax",
+          "type": "Loan start",
+          "start": "7/17/2015",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Arsenal",
+          "type": "Loan end",
+          "start": "2/1/2016",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2015-16",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "7/17/2015",
+          "contract to": "2/1/2016",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 3,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name",
+      "photo"
+    ]
+  }
+}

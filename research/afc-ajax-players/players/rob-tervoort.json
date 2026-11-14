@@ -1,0 +1,433 @@
+{
+  "local_id": "afc_ajax_rob-tervoort",
+  "slug": "rob-tervoort",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/rob-tervoort",
+    "https://www.afc-ajax.info/en/player/rob-tervoort/statistics",
+    "https://www.afc-ajax.info/en/player/rob-tervoort/matches",
+    "https://www.afc-ajax.info/en/player/rob-tervoort/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/rob-tervoort",
+    "name": "Rob Tervoort",
+    "full_name": "Robertus Tervoort",
+    "alternative_names": [],
+    "birth_date": "1956-07-19",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Keeper)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Tongeren",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/soren-lerby",
+      "https://www.afc-ajax.info/en/player/dick-schoenaker",
+      "https://www.afc-ajax.info/en/player/ruud-geels",
+      "https://www.afc-ajax.info/en/player/johan-zuidema",
+      "https://www.afc-ajax.info/en/player/hans-erkens",
+      "https://www.afc-ajax.info/en/player/pim-van-dord",
+      "https://www.afc-ajax.info/en/player/wim-suurbier",
+      "https://www.afc-ajax.info/en/player/simon-tahamata",
+      "https://www.afc-ajax.info/en/player/ruud-krol",
+      "https://www.afc-ajax.info/en/player/jan-everse"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1976-77",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": "2"
+        },
+        {
+          "season": "1977-78",
+          "comp.": "3",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "4",
+          "friendly": "1",
+          "total": "5"
+        },
+        {
+          "season": "1978-79",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        },
+        {
+          "season": "Total",
+          "comp.": "5",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "7",
+          "friendly": "1",
+          "total": "8"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1976-77",
+          "date": "5/8/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1976-77",
+          "date": "5/15/1977",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "8/27/1977",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "9/4/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 2 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "9/11/1977",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 4 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "9/14/1977",
+          "competition": "Europa Cup I",
+          "match": "Lillestrom SK - Ajax 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "5/27/1978",
+          "competition": "Friendly",
+          "match": "Barcelona - Ajax 3 - 1",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "1978-79",
+          "date": "4/18/1979",
+          "competition": "Dutch Cup",
+          "match": "FC Volendam - Ajax 3 - 3 (2 - 0)",
+          "active": "Bench",
+          "min": "48"
+        }
+      ],
+      "raw_row_count": 9
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "HSV Heilo",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/1975",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "Contract renewal",
+          "start": "7/1/1978",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Tongeren",
+          "type": "Transfer",
+          "start": "6/30/1979",
+          "amount": "€ 29,9K",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1975-76",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1976-77",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1977-78",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1978-79",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Rob Tervoort"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1296-rob-tervoort.jpg",
+        "alt": "Soccer player Rob Tervoort",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/rob-tervoort__a507cd69b2a6.jpg",
+        "status": "downloaded",
+        "bytes": 12600,
+        "sha256": "a507cd69b2a63a15264687a4d14c7615bc8dac028215db71c0f0190ba78d92d0",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:05.331Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date"
+    ]
+  }
+}

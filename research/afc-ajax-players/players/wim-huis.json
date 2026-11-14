@@ -1,0 +1,719 @@
+{
+  "local_id": "afc_ajax_wim-huis",
+  "slug": "wim-huis",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/wim-huis",
+    "https://www.afc-ajax.info/en/player/wim-huis/statistics",
+    "https://www.afc-ajax.info/en/player/wim-huis/matches",
+    "https://www.afc-ajax.info/en/player/wim-huis/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/wim-huis",
+    "name": "Wim Huis",
+    "full_name": "Willem Huis",
+    "alternative_names": [],
+    "birth_date": "1927-11-15",
+    "death_date": "2017-09-14",
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Forward)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Fortuna '54",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/gerrit-krist",
+      "https://www.afc-ajax.info/en/player/hans-boskamp",
+      "https://www.afc-ajax.info/en/player/klaas-bakker",
+      "https://www.afc-ajax.info/en/player/rinus-michels",
+      "https://www.afc-ajax.info/en/player/co-bouwens",
+      "https://www.afc-ajax.info/en/player/eddy-pieters-graafland",
+      "https://www.afc-ajax.info/en/player/bobby-haarms",
+      "https://www.afc-ajax.info/en/player/ger-van-mourik",
+      "https://www.afc-ajax.info/en/player/arend-van-der-wel",
+      "https://www.afc-ajax.info/en/player/ge-van-dijk"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1949-50",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        },
+        {
+          "season": "1950-51",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        },
+        {
+          "season": "1951-52",
+          "comp.": "",
+          "play off": "1",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        },
+        {
+          "season": "1952-53",
+          "comp.": "6",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "6",
+          "friendly": "1",
+          "total": "7"
+        },
+        {
+          "season": "1953-54",
+          "comp.": "19",
+          "play off": "1",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "20",
+          "friendly": "1",
+          "total": "21"
+        },
+        {
+          "season": "Total",
+          "comp.": "27",
+          "play off": "2",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "29",
+          "friendly": "2",
+          "total": "31"
+        }
+      ],
+      "raw_row_count": 7
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1952-53",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "1",
+          "total": ""
+        },
+        {
+          "season": "1953-54",
+          "comp.": "10",
+          "play off": "1",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "11",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "11",
+          "play off": "1",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "12",
+          "friendly": "1",
+          "total": "13"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "11",
+          "assists": "2",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "Totaal",
+          "goals": "12",
+          "assists": "2",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [
+        {
+          "assisted by": "Rinus Michels",
+          "number": "4"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "8"
+        },
+        {
+          "type": "Goal (header)",
+          "number": "4"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "from free kick (indirect)",
+          "number": "1"
+        },
+        {
+          "origin": "after unknown",
+          "number": "11"
+        }
+      ],
+      "raw_row_count": 3
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1949-50",
+          "date": "9/18/1949",
+          "competition": "First Division",
+          "match": "Ajax - RC Heemstede 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "9/24/1950",
+          "competition": "First Division B",
+          "match": "Ajax - Hengelo 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1951-52",
+          "date": "6/22/1952",
+          "competition": "Champions Competition",
+          "match": "Hermes DVS - Ajax 2 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "1952-53",
+          "date": "7/10/1952",
+          "competition": "Friendly",
+          "match": "Polizei SV Innsbruck - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "12/7/1952",
+          "competition": "First Division",
+          "match": "Ajax - Enschedese Boys 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "12/21/1952",
+          "competition": "First Division",
+          "match": "DOS - Ajax 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "5/10/1953",
+          "competition": "First Division",
+          "match": "Ajax - Frisia 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "5/17/1953",
+          "competition": "First Division",
+          "match": "Enschedese Boys - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "5/25/1953",
+          "competition": "First Division",
+          "match": "Ajax - DOS 2 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1952-53",
+          "date": "6/6/1953",
+          "competition": "First Division A",
+          "match": "Ajax - De Volewijckers 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "11/15/1953",
+          "competition": "First Division",
+          "match": "Be Quick - Ajax 1 - 5 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "11/29/1953",
+          "competition": "First Division",
+          "match": "Ajax - HFC Haarlem 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "12/6/1953",
+          "competition": "First Division",
+          "match": "DWS - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "12/13/1953",
+          "competition": "First Division",
+          "match": "Ajax - Zwolsche Boys 3 - 2 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "12/20/1953",
+          "competition": "First Division",
+          "match": "Elinkwijk - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "12/27/1953",
+          "competition": "First Division",
+          "match": "Ajax - RC Heemstede 7 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "1/17/1954",
+          "competition": "First Division",
+          "match": "NEC - Ajax 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "1/24/1954",
+          "competition": "First Division A",
+          "match": "Ajax - Wageningen 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "2/28/1954",
+          "competition": "First Division A",
+          "match": "Heracles - Ajax 1 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "3/14/1954",
+          "competition": "First Division",
+          "match": "Ajax - Leeuwarden 4 - 0 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "3/21/1954",
+          "competition": "First Division A",
+          "match": "Stormvogels - Ajax 2 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "3/28/1954",
+          "competition": "First Division A",
+          "match": "Ajax - Enschedese Boys 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "4/11/1954",
+          "competition": "First Division",
+          "match": "Oosterparkers - Ajax 2 - 6 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "4/19/1954",
+          "competition": "First Division",
+          "match": "Ajax - Be Quick 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "4/25/1954",
+          "competition": "First Division",
+          "match": "HFC Haarlem - Ajax 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "5/2/1954",
+          "competition": "First Division",
+          "match": "Ajax - DWS 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "5/9/1954",
+          "competition": "First Division A",
+          "match": "Zwolsche Boys - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "5/16/1954",
+          "competition": "First Division",
+          "match": "Ajax - Elinkwijk 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "5/23/1954",
+          "competition": "First Division",
+          "match": "RC Heemstede - Ajax 3 - 3 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "5/27/1954",
+          "competition": "First Division",
+          "match": "DWS - Ajax 5 - 2 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1953-54",
+          "date": "5/29/1954",
+          "competition": "Friendly",
+          "match": "Ajax - Blauw-Wit 4 - 2 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 32
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Ajax",
+          "next club": "Fortuna '54",
+          "type": "Transfer",
+          "start": "7/1/1954",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1949-50",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1950-51",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1951-52",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1952-53",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1953-54",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": null,
+      "headers": [
+        "lineup photos"
+      ],
+      "rows": [
+        {
+          "lineup photos": "RC Heemstede - Ajax 3 - 3 (5/23/1954)"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "photo"
+    ]
+  }
+}

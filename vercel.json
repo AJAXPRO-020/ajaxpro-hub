@@ -10,6 +10,10 @@
     "api/club-tools.ts": {
       "maxDuration": 60,
       "includeFiles": "assets/social-video/**"
+    },
+    "api/socials-card-video.ts": {
+      "maxDuration": 300,
+      "includeFiles": "{node_modules/ffmpeg-static/ffmpeg,assets/social-video/card-video-end.png}"
     }
   },
   "crons": [

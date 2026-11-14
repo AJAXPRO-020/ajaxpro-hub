@@ -1,0 +1,528 @@
+{
+  "local_id": "afc_ajax_guido-pen",
+  "slug": "guido-pen",
+  "collected_at": "2026-10-31T18:21:14.479Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/guido-pen",
+    "https://www.afc-ajax.info/en/player/guido-pen/statistics",
+    "https://www.afc-ajax.info/en/player/guido-pen/matches",
+    "https://www.afc-ajax.info/en/player/guido-pen/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/guido-pen",
+    "name": "Guido Pen",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1960-03-10",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Defender)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "SC Cambuur",
+    "external_links": [
+      {
+        "label": "Guido Pen",
+        "url": "http://nl.wikipedia.org/wiki/Guido_Pen"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/simon-tahamata",
+      "https://www.afc-ajax.info/en/player/piet-schrijvers",
+      "https://www.afc-ajax.info/en/player/soren-lerby",
+      "https://www.afc-ajax.info/en/player/dick-schoenaker",
+      "https://www.afc-ajax.info/en/player/frank-arnesen",
+      "https://www.afc-ajax.info/en/player/ruud-krol",
+      "https://www.afc-ajax.info/en/player/wim-meutstege",
+      "https://www.afc-ajax.info/en/player/henning-jensen",
+      "https://www.afc-ajax.info/en/player/piet-wijnberg",
+      "https://www.afc-ajax.info/en/player/jan-everse"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1978-79",
+          "comp.": "3",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "4",
+          "friendly": "",
+          "total": "4"
+        },
+        {
+          "season": "1979-80",
+          "comp.": "12",
+          "play off": "",
+          "dutch cup": "5",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "19",
+          "friendly": "",
+          "total": "19"
+        },
+        {
+          "season": "Total",
+          "comp.": "15",
+          "play off": "",
+          "dutch cup": "5",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "23",
+          "friendly": "",
+          "total": "23"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "2"
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "5"
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "2",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "7"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "2"
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "2",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "17"
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1978-79",
+          "date": "11/1/1978",
+          "competition": "UEFA Cup",
+          "match": "Lausanne Sports - Ajax 0 - 4 (0 - 3)",
+          "active": "Bench",
+          "min": "6"
+        },
+        {
+          "season": "1978-79",
+          "date": "4/21/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 3 - 2 (1 - 2)",
+          "active": "Bench",
+          "min": "20"
+        },
+        {
+          "season": "1978-79",
+          "date": "5/19/1979",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 1 - 3 (0 - 0)",
+          "active": "Bench",
+          "min": "5"
+        },
+        {
+          "season": "1978-79",
+          "date": "5/26/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Haag 4 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "54"
+        },
+        {
+          "season": "1979-80",
+          "date": "9/29/1979",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 4 - 0 (3 - 0)",
+          "active": "Bench",
+          "min": "10"
+        },
+        {
+          "season": "1979-80",
+          "date": "10/3/1979",
+          "competition": "Europa Cup I",
+          "match": "Ajax - HJK Helsinki 8 - 1 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "10/7/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 4 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "8"
+        },
+        {
+          "season": "1979-80",
+          "date": "10/14/1979",
+          "competition": "Dutch Cup",
+          "match": "HFC Haarlem - Ajax 2 - 4 (1 - 2)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1979-80",
+          "date": "11/3/1979",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 0 - 3 (0 - 1)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1979-80",
+          "date": "11/7/1979",
+          "competition": "Europa Cup I",
+          "match": "Omonia Nicosia - Ajax 4 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "11/11/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 4 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "11/24/1979",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 0 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": "12"
+        },
+        {
+          "season": "1979-80",
+          "date": "12/9/1979",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 3 - 4 (1 - 2)",
+          "active": "Bench",
+          "min": "16"
+        },
+        {
+          "season": "1979-80",
+          "date": "2/10/1980",
+          "competition": "Eredivisie",
+          "match": "HFC Haarlem - Ajax 1 - 3 (0 - 1)",
+          "active": "Bench",
+          "min": "10"
+        },
+        {
+          "season": "1979-80",
+          "date": "3/12/1980",
+          "competition": "Dutch Cup",
+          "match": "Roda JC - Ajax 4 - 4 (1 - 3)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1979-80",
+          "date": "3/23/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 3 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "27"
+        },
+        {
+          "season": "1979-80",
+          "date": "3/29/1980",
+          "competition": "Eredivisie",
+          "match": "PEC Zwolle - Ajax 3 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "28"
+        },
+        {
+          "season": "1979-80",
+          "date": "4/12/1980",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 1 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "20"
+        },
+        {
+          "season": "1979-80",
+          "date": "4/16/1980",
+          "competition": "Dutch Cup",
+          "match": "PSV - Ajax 1 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "4/20/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 3 - 6 (3 - 2)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1979-80",
+          "date": "4/29/1980",
+          "competition": "Dutch Cup",
+          "match": "Ajax - PSV 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "5/4/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "5/17/1980",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Feyenoord 1 - 3 (1 - 1)",
+          "active": "Bench",
+          "min": "14"
+        }
+      ],
+      "raw_row_count": 24
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Unknown",
+          "next club": "Vlug en Vaardig",
+          "type": "Unknown",
+          "start": "",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Vlug en Vaardig",
+          "next club": "SC Heerenveen",
+          "type": "Unknown",
+          "start": "",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "SC Heerenveen",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/1977",
+          "amount": "€ 11,3K",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "FC Den Haag",
+          "type": "Transfer",
+          "start": "7/1/1980",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "None",
+          "next club": "SC Cambuur",
+          "type": "New contract",
+          "start": "7/1/1985",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1977-78",
+          "contract type": "No Contract",
+          "team": "Youth",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1978-79",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1979-80",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 4
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name",
+      "photo"
+    ]
+  }
+}

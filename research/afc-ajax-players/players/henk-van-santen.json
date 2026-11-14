@@ -1,0 +1,616 @@
+{
+  "local_id": "afc_ajax_henk-van-santen",
+  "slug": "henk-van-santen",
+  "collected_at": "2026-10-31T18:21:14.479Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/henk-van-santen",
+    "https://www.afc-ajax.info/en/player/henk-van-santen/statistics",
+    "https://www.afc-ajax.info/en/player/henk-van-santen/matches",
+    "https://www.afc-ajax.info/en/player/henk-van-santen/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/henk-van-santen",
+    "name": "Henk van Santen",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1955-01-11",
+    "death_date": "2019-08-02",
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Midfielder)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "FC Twente",
+    "external_links": [
+      {
+        "label": "Henk van Santen",
+        "url": "http://nl.wikipedia.org/wiki/Henk_van_Santen"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/johnny-dusbaba",
+      "https://www.afc-ajax.info/en/player/ruud-geels",
+      "https://www.afc-ajax.info/en/player/gerrie-muhren",
+      "https://www.afc-ajax.info/en/player/arno-steffenhagen",
+      "https://www.afc-ajax.info/en/player/piet-schrijvers",
+      "https://www.afc-ajax.info/en/player/ruud-krol",
+      "https://www.afc-ajax.info/en/player/wim-suurbier",
+      "https://www.afc-ajax.info/en/player/willy-brokamp",
+      "https://www.afc-ajax.info/en/player/arie-haan",
+      "https://www.afc-ajax.info/en/player/johnny-rep"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1974-75",
+          "comp.": "15",
+          "play off": "2",
+          "dutch cup": "2",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "22",
+          "friendly": "2",
+          "total": "24"
+        },
+        {
+          "season": "1975-76",
+          "comp.": "5",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "9",
+          "friendly": "",
+          "total": "9"
+        },
+        {
+          "season": "Total",
+          "comp.": "20",
+          "play off": "2",
+          "dutch cup": "3",
+          "europa": "6",
+          "other off.": "",
+          "off. mat.": "31",
+          "friendly": "2",
+          "total": "33"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "2",
+          "substitute in": "5"
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "4"
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "3"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "3",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "3"
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "3",
+          "red": "",
+          "substitute out": "3",
+          "substitute in": "17"
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1974-75",
+          "date": "8/10/1974",
+          "competition": "Friendly",
+          "match": "Hertha BSC - Ajax 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1974-75",
+          "date": "8/14/1974",
+          "competition": "Friendly",
+          "match": "Lausanne Sports - Ajax 1 - 1",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1974-75",
+          "date": "9/1/1974",
+          "competition": "Eredivisie",
+          "match": "Ajax - Excelsior 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "66"
+        },
+        {
+          "season": "1974-75",
+          "date": "9/18/1974",
+          "competition": "UEFA Cup",
+          "match": "Stoke City - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1974-75",
+          "date": "9/22/1974",
+          "competition": "Eredivisie",
+          "match": "Telstar - Ajax 1 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1974-75",
+          "date": "9/28/1974",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "27"
+        },
+        {
+          "season": "1974-75",
+          "date": "10/2/1974",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Stoke City 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1974-75",
+          "date": "10/20/1974",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 6 - 1 (2 - 1)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1974-75",
+          "date": "10/27/1974",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1974-75",
+          "date": "11/3/1974",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 3 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "8"
+        },
+        {
+          "season": "1974-75",
+          "date": "11/24/1974",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Helmond Sport 8 - 0 (3 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1974-75",
+          "date": "12/1/1974",
+          "competition": "Eredivisie",
+          "match": "AZ '67 - Ajax 3 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "71"
+        },
+        {
+          "season": "1974-75",
+          "date": "12/11/1974",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Juventus 2 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "33"
+        },
+        {
+          "season": "1974-75",
+          "date": "12/15/1974",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1974-75",
+          "date": "12/22/1974",
+          "competition": "Eredivisie",
+          "match": "FC Den Haag - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1974-75",
+          "date": "12/29/1974",
+          "competition": "Dutch Cup",
+          "match": "SC Heracles '74 - Ajax 4 - 2 (regular time:2 - 2)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "1974-75",
+          "date": "1/19/1975",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 5 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "12"
+        },
+        {
+          "season": "1974-75",
+          "date": "2/16/1975",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 1 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1974-75",
+          "date": "2/23/1975",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Amsterdam 2 - 4 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1974-75",
+          "date": "3/2/1975",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1974-75",
+          "date": "3/31/1975",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "23"
+        },
+        {
+          "season": "1974-75",
+          "date": "5/11/1975",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1974-75",
+          "date": "8/13/1975",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 1 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1975-76",
+          "date": "8/16/1975",
+          "competition": "Eredivisie",
+          "match": "Sparta - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "1974-75",
+          "date": "8/26/1975",
+          "competition": "Eredivisie",
+          "match": "Sparta - Ajax 0 - 5 (0 - 3)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "1975-76",
+          "date": "9/13/1975",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 2 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "19"
+        },
+        {
+          "season": "1975-76",
+          "date": "10/12/1975",
+          "competition": "Dutch Cup",
+          "match": "NEC - Ajax 1 - 3 (1 - 1)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1975-76",
+          "date": "10/26/1975",
+          "competition": "Eredivisie",
+          "match": "FC Amsterdam - Ajax 0 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": "12"
+        },
+        {
+          "season": "1975-76",
+          "date": "11/5/1975",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Hertha BSC 4 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1975-76",
+          "date": "11/9/1975",
+          "competition": "Eredivisie",
+          "match": "Go Ahead Eagles - Ajax 1 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": "38"
+        },
+        {
+          "season": "1975-76",
+          "date": "11/16/1975",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 6 - 3 (3 - 1)",
+          "active": "Bench",
+          "min": "48"
+        },
+        {
+          "season": "1975-76",
+          "date": "11/26/1975",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Levski Sofia 2 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "28"
+        },
+        {
+          "season": "1975-76",
+          "date": "12/10/1975",
+          "competition": "UEFA Cup",
+          "match": "Levski Sofia - Ajax 2 - 1 (penalties: 5 - 3)",
+          "active": "Start",
+          "min": "46"
+        }
+      ],
+      "raw_row_count": 34
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Amstelland",
+          "next club": "Ajax",
+          "type": "Unknown",
+          "start": "",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "First contract",
+          "start": "7/1/1974",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "FC Twente",
+          "type": "Transfer",
+          "start": "7/1/1976",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1969-70",
+          "contract type": "Amateur",
+          "team": "Youth B1",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1974-75",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1975-76",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Henk van Santen (Ajax - Hertha (August 25, 1974))"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1092-henk-van-santen.jpg",
+        "alt": "Soccer player Henk van Santen",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/henk-van-santen__1f0e365983a9.jpg",
+        "status": "downloaded",
+        "bytes": 12635,
+        "sha256": "1f0e365983a97d4cd96e1d57bf49a291e5c9cf8fa33d21f59741fe37871cba0c",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:00.824Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "full_name"
+    ]
+  }
+}

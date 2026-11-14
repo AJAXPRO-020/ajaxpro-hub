@@ -1,0 +1,504 @@
+{
+  "local_id": "afc_ajax_michael-timisela",
+  "slug": "michael-timisela",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/michael-timisela",
+    "https://www.afc-ajax.info/en/player/michael-timisela/statistics",
+    "https://www.afc-ajax.info/en/player/michael-timisela/matches",
+    "https://www.afc-ajax.info/en/player/michael-timisela/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/michael-timisela",
+    "name": "Michael Timisela",
+    "full_name": "Michael Elias Timisela",
+    "alternative_names": [],
+    "birth_date": "1986-05-05",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Defender)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "VVV-Venlo",
+    "external_links": [
+      {
+        "label": "Michael Timisela",
+        "url": "http://nl.wikipedia.org/wiki/Michael_Timisela"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/jeffrey-sarpong",
+      "https://www.afc-ajax.info/en/player/markus-rosenberg",
+      "https://www.afc-ajax.info/en/player/klaas-jan-huntelaar",
+      "https://www.afc-ajax.info/en/player/mauro-rosales",
+      "https://www.afc-ajax.info/en/player/olaf-lindenbergh",
+      "https://www.afc-ajax.info/en/player/thomas-vermaelen",
+      "https://www.afc-ajax.info/en/player/maarten-stekelenburg",
+      "https://www.afc-ajax.info/en/player/nourdin-boukhari",
+      "https://www.afc-ajax.info/en/player/hedwiges-maduro",
+      "https://www.afc-ajax.info/en/player/urby-emanuelson"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2005-06",
+          "comp.": "4",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "4",
+          "friendly": "",
+          "total": "4"
+        },
+        {
+          "season": "Total",
+          "comp.": "4",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "4",
+          "friendly": "",
+          "total": "4"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2005-06",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "2"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "2"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [],
+      "raw_row_count": 1
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2005-06",
+          "date": "1/29/2006",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 1 - 4 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2005-06",
+          "date": "2/19/2006",
+          "competition": "Eredivisie",
+          "match": "Ajax - RBC Roosendaal 6 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "11"
+        },
+        {
+          "season": "2005-06",
+          "date": "2/22/2006",
+          "competition": "Champions League",
+          "match": "Ajax - Internazionale 2 - 2 (2 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2005-06",
+          "date": "2/26/2006",
+          "competition": "Eredivisie",
+          "match": "Heracles Almelo - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "87"
+        },
+        {
+          "season": "2005-06",
+          "date": "3/5/2006",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 6 - 0 (3 - 0)",
+          "active": "Bench",
+          "min": "8"
+        },
+        {
+          "season": "2005-06",
+          "date": "3/11/2006",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2005-06",
+          "date": "3/14/2006",
+          "competition": "Champions League",
+          "match": "Internazionale - Ajax 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2005-06",
+          "date": "3/19/2006",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 3 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2005-06",
+          "date": "3/22/2006",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Roda JC 4 - 1 (regular time:1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2005-06",
+          "date": "4/2/2006",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 2 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2005-06",
+          "date": "4/23/2006",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 2 - 4 (0 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2005-06",
+          "date": "4/26/2006",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        }
+      ],
+      "raw_row_count": 13
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Start",
+          "next club": "FC Abcoude",
+          "type": "Joins youth academy",
+          "start": "",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "FC Abcoude",
+          "next club": "Ajax",
+          "type": "Joins youth academy",
+          "start": "7/1/1999",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "First contract",
+          "start": "7/1/2005",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "VVV-Venlo",
+          "type": "Transfer",
+          "start": "7/1/2007",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "VVV-Venlo",
+          "next club": "None",
+          "type": "Contract ended",
+          "start": "7/1/2012",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2004-05",
+          "contract type": "No Contract",
+          "team": "Youth A1",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2005-06",
+          "contract type": "Contract",
+          "team": "Young",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2006-07",
+          "contract type": "Contract",
+          "team": "Young",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 4
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "photo"
+    ]
+  }
+}

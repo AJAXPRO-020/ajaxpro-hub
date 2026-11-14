@@ -1,0 +1,376 @@
+{
+  "local_id": "afc_ajax_ivan-gabrich",
+  "slug": "ivan-gabrich",
+  "collected_at": "2026-10-31T18:21:14.479Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/ivan-gabrich",
+    "https://www.afc-ajax.info/en/player/ivan-gabrich/statistics",
+    "https://www.afc-ajax.info/en/player/ivan-gabrich/matches",
+    "https://www.afc-ajax.info/en/player/ivan-gabrich/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/ivan-gabrich",
+    "name": "Iv&aacute;n Gabrich",
+    "full_name": "Iv&aacute;n C&eacute;sar Gabrich",
+    "alternative_names": [],
+    "birth_date": "1972-08-28",
+    "death_date": null,
+    "nationality": "Argentina",
+    "roles": [
+      "Player (Forward)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "UD Merida",
+    "external_links": [
+      {
+        "label": "Iv&aacute;n Gabrich",
+        "url": "http://nl.wikipedia.org/wiki/Ivan_Gabrich"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/marc-overmars",
+      "https://www.afc-ajax.info/en/player/edwin-van-der-sar",
+      "https://www.afc-ajax.info/en/player/nordin-wooter",
+      "https://www.afc-ajax.info/en/player/ronald-de-boer",
+      "https://www.afc-ajax.info/en/player/arnold-scholten",
+      "https://www.afc-ajax.info/en/player/frank-de-boer",
+      "https://www.afc-ajax.info/en/player/kiki-musampa",
+      "https://www.afc-ajax.info/en/player/tijjani-babangida",
+      "https://www.afc-ajax.info/en/player/dani",
+      "https://www.afc-ajax.info/en/player/mario-melchiot"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1996-97",
+          "comp.": "10",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "11",
+          "friendly": "",
+          "total": "11"
+        },
+        {
+          "season": "Total",
+          "comp.": "10",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "11",
+          "friendly": "",
+          "total": "11"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "2"
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "3"
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "2"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "9"
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1996-97",
+          "date": "9/8/1996",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "55"
+        },
+        {
+          "season": "1996-97",
+          "date": "9/22/1996",
+          "competition": "Eredivisie",
+          "match": "Ajax - De Graafschap 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1996-97",
+          "date": "9/29/1996",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1996-97",
+          "date": "10/13/1996",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 1 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": "22"
+        },
+        {
+          "season": "1996-97",
+          "date": "11/13/1996",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna Sittard 2 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "33"
+        },
+        {
+          "season": "1996-97",
+          "date": "11/17/1996",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 2 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "31"
+        },
+        {
+          "season": "1996-97",
+          "date": "11/24/1996",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 2 - 2 (2 - 1)",
+          "active": "Bench",
+          "min": "14"
+        },
+        {
+          "season": "1996-97",
+          "date": "11/27/1996",
+          "competition": "Dutch Cup",
+          "match": "SC Heracles '74 - Ajax 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "29"
+        },
+        {
+          "season": "1996-97",
+          "date": "12/8/1996",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 1 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "62"
+        },
+        {
+          "season": "1996-97",
+          "date": "2/23/1997",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 3 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "2"
+        },
+        {
+          "season": "1996-97",
+          "date": "4/13/1997",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "18"
+        }
+      ],
+      "raw_row_count": 12
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Newell's Old Boys",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/1996",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "UD Merida",
+          "type": "Transfer",
+          "start": "6/30/1997",
+          "amount": "€ 3M",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1996-97",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "photo"
+    ]
+  }
+}

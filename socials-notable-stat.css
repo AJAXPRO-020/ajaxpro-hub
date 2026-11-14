@@ -1,0 +1,11 @@
+/* Hallmark · v2.0.0 · component: notable stat · AjaxPro identity preserved */
+/* Critique: one number and one factual line should carry the card without new decoration. */
+.notable-stat-preview{position:relative;box-sizing:border-box;width:min(100%,480px);aspect-ratio:4/5;margin-inline:auto;overflow:hidden;background:var(--socials-ink)}
+.notable-stat-preview[data-aspect="vertical-9x16"]{aspect-ratio:9/16}
+.notable-stat-fields{display:grid;gap:16px}
+.notable-stat-fields label{display:grid;gap:8px;color:var(--socials-muted);font-size:.84rem;font-weight:700;font-variant-numeric:tabular-nums}
+.notable-stat-fields select,.notable-stat-fields input,.notable-stat-fields textarea{box-sizing:border-box;width:100%;min-width:0;min-height:44px;padding:12px;border:1px solid var(--socials-line-strong);border-radius:8px;background:var(--socials-ink);color:var(--socials-paper);font:inherit}
+.notable-stat-fields textarea{resize:vertical;line-height:1.4}
+.notable-stat-fields .socials-reset{justify-self:start;margin:0;padding-inline:0}
+.notable-stat-fields .socials-reset:active:not(:disabled){transform:translateY(1px)}
+.notable-stat-fields :is(select,input,textarea):focus-visible{outline:2px solid var(--socials-focus);outline-offset:2px}

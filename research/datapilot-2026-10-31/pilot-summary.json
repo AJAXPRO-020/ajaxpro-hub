@@ -1,0 +1,207 @@
+{
+  "generated_at": "2026-10-31",
+  "mode": "read-only",
+  "fotmob_touched": false,
+  "openfootball": {
+    "files": 9,
+    "total_ajax_records": 306,
+    "seasons": [
+      {
+        "season": "2018-19",
+        "ajax_records": 34,
+        "completed_scores": 34,
+        "wins": 28,
+        "draws": 2,
+        "losses": 4,
+        "goals_for": 119,
+        "goals_against": 32,
+        "source_url": "https://raw.githubusercontent.com/openfootball/football.json/master/2018-19/nl.1.json"
+      },
+      {
+        "season": "2019-20",
+        "ajax_records": 34,
+        "completed_scores": 25,
+        "wins": 18,
+        "draws": 2,
+        "losses": 5,
+        "goals_for": 68,
+        "goals_against": 23,
+        "source_url": "https://raw.githubusercontent.com/openfootball/football.json/master/2019-20/nl.1.json"
+      },
+      {
+        "season": "2020-21",
+        "ajax_records": 34,
+        "completed_scores": 34,
+        "wins": 28,
+        "draws": 4,
+        "losses": 2,
+        "goals_for": 102,
+        "goals_against": 23,
+        "source_url": "https://raw.githubusercontent.com/openfootball/football.json/master/2020-21/nl.1.json"
+      },
+      {
+        "season": "2021-22",
+        "ajax_records": 34,
+        "completed_scores": 34,
+        "wins": 26,
+        "draws": 5,
+        "losses": 3,
+        "goals_for": 98,
+        "goals_against": 19,
+        "source_url": "https://raw.githubusercontent.com/openfootball/football.json/master/2021-22/nl.1.json"
+      },
+      {
+        "season": "2022-23",
+        "ajax_records": 34,
+        "completed_scores": 34,
+        "wins": 20,
+        "draws": 9,
+        "losses": 5,
+        "goals_for": 86,
+        "goals_against": 38,
+        "source_url": "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/nl.1.json"
+      },
+      {
+        "season": "2023-24",
+        "ajax_records": 34,
+        "completed_scores": 34,
+        "wins": 15,
+        "draws": 11,
+        "losses": 8,
+        "goals_for": 74,
+        "goals_against": 61,
+        "source_url": "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/nl.1.json"
+      },
+      {
+        "season": "2024-25",
+        "ajax_records": 34,
+        "completed_scores": 34,
+        "wins": 24,
+        "draws": 6,
+        "losses": 4,
+        "goals_for": 67,
+        "goals_against": 32,
+        "source_url": "https://raw.githubusercontent.com/openfootball/football.json/master/2024-25/nl.1.json"
+      },
+      {
+        "season": "2025-26",
+        "ajax_records": 34,
+        "completed_scores": 32,
+        "wins": 14,
+        "draws": 12,
+        "losses": 6,
+        "goals_for": 62,
+        "goals_against": 41,
+        "source_url": "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26/nl.1.json"
+      },
+      {
+        "season": "2026-27",
+        "ajax_records": 34,
+        "completed_scores": 7,
+        "wins": 4,
+        "draws": 2,
+        "losses": 1,
+        "goals_for": 21,
+        "goals_against": 9,
+        "source_url": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/nl.1.json"
+      }
+    ],
+    "source_tree": "https://api.github.com/repos/openfootball/football.json/git/trees/master?recursive=1"
+  },
+  "wikidata": {
+    "requested_players": 25,
+    "linked_to_neon": 25,
+    "players_with_birth_date": 25,
+    "players_with_citizenship": 24,
+    "players_with_career_memberships": 19,
+    "total_career_memberships": 142,
+    "source_query": "wikidata-pilot.rq"
+  },
+  "uefa": {
+    "season": "2018/19",
+    "campaign_matches": 18,
+    "wins": 10,
+    "draws": 6,
+    "losses": 2,
+    "goals_for": 35,
+    "goals_against": 17,
+    "history_total_validated": true,
+    "player_stat_scope": "UEFA Champions League group stage to final (12 matches; qualifiers excluded)",
+    "neon_overlap_records": 0
+  },
+  "neon": {
+    "comparison_mode": "read-only",
+    "players_found": 25,
+    "dataset_coverage": [
+      {
+        "dataset": "motm_matches",
+        "records": 17,
+        "earliest": "2026-08-06T18:00:00.000Z",
+        "latest": "2026-10-31T20:00:00.000Z"
+      },
+      {
+        "dataset": "matchday_fixtures",
+        "records": 35,
+        "earliest": "2026-08-06T18:00:00.000Z",
+        "latest": "2027-05-23T12:30:00.000Z"
+      }
+    ],
+    "openfootball_2026_27": {
+      "openfootball_records": 34,
+      "neon_eredivisie_fixtures": 23,
+      "matched_fixtures": 20,
+      "duplicate_scores": 7,
+      "score_conflicts": 0
+    }
+  },
+  "missing_fields": [
+    {
+      "dataset": "OpenFootball",
+      "field": "lineups/player identities/events",
+      "status": "absent_in_source",
+      "impact": "cannot enrich player careers or match events"
+    },
+    {
+      "dataset": "OpenFootball 2026-27",
+      "field": "future/full-season results",
+      "status": "not_yet_available",
+      "impact": "file is live and only records currently published fixtures/results"
+    },
+    {
+      "dataset": "Wikidata",
+      "field": "career membership start/end dates",
+      "status": "partially_missing",
+      "impact": "many P54 statements lack one or both qualifiers"
+    },
+    {
+      "dataset": "Wikidata",
+      "field": "youth versus senior team classification",
+      "status": "not_explicit",
+      "impact": "must infer from team entity; do not import blindly"
+    },
+    {
+      "dataset": "UEFA 2018/19",
+      "field": "UEFA match id Ajax-Sturm Graz first leg",
+      "status": "not_confirmed",
+      "impact": "result verified, deep-link unavailable"
+    },
+    {
+      "dataset": "UEFA player stats",
+      "field": "qualifying-round player stats",
+      "status": "excluded_by_official_report_scope",
+      "impact": "player totals cover 12 group/knockout matches, not all 18 campaign matches"
+    },
+    {
+      "dataset": "Neon",
+      "field": "historical 2018/19 matches",
+      "status": "absent",
+      "impact": "0 overlap records; UEFA campaign is wholly new"
+    },
+    {
+      "dataset": "Neon ajax_players",
+      "field": "birth/citizenship/birthplace/career history/Wikidata QID",
+      "status": "absent",
+      "impact": "all are additive fields/relations"
+    }
+  ]
+}

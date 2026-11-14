@@ -1,0 +1,43 @@
+{
+  "source_url": "https://www.afc-ajax.info/en/overview/soccer-players",
+  "collected_at": "2026-10-31T18:10:09.220Z",
+  "index_unique_player_links": 1674,
+  "requested_profiles": 1674,
+  "complete_profiles": 1674,
+  "failed_url_entries": 0,
+  "players_with_statistics": 1016,
+  "players_with_match_tables": 1051,
+  "players_with_any_image_url": 481,
+  "photos_locally_downloaded": 0,
+  "photos_not_downloaded_rights_unclear": 481,
+  "total_statistics_rows": 26202,
+  "total_match_rows": 73966,
+  "detail_pages_per_profile": [
+    "profile",
+    "statistics",
+    "matches",
+    "transfers-and-media"
+  ],
+  "field_availability": {
+    "name": 1674,
+    "birth_date": 1344,
+    "death_date": 244,
+    "nationality": 1674,
+    "role": 1585,
+    "last_known_club": 1351,
+    "external_links": 1674,
+    "http_external_links": 575,
+    "wikipedia_links": 574
+  },
+  "missing_field_policy": "null for absent scalar values; empty arrays for absent collections; no inferred dates or zero statistics",
+  "image_policy": "AFC-hosted images are not downloaded because no reuse licence was established.",
+  "photo_download_round": {
+    "completed_at": "2026-10-31T18:37:08.130Z",
+    "unique_image_urls": 481,
+    "photos_locally_downloaded": 478,
+    "photos_failed": 3,
+    "total_bytes": 56806824,
+    "publication_permissions_established": 0,
+    "rights_status": "All local copies remain for research only; publication/reuse permission was not established."
+  }
+}

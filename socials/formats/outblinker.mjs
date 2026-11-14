@@ -19,7 +19,8 @@ export const outblinkerStats=[
   {id:"duelsWon",label:"Gewonnen duels"},
 ];
 
-const automaticOrder=["rating","goals","xg","shots","shotsOnTarget","assists","xa","xgot","chancesCreated","passes","passAccuracy","minutes","tackles","interceptions","recoveries","groundDuelsWon","aerialDuelsWon","duelsWon"];
+const automaticOrder=["rating","goals","assists","xg","chancesCreated","tackles","interceptions","shots","shotsOnTarget","xgot","xa","recoveries","duelsWon","groundDuelsWon","aerialDuelsWon","passes","passAccuracy","minutes"];
+const notableStats=["goals","assists","xg","xa","chancesCreated","tackles","interceptions","recoveries","duelsWon","groundDuelsWon","aerialDuelsWon"];
 const readTemplate=(root,selector)=>{const template=root.querySelector(selector);if(!template)return [];try{const value=JSON.parse(template.content.textContent||"[]");return Array.isArray(value)?value:[]}catch{return []}};
 const hasValue=value=>value!==null&&value!==undefined;
 const statFor=id=>outblinkerStats.find(stat=>stat.id===id)??null;
@@ -35,8 +36,21 @@ export const registryPlayerFor=(providerPlayer,registryPlayers)=>{
   const surname=expected.split(" ").at(-1),matches=registryPlayers.filter(player=>normalizeName(player?.name).split(" ").at(-1)===surname);
   return matches.length===1?matches[0]:null;
 };
-export const automaticStatsFor=player=>automaticOrder.filter(id=>hasValue(player?.[id])).slice(0,5);
+const positive=value=>hasValue(value)&&Number.isFinite(Number(value))&&Number(value)>0;
+export const automaticStatsFor=player=>{
+  if(!player)return [];
+  const selected=[];
+  if(hasValue(player.rating))selected.push("rating");
+  for(const id of notableStats){
+    const threshold=id==="xa"?0.1:id==="recoveries"?3:0;
+    if(positive(player[id])&&Number(player[id])>=threshold&&!selected.includes(id))selected.push(id);
+  }
+  for(const id of automaticOrder)if(positive(player[id])&&!selected.includes(id))selected.push(id);
+  for(const id of automaticOrder)if(hasValue(player[id])&&!selected.includes(id))selected.push(id);
+  return selected.slice(0,5);
+};
 export const hasUsableStats=player=>automaticStatsFor(player).length>0;
+export const bestRatedPlayer=players=>players.filter(player=>hasValue(player?.rating)&&Number.isFinite(Number(player.rating))).slice().sort((a,b)=>Number(b.rating)-Number(a.rating)||Number(b.minutes??-1)-Number(a.minutes??-1))[0]??null;
 export const displayStatValue=(player,id)=>{
   if(!player||!hasValue(player[id]))return "—";
   if(id==="passes")return hasValue(player.accuratePasses)?`${player.accuratePasses}/${player.passes}`:String(player.passes);
@@ -50,11 +64,11 @@ export const displayStatValue=(player,id)=>{
 export const initOutblinker=(root,sharedState)=>{
   const workspace=root.querySelector("[data-outblinker-workspace]"),fixtures=readTemplate(root,"template[data-socials-match-context]"),registryPlayers=readTemplate(root,"template[data-socials-players]");
   if(!workspace||!fixtures.length)return {activate(){},deactivate(){}};
-  const playerSelect=workspace.querySelector("[data-outblinker-player-select]"),statSelects=[...workspace.querySelectorAll("[data-outblinker-stat-slot]")],outputInputs=[...root.querySelectorAll('[name="social-output"]')],preview=workspace.querySelector("[data-outblinker-preview]"),status=workspace.querySelector("[data-outblinker-status]"),photoStatus=workspace.querySelector("[data-outblinker-photo-status]");
+  const playerSelect=workspace.querySelector("[data-outblinker-player-select]"),statSelects=[...workspace.querySelectorAll("[data-outblinker-stat-slot]")],resetAutomatic=workspace.querySelector("[data-outblinker-reset-automatic]"),outputInputs=[...root.querySelectorAll('[name="social-output"]')],preview=workspace.querySelector("[data-outblinker-preview]"),status=workspace.querySelector("[data-outblinker-status]"),photoStatus=workspace.querySelector("[data-outblinker-photo-status]");
   const selections=new Map();
-  let providerPlayers=[],selectedPlayerKey="";
+  let providerPlayers=[],selectedPlayerKey="",manualPlayerSelection=false;
   const fixtureForSelection=()=>fixtures.find(fixture=>fixture.fixture_key===sharedState.selectedFixtureKey)??fixtures[0];
-  const selectedPlayer=()=>providerPlayers.find(player=>providerKey(player)===selectedPlayerKey)??providerPlayers[0]??null;
+  const selectedPlayer=()=>providerPlayers.find(player=>providerKey(player)===selectedPlayerKey)??null;
   const selectionFor=player=>{if(!player)return [];const key=providerKey(player);if(!selections.has(key))selections.set(key,automaticStatsFor(player));return selections.get(key)};
   const availableStats=player=>outblinkerStats.filter(stat=>hasValue(player?.[stat.id]));
   const replaceOptions=(select,player,selected,index)=>{
@@ -65,7 +79,9 @@ export const initOutblinker=(root,sharedState)=>{
   const replacePlayers=()=>{
     const current=selectedPlayerKey;
     playerSelect.replaceChildren(...providerPlayers.map(player=>new Option(player.name,providerKey(player))));
-    selectedPlayerKey=providerPlayers.some(player=>providerKey(player)===current)?current:providerKey(providerPlayers[0]);
+    const automatic=bestRatedPlayer(providerPlayers);
+    if(!manualPlayerSelection&&!providerPlayers.some(player=>providerKey(player)===current)&&automatic)selectedPlayerKey=providerKey(automatic);
+    else selectedPlayerKey=providerPlayers.some(player=>providerKey(player)===current)?current:automatic?providerKey(automatic):"";
     playerSelect.value=selectedPlayerKey;playerSelect.disabled=!providerPlayers.length;
   };
   const syncPlayers=()=>{
@@ -86,6 +102,7 @@ export const initOutblinker=(root,sharedState)=>{
     photoStatus.dataset.state=registry?.imageUrl?"available":player?"missing":"idle";
     photoStatus.hidden=Boolean(registry?.imageUrl);
     statSelects.forEach((select,index)=>replaceOptions(select,usable?player:null,usable?selected:[],index));
+    if(resetAutomatic){resetAutomatic.disabled=!player||!usable;resetAutomatic.hidden=!player||!usable;}
     const photo=workspace.querySelector("[data-outblinker-photo]"),placeholder=workspace.querySelector("[data-outblinker-photo-placeholder]");
     if(registry?.imageUrl){photo.src=registry.imageUrl;photo.alt=`Foto van ${registry.name}`;photo.hidden=false;placeholder.hidden=true}else{photo.removeAttribute("src");photo.alt="";photo.hidden=true;placeholder.hidden=false}
     workspace.querySelector("[data-outblinker-name]").textContent=registry?.name??player?.name??"UITBLINKER";
@@ -95,13 +112,14 @@ export const initOutblinker=(root,sharedState)=>{
     if(output){preview.dataset.aspect=output.value;workspace.querySelector("[data-outblinker-preview-ratio]").textContent=output.value==="vertical-9x16"?"9:16":"4:5";workspace.querySelector("[data-outblinker-dimensions]").textContent=`${output.dataset.width} × ${output.dataset.height}`}
     root.dispatchEvent(new CustomEvent("socials:format-status-change",{detail:{formatId:"outblinker"}}));
   };
-  playerSelect.addEventListener("change",()=>{selectedPlayerKey=playerSelect.value;render()});
+  playerSelect.addEventListener("change",()=>{manualPlayerSelection=true;selectedPlayerKey=playerSelect.value;render()});
+  resetAutomatic?.addEventListener("click",()=>{const player=selectedPlayer();if(!player)return;selections.set(providerKey(player),automaticStatsFor(player));render()});
   statSelects.forEach((select,index)=>select.addEventListener("change",()=>{const player=selectedPlayer();if(!player)return;const selected=[...selectionFor(player)];if(select.value)selected[index]=select.value;else selected.splice(index,1);selections.set(providerKey(player),selected.filter(Boolean).slice(0,5));render()}));
-  root.addEventListener("socials:match-selection",()=>{providerPlayers=[];selectedPlayerKey="";replacePlayers();render()});
+  root.addEventListener("socials:match-selection",()=>{providerPlayers=[];selectedPlayerKey="";manualPlayerSelection=false;replacePlayers();render()});
   outputInputs.forEach(input=>input.addEventListener("change",render));
   root.addEventListener("socials:match-stats",event=>{if(event.detail?.fixtureKey===fixtureForSelection().fixture_key)render()});
   render();
-  return {activate:render,deactivate(){},reset(){selections.clear();selectedPlayerKey=providerKey(providerPlayers[0]);if(playerSelect)playerSelect.value=selectedPlayerKey;render()},getRequirementStatus(){const payload=sharedState.getMatchStats?.(fixtureForSelection().fixture_key),player=selectedPlayer(),registry=registryPlayerFor(player,registryPlayers);return {matchData:Boolean(fixtureForSelection()),matchStats:Boolean(payload),playerStats:hasUsableStats(player),playerPhoto:Boolean(registry?.imageUrl)}}};
+  return {activate:render,deactivate(){},reset(){selections.clear();selectedPlayerKey=providerKey(bestRatedPlayer(providerPlayers)??null);manualPlayerSelection=false;if(playerSelect)playerSelect.value=selectedPlayerKey;render()},getRequirementStatus(){const payload=sharedState.getMatchStats?.(fixtureForSelection().fixture_key),player=selectedPlayer(),registry=registryPlayerFor(player,registryPlayers);return {matchData:Boolean(fixtureForSelection()),matchStats:Boolean(payload),playerStats:hasUsableStats(player),playerPhoto:Boolean(registry?.imageUrl)}}};
 };
 
 export const outblinkerFormat={id:"outblinker",label:"Uitblinker",requirements:["matchData","matchStats","playerStats","playerPhoto"],init:initOutblinker};

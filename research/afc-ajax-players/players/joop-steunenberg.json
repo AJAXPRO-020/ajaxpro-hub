@@ -1,0 +1,444 @@
+{
+  "local_id": "afc_ajax_joop-steunenberg",
+  "slug": "joop-steunenberg",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/joop-steunenberg",
+    "https://www.afc-ajax.info/en/player/joop-steunenberg/statistics",
+    "https://www.afc-ajax.info/en/player/joop-steunenberg/matches",
+    "https://www.afc-ajax.info/en/player/joop-steunenberg/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/joop-steunenberg",
+    "name": "Joop Steunenberg",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": null,
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Unknown)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "ZSGO",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/piet-van-reenen",
+      "https://www.afc-ajax.info/en/player/wim-anderiesen-sr",
+      "https://www.afc-ajax.info/en/player/henk-blomvliet",
+      "https://www.afc-ajax.info/en/player/gerrit-keizer",
+      "https://www.afc-ajax.info/en/player/ko-loois",
+      "https://www.afc-ajax.info/en/player/jan-schubert",
+      "https://www.afc-ajax.info/en/player/erwin-van-wijngaarden",
+      "https://www.afc-ajax.info/en/player/gerrit-fischer",
+      "https://www.afc-ajax.info/en/player/dick-been",
+      "https://www.afc-ajax.info/en/player/jan-stam"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1935-36",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        },
+        {
+          "season": "1936-37",
+          "comp.": "2",
+          "play off": "1",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "2",
+          "total": "5"
+        },
+        {
+          "season": "1937-38",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": "2"
+        },
+        {
+          "season": "1938-39",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "3",
+          "total": "5"
+        },
+        {
+          "season": "Total",
+          "comp.": "5",
+          "play off": "1",
+          "dutch cup": "2",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "8",
+          "friendly": "5",
+          "total": "13"
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1935-36",
+          "date": "1/26/1936",
+          "competition": "First Division",
+          "match": "Hermes DVS - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "10/4/1936",
+          "competition": "First Division",
+          "match": "RC Heemstede - Ajax 2 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "11/10/1936",
+          "competition": "Friendly",
+          "match": "HFC Haarlem - Ajax",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "1/17/1937",
+          "competition": "First Division",
+          "match": "Ajax - Stormvogels 2 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "2/14/1937",
+          "competition": "EDO Jubileum Toernooi",
+          "match": "Ajax - HBS 3 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "3/21/1937",
+          "competition": "Champions Competition",
+          "match": "PSV - Ajax 2 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1937-38",
+          "date": "4/10/1938",
+          "competition": "Dutch Cup",
+          "match": "ZFC - Ajax 1 - 1",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1937-38",
+          "date": "5/1/1938",
+          "competition": "Dutch Cup",
+          "match": "Ajax - HRC 2 - 3 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1938-39",
+          "date": "8/21/1938",
+          "competition": "Frankendaal Beker",
+          "match": "Ajax - UVV 3 - 5 (2 - 1)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "1938-39",
+          "date": "8/27/1938",
+          "competition": "Friendly",
+          "match": "UVS - Ajax 0 - 3",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1938-39",
+          "date": "9/11/1938",
+          "competition": "Friendly",
+          "match": "Ajax - DWS 8 - 0 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1938-39",
+          "date": "9/25/1938",
+          "competition": "First Division",
+          "match": "DFC - Ajax 1 - 4 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1938-39",
+          "date": "10/2/1938",
+          "competition": "First Division",
+          "match": "Feijenoord - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 14
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Ajax",
+          "next club": "ZSGO",
+          "type": "Transfer",
+          "start": "7/1/1939",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1935-36",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1936-37",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1937-38",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1938-39",
+          "contract type": "Unknown",
+          "team": "II",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 5
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name",
+      "photo"
+    ]
+  }
+}

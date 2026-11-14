@@ -1,0 +1,857 @@
+{
+  "local_id": "afc_ajax_steef-klein",
+  "slug": "steef-klein",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/steef-klein",
+    "https://www.afc-ajax.info/en/player/steef-klein/statistics",
+    "https://www.afc-ajax.info/en/player/steef-klein/matches",
+    "https://www.afc-ajax.info/en/player/steef-klein/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/steef-klein",
+    "name": "Steef Klein",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": null,
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Midfielder)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "VVA",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/gerrit-keizer",
+      "https://www.afc-ajax.info/en/player/jan-potharst",
+      "https://www.afc-ajax.info/en/player/gerrit-fischer",
+      "https://www.afc-ajax.info/en/player/theo-brokmann-jr",
+      "https://www.afc-ajax.info/en/player/guus-drager",
+      "https://www.afc-ajax.info/en/player/ko-loois",
+      "https://www.afc-ajax.info/en/player/jany-van-der-veen",
+      "https://www.afc-ajax.info/en/player/ge-van-dijk",
+      "https://www.afc-ajax.info/en/player/joop-stoffelen",
+      "https://www.afc-ajax.info/en/player/joop-korndorffer"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1938-39",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "1",
+          "total": "1"
+        },
+        {
+          "season": "1939-40",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "2",
+          "total": "4"
+        },
+        {
+          "season": "1940-41",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "1",
+          "total": "1"
+        },
+        {
+          "season": "1941-42",
+          "comp.": "3",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "2",
+          "total": "5"
+        },
+        {
+          "season": "1942-43",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "3",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "5",
+          "friendly": "2",
+          "total": "7"
+        },
+        {
+          "season": "1943-44",
+          "comp.": "18",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "19",
+          "friendly": "4",
+          "total": "23"
+        },
+        {
+          "season": "1944-45",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "4",
+          "total": "4"
+        },
+        {
+          "season": "1945-46",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "1",
+          "total": "1"
+        },
+        {
+          "season": "Total",
+          "comp.": "25",
+          "play off": "",
+          "dutch cup": "4",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "29",
+          "friendly": "17",
+          "total": "46"
+        }
+      ],
+      "raw_row_count": 10
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1942-43",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "Totaal",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1938-39",
+          "date": "10/23/1938",
+          "competition": "Friendly",
+          "match": "Willem II - Ajax 4 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1939-40",
+          "date": "12/3/1939",
+          "competition": "First Division",
+          "match": "Ajax - HFC Haarlem 2 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1939-40",
+          "date": "4/7/1940",
+          "competition": "First Division",
+          "match": "ADO - Ajax 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1939-40",
+          "date": "7/2/1940",
+          "competition": "Kampioenschap Amsterdam",
+          "match": "DWV - Ajax 0 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1939-40",
+          "date": "7/9/1940",
+          "competition": "Kampioenschap Amsterdam",
+          "match": "Ajax - Blauw-Wit 1 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1940-41",
+          "date": "8/25/1940",
+          "competition": "AROL Cup",
+          "match": "Ajax - HBS 0 - 5",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "1941-42",
+          "date": "3/29/1942",
+          "competition": "First Division",
+          "match": "Stormvogels - Ajax 1 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1941-42",
+          "date": "4/6/1942",
+          "competition": "First Division West I",
+          "match": "Ajax - Xerxes 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1941-42",
+          "date": "4/12/1942",
+          "competition": "First Division West I",
+          "match": "EDO - Ajax 3 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1941-42",
+          "date": "5/10/1942",
+          "competition": "Friendly",
+          "match": "Willem II - Ajax 4 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1941-42",
+          "date": "5/17/1942",
+          "competition": "Friendly",
+          "match": "Vitesse - Ajax 2 - 5 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1942-43",
+          "date": "9/13/1942",
+          "competition": "First Division",
+          "match": "VSV - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1942-43",
+          "date": "9/27/1942",
+          "competition": "First Division",
+          "match": "Ajax - Feijenoord 2 - 3 (1 - 0)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "1942-43",
+          "date": "2/21/1943",
+          "competition": "Kampioenschap Amsterdam",
+          "match": "Blauw-Wit - Ajax 2 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1942-43",
+          "date": "3/20/1943",
+          "competition": "Kampioenschap Amsterdam",
+          "match": "Ajax - DWS 3 - 4 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1942-43",
+          "date": "6/14/1943",
+          "competition": "Dutch Cup",
+          "match": "Ajax - HSC 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1942-43",
+          "date": "6/20/1943",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Wageningen 8 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1942-43",
+          "date": "6/27/1943",
+          "competition": "Dutch Cup (Knockout)",
+          "match": "DFC - Ajax 2 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "8/22/1943",
+          "competition": "Zilveren Pont",
+          "match": "Ajax - Elinkwijk 6 - 2",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "8/29/1943",
+          "competition": "Zilveren Pont",
+          "match": "Ajax - De Volewijckers 5 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "9/12/1943",
+          "competition": "First Division",
+          "match": "Ajax - Emma 5 - 3 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "9/19/1943",
+          "competition": "First Division West II",
+          "match": "VSV - Ajax 4 - 2 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "9/26/1943",
+          "competition": "First Division West II",
+          "match": "Ajax - RFC 5 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "10/3/1943",
+          "competition": "First Division",
+          "match": "HFC Haarlem - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "10/10/1943",
+          "competition": "First Division West II",
+          "match": "Feijenoord - Ajax 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "10/17/1943",
+          "competition": "First Division West II",
+          "match": "Ajax - DHC 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "10/24/1943",
+          "competition": "First Division",
+          "match": "VUC - Ajax 2 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "10/31/1943",
+          "competition": "First Division West II",
+          "match": "Ajax - 't Gooi 1 - 4 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "11/7/1943",
+          "competition": "First Division",
+          "match": "Blauw-Wit - Ajax 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "11/21/1943",
+          "competition": "First Division West II",
+          "match": "Emma - Ajax 1 - 5 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "12/5/1943",
+          "competition": "First Division West II",
+          "match": "Ajax - VSV 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "12/12/1943",
+          "competition": "First Division West II",
+          "match": "RFC - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "1/9/1944",
+          "competition": "First Division West II",
+          "match": "Ajax - Feijenoord 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "1/16/1944",
+          "competition": "First Division",
+          "match": "Ajax - HFC Haarlem 5 - 2 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "1/30/1944",
+          "competition": "First Division",
+          "match": "Ajax - VUC 8 - 0 (5 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "2/6/1944",
+          "competition": "First Division",
+          "match": "DHC - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "2/13/1944",
+          "competition": "First Division",
+          "match": "'t Gooi - Ajax 1 - 5 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "2/20/1944",
+          "competition": "First Division",
+          "match": "Ajax - Blauw-Wit 1 - 3 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "4/30/1944",
+          "competition": "Friendly",
+          "match": "BVV - Ajax 4 - 2",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "5/7/1944",
+          "competition": "Dutch Cup",
+          "match": "Blauw-Wit - Ajax 3 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1943-44",
+          "date": "5/27/1944",
+          "competition": "Friendly",
+          "match": "Tegelsch Elftal - Ajax 4 - 5 (1 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1944-45",
+          "date": "8/20/1944",
+          "competition": "Friendly",
+          "match": "Ajax - DWS 6 - 2",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1944-45",
+          "date": "5/27/1945",
+          "competition": "Kampioenschap Amsterdam",
+          "match": "Ajax - DWS 6 - 4",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1944-45",
+          "date": "6/10/1945",
+          "competition": "Kampioenschap Amsterdam",
+          "match": "Blauw-Wit - Ajax 4 - 5",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1944-45",
+          "date": "6/17/1945",
+          "competition": "Kampioenschap Amsterdam",
+          "match": "Ajax - De Volewijckers 1 - 0",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1945-46",
+          "date": "7/28/1945",
+          "competition": "Friendly",
+          "match": "Feijenoord - Ajax 1 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 47
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Ajax",
+          "next club": "Vriendenschaar",
+          "type": "Transfer",
+          "start": "7/1/1945",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Vriendenschaar",
+          "next club": "VVA",
+          "type": "Transfer",
+          "start": "7/1/1949",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1938-39",
+          "contract type": "Unknown",
+          "team": "II",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1939-40",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1940-41",
+          "contract type": "Unknown",
+          "team": "II",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1941-42",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1942-43",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1943-44",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1944-45",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 8
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 5,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name",
+      "photo"
+    ]
+  }
+}

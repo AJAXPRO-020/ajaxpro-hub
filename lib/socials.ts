@@ -1,7 +1,7 @@
 export type SocialMatchContextRequirement = "required" | "optional" | "none";
 
 export type SocialFormatDefinition = {
-  id: "stats" | "outblinker" | "top-three" | "quote" | "video" | "ajax-vandaag";
+  id: "stats" | "shots-map" | "notable-stat" | "card-video" | "outblinker" | "top-three" | "quote" | "video" | "ajax-vandaag";
   title: string;
   description: string;
   matchContext: SocialMatchContextRequirement;
@@ -24,6 +24,9 @@ export type SocialThemeDefinition = {
 
 export const socialFormats: readonly SocialFormatDefinition[] = [
   {id:"stats",title:"Wedstrijd in cijfers",description:"Het wedstrijdverhaal in score, xG en vier kernstatistieken.",matchContext:"required",availability:"available"},
+  {id:"shots-map",title:"Schotenkaart",description:"Ajax-schoten op het veld.",matchContext:"required",availability:"available"},
+  {id:"notable-stat",title:"Opvallend cijfer",description:"Eén opvallend wedstrijdinzicht.",matchContext:"required",availability:"available"},
+  {id:"card-video",title:"Kaartvideo",description:"Drie bestaande kaarten als verticale MP4.",matchContext:"required",availability:"available"},
   {id:"video",title:"Wedstrijd in cijfers: video",description:"17 seconden wedstrijdstatistieken met muziek · 9:16 MP4.",matchContext:"required",availability:"available"},
   {id:"outblinker",title:"Uitblinker",description:"Eén Ajax-speler en zijn bepalende wedstrijdstatistieken.",matchContext:"required",availability:"available"},
   {id:"top-three",title:"Top 3 spelers",description:"Drie zelfgekozen Ajax-spelers in één editorial compositie.",matchContext:"required",availability:"available"},

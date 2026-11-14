@@ -1,0 +1,2543 @@
+{
+  "local_id": "afc_ajax_gert-bals",
+  "slug": "gert-bals",
+  "collected_at": "2026-10-31T18:21:14.479Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/gert-bals",
+    "https://www.afc-ajax.info/en/player/gert-bals/statistics",
+    "https://www.afc-ajax.info/en/player/gert-bals/matches",
+    "https://www.afc-ajax.info/en/player/gert-bals/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/gert-bals",
+    "name": "Gert Bals",
+    "full_name": "Gerrit Bals",
+    "alternative_names": [],
+    "birth_date": "1936-10-18",
+    "death_date": "2016-05-20",
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Keeper)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Vitesse",
+    "external_links": [
+      {
+        "label": "Gert Bals",
+        "url": "http://nl.wikipedia.org/wiki/Gerrit_Bals"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/sjaak-swart",
+      "https://www.afc-ajax.info/en/player/wim-suurbier",
+      "https://www.afc-ajax.info/en/player/piet-keizer",
+      "https://www.afc-ajax.info/en/player/johan-cruijff",
+      "https://www.afc-ajax.info/en/player/bennie-muller",
+      "https://www.afc-ajax.info/en/player/ton-pronk",
+      "https://www.afc-ajax.info/en/player/klaas-nuninga",
+      "https://www.afc-ajax.info/en/player/theo-van-duivenbode",
+      "https://www.afc-ajax.info/en/player/henk-groot",
+      "https://www.afc-ajax.info/en/player/velibor-vasovic"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1965-66",
+          "comp.": "30",
+          "play off": "",
+          "dutch cup": "4",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "34",
+          "friendly": "10",
+          "total": "44"
+        },
+        {
+          "season": "1966-67",
+          "comp.": "34",
+          "play off": "",
+          "dutch cup": "5",
+          "europa": "6",
+          "other off.": "",
+          "off. mat.": "45",
+          "friendly": "7",
+          "total": "52"
+        },
+        {
+          "season": "1967-68",
+          "comp.": "34",
+          "play off": "",
+          "dutch cup": "7",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "43",
+          "friendly": "12",
+          "total": "55"
+        },
+        {
+          "season": "1968-69",
+          "comp.": "32",
+          "play off": "",
+          "dutch cup": "3",
+          "europa": "14",
+          "other off.": "",
+          "off. mat.": "49",
+          "friendly": "7",
+          "total": "56"
+        },
+        {
+          "season": "1969-70",
+          "comp.": "32",
+          "play off": "",
+          "dutch cup": "3",
+          "europa": "10",
+          "other off.": "",
+          "off. mat.": "45",
+          "friendly": "5",
+          "total": "50"
+        },
+        {
+          "season": "Total",
+          "comp.": "162",
+          "play off": "",
+          "dutch cup": "22",
+          "europa": "32",
+          "other off.": "",
+          "off. mat.": "216",
+          "friendly": "41",
+          "total": "257"
+        }
+      ],
+      "raw_row_count": 7
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1965-66",
+          "date": "7/30/1965",
+          "competition": "Friendly",
+          "match": "Meidericher SV - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "8/7/1965",
+          "competition": "Friendly",
+          "match": "Ajax - Stoke City 5 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "8/15/1965",
+          "competition": "Friendly",
+          "match": "Holland Sport - Ajax 0 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "8/22/1965",
+          "competition": "Eredivisie",
+          "match": "Ajax - DOS 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "8/29/1965",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "9/2/1965",
+          "competition": "Friendly",
+          "match": "NEC - Ajax 1 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "9/5/1965",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "9/12/1965",
+          "competition": "Eredivisie",
+          "match": "Telstar - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "9/19/1965",
+          "competition": "Dutch Cup",
+          "match": "Ajax - De Volewijckers 5 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "9/26/1965",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "10/3/1965",
+          "competition": "Eredivisie",
+          "match": "SC Heracles - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "10/10/1965",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "10/21/1965",
+          "competition": "Friendly",
+          "match": "ZVV - Ajax 0 - 6 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "10/24/1965",
+          "competition": "Eredivisie",
+          "match": "DWS - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "10/31/1965",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna '54 5 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "11/7/1965",
+          "competition": "Dutch Cup",
+          "match": "ZFC - Ajax 0 - 3 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "11/28/1965",
+          "competition": "Eredivisie",
+          "match": "ADO - Ajax 2 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "12/5/1965",
+          "competition": "Eredivisie",
+          "match": "Ajax - GVAV 5 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "12/12/1965",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 1 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "12/19/1965",
+          "competition": "Friendly",
+          "match": "HFC Haarlem - Ajax 0 - 5 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "12/26/1965",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 3 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "1/2/1966",
+          "competition": "Dutch Cup",
+          "match": "Ajax - FC Zaanstreek 3 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "1/9/1966",
+          "competition": "Eredivisie",
+          "match": "Feijenoord - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "1/30/1966",
+          "competition": "Eredivisie",
+          "match": "Ajax - Elinkwijk 7 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "2/6/1966",
+          "competition": "Eredivisie",
+          "match": "DOS - Ajax 1 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "2/27/1966",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "3/6/1966",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "3/10/1966",
+          "competition": "Friendly",
+          "match": "AFC - Ajax 1 - 6 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "3/13/1966",
+          "competition": "Eredivisie",
+          "match": "Ajax - Telstar 6 - 2 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "3/20/1966",
+          "competition": "Eredivisie",
+          "match": "Go Ahead - Ajax 1 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "3/27/1966",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heracles 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "3/30/1966",
+          "competition": "Friendly",
+          "match": "Zwart Wit '28 - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "4/3/1966",
+          "competition": "Eredivisie",
+          "match": "Sparta - Ajax 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "4/9/1966",
+          "competition": "Eredivisie",
+          "match": "Ajax - DWS 2 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "4/11/1966",
+          "competition": "Eredivisie",
+          "match": "Fortuna '54 - Ajax 2 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "4/21/1966",
+          "competition": "Dutch Cup",
+          "match": "Go Ahead - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "4/24/1966",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO 5 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "5/1/1966",
+          "competition": "Eredivisie",
+          "match": "GVAV - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "5/8/1966",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 3 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "5/15/1966",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "5/18/1966",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feijenoord 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "5/22/1966",
+          "competition": "Eredivisie",
+          "match": "Elinkwijk - Ajax 3 - 3 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "6/8/1966",
+          "competition": "Friendly",
+          "match": "Cherno More - Ajax 3 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1965-66",
+          "date": "6/12/1966",
+          "competition": "Friendly",
+          "match": "Spain National Team - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "7/31/1966",
+          "competition": "Friendly",
+          "match": "AGOVV - Ajax 1 - 5 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "8/3/1966",
+          "competition": "Friendly",
+          "match": "Ajax - Aston Villa 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "8/7/1966",
+          "competition": "Friendly",
+          "match": "Ajax - CSKA Sofia 7 - 1 (5 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "8/14/1966",
+          "competition": "Eredivisie",
+          "match": "Elinkwijk - Ajax 0 - 7 (0 - 5)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "8/21/1966",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 4 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "8/28/1966",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "9/3/1966",
+          "competition": "Eredivisie",
+          "match": "Ajax - DWS 5 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "9/11/1966",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 2 - 4 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "9/22/1966",
+          "competition": "Friendly",
+          "match": "Ajax - Roodenburg 6 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "9/25/1966",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta 5 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "9/28/1966",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Besiktas 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "10/1/1966",
+          "competition": "Eredivisie",
+          "match": "Sittardia - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "10/5/1966",
+          "competition": "Europa Cup I",
+          "match": "Besiktas - Ajax 1 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "10/9/1966",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 3 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "10/16/1966",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 0 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "10/23/1966",
+          "competition": "Eredivisie",
+          "match": "Ajax - DOS 3 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "10/25/1966",
+          "competition": "Friendly",
+          "match": "Ajax - 1. FC Koln 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "10/30/1966",
+          "competition": "Eredivisie",
+          "match": "Go Ahead - Ajax 2 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "11/13/1966",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feijenoord 5 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "11/20/1966",
+          "competition": "Eredivisie",
+          "match": "Ajax - Telstar 4 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "11/27/1966",
+          "competition": "Eredivisie",
+          "match": "GVAV - Ajax 3 - 8 (0 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "12/7/1966",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Liverpool 5 - 1 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "12/11/1966",
+          "competition": "Eredivisie",
+          "match": "ADO - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "12/14/1966",
+          "competition": "Europa Cup I",
+          "match": "Liverpool - Ajax 2 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "12/18/1966",
+          "competition": "Eredivisie",
+          "match": "Ajax - Xerxes 4 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "12/26/1966",
+          "competition": "Eredivisie",
+          "match": "Ajax - Elinkwijk 8 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "1/8/1967",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "1/15/1967",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 6 - 1 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "1/22/1967",
+          "competition": "Eredivisie",
+          "match": "DWS - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "1/29/1967",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 8 - 3 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "2/1/1967",
+          "competition": "Friendly",
+          "match": "Anderlecht - Ajax 4 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "2/4/1967",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna '54 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "2/12/1967",
+          "competition": "Eredivisie",
+          "match": "Sparta - Ajax 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "2/19/1967",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sittardia 6 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "2/26/1967",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "3/1/1967",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Dukla Prague 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "3/8/1967",
+          "competition": "Europa Cup I",
+          "match": "Dukla Prague - Ajax 2 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "3/12/1967",
+          "competition": "Eredivisie",
+          "match": "DOS - Ajax 0 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "3/19/1967",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead 4 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "3/27/1967",
+          "competition": "Eredivisie",
+          "match": "Feijenoord - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "4/2/1967",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Feijenoord 3 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "4/9/1967",
+          "competition": "Eredivisie",
+          "match": "Telstar - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "4/18/1967",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 4 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "4/20/1967",
+          "competition": "Friendly",
+          "match": "Ajax - AFC 2 - 1",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "4/23/1967",
+          "competition": "Eredivisie",
+          "match": "Ajax - GVAV 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "4/30/1967",
+          "competition": "Eredivisie",
+          "match": "Fortuna '54 - Ajax 2 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "5/7/1967",
+          "competition": "Dutch Cup",
+          "match": "Ajax - DWS 7 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "5/15/1967",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO 5 - 3 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "5/18/1967",
+          "competition": "Dutch Cup",
+          "match": "DFC - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "5/21/1967",
+          "competition": "Eredivisie",
+          "match": "Xerxes - Ajax 0 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1966-67",
+          "date": "5/28/1967",
+          "competition": "Dutch Cup",
+          "match": "Go Ahead - Ajax 1 - 2 (regular time:1 - 1)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "1966-67",
+          "date": "6/7/1967",
+          "competition": "Dutch Cup",
+          "match": "Ajax - NAC 2 - 1 (regular time:1 - 1)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "1967-68",
+          "date": "8/3/1967",
+          "competition": "Friendly",
+          "match": "SC Cambuur - Ajax 1 - 2",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "8/6/1967",
+          "competition": "Friendly",
+          "match": "Ajax - Anderlecht 3 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "8/9/1967",
+          "competition": "Friendly",
+          "match": "Ajax - Everton 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "8/13/1967",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "8/20/1967",
+          "competition": "Eredivisie",
+          "match": "Telstar - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "8/23/1967",
+          "competition": "Friendly",
+          "match": "RFC Luik - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "8/27/1967",
+          "competition": "Eredivisie",
+          "match": "Ajax - DOS 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "9/3/1967",
+          "competition": "Eredivisie",
+          "match": "Feijenoord - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "9/10/1967",
+          "competition": "Eredivisie",
+          "match": "Ajax - RKSV Volendam 7 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "9/17/1967",
+          "competition": "Friendly",
+          "match": "Ajax - GSV 9 - 0 (5 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "9/20/1967",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Real Madrid 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "9/24/1967",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sittardia 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "9/28/1967",
+          "competition": "Friendly",
+          "match": "Ajax - Noordwijk 9 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "10/1/1967",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 0 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "10/7/1967",
+          "competition": "Friendly",
+          "match": "Ajax - VUC 5 - 0",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "10/11/1967",
+          "competition": "Europa Cup I",
+          "match": "Real Madrid - Ajax 2 - 1 (regular time:1 - 1)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "1967-68",
+          "date": "10/15/1967",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 1 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "10/19/1967",
+          "competition": "Eredivisie",
+          "match": "DWS - Ajax 1 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "10/22/1967",
+          "competition": "Eredivisie",
+          "match": "Ajax - Xerxes/DHC 5 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "10/29/1967",
+          "competition": "Eredivisie",
+          "match": "Sparta - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "11/5/1967",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 9 - 1 (5 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "11/8/1967",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "11/12/1967",
+          "competition": "Eredivisie",
+          "match": "GVAV - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "11/19/1967",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "11/22/1967",
+          "competition": "Friendly",
+          "match": "FC Den Bosch - Ajax 2 - 4",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "11/26/1967",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna '54 7 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "12/3/1967",
+          "competition": "Eredivisie",
+          "match": "ADO - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "12/7/1967",
+          "competition": "Friendly",
+          "match": "Ajax - Slovan Bratislava 5 - 1 (4 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "12/13/1967",
+          "competition": "Friendly",
+          "match": "Israel National Team - Ajax 1 - 6",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "12/17/1967",
+          "competition": "Eredivisie",
+          "match": "Go Ahead - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "12/24/1967",
+          "competition": "Eredivisie",
+          "match": "Ajax - Telstar 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "12/31/1967",
+          "competition": "Dutch Cup",
+          "match": "Ajax - De Volewijckers 4 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "1/7/1968",
+          "competition": "Eredivisie",
+          "match": "DOS - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "1/25/1968",
+          "competition": "Friendly",
+          "match": "Ajax - AZ '67 2 - 1",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "1/28/1968",
+          "competition": "Eredivisie",
+          "match": "RKSV Volendam - Ajax 1 - 4 (1 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "2/4/1968",
+          "competition": "Eredivisie",
+          "match": "Ajax - DWS 3 - 2 (3 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "2/11/1968",
+          "competition": "Eredivisie",
+          "match": "Sittardia - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "2/18/1968",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "2/25/1968",
+          "competition": "Dutch Cup",
+          "match": "SC Gooiland - Ajax 1 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "3/3/1968",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "3/10/1968",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feijenoord 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "3/17/1968",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "3/20/1968",
+          "competition": "Friendly",
+          "match": "MSV Duisburg - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "3/24/1968",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Blauw-Wit 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "3/31/1968",
+          "competition": "Eredivisie",
+          "match": "Xerxes/DHC - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "4/15/1968",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "4/21/1968",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "4/28/1968",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Velox 5 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "5/5/1968",
+          "competition": "Eredivisie",
+          "match": "Ajax - GVAV 3 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "5/12/1968",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "5/14/1968",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Elinkwijk 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "5/19/1968",
+          "competition": "Eredivisie",
+          "match": "Fortuna '54 - Ajax 1 - 4 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "5/23/1968",
+          "competition": "Dutch Cup",
+          "match": "Ajax - FC Twente 2 - 2 (penalties: 5 - 1)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "1967-68",
+          "date": "5/26/1968",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO 2 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1967-68",
+          "date": "6/3/1968",
+          "competition": "Dutch Cup",
+          "match": "ADO - Ajax 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "6/7/1968",
+          "competition": "Intertoto",
+          "match": "Ajax - Associazione Calcio Torino 3 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "7/28/1968",
+          "competition": "Slovan Bratislava 40",
+          "match": "Slovan Bratislava - Ajax 4 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "8/4/1968",
+          "competition": "Friendly",
+          "match": "Elinkwijk - Ajax 2 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "8/10/1968",
+          "competition": "Friendly",
+          "match": "Excelsior - Ajax 1 - 6 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "8/14/1968",
+          "competition": "Intertoto",
+          "match": "Ajax - Atletico Madrid 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "8/18/1968",
+          "competition": "Eredivisie",
+          "match": "Go Ahead - Ajax 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "8/25/1968",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 8 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "9/1/1968",
+          "competition": "Eredivisie",
+          "match": "Sparta - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "9/8/1968",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna SC 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "9/11/1968",
+          "competition": "Intertoto",
+          "match": "Associazione Calcio Torino - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1968-69",
+          "date": "9/14/1968",
+          "competition": "Dutch Cup",
+          "match": "PEC - Ajax 0 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "9/18/1968",
+          "competition": "Europa Cup I",
+          "match": "1. FC Nurnberg - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "9/22/1968",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "9/25/1968",
+          "competition": "Eredivisie",
+          "match": "DOS - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "10/2/1968",
+          "competition": "Europa Cup I",
+          "match": "Ajax - 1. FC Nurnberg 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "10/6/1968",
+          "competition": "Eredivisie",
+          "match": "Ajax - RKSV Volendam 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "10/13/1968",
+          "competition": "Eredivisie",
+          "match": "Holland Sport - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "10/20/1968",
+          "competition": "Eredivisie",
+          "match": "Ajax - Telstar 9 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "10/23/1968",
+          "competition": "Intertoto",
+          "match": "Atletico Madrid - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "10/30/1968",
+          "competition": "Friendly",
+          "match": "Manchester City - Ajax 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "11/3/1968",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 5 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "11/9/1968",
+          "competition": "Dutch Cup",
+          "match": "Ajax - De Volewijckers 5 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "11/13/1968",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Fenerbahce 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "11/17/1968",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feijenoord 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "11/24/1968",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 2 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "11/28/1968",
+          "competition": "Europa Cup I",
+          "match": "Fenerbahce - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "12/8/1968",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "12/11/1968",
+          "competition": "Eredivisie",
+          "match": "DWS - Ajax 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "12/15/1968",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ '67 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "12/26/1968",
+          "competition": "Eredivisie",
+          "match": "ADO - Ajax 2 - 5 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "1/5/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead 4 - 3 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "1/12/1969",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "1/19/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "1/26/1969",
+          "competition": "Eredivisie",
+          "match": "Fortuna SC - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "1/28/1969",
+          "competition": "Friendly",
+          "match": "Ajax - Militair 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "2/2/1969",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "2/6/1969",
+          "competition": "Friendly",
+          "match": "Ajax - AFC 2 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1968-69",
+          "date": "2/8/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - DOS 7 - 0 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "2/12/1969",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Benfica 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "2/19/1969",
+          "competition": "Europa Cup I",
+          "match": "Benfica - Ajax 1 - 3 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "3/1/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - Holland Sport 2 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "3/5/1969",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Benfica 3 - 0 (regular time:0 - 0)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "1968-69",
+          "date": "3/9/1969",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Feijenoord 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "3/23/1969",
+          "competition": "Friendly",
+          "match": "Ajax - Schalke '04 4 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "3/30/1969",
+          "competition": "Eredivisie",
+          "match": "RKSV Volendam - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "4/2/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - GVAV 6 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "4/7/1969",
+          "competition": "Eredivisie",
+          "match": "Telstar - Ajax 1 - 4 (1 - 2)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1968-69",
+          "date": "4/13/1969",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Spartak Trnava 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "4/20/1969",
+          "competition": "Eredivisie",
+          "match": "Feijenoord - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "4/24/1969",
+          "competition": "Europa Cup I",
+          "match": "Spartak Trnava - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "4/27/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "4/30/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "5/11/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - DWS 3 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "5/15/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 1 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "5/18/1969",
+          "competition": "Eredivisie",
+          "match": "AZ '67 - Ajax 0 - 3 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "5/22/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1968-69",
+          "date": "5/28/1969",
+          "competition": "Europa Cup I",
+          "match": "AC Milan - Ajax 4 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "7/20/1969",
+          "competition": "Friendly",
+          "match": "Bergeijk - Ajax 0 - 15 (0 - 6)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1969-70",
+          "date": "7/24/1969",
+          "competition": "Friendly",
+          "match": "Ajax - Ajax (2) 6 - 1",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "7/27/1969",
+          "competition": "Friendly",
+          "match": "Alemannia Aachen - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "8/2/1969",
+          "competition": "Friendly",
+          "match": "Hertha BSC - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "8/10/1969",
+          "competition": "Eredivisie",
+          "match": "GVAV - Ajax 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "8/17/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "8/24/1969",
+          "competition": "Eredivisie",
+          "match": "Sparta - Ajax 2 - 4 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "8/31/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "9/14/1969",
+          "competition": "Eredivisie",
+          "match": "AZ '67 - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "9/17/1969",
+          "competition": "Inter-Cities Fair Cup",
+          "match": "Hannover 96 - Ajax 2 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "9/21/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - HFC Haarlem 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "9/24/1969",
+          "competition": "Inter-Cities Fair Cup",
+          "match": "Ajax - Hannover 96 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "9/28/1969",
+          "competition": "Eredivisie",
+          "match": "Holland Sport - Ajax 1 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "10/5/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "10/12/1969",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "10/26/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - DOS 4 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "11/2/1969",
+          "competition": "Eredivisie",
+          "match": "Feijenoord - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "11/9/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 2 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "11/16/1969",
+          "competition": "Eredivisie",
+          "match": "DWS - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "11/19/1969",
+          "competition": "Inter-Cities Fair Cup",
+          "match": "Ajax - Ruch Chorzow 7 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "11/23/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - Telstar 4 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "11/26/1969",
+          "competition": "Inter-Cities Fair Cup",
+          "match": "Ruch Chorzow - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "11/30/1969",
+          "competition": "Eredivisie",
+          "match": "SVV - Ajax 0 - 6 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "12/7/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "12/10/1969",
+          "competition": "Inter-Cities Fair Cup",
+          "match": "Napoli - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "12/14/1969",
+          "competition": "Dutch Cup",
+          "match": "EDO - Ajax 0 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "1/4/1970",
+          "competition": "Friendly",
+          "match": "Zandvoort Meeuwen - Ajax 2 - 11 (0 - 5)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "1/18/1970",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "1/21/1970",
+          "competition": "Inter-Cities Fair Cup",
+          "match": "Ajax - Napoli 4 - 0 (regular time:1 - 0)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "1969-70",
+          "date": "2/1/1970",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "2/8/1970",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ '67 4 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "2/13/1970",
+          "competition": "Eredivisie",
+          "match": "Go Ahead - Ajax 1 - 3 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "2/25/1970",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "3/1/1970",
+          "competition": "Dutch Cup",
+          "match": "Vitesse - Ajax 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "3/4/1970",
+          "competition": "Inter-Cities Fair Cup",
+          "match": "Carl Zeiss Jena - Ajax 3 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "3/8/1970",
+          "competition": "Eredivisie",
+          "match": "HFC Haarlem - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "3/11/1970",
+          "competition": "Inter-Cities Fair Cup",
+          "match": "Ajax - Carl Zeiss Jena 5 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "3/15/1970",
+          "competition": "Eredivisie",
+          "match": "Ajax - Holland Sport 5 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "3/25/1970",
+          "competition": "Eredivisie",
+          "match": "Ajax - GVAV 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "3/30/1970",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "4/5/1970",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "4/8/1970",
+          "competition": "Inter-Cities Fair Cup",
+          "match": "Arsenal - Ajax 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "4/12/1970",
+          "competition": "Dutch Cup",
+          "match": "AZ '67 - Ajax 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "4/15/1970",
+          "competition": "Inter-Cities Fair Cup",
+          "match": "Ajax - Arsenal 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "4/19/1970",
+          "competition": "Eredivisie",
+          "match": "DOS - Ajax 1 - 7 (0 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "4/26/1970",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feijenoord 3 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "4/30/1970",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "5/3/1970",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "5/7/1970",
+          "competition": "Eredivisie",
+          "match": "Ajax - DWS 6 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "5/10/1970",
+          "competition": "Eredivisie",
+          "match": "Telstar - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 259
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Velox",
+          "next club": "Zeist",
+          "type": "Transfer",
+          "start": "7/1/1956",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Zeist",
+          "next club": "'t Gooi",
+          "type": "Transfer",
+          "start": "7/1/1957",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "'t Gooi",
+          "next club": "PSV",
+          "type": "Transfer",
+          "start": "7/1/1961",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "PSV",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/1965",
+          "amount": "€ 32,6K",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Vitesse",
+          "type": "Transfer",
+          "start": "6/30/1970",
+          "amount": "€ 45,4K",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Vitesse",
+          "next club": "None",
+          "type": "Retirement",
+          "start": "7/1/1973",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 7
+    },
+    {
+      "caption": "Special Action",
+      "headers": [
+        "date",
+        "type",
+        "remark"
+      ],
+      "rows": [
+        {
+          "date": "6/1/1970",
+          "type": "Transferlist",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1965-66",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1966-67",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1967-68",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1968-69",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1969-70",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Gert Bals (Ajax - Blauw-Wit (March 24, 1968))"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": null,
+      "headers": [
+        "lineup photos"
+      ],
+      "rows": [
+        {
+          "lineup photos": "Ajax - Stoke City 5 - 3 (8/7/1965)"
+        },
+        {
+          "lineup photos": "Feijenoord - Ajax 1 - 1 (1/9/1966)"
+        },
+        {
+          "lineup photos": "Ajax - ADO 2 - 1 (5/26/1968)"
+        },
+        {
+          "lineup photos": "Ajax - Go Ahead 4 - 0 (9/26/1965)"
+        },
+        {
+          "lineup photos": "Ajax - GVAV 0 - 1 (4/23/1967)"
+        },
+        {
+          "lineup photos": "Ajax - NAC 2 - 1 (6/7/1967)"
+        },
+        {
+          "lineup photos": "Go Ahead - Ajax 2 - 1 (8/18/1968)"
+        },
+        {
+          "lineup photos": "Elinkwijk - Ajax 0 - 7 (8/14/1966)"
+        },
+        {
+          "lineup photos": "Ajax - Blauw-Wit 1 - 0 (3/24/1968)"
+        }
+      ],
+      "raw_row_count": 10
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1075-gert-bals.jpg",
+        "alt": "Soccer player Gert Bals",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/gert-bals__8c0c0cf6a4a6.jpg",
+        "status": "downloaded",
+        "bytes": 12496,
+        "sha256": "8c0c0cf6a4a62fffb70691cd253922db745e576dd568e632e4a7087cf11ae00b",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:00.417Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 5,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": []
+  }
+}

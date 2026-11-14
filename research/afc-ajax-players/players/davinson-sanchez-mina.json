@@ -1,0 +1,864 @@
+{
+  "local_id": "afc_ajax_davinson-sanchez-mina",
+  "slug": "davinson-sanchez-mina",
+  "collected_at": "2026-10-31T18:16:29.411Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/davinson-sanchez-mina",
+    "https://www.afc-ajax.info/en/player/davinson-sanchez-mina/statistics",
+    "https://www.afc-ajax.info/en/player/davinson-sanchez-mina/matches",
+    "https://www.afc-ajax.info/en/player/davinson-sanchez-mina/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/davinson-sanchez-mina",
+    "name": "Davinson S&aacute;nchez",
+    "full_name": "Davinson S&aacute;nchez Mina",
+    "alternative_names": [],
+    "birth_date": "1996-06-12",
+    "death_date": null,
+    "nationality": "Colombia",
+    "roles": [
+      "Player (Defender)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Tottenham Hotspur",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/amin-younes",
+      "https://www.afc-ajax.info/en/player/andre-onana",
+      "https://www.afc-ajax.info/en/player/kasper-dolberg",
+      "https://www.afc-ajax.info/en/player/hakim-ziyech",
+      "https://www.afc-ajax.info/en/player/joel-veltman",
+      "https://www.afc-ajax.info/en/player/davy-klaassen",
+      "https://www.afc-ajax.info/en/player/lasse-schone",
+      "https://www.afc-ajax.info/en/player/nick-viergever",
+      "https://www.afc-ajax.info/en/player/bertrand-traore",
+      "https://www.afc-ajax.info/en/player/daley-sinkgraven"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2016-17",
+          "comp.": "32",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "13",
+          "other off.": "",
+          "off. mat.": "45",
+          "friendly": "1",
+          "total": "46"
+        },
+        {
+          "season": "2017-18",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "3",
+          "total": "5"
+        },
+        {
+          "season": "Total",
+          "comp.": "32",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "15",
+          "other off.": "",
+          "off. mat.": "47",
+          "friendly": "4",
+          "total": "51"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2016-17",
+          "comp.": "6",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "6",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "2017-18",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "6",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "7",
+          "friendly": "",
+          "total": "7"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "2",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "1",
+          "yellow": "2",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "1",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "3",
+          "assists": "1",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "2",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "1",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "7",
+          "assists": "2",
+          "yellow": "8",
+          "red": "",
+          "substitute out": "4",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [],
+      "raw_row_count": 1
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal (header)",
+          "number": "4"
+        },
+        {
+          "type": "Goal",
+          "number": "3"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "from corner (indirect)",
+          "number": "5"
+        },
+        {
+          "origin": "after attack",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 3
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2016-17",
+          "date": "8/13/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC Kerkrade 2 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "8/16/2016",
+          "competition": "Champions League",
+          "match": "Ajax - FC Rostov 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "8/20/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 1 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "8/24/2016",
+          "competition": "Champions League",
+          "match": "FC Rostov - Ajax 4 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "8/28/2016",
+          "competition": "Eredivisie",
+          "match": "Go Ahead Eagles - Ajax 0 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2016-17",
+          "date": "9/11/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - Vitesse 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "9/15/2016",
+          "competition": "Europa League",
+          "match": "Panathinaikos - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "9/18/2016",
+          "competition": "Eredivisie",
+          "match": "Heracles Almelo - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "9/21/2016",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Willem II 5 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "9/24/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - PEC Zwolle 5 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "9/29/2016",
+          "competition": "Europa League",
+          "match": "Ajax - Standard Luik 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "10/2/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 3 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "10/16/2016",
+          "competition": "Eredivisie",
+          "match": "ADO Den Haag - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "10/20/2016",
+          "competition": "Europa League",
+          "match": "Celta de Vigo - Ajax 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "10/23/2016",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "10/29/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - Excelsior 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "11/3/2016",
+          "competition": "Europa League",
+          "match": "Ajax - Celta de Vigo 3 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "11/6/2016",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "11/20/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 5 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "11/24/2016",
+          "competition": "Europa League",
+          "match": "Ajax - Panathinaikos 2 - 0 (1 - 0)",
+          "active": "Rested",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "11/27/2016",
+          "competition": "Eredivisie",
+          "match": "SC Heerenveen - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "12/4/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "12/8/2016",
+          "competition": "Europa League",
+          "match": "Standard Luik - Ajax 1 - 1 (0 - 1)",
+          "active": "Rested",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "12/11/2016",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "12/15/2016",
+          "competition": "Dutch Cup",
+          "match": "SC Cambuur - Ajax 2 - 1 (2 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "12/18/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "1/7/2017",
+          "competition": "Friendly",
+          "match": "Ajax - RB Leipzig 5 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "75"
+        },
+        {
+          "season": "2016-17",
+          "date": "1/15/2017",
+          "competition": "Eredivisie",
+          "match": "PEC Zwolle - Ajax 1 - 3 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "1/22/2017",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "73"
+        },
+        {
+          "season": "2016-17",
+          "date": "1/29/2017",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO Den Haag 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "2/5/2017",
+          "competition": "Eredivisie",
+          "match": "Roda JC Kerkrade - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "2/12/2017",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "2/16/2017",
+          "competition": "Europa League",
+          "match": "Legia Warschau - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "2/19/2017",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "2/23/2017",
+          "competition": "Europa League",
+          "match": "Ajax - Legia Warschau 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "2/26/2017",
+          "competition": "Eredivisie",
+          "match": "Ajax - Heracles Almelo 4 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "3/5/2017",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "78"
+        },
+        {
+          "season": "2016-17",
+          "date": "3/9/2017",
+          "competition": "Europa League",
+          "match": "FC Kopenhagen - Ajax 2 - 1 (1 - 1)",
+          "active": "Suspension",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "3/12/2017",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "3/16/2017",
+          "competition": "Europa League",
+          "match": "Ajax - FC Kopenhagen 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "3/19/2017",
+          "competition": "Eredivisie",
+          "match": "Excelsior - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2016-17",
+          "date": "4/2/2017",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "4/5/2017",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ 4 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "4/8/2017",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 1 - 5 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "4/13/2017",
+          "competition": "Europa League",
+          "match": "Ajax - Schalke '04 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "4/16/2017",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 5 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "4/20/2017",
+          "competition": "Europa League",
+          "match": "Schalke '04 - Ajax 3 - 2 (regular time:2 - 0)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "2016-17",
+          "date": "4/23/2017",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "5/3/2017",
+          "competition": "Europa League",
+          "match": "Ajax - Olympique Lyon 4 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "5/7/2017",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 4 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "5/11/2017",
+          "competition": "Europa League",
+          "match": "Olympique Lyon - Ajax 3 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "5/14/2017",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "5/24/2017",
+          "competition": "Europa League",
+          "match": "Ajax - Manchester United 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2017-18",
+          "date": "7/8/2017",
+          "competition": "Friendly",
+          "match": "Ajax - Werder Bremen 1 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "38"
+        },
+        {
+          "season": "2017-18",
+          "date": "7/15/2017",
+          "competition": "Friendly",
+          "match": "Ajax - Genk 3 - 3 (2 - 2)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "2017-18",
+          "date": "7/19/2017",
+          "competition": "Friendly",
+          "match": "Olympique Lyon - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2017-18",
+          "date": "7/26/2017",
+          "competition": "Champions League",
+          "match": "Nice - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2017-18",
+          "date": "8/2/2017",
+          "competition": "Champions League",
+          "match": "Ajax - Nice 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 59
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Atl&eacute;tico Nacional",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/2016",
+          "amount": "€ 5M",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Tottenham Hotspur",
+          "type": "Transfer",
+          "start": "8/18/2017",
+          "amount": "€ 42M",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2016-17",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2017-18",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "8/18/2017",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "photo"
+    ]
+  }
+}

@@ -1,0 +1,461 @@
+{
+  "local_id": "afc_ajax_wilco-van-buuren",
+  "slug": "wilco-van-buuren",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/wilco-van-buuren",
+    "https://www.afc-ajax.info/en/player/wilco-van-buuren/statistics",
+    "https://www.afc-ajax.info/en/player/wilco-van-buuren/matches",
+    "https://www.afc-ajax.info/en/player/wilco-van-buuren/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/wilco-van-buuren",
+    "name": "Wilco van Buuren",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1962-05-24",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Defender) - Youth coach"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "ADO Den Haag",
+    "external_links": [
+      {
+        "label": "Wilco van Buuren",
+        "url": "http://nl.wikipedia.org/wiki/Wilco_van_Buuren"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/marcel-van-buuren",
+      "https://www.afc-ajax.info/en/player/gerald-vanenburg",
+      "https://www.afc-ajax.info/en/player/peter-boeve",
+      "https://www.afc-ajax.info/en/player/ronald-koeman",
+      "https://www.afc-ajax.info/en/player/marco-van-basten",
+      "https://www.afc-ajax.info/en/player/felix-gasselich",
+      "https://www.afc-ajax.info/en/player/sonny-silooy",
+      "https://www.afc-ajax.info/en/player/hans-galje",
+      "https://www.afc-ajax.info/en/player/edo-ophof",
+      "https://www.afc-ajax.info/en/player/john-bosman",
+      "https://www.afc-ajax.info/en/player/john-van-t-schip"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1983-84",
+          "comp.": "7",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "7",
+          "friendly": "",
+          "total": "7"
+        },
+        {
+          "season": "1984-85",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "4",
+          "friendly": "",
+          "total": "4"
+        },
+        {
+          "season": "Total",
+          "comp.": "9",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "11",
+          "friendly": "",
+          "total": "11"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "2"
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "4"
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "4"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "10"
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1983-84",
+          "date": "8/21/1983",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 1 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "10"
+        },
+        {
+          "season": "1983-84",
+          "date": "8/24/1983",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 5 - 0 (3 - 0)",
+          "active": "Bench",
+          "min": "10"
+        },
+        {
+          "season": "1983-84",
+          "date": "3/25/1984",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 1 - 5 (0 - 2)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "1983-84",
+          "date": "4/1/1984",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Bosch 5 - 2 (3 - 2)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1983-84",
+          "date": "4/8/1984",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 3 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "17"
+        },
+        {
+          "season": "1983-84",
+          "date": "4/15/1984",
+          "competition": "Eredivisie",
+          "match": "AZ '67 - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1983-84",
+          "date": "5/6/1984",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 5 - 2 (2 - 1)",
+          "active": "Bench",
+          "min": "23"
+        },
+        {
+          "season": "1984-85",
+          "date": "9/26/1984",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 1 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "2"
+        },
+        {
+          "season": "1984-85",
+          "date": "10/24/1984",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Bohemians Prague 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "26"
+        },
+        {
+          "season": "1984-85",
+          "date": "11/4/1984",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "1"
+        },
+        {
+          "season": "1984-85",
+          "date": "12/11/1984",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Heerjansdam 6 - 0 (4 - 0)",
+          "active": "Bench",
+          "min": "37"
+        }
+      ],
+      "raw_row_count": 12
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "DHC",
+          "next club": "Ajax",
+          "type": "Joins youth academy",
+          "start": "7/1/1983",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "First contract",
+          "start": "7/1/1984",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "PEC Zwolle '82",
+          "type": "Loan start",
+          "start": "7/1/1984",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "PEC Zwolle '82",
+          "type": "Transfer",
+          "start": "7/1/1985",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "PEC Zwolle '82",
+          "next club": "Willem II",
+          "type": "Transfer",
+          "start": "7/1/1988",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Willem II",
+          "next club": "FC Den Haag",
+          "type": "Transfer",
+          "start": "7/1/1989",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "FC Den Haag",
+          "next club": "None",
+          "type": "Retirement",
+          "start": "7/1/1990",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 8
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1983-84",
+          "contract type": "Youth contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1984-85",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Other Role)",
+      "headers": [
+        "season",
+        "role",
+        "contract type",
+        "contract from",
+        "contract to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2006-07",
+          "role": "Youth coach",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name",
+      "photo"
+    ]
+  }
+}

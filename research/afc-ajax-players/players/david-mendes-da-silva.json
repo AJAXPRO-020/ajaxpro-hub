@@ -1,0 +1,344 @@
+{
+  "local_id": "afc_ajax_david-mendes-da-silva",
+  "slug": "david-mendes-da-silva",
+  "collected_at": "2026-10-31T18:16:29.411Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/david-mendes-da-silva",
+    "https://www.afc-ajax.info/en/player/david-mendes-da-silva/statistics",
+    "https://www.afc-ajax.info/en/player/david-mendes-da-silva/matches",
+    "https://www.afc-ajax.info/en/player/david-mendes-da-silva/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/david-mendes-da-silva",
+    "name": "David Mendes da Silva",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1982-08-04",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Midfielder)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "AZ",
+    "external_links": [
+      {
+        "label": "David Mendes da Silva",
+        "url": "http://nl.wikipedia.org/wiki/David_Mendes_da_Silva"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": []
+  },
+  "statistics": [
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2002-03",
+          "date": "4/5/2003",
+          "competition": "Eredivisie",
+          "match": "Ajax - RBC Roosendaal 4 - 1 (3 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2002-03",
+          "date": "4/13/2003",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 0 - 3 (0 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2002-03",
+          "date": "4/16/2003",
+          "competition": "Dutch Cup",
+          "match": "Feyenoord - Ajax 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2002-03",
+          "date": "4/19/2003",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 4 - 2 (3 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2002-03",
+          "date": "5/18/2003",
+          "competition": "Eredivisie",
+          "match": "Ajax - De Graafschap 7 - 1 (2 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2002-03",
+          "date": "5/25/2003",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 1 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2002-03",
+          "date": "5/29/2003",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 3 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        }
+      ],
+      "raw_row_count": 8
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Start",
+          "next club": "Sparta Rotterdam",
+          "type": "Unknown",
+          "start": "7/1/1999",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Sparta Rotterdam",
+          "next club": "Ajax",
+          "type": "Loan start",
+          "start": "12/18/2002",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Sparta Rotterdam",
+          "type": "Loan end",
+          "start": "7/1/2003",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Sparta Rotterdam",
+          "next club": "NAC Breda",
+          "type": "Transfer",
+          "start": "7/1/2004",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "NAC Breda",
+          "next club": "AZ",
+          "type": "Transfer",
+          "start": "7/1/2006",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2002-03",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "12/18/2002",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "David Mendes da Silva"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1035-david-mendes-da-silva.jpg",
+        "alt": "Soccer player David Mendes da Silva",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/david-mendes-da-silva__b6e233112326.jpg",
+        "status": "downloaded",
+        "bytes": 69759,
+        "sha256": "b6e23311232638a8ea7235db92ebbfe8cd50f51d9281b961063a7e7de4d059e6",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:36:58.858Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 1,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name"
+    ]
+  }
+}

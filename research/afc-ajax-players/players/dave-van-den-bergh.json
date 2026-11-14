@@ -1,0 +1,538 @@
+{
+  "local_id": "afc_ajax_dave-van-den-bergh",
+  "slug": "dave-van-den-bergh",
+  "collected_at": "2026-10-31T18:16:29.411Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/dave-van-den-bergh",
+    "https://www.afc-ajax.info/en/player/dave-van-den-bergh/statistics",
+    "https://www.afc-ajax.info/en/player/dave-van-den-bergh/matches",
+    "https://www.afc-ajax.info/en/player/dave-van-den-bergh/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/dave-van-den-bergh",
+    "name": "Dave van den Bergh",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1976-05-07",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Forward)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Utrecht",
+    "external_links": [
+      {
+        "label": "Dave van den Bergh",
+        "url": "http://nl.wikipedia.org/wiki/Dave_van_den_Bergh"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/edwin-van-der-sar",
+      "https://www.afc-ajax.info/en/player/frank-de-boer",
+      "https://www.afc-ajax.info/en/player/arnold-scholten",
+      "https://www.afc-ajax.info/en/player/nordin-wooter",
+      "https://www.afc-ajax.info/en/player/ronald-de-boer",
+      "https://www.afc-ajax.info/en/player/kiki-musampa",
+      "https://www.afc-ajax.info/en/player/danny-blind",
+      "https://www.afc-ajax.info/en/player/winston-bogarde",
+      "https://www.afc-ajax.info/en/player/mario-melchiot",
+      "https://www.afc-ajax.info/en/player/patrick-kluivert"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1995-96",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "4",
+          "friendly": "",
+          "total": "4"
+        },
+        {
+          "season": "1996-97",
+          "comp.": "9",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "10",
+          "friendly": "",
+          "total": "10"
+        },
+        {
+          "season": "Total",
+          "comp.": "11",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "14",
+          "friendly": "",
+          "total": "14"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1996-97",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "4"
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "2",
+          "substitute in": "3"
+        },
+        {
+          "minute": "76-90",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "3"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "3",
+          "substitute in": "10"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1995-96",
+          "date": "2/6/1996",
+          "competition": "UEFA Super Cup",
+          "match": "Real Zaragoza - Ajax 1 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "39"
+        },
+        {
+          "season": "1995-96",
+          "date": "2/25/1996",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 6 - 2 (2 - 0)",
+          "active": "Bench",
+          "min": "13"
+        },
+        {
+          "season": "1995-96",
+          "date": "2/28/1996",
+          "competition": "UEFA Super Cup",
+          "match": "Ajax - Real Zaragoza 4 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "5"
+        },
+        {
+          "season": "1995-96",
+          "date": "3/30/1996",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 2 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "16"
+        },
+        {
+          "season": "1995-96",
+          "date": "5/22/1996",
+          "competition": "Champions League",
+          "match": "Juventus - Ajax 1 - 1 (penalties: 4 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "1996-97",
+          "date": "10/27/1996",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 1 - 4 (1 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1996-97",
+          "date": "11/17/1996",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 2 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "16"
+        },
+        {
+          "season": "1996-97",
+          "date": "11/27/1996",
+          "competition": "Dutch Cup",
+          "match": "SC Heracles '74 - Ajax 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "22"
+        },
+        {
+          "season": "1996-97",
+          "date": "12/8/1996",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 1 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "14"
+        },
+        {
+          "season": "1996-97",
+          "date": "3/23/1997",
+          "competition": "Eredivisie",
+          "match": "RKC Waalwijk - Ajax 1 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1996-97",
+          "date": "4/6/1997",
+          "competition": "Eredivisie",
+          "match": "FC Volendam - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "63"
+        },
+        {
+          "season": "1996-97",
+          "date": "4/18/1997",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 5 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1996-97",
+          "date": "5/4/1997",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "61"
+        },
+        {
+          "season": "1996-97",
+          "date": "5/7/1997",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "51"
+        },
+        {
+          "season": "1996-97",
+          "date": "5/11/1997",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 2 - 1 (2 - 1)",
+          "active": "Bench",
+          "min": "44"
+        }
+      ],
+      "raw_row_count": 16
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Unknown",
+          "next club": "Ajax",
+          "type": "Joins youth academy",
+          "start": "",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "First contract",
+          "start": "7/1/1995",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Rayo Vallecano",
+          "type": "Transfer",
+          "start": "7/1/1997",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Rayo Vallecano",
+          "next club": "Utrecht",
+          "type": "Transfer",
+          "start": "7/1/2000",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1995-96",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1996-97",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Dave van den Bergh"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1034-dave-van-den-bergh.jpg",
+        "alt": "Soccer player Dave van den Bergh",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/dave-van-den-bergh__fb8b897ce69e.jpg",
+        "status": "downloaded",
+        "bytes": 29704,
+        "sha256": "fb8b897ce69eccc2bc98a604b431ecbed0745dd11449e563a3597d9044dd6f25",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:36:58.738Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 5,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name"
+    ]
+  }
+}

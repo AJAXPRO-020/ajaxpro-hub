@@ -1,0 +1,424 @@
+{
+  "local_id": "afc_ajax_hans-winter",
+  "slug": "hans-winter",
+  "collected_at": "2026-10-31T18:21:14.479Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/hans-winter",
+    "https://www.afc-ajax.info/en/player/hans-winter/statistics",
+    "https://www.afc-ajax.info/en/player/hans-winter/matches",
+    "https://www.afc-ajax.info/en/player/hans-winter/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/hans-winter",
+    "name": "Hans Winter",
+    "full_name": "Hans Walter",
+    "alternative_names": [],
+    "birth_date": "1928-02-11",
+    "death_date": "2018-03-11",
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Forward)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Go Ahead Eagles",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/ge-van-dijk",
+      "https://www.afc-ajax.info/en/player/ger-van-mourik",
+      "https://www.afc-ajax.info/en/player/cor-geelhuizen",
+      "https://www.afc-ajax.info/en/player/eddy-pieters-graafland",
+      "https://www.afc-ajax.info/en/player/sjaak-brokx",
+      "https://www.afc-ajax.info/en/player/klaas-bakker",
+      "https://www.afc-ajax.info/en/player/loek-den-edel",
+      "https://www.afc-ajax.info/en/player/henk-elzer",
+      "https://www.afc-ajax.info/en/player/rinus-michels",
+      "https://www.afc-ajax.info/en/player/piet-burgers"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1954-55",
+          "comp.": "9",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "9",
+          "friendly": "",
+          "total": "9"
+        },
+        {
+          "season": "1955-56",
+          "comp.": "5",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "5",
+          "friendly": "1",
+          "total": "6"
+        },
+        {
+          "season": "Total",
+          "comp.": "14",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "14",
+          "friendly": "1",
+          "total": "15"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "3",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "3",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1954-55",
+          "date": "5/8/1955",
+          "competition": "First Division",
+          "match": "Ajax - EVV 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1954-55",
+          "date": "5/15/1955",
+          "competition": "First Division D",
+          "match": "SC Enschede - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1954-55",
+          "date": "5/22/1955",
+          "competition": "First Division",
+          "match": "Ajax - BVV 4 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1954-55",
+          "date": "5/28/1955",
+          "competition": "First Division D",
+          "match": "RBC - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1954-55",
+          "date": "5/30/1955",
+          "competition": "First Division",
+          "match": "Ajax - RBC 3 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1954-55",
+          "date": "6/5/1955",
+          "competition": "First Division D",
+          "match": "Xerxes - Ajax 2 - 5 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1954-55",
+          "date": "6/15/1955",
+          "competition": "First Division",
+          "match": "Ajax - AGOVV 3 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1954-55",
+          "date": "6/18/1955",
+          "competition": "First Division",
+          "match": "Ajax - DFC 3 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1954-55",
+          "date": "6/26/1955",
+          "competition": "First Division",
+          "match": "DFC - Ajax 5 - 3 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "8/14/1955",
+          "competition": "Friendly",
+          "match": "Feijenoord - Ajax 3 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "8/28/1955",
+          "competition": "Hoofdklasse A",
+          "match": "NOAD - Ajax 1 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "9/4/1955",
+          "competition": "Hoofdklasse A",
+          "match": "Ajax - HVC 2 - 3 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "10/9/1955",
+          "competition": "Hoofdklasse A",
+          "match": "NAC - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "10/23/1955",
+          "competition": "Hoofdklasse A",
+          "match": "Ajax - VVV 1 - 3 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1955-56",
+          "date": "3/25/1956",
+          "competition": "Hoofdklasse",
+          "match": "Sparta - Ajax 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "21"
+        }
+      ],
+      "raw_row_count": 16
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "HFC",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "5/1/1955",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Go Ahead",
+          "type": "Transfer",
+          "start": "8/1/1956",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1954-55",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "5/1/1955",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1955-56",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "photo"
+    ]
+  }
+}

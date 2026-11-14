@@ -1,0 +1,50 @@
+{
+  "captured_at": "2026-10-31",
+  "mode": "read-only",
+  "project_id": "twilight-breeze-93820218",
+  "branch_id": "br-red-rice-avybj0co",
+  "tables": [
+    {
+      "dataset": "ajax_players",
+      "records": 39,
+      "earliest": "2026-08-20 20:13:42.558812+00",
+      "latest": "2026-09-16 09:26:54.99386+00"
+    },
+    {
+      "dataset": "youth_dossiers",
+      "records": 28,
+      "earliest": "2026-09-09 06:13:34.722955+00",
+      "latest": "2026-09-20 18:02:01.826307+00"
+    },
+    {
+      "dataset": "youth_dossier_dataset",
+      "records": 1,
+      "earliest": "2026-09-20 18:02:01.826307+00",
+      "latest": "2026-09-20 18:02:01.826307+00"
+    },
+    {
+      "dataset": "motm_matches",
+      "records": 17,
+      "earliest": "2026-08-06 18:00:00+00",
+      "latest": "2026-10-31 20:00:00+00"
+    },
+    {
+      "dataset": "motm_match_players",
+      "records": 445,
+      "earliest": null,
+      "latest": null
+    },
+    {
+      "dataset": "socials_match_stats_snapshots",
+      "records": 7,
+      "earliest": "2026-09-15 12:18:24.074375+00",
+      "latest": "2026-10-26 08:23:13.157545+00"
+    },
+    {
+      "dataset": "socials_video_jobs",
+      "records": 2,
+      "earliest": "2026-10-23 12:59:12.539646+00",
+      "latest": "2026-10-26 09:58:10.55056+00"
+    }
+  ]
+}

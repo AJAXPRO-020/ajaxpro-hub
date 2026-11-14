@@ -1,0 +1,518 @@
+{
+  "local_id": "afc_ajax_sven-botman",
+  "slug": "sven-botman",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/sven-botman",
+    "https://www.afc-ajax.info/en/player/sven-botman/statistics",
+    "https://www.afc-ajax.info/en/player/sven-botman/matches",
+    "https://www.afc-ajax.info/en/player/sven-botman/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/sven-botman",
+    "name": "Sven Botman",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "2000-01-12",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Defender)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Lille OSC",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/dani-de-wit",
+      "https://www.afc-ajax.info/en/player/jurgen-ekkelenkamp",
+      "https://www.afc-ajax.info/en/player/klaas-jan-huntelaar",
+      "https://www.afc-ajax.info/en/player/perr-schuurs",
+      "https://www.afc-ajax.info/en/player/zakaria-labyad",
+      "https://www.afc-ajax.info/en/player/nicolas-kuhn",
+      "https://www.afc-ajax.info/en/player/victor-jensen",
+      "https://www.afc-ajax.info/en/player/benjamin-van-leer",
+      "https://www.afc-ajax.info/en/player/ryan-gravenberch",
+      "https://www.afc-ajax.info/en/player/kaj-sierhuis"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2018-19",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "6",
+          "total": "6"
+        },
+        {
+          "season": "2019-20",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "4",
+          "total": "4"
+        },
+        {
+          "season": "Total",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "10",
+          "total": "10"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2018-19",
+          "date": "6/23/2018",
+          "competition": "Friendly",
+          "match": "Ajax - VVSB 7 - 0 (5 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2018-19",
+          "date": "6/26/2018",
+          "competition": "Friendly",
+          "match": "Preussen Munster - Ajax 3 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2018-19",
+          "date": "6/29/2018",
+          "competition": "Friendly",
+          "match": "SV Lippstadt 08 - Ajax 0 - 9 (0 - 5)",
+          "active": "Bench",
+          "min": "30"
+        },
+        {
+          "season": "2018-19",
+          "date": "7/7/2018",
+          "competition": "Friendly",
+          "match": "Ajax - FC Nordsjaelland 1 - 3 (0 - 0)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "2018-19",
+          "date": "7/13/2018",
+          "competition": "Friendly",
+          "match": "Ajax - Anderlecht 3 - 5 (1 - 1)",
+          "active": "Start",
+          "min": "45"
+        },
+        {
+          "season": "2018-19",
+          "date": "7/19/2018",
+          "competition": "Friendly",
+          "match": "Walsall FC - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "61"
+        },
+        {
+          "season": "2019-20",
+          "date": "6/25/2019",
+          "competition": "Friendly",
+          "match": "Quick 20 - Ajax 2 - 11 (2 - 7)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2019-20",
+          "date": "6/29/2019",
+          "competition": "Friendly",
+          "match": "Ajax - Aalborg BK 1 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2019-20",
+          "date": "7/6/2019",
+          "competition": "Friendly",
+          "match": "Ajax - Anderlecht 5 - 2 (2 - 1)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2019-20",
+          "date": "7/22/2019",
+          "competition": "Friendly",
+          "match": "Ajax - OFI Kreta 6 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Unknown",
+          "next club": "Ajax",
+          "type": "Joins youth academy",
+          "start": "1/7/2009",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "First contract",
+          "start": "1/7/2018",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "SC Heerenveen",
+          "type": "Loan start",
+          "start": "7/27/2019",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "SC Heerenveen",
+          "next club": "Ajax",
+          "type": "Loan end",
+          "start": "7/1/2020",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "Contract renewal",
+          "start": "7/1/2020",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Lille OSC",
+          "type": "Transfer",
+          "start": "7/31/2020",
+          "amount": "€ 8M",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 7
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2009-10",
+          "contract type": "No Contract",
+          "team": "Youth E3",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2010-11",
+          "contract type": "No Contract",
+          "team": "Youth E1",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2011-12",
+          "contract type": "No Contract",
+          "team": "Youth D2",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2012-13",
+          "contract type": "No Contract",
+          "team": "Youth D1",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2013-14",
+          "contract type": "No Contract",
+          "team": "Youth C2",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2014-15",
+          "contract type": "No Contract",
+          "team": "Youth",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2015-16",
+          "contract type": "No Contract",
+          "team": "Youth B1",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2016-17",
+          "contract type": "No Contract",
+          "team": "Youth",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2017-18",
+          "contract type": "No Contract",
+          "team": "Youth",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2018-19",
+          "contract type": "Contract",
+          "team": "Young",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2019-20",
+          "contract type": "Contract",
+          "team": "Loan Out",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "7/27/2019",
+          "loan out to": "6/30/2020",
+          "remark": ""
+        },
+        {
+          "season": "2020-21",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "7/31/2020",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 13
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name",
+      "photo"
+    ]
+  }
+}

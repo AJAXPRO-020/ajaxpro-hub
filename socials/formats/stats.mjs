@@ -25,11 +25,23 @@ const contextFor=(fixture,payload)=>{
 const formatDate=value=>new Intl.DateTimeFormat("nl-NL",{day:"numeric",month:"long",year:"numeric",timeZone:"Europe/Amsterdam"}).format(new Date(value));
 const displayValue=input=>{
   if(!input||input.value.trim()===""||!input.validity.valid)return "—";
-  if(input.dataset.statId==="xg")return Number(input.value).toFixed(2).replace(".",",");
+  if(["xg","xgot"].includes(input.dataset.statId))return Number(input.value).toFixed(2).replace(".",",");
   const suffix=input.dataset.statId==="possession"?"%":"";
   return `${input.value.replace(".",",")}${suffix}`;
 };
-const loadedTeamFields={xg:"xg",possession:"possession",shots:"shots",shotsOnTarget:"shotsOnTarget",bigChances:"bigChances"};
+const loadedTeamFields={xg:"xg",xgot:"xgot",possession:"possession",shots:"shots",shotsOnTarget:"shotsOnTarget",bigChances:"bigChances",corners:"corners"};
+
+const statPriority={xg:100,bigChances:94,shotsOnTarget:90,possession:86,xgot:82,corners:70,shots:62};
+const hasValue=value=>value!==null&&value!==undefined&&value!==""&&Number.isFinite(Number(value));
+const comparable=(payload,id)=>hasValue(payload?.teamStats?.[id])&&hasValue(payload?.opponentTeamStats?.[id]);
+const differenceBonus=(payload,id)=>{
+  const ajax=Number(payload.teamStats[id]),opponent=Number(payload.opponentTeamStats[id]),scale=Math.max(Math.abs(ajax),Math.abs(opponent),1);
+  return Math.min(10,Math.round((Math.abs(ajax-opponent)/scale)*10));
+};
+export const automaticStatSelection=payload=>Object.keys(statPriority)
+  .filter(id=>comparable(payload,id))
+  .sort((a,b)=>(statPriority[b]+differenceBonus(payload,b))-(statPriority[a]+differenceBonus(payload,a)))
+  .slice(0,4);
 
 export const loadedStatsFor=payload=>Object.fromEntries(Object.entries(loadedTeamFields).map(([inputId,payloadId])=>[inputId,{
   ajax:payload?.teamStats?.[payloadId]??null,
@@ -40,22 +52,26 @@ export const initStats=(root,sharedState)=>{
   const workspace=root.querySelector("[data-stats-workspace]");
   const fixtures=readFixtures(root);
   if(!workspace||!fixtures.length)return {activate(){},deactivate(){}};
-  const inputs=[...workspace.querySelectorAll("[data-stat-id][data-team]")];
+  const inputs=[...workspace.querySelectorAll("[data-stat-id][data-team]")],statSelectors=[...workspace.querySelectorAll("[data-stats-selection]")],resetControl=workspace.querySelector("[data-stats-reset]");
   const outputInputs=[...root.querySelectorAll('[name="social-output"]')];
   const preview=workspace.querySelector("[data-stats-preview]");
   const fixtureForSelection=()=>fixtures.find(fixture=>fixture.fixture_key===sharedState.selectedFixtureKey)??fixtures[0];
+  let selectedStats=[],manualStats=false,loadedFixtureKey="";
   const inputFor=(id,team)=>inputs.find(input=>input.dataset.statId===id&&input.dataset.team===team);
   const displayForSide=(id,side,context)=>displayValue(inputFor(id,context.ajaxIsHome===(side==="home")?"ajax":"opponent"));
-  const applyLoadedStats=()=>{
+  const applyLoadedStats=(force=false)=>{
     const fixture=fixtureForSelection();
     const payload=sharedState.getMatchStats?.(fixture.fixture_key);
     if(!payload?.teamStats||!payload?.opponentTeamStats)return false;
+    if(!force&&loadedFixtureKey===fixture.fixture_key)return true;
     Object.entries(loadedStatsFor(payload)).forEach(([inputId,values])=>{
       for(const team of ["ajax","opponent"]){
         const input=inputFor(inputId,team),value=values[team];
         if(input)input.value=value===null||value===undefined?"":String(value);
       }
     });
+    loadedFixtureKey=fixture.fixture_key;
+    if(!manualStats)selectedStats=automaticStatSelection(payload);
     return true;
   };
   const clearInputs=()=>inputs.forEach(input=>{input.value="";input.setCustomValidity("");input.removeAttribute("aria-invalid")});
@@ -73,19 +89,32 @@ export const initStats=(root,sharedState)=>{
       const hasValue=input.value.trim()!=="";
       input.setAttribute("aria-invalid",String(hasValue&&!input.validity.valid));
     });
-    Object.keys(loadedTeamFields).forEach(id=>{
-      workspace.querySelector(`[data-match-stat="${id}-home"]`).textContent=displayForSide(id,"home",context);
-      workspace.querySelector(`[data-match-stat="${id}-away"]`).textContent=displayForSide(id,"away",context);
+    statSelectors.forEach((select,index)=>{
+      const id=selectedStats[index]??"";
+      select.value=id;
+      const chosen=new Set(selectedStats.filter((_,slot)=>slot!==index));
+      [...select.options].forEach(option=>{option.disabled=Boolean(option.value&&(chosen.has(option.value)||!hasValue(inputFor(option.value,"ajax")?.value)&&!hasValue(inputFor(option.value,"opponent")?.value)))});
+    });
+    workspace.querySelectorAll("[data-preview-slot]").forEach(slot=>{slot.hidden=true;slot.querySelectorAll("[data-match-stat-home],[data-match-stat-away]").forEach(value=>value.textContent="—")});
+    selectedStats.forEach((id,index)=>{
+      const home=workspace.querySelector(`[data-preview-slot="${index}"] [data-match-stat-home]`),away=workspace.querySelector(`[data-preview-slot="${index}"] [data-match-stat-away]`),label=workspace.querySelector(`[data-preview-slot="${index}"] [data-match-stat-label]`),field=inputFor(id,"ajax");
+      const slot=workspace.querySelector(`[data-preview-slot="${index}"]`);
+      if(slot)slot.hidden=false;
+      if(label)label.textContent=field?.closest(".stats-field")?.querySelector(".stats-field-label")?.textContent??id;
+      if(home)home.textContent=displayForSide(id,"home",context);
+      if(away)away.textContent=displayForSide(id,"away",context);
     });
     const output=outputInputs.find(input=>input.checked)??outputInputs[0];
     if(output){preview.dataset.aspect=output.value;workspace.querySelector("[data-preview-ratio]").textContent=output.value==="vertical-9x16"?"9:16":"4:5";workspace.querySelector("[data-preview-dimensions]").textContent=`${output.dataset.width} × ${output.dataset.height}`}
   };
   inputs.forEach(input=>input.addEventListener("input",render));
+  statSelectors.forEach(select=>select.addEventListener("change",()=>{manualStats=true;selectedStats=statSelectors.map(item=>item.value).filter(Boolean).slice(0,4);render()}));
+  resetControl?.addEventListener("click",()=>{manualStats=false;const payload=sharedState.getMatchStats?.(fixtureForSelection().fixture_key);selectedStats=automaticStatSelection(payload);render()});
   outputInputs.forEach(input=>input.addEventListener("change",render));
-  root.addEventListener("socials:match-selection",()=>{if(!applyLoadedStats())clearInputs();render()});
+  root.addEventListener("socials:match-selection",()=>{manualStats=false;selectedStats=[];loadedFixtureKey="";if(!applyLoadedStats(true))clearInputs();render()});
   root.addEventListener("socials:match-stats",event=>{if(event.detail?.fixtureKey===fixtureForSelection().fixture_key){applyLoadedStats();render()}});
-  const reset=()=>{clearInputs();applyLoadedStats();render()};
-  applyLoadedStats();
+  const reset=()=>{manualStats=false;selectedStats=[];loadedFixtureKey="";clearInputs();applyLoadedStats(true);render()};
+  applyLoadedStats(true);
   render();
   return {activate:render,deactivate(){},reset,getRequirementStatus(){return {matchData:Boolean(fixtureForSelection()),matchStats:Boolean(sharedState.getMatchStats?.(fixtureForSelection().fixture_key))}}};
 };

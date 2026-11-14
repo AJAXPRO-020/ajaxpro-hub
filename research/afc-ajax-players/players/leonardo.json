@@ -1,0 +1,994 @@
+{
+  "local_id": "afc_ajax_leonardo",
+  "slug": "leonardo",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/leonardo",
+    "https://www.afc-ajax.info/en/player/leonardo/statistics",
+    "https://www.afc-ajax.info/en/player/leonardo/matches",
+    "https://www.afc-ajax.info/en/player/leonardo/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/leonardo",
+    "name": "Leonardo",
+    "full_name": "Leonardo Vitor Santiago",
+    "alternative_names": [],
+    "birth_date": "1983-03-09",
+    "death_date": null,
+    "nationality": "Brazil",
+    "roles": [
+      "Player (Forward)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "NAC Breda",
+    "external_links": [
+      {
+        "label": "Leonardo",
+        "url": "http://nl.wikipedia.org/wiki/Leonardo_Vitor_Santiago"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/urby-emanuelson",
+      "https://www.afc-ajax.info/en/player/thomas-vermaelen",
+      "https://www.afc-ajax.info/en/player/luis-suarez",
+      "https://www.afc-ajax.info/en/player/gregory-van-der-wiel",
+      "https://www.afc-ajax.info/en/player/jan-vertonghen",
+      "https://www.afc-ajax.info/en/player/gabri",
+      "https://www.afc-ajax.info/en/player/miralem-sulejmani",
+      "https://www.afc-ajax.info/en/player/oleguer",
+      "https://www.afc-ajax.info/en/player/maarten-stekelenburg",
+      "https://www.afc-ajax.info/en/player/rasmus-lindgren"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2006-07",
+          "comp.": "7",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "11",
+          "friendly": "",
+          "total": "11"
+        },
+        {
+          "season": "2007-08",
+          "comp.": "8",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "8",
+          "friendly": "",
+          "total": "8"
+        },
+        {
+          "season": "2008-09",
+          "comp.": "24",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "8",
+          "other off.": "",
+          "off. mat.": "33",
+          "friendly": "1",
+          "total": "34"
+        },
+        {
+          "season": "Total",
+          "comp.": "39",
+          "play off": "",
+          "dutch cup": "3",
+          "europa": "10",
+          "other off.": "",
+          "off. mat.": "52",
+          "friendly": "1",
+          "total": "53"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2006-07",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "2007-08",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "2008-09",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "4",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "5",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "9",
+          "friendly": "",
+          "total": "9"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "2"
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "1",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "2",
+          "red": "",
+          "substitute out": "4",
+          "substitute in": "12"
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "3",
+          "substitute in": "14"
+        },
+        {
+          "minute": "76-90",
+          "goals": "7",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "9"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "9",
+          "assists": "2",
+          "yellow": "4",
+          "red": "",
+          "substitute out": "8",
+          "substitute in": "39"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [
+        {
+          "assisted by": "Urby Emanuelson",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "9"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "9"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2006-07",
+          "date": "1/21/2007",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 2 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "34"
+        },
+        {
+          "season": "2006-07",
+          "date": "1/24/2007",
+          "competition": "Dutch Cup",
+          "match": "Ajax - HFC Haarlem 4 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "1/28/2007",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 2 - 3 (2 - 0)",
+          "active": "Bench",
+          "min": "33"
+        },
+        {
+          "season": "2006-07",
+          "date": "2/4/2007",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 4 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "73"
+        },
+        {
+          "season": "2006-07",
+          "date": "2/11/2007",
+          "competition": "Eredivisie",
+          "match": "ADO Den Haag - Ajax 1 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "2/14/2007",
+          "competition": "UEFA Cup",
+          "match": "Werder Bremen - Ajax 3 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "17"
+        },
+        {
+          "season": "2006-07",
+          "date": "2/18/2007",
+          "competition": "Eredivisie",
+          "match": "Ajax - Excelsior 2 - 2 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "2/22/2007",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Werder Bremen 3 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "75"
+        },
+        {
+          "season": "2006-07",
+          "date": "2/25/2007",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "2/28/2007",
+          "competition": "Dutch Cup",
+          "match": "Willem II - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "55"
+        },
+        {
+          "season": "2006-07",
+          "date": "3/4/2007",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 0 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "15"
+        },
+        {
+          "season": "2006-07",
+          "date": "5/20/2007",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 2 - 1 (1 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2007-08",
+          "date": "1/13/2008",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ 6 - 1 (2 - 1)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "2007-08",
+          "date": "1/20/2008",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 1 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "29"
+        },
+        {
+          "season": "2007-08",
+          "date": "1/23/2008",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 2 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "18"
+        },
+        {
+          "season": "2007-08",
+          "date": "1/27/2008",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 2 - 2 (1 - 0)",
+          "active": "Bench",
+          "min": "24"
+        },
+        {
+          "season": "2007-08",
+          "date": "2/3/2008",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 3 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2007-08",
+          "date": "2/24/2008",
+          "competition": "Eredivisie",
+          "match": "NAC Breda - Ajax 2 - 3 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2007-08",
+          "date": "3/2/2008",
+          "competition": "Eredivisie",
+          "match": "Ajax - Excelsior 4 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2007-08",
+          "date": "3/16/2008",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 4 - 1 (2 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2007-08",
+          "date": "3/19/2008",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "73"
+        },
+        {
+          "season": "2007-08",
+          "date": "3/23/2008",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 2 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2007-08",
+          "date": "4/6/2008",
+          "competition": "Eredivisie",
+          "match": "Ajax - De Graafschap 4 - 1 (3 - 1)",
+          "active": "Bench",
+          "min": "26"
+        },
+        {
+          "season": "2008-09",
+          "date": "8/9/2008",
+          "competition": "Amsterdam Tournament",
+          "match": "Ajax - Internazionale 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "61"
+        },
+        {
+          "season": "2008-09",
+          "date": "9/14/2008",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "59"
+        },
+        {
+          "season": "2008-09",
+          "date": "9/18/2008",
+          "competition": "UEFA Cup",
+          "match": "Borac Cacak - Ajax 1 - 4 (0 - 2)",
+          "active": "Bench",
+          "min": "11"
+        },
+        {
+          "season": "2008-09",
+          "date": "9/21/2008",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 2 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": "81"
+        },
+        {
+          "season": "2008-09",
+          "date": "9/25/2008",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Utrecht 2 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "9/28/2008",
+          "competition": "Eredivisie",
+          "match": "Ajax - Vitesse 3 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "10/2/2008",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Borac Cacak 2 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "10/18/2008",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "10/23/2008",
+          "competition": "UEFA Cup",
+          "match": "Aston Villa - Ajax 2 - 1 (2 - 1)",
+          "active": "Bench",
+          "min": "30"
+        },
+        {
+          "season": "2008-09",
+          "date": "10/26/2008",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "77"
+        },
+        {
+          "season": "2008-09",
+          "date": "10/29/2008",
+          "competition": "Eredivisie",
+          "match": "Heracles Almelo - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2008-09",
+          "date": "11/1/2008",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 0 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "11/6/2008",
+          "competition": "UEFA Cup",
+          "match": "Ajax - MSK Zilina 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "11/9/2008",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 5 - 2 (3 - 0)",
+          "active": "Bench",
+          "min": "11"
+        },
+        {
+          "season": "2008-09",
+          "date": "11/12/2008",
+          "competition": "Dutch Cup",
+          "match": "FC Volendam - Ajax 1 - 0 (regular time:0 - 0)",
+          "active": "Bench",
+          "min": "37"
+        },
+        {
+          "season": "2008-09",
+          "date": "11/16/2008",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 4 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "3"
+        },
+        {
+          "season": "2008-09",
+          "date": "11/23/2008",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "28"
+        },
+        {
+          "season": "2008-09",
+          "date": "11/27/2008",
+          "competition": "UEFA Cup",
+          "match": "Hamburger SV - Ajax 0 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "30"
+        },
+        {
+          "season": "2008-09",
+          "date": "11/30/2008",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 1 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "55"
+        },
+        {
+          "season": "2008-09",
+          "date": "12/7/2008",
+          "competition": "Eredivisie",
+          "match": "FC Volendam - Ajax 1 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "34"
+        },
+        {
+          "season": "2008-09",
+          "date": "12/12/2008",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC Breda 3 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "2008-09",
+          "date": "12/17/2008",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Slavia Prague 2 - 2 (1 - 2)",
+          "active": "Bench",
+          "min": "14"
+        },
+        {
+          "season": "2008-09",
+          "date": "12/21/2008",
+          "competition": "Eredivisie",
+          "match": "De Graafschap - Ajax 0 - 6 (0 - 2)",
+          "active": "Bench",
+          "min": "6"
+        },
+        {
+          "season": "2008-09",
+          "date": "1/18/2009",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 2 - 4 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "1/25/2009",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "34"
+        },
+        {
+          "season": "2008-09",
+          "date": "1/31/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 0 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "14"
+        },
+        {
+          "season": "2008-09",
+          "date": "2/3/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - Heracles Almelo 2 - 2 (0 - 2)",
+          "active": "Bench",
+          "min": "14"
+        },
+        {
+          "season": "2008-09",
+          "date": "2/8/2009",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 4 - 1 (3 - 1)",
+          "active": "Bench",
+          "min": "28"
+        },
+        {
+          "season": "2008-09",
+          "date": "2/15/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 2 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2008-09",
+          "date": "2/19/2009",
+          "competition": "UEFA Cup",
+          "match": "Fiorentina - Ajax 0 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "32"
+        },
+        {
+          "season": "2008-09",
+          "date": "2/22/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Volendam 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2008-09",
+          "date": "2/26/2009",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Fiorentina 1 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "20"
+        },
+        {
+          "season": "2008-09",
+          "date": "3/1/2009",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 0 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2008-09",
+          "date": "3/8/2009",
+          "competition": "Eredivisie",
+          "match": "ADO Den Haag - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2008-09",
+          "date": "3/12/2009",
+          "competition": "UEFA Cup",
+          "match": "Olympique Marseille - Ajax 2 - 1 (2 - 1)",
+          "active": "Bench",
+          "min": "6"
+        },
+        {
+          "season": "2008-09",
+          "date": "3/15/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - De Graafschap 3 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "30"
+        },
+        {
+          "season": "2008-09",
+          "date": "3/18/2009",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Olympique Marseille 2 - 2 (regular time:2 - 1)",
+          "active": "Bench",
+          "min": "22"
+        },
+        {
+          "season": "2008-09",
+          "date": "3/22/2009",
+          "competition": "Eredivisie",
+          "match": "NAC Breda - Ajax 0 - 3 (0 - 1)",
+          "active": "Bench",
+          "min": "17"
+        },
+        {
+          "season": "2008-09",
+          "date": "4/19/2009",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 6 - 2 (3 - 1)",
+          "active": "Bench",
+          "min": "28"
+        },
+        {
+          "season": "2008-09",
+          "date": "4/26/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ 1 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "5/3/2009",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 4 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "19"
+        },
+        {
+          "season": "2008-09",
+          "date": "5/10/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "60"
+        }
+      ],
+      "raw_row_count": 66
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Unknown",
+          "next club": "Feyenoord",
+          "type": "Joins youth academy",
+          "start": "7/1/1995",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Feyenoord",
+          "next club": "NAC Breda",
+          "type": "Transfer",
+          "start": "1/1/2006",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "NAC Breda",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "1/1/2007",
+          "amount": "€ 750K",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "NAC Breda",
+          "type": "Transfer",
+          "start": "7/1/2009",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2006-07",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "1/1/2007",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2007-08",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2008-09",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Leonardo"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1149-leonardo.jpg",
+        "alt": "Soccer player Leonardo",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/leonardo__525639440fb6.jpg",
+        "status": "downloaded",
+        "bytes": 80376,
+        "sha256": "525639440fb6ec97cfbe6eaa4565bfc1054b3652e6580a856b945ca29729ca7f",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:02.922Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date"
+    ]
+  }
+}

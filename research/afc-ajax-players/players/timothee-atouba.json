@@ -1,0 +1,395 @@
+{
+  "local_id": "afc_ajax_timothee-atouba",
+  "slug": "timothee-atouba",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/timothee-atouba",
+    "https://www.afc-ajax.info/en/player/timothee-atouba/statistics",
+    "https://www.afc-ajax.info/en/player/timothee-atouba/matches",
+    "https://www.afc-ajax.info/en/player/timothee-atouba/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/timothee-atouba",
+    "name": "Timoth&eacute;e Atouba",
+    "full_name": "Timoth&eacute;e Atouba Essama",
+    "alternative_names": [],
+    "birth_date": "1982-02-17",
+    "death_date": null,
+    "nationality": "Cameroon",
+    "roles": [
+      "Player (Defender)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "UD Las Palmas",
+    "external_links": [
+      {
+        "label": "Timoth&eacute;e Atouba",
+        "url": "http://nl.wikipedia.org/wiki/Timothee_Atouba"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/urby-emanuelson",
+      "https://www.afc-ajax.info/en/player/miralem-sulejmani",
+      "https://www.afc-ajax.info/en/player/luis-suarez",
+      "https://www.afc-ajax.info/en/player/demy-de-zeeuw",
+      "https://www.afc-ajax.info/en/player/eyong-enoh",
+      "https://www.afc-ajax.info/en/player/jan-vertonghen",
+      "https://www.afc-ajax.info/en/player/gregory-van-der-wiel",
+      "https://www.afc-ajax.info/en/player/maarten-stekelenburg",
+      "https://www.afc-ajax.info/en/player/mitchell-donald",
+      "https://www.afc-ajax.info/en/player/siem-de-jong"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2009-10",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "",
+          "total": "3"
+        },
+        {
+          "season": "Total",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "",
+          "total": "3"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "2",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "2",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2009-10",
+          "date": "8/2/2009",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 0 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2009-10",
+          "date": "8/8/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - RKC Waalwijk 4 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2009-10",
+          "date": "8/16/2009",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 4 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "8/20/2009",
+          "competition": "Europa League",
+          "match": "Ajax - Slovan Bratislava 5 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "72"
+        },
+        {
+          "season": "2009-10",
+          "date": "8/27/2009",
+          "competition": "Europa League",
+          "match": "Slovan Bratislava - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "75"
+        },
+        {
+          "season": "2009-10",
+          "date": "9/13/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC Breda 6 - 0 (4 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2009-10",
+          "date": "9/24/2009",
+          "competition": "Dutch Cup",
+          "match": "AGOVV - Ajax 1 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2009-10",
+          "date": "10/17/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 4 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        }
+      ],
+      "raw_row_count": 9
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Hamburger SV",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/7/2009",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "None",
+          "type": "Contract ended",
+          "start": "7/1/2011",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "None",
+          "next club": "UD Las Palmas",
+          "type": "New contract",
+          "start": "11/1/2012",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2009-10",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "7/7/2009",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2010-11",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Timoth&eacute;e Atouba"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1238-timothee-atouba.jpg",
+        "alt": "Soccer player Timoth&eacute;e Atouba",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/timothee-atouba__7d5215700d1d.jpg",
+        "status": "downloaded",
+        "bytes": 24143,
+        "sha256": "7d5215700d1d9bb4d2ef55faccddbb8ec2bb8cd71b9e78daa45df5e67984911f",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:06.608Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date"
+    ]
+  }
+}

@@ -1,0 +1,580 @@
+{
+  "local_id": "afc_ajax_jan-hassink",
+  "slug": "jan-hassink",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/jan-hassink",
+    "https://www.afc-ajax.info/en/player/jan-hassink/statistics",
+    "https://www.afc-ajax.info/en/player/jan-hassink/matches",
+    "https://www.afc-ajax.info/en/player/jan-hassink/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/jan-hassink",
+    "name": "Jan Hassink",
+    "full_name": "Jan Hendrik Hassink",
+    "alternative_names": [],
+    "birth_date": "1902-04-06",
+    "death_date": "1927-07-25",
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Defender)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "PSV",
+    "external_links": [
+      {
+        "label": "Jan Hassink",
+        "url": "http://nl.wikipedia.org/wiki/Jan_Hassink"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/wim-volkers",
+      "https://www.afc-ajax.info/en/player/joop-martens",
+      "https://www.afc-ajax.info/en/player/fons-pelser",
+      "https://www.afc-ajax.info/en/player/jan-de-natris",
+      "https://www.afc-ajax.info/en/player/frans-couton",
+      "https://www.afc-ajax.info/en/player/eddy-hamel",
+      "https://www.afc-ajax.info/en/player/theo-brokmann-sr",
+      "https://www.afc-ajax.info/en/player/frans-rutte",
+      "https://www.afc-ajax.info/en/player/jan-de-boer",
+      "https://www.afc-ajax.info/en/player/joop-rijnders"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1923-24",
+          "comp.": "16",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "16",
+          "friendly": "8",
+          "total": "24"
+        },
+        {
+          "season": "1924-25",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "4",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "4",
+          "friendly": "5",
+          "total": "9"
+        },
+        {
+          "season": "Total",
+          "comp.": "16",
+          "play off": "",
+          "dutch cup": "4",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "20",
+          "friendly": "13",
+          "total": "33"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1923-24",
+          "date": "9/9/1923",
+          "competition": "Friendly",
+          "match": "Ajax - NOAD 5 - 3 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "9/16/1923",
+          "competition": "First Division",
+          "match": "Ajax - DFC 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "9/23/1923",
+          "competition": "First Division West I",
+          "match": "ZFC - Ajax 3 - 2 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "9/30/1923",
+          "competition": "First Division West I",
+          "match": "Ajax - RC Haarlem 3 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "10/7/1923",
+          "competition": "First Division West I",
+          "match": "Ajax - HVV 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "10/14/1923",
+          "competition": "First Division West I",
+          "match": "SVV - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "10/21/1923",
+          "competition": "First Division",
+          "match": "Ajax - VOC 5 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "10/28/1923",
+          "competition": "First Division",
+          "match": "'t Gooi - Ajax 3 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "11/4/1923",
+          "competition": "Friendly",
+          "match": "Ajax - EVV 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "11/11/1923",
+          "competition": "First Division West I",
+          "match": "HFC - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "1/13/1924",
+          "competition": "Friendly",
+          "match": "Be Quick - Ajax 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "1/20/1924",
+          "competition": "First Division",
+          "match": "Feijenoord - Ajax 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "1/27/1924",
+          "competition": "First Division",
+          "match": "RC Haarlem - Ajax 3 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "2/3/1924",
+          "competition": "First Division West I",
+          "match": "VOC - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "2/10/1924",
+          "competition": "First Division",
+          "match": "Ajax - 't Gooi 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "2/17/1924",
+          "competition": "First Division",
+          "match": "DFC - Ajax 2 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "3/9/1924",
+          "competition": "First Division",
+          "match": "Ajax - HFC 5 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "4/6/1924",
+          "competition": "First Division",
+          "match": "Ajax - Feijenoord 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "4/13/1924",
+          "competition": "First Division West I",
+          "match": "Ajax - ZFC 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "4/27/1924",
+          "competition": "Friendly",
+          "match": "Ajax - R.R.C. de Bruxelles 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "5/4/1924",
+          "competition": "Friendly",
+          "match": "Ajax - Blauw-Wit 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "5/11/1924",
+          "competition": "Friendly",
+          "match": "Ajax - ZAC 1 - 4 (0 - 1)",
+          "active": "International duties",
+          "min": ""
+        },
+        {
+          "season": "1923-24",
+          "date": "5/18/1924",
+          "competition": "Friendly",
+          "match": "Ajax - Leeds United 1 - 4",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "5/21/1924",
+          "competition": "Friendly",
+          "match": "Ajax - Bolton Wanderers 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "6/11/1924",
+          "competition": "Friendly",
+          "match": "Kamraterna - Ajax 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1924-25",
+          "date": "3/1/1925",
+          "competition": "Dutch Cup",
+          "match": "EDO - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1924-25",
+          "date": "3/14/1925",
+          "competition": "Dutch Cup",
+          "match": "Ajax - VIOS 8 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1924-25",
+          "date": "3/22/1925",
+          "competition": "Dutch Cup",
+          "match": "LVV Friesland - Ajax 1 - 3 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1924-25",
+          "date": "4/5/1925",
+          "competition": "Dutch Cup",
+          "match": "CVV - Ajax 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1924-25",
+          "date": "4/12/1925",
+          "competition": "Easter Tournament Ajax",
+          "match": "Ajax - Ilford F.C. 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1924-25",
+          "date": "4/13/1925",
+          "competition": "Easter Tournament Ajax",
+          "match": "Ajax - Glasgow University A.C. 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1924-25",
+          "date": "5/14/1925",
+          "competition": "Friendly",
+          "match": "Ajax - West Ham United 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1924-25",
+          "date": "5/21/1925",
+          "competition": "Friendly",
+          "match": "Ajax - Derby County 2 - 5 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1924-25",
+          "date": "6/1/1925",
+          "competition": "Friendly",
+          "match": "RFC Roermond - Ajax 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 35
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Ajax",
+          "next club": "PSV",
+          "type": "Transfer",
+          "start": "7/1/1925",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "PSV",
+          "next club": "None",
+          "type": "Deceased",
+          "start": "7/25/1927",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1923-24",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1924-25",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "photo"
+    ]
+  }
+}

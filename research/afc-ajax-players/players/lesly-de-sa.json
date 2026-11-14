@@ -1,0 +1,963 @@
+{
+  "local_id": "afc_ajax_lesly-de-sa",
+  "slug": "lesly-de-sa",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/lesly-de-sa",
+    "https://www.afc-ajax.info/en/player/lesly-de-sa/statistics",
+    "https://www.afc-ajax.info/en/player/lesly-de-sa/matches",
+    "https://www.afc-ajax.info/en/player/lesly-de-sa/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/lesly-de-sa",
+    "name": "Lesly de Sa",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1993-04-02",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Forward) - Assistant coach"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Slovan Bratislava",
+    "external_links": [
+      {
+        "label": "Lesly de Sa",
+        "url": "http://nl.wikipedia.org/wiki/Lesley_de_Sa"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/christian-poulsen",
+      "https://www.afc-ajax.info/en/player/ricardo-van-rhijn",
+      "https://www.afc-ajax.info/en/player/thulani-serero",
+      "https://www.afc-ajax.info/en/player/kolbeinn-sigthorsson",
+      "https://www.afc-ajax.info/en/player/daley-blind",
+      "https://www.afc-ajax.info/en/player/jasper-cillessen",
+      "https://www.afc-ajax.info/en/player/lasse-schone",
+      "https://www.afc-ajax.info/en/player/stefano-denswil",
+      "https://www.afc-ajax.info/en/player/davy-klaassen",
+      "https://www.afc-ajax.info/en/player/lerin-duarte"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2011-12",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        },
+        {
+          "season": "2012-13",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        },
+        {
+          "season": "2013-14",
+          "comp.": "12",
+          "play off": "",
+          "dutch cup": "3",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "18",
+          "friendly": "4",
+          "total": "22"
+        },
+        {
+          "season": "2014-15",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "4",
+          "total": "4"
+        },
+        {
+          "season": "Total",
+          "comp.": "13",
+          "play off": "",
+          "dutch cup": "4",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "20",
+          "friendly": "8",
+          "total": "28"
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2011-12",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "2013-14",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "2014-15",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "1",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "1",
+          "total": "3"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "46-60",
+          "goals": "1",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "61-75",
+          "goals": "1",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "7",
+          "substitute in": "4"
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "5"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "2",
+          "assists": "2",
+          "yellow": "2",
+          "red": "",
+          "substitute out": "7",
+          "substitute in": "12"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2011-12",
+          "date": "9/21/2011",
+          "competition": "Dutch Cup",
+          "match": "Noordwijk - Ajax 1 - 3 (0 - 1)",
+          "active": "Bench",
+          "min": "59"
+        },
+        {
+          "season": "2011-12",
+          "date": "10/26/2011",
+          "competition": "Dutch Cup",
+          "match": "Roda JC Kerkrade - Ajax 2 - 4 (1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2011-12",
+          "date": "11/22/2011",
+          "competition": "Champions League",
+          "match": "Olympique Lyon - Ajax 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2012-13",
+          "date": "10/20/2012",
+          "competition": "Eredivisie",
+          "match": "Heracles Almelo - Ajax 3 - 3 (0 - 2)",
+          "active": "Bench",
+          "min": "13"
+        },
+        {
+          "season": "2013-14",
+          "date": "7/13/2013",
+          "competition": "Friendly",
+          "match": "De Graafschap - Ajax 0 - 3 (0 - 0)",
+          "active": "Start",
+          "min": "63"
+        },
+        {
+          "season": "2013-14",
+          "date": "9/25/2013",
+          "competition": "Dutch Cup",
+          "match": "Ajax - FC Volendam 4 - 2 (regular time:1 - 1)",
+          "active": "Bench",
+          "min": "43"
+        },
+        {
+          "season": "2013-14",
+          "date": "9/28/2013",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 6 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "69"
+        },
+        {
+          "season": "2013-14",
+          "date": "10/1/2013",
+          "competition": "Champions League",
+          "match": "Ajax - AC Milan 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "64"
+        },
+        {
+          "season": "2013-14",
+          "date": "10/6/2013",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "69"
+        },
+        {
+          "season": "2013-14",
+          "date": "10/19/2013",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 1 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "9"
+        },
+        {
+          "season": "2013-14",
+          "date": "10/22/2013",
+          "competition": "Champions League",
+          "match": "Celtic - Ajax 2 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "16"
+        },
+        {
+          "season": "2013-14",
+          "date": "10/26/2013",
+          "competition": "Eredivisie",
+          "match": "Ajax - RKC Waalwijk 0 - 0 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2013-14",
+          "date": "10/29/2013",
+          "competition": "Dutch Cup",
+          "match": "Ajax - ASWH 4 - 1 (3 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2013-14",
+          "date": "11/2/2013",
+          "competition": "Eredivisie",
+          "match": "Ajax - Vitesse 0 - 1 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2013-14",
+          "date": "11/23/2013",
+          "competition": "Eredivisie",
+          "match": "Ajax - Heracles Almelo 3 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "18"
+        },
+        {
+          "season": "2013-14",
+          "date": "11/26/2013",
+          "competition": "Champions League",
+          "match": "Ajax - Barcelona 2 - 1 (2 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2013-14",
+          "date": "12/1/2013",
+          "competition": "Eredivisie",
+          "match": "ADO Den Haag - Ajax 0 - 4 (0 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2013-14",
+          "date": "12/7/2013",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC Breda 4 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2013-14",
+          "date": "12/11/2013",
+          "competition": "Champions League",
+          "match": "AC Milan - Ajax 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2013-14",
+          "date": "1/10/2014",
+          "competition": "Antalya Cup",
+          "match": "Galatasaray - Ajax 2 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2013-14",
+          "date": "1/11/2014",
+          "competition": "Antalya Cup",
+          "match": "Trabzonspor - Ajax 1 - 1 (penalties: 4 - 3)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2013-14",
+          "date": "1/26/2014",
+          "competition": "Eredivisie",
+          "match": "Go Ahead Eagles - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "64"
+        },
+        {
+          "season": "2013-14",
+          "date": "2/16/2014",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 3 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2013-14",
+          "date": "2/23/2014",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ 4 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "78"
+        },
+        {
+          "season": "2013-14",
+          "date": "2/27/2014",
+          "competition": "Europa League",
+          "match": "Red Bull Salzburg - Ajax 3 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2013-14",
+          "date": "3/2/2014",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 1 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "12"
+        },
+        {
+          "season": "2013-14",
+          "date": "3/9/2014",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Cambuur 1 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2013-14",
+          "date": "3/16/2014",
+          "competition": "Eredivisie",
+          "match": "NAC Breda - Ajax 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "29"
+        },
+        {
+          "season": "2013-14",
+          "date": "3/27/2014",
+          "competition": "Dutch Cup",
+          "match": "AZ - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "73"
+        },
+        {
+          "season": "2013-14",
+          "date": "3/30/2014",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 3 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2013-14",
+          "date": "4/2/2014",
+          "competition": "Eredivisie",
+          "match": "RKC Waalwijk - Ajax 0 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "68"
+        },
+        {
+          "season": "2013-14",
+          "date": "4/6/2014",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 1 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "12"
+        },
+        {
+          "season": "2013-14",
+          "date": "4/13/2014",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO Den Haag 3 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "20"
+        },
+        {
+          "season": "2013-14",
+          "date": "4/20/2014",
+          "competition": "Dutch Cup",
+          "match": "PEC Zwolle - Ajax 5 - 1 (4 - 1)",
+          "active": "Bench",
+          "min": "36"
+        },
+        {
+          "season": "2013-14",
+          "date": "4/27/2014",
+          "competition": "Eredivisie",
+          "match": "Heracles Almelo - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "66"
+        },
+        {
+          "season": "2013-14",
+          "date": "5/11/2014",
+          "competition": "Friendly",
+          "match": "Persija - Ajax 0 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2013-14",
+          "date": "5/14/2014",
+          "competition": "Friendly",
+          "match": "Persib - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2014-15",
+          "date": "7/5/2014",
+          "competition": "Friendly",
+          "match": "FC Wacker Innsbruck - Ajax 1 - 5 (1 - 4)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2014-15",
+          "date": "7/12/2014",
+          "competition": "Friendly",
+          "match": "Ajax - Aalborg BK 2 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "29"
+        },
+        {
+          "season": "2014-15",
+          "date": "7/12/2014",
+          "competition": "Friendly",
+          "match": "Ajax - SV H&ouml;nnepel 6 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "2014-15",
+          "date": "7/19/2014",
+          "competition": "Friendly",
+          "match": "Achilles '29 - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "75"
+        }
+      ],
+      "raw_row_count": 42
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Start",
+          "next club": "SV Argon",
+          "type": "Unknown",
+          "start": "",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "SV Argon",
+          "next club": "Ajax",
+          "type": "Joins youth academy",
+          "start": "7/1/2002",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "First contract",
+          "start": "7/1/2009",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "Contract renewal",
+          "start": "7/1/2012",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Go Ahead Eagles",
+          "type": "Loan start",
+          "start": "7/24/2014",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Go Ahead Eagles",
+          "next club": "Ajax",
+          "type": "Loan end",
+          "start": "7/1/2015",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Willem II",
+          "type": "Loan start",
+          "start": "7/1/2015",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Willem II",
+          "next club": "Ajax",
+          "type": "Loan end",
+          "start": "7/1/2016",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Slovan Bratislava",
+          "type": "Transfer",
+          "start": "7/1/2016",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 10
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2002-03",
+          "contract type": "No Contract",
+          "team": "Youth",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2003-04",
+          "contract type": "No Contract",
+          "team": "Youth",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2004-05",
+          "contract type": "No Contract",
+          "team": "Youth D2",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2005-06",
+          "contract type": "No Contract",
+          "team": "Youth D1",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2006-07",
+          "contract type": "No Contract",
+          "team": "Youth C2",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2007-08",
+          "contract type": "No Contract",
+          "team": "Youth C1",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2008-09",
+          "contract type": "No Contract",
+          "team": "Youth B2",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2009-10",
+          "contract type": "Contract",
+          "team": "Youth B1",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2010-11",
+          "contract type": "Contract",
+          "team": "Youth A1",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2011-12",
+          "contract type": "Contract",
+          "team": "Youth A1",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2012-13",
+          "contract type": "Contract",
+          "team": "Young",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2013-14",
+          "contract type": "Contract",
+          "team": "Young",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2014-15",
+          "contract type": "Contract",
+          "team": "Loan Out",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "7/1/2014",
+          "loan out to": "6/30/2015",
+          "remark": ""
+        },
+        {
+          "season": "2015-16",
+          "contract type": "Contract",
+          "team": "Loan Out",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "7/1/2015",
+          "loan out to": "6/30/2016",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 15
+    },
+    {
+      "caption": "Season (Other Role)",
+      "headers": [
+        "season",
+        "role",
+        "contract type",
+        "contract from",
+        "contract to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2024-25",
+          "role": "Assistant coach",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "2025-26",
+          "role": "Assistant coach",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "2026-27",
+          "role": "Assistant coach",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 4
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 5,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name",
+      "photo"
+    ]
+  }
+}

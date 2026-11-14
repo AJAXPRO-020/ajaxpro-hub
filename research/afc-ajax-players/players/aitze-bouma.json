@@ -1,0 +1,527 @@
+{
+  "local_id": "afc_ajax_aitze-bouma",
+  "slug": "aitze-bouma",
+  "collected_at": "2026-10-31T18:10:09.220Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/aitze-bouma",
+    "https://www.afc-ajax.info/en/player/aitze-bouma/statistics",
+    "https://www.afc-ajax.info/en/player/aitze-bouma/matches",
+    "https://www.afc-ajax.info/en/player/aitze-bouma/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/aitze-bouma",
+    "name": "Aitze Bouma",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1955-10-24",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Forward)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "ADO Den Haag",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/dick-schoenaker",
+      "https://www.afc-ajax.info/en/player/pim-van-dord",
+      "https://www.afc-ajax.info/en/player/johan-zuidema",
+      "https://www.afc-ajax.info/en/player/ruud-krol",
+      "https://www.afc-ajax.info/en/player/tscheu-la-ling",
+      "https://www.afc-ajax.info/en/player/simon-tahamata",
+      "https://www.afc-ajax.info/en/player/piet-schrijvers",
+      "https://www.afc-ajax.info/en/player/frank-arnesen",
+      "https://www.afc-ajax.info/en/player/ruud-geels",
+      "https://www.afc-ajax.info/en/player/hans-erkens"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1976-77",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": "2"
+        },
+        {
+          "season": "1977-78",
+          "comp.": "8",
+          "play off": "",
+          "dutch cup": "3",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "12",
+          "friendly": "",
+          "total": "12"
+        },
+        {
+          "season": "Total",
+          "comp.": "10",
+          "play off": "",
+          "dutch cup": "3",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "14",
+          "friendly": "",
+          "total": "14"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1977-78",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "6"
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "2"
+        },
+        {
+          "minute": "76-90",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "6"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "14"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [],
+      "raw_row_count": 1
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1976-77",
+          "date": "5/1/1977",
+          "competition": "Eredivisie",
+          "match": "FC Amsterdam - Ajax 2 - 3 (0 - 2)",
+          "active": "Bench",
+          "min": "6"
+        },
+        {
+          "season": "1976-77",
+          "date": "5/15/1977",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "12"
+        },
+        {
+          "season": "1977-78",
+          "date": "10/16/1977",
+          "competition": "Eredivisie",
+          "match": "FC Amsterdam - Ajax 1 - 3 (0 - 1)",
+          "active": "Bench",
+          "min": "30"
+        },
+        {
+          "season": "1977-78",
+          "date": "10/29/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC VVV 5 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "5"
+        },
+        {
+          "season": "1977-78",
+          "date": "11/6/1977",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 0 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "15"
+        },
+        {
+          "season": "1977-78",
+          "date": "1/8/1978",
+          "competition": "Eredivisie",
+          "match": "AZ '67 - Ajax 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "5"
+        },
+        {
+          "season": "1977-78",
+          "date": "1/15/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 6 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "27"
+        },
+        {
+          "season": "1977-78",
+          "date": "2/1/1978",
+          "competition": "Dutch Cup",
+          "match": "Roda JC - Ajax 0 - 3 (0 - 1)",
+          "active": "Bench",
+          "min": "10"
+        },
+        {
+          "season": "1977-78",
+          "date": "2/12/1978",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 1 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1977-78",
+          "date": "3/1/1978",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Juventus 1 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "31"
+        },
+        {
+          "season": "1977-78",
+          "date": "3/8/1978",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Roda JC 1 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1977-78",
+          "date": "3/19/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Amsterdam 5 - 1 (2 - 0)",
+          "active": "Bench",
+          "min": "43"
+        },
+        {
+          "season": "1977-78",
+          "date": "4/2/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 6 - 1 (3 - 1)",
+          "active": "Bench",
+          "min": "30"
+        },
+        {
+          "season": "1977-78",
+          "date": "4/13/1978",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Sparta Rotterdam 2 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "2"
+        }
+      ],
+      "raw_row_count": 15
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Wageningen",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/1973",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "FC Boom",
+          "type": "Transfer",
+          "start": "7/1/1978",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "FC Boom",
+          "next club": "FC Den Haag",
+          "type": "Transfer",
+          "start": "7/1/1980",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1976-77",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1977-78",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Aitze Bouma"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1288-aitze-bouma.jpg",
+        "alt": "Soccer player Aitze Bouma",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/aitze-bouma__03341b4ed862.jpg",
+        "status": "downloaded",
+        "bytes": 13282,
+        "sha256": "03341b4ed862c25bf66e822b826c7b2db5f0cae8baa497332840fae67c2b4fb9",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:36:57.040Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name"
+    ]
+  }
+}

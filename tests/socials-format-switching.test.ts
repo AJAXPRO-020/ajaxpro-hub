@@ -26,12 +26,12 @@ test("formatkaarten tonen geen extra wedstrijdcontext-tags",async()=>{
   const html=await renderSocials(session,async()=>[fixture]).then(response=>response.text());
   assert.doesNotMatch(html,/class="status"/);
   assert.match(html,/data-match-context="required"/);
-  assert.equal((html.match(/data-match-context="required"/g)??[]).length,4);
+  assert.equal((html.match(/data-match-context="required"/g)??[]).length,7);
 });
 
 test("formatwissel toggelt uitsluitend workspaces en bewaart de module-state",()=>{
   const main=read("../socials/main.mjs");
-  assert.match(main,/const formatDefinitions=\[statsFormat,outblinkerFormat,topThreeFormat,quoteFormat,videoFormat,ajaxVandaagFormat\]/);
+  assert.match(main,/const formatDefinitions=\[statsFormat,shotsMapFormat,notableStatFormat,cardVideoFormat,outblinkerFormat,topThreeFormat,quoteFormat,videoFormat,ajaxVandaagFormat\]/);
   assert.match(main,/new Map\(formatDefinitions\.map/);
   assert.match(main,/root\.querySelectorAll\("\[data-format-workspace\]"\)/);
   assert.match(main,/workspace\.hidden=workspace\.dataset\.formatWorkspace!==id/);

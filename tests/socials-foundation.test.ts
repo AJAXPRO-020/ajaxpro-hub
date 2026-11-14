@@ -10,6 +10,9 @@ const read=(path:string)=>readFileSync(new URL(path,import.meta.url),"utf8");
 test("Socials registreert formats met een eigen matchContext-behoefte",()=>{
   assert.deepEqual(socialFormats.map(format=>({id:format.id,matchContext:format.matchContext})),[
     {id:"stats",matchContext:"required"},
+    {id:"shots-map",matchContext:"required"},
+    {id:"notable-stat",matchContext:"required"},
+    {id:"card-video",matchContext:"required"},
     {id:"video",matchContext:"required"},
     {id:"outblinker",matchContext:"required"},
     {id:"top-three",matchContext:"required"},

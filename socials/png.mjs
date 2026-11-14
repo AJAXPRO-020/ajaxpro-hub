@@ -1,10 +1,13 @@
 import {socialFilename} from '/socials/filename.mjs?v=20261101';
-const FORMATS={stats:{selector:'[data-stats-preview]',name:'Wedstrijd in cijfers',slug:'wedstrijd-in-cijfers'},outblinker:{selector:'[data-outblinker-preview]',name:'Uitblinker',slug:'uitblinker'},'top-three':{selector:'[data-top-three-preview]',name:'Top 3 spelers',slug:'top-3-spelers'},quote:{selector:'[data-quote-preview]',name:'Quote',slug:'quote'}};
+const FORMATS={stats:{selector:'[data-stats-preview]',name:'Wedstrijd in cijfers',slug:'wedstrijd-in-cijfers'},'shots-map':{selector:'[data-shots-map-preview]',name:'Schotenkaart',slug:'schotenkaart'},'notable-stat':{selector:'[data-notable-preview]',name:'Opvallend cijfer',slug:'opvallend-cijfer'},outblinker:{selector:'[data-outblinker-preview]',name:'Uitblinker',slug:'uitblinker'},'top-three':{selector:'[data-top-three-preview]',name:'Top 3 spelers',slug:'top-3-spelers'},quote:{selector:'[data-quote-preview]',name:'Quote',slug:'quote'}};
 const W=1080,RED='#b00029',PAPER='#f5f2eb',MUTED='#aeb2b9';
 const value=(node,selector)=>node.querySelector(selector)?.textContent?.trim()??'';
 const font=(size,bold=false)=>`${bold?'700':'400'} ${size}px ${bold?'"AjaxPro Bebas Visual"':'"AjaxPro Refrigerator"'}, "Arial Narrow", Arial, sans-serif`;
+const numberFont=size=>`900 ${size}px "AjaxPro Refrigerator", "Arial Narrow", Arial, sans-serif`;
+const loadVisualFonts=()=>Promise.all(['700 64px "AjaxPro Bebas Visual"','400 36px "AjaxPro Refrigerator"','900 160px "AjaxPro Refrigerator"'].map(spec=>document.fonts.load(spec)));
 const label=(ctx,text,x,y,size=30,color=PAPER,maxWidth)=>{ctx.font=font(size,true);ctx.fillStyle=color;ctx.fillText(String(text).toLocaleUpperCase('nl-NL'),x,y,maxWidth)};
 const text=(ctx,content,x,y,size=36,color=PAPER,maxWidth)=>{ctx.font=font(size);ctx.fillStyle=color;ctx.fillText(String(content),x,y,maxWidth)};
+const number=(ctx,content,x,y,size,color=PAPER,maxWidth)=>{ctx.font=numberFont(size);ctx.fillStyle=color;ctx.fillText(String(content),x,y,maxWidth)};
 const line=(ctx,x1,y1,x2,y2,color='rgba(245,242,235,.2)',width=2)=>{ctx.strokeStyle=color;ctx.lineWidth=width;ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke()};
 const rounded=(ctx,x,y,w,h,r=18)=>{ctx.beginPath();ctx.roundRect(x,y,w,h,r)};
 const wrap=(ctx,string,maxWidth,size,bold=false)=>{ctx.font=font(size,bold);const lines=[''];for(let word of String(string).split(/\s+/).filter(Boolean)){let current=lines.at(-1),candidate=current?`${current} ${word}`:word;if(ctx.measureText(candidate).width<=maxWidth){lines[lines.length-1]=candidate;continue}if(current)lines.push('');while(ctx.measureText(word).width>maxWidth&&word.length>1){let part='';for(const char of word){if(ctx.measureText(part+char).width>maxWidth)break;part+=char}lines[lines.length-1]+=part;word=word.slice(part.length);if(word)lines.push('')}if(word)lines[lines.length-1]=word}return lines};
@@ -16,31 +19,72 @@ const logoFor=()=>new Promise(resolve=>{const image=new Image();image.onload=()=
 const contain=(ctx,image,x,y,w,h)=>{if(!image)return;const scale=Math.min(w/image.naturalWidth,h/image.naturalHeight),dw=image.naturalWidth*scale,dh=image.naturalHeight*scale;ctx.drawImage(image,x+(w-dw)/2,y+h-dh,dw,dh)};
 const cover=(ctx,image,x,y,w,h)=>{if(!image)return;const scale=Math.max(w/image.naturalWidth,h/image.naturalHeight),sw=w/scale,sh=h/scale;ctx.drawImage(image,(image.naturalWidth-sw)/2,(image.naturalHeight-sh)/2,sw,sh,x,y,w,h)};
 const fade=(ctx,x,y,w,h,from='rgba(3,3,4,0)',to='#030304')=>{const gradient=ctx.createLinearGradient(x,y,x,y+h);gradient.addColorStop(0,from);gradient.addColorStop(1,to);ctx.fillStyle=gradient;ctx.fillRect(x,y,w,h)};
-const base=(ctx,H,name,context,logo)=>{ctx.fillStyle='#07090d';ctx.fillRect(0,0,W,H);let glow=ctx.createRadialGradient(850,H*.37,30,750,H*.45,730);glow.addColorStop(0,'rgba(176,0,41,.24)');glow.addColorStop(1,'rgba(176,0,41,0)');ctx.fillStyle=glow;ctx.fillRect(0,0,W,H);label(ctx,name,65,89,64,'#fff',740);if(logo)contain(ctx,logo,890,27,125,65);ctx.textAlign='left';line(ctx,65,117,1015,117);const lines=wrap(ctx,context,950,29);lines.slice(0,2).forEach((part,i)=>text(ctx,part,65,162+i*35,29,MUTED,950))};
+const base=(ctx,H,name,context,logo)=>{ctx.fillStyle='#07090d';ctx.fillRect(0,0,W,H);let glow=ctx.createRadialGradient(850,H*.37,30,750,H*.45,730);glow.addColorStop(0,'rgba(176,0,41,.24)');glow.addColorStop(1,'rgba(176,0,41,0)');ctx.fillStyle=glow;ctx.fillRect(0,0,W,H);label(ctx,name,65,89,64,'#fff',740);if(logo)contain(ctx,logo,890,27,125,65);ctx.textAlign='left';line(ctx,65,117,1015,117);let size=29,lines=wrap(ctx,context,950,size);while(lines.length>2&&size>20){size--;lines=wrap(ctx,context,950,size)};lines.slice(0,2).forEach((part,i)=>text(ctx,part,65,162+i*35,size,MUTED,950))};
 const footer=(ctx,H)=>{ctx.fillStyle=RED;ctx.fillRect(0,H-96,W,96);ctx.textAlign='left';fit(ctx,'ajaxpro.fans',65,H-35,330,42,34,'#fff');ctx.textAlign='right';label(ctx,'Voor Ajacieden die verder kijken',1015,H-38,27,'#fff',570);ctx.textAlign='left'};
 const matchContext=preview=>preview.dataset.pngContext||'';
+function drawNotableStat(ctx,H,preview){
+  const big=preview.dataset.notableValue||'',headline=preview.dataset.notableHeadline||'',detail=preview.dataset.notableDetail||'';
+  if(!big||!headline)return;
+  const tall=H>1500,match=big.match(/^(.*?)\s+(xGOT|xG|xA)$/i),numeral=match?.[1]??big,suffix=match?.[2]?.toUpperCase()??'';
+  const suffixSize=tall?140:120;ctx.font=font(suffixSize,true);const suffixWidth=suffix?ctx.measureText(suffix).width+30:0;
+  let size=tall?1040:850,metrics;
+  do{ctx.font=font(size,true);metrics=ctx.measureText(numeral);if(metrics.width+suffixWidth<=950&&metrics.actualBoundingBoxAscent+metrics.actualBoundingBoxDescent<=(tall?690:515))break;size-=8}while(size>180);
+  const backdropSize=size*3;size=Math.round(size*.94);ctx.font=font(size,true);metrics=ctx.measureText(numeral);
+  const groupWidth=metrics.width+suffixWidth,numberX=(W-groupWidth)/2,numberY=tall?965:695;
+  ctx.save();
+  ctx.beginPath();ctx.rect(0,205,W,H-301);ctx.clip();
+  ctx.globalAlpha=.2;ctx.font=font(backdropSize,true);ctx.lineWidth=6;ctx.lineJoin='round';ctx.strokeStyle='#e21242';
+  const backdropMetrics=ctx.measureText(numeral);
+  ctx.strokeText(numeral,W*.56-backdropMetrics.width/2,300+backdropMetrics.actualBoundingBoxAscent);
+  ctx.restore();
+  ctx.lineWidth=tall?9:8;ctx.lineJoin='round';ctx.strokeStyle=PAPER;ctx.strokeText(numeral,numberX,numberY);
+  if(suffix){ctx.font=font(suffixSize,true);ctx.fillStyle='#e21242';ctx.fillText(suffix,numberX+metrics.width+30,numberY-18)}
+  const title=headline.toLocaleUpperCase('nl-NL'),headlineY=tall?1130:890,maxLines=tall?4:3;
+  let headlineSize=tall?128:116,lines=wrap(ctx,title,950,headlineSize,true);
+  while(lines.length>maxLines&&headlineSize>56){headlineSize-=4;lines=wrap(ctx,title,950,headlineSize,true)}
+  const step=headlineSize*.94;ctx.font=font(headlineSize,true);ctx.fillStyle=PAPER;
+  lines.slice(0,maxLines).forEach((part,index)=>ctx.fillText(part,65,headlineY+index*step,950));
+  if(detail){const lastY=headlineY+(Math.min(lines.length,maxLines)-1)*step,detailY=Math.min(H-180,Math.max(lastY+85,tall?1450:1075));wrapped(ctx,detail,65,detailY,920,34,43,2,MUTED)}
+  ctx.textAlign='left';
+}
 const statRows=preview=>[...preview.querySelectorAll('.match-numbers-preview__stat')].map(row=>({name:value(row,'span'),home:value(row,'strong:first-child'),away:value(row,'strong:last-child')}));
+function drawShotsMap(ctx,H,preview){
+  const tall=H>1500,x=120,y=tall?335:240,w=840,h=tall?920:710,styles=getComputedStyle(preview);
+  const color=name=>styles.getPropertyValue(name).trim();
+  ctx.fillStyle=color('--shot-field');ctx.fillRect(x,y,w,h);ctx.strokeStyle=color('--shot-line');ctx.lineWidth=2;ctx.strokeRect(x,y,w,h);
+  const depth=Math.min(.9,Math.max(.15,parseFloat(preview.style.getPropertyValue('--shots-box-depth'))/100||.45));
+  ctx.strokeRect(x+w*.2,y,w*.6,h*depth);ctx.strokeRect(x+w*.35,y,w*.3,h*.12);ctx.strokeRect(x+w*.44,y-11,w*.12,11);
+  const marks=[...preview.querySelectorAll('.shots-map-preview__shot')].sort((a,b)=>Number(a.classList.contains('is-goal'))-Number(b.classList.contains('is-goal'))||parseFloat(b.style.width)-parseFloat(a.style.width));
+  for(const dot of marks){
+    const dx=x+w*parseFloat(dot.style.left)/100,dy=y+h*parseFloat(dot.style.top)/100,r=parseFloat(dot.style.width),goal=dot.classList.contains('is-goal');
+    ctx.beginPath();ctx.arc(dx,dy,r,0,Math.PI*2);ctx.fillStyle=goal?color('--shot-goal'):color('--shot-other');ctx.fill();ctx.strokeStyle=goal?color('--shot-goal-ring'):color('--shot-other-ring');ctx.lineWidth=goal?3:2;ctx.stroke();
+  }
+  const ly=tall?1350:1030;ctx.beginPath();ctx.arc(115,ly-9,9,0,Math.PI*2);ctx.fillStyle=color('--shot-goal');ctx.fill();ctx.strokeStyle=color('--shot-goal-ring');ctx.lineWidth=2;ctx.stroke();text(ctx,'Doelpunt',138,ly,27,MUTED);
+  ctx.beginPath();ctx.arc(415,ly-9,9,0,Math.PI*2);ctx.fillStyle=color('--shot-other');ctx.fill();text(ctx,'Overig schot',438,ly,27,MUTED);text(ctx,'Stipgrootte: xG',760,ly,27,MUTED);
+  const sy=tall?1552:1112;for(const [i,key] of ['count','target','xg'].entries()){const sx=100+i*330;label(ctx,['Schoten','Op doel','xG'][i],sx,sy,29,MUTED);text(ctx,value(preview,`[data-shots-map-${key}]`),sx,sy+95,86,PAPER)}
+}
 function drawStats(ctx,H,preview){
   const tall=H>1500,home=value(preview,'[data-preview-team="home"]'),away=value(preview,'[data-preview-team="away"]');
   const scoreTop=tall?360:285,scoreBottom=tall?870:625,nameY=tall?340:270,scoreY=tall?820:580;
   fit(ctx,home,100,nameY,385,60,37,'#fff');ctx.textAlign='right';fit(ctx,away,980,nameY,385,60,37,'#fff');ctx.textAlign='left';
   const hs=value(preview,'[data-preview-score="home"]'),as=value(preview,'[data-preview-score="away"]');
-  text(ctx,hs,95,scoreY,tall?445:350,'#fff',360);ctx.textAlign='right';text(ctx,as,985,scoreY,tall?445:350,'#fff',360);ctx.textAlign='center';label(ctx,'FT',540,scoreBottom-45,27,'#e21242');ctx.textAlign='left';
-  const divider=tall?955:715,xgY=tall?1135:875;line(ctx,95,divider,985,divider);text(ctx,value(preview,'[data-match-stat="xg-home"]'),100,xgY,tall?155:135,'#fff',350);ctx.textAlign='center';label(ctx,'xG',540,xgY-22,60,'#e21242');ctx.textAlign='right';text(ctx,value(preview,'[data-match-stat="xg-away"]'),980,xgY,tall?155:135,'#fff',350);ctx.textAlign='left';
+  number(ctx,hs,95,scoreY,tall?445:350,'#fff',360);ctx.textAlign='right';number(ctx,as,985,scoreY,tall?445:350,'#fff',360);ctx.textAlign='center';label(ctx,'FT',540,scoreBottom-45,27,'#e21242');ctx.textAlign='left';
+  const divider=tall?955:715,xgY=tall?1135:875;line(ctx,95,divider,985,divider);number(ctx,value(preview,'[data-match-stat="xg-home"]'),100,xgY,tall?155:135,'#fff',350);ctx.textAlign='center';label(ctx,'xG',540,xgY-22,60,'#e21242');ctx.textAlign='right';number(ctx,value(preview,'[data-match-stat="xg-away"]'),980,xgY,tall?155:135,'#fff',350);ctx.textAlign='left';
   const rows=statRows(preview),start=tall?1295:980,step=tall?135:67;
-  rows.forEach((row,i)=>{const y=start+i*step;ctx.textAlign='right';text(ctx,row.home,405,y,tall?75:61,'#fff',280);ctx.textAlign='center';label(ctx,row.name,540,y-15,tall?25:23,MUTED,240);ctx.textAlign='left';text(ctx,row.away,675,y,tall?75:61,'#b0b0b0',280)});
+  rows.forEach((row,i)=>{const y=start+i*step;ctx.textAlign='right';number(ctx,row.home,405,y,tall?75:61,'#fff',280);ctx.textAlign='center';label(ctx,row.name,540,y-15,tall?25:23,MUTED,240);ctx.textAlign='left';number(ctx,row.away,675,y,tall?75:61,'#b0b0b0',280)});
   ctx.textAlign='left';
 }
 function drawOutblinker(ctx,H,preview,photo){
   const tall=H>1500,photoBottom=tall?H-315:H-285,photoTop=tall?220:165;
   const glow=ctx.createRadialGradient(865,tall?700:500,40,865,tall?700:500,700);glow.addColorStop(0,'rgba(176,0,41,.27)');glow.addColorStop(1,'rgba(176,0,41,0)');ctx.fillStyle=glow;ctx.fillRect(0,0,W,H-96);
+  const hero=value(preview,'.outblinker-preview__hero strong'),heroLabel=value(preview,'.outblinker-preview__hero span');
+  if(hero){ctx.save();ctx.beginPath();ctx.rect(0,210,W,photoBottom-210);ctx.clip();ctx.globalAlpha=.16;ctx.font=numberFont(tall?510:460);ctx.lineWidth=5;ctx.lineJoin='round';ctx.strokeStyle='#e21242';ctx.strokeText(hero,tall?245:215,tall?1130:810);ctx.restore()}
   contain(ctx,photo,tall?305:350,photoTop,tall?865:730,photoBottom-photoTop);
   fade(ctx,0,tall?1070:735,W,tall?550:385,'rgba(3,3,4,0)','#07090d');
-  const hero=value(preview,'.outblinker-preview__hero strong'),heroLabel=value(preview,'.outblinker-preview__hero span');
-  label(ctx,heroLabel,65,tall?390:330,38,'#e21242',360);text(ctx,hero,60,tall?610:510,tall?220:190,'#fff',430);
+  label(ctx,heroLabel,65,tall?390:330,38,'#e21242',360);number(ctx,hero,65,tall?625:520,tall?220:190,'#fff',430);
   const name=value(preview,'[data-outblinker-name]');nameLines(ctx,name,65,tall?1250:830,700,tall?135:120,75,tall?115:105);
   const slots=[...preview.querySelectorAll('.outblinker-preview__performance [data-outblinker-preview-slot]')].filter(node=>!node.hidden).slice(0,4);
-  const y=tall?1600:1100,gap=235;slots.forEach((slot,i)=>{const x=65+i*gap;if(i===0){ctx.fillStyle=RED;ctx.fillRect(x,y-53,72,5)}label(ctx,value(slot,'span'),x,y,tall?27:25,MUTED,215);text(ctx,value(slot,'strong'),x,y+(tall?105:92),tall?86:78,'#fff',215)});
+  const y=tall?1600:1100,gap=235;slots.forEach((slot,i)=>{const x=65+i*gap;if(i===0){ctx.fillStyle=RED;ctx.fillRect(x,y-53,72,5)}label(ctx,value(slot,'span'),x,y,tall?27:25,MUTED,215);number(ctx,value(slot,'strong'),x,y+(tall?105:92),tall?86:78,'#fff',215)});
 }
 function drawTopThree(ctx,H,preview,photos){
   const slots=[...preview.querySelectorAll('[data-top-three-preview-player]')];
@@ -70,8 +114,8 @@ function drawTopThree(ctx,H,preview,photos){
     line(ctx,columns[1]-28,ruleTop,columns[1]-28,ruleBottom,'rgba(245,242,235,.35)',2);
     line(ctx,columns[2]-28,ruleTop,columns[2]-28,ruleBottom,'rgba(245,242,235,.35)',2);
     const rating=value(slots[index],'[data-top-three-rating] strong');
-    if(rating){label(ctx,'Rating',columns[0],infoY-46,hero?24:20,MUTED);text(ctx,rating,columns[0],infoY+15,hero?66:57,'#e21242',hero?140:112)}
-    stats.forEach((stat,i)=>{const sx=columns[i+1],statWidth=i===0?columns[i+2]-sx-32:x+w-sx-20;label(ctx,value(stat,'span'),sx,infoY-46,hero?20:18,MUTED,statWidth);text(ctx,value(stat,'strong'),sx,infoY+15,hero?60:54,'#fff',statWidth)});
+    if(rating){label(ctx,'Rating',columns[0],infoY-46,hero?24:20,MUTED);number(ctx,rating,columns[0],infoY+15,hero?66:57,'#e21242',hero?140:112)}
+    stats.forEach((stat,i)=>{const sx=columns[i+1],statWidth=i===0?columns[i+2]-sx-32:x+w-sx-20;label(ctx,value(stat,'span'),sx,infoY-46,hero?20:18,MUTED,statWidth);number(ctx,value(stat,'strong'),sx,infoY+15,hero?60:54,'#fff',statWidth)});
   };
   panels.forEach(drawPanel);
   line(ctx,split,top,split,bottom,'rgba(226,18,66,.48)',2);
@@ -98,7 +142,7 @@ function drawQuote(ctx,H,preview,portrait,background,inset){
   return '';
 }
 const filename=(id,preview)=>{const ratio=preview.dataset.aspect==='vertical-9x16'?'9x16':'4x5',home=preview.dataset.pngHome||value(preview,'[data-preview-team="home"]'),away=preview.dataset.pngAway||value(preview,'[data-preview-team="away"]'),subject=id==='outblinker'?value(preview,'[data-outblinker-name]'):value(preview,'[data-quote-preview-name]');return socialFilename({date:preview.dataset.pngDate,home,away,subject,format:FORMATS[id].slug,ratio})};
-const validate=(id,preview,images)=>{if(id==='stats'){if(!value(preview,'[data-preview-team="home"]')||!value(preview,'[data-preview-team="away"]'))return 'Wedstrijdgegevens ontbreken.';if([value(preview,'[data-preview-score="home"]'),value(preview,'[data-preview-score="away"]')].some(v=>!/^\d+$/.test(v)))return 'Een complete uitslag is nodig.';if([...preview.querySelectorAll('[data-match-stat]')].some(n=>n.textContent.trim()==='—'))return 'Vul eerst de wedstrijdstatistieken in.'}if(id==='outblinker'){if(!images[0])return 'Voor deze speler ontbreekt een bruikbare foto.';if(![...preview.querySelectorAll('.outblinker-preview__performance [data-outblinker-preview-slot]')].some(n=>!n.hidden))return 'Kies een speler met bruikbare stats.'}if(id==='top-three'){if([...preview.querySelectorAll('[data-top-three-preview-player]')].some(n=>n.dataset.selected!=='true'))return 'Kies drie spelers.';if(images.some(image=>!image))return 'Voor één of meer spelers ontbreekt een bruikbare foto.'}if(id==='quote'){if(value(preview,'[data-quote-preview-text]')==='Vul een quote in')return 'Vul eerst een quote in.';if(!images[0])return 'Voor deze persoon ontbreekt een bruikbare foto.'}return ''};
+const validate=(id,preview,images)=>{if(id==='notable-stat'&&(!preview.dataset.notableValue?.trim()||!preview.dataset.notableHeadline?.trim()))return 'Vul een cijfer en headline in.';if(id==='stats'){if(!value(preview,'[data-preview-team="home"]')||!value(preview,'[data-preview-team="away"]'))return 'Wedstrijdgegevens ontbreken.';if([value(preview,'[data-preview-score="home"]'),value(preview,'[data-preview-score="away"]')].some(v=>!/^\d+$/.test(v)))return 'Een complete uitslag is nodig.';if([...preview.querySelectorAll('[data-match-stat]')].some(n=>n.textContent.trim()==='—'))return 'Vul eerst de wedstrijdstatistieken in.'}if(id==='outblinker'){if(!images[0])return 'Voor deze speler ontbreekt een bruikbare foto.';if(![...preview.querySelectorAll('.outblinker-preview__performance [data-outblinker-preview-slot]')].some(n=>!n.hidden))return 'Kies een speler met bruikbare stats.'}if(id==='top-three'){if([...preview.querySelectorAll('[data-top-three-preview-player]')].some(n=>n.dataset.selected!=='true'))return 'Kies drie spelers.';if(images.some(image=>!image))return 'Voor één of meer spelers ontbreekt een bruikbare foto.'}if(id==='quote'){if(value(preview,'[data-quote-preview-text]')==='Vul een quote in')return 'Vul eerst een quote in.';if(!images[0])return 'Voor deze persoon ontbreekt een bruikbare foto.'}return ''};
 export function mountPngPreviews(root){
   for(const [id,definition] of Object.entries(FORMATS)){
     const preview=root.querySelector(definition.selector);if(!preview)continue;
@@ -112,12 +156,13 @@ export function mountPngPreviews(root){
       if(id==='outblinker')photos=[await imageFor(preview.querySelector('[data-outblinker-photo]'))];
       if(id==='top-three')photos=await Promise.all([...preview.querySelectorAll('[data-top-three-photo]')].map(imageFor));
       if(id==='quote')photos=await Promise.all(['[data-quote-person-photo]','[data-quote-background-preview]','[data-quote-inset-preview]'].map(selector=>imageFor(preview.querySelector(selector))));
-      const logo=await logoFor();if(current!==revision)return;await document.fonts.ready;if(current!==revision)return;
+      const logo=await logoFor();if(current!==revision)return;await loadVisualFonts();if(current!==revision)return;
       const frame=document.createElement('canvas');frame.width=W;frame.height=H;const ctx=frame.getContext('2d');base(ctx,H,definition.name,matchContext(preview),logo);
-      let error=validate(id,preview,photos);if(id==='stats')drawStats(ctx,H,preview);if(id==='outblinker')drawOutblinker(ctx,H,preview,photos[0]);if(id==='top-three')drawTopThree(ctx,H,preview,photos);if(id==='quote')error=drawQuote(ctx,H,preview,...photos)||error;footer(ctx,H);if(current!==revision)return;
+      let error=validate(id,preview,photos);if(id==='stats')drawStats(ctx,H,preview);if(id==='shots-map'){drawShotsMap(ctx,H,preview);if(!preview.querySelector('.shots-map-preview__shot'))error='Geen bruikbare Ajax-schoten beschikbaar.'}if(id==='notable-stat')drawNotableStat(ctx,H,preview);if(id==='outblinker')drawOutblinker(ctx,H,preview,photos[0]);if(id==='top-three')drawTopThree(ctx,H,preview,photos);if(id==='quote')error=drawQuote(ctx,H,preview,...photos)||error;footer(ctx,H);if(current!==revision)return;
       canvas.width=W;canvas.height=H;canvas.getContext('2d').drawImage(frame,0,0);exportFrame=frame;button.disabled=Boolean(error);notice.textContent=error;
+      root.dispatchEvent(new CustomEvent('socials:png-ready',{detail:{formatId:id,ready:!error}}));
     };
-    let scheduled=false;const observer=new MutationObserver(()=>{if(scheduled)return;scheduled=true;requestAnimationFrame(()=>{scheduled=false;void render()})});observer.observe(preview,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['data-aspect','data-selected','data-variant','hidden','src']});
+    let scheduled=false;const observer=new MutationObserver(()=>{if(scheduled)return;scheduled=true;requestAnimationFrame(()=>{scheduled=false;void render()})});observer.observe(preview,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['data-aspect','data-selected','data-variant','data-notable-value','data-notable-headline','data-notable-detail','hidden','src']});
     button.addEventListener('click',()=>{if(button.disabled||!exportFrame)return;const frame=exportFrame;button.disabled=true;frame.toBlob(blob=>{button.disabled=Boolean(notice.textContent)||!exportFrame;if(!blob){notice.textContent='PNG-export is mislukt. Probeer opnieuw.';return}const url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download=filename(id,preview);link.click();setTimeout(()=>URL.revokeObjectURL(url),60000)},'image/png')});void render();
   }
 }

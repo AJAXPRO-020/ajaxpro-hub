@@ -1,0 +1,385 @@
+{
+  "local_id": "afc_ajax_andriy-demchenko",
+  "slug": "andriy-demchenko",
+  "collected_at": "2026-10-31T18:10:09.220Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/andriy-demchenko",
+    "https://www.afc-ajax.info/en/player/andriy-demchenko/statistics",
+    "https://www.afc-ajax.info/en/player/andriy-demchenko/matches",
+    "https://www.afc-ajax.info/en/player/andriy-demchenko/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/andriy-demchenko",
+    "name": "Andriy Demchenko",
+    "full_name": "Andreij Anatolijovitsj Demtsjenko",
+    "alternative_names": [],
+    "birth_date": "1976-08-20",
+    "death_date": null,
+    "nationality": "Ukraine",
+    "roles": [
+      "Player (Midfielder)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Metaloerh Zaporizja",
+    "external_links": [
+      {
+        "label": "Andriy Demchenko",
+        "url": "http://nl.wikipedia.org/wiki/Andrej_Demtsjenko"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/edwin-van-der-sar",
+      "https://www.afc-ajax.info/en/player/peter-hoekstra",
+      "https://www.afc-ajax.info/en/player/patrick-kluivert",
+      "https://www.afc-ajax.info/en/player/finidi-george",
+      "https://www.afc-ajax.info/en/player/ronald-de-boer",
+      "https://www.afc-ajax.info/en/player/arnold-scholten",
+      "https://www.afc-ajax.info/en/player/jari-litmanen",
+      "https://www.afc-ajax.info/en/player/winston-bogarde",
+      "https://www.afc-ajax.info/en/player/frank-de-boer",
+      "https://www.afc-ajax.info/en/player/danny-blind"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1995-96",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "1",
+          "total": "4"
+        },
+        {
+          "season": "1997-98",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": "2"
+        },
+        {
+          "season": "Total",
+          "comp.": "4",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "5",
+          "friendly": "1",
+          "total": "6"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "2"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "3"
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1995-96",
+          "date": "8/30/1995",
+          "competition": "Trofeo Santiago Bernabeu",
+          "match": "Real Madrid - Ajax 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "3"
+        },
+        {
+          "season": "1995-96",
+          "date": "2/28/1996",
+          "competition": "UEFA Super Cup",
+          "match": "Ajax - Real Zaragoza 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1995-96",
+          "date": "3/17/1996",
+          "competition": "Eredivisie",
+          "match": "FC Volendam - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1995-96",
+          "date": "3/30/1996",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 2 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "11"
+        },
+        {
+          "season": "1997-98",
+          "date": "5/3/1998",
+          "competition": "Eredivisie",
+          "match": "De Graafschap - Ajax 1 - 8 (0 - 2)",
+          "active": "Bench",
+          "min": "24"
+        },
+        {
+          "season": "1997-98",
+          "date": "5/10/1998",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 1 - 2 (0 - 2)",
+          "active": "Bench",
+          "min": "8"
+        }
+      ],
+      "raw_row_count": 7
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "CSKA Moscow",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/1994",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "CSKA Moscow",
+          "type": "Loan start",
+          "start": "1/1/1998",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Metaloerh Zaporizja",
+          "type": "Transfer",
+          "start": "7/1/1998",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1994-95",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1995-96",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1996-97",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1997-98",
+          "contract type": "Contract",
+          "team": "Loan Out",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "1/1/1998",
+          "loan out to": "6/30/1998",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 5
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "photo"
+    ]
+  }
+}

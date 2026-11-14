@@ -54,10 +54,10 @@ test("meldt duidelijk wanneer de resolver geen wedstrijd vindt",async()=>{
   await assert.rejects(loadSocialsMatchStats("fortuna-ajax",{fixtureLoader:async()=>[fixture],resolver:async()=>null}),error=>error instanceof SocialsMatchStatsError&&error.status===404&&error.message==="Wedstrijd niet gevonden.");
 });
 
-test("rendert precies één handmatige Stats ophalen-actie voor de bestaande context",async()=>{
+test("rendert precies één handmatige Data ophalen-actie voor de bestaande context",async()=>{
   const html=await renderSocials(session,async()=>[fixture]).then(response=>response.text());
   assert.equal((html.match(/data-socials-stats-fetch/g)??[]).length,1);
-  assert.match(html,/Stats ophalen/);
+  assert.match(html,/Data ophalen/);
   assert.match(html,/Fortuna Sittard — Ajax/);
   assert.match(html,/Nog geen stats opgeslagen/);
   assert.match(html,/data-socials-provider-status/);

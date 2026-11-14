@@ -1,0 +1,634 @@
+{
+  "local_id": "afc_ajax_martin-wiggemansen",
+  "slug": "martin-wiggemansen",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/martin-wiggemansen",
+    "https://www.afc-ajax.info/en/player/martin-wiggemansen/statistics",
+    "https://www.afc-ajax.info/en/player/martin-wiggemansen/matches",
+    "https://www.afc-ajax.info/en/player/martin-wiggemansen/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/martin-wiggemansen",
+    "name": "Martin Wiggemansen",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1957-06-07",
+    "death_date": "2021-08-19",
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Midfielder)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "PEC Zwolle",
+    "external_links": [
+      {
+        "label": "Martin Wiggemansen",
+        "url": "http://nl.wikipedia.org/wiki/Martin_Wiggemansen"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/soren-lerby",
+      "https://www.afc-ajax.info/en/player/piet-schrijvers",
+      "https://www.afc-ajax.info/en/player/wim-kieft",
+      "https://www.afc-ajax.info/en/player/frank-arnesen",
+      "https://www.afc-ajax.info/en/player/peter-boeve",
+      "https://www.afc-ajax.info/en/player/henning-jensen",
+      "https://www.afc-ajax.info/en/player/kees-zwamborn",
+      "https://www.afc-ajax.info/en/player/sten-ziegler",
+      "https://www.afc-ajax.info/en/player/dick-schoenaker",
+      "https://www.afc-ajax.info/en/player/frank-rijkaard"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1980-81",
+          "comp.": "17",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "21",
+          "friendly": "1",
+          "total": "22"
+        },
+        {
+          "season": "1981-82",
+          "comp.": "3",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "1",
+          "total": "4"
+        },
+        {
+          "season": "Total",
+          "comp.": "20",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "24",
+          "friendly": "2",
+          "total": "26"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1980-81",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": "2"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "5"
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "7"
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "4"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "2",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "16"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [],
+      "raw_row_count": 1
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1980-81",
+          "date": "8/9/1980",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - AZ '67 2 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "15"
+        },
+        {
+          "season": "1980-81",
+          "date": "8/27/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 4 - 2 (0 - 2)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1980-81",
+          "date": "8/30/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - Wageningen 2 - 4 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "9/3/1980",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 1 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "19"
+        },
+        {
+          "season": "1980-81",
+          "date": "9/14/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 5 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "13"
+        },
+        {
+          "season": "1980-81",
+          "date": "9/17/1980",
+          "competition": "Europa Cup I",
+          "match": "Dinamo Tirana - Ajax 0 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": "14"
+        },
+        {
+          "season": "1980-81",
+          "date": "9/21/1980",
+          "competition": "Eredivisie",
+          "match": "Excelsior - Ajax 2 - 4 (0 - 2)",
+          "active": "Bench",
+          "min": "29"
+        },
+        {
+          "season": "1980-81",
+          "date": "9/28/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 5 - 1 (3 - 1)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1980-81",
+          "date": "10/1/1980",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Dinamo Tirana 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "10/25/1980",
+          "competition": "Eredivisie",
+          "match": "PEC Zwolle - Ajax 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "10/29/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 2 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1980-81",
+          "date": "11/5/1980",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Bayern Munchen 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "11/9/1980",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 4 - 3 (0 - 2)",
+          "active": "Bench",
+          "min": "22"
+        },
+        {
+          "season": "1980-81",
+          "date": "11/22/1980",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 1 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "4"
+        },
+        {
+          "season": "1980-81",
+          "date": "11/30/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 5 - 3 (2 - 3)",
+          "active": "Bench",
+          "min": "13"
+        },
+        {
+          "season": "1980-81",
+          "date": "5/10/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 6 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1980-81",
+          "date": "5/12/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 4 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "17"
+        },
+        {
+          "season": "1980-81",
+          "date": "5/17/1981",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 3 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "19"
+        },
+        {
+          "season": "1980-81",
+          "date": "5/24/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 4 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "5/28/1981",
+          "competition": "Dutch Cup",
+          "match": "Ajax - AZ '67 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "5/30/1981",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "6/6/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "8/7/1981",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Ipswich Town 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1981-82",
+          "date": "8/16/1981",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 1 - 7 (0 - 3)",
+          "active": "Bench",
+          "min": "26"
+        },
+        {
+          "season": "1981-82",
+          "date": "8/23/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - PEC Zwolle 5 - 1 (4 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1981-82",
+          "date": "10/18/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 2 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "16"
+        }
+      ],
+      "raw_row_count": 27
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "FC Amsterdam",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "8/9/1980",
+          "amount": "€ 136,1K",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Lugano",
+          "type": "Transfer",
+          "start": "7/1/1982",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Lugano",
+          "next club": "PEC Zwolle '82",
+          "type": "Transfer",
+          "start": "7/1/1984",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "PEC Zwolle '82",
+          "next club": "None",
+          "type": "Retirement",
+          "start": "7/1/1986",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1980-81",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1981-82",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Martin Wiggemansen (Press day Ajax)"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1163-martin-wiggemansen.jpg",
+        "alt": "Soccer player Martin Wiggemansen",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/martin-wiggemansen__a96f769d1837.jpg",
+        "status": "downloaded",
+        "bytes": 17358,
+        "sha256": "a96f769d1837af0adc8c4d53e2375e4173af824ae4d6fd93caa4a1ca2ef5a141",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:03.567Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "full_name"
+    ]
+  }
+}

@@ -1,0 +1,933 @@
+{
+  "local_id": "afc_ajax_anthony-obodai",
+  "slug": "anthony-obodai",
+  "collected_at": "2026-10-31T18:10:09.220Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/anthony-obodai",
+    "https://www.afc-ajax.info/en/player/anthony-obodai/statistics",
+    "https://www.afc-ajax.info/en/player/anthony-obodai/matches",
+    "https://www.afc-ajax.info/en/player/anthony-obodai/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/anthony-obodai",
+    "name": "Anthony Obodai",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1982-08-06",
+    "death_date": null,
+    "nationality": "Ghana",
+    "roles": [
+      "Player (Midfielder)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "RKC Waalwijk",
+    "external_links": [
+      {
+        "label": "Anthony Obodai",
+        "url": "http://nl.wikipedia.org/wiki/Anthony_Obodai"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/nigel-de-jong",
+      "https://www.afc-ajax.info/en/player/wesley-sneijder",
+      "https://www.afc-ajax.info/en/player/maxwell",
+      "https://www.afc-ajax.info/en/player/john-heitinga",
+      "https://www.afc-ajax.info/en/player/julien-escude",
+      "https://www.afc-ajax.info/en/player/rafael-van-der-vaart",
+      "https://www.afc-ajax.info/en/player/steven-pienaar",
+      "https://www.afc-ajax.info/en/player/wesley-sonck",
+      "https://www.afc-ajax.info/en/player/maarten-stekelenburg",
+      "https://www.afc-ajax.info/en/player/nicolae-mitea"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2003-04",
+          "comp.": "8",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "10",
+          "friendly": "1",
+          "total": "11"
+        },
+        {
+          "season": "2004-05",
+          "comp.": "13",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "7",
+          "other off.": "1",
+          "off. mat.": "22",
+          "friendly": "2",
+          "total": "24"
+        },
+        {
+          "season": "2005-06",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "2",
+          "total": "2"
+        },
+        {
+          "season": "Total",
+          "comp.": "21",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "8",
+          "other off.": "1",
+          "off. mat.": "32",
+          "friendly": "5",
+          "total": "37"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2003-04",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": "2"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "2",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "46-60",
+          "goals": "1",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "4",
+          "substitute in": "4"
+        },
+        {
+          "minute": "61-75",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "4",
+          "substitute in": "3"
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "5"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "2",
+          "assists": "1",
+          "yellow": "3",
+          "red": "",
+          "substitute out": "9",
+          "substitute in": "13"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [],
+      "raw_row_count": 1
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2003-04",
+          "date": "8/1/2003",
+          "competition": "Amsterdam Tournament",
+          "match": "Ajax - Liverpool 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2003-04",
+          "date": "8/3/2003",
+          "competition": "Amsterdam Tournament",
+          "match": "Ajax - Internazionale 3 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "18"
+        },
+        {
+          "season": "2003-04",
+          "date": "8/12/2003",
+          "competition": "Champions League",
+          "match": "Grazer AK - Ajax 1 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2003-04",
+          "date": "8/17/2003",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 1 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2003-04",
+          "date": "10/26/2003",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 2 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2003-04",
+          "date": "11/23/2003",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 3 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2003-04",
+          "date": "11/26/2003",
+          "competition": "Champions League",
+          "match": "Ajax - AC Milan 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "54"
+        },
+        {
+          "season": "2003-04",
+          "date": "12/14/2003",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2003-04",
+          "date": "12/17/2003",
+          "competition": "Dutch Cup",
+          "match": "Ajax - NAC Breda 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "51"
+        },
+        {
+          "season": "2003-04",
+          "date": "12/21/2003",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2003-04",
+          "date": "2/25/2004",
+          "competition": "Eredivisie",
+          "match": "SC Heerenveen - Ajax 4 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "12"
+        },
+        {
+          "season": "2003-04",
+          "date": "2/29/2004",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "71"
+        },
+        {
+          "season": "2003-04",
+          "date": "3/6/2004",
+          "competition": "Eredivisie",
+          "match": "RKC Waalwijk - Ajax 0 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2003-04",
+          "date": "3/14/2004",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 4 - 2 (3 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2003-04",
+          "date": "4/4/2004",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 2 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2003-04",
+          "date": "4/11/2004",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 1 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2003-04",
+          "date": "4/18/2004",
+          "competition": "Eredivisie",
+          "match": "Ajax - RBC Roosendaal 1 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": "6"
+        },
+        {
+          "season": "2003-04",
+          "date": "4/25/2004",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2003-04",
+          "date": "5/2/2004",
+          "competition": "Eredivisie",
+          "match": "FC Zwolle - Ajax 0 - 5 (0 - 1)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2003-04",
+          "date": "5/9/2004",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC Breda 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2003-04",
+          "date": "5/16/2004",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 2 - 5 (1 - 1)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2004-05",
+          "date": "7/30/2004",
+          "competition": "Amsterdam Tournament",
+          "match": "Ajax - Panathinaikos 3 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "69"
+        },
+        {
+          "season": "2004-05",
+          "date": "8/1/2004",
+          "competition": "Amsterdam Tournament",
+          "match": "Ajax - Arsenal 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2004-05",
+          "date": "8/8/2004",
+          "competition": "Dutch Super Cup",
+          "match": "Utrecht - Ajax 4 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2004-05",
+          "date": "8/15/2004",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 2 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "71"
+        },
+        {
+          "season": "2004-05",
+          "date": "8/22/2004",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC Breda 6 - 2 (2 - 1)",
+          "active": "Bench",
+          "min": "18"
+        },
+        {
+          "season": "2004-05",
+          "date": "8/29/2004",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2004-05",
+          "date": "9/12/2004",
+          "competition": "Eredivisie",
+          "match": "ADO Den Haag - Ajax 3 - 3 (1 - 3)",
+          "active": "Bench",
+          "min": "23"
+        },
+        {
+          "season": "2004-05",
+          "date": "9/15/2004",
+          "competition": "Champions League",
+          "match": "Ajax - Juventus 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "72"
+        },
+        {
+          "season": "2004-05",
+          "date": "9/19/2004",
+          "competition": "Eredivisie",
+          "match": "FC Den Bosch - Ajax 0 - 5 (0 - 2)",
+          "active": "Bench",
+          "min": "31"
+        },
+        {
+          "season": "2004-05",
+          "date": "9/25/2004",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2004-05",
+          "date": "9/28/2004",
+          "competition": "Champions League",
+          "match": "Bayern Munchen - Ajax 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2004-05",
+          "date": "10/3/2004",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2004-05",
+          "date": "10/16/2004",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 1 - 3 (1 - 0)",
+          "active": "Bench",
+          "min": "13"
+        },
+        {
+          "season": "2004-05",
+          "date": "10/19/2004",
+          "competition": "Champions League",
+          "match": "Ajax - Maccabi Tel Aviv 3 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2004-05",
+          "date": "10/24/2004",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "69"
+        },
+        {
+          "season": "2004-05",
+          "date": "10/31/2004",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "30"
+        },
+        {
+          "season": "2004-05",
+          "date": "11/3/2004",
+          "competition": "Champions League",
+          "match": "Maccabi Tel Aviv - Ajax 2 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "58"
+        },
+        {
+          "season": "2004-05",
+          "date": "11/20/2004",
+          "competition": "Eredivisie",
+          "match": "De Graafschap - Ajax 0 - 5 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2004-05",
+          "date": "11/23/2004",
+          "competition": "Champions League",
+          "match": "Juventus - Ajax 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2004-05",
+          "date": "11/28/2004",
+          "competition": "Eredivisie",
+          "match": "Ajax - RBC Roosendaal 4 - 1 (2 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2004-05",
+          "date": "12/8/2004",
+          "competition": "Champions League",
+          "match": "Ajax - Bayern Munchen 2 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "12"
+        },
+        {
+          "season": "2004-05",
+          "date": "12/12/2004",
+          "competition": "Eredivisie",
+          "match": "Ajax - Vitesse 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "1"
+        },
+        {
+          "season": "2004-05",
+          "date": "12/19/2004",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 0 - 4 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2004-05",
+          "date": "1/23/2005",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 0 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2004-05",
+          "date": "2/13/2005",
+          "competition": "Eredivisie",
+          "match": "NAC Breda - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2004-05",
+          "date": "2/16/2005",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Auxerre 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "45"
+        },
+        {
+          "season": "2004-05",
+          "date": "2/20/2005",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Bosch 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "2004-05",
+          "date": "2/24/2005",
+          "competition": "UEFA Cup",
+          "match": "Auxerre - Ajax 3 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "83"
+        },
+        {
+          "season": "2004-05",
+          "date": "2/27/2005",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 1 - 2 (0 - 2)",
+          "active": "Bench",
+          "min": "24"
+        },
+        {
+          "season": "2004-05",
+          "date": "3/2/2005",
+          "competition": "Dutch Cup",
+          "match": "ADO Den Haag - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2004-05",
+          "date": "3/13/2005",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 0 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2004-05",
+          "date": "4/2/2005",
+          "competition": "Eredivisie",
+          "match": "SC Heerenveen - Ajax 2 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2004-05",
+          "date": "4/30/2005",
+          "competition": "Eredivisie",
+          "match": "RBC Roosendaal - Ajax 1 - 4 (0 - 3)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2004-05",
+          "date": "5/7/2005",
+          "competition": "Eredivisie",
+          "match": "Ajax - RKC Waalwijk 4 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2004-05",
+          "date": "5/15/2005",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 0 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2005-06",
+          "date": "7/29/2005",
+          "competition": "Amsterdam Tournament",
+          "match": "Ajax - Arsenal 0 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2005-06",
+          "date": "7/31/2005",
+          "competition": "Amsterdam Tournament",
+          "match": "Ajax - Boca Juniors 0 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "36"
+        }
+      ],
+      "raw_row_count": 59
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Unknown",
+          "next club": "Ajax",
+          "type": "Joins youth academy",
+          "start": "",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "First contract",
+          "start": "7/1/2000",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Germinal Beerschot",
+          "type": "Loan start",
+          "start": "7/1/2002",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Germinal Beerschot",
+          "next club": "Ajax",
+          "type": "Loan end",
+          "start": "7/1/2003",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Sparta Rotterdam",
+          "type": "Transfer",
+          "start": "8/30/2005",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Sparta Rotterdam",
+          "next club": "RKC Waalwijk",
+          "type": "Transfer",
+          "start": "1/1/2007",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 7
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2000-01",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2001-02",
+          "contract type": "Contract",
+          "team": "Young",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2002-03",
+          "contract type": "Contract",
+          "team": "Loan Out",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "7/1/2002",
+          "loan out to": "6/30/2003",
+          "remark": ""
+        },
+        {
+          "season": "2003-04",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2004-05",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2005-06",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "8/30/2005",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 7
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name",
+      "photo"
+    ]
+  }
+}

@@ -1,0 +1,1405 @@
+{
+  "local_id": "afc_ajax_geert-meijer",
+  "slug": "geert-meijer",
+  "collected_at": "2026-10-31T18:21:14.479Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/geert-meijer",
+    "https://www.afc-ajax.info/en/player/geert-meijer/statistics",
+    "https://www.afc-ajax.info/en/player/geert-meijer/matches",
+    "https://www.afc-ajax.info/en/player/geert-meijer/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/geert-meijer",
+    "name": "Geert Meijer",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1951-03-15",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Forward)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "NAC Breda",
+    "external_links": [
+      {
+        "label": "Geert Meijer",
+        "url": "http://nl.wikipedia.org/wiki/Geert_Meijer"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/piet-schrijvers",
+      "https://www.afc-ajax.info/en/player/ruud-krol",
+      "https://www.afc-ajax.info/en/player/pim-van-dord",
+      "https://www.afc-ajax.info/en/player/frank-arnesen",
+      "https://www.afc-ajax.info/en/player/tscheu-la-ling",
+      "https://www.afc-ajax.info/en/player/ruud-geels",
+      "https://www.afc-ajax.info/en/player/dick-schoenaker",
+      "https://www.afc-ajax.info/en/player/hans-erkens",
+      "https://www.afc-ajax.info/en/player/simon-tahamata",
+      "https://www.afc-ajax.info/en/player/soren-lerby"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1975-76",
+          "comp.": "14",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "4",
+          "other off.": "",
+          "off. mat.": "19",
+          "friendly": "3",
+          "total": "22"
+        },
+        {
+          "season": "1974-75",
+          "comp.": "",
+          "play off": "3",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "",
+          "total": "3"
+        },
+        {
+          "season": "1976-77",
+          "comp.": "7",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "9",
+          "friendly": "2",
+          "total": "11"
+        },
+        {
+          "season": "1977-78",
+          "comp.": "26",
+          "play off": "",
+          "dutch cup": "7",
+          "europa": "4",
+          "other off.": "",
+          "off. mat.": "37",
+          "friendly": "1",
+          "total": "38"
+        },
+        {
+          "season": "1978-79",
+          "comp.": "18",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "6",
+          "other off.": "",
+          "off. mat.": "26",
+          "friendly": "3",
+          "total": "29"
+        },
+        {
+          "season": "Total",
+          "comp.": "65",
+          "play off": "3",
+          "dutch cup": "11",
+          "europa": "15",
+          "other off.": "",
+          "off. mat.": "94",
+          "friendly": "9",
+          "total": "103"
+        }
+      ],
+      "raw_row_count": 7
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1975-76",
+          "comp.": "3",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "5",
+          "friendly": "1",
+          "total": ""
+        },
+        {
+          "season": "1974-75",
+          "comp.": "",
+          "play off": "2",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1977-78",
+          "comp.": "7",
+          "play off": "",
+          "dutch cup": "3",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "10",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1978-79",
+          "comp.": "5",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "5",
+          "friendly": "1",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "15",
+          "play off": "2",
+          "dutch cup": "3",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "22",
+          "friendly": "2",
+          "total": "24"
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "3",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "16-30",
+          "goals": "6",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "3",
+          "assists": "2",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "46-60",
+          "goals": "3",
+          "assists": "2",
+          "yellow": "",
+          "red": "",
+          "substitute out": "2",
+          "substitute in": "7"
+        },
+        {
+          "minute": "61-75",
+          "goals": "2",
+          "assists": "2",
+          "yellow": "",
+          "red": "",
+          "substitute out": "3",
+          "substitute in": "12"
+        },
+        {
+          "minute": "76-90",
+          "goals": "5",
+          "assists": "6",
+          "yellow": "",
+          "red": "",
+          "substitute out": "2",
+          "substitute in": "10"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "Totaal",
+          "goals": "22",
+          "assists": "13",
+          "yellow": "",
+          "red": "",
+          "substitute out": "7",
+          "substitute in": "32"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [
+        {
+          "assisted by": "Pim van Dord",
+          "number": "3"
+        },
+        {
+          "assisted by": "Tscheu La Ling",
+          "number": "3"
+        },
+        {
+          "assisted by": "Ruud Geels",
+          "number": "2"
+        },
+        {
+          "assisted by": "Frank Arnesen",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "18"
+        },
+        {
+          "type": "Goal (header)",
+          "number": "4"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "20"
+        },
+        {
+          "origin": "from free kick (indirect)",
+          "number": "1"
+        },
+        {
+          "origin": "after solo",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 4
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1975-76",
+          "date": "8/8/1975",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Barcelona 3 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1975-76",
+          "date": "8/10/1975",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - RWDM 2 - 5 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1974-75",
+          "date": "8/13/1975",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1975-76",
+          "date": "8/16/1975",
+          "competition": "Eredivisie",
+          "match": "Sparta - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1974-75",
+          "date": "8/20/1975",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ '67 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1975-76",
+          "date": "8/24/1975",
+          "competition": "Eredivisie",
+          "match": "Ajax - Excelsior 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1974-75",
+          "date": "8/26/1975",
+          "competition": "Eredivisie",
+          "match": "Sparta - Ajax 0 - 5 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1975-76",
+          "date": "8/31/1975",
+          "competition": "Eredivisie",
+          "match": "FC Den Haag - Ajax 1 - 3 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1975-76",
+          "date": "9/13/1975",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1975-76",
+          "date": "9/16/1975",
+          "competition": "UEFA Cup",
+          "match": "Glentoran - Ajax 1 - 6 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1975-76",
+          "date": "9/20/1975",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 6 - 2 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1975-76",
+          "date": "9/23/1975",
+          "competition": "Friendly",
+          "match": "Ajax - Borussia Dortmund 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1975-76",
+          "date": "9/27/1975",
+          "competition": "Eredivisie",
+          "match": "Ajax - De Graafschap 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1975-76",
+          "date": "10/1/1975",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Glentoran 8 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1975-76",
+          "date": "10/5/1975",
+          "competition": "Eredivisie",
+          "match": "AZ '67 - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "84"
+        },
+        {
+          "season": "1975-76",
+          "date": "10/12/1975",
+          "competition": "Dutch Cup",
+          "match": "NEC - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1975-76",
+          "date": "10/18/1975",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 5 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1975-76",
+          "date": "10/22/1975",
+          "competition": "UEFA Cup",
+          "match": "Hertha BSC - Ajax 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1975-76",
+          "date": "10/26/1975",
+          "competition": "Eredivisie",
+          "match": "FC Amsterdam - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1975-76",
+          "date": "11/5/1975",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Hertha BSC 4 - 1 (2 - 1)",
+          "active": "Bench",
+          "min": "32"
+        },
+        {
+          "season": "1975-76",
+          "date": "11/26/1975",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Levski Sofia 2 - 1 (1 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1975-76",
+          "date": "2/15/1976",
+          "competition": "Eredivisie",
+          "match": "De Graafschap - Ajax 2 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "29"
+        },
+        {
+          "season": "1975-76",
+          "date": "2/29/1976",
+          "competition": "Dutch Cup",
+          "match": "PEC Zwolle - Ajax 3 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "1975-76",
+          "date": "3/7/1976",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1975-76",
+          "date": "3/14/1976",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Amsterdam 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1975-76",
+          "date": "3/21/1976",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "8"
+        },
+        {
+          "season": "1975-76",
+          "date": "3/27/1976",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 1 - 3 (1 - 2)",
+          "active": "Bench",
+          "min": "25"
+        },
+        {
+          "season": "1976-77",
+          "date": "8/6/1976",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Borussia M&ouml;nchengladbach 0 - 0 (penalties: 5 - 4)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1976-77",
+          "date": "8/8/1976",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Anderlecht 1 - 3 (0 - 1)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1976-77",
+          "date": "8/22/1976",
+          "competition": "Eredivisie",
+          "match": "Ajax - De Graafschap 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "33"
+        },
+        {
+          "season": "1976-77",
+          "date": "8/25/1976",
+          "competition": "Eredivisie",
+          "match": "AZ '67 - Ajax 0 - 3 (0 - 3)",
+          "active": "Bench",
+          "min": "10"
+        },
+        {
+          "season": "1976-77",
+          "date": "8/29/1976",
+          "competition": "Eredivisie",
+          "match": "HFC Haarlem - Ajax 2 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "55"
+        },
+        {
+          "season": "1976-77",
+          "date": "9/1/1976",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1976-77",
+          "date": "9/5/1976",
+          "competition": "Eredivisie",
+          "match": "FC Den Haag - Ajax 1 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1976-77",
+          "date": "9/11/1976",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 1 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1976-77",
+          "date": "9/29/1976",
+          "competition": "UEFA Cup",
+          "match": "Manchester United - Ajax 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "20"
+        },
+        {
+          "season": "1976-77",
+          "date": "10/3/1976",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC VVV 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "25"
+        },
+        {
+          "season": "1976-77",
+          "date": "11/21/1976",
+          "competition": "Dutch Cup",
+          "match": "Utrecht - Ajax 2 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "1977-78",
+          "date": "8/7/1977",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - AZ '67 0 - 3 (0 - 0)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "1977-78",
+          "date": "8/14/1977",
+          "competition": "Eredivisie",
+          "match": "HFC Haarlem - Ajax 0 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": "10"
+        },
+        {
+          "season": "1977-78",
+          "date": "8/21/1977",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 1 - 2 (1 - 0)",
+          "active": "Bench",
+          "min": "36"
+        },
+        {
+          "season": "1977-78",
+          "date": "9/11/1977",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 4 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1977-78",
+          "date": "9/14/1977",
+          "competition": "Europa Cup I",
+          "match": "Lillestrom SK - Ajax 2 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "14"
+        },
+        {
+          "season": "1977-78",
+          "date": "9/18/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "9/25/1977",
+          "competition": "Eredivisie",
+          "match": "Telstar - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "58"
+        },
+        {
+          "season": "1977-78",
+          "date": "10/2/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Volendam 1 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "75"
+        },
+        {
+          "season": "1977-78",
+          "date": "10/29/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC VVV 5 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "5"
+        },
+        {
+          "season": "1977-78",
+          "date": "11/2/1977",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Levski Sofia 2 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": "19"
+        },
+        {
+          "season": "1977-78",
+          "date": "11/13/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Haag 3 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "11/20/1977",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Telstar 4 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "11/27/1977",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "12/4/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 1 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "12/11/1977",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "12/18/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - HFC Haarlem 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "55"
+        },
+        {
+          "season": "1977-78",
+          "date": "12/24/1977",
+          "competition": "Dutch Cup",
+          "match": "Ajax - EVV 7 - 0 (3 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1977-78",
+          "date": "1/8/1978",
+          "competition": "Eredivisie",
+          "match": "AZ '67 - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "1/15/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 6 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "19"
+        },
+        {
+          "season": "1977-78",
+          "date": "1/22/1978",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 2 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": "25"
+        },
+        {
+          "season": "1977-78",
+          "date": "2/1/1978",
+          "competition": "Dutch Cup",
+          "match": "Roda JC - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "2/25/1978",
+          "competition": "Eredivisie",
+          "match": "Go Ahead Eagles - Ajax 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "12"
+        },
+        {
+          "season": "1977-78",
+          "date": "3/1/1978",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Juventus 1 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "12"
+        },
+        {
+          "season": "1977-78",
+          "date": "3/5/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - Telstar 7 - 0 (4 - 0)",
+          "active": "Bench",
+          "min": "20"
+        },
+        {
+          "season": "1977-78",
+          "date": "3/8/1978",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Roda JC 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "3/12/1978",
+          "competition": "Eredivisie",
+          "match": "FC Volendam - Ajax 1 - 6 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "3/15/1978",
+          "competition": "Europa Cup I",
+          "match": "Juventus - Ajax 1 - 1 (penalties: 3 - 0)",
+          "active": "Start",
+          "min": "71"
+        },
+        {
+          "season": "1977-78",
+          "date": "3/19/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Amsterdam 5 - 1 (2 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1977-78",
+          "date": "3/22/1978",
+          "competition": "Dutch Cup",
+          "match": "Sparta Rotterdam - Ajax 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "3/27/1978",
+          "competition": "Eredivisie",
+          "match": "FC VVV - Ajax 2 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "3/30/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "4/2/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 6 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "4/9/1978",
+          "competition": "Eredivisie",
+          "match": "FC Den Haag - Ajax 0 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "4/13/1978",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Sparta Rotterdam 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "4/16/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "4/23/1978",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 2 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "4/30/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 4 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "5/5/1978",
+          "competition": "Dutch Cup",
+          "match": "Ajax - AZ '67 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "8/18/1978",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Fluminense 2 - 2 (penalties: 5 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "8/20/1978",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Anderlecht 2 - 2 (penalties: 4 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "8/26/1978",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 1 - 7 (0 - 5)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "8/30/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 3 - 2 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "9/3/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - PEC Zwolle 4 - 2 (3 - 0)",
+          "active": "Start",
+          "min": "70"
+        },
+        {
+          "season": "1978-79",
+          "date": "9/6/1978",
+          "competition": "Eredivisie",
+          "match": "PEC Zwolle - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "9/9/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "9/13/1978",
+          "competition": "UEFA Cup",
+          "match": "Athletic de Bilbao - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "9/17/1978",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 1 - 4 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "9/23/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC VVV 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "9/27/1978",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Athletic de Bilbao 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "9/30/1978",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "10/8/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - Vitesse 4 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "10/14/1978",
+          "competition": "Dutch Cup",
+          "match": "Ajax - EVV 3 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "10/18/1978",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Lausanne Sports 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "10/22/1978",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 0 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": "15"
+        },
+        {
+          "season": "1978-79",
+          "date": "10/28/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "11/1/1978",
+          "competition": "UEFA Cup",
+          "match": "Lausanne Sports - Ajax 0 - 4 (0 - 3)",
+          "active": "Bench",
+          "min": "13"
+        },
+        {
+          "season": "1978-79",
+          "date": "11/5/1978",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "66"
+        },
+        {
+          "season": "1978-79",
+          "date": "11/7/1978",
+          "competition": "Friendly",
+          "match": "Ajax - Bayern Munchen 0 - 8 (0 - 2)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1978-79",
+          "date": "11/12/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 1 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "11/22/1978",
+          "competition": "UEFA Cup",
+          "match": "Budapest Honved - Ajax 4 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "20"
+        },
+        {
+          "season": "1978-79",
+          "date": "12/2/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Volendam 7 - 3 (4 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "12/6/1978",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Budapest Honved 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "85"
+        },
+        {
+          "season": "1978-79",
+          "date": "12/10/1978",
+          "competition": "Eredivisie",
+          "match": "AZ '67 - Ajax 1 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": "2"
+        },
+        {
+          "season": "1978-79",
+          "date": "12/17/1978",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 2 - 3 (1 - 0)",
+          "active": "Bench",
+          "min": "25"
+        },
+        {
+          "season": "1978-79",
+          "date": "3/11/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "3/17/1979",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 3 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "2"
+        },
+        {
+          "season": "1978-79",
+          "date": "3/20/1979",
+          "competition": "Dutch Cup",
+          "match": "Fortuna SC - Ajax 0 - 2 (0 - 2)",
+          "active": "Bench",
+          "min": "27"
+        }
+      ],
+      "raw_row_count": 106
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "FC Amsterdam",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/1975",
+          "amount": "€ 295K",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "FC Amsterdam",
+          "type": "Loan start",
+          "start": "12/1/1976",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "FC Amsterdam",
+          "next club": "Ajax",
+          "type": "Loan end",
+          "start": "7/1/1977",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "Contract renewal",
+          "start": "7/1/1978",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Bristol City",
+          "type": "Transfer",
+          "start": "3/30/1979",
+          "amount": "€ 113,4K",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Bristol City",
+          "next club": "Sparta Rotterdam",
+          "type": "Transfer",
+          "start": "2/24/1980",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Sparta Rotterdam",
+          "next club": "DS '79",
+          "type": "Transfer",
+          "start": "7/1/1983",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "DS '79",
+          "next club": "NAC",
+          "type": "Loan start",
+          "start": "1/24/1984",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "DS '79",
+          "next club": "NAC",
+          "type": "Transfer",
+          "start": "7/1/1984",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "NAC",
+          "next club": "None",
+          "type": "Retirement",
+          "start": "7/1/1986",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1975-76",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1976-77",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1977-78",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1978-79",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 5
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name",
+      "photo"
+    ]
+  }
+}

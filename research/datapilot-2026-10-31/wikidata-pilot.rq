@@ -1,0 +1,20 @@
+SELECT ?player ?playerLabel ?birthDate ?birthPlace ?birthPlaceLabel ?country ?countryLabel
+       ?position ?positionLabel ?team ?teamLabel ?teamStart ?teamEnd WHERE {
+  VALUES ?player { wd:Q160472 wd:Q86849563 wd:Q113254264 wd:Q18428483 wd:Q28753836
+    wd:Q20823439 wd:Q107742783 wd:Q3189078 wd:Q19973862 wd:Q111588237
+    wd:Q26267167 wd:Q27929648 wd:Q104153643 wd:Q128912 wd:Q129101
+    wd:Q68362571 wd:Q133876886 wd:Q134410441 wd:Q128721 wd:Q125130980
+    wd:Q56257847 wd:Q130479109 wd:Q122683676 wd:Q98534760 wd:Q111087062 }
+  OPTIONAL { ?player wdt:P569 ?birthDate. }
+  OPTIONAL { ?player wdt:P19 ?birthPlace. }
+  OPTIONAL { ?player wdt:P27 ?country. }
+  OPTIONAL { ?player wdt:P413 ?position. }
+  OPTIONAL {
+    ?player p:P54 ?teamStatement.
+    ?teamStatement ps:P54 ?team.
+    OPTIONAL { ?teamStatement pq:P580 ?teamStart. }
+    OPTIONAL { ?teamStatement pq:P582 ?teamEnd. }
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". }
+}
+ORDER BY ?player ?teamStart ?team

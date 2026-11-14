@@ -29,7 +29,7 @@ const main=async()=>{
     response=req.method==='POST'?await POST(request):await GET(request);
     if(response.headers.get('Content-Type')?.startsWith('text/html'))response=new Response((await response.text()).replace('<main class="motm-main socials-shell"','<p class="page-intro">Lokale review · aparte previewdatabase · Shotstack-proefcredits</p><main class="motm-main socials-shell"'),{status:response.status,headers:response.headers});
    }else{
-    const file=resolve(root,'.'+decodeURIComponent(url.pathname)),ext=extname(file);
+    const file=url.pathname==='/socials/mediabunny.mjs'?resolve(root,'node_modules/mediabunny/dist/bundles/mediabunny.mjs'):resolve(root,'.'+decodeURIComponent(url.pathname)),ext=extname(file);
     if(!file.startsWith(root+sep)||!types[ext]||!existsSync(file)||url.pathname.includes('/.')){res.writeHead(404);res.end('Not found');return}
     res.writeHead(200,{'Content-Type':types[ext],'Cache-Control':'no-store'});createReadStream(file).pipe(res);return;
    }

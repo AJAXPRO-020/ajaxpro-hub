@@ -81,3 +81,21 @@ html:has(.socials-shell),body:has(.socials-shell){overflow-x:clip}
   .ajax-vandaag-results{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){.socials-format{transition:none}.socials-format:hover:not(:disabled){transform:none}}
+
+/* Keep the editor open and calm: separators belong to the generated artwork, not the UI. */
+.socials-shell>.page-heading{padding-bottom:0;border-bottom:0}
+.socials-data-panel{padding-bottom:0;border-bottom:0}
+.socials-preview-controls{border:0}
+.socials-preview-panel{border-top:0}
+
+/* Hallmark polish: compact format choices with enough room for a quick scan. */
+.socials-format-grid{gap:8px}
+.socials-format{min-height:64px;padding:12px 16px;gap:4px}
+.socials-format strong{font-size:1rem;line-height:1.15}
+.socials-format small{font-size:.7rem;line-height:1.2}
+@media(max-width:700px){
+  .socials-format-grid{gap:8px}
+  .socials-format{min-height:56px;padding:8px}
+  .socials-format strong{font-size:.82rem}
+  .socials-format small{font-size:.64rem}
+}

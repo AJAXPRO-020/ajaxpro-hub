@@ -1,0 +1,622 @@
+{
+  "local_id": "afc_ajax_tom-sondergaard",
+  "slug": "tom-sondergaard",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/tom-sondergaard",
+    "https://www.afc-ajax.info/en/player/tom-sondergaard/statistics",
+    "https://www.afc-ajax.info/en/player/tom-sondergaard/matches",
+    "https://www.afc-ajax.info/en/player/tom-sondergaard/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/tom-sondergaard",
+    "name": "Tom S&#248;ndergaard",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1944-01-02",
+    "death_date": "1997-06-16",
+    "nationality": "Denmark",
+    "roles": [
+      "Player (Forward)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Metz",
+    "external_links": [
+      {
+        "label": "Tom S&#248;ndergaard",
+        "url": "http://nl.wikipedia.org/wiki/Tom_S%C3%B8ndergaard"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/velibor-vasovic",
+      "https://www.afc-ajax.info/en/player/wim-suurbier",
+      "https://www.afc-ajax.info/en/player/nico-rijnders",
+      "https://www.afc-ajax.info/en/player/ruud-krol",
+      "https://www.afc-ajax.info/en/player/piet-keizer",
+      "https://www.afc-ajax.info/en/player/sjaak-swart",
+      "https://www.afc-ajax.info/en/player/barry-hulshoff",
+      "https://www.afc-ajax.info/en/player/dick-van-dijk",
+      "https://www.afc-ajax.info/en/player/gerrie-muhren",
+      "https://www.afc-ajax.info/en/player/johan-cruijff"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1969-70",
+          "comp.": "6",
+          "play off": "",
+          "dutch cup": "3",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "10",
+          "friendly": "11",
+          "total": "21"
+        },
+        {
+          "season": "1970-71",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "4",
+          "total": "4"
+        },
+        {
+          "season": "Total",
+          "comp.": "6",
+          "play off": "",
+          "dutch cup": "3",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "10",
+          "friendly": "15",
+          "total": "25"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1969-70",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "1",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "1",
+          "total": "3"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "2",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "Totaal",
+          "goals": "2",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "1"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [],
+      "raw_row_count": 1
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1969-70",
+          "date": "7/20/1969",
+          "competition": "Friendly",
+          "match": "Bergeijk - Ajax 0 - 15 (0 - 6)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1969-70",
+          "date": "7/24/1969",
+          "competition": "Friendly",
+          "match": "Ajax - Ajax (2) 6 - 1",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "7/26/1969",
+          "competition": "Friendly",
+          "match": "Ajax - Manchester City 3 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "7/27/1969",
+          "competition": "Friendly",
+          "match": "Alemannia Aachen - Ajax 1 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1969-70",
+          "date": "7/30/1969",
+          "competition": "Friendly",
+          "match": "Wupperthal SV - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "8/2/1969",
+          "competition": "Friendly",
+          "match": "Hertha BSC - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "8/5/1969",
+          "competition": "Friendly",
+          "match": "Ajax - Alemannia Aachen 2 - 1 (2 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1969-70",
+          "date": "8/27/1969",
+          "competition": "Friendly",
+          "match": "Juventus - Ajax 2 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "9/10/1969",
+          "competition": "Friendly",
+          "match": "Ajax - Slowakije 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "9/14/1969",
+          "competition": "Eredivisie",
+          "match": "AZ '67 - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "10/19/1969",
+          "competition": "Friendly",
+          "match": "Ajax - Rot Weiss Essen 5 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "11/9/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 2 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "66"
+        },
+        {
+          "season": "1969-70",
+          "date": "11/30/1969",
+          "competition": "Eredivisie",
+          "match": "SVV - Ajax 0 - 6 (0 - 3)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1969-70",
+          "date": "12/7/1969",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "12/10/1969",
+          "competition": "Inter-Cities Fair Cup",
+          "match": "Napoli - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "1/28/1970",
+          "competition": "Friendly",
+          "match": "Ajax - RKSV Volendam 0 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "4/22/1970",
+          "competition": "Dutch Cup",
+          "match": "DWS - Ajax 1 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "5/14/1970",
+          "competition": "Dutch Cup",
+          "match": "FC Twente - Ajax 0 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "5/18/1970",
+          "competition": "Eredivisie",
+          "match": "Ajax - SVV 8 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "5/24/1970",
+          "competition": "Eredivisie",
+          "match": "ADO - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1969-70",
+          "date": "5/27/1970",
+          "competition": "Dutch Cup",
+          "match": "Ajax - PSV 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1970-71",
+          "date": "7/22/1970",
+          "competition": "Friendly",
+          "match": "SC Assen - Ajax 0 - 4 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1970-71",
+          "date": "7/26/1970",
+          "competition": "Friendly",
+          "match": "Ajax - Chelsea 1 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1970-71",
+          "date": "8/11/1970",
+          "competition": "Friendly",
+          "match": "Ajax - Standard Luik 1 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "69"
+        },
+        {
+          "season": "1970-71",
+          "date": "8/13/1970",
+          "competition": "Friendly",
+          "match": "Ajax - VV Heerenveen 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        }
+      ],
+      "raw_row_count": 26
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Rapid Wien",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/1969",
+          "amount": "€ 90,8K",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Metz",
+          "type": "Transfer",
+          "start": "12/1/1970",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1969-70",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1970-71",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Tom S&#248;ndergaard"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": null,
+      "headers": [
+        "lineup photos"
+      ],
+      "rows": [
+        {
+          "lineup photos": "Rood Wit-A - Ajax 1 - 5 (7/29/1970)"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1243-tom-sondergaard.png",
+        "alt": "Soccer player Tom S&#248;ndergaard",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/tom-sondergaard__6979c20a7ed5.png",
+        "status": "downloaded",
+        "bytes": 38316,
+        "sha256": "6979c20a7ed50cfa0171a77b00241e14a7f7baf1721cb477bd613ad89c21e2a1",
+        "mime_type": "image/png",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:06.608Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 4,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "full_name"
+    ]
+  }
+}

@@ -1,0 +1,714 @@
+{
+  "local_id": "afc_ajax_razvan-marin",
+  "slug": "razvan-marin",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/razvan-marin",
+    "https://www.afc-ajax.info/en/player/razvan-marin/statistics",
+    "https://www.afc-ajax.info/en/player/razvan-marin/matches",
+    "https://www.afc-ajax.info/en/player/razvan-marin/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/razvan-marin",
+    "name": "Razvan Marin",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1996-05-23",
+    "death_date": null,
+    "nationality": "Romania",
+    "roles": [
+      "Player (Midfielder)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Cagliari Calcio",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/dusan-tadic",
+      "https://www.afc-ajax.info/en/player/donny-van-de-beek",
+      "https://www.afc-ajax.info/en/player/lisandro-martinez",
+      "https://www.afc-ajax.info/en/player/daley-blind",
+      "https://www.afc-ajax.info/en/player/nicolas-tagliafico",
+      "https://www.afc-ajax.info/en/player/quincy-promes",
+      "https://www.afc-ajax.info/en/player/joel-veltman",
+      "https://www.afc-ajax.info/en/player/andre-onana",
+      "https://www.afc-ajax.info/en/player/sergino-dest",
+      "https://www.afc-ajax.info/en/player/hakim-ziyech"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2019-20",
+          "comp.": "10",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "4",
+          "other off.": "1",
+          "off. mat.": "17",
+          "friendly": "5",
+          "total": "22"
+        },
+        {
+          "season": "2020-21",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "3",
+          "total": "3"
+        },
+        {
+          "season": "Total",
+          "comp.": "10",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "4",
+          "other off.": "1",
+          "off. mat.": "17",
+          "friendly": "8",
+          "total": "25"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "1",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "1"
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "1",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "2",
+          "substitute in": "1"
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "6"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "2",
+          "yellow": "3",
+          "red": "",
+          "substitute out": "4",
+          "substitute in": "8"
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2019-20",
+          "date": "7/14/2019",
+          "competition": "Friendly",
+          "match": "Ajax - Istanbul Basaksehir 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2019-20",
+          "date": "7/18/2019",
+          "competition": "Friendly",
+          "match": "Ajax - Watford FC 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2019-20",
+          "date": "7/22/2019",
+          "competition": "Friendly",
+          "match": "Ajax - Panathinaikos 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "71"
+        },
+        {
+          "season": "2019-20",
+          "date": "7/27/2019",
+          "competition": "Dutch Super Cup",
+          "match": "Ajax - PSV 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2019-20",
+          "date": "8/3/2019",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "69"
+        },
+        {
+          "season": "2019-20",
+          "date": "8/6/2019",
+          "competition": "Champions League",
+          "match": "PAOK Thessaloniki - Ajax 2 - 2 (2 - 1)",
+          "active": "Bench",
+          "min": "8"
+        },
+        {
+          "season": "2019-20",
+          "date": "8/10/2019",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Emmen 5 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2019-20",
+          "date": "8/13/2019",
+          "competition": "Champions League",
+          "match": "Ajax - PAOK Thessaloniki 3 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2019-20",
+          "date": "8/17/2019",
+          "competition": "Eredivisie",
+          "match": "VVV-Venlo - Ajax 1 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2019-20",
+          "date": "8/20/2019",
+          "competition": "Champions League",
+          "match": "APOEL Nicosia - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "62"
+        },
+        {
+          "season": "2019-20",
+          "date": "8/28/2019",
+          "competition": "Champions League",
+          "match": "Ajax - APOEL Nicosia 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "1"
+        },
+        {
+          "season": "2019-20",
+          "date": "9/1/2019",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 1 - 4 (0 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "9/14/2019",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 4 - 1 (2 - 1)",
+          "active": "Bench",
+          "min": "10"
+        },
+        {
+          "season": "2019-20",
+          "date": "9/17/2019",
+          "competition": "Champions League",
+          "match": "Ajax - Lille OSC 3 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "9/22/2019",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 1 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "9/25/2019",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna Sittard 5 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2019-20",
+          "date": "9/28/2019",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 2 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "10/2/2019",
+          "competition": "Champions League",
+          "match": "Valencia - Ajax 0 - 3 (0 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "10/6/2019",
+          "competition": "Eredivisie",
+          "match": "ADO Den Haag - Ajax 0 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "10/19/2019",
+          "competition": "Eredivisie",
+          "match": "RKC Waalwijk - Ajax 1 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "10/23/2019",
+          "competition": "Champions League",
+          "match": "Ajax - Chelsea 0 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "10/27/2019",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 4 - 0 (4 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "11/1/2019",
+          "competition": "Eredivisie",
+          "match": "PEC Zwolle - Ajax 2 - 4 (1 - 3)",
+          "active": "Bench",
+          "min": "18"
+        },
+        {
+          "season": "2019-20",
+          "date": "11/5/2019",
+          "competition": "Champions League",
+          "match": "Chelsea - Ajax 4 - 4 (1 - 3)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "11/10/2019",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 4 - 0 (3 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "11/23/2019",
+          "competition": "Eredivisie",
+          "match": "Ajax - Heracles Almelo 4 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "9"
+        },
+        {
+          "season": "2019-20",
+          "date": "11/27/2019",
+          "competition": "Champions League",
+          "match": "Lille OSC - Ajax 0 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "12/1/2019",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 2 - 5 (2 - 1)",
+          "active": "Bench",
+          "min": "8"
+        },
+        {
+          "season": "2019-20",
+          "date": "12/6/2019",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 0 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "12/10/2019",
+          "competition": "Champions League",
+          "match": "Ajax - Valencia 0 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "12/15/2019",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "83"
+        },
+        {
+          "season": "2019-20",
+          "date": "12/18/2019",
+          "competition": "Dutch Cup",
+          "match": "Telstar - Ajax 3 - 4 (1 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "12/22/2019",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO Den Haag 6 - 1 (4 - 0)",
+          "active": "Bench",
+          "min": "36"
+        },
+        {
+          "season": "2019-20",
+          "date": "1/9/2020",
+          "competition": "Friendly",
+          "match": "Ajax - KAS Eupen 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2019-20",
+          "date": "1/11/2020",
+          "competition": "Friendly",
+          "match": "Ajax - Club Brugge 3 - 1 (2 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2019-20",
+          "date": "1/19/2020",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 2 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "1/22/2020",
+          "competition": "Dutch Cup",
+          "match": "Ajax - SV Spakenburg 7 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2019-20",
+          "date": "1/26/2020",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 2 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "2/2/2020",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "2/12/2020",
+          "competition": "Dutch Cup",
+          "match": "Vitesse - Ajax 0 - 3 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "2/16/2020",
+          "competition": "Eredivisie",
+          "match": "Ajax - RKC Waalwijk 3 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "2/23/2020",
+          "competition": "Eredivisie",
+          "match": "Heracles Almelo - Ajax 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "2/27/2020",
+          "competition": "Europa League",
+          "match": "Ajax - Getafe CF 2 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "3/1/2020",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ 0 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2019-20",
+          "date": "3/4/2020",
+          "competition": "Dutch Cup",
+          "match": "Utrecht - Ajax 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "9"
+        },
+        {
+          "season": "2019-20",
+          "date": "3/7/2020",
+          "competition": "Eredivisie",
+          "match": "SC Heerenveen - Ajax 1 - 3 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2020-21",
+          "date": "8/8/2020",
+          "competition": "Friendly",
+          "match": "Ajax - RKC Waalwijk 6 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2020-21",
+          "date": "8/13/2020",
+          "competition": "Friendly",
+          "match": "Ajax - Utrecht 5 - 1 (5 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2020-21",
+          "date": "8/18/2020",
+          "competition": "Friendly",
+          "match": "Wolfsberger AC - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "46"
+        }
+      ],
+      "raw_row_count": 50
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Standard Luik",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/2019",
+          "amount": "€ 12,5M",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Cagliari Calcio",
+          "type": "Loan start",
+          "start": "8/31/2020",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Cagliari Calcio",
+          "next club": "Ajax",
+          "type": "Loan end",
+          "start": "6/30/2021",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Cagliari Calcio",
+          "type": "Transfer",
+          "start": "6/30/2021",
+          "amount": "€ 6,9M",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2019-20",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2020-21",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "8/31/2020",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name",
+      "photo"
+    ]
+  }
+}

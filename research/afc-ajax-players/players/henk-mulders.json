@@ -1,0 +1,2200 @@
+{
+  "local_id": "afc_ajax_henk-mulders",
+  "slug": "henk-mulders",
+  "collected_at": "2026-10-31T18:21:14.479Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/henk-mulders",
+    "https://www.afc-ajax.info/en/player/henk-mulders/statistics",
+    "https://www.afc-ajax.info/en/player/henk-mulders/matches",
+    "https://www.afc-ajax.info/en/player/henk-mulders/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/henk-mulders",
+    "name": "Henk Mulders",
+    "full_name": "Hendrik Cornelis Mulders",
+    "alternative_names": [],
+    "birth_date": "1904-06-01",
+    "death_date": "1978-05-13",
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Forward)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": null,
+    "external_links": [
+      {
+        "label": "Henk Mulders",
+        "url": "http://nl.wikipedia.org/wiki/Henk_Mulders"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/jan-van-diepenbeek",
+      "https://www.afc-ajax.info/en/player/wim-anderiesen-sr",
+      "https://www.afc-ajax.info/en/player/piet-van-reenen",
+      "https://www.afc-ajax.info/en/player/wim-volkers",
+      "https://www.afc-ajax.info/en/player/piet-van-deijck",
+      "https://www.afc-ajax.info/en/player/bob-ten-have",
+      "https://www.afc-ajax.info/en/player/piet-strijbosch",
+      "https://www.afc-ajax.info/en/player/jan-schubert",
+      "https://www.afc-ajax.info/en/player/gerrit-keizer",
+      "https://www.afc-ajax.info/en/player/henk-blomvliet"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1929-30",
+          "comp.": "7",
+          "play off": "6",
+          "dutch cup": "2",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "15",
+          "friendly": "",
+          "total": "15"
+        },
+        {
+          "season": "1930-31",
+          "comp.": "16",
+          "play off": "2",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "18",
+          "friendly": "7",
+          "total": "25"
+        },
+        {
+          "season": "1931-32",
+          "comp.": "13",
+          "play off": "7",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "20",
+          "friendly": "4",
+          "total": "24"
+        },
+        {
+          "season": "1932-33",
+          "comp.": "16",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "16",
+          "friendly": "13",
+          "total": "29"
+        },
+        {
+          "season": "1933-34",
+          "comp.": "18",
+          "play off": "10",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "28",
+          "friendly": "8",
+          "total": "36"
+        },
+        {
+          "season": "1934-35",
+          "comp.": "14",
+          "play off": "7",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "21",
+          "friendly": "12",
+          "total": "33"
+        },
+        {
+          "season": "1935-36",
+          "comp.": "13",
+          "play off": "7",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "21",
+          "friendly": "5",
+          "total": "26"
+        },
+        {
+          "season": "Total",
+          "comp.": "97",
+          "play off": "39",
+          "dutch cup": "3",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "139",
+          "friendly": "49",
+          "total": "188"
+        }
+      ],
+      "raw_row_count": 9
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1929-30",
+          "comp.": "3",
+          "play off": "1",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "4",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1930-31",
+          "comp.": "6",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "6",
+          "friendly": "3",
+          "total": ""
+        },
+        {
+          "season": "1931-32",
+          "comp.": "10",
+          "play off": "4",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "14",
+          "friendly": "2",
+          "total": ""
+        },
+        {
+          "season": "1932-33",
+          "comp.": "9",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "9",
+          "friendly": "4",
+          "total": ""
+        },
+        {
+          "season": "1933-34",
+          "comp.": "12",
+          "play off": "4",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "16",
+          "friendly": "2",
+          "total": ""
+        },
+        {
+          "season": "1934-35",
+          "comp.": "5",
+          "play off": "1",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "6",
+          "friendly": "5",
+          "total": ""
+        },
+        {
+          "season": "1935-36",
+          "comp.": "5",
+          "play off": "4",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "10",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "50",
+          "play off": "14",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "65",
+          "friendly": "16",
+          "total": "81"
+        }
+      ],
+      "raw_row_count": 9
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "65",
+          "assists": "42",
+          "yellow": "",
+          "red": "",
+          "substitute out": "3",
+          "substitute in": "1"
+        },
+        {
+          "minute": "Totaal",
+          "goals": "65",
+          "assists": "42",
+          "yellow": "",
+          "red": "",
+          "substitute out": "3",
+          "substitute in": "1"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [
+        {
+          "assisted by": "Piet van Reenen",
+          "number": "8"
+        },
+        {
+          "assisted by": "Bob ten Have",
+          "number": "6"
+        },
+        {
+          "assisted by": "Wim Volkers",
+          "number": "3"
+        },
+        {
+          "assisted by": "Eddy Hamel",
+          "number": "2"
+        },
+        {
+          "assisted by": "Cor Jurriaans",
+          "number": "2"
+        },
+        {
+          "assisted by": "Wim Anderiesen Sr.",
+          "number": "2"
+        },
+        {
+          "assisted by": "Gerrit Fischer",
+          "number": "2"
+        },
+        {
+          "assisted by": "Jan Stam",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 9
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "57"
+        },
+        {
+          "type": "Goal (header)",
+          "number": "8"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "59"
+        },
+        {
+          "origin": "from corner (indirect)",
+          "number": "2"
+        },
+        {
+          "origin": "from free kick (indirect)",
+          "number": "4"
+        }
+      ],
+      "raw_row_count": 4
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1929-30",
+          "date": "1/19/1930",
+          "competition": "First Division",
+          "match": "Ajax - HBS 3 - 1 (2 - 1)",
+          "active": "Bench",
+          "min": "67"
+        },
+        {
+          "season": "1929-30",
+          "date": "1/26/1930",
+          "competition": "First Division",
+          "match": "Sparta - Ajax 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "2/2/1930",
+          "competition": "First Division",
+          "match": "Ajax - ADO 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "2/16/1930",
+          "competition": "First Division",
+          "match": "Ajax - HFC Haarlem 9 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "2/23/1930",
+          "competition": "First Division",
+          "match": "Excelsior - Ajax 2 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "3/2/1930",
+          "competition": "First Division",
+          "match": "Ajax - Sparta 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "3/9/1930",
+          "competition": "Champions Competition",
+          "match": "Ajax - Velocitas 1897 8 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "3/23/1930",
+          "competition": "First Division",
+          "match": "HBS - Ajax 3 - 2 (3 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "3/30/1930",
+          "competition": "Champions Competition",
+          "match": "Willem II - Ajax 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "4/13/1930",
+          "competition": "Champions Competition",
+          "match": "Ajax - Blauw-Wit 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "4/21/1930",
+          "competition": "Dutch Cup",
+          "match": "Stormvogels - Ajax 1 - 6",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "5/3/1930",
+          "competition": "Dutch Cup",
+          "match": "Ajax - PEC 1 - 0",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "5/11/1930",
+          "competition": "Champions Competition",
+          "match": "Ajax - Go Ahead 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "5/25/1930",
+          "competition": "Champions Competition",
+          "match": "Blauw-Wit - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "6/1/1930",
+          "competition": "Champions Competition",
+          "match": "Ajax - Willem II 7 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "7/17/1930",
+          "competition": "Friendly",
+          "match": "Ajax - FC Wacker 3 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "8/12/1930",
+          "competition": "Friendly",
+          "match": "Ajax - Rapid Wien 2 - 5 (2 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "8/30/1930",
+          "competition": "Friendly",
+          "match": "Ajax - Fortuna D&uuml;sseldorf 1 - 5 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "10/12/1930",
+          "competition": "First Division",
+          "match": "Ajax - 't Gooi 4 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "10/19/1930",
+          "competition": "First Division",
+          "match": "DFC - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "10/26/1930",
+          "competition": "First Division",
+          "match": "Ajax - HFC 6 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "11/9/1930",
+          "competition": "First Division West I",
+          "match": "ZFC - Ajax 3 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "11/30/1930",
+          "competition": "First Division",
+          "match": "Ajax - HBS 3 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "12/7/1930",
+          "competition": "First Division",
+          "match": "Excelsior - Ajax 2 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "12/14/1930",
+          "competition": "First Division",
+          "match": "VUC - Ajax 0 - 9 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "12/21/1930",
+          "competition": "First Division",
+          "match": "Ajax - DFC 4 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "12/26/1930",
+          "competition": "Friendly",
+          "match": "Ajax - PSV 10 - 2 (5 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "1/4/1931",
+          "competition": "First Division",
+          "match": "'t Gooi - Ajax 1 - 5 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "1/11/1931",
+          "competition": "First Division",
+          "match": "Ajax - VUC 17 - 0 (9 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "1/25/1931",
+          "competition": "First Division",
+          "match": "Ajax - ZFC 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "2/1/1931",
+          "competition": "First Division",
+          "match": "HFC - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "2/15/1931",
+          "competition": "First Division",
+          "match": "Ajax - Excelsior 7 - 4 (4 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "2/22/1931",
+          "competition": "First Division",
+          "match": "HBS - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "3/1/1931",
+          "competition": "Friendly",
+          "match": "Ajax - KV Mechelen 1 - 2 (0 - 1)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1930-31",
+          "date": "3/8/1931",
+          "competition": "First Division",
+          "match": "Ajax - Stormvogels 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "3/24/1931",
+          "competition": "Friendly",
+          "match": "Haags Elftal - Ajax 2 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "4/5/1931",
+          "competition": "Easter Tournament Ajax",
+          "match": "Ajax - Ruhrort 2 - 1",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "4/6/1931",
+          "competition": "Easter Tournament Ajax",
+          "match": "Ajax - Tufnell Park 0 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "4/12/1931",
+          "competition": "Champions Competition",
+          "match": "Ajax - PSV 4 - 2 (3 - 2)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1930-31",
+          "date": "4/19/1931",
+          "competition": "First Division",
+          "match": "Hermes DVS - Ajax 3 - 4 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "5/10/1931",
+          "competition": "Champions Competition",
+          "match": "Feijenoord - Ajax 5 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "5/17/1931",
+          "competition": "Champions Competition",
+          "match": "Velocitas 1897 - Ajax 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "8/23/1931",
+          "competition": "Friendly",
+          "match": "DFC - Ajax 3 - 4 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "10/25/1931",
+          "competition": "First Division",
+          "match": "Ajax - HVV 7 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "11/1/1931",
+          "competition": "First Division",
+          "match": "West Frisia - Ajax 2 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "11/8/1931",
+          "competition": "First Division",
+          "match": "Ajax - Hermes DVS 4 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "11/22/1931",
+          "competition": "First Division",
+          "match": "RC Haarlem - Ajax 1 - 4 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "12/6/1931",
+          "competition": "First Division",
+          "match": "Ajax - Stormvogels 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "12/13/1931",
+          "competition": "First Division",
+          "match": "Ajax - Sparta 6 - 2 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "12/20/1931",
+          "competition": "First Division",
+          "match": "KFC - Ajax 1 - 4 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "12/25/1931",
+          "competition": "Friendly",
+          "match": "Ajax - Viktoria Zizkov 2 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "1/3/1932",
+          "competition": "First Division",
+          "match": "Ajax - 't Gooi 9 - 2 (4 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "1/17/1932",
+          "competition": "First Division",
+          "match": "HBS - Ajax 4 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "1/24/1932",
+          "competition": "First Division",
+          "match": "HVV - Ajax 2 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "1/31/1932",
+          "competition": "First Division",
+          "match": "Ajax - West Frisia 8 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "2/7/1932",
+          "competition": "First Division",
+          "match": "Hermes DVS - Ajax 0 - 7 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "2/21/1932",
+          "competition": "First Division",
+          "match": "Ajax - RC Haarlem 3 - 4 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "3/13/1932",
+          "competition": "Champions Competition",
+          "match": "Ajax - Veendam 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "3/27/1932",
+          "competition": "Easter Tournament Ajax",
+          "match": "Ajax - Altona 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "3/28/1932",
+          "competition": "Easter Tournament Ajax",
+          "match": "Ajax - Wimbledon 2 - 3 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "4/3/1932",
+          "competition": "Champions Competition",
+          "match": "Veendam - Ajax 1 - 9 (0 - 4)",
+          "active": "Work",
+          "min": ""
+        },
+        {
+          "season": "1931-32",
+          "date": "4/10/1932",
+          "competition": "Champions Competition",
+          "match": "Ajax - PSV 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "4/24/1932",
+          "competition": "Champions Competition",
+          "match": "SC Enschede - Ajax 3 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "5/1/1932",
+          "competition": "Champions Competition",
+          "match": "Feijenoord - Ajax 2 - 4 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "5/5/1932",
+          "competition": "Champions Competition",
+          "match": "Ajax - Feijenoord 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "5/16/1932",
+          "competition": "Champions Competition",
+          "match": "PSV - Ajax 1 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1931-32",
+          "date": "6/5/1932",
+          "competition": "Champions Competition",
+          "match": "Ajax - SC Enschede 3 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "8/16/1932",
+          "competition": "Friendly",
+          "match": "Ajax - Middlesex Wanderers FC 3 - 2 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "8/21/1932",
+          "competition": "Friendly",
+          "match": "RC Heemstede - Ajax 9 - 4",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "8/27/1932",
+          "competition": "Friendly",
+          "match": "Ajax - Bocskai 1 - 7 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "9/4/1932",
+          "competition": "Friendly",
+          "match": "Vitesse - Ajax 4 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "9/18/1932",
+          "competition": "First Division",
+          "match": "Ajax - DFC 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "9/25/1932",
+          "competition": "First Division",
+          "match": "VUC - Ajax 2 - 6 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "10/2/1932",
+          "competition": "First Division",
+          "match": "Ajax - Hilversum 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "10/9/1932",
+          "competition": "First Division",
+          "match": "Xerxes - Ajax 3 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "23"
+        },
+        {
+          "season": "1932-33",
+          "date": "11/6/1932",
+          "competition": "First Division",
+          "match": "Ajax - West Frisia 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "11/13/1932",
+          "competition": "First Division",
+          "match": "Stormvogels - Ajax 5 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "11/20/1932",
+          "competition": "Friendly",
+          "match": "Ajax - Oud Internationals 4 - 7 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "11/27/1932",
+          "competition": "First Division",
+          "match": "Ajax - Sparta 2 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "12/18/1932",
+          "competition": "First Division",
+          "match": "Ajax - VUC 6 - 3 (4 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "1/8/1933",
+          "competition": "First Division",
+          "match": "Hilversum - Ajax 0 - 6 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "1/15/1933",
+          "competition": "First Division",
+          "match": "Ajax - Xerxes 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "2/5/1933",
+          "competition": "First Division",
+          "match": "KFC - Ajax 1 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "2/19/1933",
+          "competition": "First Division",
+          "match": "Ajax - HFC Haarlem 6 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "2/26/1933",
+          "competition": "First Division",
+          "match": "West Frisia - Ajax 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "3/4/1933",
+          "competition": "Friendly",
+          "match": "Ajax - Vitesse 6 - 3 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "3/19/1933",
+          "competition": "First Division",
+          "match": "Ajax - Stormvogels 3 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "3/26/1933",
+          "competition": "First Division",
+          "match": "Sparta - Ajax 3 - 4 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "4/16/1933",
+          "competition": "Easter Tournament Ajax",
+          "match": "SK Admira Vienna - Ajax 8 - 0 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "4/17/1933",
+          "competition": "Easter Tournament Ajax",
+          "match": "Ajax - Ker&uuml;leti 6 - 3 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "4/23/1933",
+          "competition": "First Division",
+          "match": "DFC - Ajax 4 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "5/14/1933",
+          "competition": "Friendly",
+          "match": "Ajax - Ripensia 3 - 3",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "6/4/1933",
+          "competition": "Xerxes Pinkstertoernooi",
+          "match": "Ajax - Beerschot 3 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "6/5/1933",
+          "competition": "Xerxes Pinkstertoernooi",
+          "match": "Ajax - Bocskai 1 - 2 (0 - 0)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1932-33",
+          "date": "7/2/1933",
+          "competition": "Friendly",
+          "match": "Bleijerheide - Ajax 2 - 5 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "7/15/1933",
+          "competition": "Friendly",
+          "match": "Beogradski - Ajax 3 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1932-33",
+          "date": "7/23/1933",
+          "competition": "Friendly",
+          "match": "Unirea Bucharest - Ajax 0 - 5 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "8/20/1933",
+          "competition": "Friendly",
+          "match": "Ajax - Antwerp FC 3 - 4",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "8/27/1933",
+          "competition": "AROL Cup",
+          "match": "Ajax - HFC 3 - 1",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "1933-34",
+          "date": "9/3/1933",
+          "competition": "AROL Cup",
+          "match": "Ajax - HBS 3 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "1933-34",
+          "date": "9/3/1933",
+          "competition": "AROL Cup",
+          "match": "Ajax - NAC 6 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "1933-34",
+          "date": "9/17/1933",
+          "competition": "First Division",
+          "match": "ADO - Ajax 1 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "69"
+        },
+        {
+          "season": "1933-34",
+          "date": "9/24/1933",
+          "competition": "First Division",
+          "match": "Ajax - Sparta 3 - 4 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "10/1/1933",
+          "competition": "First Division",
+          "match": "Hermes DVS - Ajax 3 - 4 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "10/8/1933",
+          "competition": "First Division",
+          "match": "Ajax - Feijenoord 7 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "10/15/1933",
+          "competition": "First Division",
+          "match": "HFC Haarlem - Ajax 2 - 4 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "10/22/1933",
+          "competition": "First Division",
+          "match": "Ajax - VSV 5 - 4 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "10/29/1933",
+          "competition": "First Division",
+          "match": "'t Gooi - Ajax 1 - 5 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "11/5/1933",
+          "competition": "First Division",
+          "match": "HFC - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "11/12/1933",
+          "competition": "First Division",
+          "match": "Ajax - ZFC 3 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "11/26/1933",
+          "competition": "First Division",
+          "match": "Ajax - ADO 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "12/3/1933",
+          "competition": "First Division",
+          "match": "Sparta - Ajax 1 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "12/24/1933",
+          "competition": "Friendly",
+          "match": "Ajax - Beogradski 2 - 2 (1 - 0)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1933-34",
+          "date": "12/31/1933",
+          "competition": "Friendly",
+          "match": "Ajax - Beogradski 3 - 5 (3 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "1/7/1934",
+          "competition": "First Division",
+          "match": "Feijenoord - Ajax 1 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "1/14/1934",
+          "competition": "First Division",
+          "match": "Ajax - HFC Haarlem 3 - 2 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "1/21/1934",
+          "competition": "First Division",
+          "match": "VSV - Ajax 2 - 3 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "1/28/1934",
+          "competition": "First Division",
+          "match": "Ajax - HFC 4 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "2/4/1934",
+          "competition": "First Division",
+          "match": "Ajax - Hermes DVS 8 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "2/11/1934",
+          "competition": "First Division",
+          "match": "Ajax - 't Gooi 3 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "2/25/1934",
+          "competition": "Friendly",
+          "match": "Ajax - ZAC 7 - 0",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "3/4/1934",
+          "competition": "First Division",
+          "match": "ZFC - Ajax 4 - 2 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "3/18/1934",
+          "competition": "Champions Competition",
+          "match": "Ajax - Heracles 9 - 1 (6 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "4/1/1934",
+          "competition": "Easter Tournament Ajax",
+          "match": "Ajax - Cercle Brugge 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "4/2/1934",
+          "competition": "Easter Tournament Ajax",
+          "match": "Go Ahead - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "4/15/1934",
+          "competition": "Champions Competition",
+          "match": "Velocitas 1897 - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "4/22/1934",
+          "competition": "Champions Competition",
+          "match": "Ajax - KFC 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "5/6/1934",
+          "competition": "Champions Competition",
+          "match": "KFC - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "5/13/1934",
+          "competition": "Champions Competition",
+          "match": "Willem II - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "6/10/1934",
+          "competition": "Champions Competition",
+          "match": "Ajax - Willem II 5 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "6/24/1934",
+          "competition": "Champions Competition",
+          "match": "Heracles - Ajax 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "7/1/1934",
+          "competition": "Champions Competition",
+          "match": "Ajax - Velocitas 1897 3 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "7/24/1934",
+          "competition": "Kampioenschaps Playoffs",
+          "match": "Ajax - Willem II 4 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1933-34",
+          "date": "7/26/1934",
+          "competition": "Kampioenschaps Playoffs",
+          "match": "KFC - Ajax 2 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "8/18/1934",
+          "competition": "Friendly",
+          "match": "Ajax - SC Fivois 2 - 3 (2 - 1)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1934-35",
+          "date": "8/26/1934",
+          "competition": "AROL Cup",
+          "match": "Ajax - ZAC 2 - 0 (2 - 0)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1934-35",
+          "date": "9/2/1934",
+          "competition": "AROL Cup",
+          "match": "Ajax - DWS 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "1934-35",
+          "date": "9/16/1934",
+          "competition": "First Division",
+          "match": "Ajax - Xerxes 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "9/23/1934",
+          "competition": "First Division",
+          "match": "VSV - Ajax 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "9/30/1934",
+          "competition": "First Division",
+          "match": "Ajax - Overmaas 6 - 2 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "10/7/1934",
+          "competition": "First Division",
+          "match": "VUC - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "10/14/1934",
+          "competition": "First Division",
+          "match": "DHC - Ajax 2 - 1 (1 - 0)",
+          "active": "Excluded",
+          "min": ""
+        },
+        {
+          "season": "1934-35",
+          "date": "11/3/1934",
+          "competition": "Friendly",
+          "match": "Ajax - Go Ahead 1 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "11/11/1934",
+          "competition": "First Division",
+          "match": "Ajax - Feijenoord 4 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "11/15/1934",
+          "competition": "Friendly",
+          "match": "Islington Corinthians - Ajax 0 - 6 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "11/18/1934",
+          "competition": "Dutch Cup",
+          "match": "DHC - Ajax 1 - 5 (0 - 1)",
+          "active": "Unknown",
+          "min": ""
+        },
+        {
+          "season": "1934-35",
+          "date": "11/25/1934",
+          "competition": "First Division",
+          "match": "RC Heemstede - Ajax 2 - 8 (2 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "12/2/1934",
+          "competition": "First Division",
+          "match": "Xerxes - Ajax 2 - 4 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "12/9/1934",
+          "competition": "Friendly",
+          "match": "Ajax - Stade Fran&ccedil;ais 5 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "12/16/1934",
+          "competition": "First Division",
+          "match": "Ajax - VSV 6 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "12/23/1934",
+          "competition": "First Division",
+          "match": "Overmaas - Ajax 0 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "12/25/1934",
+          "competition": "Friendly",
+          "match": "Ajax - PSV 3 - 2",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "1/6/1935",
+          "competition": "First Division",
+          "match": "Ajax - VUC 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "1/13/1935",
+          "competition": "First Division",
+          "match": "Ajax - DHC 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "1/20/1935",
+          "competition": "Friendly",
+          "match": "AFC - Ajax 1 - 7 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "1/27/1935",
+          "competition": "First Division",
+          "match": "HFC - Ajax 0 - 2 (0 - 2)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1934-35",
+          "date": "2/3/1935",
+          "competition": "Friendly",
+          "match": "Ajax - Go Ahead 3 - 0",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "2/24/1935",
+          "competition": "First Division",
+          "match": "Ajax - ADO 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "3/10/1935",
+          "competition": "First Division",
+          "match": "Feijenoord - Ajax 2 - 4 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "3/17/1935",
+          "competition": "First Division",
+          "match": "Ajax - RC Heemstede 4 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "3/24/1935",
+          "competition": "Champions Competition",
+          "match": "Ajax - Go Ahead 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "4/7/1935",
+          "competition": "Champions Competition",
+          "match": "Velocitas 1897 - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "4/14/1935",
+          "competition": "Champions Competition",
+          "match": "DWS - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "4/21/1935",
+          "competition": "Easter Tournament Ajax",
+          "match": "Ajax - Lierse 4 - 5 (regular time:4 - 4)",
+          "active": "Start",
+          "min": "105"
+        },
+        {
+          "season": "1934-35",
+          "date": "5/5/1935",
+          "competition": "Champions Competition",
+          "match": "Ajax - DWS 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "5/19/1935",
+          "competition": "Friendly",
+          "match": "Ajax - Islington Corinthians 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "5/26/1935",
+          "competition": "Champions Competition",
+          "match": "PSV - Ajax 4 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "5/30/1935",
+          "competition": "Champions Competition",
+          "match": "Ajax - PSV 2 - 3 (1 - 1)",
+          "active": "Military service",
+          "min": ""
+        },
+        {
+          "season": "1934-35",
+          "date": "6/2/1935",
+          "competition": "Champions Competition",
+          "match": "Go Ahead - Ajax 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "6/8/1935",
+          "competition": "Pinkstertoernooi Brussel",
+          "match": "Ajax - Kickers Offenbach 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "6/9/1935",
+          "competition": "Pinkstertoernooi Brussel",
+          "match": "Ajax - Wisla Krakow 5 - 3 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "6/10/1935",
+          "competition": "Pinkstertoernooi Brussel",
+          "match": "Ajax - FC Sochaux 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "6/23/1935",
+          "competition": "Champions Competition",
+          "match": "Ajax - Velocitas 1897 4 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "8/18/1935",
+          "competition": "Friendly",
+          "match": "Ajax - Egyptisch Elftal 1 - 0 (1 - 0)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1935-36",
+          "date": "8/25/1935",
+          "competition": "AROL Cup",
+          "match": "NAC - Ajax 2 - 2 (penalties: 3 - 2)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "1935-36",
+          "date": "9/15/1935",
+          "competition": "First Division",
+          "match": "Ajax - KFC 3 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "9/22/1935",
+          "competition": "First Division",
+          "match": "Sparta - Ajax 4 - 3 (3 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "11/24/1935",
+          "competition": "First Division",
+          "match": "Xerxes - Ajax 0 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "12/1/1935",
+          "competition": "First Division",
+          "match": "Ajax - HBS 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "12/17/1935",
+          "competition": "Dutch Cup",
+          "match": "Ajax - VUC 2 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "12/29/1935",
+          "competition": "Friendly",
+          "match": "Ajax - DFC 3 - 1",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "1/5/1936",
+          "competition": "First Division",
+          "match": "ADO - Ajax 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "1/26/1936",
+          "competition": "First Division",
+          "match": "Hermes DVS - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "2/2/1936",
+          "competition": "First Division",
+          "match": "Ajax - Sparta 3 - 3 (2 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "2/9/1936",
+          "competition": "First Division West I",
+          "match": "KFC - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "2/16/1936",
+          "competition": "First Division",
+          "match": "Ajax - VSV 4 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "2/23/1936",
+          "competition": "First Division",
+          "match": "HFC Haarlem - Ajax 3 - 4 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "3/1/1936",
+          "competition": "Friendly",
+          "match": "Ajax - BVV 5 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "3/8/1936",
+          "competition": "First Division",
+          "match": "Ajax - Xerxes 3 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "3/15/1936",
+          "competition": "First Division",
+          "match": "Ajax - RC Heemstede 6 - 2 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "4/5/1936",
+          "competition": "First Division",
+          "match": "HBS - Ajax 2 - 5 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "4/12/1936",
+          "competition": "Paastoernooi Ajax Blauw-Wit",
+          "match": "Ajax - First Vienna 0 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "4/13/1936",
+          "competition": "Paastoernooi Ajax Blauw-Wit",
+          "match": "Ajax - Blauw-Wit 2 - 5 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "4/19/1936",
+          "competition": "Champions Competition",
+          "match": "Ajax - Feijenoord 1 - 4 (1 - 1)",
+          "active": "Start",
+          "min": "69"
+        },
+        {
+          "season": "1935-36",
+          "date": "4/26/1936",
+          "competition": "Champions Competition",
+          "match": "SC Enschede - Ajax 2 - 1 (2 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1935-36",
+          "date": "5/10/1936",
+          "competition": "Champions Competition",
+          "match": "Ajax - Be Quick 3 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "5/17/1936",
+          "competition": "Champions Competition",
+          "match": "NAC - Ajax 1 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "5/24/1936",
+          "competition": "Champions Competition",
+          "match": "Ajax - NAC 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "5/31/1936",
+          "competition": "Champions Competition",
+          "match": "Be Quick - Ajax 5 - 4 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "6/14/1936",
+          "competition": "Champions Competition",
+          "match": "Feijenoord - Ajax 3 - 6 (2 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "6/21/1936",
+          "competition": "Champions Competition",
+          "match": "Ajax - SC Enschede 4 - 3 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 202
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Ajax",
+          "next club": "None",
+          "type": "Retirement",
+          "start": "7/1/1936",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1929-30",
+          "contract type": "Unknown",
+          "team": "II",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1930-31",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1931-32",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1932-33",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1933-34",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1934-35",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1935-36",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 8
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "photo"
+    ]
+  }
+}

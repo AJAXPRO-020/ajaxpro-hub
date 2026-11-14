@@ -1,0 +1,1037 @@
+{
+  "local_id": "afc_ajax_jan-gerritsen",
+  "slug": "jan-gerritsen",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/jan-gerritsen",
+    "https://www.afc-ajax.info/en/player/jan-gerritsen/statistics",
+    "https://www.afc-ajax.info/en/player/jan-gerritsen/matches",
+    "https://www.afc-ajax.info/en/player/jan-gerritsen/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/jan-gerritsen",
+    "name": "Jan Gerritsen",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": null,
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Forward)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "DWS",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/gerrit-keizer",
+      "https://www.afc-ajax.info/en/player/erwin-van-wijngaarden",
+      "https://www.afc-ajax.info/en/player/jan-schubert",
+      "https://www.afc-ajax.info/en/player/wim-anderiesen-sr",
+      "https://www.afc-ajax.info/en/player/piet-van-reenen",
+      "https://www.afc-ajax.info/en/player/henk-blomvliet",
+      "https://www.afc-ajax.info/en/player/dick-been",
+      "https://www.afc-ajax.info/en/player/jan-van-diepenbeek",
+      "https://www.afc-ajax.info/en/player/jan-stam",
+      "https://www.afc-ajax.info/en/player/ko-loois"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1935-36",
+          "comp.": "",
+          "play off": "5",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "5",
+          "friendly": "",
+          "total": "5"
+        },
+        {
+          "season": "1936-37",
+          "comp.": "16",
+          "play off": "6",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "22",
+          "friendly": "8",
+          "total": "30"
+        },
+        {
+          "season": "1937-38",
+          "comp.": "5",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "6",
+          "friendly": "5",
+          "total": "11"
+        },
+        {
+          "season": "1938-39",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "2",
+          "total": "4"
+        },
+        {
+          "season": "1939-40",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "2",
+          "total": "4"
+        },
+        {
+          "season": "1940-41",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "2",
+          "total": "3"
+        },
+        {
+          "season": "1941-42",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        },
+        {
+          "season": "Total",
+          "comp.": "27",
+          "play off": "11",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "39",
+          "friendly": "19",
+          "total": "58"
+        }
+      ],
+      "raw_row_count": 9
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1935-36",
+          "comp.": "",
+          "play off": "1",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1936-37",
+          "comp.": "2",
+          "play off": "2",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "4",
+          "friendly": "1",
+          "total": ""
+        },
+        {
+          "season": "1937-38",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "2",
+          "total": ""
+        },
+        {
+          "season": "1938-39",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "1",
+          "total": ""
+        },
+        {
+          "season": "1939-40",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "5",
+          "play off": "3",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "8",
+          "friendly": "4",
+          "total": "12"
+        }
+      ],
+      "raw_row_count": 7
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "8",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "3"
+        },
+        {
+          "minute": "Totaal",
+          "goals": "8",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "3"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [
+        {
+          "assisted by": "Jan Stam",
+          "number": "3"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "8"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "8"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1935-36",
+          "date": "5/10/1936",
+          "competition": "Champions Competition",
+          "match": "Ajax - Be Quick 3 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "5/17/1936",
+          "competition": "Champions Competition",
+          "match": "NAC - Ajax 1 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "5/24/1936",
+          "competition": "Champions Competition",
+          "match": "Ajax - NAC 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "5/31/1936",
+          "competition": "Champions Competition",
+          "match": "Be Quick - Ajax 5 - 4 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "6/14/1936",
+          "competition": "Champions Competition",
+          "match": "Feijenoord - Ajax 3 - 6 (2 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "8/15/1936",
+          "competition": "Willem II Jubileum Toernooi",
+          "match": "Ajax - Sparta 4 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "8/16/1936",
+          "competition": "Willem II Jubileum Toernooi",
+          "match": "PSV - Ajax 5 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "8/23/1936",
+          "competition": "Friendly",
+          "match": "Ajax - FC Wacker 3 - 3 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "8/27/1936",
+          "competition": "Friendly",
+          "match": "Ajax - Chinees Olympisch Elftal 5 - 3",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "9/20/1936",
+          "competition": "First Division West I",
+          "match": "DFC - Ajax 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "9/27/1936",
+          "competition": "First Division",
+          "match": "Ajax - DHC 4 - 2 (3 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "10/4/1936",
+          "competition": "First Division West I",
+          "match": "RC Heemstede - Ajax 2 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "10/11/1936",
+          "competition": "First Division West I",
+          "match": "Ajax - Blauw-Wit 2 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "10/18/1936",
+          "competition": "First Division",
+          "match": "Stormvogels - Ajax 1 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "10/25/1936",
+          "competition": "First Division",
+          "match": "Ajax - Excelsior 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "11/8/1936",
+          "competition": "First Division",
+          "match": "Xerxes - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "11/22/1936",
+          "competition": "First Division",
+          "match": "Ajax - ADO 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "11/29/1936",
+          "competition": "First Division West I",
+          "match": "CVV - Ajax 0 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "12/13/1936",
+          "competition": "First Division",
+          "match": "DHC - Ajax 2 - 9 (2 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "1/3/1937",
+          "competition": "First Division",
+          "match": "Ajax - RC Heemstede 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "1/10/1937",
+          "competition": "First Division",
+          "match": "Blauw-Wit - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "1/17/1937",
+          "competition": "First Division West I",
+          "match": "Ajax - Stormvogels 2 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "1/24/1937",
+          "competition": "First Division West I",
+          "match": "Excelsior - Ajax 1 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "2/7/1937",
+          "competition": "First Division West I",
+          "match": "Ajax - Xerxes 2 - 4 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "2/14/1937",
+          "competition": "EDO Jubileum Toernooi",
+          "match": "Ajax - HBS 3 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "2/14/1937",
+          "competition": "EDO Jubileum Toernooi",
+          "match": "Ajax - HFC Haarlem 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "2/28/1937",
+          "competition": "First Division",
+          "match": "Ajax - CVV 4 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "3/29/1937",
+          "competition": "Paastoernooi Ajax Blauw-Wit",
+          "match": "Ajax - Blauw-Wit 2 - 2 (penalties: 1 - 2)",
+          "active": "Start",
+          "min": "105"
+        },
+        {
+          "season": "1936-37",
+          "date": "4/11/1937",
+          "competition": "Champions Competition",
+          "match": "Feijenoord - Ajax 3 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "1936-37",
+          "date": "4/18/1937",
+          "competition": "Champions Competition",
+          "match": "Ajax - PSV 5 - 2 (2 - 1)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "1936-37",
+          "date": "4/25/1937",
+          "competition": "Champions Competition",
+          "match": "Be Quick - Ajax 1 - 3 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "5/16/1937",
+          "competition": "Champions Competition",
+          "match": "Ajax - Be Quick 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "5/23/1937",
+          "competition": "Champions Competition",
+          "match": "Ajax - Feijenoord 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "5/30/1937",
+          "competition": "Champions Competition",
+          "match": "Go Ahead - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "6/10/1937",
+          "competition": "Friendly",
+          "match": "Ajax - FC Luzern 1 - 5 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1937-38",
+          "date": "8/22/1937",
+          "competition": "Friendly",
+          "match": "Ajax - Willem II 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1937-38",
+          "date": "8/29/1937",
+          "competition": "Friendly",
+          "match": "Juliana - Ajax 5 - 4 (3 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1937-38",
+          "date": "9/5/1937",
+          "competition": "Friendly",
+          "match": "Ajax - HVV 1 - 2",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1937-38",
+          "date": "9/12/1937",
+          "competition": "Friendly",
+          "match": "NAC - Ajax 4 - 4 (3 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1937-38",
+          "date": "9/19/1937",
+          "competition": "First Division",
+          "match": "Ajax - DFC 5 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1937-38",
+          "date": "9/26/1937",
+          "competition": "First Division",
+          "match": "VUC - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1937-38",
+          "date": "10/3/1937",
+          "competition": "First Division",
+          "match": "Ajax - Sparta 6 - 3 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1937-38",
+          "date": "10/10/1937",
+          "competition": "First Division West I",
+          "match": "KFC - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1937-38",
+          "date": "10/17/1937",
+          "competition": "First Division",
+          "match": "Ajax - ADO 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1937-38",
+          "date": "1/1/1938",
+          "competition": "Friendly",
+          "match": "Ajax - Budafok 7 - 5 (3 - 3)",
+          "active": "Bench",
+          "min": "67"
+        },
+        {
+          "season": "1937-38",
+          "date": "4/10/1938",
+          "competition": "Dutch Cup",
+          "match": "ZFC - Ajax 1 - 1",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1938-39",
+          "date": "9/25/1938",
+          "competition": "First Division",
+          "match": "DFC - Ajax 1 - 4 (1 - 3)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "1938-39",
+          "date": "3/5/1939",
+          "competition": "First Division",
+          "match": "VSV - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "69"
+        },
+        {
+          "season": "1938-39",
+          "date": "4/9/1939",
+          "competition": "Paastoernooi Ajax Blauw-Wit",
+          "match": "Ajax - Nemzeti 4 - 3 (3 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1938-39",
+          "date": "4/10/1939",
+          "competition": "Paastoernooi Ajax Blauw-Wit",
+          "match": "Ajax - Blauw-Wit 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1939-40",
+          "date": "12/17/1939",
+          "competition": "First Division",
+          "match": "DOS - Ajax 1 - 2 (1 - 2)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1939-40",
+          "date": "3/17/1940",
+          "competition": "Friendly",
+          "match": "Ajax - Heracles 6 - 2 (6 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1939-40",
+          "date": "3/24/1940",
+          "competition": "First Division",
+          "match": "Ajax - KFC 1 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1939-40",
+          "date": "4/7/1940",
+          "competition": "First Division West I",
+          "match": "ADO - Ajax 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1939-40",
+          "date": "6/2/1940",
+          "competition": "Friendly",
+          "match": "Ajax - DWS 2 - 4 (1 - 1)",
+          "active": "Start",
+          "min": "23"
+        },
+        {
+          "season": "1940-41",
+          "date": "8/28/1940",
+          "competition": "Friendly",
+          "match": "RKAB - Ajax 0 - 3 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1940-41",
+          "date": "3/23/1941",
+          "competition": "First Division",
+          "match": "Ajax - Blauw-Wit 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1940-41",
+          "date": "4/27/1941",
+          "competition": "Friendly",
+          "match": "NEC - Ajax 4 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1941-42",
+          "date": "10/12/1941",
+          "competition": "First Division",
+          "match": "Ajax - Feijenoord 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 60
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Ajax",
+          "next club": "DWS",
+          "type": "Transfer",
+          "start": "7/1/1942",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1935-36",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1936-37",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1937-38",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1938-39",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1939-40",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1940-41",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1941-42",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 8
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Jan Gerritsen"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": null,
+      "headers": [
+        "lineup photos"
+      ],
+      "rows": [
+        {
+          "lineup photos": "Ajax - Feijenoord 2 - 0 (5/23/1937)"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1316-jan-gerritsen.jpg",
+        "alt": "Soccer player Jan Gerritsen",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/jan-gerritsen__4cc20a24ce02.jpg",
+        "status": "downloaded",
+        "bytes": 32805,
+        "sha256": "4cc20a24ce0296d580da2f52a9fe1977764aa474d51e5212518ac9a69986eda4",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:01.232Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 4,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name"
+    ]
+  }
+}

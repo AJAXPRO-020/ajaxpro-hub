@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-10-31",
+  "candidates": 47,
+  "sample_sources": 8,
+  "successful_samples": 8,
+  "blocked_samples": 1,
+  "viewed_without_structured_export": 2,
+  "neon_baseline": "neon-baseline.json",
+  "prior_pilot": "../datapilot-2026-10-31/",
+  "samples": {
+    "afc_ajax_info_club100": 184,
+    "commons_direct_player_files": 23,
+    "gdelt_articles": 50,
+    "openalex_works": 12,
+    "supporters_seasons": 28,
+    "rsssf_ajax_match_lines": 59,
+    "topmarx_ajax_players": 42,
+    "football_data_ajax_matches": 34
+  },
+  "limitations": [
+    "Counts apply to the fetched endpoint/sample, not an untested whole domain.",
+    "A technically readable page is not automatically licensed for republication.",
+    "TopMarx data is current-season/fantasy-platform derived; source provenance needs legal review.",
+    "GDELT and OpenAlex results include false positives and require editorial filtering.",
+    "Wayback CDX timed out with HTTP 504."
+  ]
+}

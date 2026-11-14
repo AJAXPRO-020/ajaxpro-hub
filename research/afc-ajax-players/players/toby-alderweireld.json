@@ -1,0 +1,2457 @@
+{
+  "local_id": "afc_ajax_toby-alderweireld",
+  "slug": "toby-alderweireld",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/toby-alderweireld",
+    "https://www.afc-ajax.info/en/player/toby-alderweireld/statistics",
+    "https://www.afc-ajax.info/en/player/toby-alderweireld/matches",
+    "https://www.afc-ajax.info/en/player/toby-alderweireld/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/toby-alderweireld",
+    "name": "Toby Alderweireld",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1989-03-02",
+    "death_date": null,
+    "nationality": "Belgium",
+    "roles": [
+      "Player (Defender)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Southampton",
+    "external_links": [
+      {
+        "label": "Toby Alderweireld",
+        "url": "http://nl.wikipedia.org/wiki/Toby_Alderweireld"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/siem-de-jong",
+      "https://www.afc-ajax.info/en/player/christian-eriksen",
+      "https://www.afc-ajax.info/en/player/jan-vertonghen",
+      "https://www.afc-ajax.info/en/player/gregory-van-der-wiel",
+      "https://www.afc-ajax.info/en/player/vurnon-anita",
+      "https://www.afc-ajax.info/en/player/miralem-sulejmani",
+      "https://www.afc-ajax.info/en/player/eyong-enoh",
+      "https://www.afc-ajax.info/en/player/kenneth-vermeer",
+      "https://www.afc-ajax.info/en/player/daley-blind",
+      "https://www.afc-ajax.info/en/player/maarten-stekelenburg"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2008-09",
+          "comp.": "5",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "8",
+          "friendly": "1",
+          "total": "9"
+        },
+        {
+          "season": "2009-10",
+          "comp.": "31",
+          "play off": "",
+          "dutch cup": "6",
+          "europa": "8",
+          "other off.": "",
+          "off. mat.": "45",
+          "friendly": "1",
+          "total": "46"
+        },
+        {
+          "season": "2010-11",
+          "comp.": "26",
+          "play off": "",
+          "dutch cup": "4",
+          "europa": "12",
+          "other off.": "1",
+          "off. mat.": "43",
+          "friendly": "",
+          "total": "43"
+        },
+        {
+          "season": "2011-12",
+          "comp.": "29",
+          "play off": "",
+          "dutch cup": "3",
+          "europa": "7",
+          "other off.": "1",
+          "off. mat.": "40",
+          "friendly": "",
+          "total": "40"
+        },
+        {
+          "season": "2012-13",
+          "comp.": "33",
+          "play off": "",
+          "dutch cup": "3",
+          "europa": "8",
+          "other off.": "1",
+          "off. mat.": "45",
+          "friendly": "",
+          "total": "45"
+        },
+        {
+          "season": "2013-14",
+          "comp.": "4",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "1",
+          "off. mat.": "5",
+          "friendly": "1",
+          "total": "6"
+        },
+        {
+          "season": "Total",
+          "comp.": "128",
+          "play off": "",
+          "dutch cup": "16",
+          "europa": "38",
+          "other off.": "4",
+          "off. mat.": "186",
+          "friendly": "3",
+          "total": "189"
+        }
+      ],
+      "raw_row_count": 8
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2009-10",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "2010-11",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "5",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "2011-12",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "1",
+          "off. mat.": "3",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "2012-13",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "1",
+          "off. mat.": "4",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "7",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "5",
+          "other off.": "2",
+          "off. mat.": "15",
+          "friendly": "",
+          "total": "15"
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "1",
+          "assists": "3",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "2",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "5",
+          "assists": "",
+          "yellow": "4",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "1",
+          "assists": "3",
+          "yellow": "3",
+          "red": "",
+          "substitute out": "2",
+          "substitute in": "1"
+        },
+        {
+          "minute": "61-75",
+          "goals": "3",
+          "assists": "4",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "5",
+          "substitute in": "1"
+        },
+        {
+          "minute": "76-90",
+          "goals": "3",
+          "assists": "1",
+          "yellow": "4",
+          "red": "",
+          "substitute out": "2",
+          "substitute in": "2"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "5",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "15",
+          "assists": "11",
+          "yellow": "18",
+          "red": "",
+          "substitute out": "12",
+          "substitute in": "4"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [
+        {
+          "assisted by": "Christian Eriksen",
+          "number": "4"
+        },
+        {
+          "assisted by": "Demy de Zeeuw",
+          "number": "2"
+        },
+        {
+          "assisted by": "Luis Su&aacute;rez",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal (header)",
+          "number": "9"
+        },
+        {
+          "type": "Goal",
+          "number": "6"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "from corner (indirect)",
+          "number": "4"
+        },
+        {
+          "origin": "from free kick (indirect)",
+          "number": "3"
+        },
+        {
+          "origin": "after unknown",
+          "number": "8"
+        }
+      ],
+      "raw_row_count": 4
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2008-09",
+          "date": "8/9/2008",
+          "competition": "Amsterdam Tournament",
+          "match": "Ajax - Internazionale 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2008-09",
+          "date": "11/12/2008",
+          "competition": "Dutch Cup",
+          "match": "FC Volendam - Ajax 1 - 0 (regular time:0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "11/27/2008",
+          "competition": "UEFA Cup",
+          "match": "Hamburger SV - Ajax 0 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "12/7/2008",
+          "competition": "Eredivisie",
+          "match": "FC Volendam - Ajax 1 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "1/18/2009",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 2 - 4 (0 - 0)",
+          "active": "Bench",
+          "min": "7"
+        },
+        {
+          "season": "2008-09",
+          "date": "1/25/2009",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "1/31/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 0 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "2/3/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - Heracles Almelo 2 - 2 (0 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "2/8/2009",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 4 - 1 (3 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "2/15/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 2 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "2/19/2009",
+          "competition": "UEFA Cup",
+          "match": "Fiorentina - Ajax 0 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "2/22/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Volendam 2 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "2/26/2009",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Fiorentina 1 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "1"
+        },
+        {
+          "season": "2008-09",
+          "date": "3/1/2009",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 0 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "3/8/2009",
+          "competition": "Eredivisie",
+          "match": "ADO Den Haag - Ajax 1 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "3/12/2009",
+          "competition": "UEFA Cup",
+          "match": "Olympique Marseille - Ajax 2 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2008-09",
+          "date": "3/15/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - De Graafschap 3 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "18"
+        },
+        {
+          "season": "2008-09",
+          "date": "3/18/2009",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Olympique Marseille 2 - 2 (regular time:2 - 1)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "2008-09",
+          "date": "3/22/2009",
+          "competition": "Eredivisie",
+          "match": "NAC Breda - Ajax 0 - 3 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "4/5/2009",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 1 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "4/12/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 7 - 0 (5 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2008-09",
+          "date": "4/19/2009",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 6 - 2 (3 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2008-09",
+          "date": "4/26/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2008-09",
+          "date": "5/10/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "7/24/2009",
+          "competition": "Amsterdam Tournament",
+          "match": "Ajax - Atletico Madrid 3 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "8/2/2009",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "8/8/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - RKC Waalwijk 4 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "8/16/2009",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 4 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "8/20/2009",
+          "competition": "Europa League",
+          "match": "Ajax - Slovan Bratislava 5 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "8/23/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "8/27/2009",
+          "competition": "Europa League",
+          "match": "Slovan Bratislava - Ajax 1 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2009-10",
+          "date": "8/30/2009",
+          "competition": "Eredivisie",
+          "match": "Heracles Almelo - Ajax 0 - 3 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "9/13/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC Breda 6 - 0 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "9/17/2009",
+          "competition": "Europa League",
+          "match": "Ajax - FC Timisoara 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "9/20/2009",
+          "competition": "Eredivisie",
+          "match": "VVV-Venlo - Ajax 0 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "9/24/2009",
+          "competition": "Dutch Cup",
+          "match": "AGOVV - Ajax 1 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "9/27/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO Den Haag 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "10/1/2009",
+          "competition": "Europa League",
+          "match": "Anderlecht - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "10/4/2009",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "10/17/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "10/22/2009",
+          "competition": "Europa League",
+          "match": "Ajax - Dinamo Zagreb 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "10/25/2009",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 2 - 4 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "10/29/2009",
+          "competition": "Dutch Cup",
+          "match": "FC Dordrecht - Ajax 1 - 2 (regular time:1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2009-10",
+          "date": "11/1/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 5 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "11/5/2009",
+          "competition": "Europa League",
+          "match": "Dinamo Zagreb - Ajax 0 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "11/8/2009",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "11/22/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 5 - 1 (5 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "11/29/2009",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 1 - 5 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "12/2/2009",
+          "competition": "Europa League",
+          "match": "FC Timisoara - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "12/6/2009",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "12/11/2009",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "12/17/2009",
+          "competition": "Europa League",
+          "match": "Ajax - Anderlecht 1 - 3 (0 - 3)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2009-10",
+          "date": "12/23/2009",
+          "competition": "Dutch Cup",
+          "match": "WHC - Ajax 1 - 14 (1 - 6)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "1/17/2010",
+          "competition": "Eredivisie",
+          "match": "NAC Breda - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "1/24/2010",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "1/27/2010",
+          "competition": "Dutch Cup",
+          "match": "Ajax - NEC 3 - 2 (regular time:1 - 1)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "2009-10",
+          "date": "1/31/2010",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "15"
+        },
+        {
+          "season": "2009-10",
+          "date": "2/7/2010",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 3 - 0 (2 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2009-10",
+          "date": "2/13/2010",
+          "competition": "Eredivisie",
+          "match": "SC Heerenveen - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "2/18/2010",
+          "competition": "Europa League",
+          "match": "Ajax - Juventus 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "2/21/2010",
+          "competition": "Eredivisie",
+          "match": "Ajax - Vitesse 4 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "2/25/2010",
+          "competition": "Europa League",
+          "match": "Juventus - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "2/28/2010",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "3/7/2010",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 0 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "3/14/2010",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 4 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "3/21/2010",
+          "competition": "Eredivisie",
+          "match": "RKC Waalwijk - Ajax 1 - 5 (1 - 1)",
+          "active": "Suspension",
+          "min": ""
+        },
+        {
+          "season": "2009-10",
+          "date": "3/25/2010",
+          "competition": "Dutch Cup",
+          "match": "Go Ahead Eagles - Ajax 0 - 6 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "3/28/2010",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "4/4/2010",
+          "competition": "Eredivisie",
+          "match": "ADO Den Haag - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "4/11/2010",
+          "competition": "Eredivisie",
+          "match": "Ajax - VVV-Venlo 7 - 0 (5 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "4/14/2010",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "4/18/2010",
+          "competition": "Eredivisie",
+          "match": "Ajax - Heracles Almelo 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "4/25/2010",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Feyenoord 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "5/2/2010",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 1 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2009-10",
+          "date": "5/6/2010",
+          "competition": "Dutch Cup",
+          "match": "Feyenoord - Ajax 1 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "7/28/2010",
+          "competition": "Champions League",
+          "match": "Ajax - PAOK Thessaloniki 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "7/31/2010",
+          "competition": "Dutch Super Cup",
+          "match": "Ajax - FC Twente 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "8/4/2010",
+          "competition": "Champions League",
+          "match": "PAOK Thessaloniki - Ajax 3 - 3 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "8/8/2010",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 2 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "8/14/2010",
+          "competition": "Eredivisie",
+          "match": "Ajax - Vitesse 4 - 2 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "8/17/2010",
+          "competition": "Champions League",
+          "match": "Dinamo Kiev - Ajax 1 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2010-11",
+          "date": "8/21/2010",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC Kerkrade 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "8/25/2010",
+          "competition": "Champions League",
+          "match": "Ajax - Dinamo Kiev 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "8/29/2010",
+          "competition": "Eredivisie",
+          "match": "De Graafschap - Ajax 0 - 5 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "9/11/2010",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "63"
+        },
+        {
+          "season": "2010-11",
+          "date": "9/15/2010",
+          "competition": "Champions League",
+          "match": "Real Madrid - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "9/19/2010",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "9/22/2010",
+          "competition": "Dutch Cup",
+          "match": "Ajax - MVV 5 - 0 (3 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2010-11",
+          "date": "9/25/2010",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "9/28/2010",
+          "competition": "Champions League",
+          "match": "Ajax - AC Milan 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "10/3/2010",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 1 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2010-11",
+          "date": "10/16/2010",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC Breda 3 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2010-11",
+          "date": "10/19/2010",
+          "competition": "Champions League",
+          "match": "Ajax - Auxerre 2 - 1 (2 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2010-11",
+          "date": "10/24/2010",
+          "competition": "Eredivisie",
+          "match": "Excelsior - Ajax 2 - 2 (2 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2010-11",
+          "date": "10/27/2010",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 3 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2010-11",
+          "date": "10/30/2010",
+          "competition": "Eredivisie",
+          "match": "Heracles Almelo - Ajax 1 - 4 (1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2010-11",
+          "date": "11/3/2010",
+          "competition": "Champions League",
+          "match": "Auxerre - Ajax 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "11/7/2010",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO Den Haag 0 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2010-11",
+          "date": "11/11/2010",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Veendam 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "11/14/2010",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 2 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2010-11",
+          "date": "11/20/2010",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "11/23/2010",
+          "competition": "Champions League",
+          "match": "Ajax - Real Madrid 0 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "11/28/2010",
+          "competition": "Eredivisie",
+          "match": "VVV-Venlo - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "12/4/2010",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "12/8/2010",
+          "competition": "Champions League",
+          "match": "AC Milan - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "12/12/2010",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "12/23/2010",
+          "competition": "Dutch Cup",
+          "match": "Ajax - AZ 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "1/19/2011",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "1/23/2011",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "1/27/2011",
+          "competition": "Dutch Cup",
+          "match": "Ajax - NAC Breda 4 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "1/30/2011",
+          "competition": "Eredivisie",
+          "match": "NAC Breda - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "2/4/2011",
+          "competition": "Eredivisie",
+          "match": "Ajax - De Graafschap 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "2/13/2011",
+          "competition": "Eredivisie",
+          "match": "Roda JC Kerkrade - Ajax 2 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "2/17/2011",
+          "competition": "Europa League",
+          "match": "Anderlecht - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "2/20/2011",
+          "competition": "Eredivisie",
+          "match": "Ajax - VVV-Venlo 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "2/24/2011",
+          "competition": "Europa League",
+          "match": "Ajax - Anderlecht 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "2/27/2011",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "3/3/2011",
+          "competition": "Dutch Cup",
+          "match": "Ajax - RKC Waalwijk 5 - 1 (2 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2010-11",
+          "date": "3/6/2011",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "3/10/2011",
+          "competition": "Europa League",
+          "match": "Ajax - Spartak Moscow 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "3/13/2011",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 1 - 3 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "3/17/2011",
+          "competition": "Europa League",
+          "match": "Spartak Moscow - Ajax 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "3/20/2011",
+          "competition": "Eredivisie",
+          "match": "ADO Den Haag - Ajax 3 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "4/3/2011",
+          "competition": "Eredivisie",
+          "match": "Ajax - Heracles Almelo 3 - 0 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2010-11",
+          "date": "4/10/2011",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 2 - 0 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2010-11",
+          "date": "4/17/2011",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "4/24/2011",
+          "competition": "Eredivisie",
+          "match": "Ajax - Excelsior 4 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "5/1/2011",
+          "competition": "Eredivisie",
+          "match": "SC Heerenveen - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "5/8/2011",
+          "competition": "Dutch Cup",
+          "match": "FC Twente - Ajax 3 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2010-11",
+          "date": "5/15/2011",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 3 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "7/30/2011",
+          "competition": "Dutch Super Cup",
+          "match": "FC Twente - Ajax 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "8/7/2011",
+          "competition": "Eredivisie",
+          "match": "De Graafschap - Ajax 1 - 4 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "8/14/2011",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 5 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "8/21/2011",
+          "competition": "Eredivisie",
+          "match": "VVV-Venlo - Ajax 2 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "8/26/2011",
+          "competition": "Eredivisie",
+          "match": "Ajax - Vitesse 4 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "9/10/2011",
+          "competition": "Eredivisie",
+          "match": "Heracles Almelo - Ajax 2 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "9/14/2011",
+          "competition": "Champions League",
+          "match": "Ajax - Olympique Lyon 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "9/18/2011",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "9/21/2011",
+          "competition": "Dutch Cup",
+          "match": "Noordwijk - Ajax 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "65"
+        },
+        {
+          "season": "2011-12",
+          "date": "9/24/2011",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "9/27/2011",
+          "competition": "Champions League",
+          "match": "Real Madrid - Ajax 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "10/2/2011",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "10/15/2011",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ 2 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "10/18/2011",
+          "competition": "Champions League",
+          "match": "Dinamo Zagreb - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "10/23/2011",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "10/26/2011",
+          "competition": "Dutch Cup",
+          "match": "Roda JC Kerkrade - Ajax 2 - 4 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "10/29/2011",
+          "competition": "Eredivisie",
+          "match": "Roda JC Kerkrade - Ajax 0 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "11/2/2011",
+          "competition": "Champions League",
+          "match": "Ajax - Dinamo Zagreb 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "11/6/2011",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 6 - 4 (2 - 3)",
+          "active": "Start",
+          "min": "17"
+        },
+        {
+          "season": "2011-12",
+          "date": "11/19/2011",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC Breda 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "11/22/2011",
+          "competition": "Champions League",
+          "match": "Olympique Lyon - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "11/27/2011",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 0 - 3 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "12/3/2011",
+          "competition": "Eredivisie",
+          "match": "Ajax - Excelsior 4 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "12/7/2011",
+          "competition": "Champions League",
+          "match": "Ajax - Real Madrid 0 - 3 (0 - 2)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2011-12",
+          "date": "12/11/2011",
+          "competition": "Eredivisie",
+          "match": "RKC Waalwijk - Ajax 0 - 1 (0 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2011-12",
+          "date": "12/18/2011",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO Den Haag 4 - 0 (1 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2011-12",
+          "date": "1/19/2012",
+          "competition": "Dutch Cup",
+          "match": "Ajax - AZ 2 - 3 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "1/22/2012",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "64"
+        },
+        {
+          "season": "2011-12",
+          "date": "1/29/2012",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 4 - 2 (2 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2011-12",
+          "date": "2/5/2012",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 0 - 2 (0 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2011-12",
+          "date": "2/11/2012",
+          "competition": "Eredivisie",
+          "match": "NAC Breda - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "2/16/2012",
+          "competition": "Europa League",
+          "match": "Ajax - Manchester United 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "2/19/2012",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 4 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "2/23/2012",
+          "competition": "Europa League",
+          "match": "Manchester United - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "2/26/2012",
+          "competition": "Eredivisie",
+          "match": "Excelsior - Ajax 1 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "3/4/2012",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC Kerkrade 4 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "3/11/2012",
+          "competition": "Eredivisie",
+          "match": "Ajax - RKC Waalwijk 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "3/18/2012",
+          "competition": "Eredivisie",
+          "match": "ADO Den Haag - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "3/25/2012",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "4/1/2012",
+          "competition": "Eredivisie",
+          "match": "Ajax - Heracles Almelo 6 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "4/11/2012",
+          "competition": "Eredivisie",
+          "match": "SC Heerenveen - Ajax 0 - 5 (0 - 4)",
+          "active": "Start",
+          "min": "64"
+        },
+        {
+          "season": "2011-12",
+          "date": "4/15/2012",
+          "competition": "Eredivisie",
+          "match": "Ajax - De Graafschap 3 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "4/22/2012",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "4/29/2012",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2011-12",
+          "date": "5/2/2012",
+          "competition": "Eredivisie",
+          "match": "Ajax - VVV-Venlo 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "61"
+        },
+        {
+          "season": "2011-12",
+          "date": "5/6/2012",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 1 - 3 (1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2012-13",
+          "date": "8/5/2012",
+          "competition": "Dutch Super Cup",
+          "match": "PSV - Ajax 4 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "8/12/2012",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "8/19/2012",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 1 - 6 (0 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "8/25/2012",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC Breda 5 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "9/2/2012",
+          "competition": "Eredivisie",
+          "match": "SC Heerenveen - Ajax 2 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "9/15/2012",
+          "competition": "Eredivisie",
+          "match": "Ajax - RKC Waalwijk 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "9/18/2012",
+          "competition": "Champions League",
+          "match": "Borussia Dortmund - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "9/23/2012",
+          "competition": "Eredivisie",
+          "match": "ADO Den Haag - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "9/26/2012",
+          "competition": "Dutch Cup",
+          "match": "Utrecht - Ajax 0 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "79"
+        },
+        {
+          "season": "2012-13",
+          "date": "9/29/2012",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "10/3/2012",
+          "competition": "Champions League",
+          "match": "Ajax - Real Madrid 1 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "10/7/2012",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "10/20/2012",
+          "competition": "Eredivisie",
+          "match": "Heracles Almelo - Ajax 3 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "10/24/2012",
+          "competition": "Champions League",
+          "match": "Ajax - Manchester City 3 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "10/28/2012",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "10/31/2012",
+          "competition": "Dutch Cup",
+          "match": "ONS Boso Sneek - Ajax 0 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2012-13",
+          "date": "11/3/2012",
+          "competition": "Eredivisie",
+          "match": "Ajax - Vitesse 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "11/6/2012",
+          "competition": "Champions League",
+          "match": "Manchester City - Ajax 2 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "11/11/2012",
+          "competition": "Eredivisie",
+          "match": "PEC Zwolle - Ajax 2 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "25"
+        },
+        {
+          "season": "2012-13",
+          "date": "11/17/2012",
+          "competition": "Eredivisie",
+          "match": "Ajax - VVV-Venlo 2 - 0 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2012-13",
+          "date": "11/21/2012",
+          "competition": "Champions League",
+          "match": "Ajax - Borussia Dortmund 1 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "11/25/2012",
+          "competition": "Eredivisie",
+          "match": "Roda JC Kerkrade - Ajax 1 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "59"
+        },
+        {
+          "season": "2012-13",
+          "date": "12/1/2012",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 3 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "76"
+        },
+        {
+          "season": "2012-13",
+          "date": "12/4/2012",
+          "competition": "Champions League",
+          "match": "Real Madrid - Ajax 4 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "12/8/2012",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "12/16/2012",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 2 - 4 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "12/20/2012",
+          "competition": "Dutch Cup",
+          "match": "FC Groningen - Ajax 0 - 3 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2012-13",
+          "date": "12/23/2012",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "1/20/2013",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "1/27/2013",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 3 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "1/31/2013",
+          "competition": "Dutch Cup",
+          "match": "Vitesse - Ajax 0 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "2/3/2013",
+          "competition": "Eredivisie",
+          "match": "VVV-Venlo - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "2/10/2013",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC Kerkrade 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "2/14/2013",
+          "competition": "Europa League",
+          "match": "Ajax - Steaua Bucharest 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "2/17/2013",
+          "competition": "Eredivisie",
+          "match": "RKC Waalwijk - Ajax 0 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "2/21/2013",
+          "competition": "Europa League",
+          "match": "Steaua Bucharest - Ajax 2 - 0 (penalties: 4 - 2)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "2012-13",
+          "date": "2/24/2013",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO Den Haag 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "2/27/2013",
+          "competition": "Dutch Cup",
+          "match": "Ajax - AZ 0 - 3 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "3/2/2013",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 0 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "3/10/2013",
+          "competition": "Eredivisie",
+          "match": "Ajax - PEC Zwolle 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "3/17/2013",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 2 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "3/31/2013",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 4 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "4/7/2013",
+          "competition": "Eredivisie",
+          "match": "Ajax - Heracles Almelo 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "4/14/2013",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 2 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "4/19/2013",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "4/27/2013",
+          "competition": "Eredivisie",
+          "match": "NAC Breda - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "5/5/2013",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 5 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2012-13",
+          "date": "5/12/2013",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2013-14",
+          "date": "7/13/2013",
+          "competition": "Friendly",
+          "match": "RKC Waalwijk - Ajax 1 - 5 (1 - 4)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2013-14",
+          "date": "7/27/2013",
+          "competition": "Dutch Super Cup",
+          "match": "AZ - Ajax 2 - 3 (regular time:2 - 2)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "2013-14",
+          "date": "8/2/2013",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC Kerkrade 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2013-14",
+          "date": "8/11/2013",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 3 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2013-14",
+          "date": "8/18/2013",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 2 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2013-14",
+          "date": "8/23/2013",
+          "competition": "Eredivisie",
+          "match": "SC Heerenveen - Ajax 3 - 3 (3 - 2)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 231
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Germinal Beerschot",
+          "next club": "Ajax",
+          "type": "Joins youth academy",
+          "start": "8/1/2004",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "First contract",
+          "start": "7/1/2007",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "Contract renewal",
+          "start": "7/1/2009",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Atletico Madrid",
+          "type": "Transfer",
+          "start": "9/2/2013",
+          "amount": "€ 7M",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Atletico Madrid",
+          "next club": "Southampton",
+          "type": "Loan start",
+          "start": "9/1/2014",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2004-05",
+          "contract type": "No Contract",
+          "team": "Youth B2",
+          "contract from": "8/1/2004",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2005-06",
+          "contract type": "No Contract",
+          "team": "Youth B1",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2006-07",
+          "contract type": "Contract",
+          "team": "Youth A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2007-08",
+          "contract type": "Contract",
+          "team": "Youth A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2008-09",
+          "contract type": "Contract",
+          "team": "Young",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2009-10",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2010-11",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2011-12",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2012-13",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2013-14",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "9/2/2013",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Toby Alderweireld"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1240-toby-alderweireld.jpg",
+        "alt": "Soccer player Toby Alderweireld",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/toby-alderweireld__780fb69f6324.jpg",
+        "status": "downloaded",
+        "bytes": 31128,
+        "sha256": "780fb69f6324bb7afc558fc51c77bdee9787172d5a5d106dd815c7f7c5879019",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:06.602Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name"
+    ]
+  }
+}

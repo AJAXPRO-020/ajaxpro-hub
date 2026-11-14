@@ -1,0 +1,474 @@
+{
+  "local_id": "afc_ajax_henk-timmer",
+  "slug": "henk-timmer",
+  "collected_at": "2026-10-31T18:21:14.479Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/henk-timmer",
+    "https://www.afc-ajax.info/en/player/henk-timmer/statistics",
+    "https://www.afc-ajax.info/en/player/henk-timmer/matches",
+    "https://www.afc-ajax.info/en/player/henk-timmer/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/henk-timmer",
+    "name": "Henk Timmer",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1971-12-03",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Keeper)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Feyenoord",
+    "external_links": [
+      {
+        "label": "Henk Timmer",
+        "url": "http://nl.wikipedia.org/wiki/Henk_Timmer_(voetballer)"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/mido",
+      "https://www.afc-ajax.info/en/player/hatem-trabelsi",
+      "https://www.afc-ajax.info/en/player/andy-van-der-meijde",
+      "https://www.afc-ajax.info/en/player/jari-litmanen",
+      "https://www.afc-ajax.info/en/player/tomas-galasek",
+      "https://www.afc-ajax.info/en/player/andre-bergdolmo",
+      "https://www.afc-ajax.info/en/player/cristian-chivu",
+      "https://www.afc-ajax.info/en/player/jelle-van-damme",
+      "https://www.afc-ajax.info/en/player/richard-witschge",
+      "https://www.afc-ajax.info/en/player/zlatan-ibrahimovic"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2002-03",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "4",
+          "friendly": "",
+          "total": "4"
+        },
+        {
+          "season": "Total",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "4",
+          "friendly": "",
+          "total": "4"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "2"
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2002-03",
+          "date": "8/11/2002",
+          "competition": "Dutch Super Cup",
+          "match": "Ajax - PSV 3 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2002-03",
+          "date": "8/18/2002",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 3 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2002-03",
+          "date": "9/1/2002",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 1 - 3 (0 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2002-03",
+          "date": "9/17/2002",
+          "competition": "Champions League",
+          "match": "Ajax - Olympique Lyon 2 - 1 (2 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2002-03",
+          "date": "9/25/2002",
+          "competition": "Champions League",
+          "match": "Internazionale - Ajax 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "70"
+        },
+        {
+          "season": "2002-03",
+          "date": "9/29/2002",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 2 - 2 (0 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2002-03",
+          "date": "10/2/2002",
+          "competition": "Champions League",
+          "match": "Rosenborg BK - Ajax 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2002-03",
+          "date": "10/6/2002",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 1 - 2 (0 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2002-03",
+          "date": "10/19/2002",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ 6 - 2 (3 - 1)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2002-03",
+          "date": "10/22/2002",
+          "competition": "Champions League",
+          "match": "Ajax - Rosenborg BK 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2002-03",
+          "date": "10/26/2002",
+          "competition": "Eredivisie",
+          "match": "RKC Waalwijk - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2002-03",
+          "date": "10/30/2002",
+          "competition": "Champions League",
+          "match": "Olympique Lyon - Ajax 0 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2002-03",
+          "date": "11/3/2002",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 3 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2002-03",
+          "date": "11/8/2002",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 1 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2002-03",
+          "date": "11/12/2002",
+          "competition": "Champions League",
+          "match": "Ajax - Internazionale 1 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2002-03",
+          "date": "11/17/2002",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 6 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2002-03",
+          "date": "4/13/2003",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 0 - 3 (0 - 1)",
+          "active": "Injured",
+          "min": ""
+        }
+      ],
+      "raw_row_count": 18
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "FC Zwolle",
+          "next club": "AZ",
+          "type": "Transfer",
+          "start": "7/1/2000",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "AZ",
+          "next club": "Feyenoord",
+          "type": "Loan start",
+          "start": "1/1/2002",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "AZ",
+          "next club": "Ajax",
+          "type": "Loan start",
+          "start": "8/8/2002",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "AZ",
+          "type": "Loan end",
+          "start": "7/1/2003",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "AZ",
+          "next club": "Feyenoord",
+          "type": "Transfer",
+          "start": "7/1/2006",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2002-03",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "8/8/2002",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Henk Timmer"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1090-henk-timmer.jpg",
+        "alt": "Soccer player Henk Timmer",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/henk-timmer__b08c0d461a02.jpg",
+        "status": "downloaded",
+        "bytes": 48555,
+        "sha256": "b08c0d461a022074ea228957317af38b84260d8bafa661662415094f4d341e8a",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:00.712Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name"
+    ]
+  }
+}

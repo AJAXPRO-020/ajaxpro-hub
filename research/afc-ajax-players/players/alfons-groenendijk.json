@@ -1,0 +1,639 @@
+{
+  "local_id": "afc_ajax_alfons-groenendijk",
+  "slug": "alfons-groenendijk",
+  "collected_at": "2026-10-31T18:10:09.220Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/alfons-groenendijk",
+    "https://www.afc-ajax.info/en/player/alfons-groenendijk/statistics",
+    "https://www.afc-ajax.info/en/player/alfons-groenendijk/matches",
+    "https://www.afc-ajax.info/en/player/alfons-groenendijk/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/alfons-groenendijk",
+    "name": "Alfons Groenendijk",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1964-05-17",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Midfielder) - Youth coach"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Manchester City",
+    "external_links": [
+      {
+        "label": "Alfons Groenendijk",
+        "url": "http://nl.wikipedia.org/wiki/Alfons_Groenendijk"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/stanley-menzo",
+      "https://www.afc-ajax.info/en/player/frank-de-boer",
+      "https://www.afc-ajax.info/en/player/john-van-loen",
+      "https://www.afc-ajax.info/en/player/stefan-pettersson",
+      "https://www.afc-ajax.info/en/player/danny-blind",
+      "https://www.afc-ajax.info/en/player/dennis-bergkamp",
+      "https://www.afc-ajax.info/en/player/aron-winter",
+      "https://www.afc-ajax.info/en/player/marciano-vink",
+      "https://www.afc-ajax.info/en/player/michel-kreek",
+      "https://www.afc-ajax.info/en/player/wim-jonk"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1991-92",
+          "comp.": "20",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "22",
+          "friendly": "2",
+          "total": "24"
+        },
+        {
+          "season": "1992-93",
+          "comp.": "2",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "",
+          "total": "3"
+        },
+        {
+          "season": "Total",
+          "comp.": "22",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "25",
+          "friendly": "2",
+          "total": "27"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1991-92",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "1",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "1",
+          "total": "2"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "46-60",
+          "goals": "1",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "3"
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "3",
+          "substitute in": "1"
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "2"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "2",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "Totaal",
+          "goals": "1",
+          "assists": "1",
+          "yellow": "2",
+          "red": "",
+          "substitute out": "5",
+          "substitute in": "9"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1991-92",
+          "date": "8/9/1991",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Fluminense 3 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1991-92",
+          "date": "8/11/1991",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Sampdoria 4 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1991-92",
+          "date": "8/21/1991",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Volendam 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1991-92",
+          "date": "8/25/1991",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1991-92",
+          "date": "9/1/1991",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1991-92",
+          "date": "9/22/1991",
+          "competition": "Eredivisie",
+          "match": "Ajax - De Graafschap 5 - 1 (2 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1991-92",
+          "date": "9/28/1991",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna Sittard 3 - 1 (3 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1991-92",
+          "date": "10/9/1991",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 4 - 0 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1991-92",
+          "date": "10/23/1991",
+          "competition": "UEFA Cup",
+          "match": "Rot-Weiss Erfurt - Ajax 1 - 2 (1 - 0)",
+          "active": "Bench",
+          "min": "3"
+        },
+        {
+          "season": "1991-92",
+          "date": "10/27/1991",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1991-92",
+          "date": "10/30/1991",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1991-92",
+          "date": "11/3/1991",
+          "competition": "Eredivisie",
+          "match": "FC Den Haag - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "70"
+        },
+        {
+          "season": "1991-92",
+          "date": "11/6/1991",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Rot-Weiss Erfurt 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1991-92",
+          "date": "11/10/1991",
+          "competition": "Eredivisie",
+          "match": "VVV - Ajax 0 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1991-92",
+          "date": "11/13/1991",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1991-92",
+          "date": "11/17/1991",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "62"
+        },
+        {
+          "season": "1991-92",
+          "date": "11/20/1991",
+          "competition": "Eredivisie",
+          "match": "Ajax - SVV/Dordrecht '90 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1991-92",
+          "date": "11/24/1991",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1991-92",
+          "date": "12/22/1991",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 3 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1991-92",
+          "date": "1/10/1992",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 1 - 4 (1 - 2)",
+          "active": "Start",
+          "min": "71"
+        },
+        {
+          "season": "1991-92",
+          "date": "3/15/1992",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 7 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "27"
+        },
+        {
+          "season": "1991-92",
+          "date": "3/29/1992",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 1 - 3 (1 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1991-92",
+          "date": "4/5/1992",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 2 - 4 (1 - 2)",
+          "active": "Bench",
+          "min": "1"
+        },
+        {
+          "season": "1991-92",
+          "date": "4/12/1992",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Haag 3 - 2 (2 - 1)",
+          "active": "Bench",
+          "min": "36"
+        },
+        {
+          "season": "1991-92",
+          "date": "4/21/1992",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 0 - 3",
+          "active": "Bench",
+          "min": "48"
+        },
+        {
+          "season": "1991-92",
+          "date": "4/26/1992",
+          "competition": "Eredivisie",
+          "match": "Ajax - VVV 3 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1991-92",
+          "date": "5/3/1992",
+          "competition": "Eredivisie",
+          "match": "SVV/Dordrecht '90 - Ajax 0 - 5 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1992-93",
+          "date": "8/29/1992",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "24"
+        },
+        {
+          "season": "1992-93",
+          "date": "2/17/1993",
+          "competition": "Dutch Cup",
+          "match": "FC Twente - Ajax 2 - 4 (regular time:2 - 2)",
+          "active": "Bench",
+          "min": "15"
+        },
+        {
+          "season": "1992-93",
+          "date": "3/14/1993",
+          "competition": "Eredivisie",
+          "match": "Ajax - RKC Waalwijk 2 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        }
+      ],
+      "raw_row_count": 31
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Roda JC",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/25/1991",
+          "amount": "€ 680,7K",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Manchester City",
+          "type": "Transfer",
+          "start": "7/1/1993",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1991-92",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "7/25/1991",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1992-93",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Other Role)",
+      "headers": [
+        "season",
+        "role",
+        "contract type",
+        "contract from",
+        "contract to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2013-14",
+          "role": "Youth coach",
+          "contract type": "Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 5,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name",
+      "photo"
+    ]
+  }
+}

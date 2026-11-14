@@ -21,6 +21,9 @@ const read=(path:string)=>readFileSync(new URL(path,import.meta.url),"utf8");
 test("Socials biedt alle actieve formats aan",()=>{
   assert.deepEqual(socialFormats.map(({id,title})=>({id,title})),[
     {id:"stats",title:"Wedstrijd in cijfers"},
+    {id:"shots-map",title:"Schotenkaart"},
+    {id:"notable-stat",title:"Opvallend cijfer"},
+    {id:"card-video",title:"Kaartvideo"},
     {id:"video",title:"Wedstrijd in cijfers: video"},
     {id:"outblinker",title:"Uitblinker"},
     {id:"top-three",title:"Top 3 spelers"},

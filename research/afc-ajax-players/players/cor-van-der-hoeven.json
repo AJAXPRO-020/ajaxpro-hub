@@ -1,0 +1,935 @@
+{
+  "local_id": "afc_ajax_cor-van-der-hoeven",
+  "slug": "cor-van-der-hoeven",
+  "collected_at": "2026-10-31T18:16:29.411Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/cor-van-der-hoeven",
+    "https://www.afc-ajax.info/en/player/cor-van-der-hoeven/statistics",
+    "https://www.afc-ajax.info/en/player/cor-van-der-hoeven/matches",
+    "https://www.afc-ajax.info/en/player/cor-van-der-hoeven/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/cor-van-der-hoeven",
+    "name": "Cor van der Hoeven",
+    "full_name": "Cornelis van der Hoeven",
+    "alternative_names": [],
+    "birth_date": "1921-05-12",
+    "death_date": "2017-02-01",
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Midfielder)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Ajax",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/jan-potharst",
+      "https://www.afc-ajax.info/en/player/guus-drager",
+      "https://www.afc-ajax.info/en/player/ge-van-dijk",
+      "https://www.afc-ajax.info/en/player/joop-stoffelen",
+      "https://www.afc-ajax.info/en/player/rinus-michels",
+      "https://www.afc-ajax.info/en/player/cor-van-der-hart",
+      "https://www.afc-ajax.info/en/player/ad-van-de-pol",
+      "https://www.afc-ajax.info/en/player/gerard-bruins",
+      "https://www.afc-ajax.info/en/player/ger-beumer",
+      "https://www.afc-ajax.info/en/player/theo-brokmann-jr"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1947-48",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "1",
+          "total": "1"
+        },
+        {
+          "season": "1948-49",
+          "comp.": "6",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "6",
+          "friendly": "",
+          "total": "6"
+        },
+        {
+          "season": "1949-50",
+          "comp.": "18",
+          "play off": "10",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "28",
+          "friendly": "5",
+          "total": "33"
+        },
+        {
+          "season": "1950-51",
+          "comp.": "16",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "16",
+          "friendly": "3",
+          "total": "19"
+        },
+        {
+          "season": "Total",
+          "comp.": "40",
+          "play off": "10",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "50",
+          "friendly": "9",
+          "total": "59"
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1948-49",
+          "comp.": "3",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1950-51",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "4",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "4",
+          "friendly": "",
+          "total": "4"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "4",
+          "assists": "2",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "3"
+        },
+        {
+          "minute": "Totaal",
+          "goals": "4",
+          "assists": "2",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "3"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [],
+      "raw_row_count": 1
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "4"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "3"
+        },
+        {
+          "origin": "from corner (indirect)",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 3
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1947-48",
+          "date": "5/16/1948",
+          "competition": "Friendly",
+          "match": "Ajax - South Liverpool 2 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1948-49",
+          "date": "10/24/1948",
+          "competition": "First Division",
+          "match": "Ajax - SVV 3 - 3 (1 - 3)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "1948-49",
+          "date": "10/31/1948",
+          "competition": "First Division West I",
+          "match": "HFC Haarlem - Ajax 1 - 4 (1 - 1)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "1948-49",
+          "date": "1/9/1949",
+          "competition": "First Division",
+          "match": "De Volewijckers - Ajax 0 - 7 (0 - 2)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "1948-49",
+          "date": "2/6/1949",
+          "competition": "First Division",
+          "match": "Ajax - HFC Haarlem 2 - 5 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1948-49",
+          "date": "2/13/1949",
+          "competition": "First Division",
+          "match": "Ajax - Sparta 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1948-49",
+          "date": "2/20/1949",
+          "competition": "First Division West I",
+          "match": "ADO - Ajax 6 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "8/28/1949",
+          "competition": "AROL Cup",
+          "match": "Ajax - HBS 3 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "9/4/1949",
+          "competition": "AROL Cup",
+          "match": "Ajax - West Frisia 5 - 2",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "9/4/1949",
+          "competition": "AROL Cup",
+          "match": "Ajax - KFC 3 - 3 (penalties: 3 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "9/18/1949",
+          "competition": "First Division",
+          "match": "Ajax - RC Heemstede 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "9/25/1949",
+          "competition": "First Division",
+          "match": "Neptunus - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "10/2/1949",
+          "competition": "First Division",
+          "match": "Ajax - 't Gooi 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "10/9/1949",
+          "competition": "First Division",
+          "match": "EDO - Ajax 1 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "10/16/1949",
+          "competition": "First Division",
+          "match": "Ajax - Xerxes 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "10/23/1949",
+          "competition": "First Division",
+          "match": "DWS - Ajax 2 - 4 (2 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "10/30/1949",
+          "competition": "First Division",
+          "match": "Ajax - HBS 2 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "11/12/1949",
+          "competition": "First Division",
+          "match": "De Volewijckers - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "11/27/1949",
+          "competition": "First Division",
+          "match": "Ajax - SVV 4 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "12/18/1949",
+          "competition": "First Division",
+          "match": "Ajax - Neptunus 2 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "12/26/1949",
+          "competition": "First Division",
+          "match": "SVV - Ajax 0 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "1/8/1950",
+          "competition": "First Division",
+          "match": "'t Gooi - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "1/15/1950",
+          "competition": "First Division",
+          "match": "Ajax - EDO 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "2/12/1950",
+          "competition": "First Division",
+          "match": "RC Heemstede - Ajax 2 - 4 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "2/19/1950",
+          "competition": "First Division West II",
+          "match": "Ajax - DWS 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "2/26/1950",
+          "competition": "First Division",
+          "match": "Xerxes - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "3/5/1950",
+          "competition": "Friendly",
+          "match": "Feijenoord - Ajax 2 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "3/12/1950",
+          "competition": "First Division West II",
+          "match": "HBS - Ajax 2 - 4 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "3/19/1950",
+          "competition": "Friendly",
+          "match": "Ajax - Feijenoord 1 - 4 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "3/26/1950",
+          "competition": "First Division West II",
+          "match": "Ajax - De Volewijckers 2 - 4 (1 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "4/2/1950",
+          "competition": "Champions Competition",
+          "match": "Ajax - VV Heerenveen 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "4/23/1950",
+          "competition": "Champions Competition",
+          "match": "Enschedese Boys - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "4/30/1950",
+          "competition": "Champions Competition",
+          "match": "Ajax - Blauw-Wit 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "5/7/1950",
+          "competition": "Champions Competition",
+          "match": "VV Heerenveen - Ajax 6 - 5 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "5/14/1950",
+          "competition": "Champions Competition",
+          "match": "SV Limburgia - Ajax 3 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "5/21/1950",
+          "competition": "Champions Competition",
+          "match": "Ajax - Maurits 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "5/24/1950",
+          "competition": "Champions Competition",
+          "match": "Blauw-Wit - Ajax 3 - 2 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "6/3/1950",
+          "competition": "Champions Competition",
+          "match": "Ajax - Enschedese Boys 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "6/17/1950",
+          "competition": "Champions Competition",
+          "match": "Maurits - Ajax 0 - 5 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1949-50",
+          "date": "6/24/1950",
+          "competition": "Champions Competition",
+          "match": "Ajax - SV Limburgia 0 - 6 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "8/27/1950",
+          "competition": "AROL Cup",
+          "match": "Ajax - HFC 5 - 0",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "9/3/1950",
+          "competition": "AROL Cup",
+          "match": "Ajax - VVA 1 - 5 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "9/10/1950",
+          "competition": "First Division",
+          "match": "Ajax - AGOVV 3 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "9/17/1950",
+          "competition": "First Division",
+          "match": "Wageningen - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "9/24/1950",
+          "competition": "First Division",
+          "match": "Ajax - Hengelo 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "10/8/1950",
+          "competition": "First Division",
+          "match": "Ajax - Enschedese Boys 0 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "10/22/1950",
+          "competition": "First Division",
+          "match": "NEC - Ajax 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "10/29/1950",
+          "competition": "First Division",
+          "match": "Ajax - Vitesse 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "11/5/1950",
+          "competition": "First Division B",
+          "match": "Heracles - Ajax 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "11/19/1950",
+          "competition": "First Division",
+          "match": "Ajax - DOS 0 - 5 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "11/26/1950",
+          "competition": "First Division",
+          "match": "SC Enschede - Ajax 2 - 4 (2 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "1/14/1951",
+          "competition": "First Division",
+          "match": "AGOVV - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "1/21/1951",
+          "competition": "First Division",
+          "match": "Ajax - Wageningen 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "1/28/1951",
+          "competition": "First Division B",
+          "match": "Hengelo - Ajax 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "2/4/1951",
+          "competition": "First Division",
+          "match": "'t Gooi - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "2/11/1951",
+          "competition": "First Division",
+          "match": "Ajax - 't Gooi 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "2/18/1951",
+          "competition": "First Division",
+          "match": "Enschedese Boys - Ajax 5 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "3/26/1951",
+          "competition": "First Division",
+          "match": "Ajax - DWS 1 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1950-51",
+          "date": "4/1/1951",
+          "competition": "Friendly",
+          "match": "Ajax - EVV 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 60
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "DWS",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/1948",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1946-47",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1947-48",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1948-49",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1949-50",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1950-51",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Cor van der Hoeven (DWS squad (October 3, 1947))"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1027-cor-van-der-hoeven.png",
+        "alt": "Soccer player Cor van der Hoeven",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/cor-van-der-hoeven__48189dbaa7f0.png",
+        "status": "downloaded",
+        "bytes": 38850,
+        "sha256": "48189dbaa7f0b469ca685b03e3e94b7319c0603a92f36f5ff44c55116ba33de7",
+        "mime_type": "image/png",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:36:58.458Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": []
+  }
+}

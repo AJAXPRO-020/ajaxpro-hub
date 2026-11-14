@@ -1,0 +1,3517 @@
+{
+  "local_id": "afc_ajax_joop-pelser",
+  "slug": "joop-pelser",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/joop-pelser",
+    "https://www.afc-ajax.info/en/player/joop-pelser/statistics",
+    "https://www.afc-ajax.info/en/player/joop-pelser/matches",
+    "https://www.afc-ajax.info/en/player/joop-pelser/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/joop-pelser",
+    "name": "Joop Pelser",
+    "full_name": "Jozef Joannes Leonardus Pelser",
+    "alternative_names": [],
+    "birth_date": "1892-03-17",
+    "death_date": "1974-07-27",
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Midfielder) - 2nd Secretary - Commissioner"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Ajax",
+    "external_links": [
+      {
+        "label": "Joop Pelser",
+        "url": "http://nl.wikipedia.org/wiki/Joop_Pelser"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/adriaan-pelser",
+      "https://www.afc-ajax.info/en/player/fons-pelser",
+      "https://www.afc-ajax.info/en/player/harry-pelser",
+      "https://www.afc-ajax.info/en/player/jan-pelser",
+      "https://www.afc-ajax.info/en/player/theo-brokmann-sr",
+      "https://www.afc-ajax.info/en/player/henk-hordijk",
+      "https://www.afc-ajax.info/en/player/frans-couton",
+      "https://www.afc-ajax.info/en/player/joop-van-dort",
+      "https://www.afc-ajax.info/en/player/jan-de-natris",
+      "https://www.afc-ajax.info/en/player/wim-gupffert",
+      "https://www.afc-ajax.info/en/player/frits-terwee",
+      "https://www.afc-ajax.info/en/player/jan-smit",
+      "https://www.afc-ajax.info/en/player/hein-delsen"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1910-11",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        },
+        {
+          "season": "1911-12",
+          "comp.": "7",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "7",
+          "friendly": "4",
+          "total": "11"
+        },
+        {
+          "season": "1912-13",
+          "comp.": "16",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "17",
+          "friendly": "8",
+          "total": "25"
+        },
+        {
+          "season": "1913-14",
+          "comp.": "17",
+          "play off": "2",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "20",
+          "friendly": "6",
+          "total": "26"
+        },
+        {
+          "season": "1914-15",
+          "comp.": "4",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "4",
+          "friendly": "4",
+          "total": "8"
+        },
+        {
+          "season": "1915-16",
+          "comp.": "10",
+          "play off": "4",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "14",
+          "friendly": "4",
+          "total": "18"
+        },
+        {
+          "season": "1916-17",
+          "comp.": "13",
+          "play off": "3",
+          "dutch cup": "5",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "21",
+          "friendly": "18",
+          "total": "39"
+        },
+        {
+          "season": "1917-18",
+          "comp.": "21",
+          "play off": "8",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "29",
+          "friendly": "10",
+          "total": "39"
+        },
+        {
+          "season": "1918-19",
+          "comp.": "21",
+          "play off": "8",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "29",
+          "friendly": "7",
+          "total": "36"
+        },
+        {
+          "season": "1919-20",
+          "comp.": "20",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "20",
+          "friendly": "2",
+          "total": "22"
+        },
+        {
+          "season": "1920-21",
+          "comp.": "19",
+          "play off": "5",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "24",
+          "friendly": "3",
+          "total": "27"
+        },
+        {
+          "season": "1921-22",
+          "comp.": "22",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "22",
+          "friendly": "4",
+          "total": "26"
+        },
+        {
+          "season": "1922-23",
+          "comp.": "16",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "16",
+          "friendly": "5",
+          "total": "21"
+        },
+        {
+          "season": "1923-24",
+          "comp.": "11",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "11",
+          "friendly": "5",
+          "total": "16"
+        },
+        {
+          "season": "Total",
+          "comp.": "198",
+          "play off": "30",
+          "dutch cup": "7",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "235",
+          "friendly": "80",
+          "total": "315"
+        }
+      ],
+      "raw_row_count": 16
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1911-12",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1912-13",
+          "comp.": "5",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "5",
+          "friendly": "2",
+          "total": ""
+        },
+        {
+          "season": "1913-14",
+          "comp.": "1",
+          "play off": "1",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1915-16",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1916-17",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "3",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "8",
+          "play off": "1",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "9",
+          "friendly": "5",
+          "total": "14"
+        }
+      ],
+      "raw_row_count": 7
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "8",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "9",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [],
+      "raw_row_count": 1
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "8"
+        },
+        {
+          "type": "Goal (header)",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after attack",
+          "number": "3"
+        },
+        {
+          "origin": "after unknown",
+          "number": "6"
+        }
+      ],
+      "raw_row_count": 3
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1910-11",
+          "date": "2/12/1911",
+          "competition": "Second Division",
+          "match": "RAP - Ajax 3 - 3 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1911-12",
+          "date": "9/3/1911",
+          "competition": "Zilveren Voetbal",
+          "match": "Ajax - HFC Haarlem 1 - 3 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1911-12",
+          "date": "9/24/1911",
+          "competition": "First Division",
+          "match": "HFC - Ajax 4 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1911-12",
+          "date": "10/8/1911",
+          "competition": "First Division",
+          "match": "HBS - Ajax 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1911-12",
+          "date": "12/25/1911",
+          "competition": "Friendly",
+          "match": "Ajax - ZAC 7 - 2 (3 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1911-12",
+          "date": "2/11/1912",
+          "competition": "First Division",
+          "match": "Ajax - HBS 2 - 1",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1911-12",
+          "date": "4/7/1912",
+          "competition": "Meuwsen Beker",
+          "match": "Ajax - GVC 1 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1911-12",
+          "date": "4/8/1912",
+          "competition": "Meuwsen Beker",
+          "match": "Ajax - FC Lloyd 6 - 0 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1911-12",
+          "date": "4/21/1912",
+          "competition": "First Division",
+          "match": "Ajax - HFC 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1911-12",
+          "date": "5/5/1912",
+          "competition": "First Division West",
+          "match": "Ajax - Velocitas 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1911-12",
+          "date": "5/12/1912",
+          "competition": "First Division West",
+          "match": "HFC Haarlem - Ajax 3 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1911-12",
+          "date": "5/16/1912",
+          "competition": "First Division",
+          "match": "Sparta - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "9/15/1912",
+          "competition": "Dutch Cup",
+          "match": "Ajax - DVS 7 - 4 (2 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "9/22/1912",
+          "competition": "Friendly",
+          "match": "Ajax - Tunbridge Wells FC 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "9/29/1912",
+          "competition": "First Division",
+          "match": "HFC - Ajax 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "10/6/1912",
+          "competition": "First Division",
+          "match": "Ajax - Velocitas 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "10/13/1912",
+          "competition": "First Division West",
+          "match": "HVV - Ajax 7 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "10/20/1912",
+          "competition": "First Division",
+          "match": "Ajax - VOC 1 - 6 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "10/27/1912",
+          "competition": "First Division",
+          "match": "Ajax - Quick 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "11/10/1912",
+          "competition": "Friendly",
+          "match": "Ajax - Wilhelmina 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "11/17/1912",
+          "competition": "Friendly",
+          "match": "Ajax - Noordelijke Zwaluwen 3 - 7 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "11/24/1912",
+          "competition": "First Division",
+          "match": "Ajax - HBS 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "12/8/1912",
+          "competition": "First Division",
+          "match": "Velocitas - Ajax 0 - 5 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "12/15/1912",
+          "competition": "First Division",
+          "match": "Ajax - HVV 2 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "12/22/1912",
+          "competition": "First Division",
+          "match": "VOC - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "1/5/1913",
+          "competition": "First Division",
+          "match": "Ajax - HFC Haarlem 0 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "1/19/1913",
+          "competition": "First Division",
+          "match": "Ajax - Sparta 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "1/26/1913",
+          "competition": "First Division",
+          "match": "HBS - Ajax 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "2/9/1913",
+          "competition": "First Division",
+          "match": "Sparta - Ajax 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "2/23/1913",
+          "competition": "First Division West",
+          "match": "DFC - Ajax 6 - 0 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "3/16/1913",
+          "competition": "First Division",
+          "match": "Ajax - DFC 1 - 9 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "3/23/1913",
+          "competition": "Friendly",
+          "match": "Red Star FC - Ajax 2 - 0",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "3/24/1913",
+          "competition": "Friendly",
+          "match": "Association Sportive Francaise - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "4/6/1913",
+          "competition": "First Division West",
+          "match": "Quick - Ajax 4 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "5/1/1913",
+          "competition": "Friendly",
+          "match": "Ajax - Preston North End 2 - 7 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "5/11/1913",
+          "competition": "Meuwsen Beker",
+          "match": "BFC Werder - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1912-13",
+          "date": "5/12/1913",
+          "competition": "Meuwsen Beker",
+          "match": "West Norwood FC - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "9/14/1913",
+          "competition": "Friendly",
+          "match": "Ajax - Tunbridge Wells FC 1 - 3 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "9/21/1913",
+          "competition": "Dutch Cup",
+          "match": "VVA - Ajax 5 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "69"
+        },
+        {
+          "season": "1913-14",
+          "date": "10/12/1913",
+          "competition": "First Division",
+          "match": "Ajax - VOC 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "10/19/1913",
+          "competition": "First Division",
+          "match": "DFC - Ajax 6 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "10/26/1913",
+          "competition": "First Division",
+          "match": "Ajax - HFC Haarlem 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "11/2/1913",
+          "competition": "First Division",
+          "match": "UVV - Ajax 2 - 3 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "11/9/1913",
+          "competition": "Friendly",
+          "match": "Quick (N) - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "11/16/1913",
+          "competition": "Friendly",
+          "match": "Ajax - Middlesex Wanderers FC 0 - 5 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "11/23/1913",
+          "competition": "First Division",
+          "match": "Ajax - Sparta 2 - 2 (0 - 1)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1913-14",
+          "date": "11/30/1913",
+          "competition": "First Division West",
+          "match": "HVV - Ajax 6 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "12/7/1913",
+          "competition": "First Division",
+          "match": "Ajax - HFC 1 - 4 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "12/14/1913",
+          "competition": "First Division",
+          "match": "Ajax - Quick 3 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "12/21/1913",
+          "competition": "First Division West",
+          "match": "HBS - Ajax 4 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "12/25/1913",
+          "competition": "Friendly",
+          "match": "Brussels XI - Ajax 5 - 3 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "1/1/1914",
+          "competition": "Friendly",
+          "match": "Ajax - CSA de Paris 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "1/11/1914",
+          "competition": "First Division West",
+          "match": "Ajax - DFC 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "2/1/1914",
+          "competition": "First Division",
+          "match": "Sparta - Ajax 0 - 5 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "2/8/1914",
+          "competition": "First Division West",
+          "match": "Ajax - HVV 1 - 3 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "3/1/1914",
+          "competition": "First Division West",
+          "match": "HFC Haarlem - Ajax 4 - 1 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "3/8/1914",
+          "competition": "First Division",
+          "match": "VOC - Ajax 2 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "3/22/1914",
+          "competition": "First Division",
+          "match": "Quick - Ajax 5 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "3/29/1914",
+          "competition": "First Division",
+          "match": "Ajax - HBS 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "4/19/1914",
+          "competition": "First Division West",
+          "match": "HFC - Ajax 1 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "5/3/1914",
+          "competition": "First Division West",
+          "match": "Ajax - UVV 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "5/10/1914",
+          "competition": "Promotion Competition 2nd Division",
+          "match": "Ajax - Hercules 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "5/17/1914",
+          "competition": "Promotion Competition 2nd Division",
+          "match": "Hercules - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1913-14",
+          "date": "6/1/1914",
+          "competition": "Friendly",
+          "match": "Ajax - Middlesex Wanderers FC 2 - 5",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1914-15",
+          "date": "9/20/1914",
+          "competition": "Friendly",
+          "match": "Ajax - VOC 1 - 5 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1914-15",
+          "date": "10/18/1914",
+          "competition": "Second Division",
+          "match": "Blauw-Wit - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1914-15",
+          "date": "11/8/1914",
+          "competition": "Second Division",
+          "match": "Ajax - VRC 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1914-15",
+          "date": "12/13/1914",
+          "competition": "Second Division",
+          "match": "VVA - Ajax 0 - 6 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1914-15",
+          "date": "4/5/1915",
+          "competition": "Friendly",
+          "match": "Ajax - Willem II 3 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1914-15",
+          "date": "4/11/1915",
+          "competition": "Second Division Nood West B",
+          "match": "AFC - Ajax 0 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1914-15",
+          "date": "5/23/1915",
+          "competition": "Friendly",
+          "match": "Ajax - Quick 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1914-15",
+          "date": "5/24/1915",
+          "competition": "Friendly",
+          "match": "Ajax - Amsterdams Elftal 5 - 1 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1915-16",
+          "date": "9/19/1915",
+          "competition": "Second Division West C",
+          "match": "Ajax - Allen Weerbaar 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1915-16",
+          "date": "9/26/1915",
+          "competition": "Second Division West C",
+          "match": "Kampong - Ajax 0 - 5 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1915-16",
+          "date": "10/3/1915",
+          "competition": "Second Division",
+          "match": "HC & FC Victoria 1893 - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1915-16",
+          "date": "10/17/1915",
+          "competition": "Second Division",
+          "match": "VVA - Ajax 3 - 5 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1915-16",
+          "date": "10/24/1915",
+          "competition": "Gouden Kruis",
+          "match": "VRA - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1915-16",
+          "date": "10/31/1915",
+          "competition": "Second Division West C",
+          "match": "Ajax - VRA 6 - 0 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1915-16",
+          "date": "11/7/1915",
+          "competition": "Second Division",
+          "match": "Allen Weerbaar - Ajax 3 - 3 (1 - 2)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1915-16",
+          "date": "11/21/1915",
+          "competition": "Second Division",
+          "match": "Ajax - HC & FC Victoria 1893 7 - 0 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1915-16",
+          "date": "11/28/1915",
+          "competition": "Second Division",
+          "match": "Hilversum - Ajax 1 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1915-16",
+          "date": "12/19/1915",
+          "competition": "Second Division",
+          "match": "DEC - Ajax 0 - 7 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1915-16",
+          "date": "1/9/1916",
+          "competition": "Second Division",
+          "match": "Ajax - VVA 4 - 2 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1915-16",
+          "date": "1/16/1916",
+          "competition": "Friendly",
+          "match": "Ajax - VOC 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1915-16",
+          "date": "2/6/1916",
+          "competition": "Friendly",
+          "match": "Ajax - Quick 3 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1915-16",
+          "date": "2/13/1916",
+          "competition": "Second Division West C",
+          "match": "VRA - Ajax 1 - 5 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1915-16",
+          "date": "2/20/1916",
+          "competition": "Friendly",
+          "match": "Ajax - Zuidelijk Elftal 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1915-16",
+          "date": "4/9/1916",
+          "competition": "Champions Competition 2nd Division",
+          "match": "Ajax - Blauw-Wit 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1915-16",
+          "date": "4/16/1916",
+          "competition": "Promotion Competition 2nd Division West",
+          "match": "Ajax - DVS 2 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1915-16",
+          "date": "4/23/1916",
+          "competition": "Promotion Competition 2nd Division",
+          "match": "Ajax - Blauw-Wit 1 - 1 (regular time:1 - 1)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "1915-16",
+          "date": "5/21/1916",
+          "competition": "Promotion Competition 2nd Division",
+          "match": "Ajax - HFC Haarlem 5 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "8/27/1916",
+          "competition": "Friendly",
+          "match": "Wilhelmina - Ajax 0 - 5 (0 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "9/3/1916",
+          "competition": "Friendly",
+          "match": "Ajax - Quick 2 - 1 (regular time:1 - 1)",
+          "active": "Start",
+          "min": "105"
+        },
+        {
+          "season": "1916-17",
+          "date": "9/10/1916",
+          "competition": "Zilveren Voetbal",
+          "match": "Ajax - Hercules 2 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "9/17/1916",
+          "competition": "Zilveren Voetbal",
+          "match": "Sparta - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "9/17/1916",
+          "competition": "Zilveren Voetbal",
+          "match": "Willem II - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "9/24/1916",
+          "competition": "Friendly",
+          "match": "AFC - Ajax 1 - 5",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "10/1/1916",
+          "competition": "Friendly",
+          "match": "Ajax - UD 4 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "10/8/1916",
+          "competition": "Second Division West A",
+          "match": "Ajax - LVV 9 - 1 (6 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "10/15/1916",
+          "competition": "Friendly",
+          "match": "Ajax - NAC 6 - 2 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "10/22/1916",
+          "competition": "Second Division West A",
+          "match": "Ajax - EDO 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "10/29/1916",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Tubantia 8 - 1 (4 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "11/5/1916",
+          "competition": "Second Division West A",
+          "match": "Alcmaria Victrix - Ajax 0 - 6 (0 - 5)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "11/12/1916",
+          "competition": "Second Division West A",
+          "match": "Ajax - DEC 5 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "11/26/1916",
+          "competition": "Second Division",
+          "match": "De Spartaan - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "12/3/1916",
+          "competition": "Friendly",
+          "match": "Ajax - First Royal Naval Brigade FC 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "12/10/1916",
+          "competition": "Dutch Cup",
+          "match": "ODE - Ajax 2 - 4 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "12/17/1916",
+          "competition": "Second Division West A",
+          "match": "Ajax - AFC 3 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "12/24/1916",
+          "competition": "Second Division West A",
+          "match": "EDO - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "12/26/1916",
+          "competition": "Friendly",
+          "match": "Ajax - DFC 4 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "12/31/1916",
+          "competition": "Second Division",
+          "match": "Ajax - ZVV 11 - 0 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "1/7/1917",
+          "competition": "Second Division West A",
+          "match": "Ajax - De Spartaan 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "1/21/1917",
+          "competition": "Second Division West A",
+          "match": "AFC - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "2/18/1917",
+          "competition": "Second Division West A",
+          "match": "LVV - Ajax 0 - 8",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "3/4/1917",
+          "competition": "Friendly",
+          "match": "Ajax - Willem II 4 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "3/11/1917",
+          "competition": "Second Division West A",
+          "match": "Ajax - Alcmaria Victrix 9 - 0 (6 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "3/18/1917",
+          "competition": "Second Division",
+          "match": "ZVV - Ajax 0 - 3 (0 - 1)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1916-17",
+          "date": "3/25/1917",
+          "competition": "Friendly",
+          "match": "Ajax - Vitesse 10 - 1 (8 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "4/1/1917",
+          "competition": "Dutch Cup",
+          "match": "Hercules - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "4/6/1917",
+          "competition": "Gouden Meer Beker",
+          "match": "Ajax - DVS 5 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "4/9/1917",
+          "competition": "Gouden Meer Beker",
+          "match": "Ajax - Willem II 5 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "4/15/1917",
+          "competition": "Second Division West A",
+          "match": "DEC - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "4/22/1917",
+          "competition": "Friendly",
+          "match": "Zuidelijk Elftal - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "4/29/1917",
+          "competition": "Dutch Cup",
+          "match": "DFC - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "5/6/1917",
+          "competition": "Champions Competition 2nd Division West",
+          "match": "Ajax - DFC 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "5/13/1917",
+          "competition": "Champions Competition 2nd Division West",
+          "match": "Ajax - RFC 5 - 1 (4 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "5/20/1917",
+          "competition": "Champions Competition 2nd Division West",
+          "match": "VVA - Ajax 0 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "5/27/1917",
+          "competition": "Dutch Cup",
+          "match": "Ajax - VSV 5 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "5/28/1917",
+          "competition": "Friendly",
+          "match": "Ajax - MVV 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "6/10/1917",
+          "competition": "Friendly",
+          "match": "Ajax - Be Quick 4 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1916-17",
+          "date": "6/24/1917",
+          "competition": "Friendly",
+          "match": "Ajax - Go Ahead 2 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "7/1/1917",
+          "competition": "Friendly",
+          "match": "Go Ahead - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "8/26/1917",
+          "competition": "Friendly",
+          "match": "Robur et Velocitas - Ajax 0 - 13 (0 - 8)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "9/2/1917",
+          "competition": "Zilveren Voetbal",
+          "match": "DFC - Ajax 1 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "9/9/1917",
+          "competition": "Zilveren Voetbal",
+          "match": "GVC - Ajax 0 - 3 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "9/9/1917",
+          "competition": "Zilveren Voetbal",
+          "match": "Blauw-Wit - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "9/16/1917",
+          "competition": "Zilveren Voetbal",
+          "match": "Ajax - Willem II 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "9/23/1917",
+          "competition": "First Division West A",
+          "match": "HVV - Ajax 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "9/30/1917",
+          "competition": "First Division West A",
+          "match": "Ajax - Hercules 3 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "10/14/1917",
+          "competition": "First Division",
+          "match": "Ajax - HFC 3 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "10/21/1917",
+          "competition": "First Division West A",
+          "match": "Quick - Ajax 0 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "10/28/1917",
+          "competition": "First Division West A",
+          "match": "DFC - Ajax 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "11/4/1917",
+          "competition": "First Division West A",
+          "match": "Ajax - UVV 4 - 4 (2 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "11/11/1917",
+          "competition": "First Division West A",
+          "match": "HBS - Ajax 1 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "11/18/1917",
+          "competition": "Friendly",
+          "match": "Ajax - Be Quick (Z) 3 - 5 (1 - 2)",
+          "active": "International duties",
+          "min": ""
+        },
+        {
+          "season": "1917-18",
+          "date": "11/25/1917",
+          "competition": "First Division West A",
+          "match": "HFC Haarlem - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "12/2/1917",
+          "competition": "First Division",
+          "match": "Ajax - Blauw-Wit 3 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "12/16/1917",
+          "competition": "First Division",
+          "match": "Hercules - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "1/20/1918",
+          "competition": "First Division West A",
+          "match": "Ajax - HBS 10 - 0 (6 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "1/27/1918",
+          "competition": "First Division",
+          "match": "VOC - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "2/3/1918",
+          "competition": "First Division",
+          "match": "Ajax - HFC Haarlem 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "2/17/1918",
+          "competition": "First Division West A",
+          "match": "HFC - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "2/24/1918",
+          "competition": "First Division",
+          "match": "Ajax - Quick 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "3/3/1918",
+          "competition": "First Division West A",
+          "match": "Sparta - Ajax 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "3/10/1918",
+          "competition": "First Division",
+          "match": "Blauw-Wit - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "3/17/1918",
+          "competition": "First Division",
+          "match": "Ajax - DFC 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "3/24/1918",
+          "competition": "First Division West A",
+          "match": "UVV - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "3/31/1918",
+          "competition": "First Division West A",
+          "match": "Ajax - Sparta 4 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "4/7/1918",
+          "competition": "First Division West A",
+          "match": "Ajax - VOC 3 - 3 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "4/14/1918",
+          "competition": "Champions Competition",
+          "match": "Ajax - Willem II 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "4/21/1918",
+          "competition": "Champions Competition",
+          "match": "Be Quick - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "4/28/1918",
+          "competition": "Champions Competition",
+          "match": "AFC - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "5/5/1918",
+          "competition": "First Division",
+          "match": "Ajax - HVV 6 - 0 (2 - 0)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1917-18",
+          "date": "5/12/1918",
+          "competition": "Champions Competition",
+          "match": "Ajax - Be Quick 5 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "5/19/1918",
+          "competition": "Champions Competition",
+          "match": "Go Ahead - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "5/20/1918",
+          "competition": "Champions Competition",
+          "match": "Ajax - Go Ahead 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "5/27/1918",
+          "competition": "Champions Competition",
+          "match": "Ajax - AFC 4 - 3 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "6/9/1918",
+          "competition": "Champions Competition",
+          "match": "Willem II - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "6/16/1918",
+          "competition": "Gouden Meer Beker",
+          "match": "Ajax - Tubantia 5 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "6/30/1918",
+          "competition": "Gouden Meer Beker",
+          "match": "Ajax - Blauw-Wit 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "7/6/1918",
+          "competition": "Gouden Kruis",
+          "match": "Ajax - VVA 5 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1917-18",
+          "date": "7/14/1918",
+          "competition": "Gouden Kruis",
+          "match": "Ajax - Blauw-Wit 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "8/25/1918",
+          "competition": "Scheepvaartbeker",
+          "match": "Ajax - AFC 3 - 0 (1 - 0)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1918-19",
+          "date": "9/1/1918",
+          "competition": "Scheepvaartbeker",
+          "match": "Ajax - De Spartaan 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "1918-19",
+          "date": "9/1/1918",
+          "competition": "Scheepvaartbeker",
+          "match": "Ajax - Blauw-Wit 0 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "1918-19",
+          "date": "9/8/1918",
+          "competition": "Wilhelminabeker",
+          "match": "Ajax - UVV 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "9/22/1918",
+          "competition": "First Division West A",
+          "match": "Ajax - Blauw-Wit 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "9/29/1918",
+          "competition": "First Division West A",
+          "match": "Quick - Ajax 0 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "10/6/1918",
+          "competition": "First Division West A",
+          "match": "Ajax - Hercules 5 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "10/13/1918",
+          "competition": "First Division West A",
+          "match": "Sparta - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "10/20/1918",
+          "competition": "First Division West A",
+          "match": "Ajax - HFC 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "10/27/1918",
+          "competition": "First Division West A",
+          "match": "HBS - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "11/3/1918",
+          "competition": "First Division West A",
+          "match": "DFC - Ajax 0 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "11/10/1918",
+          "competition": "First Division West A",
+          "match": "Ajax - UVV 5 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "11/24/1918",
+          "competition": "First Division West A",
+          "match": "Ajax - VOC 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "12/1/1918",
+          "competition": "First Division West A",
+          "match": "HFC Haarlem - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "12/8/1918",
+          "competition": "First Division",
+          "match": "Blauw-Wit - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "12/15/1918",
+          "competition": "First Division",
+          "match": "Ajax - Quick 6 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "12/22/1918",
+          "competition": "First Division West A",
+          "match": "Hercules - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "12/29/1918",
+          "competition": "First Division West A",
+          "match": "Ajax - Sparta 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "1/5/1919",
+          "competition": "First Division",
+          "match": "HFC - Ajax 0 - 1 (0 - 1)",
+          "active": "Ill",
+          "min": ""
+        },
+        {
+          "season": "1918-19",
+          "date": "1/12/1919",
+          "competition": "First Division West A",
+          "match": "Ajax - HBS 4 - 2 (4 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "1/19/1919",
+          "competition": "First Division West A",
+          "match": "Ajax - DFC 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "2/23/1919",
+          "competition": "First Division West A",
+          "match": "HVV - Ajax 2 - 5 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "3/2/1919",
+          "competition": "First Division West A",
+          "match": "UVV - Ajax 0 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "3/9/1919",
+          "competition": "First Division West A",
+          "match": "Ajax - HVV 5 - 2 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "3/16/1919",
+          "competition": "First Division West A",
+          "match": "VOC - Ajax 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "3/23/1919",
+          "competition": "First Division West A",
+          "match": "Ajax - HFC Haarlem 3 - 2 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "4/6/1919",
+          "competition": "Champions Competition",
+          "match": "Ajax - NAC 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "4/20/1919",
+          "competition": "Champions Competition",
+          "match": "Be Quick - Ajax 0 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "4/21/1919",
+          "competition": "Champions Competition",
+          "match": "Ajax - Be Quick 3 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "4/27/1919",
+          "competition": "Champions Competition",
+          "match": "AFC - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "5/4/1919",
+          "competition": "Champions Competition",
+          "match": "Go Ahead - Ajax 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "5/18/1919",
+          "competition": "Champions Competition",
+          "match": "Ajax - Go Ahead 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "5/25/1919",
+          "competition": "Champions Competition",
+          "match": "Ajax - AFC 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "6/1/1919",
+          "competition": "Champions Competition",
+          "match": "NAC - Ajax 0 - 2",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "6/17/1919",
+          "competition": "Friendly",
+          "match": "Tigrarne - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "6/19/1919",
+          "competition": "Friendly",
+          "match": "Mellansverge - Ajax 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "6/22/1919",
+          "competition": "Friendly",
+          "match": "Boldklubben 1893 - Ajax 3 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1918-19",
+          "date": "6/24/1919",
+          "competition": "Friendly",
+          "match": "Deens Elftal - Ajax 3 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "9/14/1919",
+          "competition": "Wilhelminabeker",
+          "match": "Ajax - 't Zesde 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "9/14/1919",
+          "competition": "Wilhelminabeker",
+          "match": "NOAD - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "105"
+        },
+        {
+          "season": "1919-20",
+          "date": "9/21/1919",
+          "competition": "First Division",
+          "match": "Ajax - AFC 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "9/28/1919",
+          "competition": "First Division",
+          "match": "Blauw-Wit - Ajax 2 - 2",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "10/5/1919",
+          "competition": "First Division West",
+          "match": "Ajax - HBS 2 - 6 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "10/12/1919",
+          "competition": "First Division",
+          "match": "HFC - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "10/19/1919",
+          "competition": "First Division West",
+          "match": "Ajax - Sparta 4 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "10/26/1919",
+          "competition": "First Division West",
+          "match": "DFC - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "11/2/1919",
+          "competition": "First Division West",
+          "match": "HVV - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "11/23/1919",
+          "competition": "First Division West",
+          "match": "Ajax - VOC 2 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "11/30/1919",
+          "competition": "First Division West",
+          "match": "Ajax - Quick 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "12/7/1919",
+          "competition": "First Division West",
+          "match": "AFC - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "12/14/1919",
+          "competition": "First Division West",
+          "match": "Ajax - Blauw-Wit 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "12/21/1919",
+          "competition": "First Division",
+          "match": "HBS - Ajax 3 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "12/28/1919",
+          "competition": "First Division West",
+          "match": "Ajax - HFC 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "1/25/1920",
+          "competition": "First Division",
+          "match": "UVV - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "2/1/1920",
+          "competition": "First Division",
+          "match": "Ajax - HFC Haarlem 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "2/15/1920",
+          "competition": "First Division",
+          "match": "Quick - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "2/22/1920",
+          "competition": "First Division West",
+          "match": "Sparta - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "2/29/1920",
+          "competition": "First Division",
+          "match": "HFC Haarlem - Ajax 2 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "3/7/1920",
+          "competition": "First Division West",
+          "match": "Ajax - UVV 3 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "3/14/1920",
+          "competition": "First Division",
+          "match": "Ajax - HVV 4 - 2 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1919-20",
+          "date": "3/21/1920",
+          "competition": "Gouden Meer Beker",
+          "match": "Ajax - Be Quick 6 - 4 (4 - 1)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1919-20",
+          "date": "4/4/1920",
+          "competition": "Friendly",
+          "match": "Ajax - MVV 2 - 6 (1 - 3)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1919-20",
+          "date": "4/18/1920",
+          "competition": "First Division",
+          "match": "VOC - Ajax 2 - 1 (2 - 1)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1919-20",
+          "date": "5/9/1920",
+          "competition": "First Division West",
+          "match": "Ajax - DFC 5 - 2 (1 - 1)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1920-21",
+          "date": "9/19/1920",
+          "competition": "First Division",
+          "match": "De Spartaan - Ajax 1 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "9/26/1920",
+          "competition": "First Division",
+          "match": "Ajax - VOC 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "10/3/1920",
+          "competition": "First Division West",
+          "match": "DFC - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "10/10/1920",
+          "competition": "First Division",
+          "match": "Ajax - HVV 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "10/17/1920",
+          "competition": "First Division West",
+          "match": "VVA - Ajax 3 - 4 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "10/24/1920",
+          "competition": "First Division West",
+          "match": "Ajax - HFC Haarlem 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "10/31/1920",
+          "competition": "First Division West",
+          "match": "Sparta - Ajax 1 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "11/7/1920",
+          "competition": "First Division West",
+          "match": "Ajax - AFC 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "11/14/1920",
+          "competition": "First Division",
+          "match": "HBS - Ajax 0 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "11/21/1920",
+          "competition": "First Division West",
+          "match": "Ajax - UVV 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "11/28/1920",
+          "competition": "First Division",
+          "match": "Blauw-Wit - Ajax 2 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "12/5/1920",
+          "competition": "First Division West",
+          "match": "Ajax - De Spartaan 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "1/1/1921",
+          "competition": "First Division West",
+          "match": "HVV - Ajax 4 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "1/9/1921",
+          "competition": "First Division",
+          "match": "Ajax - VVA 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "1/16/1921",
+          "competition": "First Division",
+          "match": "HFC Haarlem - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "1/23/1921",
+          "competition": "First Division",
+          "match": "Ajax - Sparta 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "1/30/1921",
+          "competition": "First Division",
+          "match": "AFC - Ajax 1 - 5 (0 - 3)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1920-21",
+          "date": "2/6/1921",
+          "competition": "First Division West",
+          "match": "Ajax - HBS 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "2/13/1921",
+          "competition": "First Division",
+          "match": "UVV - Ajax 1 - 2 (0 - 0)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1920-21",
+          "date": "2/20/1921",
+          "competition": "First Division",
+          "match": "Ajax - DFC 2 - 1 (0 - 1)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1920-21",
+          "date": "2/27/1921",
+          "competition": "First Division",
+          "match": "VOC - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "3/13/1921",
+          "competition": "First Division",
+          "match": "Ajax - Blauw-Wit 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "4/3/1921",
+          "competition": "Champions Competition",
+          "match": "Go Ahead - Ajax 0 - 5 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "4/10/1921",
+          "competition": "Champions Competition",
+          "match": "Ajax - NAC 1 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "4/17/1921",
+          "competition": "Champions Competition",
+          "match": "Be Quick - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "4/24/1921",
+          "competition": "Champions Competition",
+          "match": "Ajax - Go Ahead 5 - 2 (2 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1920-21",
+          "date": "5/22/1921",
+          "competition": "Champions Competition",
+          "match": "NAC - Ajax 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "5/29/1921",
+          "competition": "Champions Competition",
+          "match": "Ajax - Be Quick 3 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "6/5/1921",
+          "competition": "Friendly",
+          "match": "Grasshopper - Ajax 2 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "6/8/1921",
+          "competition": "Friendly",
+          "match": "BSC Young Boys - Ajax 2 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1920-21",
+          "date": "6/13/1921",
+          "competition": "Friendly",
+          "match": "K&ouml;lner Verein f&uuml;r Rasenspiele - Ajax 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "9/18/1921",
+          "competition": "First Division",
+          "match": "Ajax - Blauw-Wit 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "9/25/1921",
+          "competition": "First Division",
+          "match": "HBS - Ajax 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "10/2/1921",
+          "competition": "First Division",
+          "match": "Ajax - DFC 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "10/9/1921",
+          "competition": "First Division",
+          "match": "Feijenoord - Ajax 2 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "69"
+        },
+        {
+          "season": "1921-22",
+          "date": "10/16/1921",
+          "competition": "First Division West",
+          "match": "Ajax - RC Haarlem 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "10/23/1921",
+          "competition": "First Division",
+          "match": "De Spartaan - Ajax 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "10/30/1921",
+          "competition": "First Division",
+          "match": "Ajax - HVV 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "11/20/1921",
+          "competition": "First Division West",
+          "match": "Ajax - VVA 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "12/11/1921",
+          "competition": "First Division",
+          "match": "Ajax - HBS 3 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "12/18/1921",
+          "competition": "First Division West",
+          "match": "DFC - Ajax 0 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "12/25/1921",
+          "competition": "Friendly",
+          "match": "Ajax - Grasshopper 2 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "2/19/1922",
+          "competition": "First Division",
+          "match": "VVA - Ajax 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "2/26/1922",
+          "competition": "First Division",
+          "match": "Ajax - HFC Haarlem 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "3/5/1922",
+          "competition": "First Division",
+          "match": "Ajax - Feijenoord 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "3/12/1922",
+          "competition": "First Division",
+          "match": "HVV - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "3/19/1922",
+          "competition": "First Division West",
+          "match": "Ajax - UVV 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "4/2/1922",
+          "competition": "First Division West",
+          "match": "Blauw-Wit - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "4/9/1922",
+          "competition": "First Division West",
+          "match": "Ajax - VOC 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "4/23/1922",
+          "competition": "First Division West",
+          "match": "HFC Haarlem - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "4/30/1922",
+          "competition": "First Division",
+          "match": "RC Haarlem - Ajax 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "5/14/1922",
+          "competition": "First Division West",
+          "match": "VOC - Ajax 1 - 4 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "5/21/1922",
+          "competition": "First Division West",
+          "match": "Ajax - De Spartaan 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "6/5/1922",
+          "competition": "First Division West",
+          "match": "UVV - Ajax 3 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "6/24/1922",
+          "competition": "Friendly",
+          "match": "Eintracht Frankfuhrt - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "6/25/1922",
+          "competition": "Friendly",
+          "match": "1. FC Nurnberg - Ajax 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1921-22",
+          "date": "6/28/1922",
+          "competition": "Friendly",
+          "match": "MTV 1879 M&uuml;nchen - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "8/9/1922",
+          "competition": "Friendly",
+          "match": "Blauw-Wit - Ajax 0 - 2",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "9/2/1922",
+          "competition": "Friendly",
+          "match": "Ajax - First Vienna 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "9/3/1922",
+          "competition": "Friendly",
+          "match": "Ajax - Eintracht Frankfuhrt 3 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "9/17/1922",
+          "competition": "First Division",
+          "match": "Ajax - Blauw-Wit 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "9/24/1922",
+          "competition": "First Division West",
+          "match": "RC Haarlem - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "10/1/1922",
+          "competition": "First Division West",
+          "match": "Ajax - DFC 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "10/8/1922",
+          "competition": "First Division",
+          "match": "VOC - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "10/15/1922",
+          "competition": "First Division",
+          "match": "Ajax - Quick 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "10/22/1922",
+          "competition": "First Division",
+          "match": "HBS - Ajax 2 - 1 (1 - 0)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1922-23",
+          "date": "10/29/1922",
+          "competition": "First Division",
+          "match": "Feijenoord - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "11/5/1922",
+          "competition": "First Division West",
+          "match": "Ajax - HFC Haarlem 3 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "11/26/1922",
+          "competition": "First Division",
+          "match": "Ajax - UVV 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "12/3/1922",
+          "competition": "First Division",
+          "match": "Blauw-Wit - Ajax 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "12/10/1922",
+          "competition": "First Division West",
+          "match": "Ajax - RC Haarlem 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "12/24/1922",
+          "competition": "First Division",
+          "match": "Ajax - VOC 3 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "1/7/1923",
+          "competition": "First Division",
+          "match": "Quick - Ajax 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "1/14/1923",
+          "competition": "First Division",
+          "match": "Ajax - HBS 4 - 0 (2 - 0)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1922-23",
+          "date": "1/21/1923",
+          "competition": "First Division",
+          "match": "Ajax - Feijenoord 0 - 2 (0 - 0)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1922-23",
+          "date": "1/28/1923",
+          "competition": "First Division West",
+          "match": "HFC Haarlem - Ajax 3 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "2/4/1923",
+          "competition": "First Division",
+          "match": "HVV - Ajax 2 - 2 (1 - 1)",
+          "active": "Ill",
+          "min": ""
+        },
+        {
+          "season": "1922-23",
+          "date": "2/11/1923",
+          "competition": "First Division",
+          "match": "Ajax - Sparta 1 - 0 (0 - 0)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1922-23",
+          "date": "2/25/1923",
+          "competition": "First Division West",
+          "match": "Sparta - Ajax 1 - 3 (1 - 1)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1922-23",
+          "date": "3/11/1923",
+          "competition": "First Division West",
+          "match": "Ajax - HVV 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "4/1/1923",
+          "competition": "Friendly",
+          "match": "Ajax - Leytonstone FC 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "4/15/1923",
+          "competition": "First Division West",
+          "match": "UVV - Ajax 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "5/6/1923",
+          "competition": "Friendly",
+          "match": "Ajax - Stormvogels 1 - 4 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1922-23",
+          "date": "5/27/1923",
+          "competition": "First Division",
+          "match": "DFC - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "8/18/1923",
+          "competition": "Friendly",
+          "match": "Ajax - N&uuml;rnberg F&uuml;rth 0 - 5",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "9/2/1923",
+          "competition": "Friendly",
+          "match": "HFC Haarlem - Ajax 0 - 6",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "9/9/1923",
+          "competition": "Friendly",
+          "match": "Ajax - NOAD 5 - 3 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "9/16/1923",
+          "competition": "First Division",
+          "match": "Ajax - DFC 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "9/23/1923",
+          "competition": "First Division West I",
+          "match": "ZFC - Ajax 3 - 2 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "9/30/1923",
+          "competition": "First Division West I",
+          "match": "Ajax - RC Haarlem 3 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "10/7/1923",
+          "competition": "First Division West I",
+          "match": "Ajax - HVV 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "10/14/1923",
+          "competition": "First Division West I",
+          "match": "SVV - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "10/21/1923",
+          "competition": "First Division West I",
+          "match": "Ajax - VOC 5 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "10/28/1923",
+          "competition": "First Division",
+          "match": "'t Gooi - Ajax 3 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "11/4/1923",
+          "competition": "Friendly",
+          "match": "Ajax - EVV 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "11/11/1923",
+          "competition": "First Division West I",
+          "match": "HFC - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "12/9/1923",
+          "competition": "First Division West I",
+          "match": "HVV - Ajax 3 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "12/16/1923",
+          "competition": "First Division West I",
+          "match": "Ajax - SVV 4 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "1/27/1924",
+          "competition": "First Division",
+          "match": "RC Haarlem - Ajax 3 - 2 (0 - 2)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1923-24",
+          "date": "2/3/1924",
+          "competition": "First Division",
+          "match": "VOC - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1923-24",
+          "date": "2/10/1924",
+          "competition": "First Division",
+          "match": "Ajax - 't Gooi 2 - 0 (1 - 0)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1923-24",
+          "date": "6/13/1924",
+          "competition": "Friendly",
+          "match": "Alliansen - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 339
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Holland",
+          "next club": "Ajax",
+          "type": "Merger",
+          "start": "7/1/1908",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "None",
+          "type": "Retirement",
+          "start": "7/1/1924",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1908-09",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1911-12",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1912-13",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1913-14",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1914-15",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1915-16",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1916-17",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1917-18",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1918-19",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1919-20",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1920-21",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1921-22",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1922-23",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1923-24",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 15
+    },
+    {
+      "caption": "Season (Other Role)",
+      "headers": [
+        "season",
+        "role",
+        "contract type",
+        "contract from",
+        "contract to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1913-14",
+          "role": "Commissioner",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1914-15",
+          "role": "Commissioner",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1915-16",
+          "role": "Commissioner",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1916-17",
+          "role": "Commissioner",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1917-18",
+          "role": "Commissioner",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1918-19",
+          "role": "Commissioner",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1919-20",
+          "role": "2nd Secretary",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1920-21",
+          "role": "Commissioner",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1922-23",
+          "role": "Commissioner",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1923-24",
+          "role": "Commissioner",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1924-25",
+          "role": "Commissioner",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        },
+        {
+          "season": "1925-26",
+          "role": "Commissioner",
+          "contract type": "No Contract",
+          "contract from": "",
+          "contract to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 13
+    },
+    {
+      "caption": null,
+      "headers": [
+        "squad photos"
+      ],
+      "rows": [
+        {
+          "squad photos": "A Selection Season 1911-12"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 4,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "photo"
+    ]
+  }
+}

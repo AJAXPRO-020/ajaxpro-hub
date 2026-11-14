@@ -1,0 +1,1358 @@
+{
+  "local_id": "afc_ajax_wim-bleijenberg",
+  "slug": "wim-bleijenberg",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/wim-bleijenberg",
+    "https://www.afc-ajax.info/en/player/wim-bleijenberg/statistics",
+    "https://www.afc-ajax.info/en/player/wim-bleijenberg/matches",
+    "https://www.afc-ajax.info/en/player/wim-bleijenberg/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/wim-bleijenberg",
+    "name": "Wim Bleijenberg",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1930-11-05",
+    "death_date": "2016-01-10",
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Forward)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "AGOVV",
+    "external_links": [
+      {
+        "label": "Wim Bleijenberg",
+        "url": "http://nl.wikipedia.org/wiki/Wim_Bleijenberg"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/ger-van-mourik",
+      "https://www.afc-ajax.info/en/player/wim-anderiesen-jr",
+      "https://www.afc-ajax.info/en/player/piet-van-der-kuil",
+      "https://www.afc-ajax.info/en/player/eddy-pieters-graafland",
+      "https://www.afc-ajax.info/en/player/cor-geelhuizen",
+      "https://www.afc-ajax.info/en/player/piet-ouderland",
+      "https://www.afc-ajax.info/en/player/willy-schmidt",
+      "https://www.afc-ajax.info/en/player/guus-van-ham",
+      "https://www.afc-ajax.info/en/player/loek-den-edel",
+      "https://www.afc-ajax.info/en/player/bennie-muller"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1956-57",
+          "comp.": "30",
+          "play off": "",
+          "dutch cup": "3",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "33",
+          "friendly": "",
+          "total": "33"
+        },
+        {
+          "season": "1957-58",
+          "comp.": "26",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "4",
+          "other off.": "",
+          "off. mat.": "30",
+          "friendly": "3",
+          "total": "33"
+        },
+        {
+          "season": "1958-59",
+          "comp.": "18",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "18",
+          "friendly": "",
+          "total": "18"
+        },
+        {
+          "season": "1959-60",
+          "comp.": "4",
+          "play off": "3",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "7",
+          "friendly": "",
+          "total": "7"
+        },
+        {
+          "season": "Total",
+          "comp.": "78",
+          "play off": "3",
+          "dutch cup": "3",
+          "europa": "4",
+          "other off.": "",
+          "off. mat.": "88",
+          "friendly": "3",
+          "total": "91"
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1956-57",
+          "comp.": "17",
+          "play off": "",
+          "dutch cup": "4",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "21",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1957-58",
+          "comp.": "10",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "11",
+          "friendly": "2",
+          "total": ""
+        },
+        {
+          "season": "1958-59",
+          "comp.": "15",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "15",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1959-60",
+          "comp.": "1",
+          "play off": "3",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "4",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "43",
+          "play off": "3",
+          "dutch cup": "4",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "51",
+          "friendly": "2",
+          "total": "53"
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "8",
+          "assists": "3",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "6",
+          "assists": "3",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "6",
+          "assists": "5",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "11",
+          "assists": "5",
+          "yellow": "",
+          "red": "",
+          "substitute out": "2",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "10",
+          "assists": "3",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "8",
+          "assists": "2",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "2",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "51",
+          "assists": "21",
+          "yellow": "",
+          "red": "",
+          "substitute out": "2",
+          "substitute in": ""
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [
+        {
+          "assisted by": "Piet van der Kuil",
+          "number": "7"
+        },
+        {
+          "assisted by": "Willy Schmidt",
+          "number": "3"
+        },
+        {
+          "assisted by": "Loek den Edel",
+          "number": "2"
+        },
+        {
+          "assisted by": "Guus van Ham",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "43"
+        },
+        {
+          "type": "Goal (header)",
+          "number": "8"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "49"
+        },
+        {
+          "origin": "from free kick (indirect)",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 3
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1956-57",
+          "date": "8/26/1956",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Zeeburgia 6 - 1",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "9/2/1956",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "9/9/1956",
+          "competition": "Eredivisie",
+          "match": "Sparta - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "9/16/1956",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Stormvogels 3 - 2 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "9/23/1956",
+          "competition": "Eredivisie",
+          "match": "Ajax - GVAV 4 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "9/30/1956",
+          "competition": "Eredivisie",
+          "match": "EVV - Ajax 0 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "10/7/1956",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "10/14/1956",
+          "competition": "Dutch Cup",
+          "match": "RKSV Volendam - Ajax 4 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "10/21/1956",
+          "competition": "Eredivisie",
+          "match": "Rapid JC - Ajax 4 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "10/28/1956",
+          "competition": "Eredivisie",
+          "match": "Ajax - Elinkwijk 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "11/11/1956",
+          "competition": "Eredivisie",
+          "match": "Feijenoord - Ajax 7 - 3 (5 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "11/18/1956",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 5 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "12/2/1956",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Enschede 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "12/9/1956",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 2 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "12/16/1956",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna '54 0 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "12/23/1956",
+          "competition": "Eredivisie",
+          "match": "VVV - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "12/26/1956",
+          "competition": "Eredivisie",
+          "match": "BVV - Ajax 3 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "12/30/1956",
+          "competition": "Eredivisie",
+          "match": "Ajax - DOS 1 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "1/6/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - BVC Amsterdam 2 - 3 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "1/13/1957",
+          "competition": "Eredivisie",
+          "match": "NOAD - Ajax 1 - 4 (0 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "1/20/1957",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "1/27/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "2/3/1957",
+          "competition": "Eredivisie",
+          "match": "GVAV - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "2/10/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - EVV 3 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "2/17/1957",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 1 - 1 (1 - 1)",
+          "active": "Unknown",
+          "min": ""
+        },
+        {
+          "season": "1956-57",
+          "date": "2/24/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - Rapid JC 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "3/10/1957",
+          "competition": "Eredivisie",
+          "match": "Elinkwijk - Ajax 1 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "3/17/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feijenoord 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "3/24/1957",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "3/31/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - BVV 1 - 0 (1 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1956-57",
+          "date": "4/7/1957",
+          "competition": "Eredivisie",
+          "match": "SC Enschede - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "4/14/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "4/22/1957",
+          "competition": "Eredivisie",
+          "match": "Fortuna '54 - Ajax 2 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "57"
+        },
+        {
+          "season": "1956-57",
+          "date": "5/5/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - VVV 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1956-57",
+          "date": "5/12/1957",
+          "competition": "Eredivisie",
+          "match": "DOS - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1956-57",
+          "date": "5/19/1957",
+          "competition": "Eredivisie",
+          "match": "BVC Amsterdam - Ajax 1 - 5 (1 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1956-57",
+          "date": "5/22/1957",
+          "competition": "Friendly",
+          "match": "Ajax - Sheffield United 1 - 2 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1957-58",
+          "date": "8/25/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 4 - 0 (1 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1957-58",
+          "date": "9/1/1957",
+          "competition": "Eredivisie",
+          "match": "SC Enschede - Ajax 0 - 3 (0 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1957-58",
+          "date": "10/6/1957",
+          "competition": "Eredivisie",
+          "match": "NOAD - Ajax 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "10/13/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feijenoord 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "10/20/1957",
+          "competition": "Eredivisie",
+          "match": "Fortuna '54 - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "10/27/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - BVC Amsterdam 3 - 4 (3 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "11/3/1957",
+          "competition": "Eredivisie",
+          "match": "BVV - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "11/10/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 3 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "11/20/1957",
+          "competition": "Europa Cup I",
+          "match": "Wismut Karl-Marx-Stadt - Ajax 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "11/24/1957",
+          "competition": "Eredivisie",
+          "match": "GVAV - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "11/27/1957",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Wismut Karl-Marx-Stadt 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "12/1/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - DOS 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "12/8/1957",
+          "competition": "Eredivisie",
+          "match": "Sparta - Ajax 4 - 4 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "12/15/1957",
+          "competition": "Eredivisie",
+          "match": "Ajax - Blauw-Wit 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "12/22/1957",
+          "competition": "Eredivisie",
+          "match": "ADO - Ajax 3 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "1/5/1958",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 3 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "1/19/1958",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 0 - 5 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "2/2/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - Rapid JC 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "2/5/1958",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Vasas Budapest 2 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "2/9/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - Elinkwijk 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "2/26/1958",
+          "competition": "Europa Cup I",
+          "match": "Vasas Budapest - Ajax 4 - 0 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "3/16/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - NOAD 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "3/23/1958",
+          "competition": "Eredivisie",
+          "match": "VVV - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "3/30/1958",
+          "competition": "Eredivisie",
+          "match": "Feijenoord - Ajax 2 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "4/7/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna '54 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "4/20/1958",
+          "competition": "Eredivisie",
+          "match": "BVC Amsterdam - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "4/27/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - BVV 3 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "5/11/1958",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "5/15/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - GVAV 3 - 2 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "5/18/1958",
+          "competition": "Eredivisie",
+          "match": "DOS - Ajax 5 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "5/26/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta 2 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "6/1/1958",
+          "competition": "Eredivisie",
+          "match": "Blauw-Wit - Ajax 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "6/14/1958",
+          "competition": "Friendly",
+          "match": "Ajax - Sandvikens IF 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "6/18/1958",
+          "competition": "Friendly",
+          "match": "Noord-Transvaal - Ajax 4 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1957-58",
+          "date": "6/28/1958",
+          "competition": "Friendly",
+          "match": "Transvaal - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "8/24/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - DWS/A 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "10/5/1958",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "10/12/1958",
+          "competition": "Eredivisie",
+          "match": "VVV - Ajax 3 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "10/26/1958",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 1 - 4 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "11/9/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feijenoord 3 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "11/16/1958",
+          "competition": "Eredivisie",
+          "match": "SC Enschede - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "11/23/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - Blauw-Wit 4 - 2 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "11/30/1958",
+          "competition": "Eredivisie",
+          "match": "DOS - Ajax 5 - 3 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "12/7/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - NOAD 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "12/14/1958",
+          "competition": "Eredivisie",
+          "match": "Rapid JC - Ajax 4 - 1 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "12/21/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 5 - 2 (5 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "12/26/1958",
+          "competition": "Eredivisie",
+          "match": "ADO - Ajax 3 - 4 (3 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "12/28/1958",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO 3 - 3 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "1/4/1959",
+          "competition": "Eredivisie",
+          "match": "DWS/A - Ajax 1 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "1/25/1959",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "2/1/1959",
+          "competition": "Eredivisie",
+          "match": "Fortuna '54 - Ajax 3 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "2/22/1959",
+          "competition": "Eredivisie",
+          "match": "Ajax - Elinkwijk 1 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "3/1/1959",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 5 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1958-59",
+          "date": "3/8/1959",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 1 - 0 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1959-60",
+          "date": "8/23/1959",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1959-60",
+          "date": "8/30/1959",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1959-60",
+          "date": "9/6/1959",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 3 - 6 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1959-60",
+          "date": "9/13/1959",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 2 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1959-60",
+          "date": "5/26/1960",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feijenoord 5 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1959-60",
+          "date": "5/29/1960",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1959-60",
+          "date": "6/6/1960",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feijenoord 1 - 6 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 99
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "NoClub",
+          "next club": "VV Veenendaal",
+          "type": "Joins youth academy",
+          "start": "",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "VV Veenendaal",
+          "next club": "Wageningen",
+          "type": "Transfer",
+          "start": "7/1/1951",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Wageningen",
+          "next club": "VV Rigtersbleek",
+          "type": "Transfer",
+          "start": "7/1/1952",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "VV Rigtersbleek",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/1956",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Blauw-Wit",
+          "type": "Transfer",
+          "start": "6/30/1960",
+          "amount": "€ 18,2K",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Blauw-Wit",
+          "next club": "Go Ahead",
+          "type": "Transfer",
+          "start": "7/5/1962",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Go Ahead",
+          "next club": "AGOVV",
+          "type": "Transfer",
+          "start": "7/1/1963",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "AGOVV",
+          "next club": "None",
+          "type": "Retirement",
+          "start": "7/1/1966",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 9
+    },
+    {
+      "caption": "Special Action",
+      "headers": [
+        "date",
+        "type",
+        "remark"
+      ],
+      "rows": [
+        {
+          "date": "5/30/1960",
+          "type": "Transferlist",
+          "remark": "Wordt op eigen verzoek op transferlijst gezet, mede uit ontevredenheid omdat hij van het Ajax bestuur een bedrag niet krijgt dat hij normaliter gekregen zou hebben als hij regelmatig voor het eerste had gespeeld, waarvan hij voelt dat hij er recht op heeft door zijn bijdrage in de beslissingswedstrijd."
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1956-57",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1957-58",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1958-59",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1959-60",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Wim Bleijenberg"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1280-wim-bleijenberg.jpg",
+        "alt": "Soccer player Wim Bleijenberg",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/wim-bleijenberg__83cbb340105f.jpg",
+        "status": "downloaded",
+        "bytes": 13379,
+        "sha256": "83cbb340105fe091a70cfe440430a5f12e21e91ff4bd4bcc42214c8e654cc7f5",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:07.122Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 4,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "full_name"
+    ]
+  }
+}

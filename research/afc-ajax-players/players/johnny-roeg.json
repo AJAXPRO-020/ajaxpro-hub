@@ -1,0 +1,773 @@
+{
+  "local_id": "afc_ajax_johnny-roeg",
+  "slug": "johnny-roeg",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/johnny-roeg",
+    "https://www.afc-ajax.info/en/player/johnny-roeg/statistics",
+    "https://www.afc-ajax.info/en/player/johnny-roeg/matches",
+    "https://www.afc-ajax.info/en/player/johnny-roeg/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/johnny-roeg",
+    "name": "Johnny Roeg",
+    "full_name": "Nathan Roeg",
+    "alternative_names": [],
+    "birth_date": "1910-01-06",
+    "death_date": "2003-10-21",
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Forward)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Ajax",
+    "external_links": [
+      {
+        "label": "Johnny Roeg",
+        "url": "http://nl.wikipedia.org/wiki/Johnny_Roeg"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/gerrit-keizer",
+      "https://www.afc-ajax.info/en/player/jan-schubert",
+      "https://www.afc-ajax.info/en/player/piet-van-reenen",
+      "https://www.afc-ajax.info/en/player/wim-anderiesen-sr",
+      "https://www.afc-ajax.info/en/player/jan-van-diepenbeek",
+      "https://www.afc-ajax.info/en/player/wim-volkers",
+      "https://www.afc-ajax.info/en/player/piet-van-deijck",
+      "https://www.afc-ajax.info/en/player/henk-blomvliet",
+      "https://www.afc-ajax.info/en/player/piet-strijbosch",
+      "https://www.afc-ajax.info/en/player/bob-ten-have"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1934-35",
+          "comp.": "12",
+          "play off": "5",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "18",
+          "friendly": "8",
+          "total": "26"
+        },
+        {
+          "season": "1935-36",
+          "comp.": "5",
+          "play off": "1",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "6",
+          "friendly": "5",
+          "total": "11"
+        },
+        {
+          "season": "1936-37",
+          "comp.": "3",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "1",
+          "total": "4"
+        },
+        {
+          "season": "Total",
+          "comp.": "20",
+          "play off": "6",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "27",
+          "friendly": "14",
+          "total": "41"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1934-35",
+          "comp.": "12",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "12",
+          "friendly": "3",
+          "total": ""
+        },
+        {
+          "season": "1935-36",
+          "comp.": "4",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "4",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "16",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "16",
+          "friendly": "3",
+          "total": "19"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "16",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "2"
+        },
+        {
+          "minute": "Totaal",
+          "goals": "16",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "2"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [
+        {
+          "assisted by": "Bob ten Have",
+          "number": "3"
+        },
+        {
+          "assisted by": "Piet van Reenen",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "12"
+        },
+        {
+          "type": "Goal (header)",
+          "number": "4"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "13"
+        },
+        {
+          "origin": "from free kick (indirect)",
+          "number": "1"
+        },
+        {
+          "origin": "from corner (indirect)",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 4
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1934-35",
+          "date": "10/21/1934",
+          "competition": "First Division",
+          "match": "Ajax - HFC 6 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "10/28/1934",
+          "competition": "First Division",
+          "match": "ADO - Ajax 1 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "11/3/1934",
+          "competition": "Friendly",
+          "match": "Ajax - Go Ahead 1 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "11/11/1934",
+          "competition": "First Division",
+          "match": "Ajax - Feijenoord 4 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "11/15/1934",
+          "competition": "Friendly",
+          "match": "Islington Corinthians - Ajax 0 - 6 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "11/18/1934",
+          "competition": "Dutch Cup",
+          "match": "DHC - Ajax 1 - 5 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "11/25/1934",
+          "competition": "First Division",
+          "match": "RC Heemstede - Ajax 2 - 8 (2 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "12/2/1934",
+          "competition": "First Division",
+          "match": "Xerxes - Ajax 2 - 4 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "12/9/1934",
+          "competition": "Friendly",
+          "match": "Ajax - Stade Fran&ccedil;ais 5 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "12/16/1934",
+          "competition": "First Division",
+          "match": "Ajax - VSV 6 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "12/23/1934",
+          "competition": "First Division",
+          "match": "Overmaas - Ajax 0 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "12/25/1934",
+          "competition": "Friendly",
+          "match": "Ajax - PSV 3 - 2",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "1/6/1935",
+          "competition": "First Division",
+          "match": "Ajax - VUC 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "1/13/1935",
+          "competition": "First Division",
+          "match": "Ajax - DHC 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "1/20/1935",
+          "competition": "Friendly",
+          "match": "AFC - Ajax 1 - 7 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "1/27/1935",
+          "competition": "First Division",
+          "match": "HFC - Ajax 0 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "2/3/1935",
+          "competition": "Friendly",
+          "match": "Ajax - Go Ahead 3 - 0",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "2/24/1935",
+          "competition": "First Division",
+          "match": "Ajax - ADO 2 - 2 (1 - 1)",
+          "active": "Does not play for unknown reas",
+          "min": ""
+        },
+        {
+          "season": "1934-35",
+          "date": "3/10/1935",
+          "competition": "First Division",
+          "match": "Feijenoord - Ajax 2 - 4 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "3/17/1935",
+          "competition": "First Division",
+          "match": "Ajax - RC Heemstede 4 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "3/24/1935",
+          "competition": "Champions Competition",
+          "match": "Ajax - Go Ahead 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "4/7/1935",
+          "competition": "Champions Competition",
+          "match": "Velocitas 1897 - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "4/21/1935",
+          "competition": "Easter Tournament Ajax",
+          "match": "Ajax - Lierse 4 - 5 (regular time:4 - 4)",
+          "active": "Start",
+          "min": "105"
+        },
+        {
+          "season": "1934-35",
+          "date": "4/22/1935",
+          "competition": "Easter Tournament Ajax",
+          "match": "Ajax - Go Ahead 4 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "5/5/1935",
+          "competition": "Champions Competition",
+          "match": "Ajax - DWS 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "5/26/1935",
+          "competition": "Champions Competition",
+          "match": "PSV - Ajax 4 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1934-35",
+          "date": "5/30/1935",
+          "competition": "Champions Competition",
+          "match": "Ajax - PSV 2 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "23"
+        },
+        {
+          "season": "1935-36",
+          "date": "8/18/1935",
+          "competition": "Friendly",
+          "match": "Ajax - Egyptisch Elftal 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "8/25/1935",
+          "competition": "AROL Cup",
+          "match": "NAC - Ajax 2 - 2 (penalties: 3 - 2)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "1935-36",
+          "date": "9/1/1935",
+          "competition": "Friendly",
+          "match": "Hilversum - Ajax 3 - 3 (penalties: 2 - 3)",
+          "active": "Start",
+          "min": "105"
+        },
+        {
+          "season": "1935-36",
+          "date": "9/8/1935",
+          "competition": "Friendly",
+          "match": "Ajax - Watford FC 0 - 2 (0 - 2)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1935-36",
+          "date": "9/29/1935",
+          "competition": "First Division",
+          "match": "Ajax - ADO 9 - 1 (5 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "10/6/1935",
+          "competition": "First Division",
+          "match": "RC Heemstede - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "10/13/1935",
+          "competition": "First Division",
+          "match": "Ajax - Hermes DVS 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "10/20/1935",
+          "competition": "Friendly",
+          "match": "Ajax - Feijenoord 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "11/10/1935",
+          "competition": "First Division",
+          "match": "Ajax - HFC Haarlem 5 - 4 (3 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1935-36",
+          "date": "12/1/1935",
+          "competition": "First Division",
+          "match": "Ajax - HBS 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "67"
+        },
+        {
+          "season": "1935-36",
+          "date": "4/26/1936",
+          "competition": "Champions Competition",
+          "match": "SC Enschede - Ajax 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "10/4/1936",
+          "competition": "First Division",
+          "match": "RC Heemstede - Ajax 2 - 2 (2 - 1)",
+          "active": "Bench",
+          "min": "67"
+        },
+        {
+          "season": "1936-37",
+          "date": "10/18/1936",
+          "competition": "First Division",
+          "match": "Stormvogels - Ajax 1 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "11/10/1936",
+          "competition": "Friendly",
+          "match": "HFC Haarlem - Ajax",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1936-37",
+          "date": "12/20/1936",
+          "competition": "First Division",
+          "match": "Ajax - DFC 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 43
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "DEC",
+          "next club": "Ajax",
+          "type": "Unknown",
+          "start": "7/1/1934",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Unknown",
+          "type": "Unknown",
+          "start": "7/1/1936",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1934-35",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1935-36",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1936-37",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 4
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "photo"
+    ]
+  }
+}

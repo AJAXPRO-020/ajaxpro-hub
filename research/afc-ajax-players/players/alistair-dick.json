@@ -1,0 +1,544 @@
+{
+  "local_id": "afc_ajax_alistair-dick",
+  "slug": "alistair-dick",
+  "collected_at": "2026-10-31T18:10:09.220Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/alistair-dick",
+    "https://www.afc-ajax.info/en/player/alistair-dick/statistics",
+    "https://www.afc-ajax.info/en/player/alistair-dick/matches",
+    "https://www.afc-ajax.info/en/player/alistair-dick/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/alistair-dick",
+    "name": "Alistair Dick",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1965-04-25",
+    "death_date": null,
+    "nationality": "Scotland",
+    "roles": [
+      "Player (Forward)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Frankston Pines",
+    "external_links": [
+      {
+        "label": "Alistair Dick",
+        "url": "http://nl.wikipedia.org/wiki/Alistair_Dick"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/john-van-t-schip",
+      "https://www.afc-ajax.info/en/player/stanley-menzo",
+      "https://www.afc-ajax.info/en/player/jan-wouters",
+      "https://www.afc-ajax.info/en/player/danny-blind",
+      "https://www.afc-ajax.info/en/player/john-bosman",
+      "https://www.afc-ajax.info/en/player/aron-winter",
+      "https://www.afc-ajax.info/en/player/ronald-spelbos",
+      "https://www.afc-ajax.info/en/player/frank-rijkaard",
+      "https://www.afc-ajax.info/en/player/rob-witschge",
+      "https://www.afc-ajax.info/en/player/marco-van-basten"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1986-87",
+          "comp.": "7",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "10",
+          "friendly": "2",
+          "total": "12"
+        },
+        {
+          "season": "1987-88",
+          "comp.": "5",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "6",
+          "friendly": "",
+          "total": "6"
+        },
+        {
+          "season": "Total",
+          "comp.": "12",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "16",
+          "friendly": "2",
+          "total": "18"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1986-87",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": "2"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "1",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "2",
+          "substitute in": "1"
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "3",
+          "substitute in": "6"
+        },
+        {
+          "minute": "76-90",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "2"
+        },
+        {
+          "minute": "Totaal",
+          "goals": "2",
+          "assists": "3",
+          "yellow": "",
+          "red": "",
+          "substitute out": "5",
+          "substitute in": "9"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [],
+      "raw_row_count": 1
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "1"
+        },
+        {
+          "origin": "from corner (indirect)",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 3
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1986-87",
+          "date": "8/8/1986",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Botafogo 1 - 1 (penalties: 4 - 5)",
+          "active": "Start",
+          "min": "89"
+        },
+        {
+          "season": "1986-87",
+          "date": "8/10/1986",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Manchester United 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "62"
+        },
+        {
+          "season": "1986-87",
+          "date": "8/24/1986",
+          "competition": "Eredivisie",
+          "match": "HFC Haarlem - Ajax 0 - 3 (0 - 0)",
+          "active": "Start",
+          "min": "71"
+        },
+        {
+          "season": "1986-87",
+          "date": "8/27/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Haag 2 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "9/21/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 3 - 2 (2 - 2)",
+          "active": "Bench",
+          "min": "29"
+        },
+        {
+          "season": "1986-87",
+          "date": "9/24/1986",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 1 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": "21"
+        },
+        {
+          "season": "1986-87",
+          "date": "9/28/1986",
+          "competition": "Eredivisie",
+          "match": "Veendam - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "10/1/1986",
+          "competition": "Europa Cup II",
+          "match": "Ajax - Bursaspor 5 - 0 (4 - 0)",
+          "active": "Bench",
+          "min": "27"
+        },
+        {
+          "season": "1986-87",
+          "date": "10/5/1986",
+          "competition": "Eredivisie",
+          "match": "Ajax - Fortuna Sittard 6 - 2 (2 - 0)",
+          "active": "Bench",
+          "min": "16"
+        },
+        {
+          "season": "1986-87",
+          "date": "10/11/1986",
+          "competition": "Dutch Cup",
+          "match": "Elinkwijk - Ajax 1 - 4 (0 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1986-87",
+          "date": "10/22/1986",
+          "competition": "Europa Cup II",
+          "match": "Ajax - Olympiakos Piraeus 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1986-87",
+          "date": "6/8/1987",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 2 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "24"
+        },
+        {
+          "season": "1987-88",
+          "date": "8/23/1987",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "64"
+        },
+        {
+          "season": "1987-88",
+          "date": "11/21/1987",
+          "competition": "Eredivisie",
+          "match": "Ajax - PEC Zwolle '82 6 - 4 (2 - 2)",
+          "active": "Start",
+          "min": "69"
+        },
+        {
+          "season": "1987-88",
+          "date": "11/24/1987",
+          "competition": "UEFA Super Cup",
+          "match": "Ajax - FC Porto 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1987-88",
+          "date": "11/29/1987",
+          "competition": "Eredivisie",
+          "match": "HFC Haarlem - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1987-88",
+          "date": "4/2/1988",
+          "competition": "Eredivisie",
+          "match": "Ajax - VVV 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1987-88",
+          "date": "5/8/1988",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 2 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": "16"
+        }
+      ],
+      "raw_row_count": 19
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Tottenham Hotspur",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/2/1986",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Frankston Pines",
+          "type": "Transfer",
+          "start": "1/1/1989",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1986-87",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1987-88",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1988-89",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 4
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name",
+      "photo"
+    ]
+  }
+}

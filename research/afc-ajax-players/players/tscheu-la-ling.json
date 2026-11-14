@@ -1,0 +1,2823 @@
+{
+  "local_id": "afc_ajax_tscheu-la-ling",
+  "slug": "tscheu-la-ling",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/tscheu-la-ling",
+    "https://www.afc-ajax.info/en/player/tscheu-la-ling/statistics",
+    "https://www.afc-ajax.info/en/player/tscheu-la-ling/matches",
+    "https://www.afc-ajax.info/en/player/tscheu-la-ling/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/tscheu-la-ling",
+    "name": "Tscheu La Ling",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1956-01-06",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Forward)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "ADO Den Haag",
+    "external_links": [
+      {
+        "label": "Tscheu La Ling",
+        "url": "http://nl.wikipedia.org/wiki/Tscheu_La_Ling"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/piet-schrijvers",
+      "https://www.afc-ajax.info/en/player/dick-schoenaker",
+      "https://www.afc-ajax.info/en/player/soren-lerby",
+      "https://www.afc-ajax.info/en/player/frank-arnesen",
+      "https://www.afc-ajax.info/en/player/ruud-krol",
+      "https://www.afc-ajax.info/en/player/simon-tahamata",
+      "https://www.afc-ajax.info/en/player/hans-erkens",
+      "https://www.afc-ajax.info/en/player/pim-van-dord",
+      "https://www.afc-ajax.info/en/player/jan-everse",
+      "https://www.afc-ajax.info/en/player/wim-meutstege"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1975-76",
+          "comp.": "5",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "6",
+          "friendly": "3",
+          "total": "9"
+        },
+        {
+          "season": "1974-75",
+          "comp.": "",
+          "play off": "2",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": "2"
+        },
+        {
+          "season": "1976-77",
+          "comp.": "29",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "32",
+          "friendly": "2",
+          "total": "34"
+        },
+        {
+          "season": "1977-78",
+          "comp.": "27",
+          "play off": "",
+          "dutch cup": "6",
+          "europa": "5",
+          "other off.": "",
+          "off. mat.": "38",
+          "friendly": "2",
+          "total": "40"
+        },
+        {
+          "season": "1978-79",
+          "comp.": "32",
+          "play off": "",
+          "dutch cup": "7",
+          "europa": "6",
+          "other off.": "",
+          "off. mat.": "45",
+          "friendly": "1",
+          "total": "46"
+        },
+        {
+          "season": "1979-80",
+          "comp.": "28",
+          "play off": "",
+          "dutch cup": "4",
+          "europa": "8",
+          "other off.": "",
+          "off. mat.": "40",
+          "friendly": "4",
+          "total": "44"
+        },
+        {
+          "season": "1980-81",
+          "comp.": "22",
+          "play off": "",
+          "dutch cup": "6",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "28",
+          "friendly": "1",
+          "total": "29"
+        },
+        {
+          "season": "1981-82",
+          "comp.": "28",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "31",
+          "friendly": "1",
+          "total": "32"
+        },
+        {
+          "season": "Total",
+          "comp.": "171",
+          "play off": "2",
+          "dutch cup": "27",
+          "europa": "22",
+          "other off.": "",
+          "off. mat.": "222",
+          "friendly": "14",
+          "total": "236"
+        }
+      ],
+      "raw_row_count": 10
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1976-77",
+          "comp.": "3",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "3",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1977-78",
+          "comp.": "7",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "12",
+          "friendly": "1",
+          "total": ""
+        },
+        {
+          "season": "1978-79",
+          "comp.": "14",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "16",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1979-80",
+          "comp.": "10",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "12",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "1980-81",
+          "comp.": "12",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "13",
+          "friendly": "3",
+          "total": ""
+        },
+        {
+          "season": "1981-82",
+          "comp.": "9",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "10",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "55",
+          "play off": "",
+          "dutch cup": "6",
+          "europa": "5",
+          "other off.": "",
+          "off. mat.": "66",
+          "friendly": "4",
+          "total": "70"
+        }
+      ],
+      "raw_row_count": 8
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "5",
+          "assists": "4",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "10",
+          "assists": "6",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "1"
+        },
+        {
+          "minute": "30-45",
+          "goals": "8",
+          "assists": "8",
+          "yellow": "",
+          "red": "",
+          "substitute out": "2",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "15",
+          "assists": "9",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "11",
+          "substitute in": "9"
+        },
+        {
+          "minute": "61-75",
+          "goals": "14",
+          "assists": "5",
+          "yellow": "",
+          "red": "",
+          "substitute out": "28",
+          "substitute in": "7"
+        },
+        {
+          "minute": "76-90",
+          "goals": "14",
+          "assists": "16",
+          "yellow": "",
+          "red": "",
+          "substitute out": "19",
+          "substitute in": "3"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "3",
+          "red": "",
+          "substitute out": "3",
+          "substitute in": "2"
+        },
+        {
+          "minute": "Totaal",
+          "goals": "66",
+          "assists": "48",
+          "yellow": "4",
+          "red": "",
+          "substitute out": "64",
+          "substitute in": "22"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [
+        {
+          "assisted by": "S&#248;ren Lerby",
+          "number": "8"
+        },
+        {
+          "assisted by": "Frank Arnesen",
+          "number": "8"
+        },
+        {
+          "assisted by": "Simon Tahamata",
+          "number": "5"
+        },
+        {
+          "assisted by": "Edo Ophof",
+          "number": "3"
+        },
+        {
+          "assisted by": "Geert Meijer",
+          "number": "2"
+        },
+        {
+          "assisted by": "Jesper Olsen",
+          "number": "2"
+        },
+        {
+          "assisted by": "Ruud Krol",
+          "number": "2"
+        },
+        {
+          "assisted by": "Peter Boeve",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 9
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "54"
+        },
+        {
+          "type": "Goal (header)",
+          "number": "12"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "60"
+        },
+        {
+          "origin": "from free kick (indirect)",
+          "number": "4"
+        },
+        {
+          "origin": "from corner (indirect)",
+          "number": "2"
+        }
+      ],
+      "raw_row_count": 4
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1975-76",
+          "date": "8/8/1975",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Barcelona 3 - 1 (2 - 0)",
+          "active": "Bench",
+          "min": "20"
+        },
+        {
+          "season": "1975-76",
+          "date": "8/10/1975",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - RWDM 2 - 5 (1 - 1)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1974-75",
+          "date": "8/13/1975",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "70"
+        },
+        {
+          "season": "1975-76",
+          "date": "8/16/1975",
+          "competition": "Eredivisie",
+          "match": "Sparta - Ajax 1 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "30"
+        },
+        {
+          "season": "1974-75",
+          "date": "8/20/1975",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ '67 1 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1975-76",
+          "date": "9/23/1975",
+          "competition": "Friendly",
+          "match": "Ajax - Borussia Dortmund 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1975-76",
+          "date": "1/4/1976",
+          "competition": "Eredivisie",
+          "match": "Ajax - Telstar 2 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "19"
+        },
+        {
+          "season": "1975-76",
+          "date": "1/25/1976",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Haag 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "1975-76",
+          "date": "2/18/1976",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 3 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1975-76",
+          "date": "2/22/1976",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ '67 2 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "29"
+        },
+        {
+          "season": "1975-76",
+          "date": "2/29/1976",
+          "competition": "Dutch Cup",
+          "match": "PEC Zwolle - Ajax 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1975-76",
+          "date": "4/11/1976",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 4 - 1 (3 - 1)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1976-77",
+          "date": "8/6/1976",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Borussia M&ouml;nchengladbach 0 - 0 (penalties: 5 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1976-77",
+          "date": "8/8/1976",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Anderlecht 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "23"
+        },
+        {
+          "season": "1976-77",
+          "date": "8/22/1976",
+          "competition": "Eredivisie",
+          "match": "Ajax - De Graafschap 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "33"
+        },
+        {
+          "season": "1976-77",
+          "date": "8/25/1976",
+          "competition": "Eredivisie",
+          "match": "AZ '67 - Ajax 0 - 3 (0 - 3)",
+          "active": "Start",
+          "min": "62"
+        },
+        {
+          "season": "1976-77",
+          "date": "8/29/1976",
+          "competition": "Eredivisie",
+          "match": "HFC Haarlem - Ajax 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1976-77",
+          "date": "9/11/1976",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 1 - 3 (1 - 2)",
+          "active": "Bench",
+          "min": "36"
+        },
+        {
+          "season": "1976-77",
+          "date": "9/15/1976",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Manchester United 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "5"
+        },
+        {
+          "season": "1976-77",
+          "date": "9/19/1976",
+          "competition": "Eredivisie",
+          "match": "Ajax - EVV 3 - 2 (2 - 0)",
+          "active": "Bench",
+          "min": "72"
+        },
+        {
+          "season": "1976-77",
+          "date": "9/25/1976",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 0 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "12"
+        },
+        {
+          "season": "1976-77",
+          "date": "9/29/1976",
+          "competition": "UEFA Cup",
+          "match": "Manchester United - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1976-77",
+          "date": "10/3/1976",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC VVV 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1976-77",
+          "date": "10/17/1976",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 1 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "65"
+        },
+        {
+          "season": "1976-77",
+          "date": "10/24/1976",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 7 - 0 (5 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1976-77",
+          "date": "10/31/1976",
+          "competition": "Eredivisie",
+          "match": "Telstar - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "75"
+        },
+        {
+          "season": "1976-77",
+          "date": "11/7/1976",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 4 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1976-77",
+          "date": "11/14/1976",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "85"
+        },
+        {
+          "season": "1976-77",
+          "date": "11/21/1976",
+          "competition": "Dutch Cup",
+          "match": "Utrecht - Ajax 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1976-77",
+          "date": "11/28/1976",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Amsterdam 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1976-77",
+          "date": "12/5/1976",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 2 - 3 (0 - 3)",
+          "active": "Start",
+          "min": "77"
+        },
+        {
+          "season": "1976-77",
+          "date": "12/12/1976",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 2 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1976-77",
+          "date": "1/9/1977",
+          "competition": "Eredivisie",
+          "match": "De Graafschap - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1976-77",
+          "date": "1/16/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ '67 1 - 0 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1976-77",
+          "date": "1/23/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - HFC Haarlem 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "59"
+        },
+        {
+          "season": "1976-77",
+          "date": "1/29/1977",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 3 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "70"
+        },
+        {
+          "season": "1976-77",
+          "date": "2/6/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Haag 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "75"
+        },
+        {
+          "season": "1976-77",
+          "date": "2/13/1977",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "59"
+        },
+        {
+          "season": "1976-77",
+          "date": "2/27/1977",
+          "competition": "Eredivisie",
+          "match": "EVV - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1976-77",
+          "date": "3/6/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "65"
+        },
+        {
+          "season": "1976-77",
+          "date": "3/13/1977",
+          "competition": "Eredivisie",
+          "match": "FC VVV - Ajax 2 - 2 (2 - 0)",
+          "active": "Ill",
+          "min": ""
+        },
+        {
+          "season": "1976-77",
+          "date": "3/20/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1976-77",
+          "date": "4/3/1977",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "78"
+        },
+        {
+          "season": "1976-77",
+          "date": "4/11/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - Telstar 4 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "77"
+        },
+        {
+          "season": "1976-77",
+          "date": "4/16/1977",
+          "competition": "Eredivisie",
+          "match": "Go Ahead Eagles - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1976-77",
+          "date": "4/24/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 2 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "75"
+        },
+        {
+          "season": "1976-77",
+          "date": "5/1/1977",
+          "competition": "Eredivisie",
+          "match": "FC Amsterdam - Ajax 2 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "84"
+        },
+        {
+          "season": "1976-77",
+          "date": "5/8/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "64"
+        },
+        {
+          "season": "1977-78",
+          "date": "8/5/1977",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Liverpool 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "8/7/1977",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - AZ '67 0 - 3 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1977-78",
+          "date": "8/14/1977",
+          "competition": "Eredivisie",
+          "match": "HFC Haarlem - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "80"
+        },
+        {
+          "season": "1977-78",
+          "date": "8/17/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ '67 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "76"
+        },
+        {
+          "season": "1977-78",
+          "date": "8/21/1977",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 1 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "8/24/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - Vitesse 3 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "8/27/1977",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 0 - 0 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1977-78",
+          "date": "9/4/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 2 - 2 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1977-78",
+          "date": "9/11/1977",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 4 - 1 (1 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1977-78",
+          "date": "9/14/1977",
+          "competition": "Europa Cup I",
+          "match": "Lillestrom SK - Ajax 2 - 0 (2 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1977-78",
+          "date": "9/18/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 2 - 0 (2 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1977-78",
+          "date": "9/25/1977",
+          "competition": "Eredivisie",
+          "match": "Telstar - Ajax 0 - 3 (0 - 1)",
+          "active": "Bench",
+          "min": "32"
+        },
+        {
+          "season": "1977-78",
+          "date": "9/28/1977",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Lillestrom SK 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "10/2/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Volendam 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "55"
+        },
+        {
+          "season": "1977-78",
+          "date": "10/16/1977",
+          "competition": "Eredivisie",
+          "match": "FC Amsterdam - Ajax 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "1977-78",
+          "date": "10/19/1977",
+          "competition": "Europa Cup I",
+          "match": "Levski Sofia - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "67"
+        },
+        {
+          "season": "1977-78",
+          "date": "10/29/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC VVV 5 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "11/2/1977",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Levski Sofia 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "71"
+        },
+        {
+          "season": "1977-78",
+          "date": "11/6/1977",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "75"
+        },
+        {
+          "season": "1977-78",
+          "date": "11/13/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Haag 3 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "11/20/1977",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Telstar 4 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "11/27/1977",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "40"
+        },
+        {
+          "season": "1977-78",
+          "date": "12/11/1977",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "75"
+        },
+        {
+          "season": "1977-78",
+          "date": "12/18/1977",
+          "competition": "Eredivisie",
+          "match": "Ajax - HFC Haarlem 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "12/24/1977",
+          "competition": "Dutch Cup",
+          "match": "Ajax - EVV 7 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "1/8/1978",
+          "competition": "Eredivisie",
+          "match": "AZ '67 - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "85"
+        },
+        {
+          "season": "1977-78",
+          "date": "1/15/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 6 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "1/22/1978",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 2 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "65"
+        },
+        {
+          "season": "1977-78",
+          "date": "1/29/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 3 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "2/1/1978",
+          "competition": "Dutch Cup",
+          "match": "Roda JC - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "2/12/1978",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "2/25/1978",
+          "competition": "Eredivisie",
+          "match": "Go Ahead Eagles - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "78"
+        },
+        {
+          "season": "1977-78",
+          "date": "3/1/1978",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Juventus 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "59"
+        },
+        {
+          "season": "1977-78",
+          "date": "3/5/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - Telstar 7 - 0 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "3/8/1978",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Roda JC 1 - 1 (1 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1977-78",
+          "date": "3/15/1978",
+          "competition": "Europa Cup I",
+          "match": "Juventus - Ajax 1 - 1 (penalties: 3 - 0)",
+          "active": "Bench",
+          "min": "49"
+        },
+        {
+          "season": "1977-78",
+          "date": "3/19/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Amsterdam 5 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "3/22/1978",
+          "competition": "Dutch Cup",
+          "match": "Sparta Rotterdam - Ajax 2 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": "38"
+        },
+        {
+          "season": "1977-78",
+          "date": "3/30/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "25"
+        },
+        {
+          "season": "1977-78",
+          "date": "4/2/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 6 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "4/9/1978",
+          "competition": "Eredivisie",
+          "match": "FC Den Haag - Ajax 0 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "4/13/1978",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Sparta Rotterdam 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "4/16/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "4/23/1978",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 2 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "64"
+        },
+        {
+          "season": "1977-78",
+          "date": "4/30/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 4 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1977-78",
+          "date": "5/5/1978",
+          "competition": "Dutch Cup",
+          "match": "Ajax - AZ '67 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1977-78",
+          "date": "5/27/1978",
+          "competition": "Friendly",
+          "match": "Barcelona - Ajax 3 - 1",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "8/26/1978",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 1 - 7 (0 - 5)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "8/30/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 3 - 2 (3 - 0)",
+          "active": "Start",
+          "min": "84"
+        },
+        {
+          "season": "1978-79",
+          "date": "9/3/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - PEC Zwolle 4 - 2 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "9/6/1978",
+          "competition": "Eredivisie",
+          "match": "PEC Zwolle - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "82"
+        },
+        {
+          "season": "1978-79",
+          "date": "9/9/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "65"
+        },
+        {
+          "season": "1978-79",
+          "date": "9/13/1978",
+          "competition": "UEFA Cup",
+          "match": "Athletic de Bilbao - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "9/17/1978",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 1 - 4 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "9/23/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC VVV 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "9/27/1978",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Athletic de Bilbao 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "9/30/1978",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "10/8/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - Vitesse 4 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "10/14/1978",
+          "competition": "Dutch Cup",
+          "match": "Ajax - EVV 3 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "10/18/1978",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Lausanne Sports 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "10/22/1978",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "10/28/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "11/1/1978",
+          "competition": "UEFA Cup",
+          "match": "Lausanne Sports - Ajax 0 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "11/5/1978",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "66"
+        },
+        {
+          "season": "1978-79",
+          "date": "11/7/1978",
+          "competition": "Friendly",
+          "match": "Ajax - Bayern Munchen 0 - 8 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "11/12/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 1 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "11/19/1978",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Roda JC 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "11/22/1978",
+          "competition": "UEFA Cup",
+          "match": "Budapest Honved - Ajax 4 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "70"
+        },
+        {
+          "season": "1978-79",
+          "date": "11/26/1978",
+          "competition": "Eredivisie",
+          "match": "FC Den Haag - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "12/2/1978",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Volendam 7 - 3 (4 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "12/6/1978",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Budapest Honved 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "12/10/1978",
+          "competition": "Eredivisie",
+          "match": "AZ '67 - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "78"
+        },
+        {
+          "season": "1978-79",
+          "date": "12/17/1978",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 2 - 3 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "3/11/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "3/17/1979",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 3 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "3/25/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 6 - 1 (3 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "4/1/1979",
+          "competition": "Eredivisie",
+          "match": "FC VVV - Ajax 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "4/4/1979",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Fortuna SC 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "4/7/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 6 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "4/10/1979",
+          "competition": "Eredivisie",
+          "match": "Go Ahead Eagles - Ajax 1 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "4/14/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - HFC Haarlem 4 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "4/16/1979",
+          "competition": "Eredivisie",
+          "match": "HFC Haarlem - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "4/18/1979",
+          "competition": "Dutch Cup",
+          "match": "FC Volendam - Ajax 3 - 3 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "4/21/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 3 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "4/24/1979",
+          "competition": "Dutch Cup",
+          "match": "Ajax - FC Volendam 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "4/29/1979",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "5/6/1979",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "5/12/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "5/15/1979",
+          "competition": "Dutch Cup",
+          "match": "Ajax - FC Twente 1 - 1 (regular time:1 - 1)",
+          "active": "Start",
+          "min": "120"
+        },
+        {
+          "season": "1978-79",
+          "date": "5/19/1979",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 1 - 3 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1978-79",
+          "date": "5/29/1979",
+          "competition": "Dutch Cup",
+          "match": "Ajax - FC Twente 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "79"
+        },
+        {
+          "season": "1978-79",
+          "date": "6/2/1979",
+          "competition": "Eredivisie",
+          "match": "FC Volendam - Ajax 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "65"
+        },
+        {
+          "season": "1978-79",
+          "date": "6/4/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ '67 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1978-79",
+          "date": "6/9/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 8 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "8/3/1979",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Arsenal 0 - 0 (penalties: 4 - 3)",
+          "active": "Start",
+          "min": "30"
+        },
+        {
+          "season": "1979-80",
+          "date": "8/5/1979",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - AZ '67 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1979-80",
+          "date": "8/19/1979",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "8/22/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "8/26/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "8/29/1979",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "9/1/1979",
+          "competition": "Trofeo Santiago Bernabeu",
+          "match": "Ajax - AC Milan 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "9/2/1979",
+          "competition": "Trofeo Santiago Bernabeu",
+          "match": "Ajax - Bayern Munchen 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "9/9/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - HFC Haarlem 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "9/15/1979",
+          "competition": "Eredivisie",
+          "match": "AZ '67 - Ajax 2 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "62"
+        },
+        {
+          "season": "1979-80",
+          "date": "9/19/1979",
+          "competition": "Europa Cup I",
+          "match": "HJK Helsinki - Ajax 1 - 8 (0 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "9/23/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 3 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "70"
+        },
+        {
+          "season": "1979-80",
+          "date": "9/29/1979",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 4 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "10/3/1979",
+          "competition": "Europa Cup I",
+          "match": "Ajax - HJK Helsinki 8 - 1 (4 - 0)",
+          "active": "Start",
+          "min": "37"
+        },
+        {
+          "season": "1979-80",
+          "date": "10/7/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "10/14/1979",
+          "competition": "Dutch Cup",
+          "match": "HFC Haarlem - Ajax 2 - 4 (1 - 2)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1979-80",
+          "date": "10/24/1979",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Omonia Nicosia 10 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "10/28/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - PEC Zwolle 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "11/3/1979",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 0 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "11/7/1979",
+          "competition": "Europa Cup I",
+          "match": "Omonia Nicosia - Ajax 4 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "11/11/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 4 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "11/14/1979",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "11/24/1979",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "12/2/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Haag 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "12/9/1979",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 3 - 4 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "12/16/1979",
+          "competition": "Eredivisie",
+          "match": "Ajax - Excelsior 6 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "1/13/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 7 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "1/19/1980",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "2/3/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - Vitesse 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "2/6/1980",
+          "competition": "Eredivisie",
+          "match": "Go Ahead Eagles - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "2/10/1980",
+          "competition": "Eredivisie",
+          "match": "HFC Haarlem - Ajax 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "2/13/1980",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Vitesse 3 - 1 (2 - 1)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1979-80",
+          "date": "2/24/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ '67 2 - 2 (2 - 2)",
+          "active": "Start",
+          "min": "80"
+        },
+        {
+          "season": "1979-80",
+          "date": "2/27/1980",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Roda JC 5 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1979-80",
+          "date": "3/2/1980",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 1 - 2 (0 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1979-80",
+          "date": "3/5/1980",
+          "competition": "Europa Cup I",
+          "match": "RC Strasbourg - Ajax 0 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1979-80",
+          "date": "3/9/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "3/16/1980",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 2 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "67"
+        },
+        {
+          "season": "1979-80",
+          "date": "3/19/1980",
+          "competition": "Europa Cup I",
+          "match": "Ajax - RC Strasbourg 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "3/23/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 3 - 2 (1 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1979-80",
+          "date": "3/29/1980",
+          "competition": "Eredivisie",
+          "match": "PEC Zwolle - Ajax 3 - 0 (1 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1979-80",
+          "date": "4/5/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "4/9/1980",
+          "competition": "Europa Cup I",
+          "match": "Nottingham Forest - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "51"
+        },
+        {
+          "season": "1979-80",
+          "date": "4/12/1980",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 1 - 1 (0 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1979-80",
+          "date": "4/16/1980",
+          "competition": "Dutch Cup",
+          "match": "PSV - Ajax 1 - 2 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1979-80",
+          "date": "4/23/1980",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Nottingham Forest 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "4/26/1980",
+          "competition": "Eredivisie",
+          "match": "FC Den Haag - Ajax 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "29"
+        },
+        {
+          "season": "1979-80",
+          "date": "4/29/1980",
+          "competition": "Dutch Cup",
+          "match": "Ajax - PSV 1 - 1 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1979-80",
+          "date": "5/11/1980",
+          "competition": "Eredivisie",
+          "match": "Excelsior - Ajax 2 - 2 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1979-80",
+          "date": "5/17/1980",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Feyenoord 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "54"
+        },
+        {
+          "season": "1980-81",
+          "date": "8/8/1980",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - Bayern Munchen 0 - 0 (penalties: 5 - 4)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1980-81",
+          "date": "8/9/1980",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - AZ '67 2 - 1 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1980-81",
+          "date": "8/23/1980",
+          "competition": "Eredivisie",
+          "match": "Go Ahead Eagles - Ajax 2 - 4 (0 - 2)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1980-81",
+          "date": "8/30/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - Wageningen 2 - 4 (1 - 2)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1980-81",
+          "date": "9/3/1980",
+          "competition": "Eredivisie",
+          "match": "NAC - Ajax 1 - 1 (1 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1980-81",
+          "date": "9/14/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 5 - 2 (1 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1980-81",
+          "date": "9/17/1980",
+          "competition": "Europa Cup I",
+          "match": "Dinamo Tirana - Ajax 0 - 2 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1980-81",
+          "date": "9/21/1980",
+          "competition": "Eredivisie",
+          "match": "Excelsior - Ajax 2 - 4 (0 - 2)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1980-81",
+          "date": "9/28/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 5 - 1 (3 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1980-81",
+          "date": "10/1/1980",
+          "competition": "Europa Cup I",
+          "match": "Ajax - Dinamo Tirana 1 - 0 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1980-81",
+          "date": "10/4/1980",
+          "competition": "Eredivisie",
+          "match": "FC Den Haag - Ajax 4 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "11/16/1980",
+          "competition": "Dutch Cup",
+          "match": "Ajax - SVV 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "11/22/1980",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "86"
+        },
+        {
+          "season": "1980-81",
+          "date": "11/30/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 5 - 3 (2 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "12/7/1980",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 4 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "12/14/1980",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "1/21/1981",
+          "competition": "Friendly",
+          "match": "Ajax - Oranyankees 6 - 1 (1 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1980-81",
+          "date": "1/25/1981",
+          "competition": "Dutch Cup",
+          "match": "Ajax - FC Twente 5 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "2/1/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 4 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "2/8/1981",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 2 - 3 (1 - 0)",
+          "active": "Start",
+          "min": "78"
+        },
+        {
+          "season": "1980-81",
+          "date": "2/14/1981",
+          "competition": "Eredivisie",
+          "match": "Wageningen - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "2/25/1981",
+          "competition": "Dutch Cup",
+          "match": "Ajax - FC Groningen 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "3/7/1981",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 3 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "3/15/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - Excelsior 7 - 2 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "3/18/1981",
+          "competition": "Dutch Cup",
+          "match": "FC Groningen - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "3/29/1981",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "74"
+        },
+        {
+          "season": "1980-81",
+          "date": "4/1/1981",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "72"
+        },
+        {
+          "season": "1980-81",
+          "date": "4/5/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Haag 2 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "4/11/1981",
+          "competition": "Eredivisie",
+          "match": "AZ '67 - Ajax 0 - 1 (0 - 0)",
+          "active": "Removed disciplinary",
+          "min": ""
+        },
+        {
+          "season": "1980-81",
+          "date": "4/15/1981",
+          "competition": "Dutch Cup",
+          "match": "PSV - Ajax 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "77"
+        },
+        {
+          "season": "1980-81",
+          "date": "4/18/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - PEC Zwolle 2 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "4/25/1981",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "5/3/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - Sparta Rotterdam 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "5/10/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 6 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "5/12/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 4 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "5/17/1981",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "5/24/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 4 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "5/28/1981",
+          "competition": "Dutch Cup",
+          "match": "Ajax - AZ '67 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1980-81",
+          "date": "5/30/1981",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "24"
+        },
+        {
+          "season": "1980-81",
+          "date": "6/6/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "8/9/1981",
+          "competition": "Amsterdam 7x",
+          "match": "Ajax - AZ '67 2 - 2 (penalties: 4 - 3)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1981-82",
+          "date": "8/16/1981",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 1 - 7 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "8/19/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "8/23/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - PEC Zwolle 5 - 1 (4 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "8/26/1981",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 2 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "8/30/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - De Graafschap 9 - 1 (5 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "9/12/1981",
+          "competition": "Eredivisie",
+          "match": "MVV - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "9/16/1981",
+          "competition": "Europa Cup II",
+          "match": "Ajax - Tottenham Hotspur 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "9/19/1981",
+          "competition": "Eredivisie",
+          "match": "FC Den Haag - Ajax 1 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "9/26/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 6 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "71"
+        },
+        {
+          "season": "1981-82",
+          "date": "9/29/1981",
+          "competition": "Europa Cup II",
+          "match": "Tottenham Hotspur - Ajax 3 - 0 (0 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1981-82",
+          "date": "10/4/1981",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 5 - 3 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "10/18/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "10/24/1981",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "11/1/1981",
+          "competition": "Dutch Cup",
+          "match": "DHC - Ajax 2 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "11/8/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - Go Ahead Eagles 4 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "11/11/1981",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 3 - 5 (1 - 2)",
+          "active": "Start",
+          "min": "78"
+        },
+        {
+          "season": "1981-82",
+          "date": "11/22/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 3 - 2 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "11/28/1981",
+          "competition": "Eredivisie",
+          "match": "AZ '67 - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "12/6/1981",
+          "competition": "Eredivisie",
+          "match": "Ajax - HFC Haarlem 4 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "75"
+        },
+        {
+          "season": "1981-82",
+          "date": "1/17/1982",
+          "competition": "Dutch Cup",
+          "match": "DS '79 - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "73"
+        },
+        {
+          "season": "1981-82",
+          "date": "2/7/1982",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 4 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "18"
+        },
+        {
+          "season": "1981-82",
+          "date": "2/13/1982",
+          "competition": "Eredivisie",
+          "match": "PEC Zwolle - Ajax 1 - 3 (0 - 2)",
+          "active": "Bench",
+          "min": "30"
+        },
+        {
+          "season": "1981-82",
+          "date": "2/28/1982",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 5 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "3/6/1982",
+          "competition": "Eredivisie",
+          "match": "De Graafschap - Ajax 1 - 4 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "3/14/1982",
+          "competition": "Eredivisie",
+          "match": "Ajax - MVV 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "3/21/1982",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Den Haag 9 - 1 (5 - 0)",
+          "active": "Start",
+          "min": "71"
+        },
+        {
+          "season": "1981-82",
+          "date": "3/28/1982",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 2 - 3 (1 - 1)",
+          "active": "Bench",
+          "min": "24"
+        },
+        {
+          "season": "1981-82",
+          "date": "4/18/1982",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 3 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "1981-82",
+          "date": "4/24/1982",
+          "competition": "Eredivisie",
+          "match": "Go Ahead Eagles - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1981-82",
+          "date": "5/2/1982",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "80"
+        },
+        {
+          "season": "1981-82",
+          "date": "5/9/1982",
+          "competition": "Eredivisie",
+          "match": "Roda JC - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "1981-82",
+          "date": "5/22/1982",
+          "competition": "Eredivisie",
+          "match": "HFC Haarlem - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 266
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "FC Den Haag",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/10/1975",
+          "amount": "€ 127,1K",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "Contract renewal",
+          "start": "7/1/1978",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "Contract renewal",
+          "start": "7/1/1978",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "Contract renewal",
+          "start": "7/1/1979",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Panathinaikos",
+          "type": "Transfer",
+          "start": "7/20/1982",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Panathinaikos",
+          "next club": "Olympique Marseille",
+          "type": "Transfer",
+          "start": "7/13/1984",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Olympique Marseille",
+          "next club": "Feyenoord",
+          "type": "Transfer",
+          "start": "7/1/1985",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Feyenoord",
+          "next club": "None",
+          "type": "Contract ended",
+          "start": "7/1/1986",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "None",
+          "next club": "FC Den Haag",
+          "type": "New contract",
+          "start": "1/1/1987",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "FC Den Haag",
+          "next club": "None",
+          "type": "Retirement",
+          "start": "7/1/1988",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1975-76",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1976-77",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1977-78",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1978-79",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1979-80",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1980-81",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1981-82",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 8
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Tscheu La Ling"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": null,
+      "headers": [
+        "lineup photos"
+      ],
+      "rows": [
+        {
+          "lineup photos": "Ajax - Anderlecht 1 - 3 (8/8/1976)"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1249-tscheu-la-ling.jpg",
+        "alt": "Soccer player Tscheu La Ling",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/tscheu-la-ling__595d20e546cd.jpg",
+        "status": "downloaded",
+        "bytes": 17249,
+        "sha256": "595d20e546cd3d3b2e6bce856d927736ea5bab55ecd53d6f7d6b568a6b8fa901",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:06.809Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 4,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name"
+    ]
+  }
+}

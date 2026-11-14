@@ -53,7 +53,7 @@ const drawTrivia=(ctx,H,f,title,detail,photo)=>{const tall=H>1500;
  ctx.font=canvasFont(tall?250:205);ctx.fillStyle="rgba(255,255,255,.3)";ctx.fillText(f.number,65,tall?500:420,420);
  ctx.fillStyle=RED;ctx.fillRect(65,tall?930:755,105,9);wrapped(ctx,title,65,tall?1060:850,925,tall?108:92,tall?101:87,3);line(ctx,65,tall?1370:1080,1015);wrapped(ctx,detail,65,tall?1475:1160,930,tall?41:35,49,3,"#f0f0f2");
 };
-const draw=async(card)=>{const {fact,canvas,ratio,titleInput,detailInput}=card,H=ratio.value==="9:16"?1920:1350;canvas.width=W;canvas.height=H;const ctx=canvas.getContext("2d");await document.fonts.ready;
+const draw=async(card)=>{const {fact,canvas,ratio,titleInput,detailInput}=card,H=ratio.value==="9:16"?1920:1350;canvas.width=W;canvas.height=H;const ctx=canvas.getContext("2d");await Promise.all([document.fonts.load('700 76px "AjaxPro Bebas Visual"'),document.fonts.load('400 36px "AjaxPro Refrigerator"')]);
  const [logo,photo]=await Promise.all([imageLoad("/assets/ajaxpro-logo.png"),imageLoad(card.imageSrc??(fact.assetId?`/api/club-tools?view=ajax-vandaag-media&asset=${encodeURIComponent(fact.assetId)}`:null))]);
  background(ctx,H);header(ctx,H,fact.label,logo);
  const title=trim(titleInput.value,90),detail=trim(detailInput.value,220);

@@ -1,0 +1,1489 @@
+{
+  "local_id": "afc_ajax_riechedly-bazoer",
+  "slug": "riechedly-bazoer",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/riechedly-bazoer",
+    "https://www.afc-ajax.info/en/player/riechedly-bazoer/statistics",
+    "https://www.afc-ajax.info/en/player/riechedly-bazoer/matches",
+    "https://www.afc-ajax.info/en/player/riechedly-bazoer/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/riechedly-bazoer",
+    "name": "Riechedly Bazoer",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1996-10-12",
+    "death_date": null,
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Defender)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Vfl Wolfsburg",
+    "external_links": [
+      {
+        "label": "Riechedly Bazoer",
+        "url": "http://nl.wikipedia.org/wiki/Riechedly_Bazoer"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/anwar-el-ghazi",
+      "https://www.afc-ajax.info/en/player/davy-klaassen",
+      "https://www.afc-ajax.info/en/player/jasper-cillessen",
+      "https://www.afc-ajax.info/en/player/joel-veltman",
+      "https://www.afc-ajax.info/en/player/jairo-riedewald",
+      "https://www.afc-ajax.info/en/player/lasse-schone",
+      "https://www.afc-ajax.info/en/player/arek-milik",
+      "https://www.afc-ajax.info/en/player/kenny-tete",
+      "https://www.afc-ajax.info/en/player/mitchell-dijks",
+      "https://www.afc-ajax.info/en/player/nemanja-gudelj"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2013-14",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "",
+          "friendly": "3",
+          "total": "3"
+        },
+        {
+          "season": "2014-15",
+          "comp.": "17",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "4",
+          "other off.": "",
+          "off. mat.": "22",
+          "friendly": "7",
+          "total": "29"
+        },
+        {
+          "season": "2015-16",
+          "comp.": "29",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "8",
+          "other off.": "",
+          "off. mat.": "39",
+          "friendly": "6",
+          "total": "45"
+        },
+        {
+          "season": "2016-17",
+          "comp.": "5",
+          "play off": "",
+          "dutch cup": "2",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "10",
+          "friendly": "4",
+          "total": "14"
+        },
+        {
+          "season": "Total",
+          "comp.": "51",
+          "play off": "",
+          "dutch cup": "5",
+          "europa": "15",
+          "other off.": "",
+          "off. mat.": "71",
+          "friendly": "20",
+          "total": "91"
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2014-15",
+          "comp.": "1",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "2",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "2015-16",
+          "comp.": "5",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "5",
+          "friendly": "1",
+          "total": ""
+        },
+        {
+          "season": "2016-17",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "6",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "8",
+          "friendly": "1",
+          "total": "9"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "3",
+          "assists": "1",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "2",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "3",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "2",
+          "assists": "",
+          "yellow": "4",
+          "red": "1",
+          "substitute out": "3",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "3",
+          "assists": "2",
+          "yellow": "1",
+          "red": "",
+          "substitute out": "7",
+          "substitute in": "6"
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "2",
+          "red": "",
+          "substitute out": "15",
+          "substitute in": "3"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "8",
+          "assists": "5",
+          "yellow": "10",
+          "red": "1",
+          "substitute out": "25",
+          "substitute in": "9"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Assists",
+      "headers": [
+        "assisted by",
+        "number"
+      ],
+      "rows": [],
+      "raw_row_count": 1
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "8"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after attack",
+          "number": "7"
+        },
+        {
+          "origin": "from corner (indirect)",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 3
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2013-14",
+          "date": "7/13/2013",
+          "competition": "Friendly",
+          "match": "RKC Waalwijk - Ajax 1 - 5 (1 - 4)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2013-14",
+          "date": "1/10/2014",
+          "competition": "Antalya Cup",
+          "match": "Galatasaray - Ajax 2 - 1 (1 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2013-14",
+          "date": "1/11/2014",
+          "competition": "Antalya Cup",
+          "match": "Trabzonspor - Ajax 1 - 1 (penalties: 4 - 3)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2013-14",
+          "date": "5/11/2014",
+          "competition": "Friendly",
+          "match": "Persija - Ajax 0 - 3 (0 - 2)",
+          "active": "Bench",
+          "min": "36"
+        },
+        {
+          "season": "2013-14",
+          "date": "5/14/2014",
+          "competition": "Friendly",
+          "match": "Persib - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2014-15",
+          "date": "6/28/2014",
+          "competition": "Friendly",
+          "match": "SDC Putten - Ajax 1 - 13 (0 - 5)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2014-15",
+          "date": "7/5/2014",
+          "competition": "Friendly",
+          "match": "FC Wacker Innsbruck - Ajax 1 - 5 (1 - 4)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2014-15",
+          "date": "7/12/2014",
+          "competition": "Friendly",
+          "match": "Ajax - SV H&ouml;nnepel 6 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "60"
+        },
+        {
+          "season": "2014-15",
+          "date": "7/19/2014",
+          "competition": "Friendly",
+          "match": "Achilles '29 - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "75"
+        },
+        {
+          "season": "2014-15",
+          "date": "7/26/2014",
+          "competition": "Friendly",
+          "match": "Benfica (2) - Ajax 4 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "63"
+        },
+        {
+          "season": "2014-15",
+          "date": "10/14/2014",
+          "competition": "Friendly",
+          "match": "Ajax - AZ (Jong) 4 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2014-15",
+          "date": "10/28/2014",
+          "competition": "Dutch Cup",
+          "match": "Urk - Ajax 0 - 4 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2014-15",
+          "date": "12/6/2014",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 5 - 0 (4 - 0)",
+          "active": "Bench",
+          "min": "25"
+        },
+        {
+          "season": "2014-15",
+          "date": "12/10/2014",
+          "competition": "Champions League",
+          "match": "Ajax - APOEL Nicosia 4 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2014-15",
+          "date": "12/14/2014",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 3 - 1 (2 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2014-15",
+          "date": "1/10/2015",
+          "competition": "Friendly",
+          "match": "Ajax - Schalke '04 2 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "9"
+        },
+        {
+          "season": "2014-15",
+          "date": "1/16/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "29"
+        },
+        {
+          "season": "2014-15",
+          "date": "1/25/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "65"
+        },
+        {
+          "season": "2014-15",
+          "date": "2/1/2015",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "20"
+        },
+        {
+          "season": "2014-15",
+          "date": "2/5/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "67"
+        },
+        {
+          "season": "2014-15",
+          "date": "2/8/2015",
+          "competition": "Eredivisie",
+          "match": "Go Ahead Eagles - Ajax 1 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2014-15",
+          "date": "2/15/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 4 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2014-15",
+          "date": "2/19/2015",
+          "competition": "Europa League",
+          "match": "Ajax - Legia Warschau 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2014-15",
+          "date": "2/22/2015",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "65"
+        },
+        {
+          "season": "2014-15",
+          "date": "2/26/2015",
+          "competition": "Europa League",
+          "match": "Legia Warschau - Ajax 0 - 3 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2014-15",
+          "date": "3/1/2015",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 1 - 3 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2014-15",
+          "date": "3/8/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - Excelsior 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2014-15",
+          "date": "3/12/2015",
+          "competition": "Europa League",
+          "match": "Dnipro Dnipropetrovsk - Ajax 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2014-15",
+          "date": "3/15/2015",
+          "competition": "Eredivisie",
+          "match": "SC Heerenveen - Ajax 1 - 4 (1 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2014-15",
+          "date": "3/19/2015",
+          "competition": "Europa League",
+          "match": "Ajax - Dnipro Dnipropetrovsk 2 - 1 (regular time:1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2014-15",
+          "date": "3/22/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO Den Haag 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2014-15",
+          "date": "4/5/2015",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "73"
+        },
+        {
+          "season": "2014-15",
+          "date": "4/11/2015",
+          "competition": "Eredivisie",
+          "match": "Heracles Almelo - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "89"
+        },
+        {
+          "season": "2014-15",
+          "date": "4/19/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC Breda 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "72"
+        },
+        {
+          "season": "2014-15",
+          "date": "4/26/2015",
+          "competition": "Eredivisie",
+          "match": "PEC Zwolle - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "81"
+        },
+        {
+          "season": "2014-15",
+          "date": "5/10/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Cambuur 3 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2014-15",
+          "date": "5/17/2015",
+          "competition": "Eredivisie",
+          "match": "FC Dordrecht - Ajax 2 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "7/4/2015",
+          "competition": "Friendly",
+          "match": "Ajax - Dinamo Moskou 2 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "44"
+        },
+        {
+          "season": "2015-16",
+          "date": "7/10/2015",
+          "competition": "Friendly",
+          "match": "Ajax - Panathinaikos 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "77"
+        },
+        {
+          "season": "2015-16",
+          "date": "7/17/2015",
+          "competition": "Friendly",
+          "match": "Ajax - Vfl Wolfsburg 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "7/22/2015",
+          "competition": "Friendly",
+          "match": "Saint Etienne - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "7/29/2015",
+          "competition": "Champions League",
+          "match": "Rapid Wien - Ajax 2 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "8/4/2015",
+          "competition": "Champions League",
+          "match": "Ajax - Rapid Wien 2 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "8/9/2015",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 0 - 3 (0 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "8/15/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "77"
+        },
+        {
+          "season": "2015-16",
+          "date": "8/20/2015",
+          "competition": "Europa League",
+          "match": "Ajax - FK Jablonec 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "8/23/2015",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 0 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "8/27/2015",
+          "competition": "Europa League",
+          "match": "FK Jablonec - Ajax 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "59"
+        },
+        {
+          "season": "2015-16",
+          "date": "8/30/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO Den Haag 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "9/12/2015",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "9/17/2015",
+          "competition": "Europa League",
+          "match": "Ajax - Celtic 2 - 2 (1 - 2)",
+          "active": "Suspension",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "9/20/2015",
+          "competition": "Eredivisie",
+          "match": "Excelsior - Ajax 0 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "9/23/2015",
+          "competition": "Dutch Cup",
+          "match": "Ajax - De Graafschap 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "82"
+        },
+        {
+          "season": "2015-16",
+          "date": "9/26/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "10/1/2015",
+          "competition": "Europa League",
+          "match": "Molde FK - Ajax 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "89"
+        },
+        {
+          "season": "2015-16",
+          "date": "10/4/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "10/17/2015",
+          "competition": "Eredivisie",
+          "match": "Heracles Almelo - Ajax 0 - 2 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "10/22/2015",
+          "competition": "Europa League",
+          "match": "Fenerbahce - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "10/25/2015",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 1 - 3 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "10/28/2015",
+          "competition": "Dutch Cup",
+          "match": "Feyenoord - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "10/31/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC Kerkrade 6 - 0 (3 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "11/5/2015",
+          "competition": "Europa League",
+          "match": "Ajax - Fenerbahce 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "11/8/2015",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 1 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2015-16",
+          "date": "11/21/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Cambuur 5 - 1 (4 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "11/26/2015",
+          "competition": "Europa League",
+          "match": "Celtic - Ajax 1 - 2 (1 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "11/29/2015",
+          "competition": "Eredivisie",
+          "match": "PEC Zwolle - Ajax 0 - 2 (0 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "12/5/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 5 - 2 (3 - 0)",
+          "active": "Bench",
+          "min": "27"
+        },
+        {
+          "season": "2015-16",
+          "date": "12/10/2015",
+          "competition": "Europa League",
+          "match": "Ajax - Molde FK 1 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": "26"
+        },
+        {
+          "season": "2015-16",
+          "date": "12/13/2015",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "12/20/2015",
+          "competition": "Eredivisie",
+          "match": "Ajax - De Graafschap 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "86"
+        },
+        {
+          "season": "2015-16",
+          "date": "1/9/2016",
+          "competition": "Friendly",
+          "match": "Ajax - Hamburger SV 3 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "81"
+        },
+        {
+          "season": "2015-16",
+          "date": "1/17/2016",
+          "competition": "Eredivisie",
+          "match": "ADO Den Haag - Ajax 0 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "1/23/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - Vitesse 1 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "81"
+        },
+        {
+          "season": "2015-16",
+          "date": "1/26/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - Heracles Almelo 0 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "1/31/2016",
+          "competition": "Eredivisie",
+          "match": "Roda JC Kerkrade - Ajax 2 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "78"
+        },
+        {
+          "season": "2015-16",
+          "date": "2/7/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 2 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "81"
+        },
+        {
+          "season": "2015-16",
+          "date": "2/14/2016",
+          "competition": "Eredivisie",
+          "match": "FC Groningen - Ajax 1 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "2/21/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - Excelsior 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "2/28/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - AZ 4 - 1 (2 - 0)",
+          "active": "Start",
+          "min": "74"
+        },
+        {
+          "season": "2015-16",
+          "date": "3/6/2016",
+          "competition": "Eredivisie",
+          "match": "Willem II - Ajax 0 - 4 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "3/13/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "3/20/2016",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2015-16",
+          "date": "4/3/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - PEC Zwolle 3 - 0 (3 - 0)",
+          "active": "Start",
+          "min": "62"
+        },
+        {
+          "season": "2015-16",
+          "date": "4/9/2016",
+          "competition": "Eredivisie",
+          "match": "SC Cambuur - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "87"
+        },
+        {
+          "season": "2015-16",
+          "date": "4/17/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 2 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "81"
+        },
+        {
+          "season": "2015-16",
+          "date": "4/20/2016",
+          "competition": "Eredivisie",
+          "match": "SC Heerenveen - Ajax 0 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "5/1/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 4 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "14"
+        },
+        {
+          "season": "2015-16",
+          "date": "5/8/2016",
+          "competition": "Eredivisie",
+          "match": "De Graafschap - Ajax 1 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2015-16",
+          "date": "5/18/2016",
+          "competition": "Friendly",
+          "match": "Liaoning Whowin FC - Ajax 0 - 2 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "7/9/2016",
+          "competition": "Friendly",
+          "match": "FC Liefering - Ajax 3 - 4 (2 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2016-17",
+          "date": "7/12/2016",
+          "competition": "Friendly",
+          "match": "AFC - Ajax 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2016-17",
+          "date": "7/16/2016",
+          "competition": "Friendly",
+          "match": "AA Gent - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "70"
+        },
+        {
+          "season": "2016-17",
+          "date": "7/20/2016",
+          "competition": "Friendly",
+          "match": "Olympique Marseille - Ajax 2 - 2 (0 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "7/26/2016",
+          "competition": "Champions League",
+          "match": "Ajax - PAOK Thessaloniki 1 - 1 (0 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "8/3/2016",
+          "competition": "Champions League",
+          "match": "PAOK Thessaloniki - Ajax 1 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "8/7/2016",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 1 - 3 (1 - 1)",
+          "active": "Start",
+          "min": "77"
+        },
+        {
+          "season": "2016-17",
+          "date": "8/13/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC Kerkrade 2 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "8/16/2016",
+          "competition": "Champions League",
+          "match": "Ajax - FC Rostov 1 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2016-17",
+          "date": "8/20/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - Willem II 1 - 2 (1 - 2)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2016-17",
+          "date": "8/24/2016",
+          "competition": "Champions League",
+          "match": "FC Rostov - Ajax 4 - 1 (1 - 0)",
+          "active": "Start",
+          "min": "58"
+        },
+        {
+          "season": "2016-17",
+          "date": "8/28/2016",
+          "competition": "Eredivisie",
+          "match": "Go Ahead Eagles - Ajax 0 - 3 (0 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "9/11/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - Vitesse 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "9/18/2016",
+          "competition": "Eredivisie",
+          "match": "Heracles Almelo - Ajax 0 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "9/21/2016",
+          "competition": "Dutch Cup",
+          "match": "Ajax - Willem II 5 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "79"
+        },
+        {
+          "season": "2016-17",
+          "date": "9/24/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - PEC Zwolle 5 - 1 (2 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "9/29/2016",
+          "competition": "Europa League",
+          "match": "Ajax - Standard Luik 1 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "10/2/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - Utrecht 3 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": "12"
+        },
+        {
+          "season": "2016-17",
+          "date": "10/16/2016",
+          "competition": "Eredivisie",
+          "match": "ADO Den Haag - Ajax 0 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "10/20/2016",
+          "competition": "Europa League",
+          "match": "Celta de Vigo - Ajax 2 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": "13"
+        },
+        {
+          "season": "2016-17",
+          "date": "10/23/2016",
+          "competition": "Eredivisie",
+          "match": "Feyenoord - Ajax 1 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": "11"
+        },
+        {
+          "season": "2016-17",
+          "date": "10/26/2016",
+          "competition": "Dutch Cup",
+          "match": "Kozakken Boys - Ajax 1 - 6 (0 - 4)",
+          "active": "Start",
+          "min": "76"
+        },
+        {
+          "season": "2016-17",
+          "date": "10/29/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - Excelsior 1 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "11/3/2016",
+          "competition": "Europa League",
+          "match": "Ajax - Celta de Vigo 3 - 2 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "11/6/2016",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 2 - 2 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "11/10/2016",
+          "competition": "Friendly",
+          "match": "Ajax - Achilles '29 2 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2016-17",
+          "date": "11/20/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - NEC 5 - 0 (3 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "11/24/2016",
+          "competition": "Europa League",
+          "match": "Ajax - Panathinaikos 2 - 0 (1 - 0)",
+          "active": "Removed disciplinary",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "11/27/2016",
+          "competition": "Eredivisie",
+          "match": "SC Heerenveen - Ajax 0 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "12/4/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Groningen 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "12/8/2016",
+          "competition": "Europa League",
+          "match": "Standard Luik - Ajax 1 - 1 (0 - 1)",
+          "active": "Transfer talks",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "12/11/2016",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 1 - 0 (0 - 0)",
+          "active": "Transfer talks",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "12/15/2016",
+          "competition": "Dutch Cup",
+          "match": "SC Cambuur - Ajax 2 - 1 (2 - 0)",
+          "active": "Transfer talks",
+          "min": ""
+        },
+        {
+          "season": "2016-17",
+          "date": "12/18/2016",
+          "competition": "Eredivisie",
+          "match": "Ajax - PSV 1 - 1 (0 - 0)",
+          "active": "Transfer talks",
+          "min": ""
+        }
+      ],
+      "raw_row_count": 124
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Elinkwijk",
+          "next club": "PSV",
+          "type": "Joins youth academy",
+          "start": "7/1/2006",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "PSV",
+          "next club": "Ajax",
+          "type": "Joins youth academy",
+          "start": "7/1/2013",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "Contract renewal",
+          "start": "7/1/2015",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Vfl Wolfsburg",
+          "type": "Transfer",
+          "start": "1/1/2017",
+          "amount": "€ 12M",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 5
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2012-13",
+          "contract type": "Contract",
+          "team": "Unknown",
+          "contract from": "11/17/2012",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2013-14",
+          "contract type": "Contract",
+          "team": "Young",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2014-15",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2015-16",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2016-17",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "1/1/2017",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Riechedly Bazoer"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1393-riechedly-bazoer.jpg",
+        "alt": "Soccer player Riechedly Bazoer",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/riechedly-bazoer__f0c58f9d7954.jpg",
+        "status": "downloaded",
+        "bytes": 27214,
+        "sha256": "f0c58f9d79546fb9697fae25f6941a74c6072f7dbfa7de34757a91e50fa35045",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:37:05.319Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 6,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name"
+    ]
+  }
+}

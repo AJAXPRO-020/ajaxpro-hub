@@ -1,0 +1,720 @@
+{
+  "local_id": "afc_ajax_edgar-manucharyan",
+  "slug": "edgar-manucharyan",
+  "collected_at": "2026-10-31T18:16:29.411Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/edgar-manucharyan",
+    "https://www.afc-ajax.info/en/player/edgar-manucharyan/statistics",
+    "https://www.afc-ajax.info/en/player/edgar-manucharyan/matches",
+    "https://www.afc-ajax.info/en/player/edgar-manucharyan/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/edgar-manucharyan",
+    "name": "Edgar Manucharyan",
+    "full_name": null,
+    "alternative_names": [],
+    "birth_date": "1987-01-19",
+    "death_date": null,
+    "nationality": "Armenia",
+    "roles": [
+      "Player (Midfielder)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Pyunik Yerevan",
+    "external_links": [
+      {
+        "label": "Edgar Manucharyan",
+        "url": "http://nl.wikipedia.org/wiki/Edgar_Manucharyan"
+      },
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/urby-emanuelson",
+      "https://www.afc-ajax.info/en/player/zdenek-grygera",
+      "https://www.afc-ajax.info/en/player/hedwiges-maduro",
+      "https://www.afc-ajax.info/en/player/maarten-stekelenburg",
+      "https://www.afc-ajax.info/en/player/klaas-jan-huntelaar",
+      "https://www.afc-ajax.info/en/player/wesley-sneijder",
+      "https://www.afc-ajax.info/en/player/kenneth-perez",
+      "https://www.afc-ajax.info/en/player/ryan-babel",
+      "https://www.afc-ajax.info/en/player/thomas-vermaelen",
+      "https://www.afc-ajax.info/en/player/mauro-rosales"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2005-06",
+          "comp.": "4",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "5",
+          "friendly": "",
+          "total": "5"
+        },
+        {
+          "season": "2006-07",
+          "comp.": "5",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "2",
+          "other off.": "",
+          "off. mat.": "8",
+          "friendly": "2",
+          "total": "10"
+        },
+        {
+          "season": "Total",
+          "comp.": "9",
+          "play off": "",
+          "dutch cup": "1",
+          "europa": "3",
+          "other off.": "",
+          "off. mat.": "13",
+          "friendly": "2",
+          "total": "15"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Season goals per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "2006-07",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": ""
+        },
+        {
+          "season": "Total",
+          "comp.": "",
+          "play off": "",
+          "dutch cup": "",
+          "europa": "1",
+          "other off.": "",
+          "off. mat.": "1",
+          "friendly": "",
+          "total": "1"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "61-75",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "3"
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "6"
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Totaal",
+          "goals": "1",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "1",
+          "substitute in": "10"
+        }
+      ],
+      "raw_row_count": 11
+    },
+    {
+      "caption": "Goal Type",
+      "headers": [
+        "type",
+        "number"
+      ],
+      "rows": [
+        {
+          "type": "Goal",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 2
+    },
+    {
+      "caption": "Goal Origin",
+      "headers": [
+        "origin",
+        "number"
+      ],
+      "rows": [
+        {
+          "origin": "after unknown",
+          "number": "1"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "2005-06",
+          "date": "8/5/2005",
+          "competition": "Dutch Super Cup",
+          "match": "PSV - Ajax 1 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2005-06",
+          "date": "8/10/2005",
+          "competition": "Champions League",
+          "match": "Brondby - Ajax 2 - 2 (1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2005-06",
+          "date": "8/20/2005",
+          "competition": "Eredivisie",
+          "match": "RBC Roosendaal - Ajax 0 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2005-06",
+          "date": "8/24/2005",
+          "competition": "Champions League",
+          "match": "Ajax - Brondby 3 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2005-06",
+          "date": "9/18/2005",
+          "competition": "Eredivisie",
+          "match": "AZ - Ajax 4 - 2 (2 - 2)",
+          "active": "Bench",
+          "min": "6"
+        },
+        {
+          "season": "2005-06",
+          "date": "9/27/2005",
+          "competition": "Champions League",
+          "match": "Ajax - Arsenal 1 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": "20"
+        },
+        {
+          "season": "2005-06",
+          "date": "10/2/2005",
+          "competition": "Eredivisie",
+          "match": "Sparta Rotterdam - Ajax 1 - 2 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2005-06",
+          "date": "11/19/2005",
+          "competition": "Eredivisie",
+          "match": "Ajax - FC Twente 2 - 0 (0 - 0)",
+          "active": "Bench",
+          "min": "2"
+        },
+        {
+          "season": "2005-06",
+          "date": "11/22/2005",
+          "competition": "Champions League",
+          "match": "Ajax - Sparta Prague 2 - 1 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2005-06",
+          "date": "11/27/2005",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "19"
+        },
+        {
+          "season": "2006-07",
+          "date": "8/4/2006",
+          "competition": "Amsterdam Tournament",
+          "match": "Ajax - Internazionale 1 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "19"
+        },
+        {
+          "season": "2006-07",
+          "date": "8/5/2006",
+          "competition": "Amsterdam Tournament",
+          "match": "Ajax - Manchester United 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "46"
+        },
+        {
+          "season": "2006-07",
+          "date": "9/10/2006",
+          "competition": "Eredivisie",
+          "match": "Ajax - Vitesse 3 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": "11"
+        },
+        {
+          "season": "2006-07",
+          "date": "9/14/2006",
+          "competition": "UEFA Cup",
+          "match": "IK Start - Ajax 2 - 5 (1 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2006-07",
+          "date": "9/28/2006",
+          "competition": "UEFA Cup",
+          "match": "Ajax - IK Start 4 - 0 (3 - 0)",
+          "active": "Bench",
+          "min": "18"
+        },
+        {
+          "season": "2006-07",
+          "date": "10/1/2006",
+          "competition": "Eredivisie",
+          "match": "Utrecht - Ajax 2 - 3 (0 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2006-07",
+          "date": "10/25/2006",
+          "competition": "Eredivisie",
+          "match": "Ajax - ADO Den Haag 2 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2006-07",
+          "date": "11/2/2006",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Austria Wien 3 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "33"
+        },
+        {
+          "season": "2006-07",
+          "date": "11/5/2006",
+          "competition": "Eredivisie",
+          "match": "Heracles Almelo - Ajax 0 - 3 (0 - 1)",
+          "active": "Bench",
+          "min": "6"
+        },
+        {
+          "season": "2006-07",
+          "date": "11/9/2006",
+          "competition": "Dutch Cup",
+          "match": "Ajax - ADO Den Haag 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "2006-07",
+          "date": "12/24/2006",
+          "competition": "Eredivisie",
+          "match": "Vitesse - Ajax 4 - 2 (0 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2006-07",
+          "date": "12/27/2006",
+          "competition": "Eredivisie",
+          "match": "Ajax - Roda JC 2 - 0 (2 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2006-07",
+          "date": "12/30/2006",
+          "competition": "Eredivisie",
+          "match": "NEC - Ajax 2 - 2 (0 - 0)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2006-07",
+          "date": "2/4/2007",
+          "competition": "Eredivisie",
+          "match": "Ajax - Feyenoord 4 - 1 (3 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2006-07",
+          "date": "2/22/2007",
+          "competition": "UEFA Cup",
+          "match": "Ajax - Werder Bremen 3 - 1 (1 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2006-07",
+          "date": "2/28/2007",
+          "competition": "Dutch Cup",
+          "match": "Willem II - Ajax 0 - 2 (0 - 1)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2006-07",
+          "date": "3/4/2007",
+          "competition": "Eredivisie",
+          "match": "Ajax - SC Heerenveen 0 - 1 (0 - 1)",
+          "active": "Bench",
+          "min": "14"
+        },
+        {
+          "season": "2006-07",
+          "date": "3/11/2007",
+          "competition": "Eredivisie",
+          "match": "FC Twente - Ajax 1 - 4 (1 - 3)",
+          "active": "Bench",
+          "min": "8"
+        },
+        {
+          "season": "2006-07",
+          "date": "3/18/2007",
+          "competition": "Eredivisie",
+          "match": "PSV - Ajax 1 - 5 (0 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2006-07",
+          "date": "4/1/2007",
+          "competition": "Eredivisie",
+          "match": "Ajax - Heracles Almelo 3 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": "28"
+        },
+        {
+          "season": "2006-07",
+          "date": "4/8/2007",
+          "competition": "Eredivisie",
+          "match": "RKC Waalwijk - Ajax 2 - 2 (1 - 2)",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "2006-07",
+          "date": "4/13/2007",
+          "competition": "Eredivisie",
+          "match": "Ajax - NAC Breda 2 - 0 (1 - 0)",
+          "active": "Bench",
+          "min": ""
+        }
+      ],
+      "raw_row_count": 33
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "Pyunik Yerevan",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/2005",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Ajax",
+          "type": "Contract renewal",
+          "start": "7/1/2007",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "HFC Haarlem",
+          "type": "Loan start",
+          "start": "8/6/2009",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "HFC Haarlem",
+          "next club": "Ajax",
+          "type": "Loan end",
+          "start": "1/25/2010",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "AGOVV",
+          "type": "Loan start",
+          "start": "2/5/2010",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Pyunik Yerevan",
+          "type": "Transfer",
+          "start": "7/9/2010",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 7
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "2005-06",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2006-07",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2007-08",
+          "contract type": "Contract",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2008-09",
+          "contract type": "Contract",
+          "team": "Young",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "2009-10",
+          "contract type": "Contract",
+          "team": "Loan Out",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "8/6/2009",
+          "loan out to": "6/30/2010",
+          "remark": "Twee verhuurperiodes met korte onderbreking."
+        }
+      ],
+      "raw_row_count": 6
+    },
+    {
+      "caption": null,
+      "headers": [
+        "individual photos"
+      ],
+      "rows": [
+        {
+          "individual photos": "Edgar Manucharyan"
+        }
+      ],
+      "raw_row_count": 2
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://www.afc-ajax.info/photos/1048-edgar-manucharyan.jpg",
+        "alt": "Soccer player Edgar Manucharyan",
+        "source_rights": "AFC-Ajax.info; local research copy only; publication/reuse permission not established",
+        "downloaded": true,
+        "local_path": "images/edgar-manucharyan__8013ca43d581.jpg",
+        "status": "downloaded",
+        "bytes": 21441,
+        "sha256": "8013ca43d581fa0ab66a1cc61e9c2824b04cb789f5c72626f889bc9ca52a305c",
+        "mime_type": "image/jpeg",
+        "http_status": 200,
+        "downloaded_at": "2026-10-31T18:36:59.369Z"
+      }
+    ],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 5,
+    "match_tables": 1,
+    "transfer_tables": 3,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "death_date",
+      "full_name"
+    ]
+  }
+}

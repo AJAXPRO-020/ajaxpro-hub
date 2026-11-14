@@ -1,0 +1,528 @@
+{
+  "local_id": "afc_ajax_jan-den-boer",
+  "slug": "jan-den-boer",
+  "collected_at": "2026-10-31T18:23:52.295Z",
+  "source": "AFC-Ajax.info",
+  "source_urls": [
+    "https://www.afc-ajax.info/en/player/jan-den-boer",
+    "https://www.afc-ajax.info/en/player/jan-den-boer/statistics",
+    "https://www.afc-ajax.info/en/player/jan-den-boer/matches",
+    "https://www.afc-ajax.info/en/player/jan-den-boer/transfers-and-media"
+  ],
+  "profile": {
+    "source_url": "https://www.afc-ajax.info/en/player/jan-den-boer",
+    "name": "Jan den Boer",
+    "full_name": "Johannes Eduard den Boer",
+    "alternative_names": [],
+    "birth_date": "1902-11-20",
+    "death_date": "1944-12-17",
+    "nationality": "Netherlands",
+    "roles": [
+      "Player (Midfielder)"
+    ],
+    "ajax_club": "A.F.C. Ajax",
+    "last_known_club": "Ajax",
+    "external_links": [
+      {
+        "label": "corrections@afc-ajax.info",
+        "url": "mailto:corrections@afc-ajax.info"
+      },
+      {
+        "label": "HTML5 UP",
+        "url": "https://html5up.net"
+      }
+    ],
+    "related_player_urls": [
+      "https://www.afc-ajax.info/en/player/piet-strijbosch",
+      "https://www.afc-ajax.info/en/player/piet-van-reenen",
+      "https://www.afc-ajax.info/en/player/wim-volkers",
+      "https://www.afc-ajax.info/en/player/dolf-van-kol",
+      "https://www.afc-ajax.info/en/player/jan-van-diepenbeek",
+      "https://www.afc-ajax.info/en/player/jan-de-boer",
+      "https://www.afc-ajax.info/en/player/bob-ten-have",
+      "https://www.afc-ajax.info/en/player/wim-anderiesen-sr",
+      "https://www.afc-ajax.info/en/player/piet-van-deijck",
+      "https://www.afc-ajax.info/en/player/henk-twelker"
+    ]
+  },
+  "statistics": [
+    {
+      "caption": "Season matches per competition",
+      "headers": [
+        "season",
+        "comp.",
+        "play off",
+        "dutch cup",
+        "europa",
+        "other off.",
+        "off. mat.",
+        "friendly",
+        "total"
+      ],
+      "rows": [
+        {
+          "season": "1929-30",
+          "comp.": "4",
+          "play off": "4",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "8",
+          "friendly": "3",
+          "total": "11"
+        },
+        {
+          "season": "1930-31",
+          "comp.": "2",
+          "play off": "6",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "8",
+          "friendly": "6",
+          "total": "14"
+        },
+        {
+          "season": "Total",
+          "comp.": "6",
+          "play off": "10",
+          "dutch cup": "",
+          "europa": "",
+          "other off.": "",
+          "off. mat.": "16",
+          "friendly": "9",
+          "total": "25"
+        }
+      ],
+      "raw_row_count": 4
+    },
+    {
+      "caption": "Match Details per Period",
+      "headers": [
+        "minute",
+        "goals",
+        "assists",
+        "yellow",
+        "red",
+        "substitute out",
+        "substitute in"
+      ],
+      "rows": [
+        {
+          "minute": "0-15",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "16-30",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "30-45",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "46-60",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "61-75",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "76-90",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "91-105",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "106-120",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": ""
+        },
+        {
+          "minute": "Unknown",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        },
+        {
+          "minute": "Totaal",
+          "goals": "",
+          "assists": "",
+          "yellow": "",
+          "red": "",
+          "substitute out": "",
+          "substitute in": "1"
+        }
+      ],
+      "raw_row_count": 11
+    }
+  ],
+  "matches": [
+    {
+      "caption": "Match Details",
+      "headers": [
+        "season",
+        "date",
+        "competition",
+        "match",
+        "active",
+        "min"
+      ],
+      "rows": [
+        {
+          "season": "1929-30",
+          "date": "9/8/1929",
+          "competition": "Friendly",
+          "match": "Ajax - Barnsley 3 - 3 (2 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "9/15/1929",
+          "competition": "First Division",
+          "match": "Ajax - DFC 1 - 1 (0 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "9/22/1929",
+          "competition": "First Division",
+          "match": "Hilversum - Ajax 4 - 0 (2 - 0)",
+          "active": "Start",
+          "min": "69"
+        },
+        {
+          "season": "1929-30",
+          "date": "9/29/1929",
+          "competition": "First Division",
+          "match": "Ajax - Excelsior 3 - 0 (1 - 0)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1929-30",
+          "date": "10/6/1929",
+          "competition": "First Division",
+          "match": "HFC Haarlem - Ajax 1 - 4 (0 - 1)",
+          "active": "Injured",
+          "min": ""
+        },
+        {
+          "season": "1929-30",
+          "date": "12/1/1929",
+          "competition": "First Division",
+          "match": "DFC - Ajax 1 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "12/15/1929",
+          "competition": "First Division West I",
+          "match": "Ajax - Hilversum 6 - 1 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "12/25/1929",
+          "competition": "Friendly",
+          "match": "Ajax - Noordelijk Elftal 7 - 2 (4 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "4/21/1930",
+          "competition": "Champions Competition",
+          "match": "Go Ahead - Ajax 0 - 1 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "4/27/1930",
+          "competition": "Champions Competition",
+          "match": "Velocitas 1897 - Ajax 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "5/11/1930",
+          "competition": "Champions Competition",
+          "match": "Ajax - Go Ahead 3 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "5/25/1930",
+          "competition": "Champions Competition",
+          "match": "Blauw-Wit - Ajax 1 - 0 (0 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1929-30",
+          "date": "6/19/1930",
+          "competition": "Friendly",
+          "match": "Concordia (Zagreb) - Ajax 4 - 3",
+          "active": "Bench",
+          "min": ""
+        },
+        {
+          "season": "1929-30",
+          "date": "6/22/1930",
+          "competition": "Friendly",
+          "match": "Rapid Wien - Ajax 16 - 2 (10 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "8/12/1930",
+          "competition": "Friendly",
+          "match": "Ajax - Rapid Wien 2 - 5 (2 - 3)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "8/30/1930",
+          "competition": "Friendly",
+          "match": "Ajax - Fortuna D&uuml;sseldorf 1 - 5 (1 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "9/28/1930",
+          "competition": "First Division",
+          "match": "Stormvogels - Ajax 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "2/22/1931",
+          "competition": "First Division",
+          "match": "HBS - Ajax 1 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "3/24/1931",
+          "competition": "Friendly",
+          "match": "Haags Elftal - Ajax 2 - 3 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "5/14/1931",
+          "competition": "Champions Competition",
+          "match": "Ajax - Velocitas 1897 7 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "5/17/1931",
+          "competition": "Champions Competition",
+          "match": "Velocitas 1897 - Ajax 2 - 2 (1 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "5/25/1931",
+          "competition": "Champions Competition",
+          "match": "Go Ahead - Ajax 2 - 5 (2 - 4)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "5/30/1931",
+          "competition": "Champions Competition",
+          "match": "Ajax - Go Ahead 2 - 0 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "6/3/1931",
+          "competition": "Champions Competition",
+          "match": "Ajax - Feijenoord 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "6/7/1931",
+          "competition": "Champions Competition",
+          "match": "PSV - Ajax 2 - 5 (0 - 2)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "6/25/1931",
+          "competition": "Friendly",
+          "match": "Ajax - Wiener Sportklub 2 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "7/6/1931",
+          "competition": "Friendly",
+          "match": "BSC Young Boys - Ajax 2 - 2 (2 - 1)",
+          "active": "Start",
+          "min": "90"
+        },
+        {
+          "season": "1930-31",
+          "date": "7/11/1931",
+          "competition": "Friendly",
+          "match": "Racing Lausanne - Ajax 2 - 2 (1 - 0)",
+          "active": "Start",
+          "min": "90"
+        }
+      ],
+      "raw_row_count": 29
+    }
+  ],
+  "transfers_and_media": [
+    {
+      "caption": "Tranfers",
+      "headers": [
+        "previous club",
+        "next club",
+        "type",
+        "start",
+        "amount",
+        ""
+      ],
+      "rows": [
+        {
+          "previous club": "ZFC",
+          "next club": "Ajax",
+          "type": "Transfer",
+          "start": "7/1/1929",
+          "amount": "",
+          "column_6": "Details"
+        },
+        {
+          "previous club": "Ajax",
+          "next club": "Unknown",
+          "type": "Transfer",
+          "start": "7/1/1931",
+          "amount": "",
+          "column_6": "Details"
+        }
+      ],
+      "raw_row_count": 3
+    },
+    {
+      "caption": "Season (Soccer Player)",
+      "headers": [
+        "season",
+        "contract type",
+        "team",
+        "contract from",
+        "contract to",
+        "loan out from",
+        "loan out to",
+        "remark"
+      ],
+      "rows": [
+        {
+          "season": "1929-30",
+          "contract type": "Unknown",
+          "team": "A",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        },
+        {
+          "season": "1930-31",
+          "contract type": "Unknown",
+          "team": "Unknown",
+          "contract from": "",
+          "contract to": "",
+          "loan out from": "",
+          "loan out to": "",
+          "remark": ""
+        }
+      ],
+      "raw_row_count": 3
+    }
+  ],
+  "media": {
+    "images": [],
+    "download_policy": "Do not download AFC-hosted images without explicit permission; preserve URL and rights status."
+  },
+  "quality": {
+    "profile_pages_fetched": 4,
+    "statistics_tables": 2,
+    "match_tables": 1,
+    "transfer_tables": 2,
+    "has_statistics": true,
+    "has_match_data": true,
+    "missing_fields": [
+      "photo"
+    ]
+  }
+}

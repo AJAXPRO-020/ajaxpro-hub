@@ -1,0 +1,36 @@
+/* Hallmark · v2.0.0 · component: card video · AjaxPro identity preserved */
+/* Critique: the existing editor needs one clear action and a video result, without an extra control panel. */
+[data-card-video-workspace] .socials-panel{display:grid;gap:16px;align-content:start}
+[data-card-video-workspace] .socials-panel h2,[data-card-video-workspace] .socials-panel p{margin:0}
+[data-card-video-workspace] .socials-panel h2{text-wrap:balance;min-width:0;overflow-wrap:break-word}
+[data-card-video-workspace] [data-card-video-generate]{justify-self:start;min-height:44px}
+[data-card-video-workspace] [data-card-video-generate]:focus-visible,[data-card-video-workspace] [data-card-video-download]:focus-visible{outline:2px solid var(--socials-focus);outline-offset:3px}
+[data-card-video-workspace] [data-card-video-generate]:active:not(:disabled){transform:translateY(1px)}
+[data-card-video-workspace] [data-card-video-generate]:disabled{cursor:not-allowed}
+.card-video-preview{display:block;width:min(100%,360px);aspect-ratio:9/16;margin-inline:auto;background:var(--socials-ink)}
+.card-video-preview[hidden]{display:none}
+.card-video-stage{position:relative;width:min(100%,360px);aspect-ratio:9/16;margin-inline:auto;background:var(--socials-ink);overflow:hidden}
+.card-video-stage .card-video-preview{width:100%}
+.card-video-poster{display:block;width:100%;height:100%;object-fit:contain}
+.card-video-poster[hidden],.card-video-progress[hidden]{display:none}
+.card-video-progress{position:absolute;inset:auto 0 0;display:grid;gap:8px;padding:16px 20px 20px;background:var(--socials-ink);color:var(--socials-paper)}
+.card-video-progress__message{display:flex;align-items:center;gap:12px;font-weight:750}
+.card-video-progress__message::before{content:"";width:18px;height:18px;box-sizing:border-box;border:2px solid var(--socials-line-strong);border-top-color:var(--socials-focus);border-radius:50%;animation:card-video-spin .9s linear infinite}
+.card-video-progress__elapsed{font-variant-numeric:tabular-nums;color:var(--socials-muted)}
+@keyframes card-video-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.card-video-progress__message::before{animation:none}}
+[data-card-video-download][hidden]{display:none}
+.card-video-list{display:grid;gap:4px;margin:0;padding:0;list-style:none}
+.card-video-item{display:flex;align-items:center;gap:8px;min-height:44px;padding:4px 8px;border-radius:8px;color:var(--socials-paper)}
+.card-video-item[draggable="true"]{cursor:grab}
+.card-video-item[draggable="true"]:active{cursor:grabbing}
+.card-video-item label{display:flex;align-items:center;gap:8px;flex:1;min-width:0;cursor:pointer}
+.card-video-item label span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card-video-item input{accent-color:var(--socials-focus)}
+.card-video-item small{color:var(--socials-muted)}
+.card-video-item__order{display:flex;gap:2px}
+.card-video-item__order button{width:30px;height:30px;padding:0;border:0;border-radius:6px;background:transparent;color:var(--socials-muted);font:inherit;cursor:pointer}
+.card-video-item__order button:hover:not(:disabled){background:var(--socials-line);color:var(--socials-paper)}
+.card-video-item__order button:disabled{background:transparent;color:var(--socials-line-strong);cursor:default}
+.card-video-item__order button:focus-visible,.card-video-item input:focus-visible{outline:2px solid var(--socials-focus);outline-offset:2px}
+.card-video-item--end{padding-left:32px;color:var(--socials-muted)}

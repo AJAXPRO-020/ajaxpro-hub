@@ -1,0 +1,356 @@
+{
+  "captured_at": "2026-10-31",
+  "mode": "read-only",
+  "fixtures": [
+    {
+      "fixture_key": "2026-08-06T18:00:00.000Z-ajax-shelbourne",
+      "home_team": "Ajax",
+      "away_team": "Shelbourne FC",
+      "competition": "UEFA Conference League",
+      "kickoff_at": "2026-08-06T18:00:00.000Z",
+      "goals_home": 3,
+      "goals_away": 1,
+      "provider_status": "FT"
+    },
+    {
+      "fixture_key": "2026-08-09T12:30:00.000Z-peczwolle-ajax",
+      "home_team": "PEC Zwolle",
+      "away_team": "Ajax",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2026-08-09T12:30:00.000Z",
+      "goals_home": 0,
+      "goals_away": 2,
+      "provider_status": "FT"
+    },
+    {
+      "fixture_key": "2026-08-13T18:45:00.000Z-shelbourne-ajax",
+      "home_team": "Shelbourne FC",
+      "away_team": "Ajax",
+      "competition": "UEFA Conference League",
+      "kickoff_at": "2026-08-13T18:45:00.000Z",
+      "goals_home": 2,
+      "goals_away": 2,
+      "provider_status": "FT"
+    },
+    {
+      "fixture_key": "2026-08-16T14:45:00.000Z-ajax-heerenveen",
+      "home_team": "Ajax",
+      "away_team": "sc Heerenveen",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2026-08-16T14:45:00.000Z",
+      "goals_home": 2,
+      "goals_away": 2,
+      "provider_status": "FT"
+    },
+    {
+      "fixture_key": "2026-08-20T18:15:00.000Z-sion-ajax",
+      "home_team": "FC Sion",
+      "away_team": "Ajax",
+      "competition": "UEFA Conference League",
+      "kickoff_at": "2026-08-20T18:15:00.000Z",
+      "goals_home": 2,
+      "goals_away": 4,
+      "provider_status": "FT"
+    },
+    {
+      "fixture_key": "2026-08-27T18:00:00.000Z-ajax-sion",
+      "home_team": "Ajax",
+      "away_team": "FC Sion",
+      "competition": "UEFA Conference League",
+      "kickoff_at": "2026-08-27T18:00:00.000Z",
+      "goals_home": 5,
+      "goals_away": 3,
+      "provider_status": "FT"
+    },
+    {
+      "fixture_key": "2026-08-30T14:45:00.000Z-telstar-ajax",
+      "home_team": "Telstar",
+      "away_team": "Ajax",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2026-08-30T14:45:00.000Z",
+      "goals_home": 0,
+      "goals_away": 4,
+      "provider_status": "FT"
+    },
+    {
+      "fixture_key": "2026-09-05T18:00:00.000Z-ajax-psv",
+      "home_team": "Ajax",
+      "away_team": "PSV",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2026-09-05T18:00:00.000Z",
+      "goals_home": 1,
+      "goals_away": 3,
+      "provider_status": "FT"
+    },
+    {
+      "fixture_key": "2026-09-12T18:00:00.000Z-fortunasittard-ajax",
+      "home_team": "Fortuna Sittard",
+      "away_team": "Ajax",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2026-09-12T18:00:00.000Z",
+      "goals_home": 1,
+      "goals_away": 5,
+      "provider_status": "FT"
+    },
+    {
+      "fixture_key": "2026-09-15T18:00:00.000Z-ajax-willemii",
+      "home_team": "Ajax",
+      "away_team": "Willem II",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2026-09-15T18:00:00.000Z",
+      "goals_home": 5,
+      "goals_away": 1,
+      "provider_status": "FT"
+    },
+    {
+      "fixture_key": "2026-09-19T18:00:00.000Z-ajax-excelsior",
+      "home_team": "Ajax",
+      "away_team": "Excelsior",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2026-09-19T18:00:00.000Z",
+      "goals_home": 2,
+      "goals_away": 2,
+      "provider_status": "FT"
+    },
+    {
+      "fixture_key": "2026-10-10T19:00:00.000Z-ajax-nec",
+      "home_team": "Ajax",
+      "away_team": "NEC",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2026-10-10T19:00:00.000Z",
+      "goals_home": 1,
+      "goals_away": 1,
+      "provider_status": "FT"
+    },
+    {
+      "fixture_key": "2026-10-15T16:45:00.000Z-hajduk-ajax",
+      "home_team": "Hajduk",
+      "away_team": "Ajax",
+      "competition": "UEFA Conference League",
+      "kickoff_at": "2026-10-15T16:45:00.000Z",
+      "goals_home": null,
+      "goals_away": null,
+      "provider_status": null
+    },
+    {
+      "fixture_key": "2026-10-15T16:45:00.000Z-hajduksplit-ajax",
+      "home_team": "Hajduk Split",
+      "away_team": "Ajax",
+      "competition": "UEFA Conference League",
+      "kickoff_at": "2026-10-15T16:45:00.000Z",
+      "goals_home": 2,
+      "goals_away": 1,
+      "provider_status": "FT"
+    },
+    {
+      "fixture_key": "2026-10-18T14:45:00.000Z-groningen-ajax",
+      "home_team": "FC Groningen",
+      "away_team": "Ajax",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2026-10-18T14:45:00.000Z",
+      "goals_home": 2,
+      "goals_away": 5,
+      "provider_status": "FT"
+    },
+    {
+      "fixture_key": "2026-10-22T19:00:00.000Z-ajax-atalanta",
+      "home_team": "Ajax",
+      "away_team": "Atalanta",
+      "competition": "UEFA Conference League",
+      "kickoff_at": "2026-10-22T19:00:00.000Z",
+      "goals_home": 2,
+      "goals_away": 0,
+      "provider_status": "FT"
+    },
+    {
+      "fixture_key": "2026-10-25T15:45:00.000Z-sparta-ajax",
+      "home_team": "Sparta",
+      "away_team": "Ajax",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2026-10-25T15:45:00.000Z",
+      "goals_home": 1,
+      "goals_away": 2,
+      "provider_status": "FT"
+    },
+    {
+      "fixture_key": "2026-10-31T20:00:00.000Z-ajax-az",
+      "home_team": "Ajax",
+      "away_team": "AZ",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2026-10-31T20:00:00.000Z",
+      "goals_home": null,
+      "goals_away": null,
+      "provider_status": null
+    },
+    {
+      "fixture_key": "2026-11-05T17:45:00.000Z-midtjylland-ajax",
+      "home_team": "FC Midtjylland",
+      "away_team": "Ajax",
+      "competition": "UEFA Conference League",
+      "kickoff_at": "2026-11-05T17:45:00.000Z",
+      "goals_home": null,
+      "goals_away": null,
+      "provider_status": null
+    },
+    {
+      "fixture_key": "2026-11-08T13:30:00.000Z-twente-ajax",
+      "home_team": "FC Twente",
+      "away_team": "Ajax",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2026-11-08T13:30:00.000Z",
+      "goals_home": null,
+      "goals_away": null,
+      "provider_status": null
+    },
+    {
+      "fixture_key": "2026-11-22T13:30:00.000Z-ajax-adodenhaag",
+      "home_team": "Ajax",
+      "away_team": "ADO Den Haag",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2026-11-22T13:30:00.000Z",
+      "goals_home": null,
+      "goals_away": null,
+      "provider_status": null
+    },
+    {
+      "fixture_key": "2026-11-26T17:45:00.000Z-ajax-thun",
+      "home_team": "Ajax",
+      "away_team": "FC Thun",
+      "competition": "UEFA Conference League",
+      "kickoff_at": "2026-11-26T17:45:00.000Z",
+      "goals_home": null,
+      "goals_away": null,
+      "provider_status": null
+    },
+    {
+      "fixture_key": "2026-11-29T13:30:00.000Z-feyenoord-ajax",
+      "home_team": "Feyenoord",
+      "away_team": "Ajax",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2026-11-29T13:30:00.000Z",
+      "goals_home": null,
+      "goals_away": null,
+      "provider_status": null
+    },
+    {
+      "fixture_key": "2026-12-06T13:30:00.000Z-ajax-utrecht",
+      "home_team": "Ajax",
+      "away_team": "FC Utrecht",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2026-12-06T13:30:00.000Z",
+      "goals_home": null,
+      "goals_away": null,
+      "provider_status": null
+    },
+    {
+      "fixture_key": "2026-12-10T20:00:00.000Z-stvv-ajax",
+      "home_team": "STVV",
+      "away_team": "Ajax",
+      "competition": "UEFA Conference League",
+      "kickoff_at": "2026-12-10T20:00:00.000Z",
+      "goals_home": null,
+      "goals_away": null,
+      "provider_status": null
+    },
+    {
+      "fixture_key": "2026-12-10T20:00:00.000Z-sinttruidensevv-ajax",
+      "home_team": "Sint Truidense V.V.",
+      "away_team": "Ajax",
+      "competition": "UEFA Conference League",
+      "kickoff_at": "2026-12-10T20:00:00.000Z",
+      "goals_home": null,
+      "goals_away": null,
+      "provider_status": null
+    },
+    {
+      "fixture_key": "2026-12-13T19:00:00.000Z-ajax-cambuur",
+      "home_team": "Ajax",
+      "away_team": "SC Cambuur",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2026-12-13T19:00:00.000Z",
+      "goals_home": null,
+      "goals_away": null,
+      "provider_status": null
+    },
+    {
+      "fixture_key": "2026-12-17T20:00:00.000Z-ajax-getafe",
+      "home_team": "Ajax",
+      "away_team": "Getafe",
+      "competition": "UEFA Conference League",
+      "kickoff_at": "2026-12-17T20:00:00.000Z",
+      "goals_home": null,
+      "goals_away": null,
+      "provider_status": null
+    },
+    {
+      "fixture_key": "2026-12-20T15:45:00.000Z-goaheadeagles-ajax",
+      "home_team": "Go Ahead Eagles",
+      "away_team": "Ajax",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2026-12-20T15:45:00.000Z",
+      "goals_home": null,
+      "goals_away": null,
+      "provider_status": null
+    },
+    {
+      "fixture_key": "2027-01-09T19:00:00.000Z-willemii-ajax",
+      "home_team": "Willem II",
+      "away_team": "Ajax",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2027-01-09T19:00:00.000Z",
+      "goals_home": null,
+      "goals_away": null,
+      "provider_status": null
+    },
+    {
+      "fixture_key": "2027-01-17T13:30:00.000Z-ajax-groningen",
+      "home_team": "Ajax",
+      "away_team": "FC Groningen",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2027-01-17T13:30:00.000Z",
+      "goals_home": null,
+      "goals_away": null,
+      "provider_status": null
+    },
+    {
+      "fixture_key": "2027-01-23T15:30:00.000Z-ajax-telstar",
+      "home_team": "Ajax",
+      "away_team": "Telstar",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2027-01-23T15:30:00.000Z",
+      "goals_home": null,
+      "goals_away": null,
+      "provider_status": null
+    },
+    {
+      "fixture_key": "2027-01-31T11:15:00.000Z-heerenveen-ajax",
+      "home_team": "sc Heerenveen",
+      "away_team": "Ajax",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2027-01-31T11:15:00.000Z",
+      "goals_home": null,
+      "goals_away": null,
+      "provider_status": null
+    },
+    {
+      "fixture_key": "2027-05-16T12:30:00.000Z-ajax-sparta",
+      "home_team": "Ajax",
+      "away_team": "Sparta",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2027-05-16T12:30:00.000Z",
+      "goals_home": null,
+      "goals_away": null,
+      "provider_status": null
+    },
+    {
+      "fixture_key": "2027-05-23T12:30:00.000Z-cambuur-ajax",
+      "home_team": "SC Cambuur",
+      "away_team": "Ajax",
+      "competition": "VriendenLoterij Eredivisie",
+      "kickoff_at": "2027-05-23T12:30:00.000Z",
+      "goals_home": null,
+      "goals_away": null,
+      "provider_status": null
+    }
+  ]
+}
