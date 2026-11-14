@@ -1,5 +1,6 @@
 import { publishDiscord } from './discord-publisher';
 import { createMotmVisualData } from './motm-visual';
+import { Resvg } from '@resvg/resvg-js';
 import type { Candidate } from './press-conferences';
 
 const localDate=(date: Date)=>new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Amsterdam',year:'numeric',month:'2-digit',day:'2-digit'}).format(date);
@@ -19,10 +20,11 @@ export const renderMotmSvg = async (data:{matchTitle:string;firstName:string;las
   const [template,player]=await Promise.all([dataUri('/assets/motm/MOTM-4-Blank.png','image/png'),dataUri(data.playerImageUrl,'image/png')]);
   return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1350" height="1080" viewBox="0 0 1350 1080"><image href="${template}" width="1350" height="1080"/><image href="${player}" x="610" y="30" width="700" height="1050" preserveAspectRatio="xMidYMid meet"/><g fill="#fff" font-family="Arial,sans-serif" font-weight="700"><text x="70" y="120" font-size="48">${esc(data.matchTitle)}</text><text x="70" y="900" font-size="78">${esc(data.firstName)} ${esc(data.lastName)}</text><text x="70" y="990" font-size="54">${data.percentage}% · #${data.shirtNumber}</text></g></svg>`);
 };
+export const renderMotmPng = async (data:Parameters<typeof renderMotmSvg>[0]) => new Resvg((await renderMotmSvg(data)).toString('utf8'), { fitTo: { mode: 'original' } }).render().asPng();
 
 export const publishMotmWinner = async (match:any, winner:any, player:any) => {
   const visual=createMotmVisualData({status:'closed',slug:match.slug,opponent:match.opponent,homeOrAway:match.home_or_away,shirtNumber:player?.shirt_number_snapshot??null,winner});
   if (!visual) return {status:'skipped' as const};
-  const attachment=await renderMotmSvg(visual);
-  return publishDiscord({idempotencyKey:`motm-winner:${match.id}:closed`,sourceType:'motm-winner',sourceId:String(match.id),text:`Definitieve Man of the Match: ${match.home_or_away==='home'?'Ajax':' '+match.opponent} - ${match.home_or_away==='home'?match.opponent:'Ajax'}\nWinnaar: ${winner.name_snapshot}`,attachment:{data:attachment,filename:visual.filename.replace(/\.png$/,'.svg'),mimeType:'image/svg+xml'},actorDiscordUserId:'system:motm'});
+  const attachment=await renderMotmPng(visual);
+  return publishDiscord({idempotencyKey:`motm-winner:${match.id}:closed`,sourceType:'motm-winner',sourceId:String(match.id),text:`Definitieve Man of the Match: ${match.home_or_away==='home'?'Ajax':' '+match.opponent} - ${match.home_or_away==='home'?match.opponent:'Ajax'}\nWinnaar: ${winner.name_snapshot}`,attachment:{data:attachment,filename:visual.filename,mimeType:'image/png'},actorDiscordUserId:'system:motm'});
 };
