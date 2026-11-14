@@ -71,7 +71,7 @@ const videoWorkspace=()=>`<div class="socials-workspace socials-video-flow" data
   </section>
   <aside class="socials-preview-panel socials-video-preview-panel" data-video-preview-panel hidden>
     <div class="socials-video-storyboard" data-video-storyboard></div>
-    <div class="socials-video-result" data-video-result hidden><a class="button socials-download" data-video-download>Download MP4</a><video class="socials-video-preview" controls playsinline preload="metadata" aria-label="Gegenereerde wedstrijdvideo"></video></div>
+    <div class="socials-video-result" data-video-result hidden><a class="button socials-download" data-video-download>Download MP4</a><button class="button secondary socials-publish-action" type="button" data-socials-publish-video disabled>Plaats in Discord</button><video class="socials-video-preview" controls playsinline preload="metadata" aria-label="Gegenereerde wedstrijdvideo"></video></div>
   </aside>
   <dialog class="socials-storyboard-dialog" data-video-dialog><button type="button" data-video-dialog-close aria-label="Sluit vergrote scène">Sluiten ×</button><img alt="Vergrote videoscène"></dialog>
 </div>`;
@@ -116,6 +116,7 @@ export const renderSocials = async (session:Session,fixtureLoader=loadSocialMatc
     </section>
     ${previewControls()}
     ${statsWorkspace(fixtures,matchStatus)}${outblinkerWorkspace(fixtures,matchStatus)}${topThreeWorkspace(fixtures,matchStatus)}${quoteWorkspace(!fixtures.length)}${videoWorkspace()}${vandaagWorkspace()}
+    <dialog class="socials-publish-dialog" data-socials-publish-dialog aria-labelledby="socials-publish-title"><form method="post" action="/api/club-tools?view=socials-publish" enctype="multipart/form-data" data-socials-publish-form><h2 id="socials-publish-title">Plaats in Discord</h2><p data-socials-publish-file></p><label for="socials-publish-text">Begeleidende tekst <span>(optioneel)</span></label><textarea id="socials-publish-text" name="text" maxlength="2000" rows="4" placeholder="Schrijf eventueel een korte begeleidende tekst"></textarea><p class="socials-publish-status" data-socials-publish-status role="status" aria-live="polite"></p><div class="socials-publish-actions"><button class="button secondary" type="button" data-socials-publish-cancel>Annuleren</button><button class="button" type="submit" data-socials-publish-submit>Plaats in Discord</button></div></form></dialog>
     <template data-socials-match-context>${serializedFixtures(fixtures)}</template>
     <template data-socials-stats-availability>${esc(JSON.stringify([...available]))}</template>
     <template data-socials-stats-stored>${esc(JSON.stringify([...stored]))}</template>

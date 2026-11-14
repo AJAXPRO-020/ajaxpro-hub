@@ -13,6 +13,10 @@ import { loadSocialMatchdayFixtures } from "../lib/socials-match-context";
 import { loadSystemStatus, systemStatusMarkup } from "../lib/system-status";
 import { contentHubPost } from "../api-impl/content-hub/index";
 import { GET as pressGET, POST as pressPOST } from "../lib/press-conference-http";
+import { publishDiscord } from "../lib/discord-publisher";
+import { videoService } from "../lib/socials-video";
+
+const MAX_SOCIALS_FUNCTION_UPLOAD = 3.5 * 1024 * 1024;
 
 const json=(body:unknown,status=200)=>new Response(JSON.stringify(body),{status,headers:{"Content-Type":"application/json; charset=UTF-8","Cache-Control":"private, no-store","X-Content-Type-Options":"nosniff"}});
 export async function GET(request:Request){
@@ -74,6 +78,37 @@ export async function GET(request:Request){
 
 export async function POST(request:Request){
   const view=new URL(request.url).searchParams.get("view");
+  if(view==="socials-publish"){
+    const session=await getSessionWithPermission(request,permissions.toolsSocials);
+    if(!session)return json({error:"Geen toegang tot publiceren."},403);
+    const url=new URL(request.url),origin=request.headers.get("origin");
+    if(origin&&origin!==url.origin||request.headers.get("sec-fetch-site")==="cross-site")return json({error:"Ongeldige herkomst."},403);
+    const form=await request.formData(),kind=String(form.get("kind")??""),text=String(form.get("text")??"").trim();
+    try{
+      if(kind==="video"){
+        const jobId=String(form.get("jobId")??"");
+        if(!/^[0-9a-f-]{36}$/i.test(jobId))return json({error:"Ongeldige video."},400);
+        const job=await videoService().media(jobId);
+        const response=await fetch(job.output_url!,{redirect:"error",signal:AbortSignal.timeout(55_000)});
+        if(!response.ok)return json({error:"De video kon niet worden opgehaald."},502);
+        const length=Number(response.headers.get("content-length"));
+        if(Number.isFinite(length)&&length>10*1024*1024)return json({error:"Deze video is groter dan de Discord-uploadlimiet."},413);
+        const data=new Uint8Array(await response.arrayBuffer());
+        if(data.byteLength>10*1024*1024)return json({error:"Deze video is groter dan de Discord-uploadlimiet."},413);
+        return json(await publishDiscord({idempotencyKey:`socials:video:${jobId}`,sourceType:"socials-video",sourceId:jobId,text,actorDiscordUserId:session.userId,attachment:{data,filename:`ajaxpro-socials-${jobId}.mp4`,mimeType:"video/mp4"}}));
+      }
+      if(kind!=="image")return json({error:"Ongeldig publicatietype."},400);
+      const file=form.get("file");
+      if(!(file instanceof File)||file.size>MAX_SOCIALS_FUNCTION_UPLOAD)return json({error:"Deze afbeelding is te groot voor de publicatiefunctie."},413);
+      const sourceId=String(form.get("sourceId")??"").trim(),idempotencyKey=String(form.get("idempotencyKey")??"").trim();
+      if(!sourceId||!idempotencyKey)return json({error:"Publicatiegegevens ontbreken."},400);
+      return json(await publishDiscord({idempotencyKey,sourceType:"socials-image",sourceId,text,actorDiscordUserId:session.userId,attachment:{data:new Uint8Array(await file.arrayBuffer()),filename:file.name,mimeType:file.type}}));
+    }catch(error){
+      if(error instanceof RangeError||error instanceof TypeError)return json({error:error.message},400);
+      console.error("Socials Discord publication failed",error instanceof Error?error.name:"unknown");
+      return json({error:error instanceof Error?error.message:"Publiceren naar Discord mislukt."},503);
+    }
+  }
   if(view?.startsWith("content-hub")){
     const session=await getSessionWithPermission(request,permissions.toolsSocials);
     if(!session)return new Response("Forbidden",{status:403});
