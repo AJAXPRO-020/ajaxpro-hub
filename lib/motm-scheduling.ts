@@ -3,6 +3,13 @@ import { statusAt, type SchedulableMatch } from "./motm-rules";
 import { resultsFor } from "./motm-db";
 import { publishMotmWinner } from "./automatic-discord-publications";
 
+export const publishClosedMotmMatch = async (match: any) => {
+  const [winner] = (await resultsFor(match.id)).filter(row => row.rank === 1);
+  if (!winner) return { status: 'skipped' as const };
+  const [player] = await db()`SELECT shirt_number_snapshot FROM motm_match_players WHERE match_id=${match.id} AND player_id=${winner.player_id}`;
+  return publishMotmWinner(match, winner, player);
+};
+
 export const synchronizeMatch = async <T extends SchedulableMatch & { id: string }>(match: T, now = new Date()): Promise<T> => {
   if ((match as T & { deleted_at?: Date | string | null }).deleted_at) return match;
   const status = statusAt(match, now);
@@ -19,11 +26,7 @@ export const synchronizeMatch = async <T extends SchedulableMatch & { id: string
   const result=(updated ?? { ...match, status }) as T;
   if (updated && status === 'closed') {
     try {
-      const [winner]= (await resultsFor(match.id)).filter(row=>row.rank===1);
-      if (winner) {
-        const [player]=await db()`SELECT shirt_number_snapshot FROM motm_match_players WHERE match_id=${match.id} AND player_id=${winner.player_id}`;
-        await publishMotmWinner(result,winner,player);
-      }
+      await publishClosedMotmMatch(result);
     } catch (error) { console.error('MOTM-winnaar publiceren mislukt', { matchId: match.id, error }); }
   }
   return result;
