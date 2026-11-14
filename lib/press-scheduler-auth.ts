@@ -18,10 +18,15 @@ export const verifyPressSchedulerRequest = (
   if (!/^\d{10}$/.test(timestamp) || !/^[a-f0-9]{64}$/.test(signature)) return reject('invalid headers');
   if (Math.abs(nowSeconds - Number(timestamp)) > maxAgeSeconds) return reject('expired timestamp');
   const url = new URL(request.url);
-  const direct = url.pathname === '/api/press-conferences' && url.search === '?action=check';
-  const rewritten = url.pathname === '/api/club-tools' && url.searchParams.get('view') === 'press-conferences'
-    && url.searchParams.get('action') === 'check' && [...url.searchParams.keys()].length === 2;
-  if (request.method !== 'GET' || (!direct && !rewritten)) return reject('unexpected route');
+  const keys = [...url.searchParams.keys()];
+  const only = (key: string, value: string) => {
+    const values = url.searchParams.getAll(key);
+    return values.length > 0 && values.every(entry => entry === value);
+  };
+  const direct = url.pathname === '/api/press-conferences' && keys.every(key => key === 'action') && only('action','check');
+  const rewritten = url.pathname === '/api/club-tools' && keys.every(key => key === 'action' || key === 'view')
+    && only('view','press-conferences') && only('action','check');
+  if (request.method !== 'GET' || (!direct && !rewritten)) return reject(`unexpected route (${url.pathname}; action=${url.searchParams.getAll('action').length}; view=${url.searchParams.getAll('view').length})`);
   const expected = createHmac('sha256', secret).update(`${timestamp}\n${signedTarget}`).digest();
   return timingSafeEqual(expected, Buffer.from(signature, 'hex')) || reject('signature mismatch');
 };
