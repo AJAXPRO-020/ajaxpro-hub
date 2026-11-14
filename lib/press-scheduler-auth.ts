@@ -23,7 +23,8 @@ export const verifyPressSchedulerRequest = (
     const values = url.searchParams.getAll(key);
     return values.length > 0 && values.every(entry => entry === value);
   };
-  const direct = url.pathname === '/api/press-conferences' && keys.every(key => key === 'action') && only('action','check');
+  const direct = url.pathname === '/api/press-conferences' && keys.every(key => key === 'action' || key === 'view')
+    && only('action','check') && (!url.searchParams.has('view') || only('view','press-conferences'));
   const rewritten = url.pathname === '/api/club-tools' && keys.every(key => key === 'action' || key === 'view')
     && only('view','press-conferences') && only('action','check');
   if (request.method !== 'GET' || (!direct && !rewritten)) return reject(`unexpected route (${url.pathname}; action=${url.searchParams.getAll('action').length}; view=${url.searchParams.getAll('view').length})`);
