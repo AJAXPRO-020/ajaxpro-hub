@@ -1,6 +1,7 @@
 import { allowedByRobots, sitemapLinks, dueLocalHour, mergeCandidates, parseAjaxArticle, type Candidate, type Fixture } from './press-conferences';
 import { normalizeTeamName } from './matchday-live';
 import { latestCheck, loadFixtures, loadMoments, logCheck, markSourceProcessed, productionQuery, saveCandidates, sourceChanged, type Query } from './press-conference-store';
+import { publishPressConference } from './automatic-discord-publications';
 
 const UA = 'AjaxPro/1.0 (+https://ajaxpro.fans/)';
 const get = async (url: string) => {
@@ -79,7 +80,13 @@ export const runPressConferenceCheck = async (force = false, now = new Date(), q
   candidates.push(...await youtube);
   try {
     const merged = mergeCandidates(candidates);
-    await saveCandidates(query,merged,now);
+    const publishable=await saveCandidates(query,merged,now);
+    for (const candidate of publishable) {
+      const fixture=fixtures.find(row=>row.fixture_key===candidate.fixtureKey);
+      if (!fixture) continue;
+      try { await publishPressConference(candidate,fixture,now); }
+      catch (error) { await logCheck(query,'discord-publication','error',String(error).slice(0,300)); }
+    }
     return { status: 'ok', count: merged.length };
   } catch (error) {
     await logCheck(query,'storage','error',String(error).slice(0,300));

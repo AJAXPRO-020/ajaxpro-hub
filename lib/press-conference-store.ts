@@ -25,8 +25,11 @@ export const markSourceProcessed = async (query: Query, url: string, lastmod: Da
   'INSERT INTO press_conference_source_cache(source_url,lastmod) VALUES($1,$2) ON CONFLICT(source_url) DO UPDATE SET lastmod=excluded.lastmod,processed_at=now()',
   [url,lastmod.toISOString()],
 );
-export const saveCandidates = async (query: Query, candidates: Candidate[], now: Date) => {
-  for (const c of candidates) await query(`INSERT INTO press_conferences(fixture_key,kind,event_date,starts_at,status,source_url,watch_links,source_priority)
+export const saveCandidates = async (query: Query, candidates: Candidate[], now: Date): Promise<Candidate[]> => {
+  const publishable: Candidate[] = [];
+  for (const c of candidates) {
+    const existing=(await query('SELECT status FROM press_conferences WHERE fixture_key=$1 AND kind=$2 AND event_date=$3',[c.fixtureKey,c.kind,c.eventDate])).rows[0];
+    await query(`INSERT INTO press_conferences(fixture_key,kind,event_date,starts_at,status,source_url,watch_links,source_priority)
     VALUES($1,$2,$3,$4,$5,$6,$7::jsonb,$8)
     ON CONFLICT(fixture_key,kind,event_date) DO UPDATE SET
     starts_at=CASE WHEN excluded.source_priority>=press_conferences.source_priority THEN COALESCE(excluded.starts_at,press_conferences.starts_at) ELSE COALESCE(press_conferences.starts_at,excluded.starts_at) END,
@@ -39,7 +42,10 @@ export const saveCandidates = async (query: Query, candidates: Candidate[], now:
        OR (excluded.status='live' AND press_conferences.status<>'live')
        OR (excluded.status='ended' AND press_conferences.status='announced')`,
     [c.fixtureKey,c.kind,c.eventDate,c.startsAt?.toISOString()??null,c.status,c.sourceUrl,JSON.stringify(c.watchLinks),c.priority]);
+    if (c.status !== 'ended' && (!existing || existing.status === 'unconfirmed')) publishable.push(c);
+  }
   await query("UPDATE press_conferences SET status='ended',updated_at=now() WHERE status<>'ended' AND (event_date<CURRENT_DATE OR (starts_at IS NOT NULL AND starts_at<now()-interval '4 hours'))");
+  return publishable;
 };
 export const listCurrent = async (query: Query) => {
   const [items, checks] = await Promise.all([
