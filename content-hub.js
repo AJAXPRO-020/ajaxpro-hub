@@ -21,6 +21,12 @@ const navigateContentHub = async (href, push = true) => {
 const bindContentHub = () => {
   const root = contentRoot();
   if (!root) return;
+  root.querySelectorAll(".content-calendar__day.is-selected").forEach((day) => day.setAttribute("aria-current", "date"));
+  root.querySelectorAll("dialog").forEach((dialog) => {
+    const heading = dialog.querySelector("h2");
+    if (heading && !heading.id) heading.id = `${dialog.id}-heading`;
+    if (heading && !dialog.hasAttribute("aria-labelledby")) dialog.setAttribute("aria-labelledby", heading.id);
+  });
   const actionIcons = [
     ["a[href*='content-hub-download']", "download"],
     ["[data-open-content-preview]", "play"],
@@ -92,6 +98,7 @@ const bindContentHub = () => {
     const type = form.querySelector("[name=type]")?.value;
     const message = form.querySelector(".content-form__hint");
     const submit = form.querySelector("button[type=submit]");
+    if (message) { message.setAttribute("aria-live", "polite"); message.setAttribute("role", "status"); }
     const setStatus = (text) => { if (message) message.textContent = text; };
     const valid = type === "video" ? ["video/mp4", "video/quicktime"].includes(file?.type) && file.size <= 100 * 1024 * 1024 : ["image/jpeg", "image/png", "image/webp"].includes(file?.type) && file.size <= 15 * 1024 * 1024;
     if (!file || !valid) { setStatus("Kies een geldig bestand binnen de limiet."); return; }
