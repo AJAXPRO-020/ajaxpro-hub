@@ -1,4 +1,4 @@
-import { allowedByRobots, sitemapLinks, dueLocalHour, mergeCandidates, parseAjaxArticle, type Candidate, type Fixture } from './press-conferences';
+import { allowedByRobots, sitemapLinks, dueLocalHour, daytimeLocalHour, mergeCandidates, parseAjaxArticle, type Candidate, type Fixture } from './press-conferences';
 import { normalizeTeamName } from './matchday-live';
 import { latestCheck, loadFixtures, loadMoments, logCheck, markSourceProcessed, productionQuery, saveCandidates, sourceChanged, type Query } from './press-conference-store';
 import { publishPressConference } from './automatic-discord-publications';
@@ -46,10 +46,11 @@ const youtubeCandidates = async (fixtures: Fixture[], now: Date, query: Query): 
   return output;
 };
 
-export const runPressConferenceCheck = async (force = false, now = new Date(), query: Query = productionQuery) => {
+export const runPressConferenceCheck = async (force = false, now = new Date(), query: Query = productionQuery, hourly = false) => {
+  if (!force && hourly && !daytimeLocalHour(now)) return { status: 'not-due', count: 0 };
   const fixtures = await loadFixtures(query,now);
   const moments = await loadMoments(query,now);
-  if (!force && !dueLocalHour(now, fixtures, moments)) return { status: 'not-due', count: 0 };
+  if (!force && !hourly && !dueLocalHour(now, fixtures, moments)) return { status: 'not-due', count: 0 };
   const recent = await latestCheck(query,'ajax.nl');
   if (!force && recent && now.getTime() - new Date(recent).getTime() < 45*60000) return { status: 'recent', count: 0 };
   const youtube = youtubeCandidates(fixtures,now,query);
@@ -59,10 +60,10 @@ export const runPressConferenceCheck = async (force = false, now = new Date(), q
     if (!allowedByRobots(robots, '/artikelen/') || !allowedByRobots(robots, '/sitemap')) await logCheck(query,'ajax.nl','skipped','robots.txt blokkeert de sitemap of artikelen');
     else {
       const sitemap = await get('https://www.ajax.nl/sitemap');
-      const links = sitemapLinks(sitemap,new Date(now.getTime()-56*86400000));
+      const links = sitemapLinks(sitemap,new Date(now.getTime()-56*86400000),now);
       let processed=0;
-      for (let index=0; index<links.length; index+=3) {
-        const group=links.slice(index,index+3);
+      for (let index=0; index<links.length; index+=4) {
+        const group=links.slice(index,index+4);
         const changed=await Promise.all(group.map(async item=>({item,fetch:await sourceChanged(query,item.url,item.changedAt)})));
         const results=await Promise.allSettled(changed.filter(entry=>entry.fetch).map(async ({item})=>({item,article:await get(item.url)})));
         for (const result of results) {

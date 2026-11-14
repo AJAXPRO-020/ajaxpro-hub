@@ -10,10 +10,7 @@ export async function GET(request: Request) {
   const url = new URL(request.url);
   if (url.searchParams.get('action') === 'check') {
     if (!verifyPressSchedulerRequest(request)) return json({ error: 'Unauthorized' }, 401);
-    // The authenticated hourly scheduler is the early-warning path. It must
-    // not wait for the editorial hour windows; source caching and the recent
-    // check guard still prevent unnecessary repeat work.
-    return json(await runPressConferenceCheck(true));
+    return json(await runPressConferenceCheck(false, new Date(), productionQuery, true));
   }
   if (url.searchParams.get('action') === 'staff') return json({ allowed: Boolean(await getSessionWithPermission(request, permissions.staffAccess)) });
   try {

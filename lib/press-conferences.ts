@@ -8,11 +8,15 @@ const dateFromDutch = (body: string) => {
   const m = body.match(/Datum:\s*(\d{2})\.(\d{2})\.(\d{4})/i);
   return m ? `${m[3]}-${m[2]}-${m[1]}` : null;
 };
-export const sitemapLinks = (xml: string, since: Date) => [...xml.matchAll(/<url>\s*<loc>(https:\/\/www\.ajax\.nl\/(?:artikelen|liveblogs)\/[^<]+)<\/loc>[\s\S]*?<lastmod>([^<]+)<\/lastmod>[\s\S]*?<\/url>/gi)]
-  .map(match => ({ url: match[1], changedAt: new Date(match[2]) }))
-  .filter(item => item.changedAt >= since && /persconferentie|persco|livestream/i.test(item.url) && !/kids-persco/i.test(item.url))
-  .sort((a,b) => b.changedAt.getTime()-a.changedAt.getTime())
-  .slice(0,12);
+export const sitemapLinks = (xml: string, since: Date, now = new Date()) => {
+  const entries = [...xml.matchAll(/<url>\s*<loc>(https:\/\/www\.ajax\.nl\/(?:artikelen|liveblogs)\/[^<]+)<\/loc>[\s\S]*?<lastmod>([^<]+)<\/lastmod>[\s\S]*?<\/url>/gi)]
+    .map(match => ({ url: match[1], changedAt: new Date(match[2]) }))
+    .filter(item => item.changedAt >= since && !/kids-persco/i.test(item.url))
+    .sort((a,b) => b.changedAt.getTime()-a.changedAt.getTime());
+  const named = entries.filter(item => /persconferentie|persco|livestream/i.test(item.url)).slice(0,12);
+  const recent = entries.filter(item => item.changedAt.getTime() >= now.getTime()-48*3600000 && !named.some(found => found.url === item.url)).slice(0,12);
+  return [...named,...recent];
+};
 export const allowedByRobots = (robots: string, path: string) => {
   const directives: Array<{allow:boolean;path:string}> = [];
   let agents: string[] = [], hasRules = false;
@@ -34,6 +38,10 @@ export const dueLocalHour = (now: Date, fixtures: Fixture[], confirmedMoments: D
   const matchTomorrow = fixtures.some(f => dayKey(new Date(f.kickoff_at)) === tomorrow);
   const closeToMoment = confirmedMoments.some(t => Math.abs(t.getTime() - now.getTime()) <= 3*60*60_000);
   return hour === 8 || hour === 12 || (matchTomorrow && hour >= 9 && hour <= 16) || (closeToMoment && hour >= 7 && hour <= 23);
+};
+export const daytimeLocalHour = (now: Date) => {
+  const hour = Number(new Intl.DateTimeFormat('en-GB', { timeZone:'Europe/Amsterdam', hour:'2-digit', hourCycle:'h23' }).format(now));
+  return hour >= 8 && hour <= 22;
 };
 const opponent = (f: Fixture) => normalizeTeamName(f.home_team).includes('ajax') ? f.away_team : f.home_team;
 export const parseAjaxArticle = (html: string, url: string, fixtures: Fixture[], now = new Date(), changedAt = now): Candidate | null => {

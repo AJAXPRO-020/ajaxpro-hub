@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import { strict as assert } from 'node:assert';
 import { createHmac } from 'node:crypto';
 import { readFileSync } from 'node:fs';
-import { allowedByRobots, sitemapLinks, dueLocalHour, mergeCandidates, parseAjaxArticle, type Fixture } from '../lib/press-conferences';
+import { allowedByRobots, sitemapLinks, dueLocalHour, daytimeLocalHour, mergeCandidates, parseAjaxArticle, type Fixture } from '../lib/press-conferences';
 import { validGitHubOidcClaims } from '../lib/github-oidc';
 import { verifyPressSchedulerRequest } from '../lib/press-scheduler-auth';
 const fixtures: Fixture[] = [{fixture_key:'ajax-atalanta',home_team:'Ajax',away_team:'Atalanta',kickoff_at:'2026-10-22T19:00:00Z'}];
@@ -22,6 +22,13 @@ test('deduplicates links and candidates, preserving official source and YouTube 
  const merged=mergeCandidates([base,{...base,sourceUrl:'https://www.ajax.nl/artikelen/a/',priority:2,watchLinks:{'Ajax.nl':'https://www.ajax.nl/artikelen/a/'}}]);
  assert.equal(merged.length,1);assert.match(merged[0].sourceUrl,/ajax.nl/);assert.ok(merged[0].watchLinks.YouTube);
 });
+test('recent official articles are inspected even without a press keyword in the URL',()=>{
+ const xml='<url><loc>https://www.ajax.nl/artikelen/ajax-werkt-toe-naar-psv/</loc><lastmod>2026-11-14T10:00:00Z</lastmod></url>';
+ assert.equal(sitemapLinks(xml,new Date('2026-09-01'),new Date('2026-11-14T12:00:00Z')).length,1);
+ assert.equal(sitemapLinks(xml,new Date('2026-09-01'),new Date('2026-11-18T12:00:00Z')).length,0);
+ const article='<h1>Persconferentie in aanloop naar Atalanta</h1><p>Woensdag vindt de persconferentie plaats.</p><span>Datum:</span> 21.10.2026';
+ assert.equal(parseAjaxArticle(article,'https://www.ajax.nl/artikelen/ajax-werkt-toe-naar-atalanta/',fixtures,new Date('2026-10-21'),new Date('2026-10-21'))?.fixtureKey,'ajax-atalanta');
+});
 test('local scheduling handles standard, match-eve and DST hours',()=>{
  assert.equal(dueLocalHour(new Date('2026-11-06T07:00:00Z'),[]),true);
  assert.equal(dueLocalHour(new Date('2026-11-06T08:00:00Z'),[]),false);
@@ -30,6 +37,16 @@ test('local scheduling handles standard, match-eve and DST hours',()=>{
  assert.equal(dueLocalHour(new Date('2026-07-06T10:00:00Z'),[]),true);
  assert.equal(dueLocalHour(new Date('2026-10-25T07:00:00Z'),[]),true);
  assert.equal(dueLocalHour(new Date('2026-11-06T10:00:00Z'),[{...fixtures[0],kickoff_at:'2026-11-07T14:00:00Z'}]),true);
+});
+test('hourly source checks run only from 08:00 through 22:59 Dutch time',()=>{
+ assert.equal(daytimeLocalHour(new Date('2026-11-14T06:07:00Z')),false);
+ assert.equal(daytimeLocalHour(new Date('2026-11-14T07:07:00Z')),true);
+ assert.equal(daytimeLocalHour(new Date('2026-11-14T21:07:00Z')),true);
+ assert.equal(daytimeLocalHour(new Date('2026-11-14T22:07:00Z')),false);
+ assert.equal(daytimeLocalHour(new Date('2026-07-14T05:07:00Z')),false);
+ assert.equal(daytimeLocalHour(new Date('2026-07-14T06:07:00Z')),true);
+ assert.equal(daytimeLocalHour(new Date('2026-07-14T20:07:00Z')),true);
+ assert.equal(daytimeLocalHour(new Date('2026-07-14T21:07:00Z')),false);
 });
 test('robots disallow and more specific allow',()=>{
  assert.equal(allowedByRobots('User-agent: *\nDisallow: /artikelen/','/artikelen/a'),false);
