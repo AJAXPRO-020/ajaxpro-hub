@@ -53,7 +53,7 @@ export const listCurrent = async (query: Query) => {
       FROM press_conferences p LEFT JOIN matchday_fixtures f ON f.fixture_key=p.fixture_key
       WHERE p.event_date>=CURRENT_DATE AND p.status<>'ended'
       ORDER BY p.event_date ASC,p.starts_at ASC NULLS LAST LIMIT 80`),
-    query("SELECT max(checked_at) checked_at FROM press_conference_checks WHERE source IN ('ajax.nl','youtube') AND status IN ('ok','unchanged')"),
+    query("SELECT max(checked_at) checked_at FROM press_conference_checks WHERE source IN ('ajax.nl','youtube','espn-xmltv') AND status IN ('ok','unchanged')"),
   ]);
   return {items:items.rows.map(row=>({
     ...row,

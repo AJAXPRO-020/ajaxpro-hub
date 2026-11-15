@@ -2,6 +2,8 @@ import { allowedByRobots, sitemapLinks, dueLocalHour, daytimeLocalHour, mergeCan
 import { normalizeTeamName } from './matchday-live';
 import { latestCheck, loadFixtures, loadMoments, logCheck, markSourceProcessed, productionQuery, saveCandidates, sourceChanged, type Query } from './press-conference-store';
 import { publishPressConference } from './automatic-discord-publications';
+import { gunzipSync } from 'node:zlib';
+import { ESPN_XMLTV_URL, espnXmltvCandidates } from './press-conference-espn';
 
 const UA = 'AjaxPro/1.0 (+https://ajaxpro.fans/)';
 const get = async (url: string) => {
@@ -54,6 +56,21 @@ export const runPressConferenceCheck = async (force = false, now = new Date(), q
   const recent = await latestCheck(query,'ajax.nl');
   if (!force && recent && now.getTime() - new Date(recent).getTime() < 45*60000) return { status: 'recent', count: 0 };
   const youtube = youtubeCandidates(fixtures,now,query);
+  const espn = (async () => {
+    try {
+      const response=await fetch(ESPN_XMLTV_URL,{signal:AbortSignal.timeout(10000)});
+      if (!response.ok) throw Error(`XMLTV HTTP ${response.status}`);
+      const compressed=Buffer.from(await response.arrayBuffer());
+      if (compressed.length>4*1024*1024) throw Error('XMLTV feed te groot');
+      const xml=gunzipSync(compressed,{maxOutputLength:30*1024*1024}).toString('utf8');
+      const found=espnXmltvCandidates(xml,fixtures,now);
+      await logCheck(query,'espn-xmltv','ok',null,found.length);
+      return found;
+    } catch(error) {
+      await logCheck(query,'espn-xmltv','error',String(error).slice(0,300));
+      return [];
+    }
+  })();
   const candidates: Candidate[] = [];
   try {
     const robots = await get('https://www.ajax.nl/robots.txt');
@@ -79,6 +96,7 @@ export const runPressConferenceCheck = async (force = false, now = new Date(), q
     }
   } catch (error) { await logCheck(query,'ajax.nl','error',String(error).slice(0,300)); }
   candidates.push(...await youtube);
+  candidates.push(...await espn);
   try {
     const merged = mergeCandidates(candidates);
     const publishable=await saveCandidates(query,merged,now);
