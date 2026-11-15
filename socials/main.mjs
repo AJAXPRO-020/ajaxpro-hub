@@ -1,7 +1,7 @@
 import { statsFormat } from "/socials/formats/stats.mjs";
 import { shotsMapFormat, ajaxShots } from "/socials/formats/shots-map.mjs?v=20261115-raw-shots";
 import { notableStatFormat } from "/socials/formats/notable-stat.mjs?v=20261113-outline";
-import { cardVideoFormat } from "/socials/formats/card-video.mjs?v=20261113-no-intro";
+import { cardVideoFormat } from "/socials/formats/card-video.mjs?v=20261115-preview";
 import { outblinkerFormat,hasUsableStats } from "/socials/formats/outblinker.mjs?v=20261023-ui-tidy";
 import { topThreeFormat } from "/socials/formats/top-three.mjs?v=20261023-ui-tidy";
 import { quoteFormat } from "/socials/formats/quote.mjs?v=20261023-ui-tidy";
@@ -67,7 +67,7 @@ if(root){
     formatStatus.replaceChildren(...sources.map(([label,state,detail])=>{const item=document.createElement("span");item.dataset.state=state;item.innerHTML=`<b aria-hidden="true">${state==="available"?"✓":"—"}</b><span>${label}</span><small>${detail}</small>`;return item}));
     const fetchButton=root.querySelector("[data-socials-stats-fetch]"),fixturePlayed=Boolean(fixture&&new Date(fixture.kickoff_at).getTime()<=Date.now()),providerItems=[...root.querySelectorAll("[data-socials-provider-status] [data-provider]")],providersReady=providerItems.length===2&&providerItems.every(item=>["success","stored","partial"].includes(item.dataset.state)),allAvailable=sources.every(([,state])=>state==="available")&&providersReady;
     if(fetchButton){const loading=statsState==="loading";fetchButton.hidden=!fixturePlayed;fetchButton.disabled=!fixturePlayed||loading||allAvailable;fetchButton.setAttribute("aria-disabled",String(fetchButton.disabled));fetchButton.textContent=loading?"Statistieken verversen…":allAvailable?"Alle statistieken beschikbaar":"Statistieken verversen"}
-    formats.forEach(({definition,controller})=>{const button=root.querySelector(`[data-format-id="${definition.id}"]`),note=button?.querySelector("[data-format-availability]"),states=controller.getRequirementStatus?.()??{};if(!note||definition.availability==="planned")return;const ready=definition.requirements.every(requirement=>Boolean(states[requirement]));note.textContent=ready?"Beschikbaar met huidige data":"Nog niet beschikbaar · gegevens ontbreken";button.dataset.dataReady=String(ready)});
+    formats.forEach(({definition,controller})=>{const button=root.querySelector(`[data-format-id="${definition.id}"]`),note=button?.querySelector("[data-format-availability]"),states=controller.getRequirementStatus?.()??{};if(!note||definition.availability==="planned")return;const ready=definition.requirements.every(requirement=>Boolean(states[requirement]));note.hidden=ready;note.textContent=ready?"":"Nog niet beschikbaar · gegevens ontbreken";button.dataset.dataReady=String(ready)});
   };
   const refreshFormatStatus=()=>{
     const format=formats.get(activeId),states=format?.controller.getRequirementStatus?.()??{};

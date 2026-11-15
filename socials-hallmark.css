@@ -99,3 +99,9 @@ html:has(.socials-shell),body:has(.socials-shell){overflow-x:clip}
   .socials-format strong{font-size:.82rem}
   .socials-format small{font-size:.64rem}
 }
+
+.socials-format{min-height:56px;align-content:center;padding:11px 14px}
+.socials-format small[hidden]{display:none}
+.socials-format small:not([hidden]){display:block}
+@media(max-width:700px){.socials-format{min-height:52px;padding:10px 12px}}
+@media(max-width:480px){.socials-format small:not([hidden]){display:block}}

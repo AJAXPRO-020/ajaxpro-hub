@@ -20,7 +20,7 @@ const formatButtons=(fixtures:readonly SocialMatchdayFixture[])=>{
   const initial=fixtures.length?"stats":"quote";
   return socialFormats.map(format=>{
     const blocked=format.matchContext==="required"&&!fixtures.length,active=format.id===initial&&!blocked,disabled=format.availability==="planned"||blocked;
-    return `<button class="socials-format${active?" is-active":""}" type="button" data-format-id="${esc(format.id)}" data-match-context="${format.matchContext}" aria-pressed="${active}"${disabled?' disabled aria-disabled="true"':""}><strong>${esc(format.title)}</strong><small data-format-availability>${blocked?"Geen wedstrijdcontext beschikbaar":format.availability==="planned"?"Volgt later":esc(format.description)}</small></button>`;
+    return `<button class="socials-format${active?" is-active":""}" type="button" data-format-id="${esc(format.id)}" data-match-context="${format.matchContext}" aria-pressed="${active}"${disabled?' disabled aria-disabled="true"':""}><strong>${esc(format.title)}</strong><small data-format-availability${disabled?"":" hidden"}>${blocked?"Geen wedstrijdcontext beschikbaar":format.availability==="planned"?"Volgt later":""}</small></button>`;
   }).join("");
 };
 
@@ -126,5 +126,5 @@ export const renderSocials = async (session:Session,fixtureLoader=loadSocialMatc
     <template data-socials-stats-stored>${esc(JSON.stringify([...stored]))}</template>
     <template data-socials-players>${serializedPlayers(players)}</template>
   </main>`;
-  return page("Socials",body,"",session,"tools",undefined,{stylesheets:["/socials.css?v=20261023-video-heading","/socials-quote-large.css?v=20260915-quote-large-v4","/socials-png.css?v=20261023-ui-tidy","/socials-ajax-vandaag.css?v=2","/socials-hallmark.css?v=1"],moduleScripts:["/socials/main.mjs?v=20261115-raw-shots"],imageSources:["blob:"],frameSources:["'self'"]});
+  return page("Socials",body,"",session,"tools",undefined,{stylesheets:["/socials.css?v=20261023-video-heading","/socials-quote-large.css?v=20260915-quote-large-v4","/socials-png.css?v=20261023-ui-tidy","/socials-ajax-vandaag.css?v=2","/socials-hallmark.css?v=1","/socials-card-video.css?v=20261115-layout"],moduleScripts:["/socials/main.mjs?v=20261115-card-video-ui"],imageSources:["blob:"],frameSources:["'self'"]});
 };
