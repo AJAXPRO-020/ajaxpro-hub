@@ -1,5 +1,5 @@
 import { runPressConferenceCheck } from './press-conference-monitor';
-import { listCurrent, productionQuery } from './press-conference-store';
+import { listCurrent, logCheck, productionQuery } from './press-conference-store';
 import { getSessionWithPermission } from './server-permissions';
 import { permissions } from './permissions.config';
 import { verifyPressSchedulerRequest } from './press-scheduler-auth';
@@ -10,7 +10,14 @@ export async function GET(request: Request) {
   const url = new URL(request.url);
   if (url.searchParams.get('action') === 'check') {
     if (!verifyPressSchedulerRequest(request)) return json({ error: 'Unauthorized' }, 401);
-    return json(await runPressConferenceCheck(false, new Date(), productionQuery, true));
+    try {
+      const result = await runPressConferenceCheck(false, new Date(), productionQuery, true);
+      await logCheck(productionQuery, 'scheduler', 'ok', 'cloudflare-cron', result.count);
+      return json(result);
+    } catch (error) {
+      await logCheck(productionQuery, 'scheduler', 'error', String(error).slice(0, 300));
+      throw error;
+    }
   }
   if (url.searchParams.get('action') === 'staff') {
     return json({allowed:Boolean(await getSessionWithPermission(request, permissions.staffAccess))});
