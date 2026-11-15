@@ -3,6 +3,7 @@ import { listCurrent, productionQuery } from './press-conference-store';
 import { getSessionWithPermission } from './server-permissions';
 import { permissions } from './permissions.config';
 import { verifyPressSchedulerRequest } from './press-scheduler-auth';
+import { publishDiscord } from './discord-publisher';
 
 const json = (body: unknown, status = 200) => new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' } });
 const publicJson = (body: unknown) => new Response(JSON.stringify(body), { headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300' } });
@@ -23,5 +24,15 @@ export async function GET(request: Request) {
 export async function POST(request: Request) {
   if (request.headers.get('origin') !== new URL(request.url).origin) return json({ error:'Forbidden' },403);
   if (!await getSessionWithPermission(request, permissions.staffAccess)) return json({ error:'Forbidden' },403);
+  if (new URL(request.url).searchParams.get('action') === 'test-discord') {
+    return json(await publishDiscord({
+      idempotencyKey:'press-conference:discord-test-button',
+      sourceType:'press-conference-discord-test',
+      sourceId:'press-conference-discord-test',
+      text:'@everyone\n[TEST] Nieuwe persconferentie: Ajax - Test FC\n15 november 2026 om 14:00 uur\nAjax.nl (gesimuleerd): https://www.ajax.nl/',
+      allowedMentions:{parse:['everyone']},
+      actorDiscordUserId:'staff:press-conference-test',
+    }));
+  }
   return json(await runPressConferenceCheck(true));
 }
