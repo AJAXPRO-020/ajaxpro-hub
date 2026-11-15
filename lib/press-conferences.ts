@@ -1,7 +1,7 @@
 import { amsterdamLocalToUtc, normalizeTeamName } from './matchday-live';
 
 export type Fixture = { fixture_key: string; home_team: string; away_team: string; kickoff_at: Date | string };
-export type Candidate = { fixtureKey: string; kind: 'preview' | 'review'; eventDate: string; startsAt: Date | null; status: 'announced' | 'live' | 'ended'; sourceUrl: string; watchLinks: Record<string,string>; priority: number };
+export type Candidate = { fixtureKey: string; kind: 'preview' | 'review'; eventDate: string; startsAt: Date | null; status: 'announced' | 'live' | 'ended'; sourceUrl: string; watchLinks: Record<string,string>; priority: number; sources?: string[] };
 export const manualEspnCandidate = (input: Record<string, unknown>, fixtures: Fixture[], now = new Date()): Candidate => {
   const fixture = fixtures.find(row => row.fixture_key === input.fixtureKey);
   if (!fixture) throw new RangeError('Kies een bekende Ajax-wedstrijd.');
@@ -118,7 +118,7 @@ export const mergeCandidates = (candidates: Candidate[]) => {
     const key = `${c.fixtureKey}:${c.kind}:${c.eventDate}`, previous = merged.get(key);
     if (!previous) { merged.set(key,c); continue; }
     const preferred = c.priority>previous.priority ? c : previous;
-    merged.set(key, { ...preferred, watchLinks:{...previous.watchLinks,...c.watchLinks}, status:previous.status==='live' || c.status==='live' ? 'live' : preferred.status, startsAt:preferred.startsAt??c.startsAt??previous.startsAt });
+    merged.set(key, { ...preferred, watchLinks:{...previous.watchLinks,...c.watchLinks}, sources:[...new Set([...(previous.sources??[previous.sourceUrl]),...(c.sources??[c.sourceUrl])])], status:previous.status==='live' || c.status==='live' ? 'live' : preferred.status, startsAt:preferred.startsAt??c.startsAt??previous.startsAt });
   }
   return [...merged.values()];
 };

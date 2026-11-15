@@ -16,6 +16,7 @@ test('real Ajax source facts flow through monitor, Postgres schema and public qu
   await database.exec(`CREATE TABLE matchday_fixtures(fixture_key text PRIMARY KEY,home_team text NOT NULL,away_team text NOT NULL,kickoff_at timestamptz NOT NULL);`);
   await query("INSERT INTO matchday_fixtures VALUES('ajax-atalanta','Ajax','Atalanta','2026-10-22T19:00:00Z')");
   await database.exec(readFileSync(new URL('../db/migrations/036_press_conferences.sql',import.meta.url),'utf8'));
+  await database.exec(readFileSync(new URL('../db/migrations/041_press_conference_observability.sql',import.meta.url),'utf8'));
   const priorFetch = globalThis.fetch;
   const priorKey = process.env.YOUTUBE_API_KEY;
   process.env.YOUTUBE_API_KEY='local-test-key';
