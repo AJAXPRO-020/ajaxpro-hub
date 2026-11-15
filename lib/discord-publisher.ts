@@ -24,6 +24,7 @@ export type DiscordPublication = {
   text?: string;
   attachment?: DiscordAttachment;
   actorDiscordUserId?: string;
+  allowedMentions?: { parse: string[] };
 };
 export type DiscordSendResult =
   | { status: "sent"; messageId: string | null }
@@ -53,12 +54,12 @@ const validatePublication = (input: DiscordPublication) => {
 
 export const sendDiscordWebhook = async (
   webhook: URL | string,
-  input: Pick<DiscordPublication, "text" | "attachment">,
+  input: Pick<DiscordPublication, "text" | "attachment" | "allowedMentions">,
 ): Promise<DiscordSendResult> => {
   const url = new URL(webhook.toString());
   url.searchParams.set("wait", "true");
   const form = new FormData();
-  form.append("payload_json", JSON.stringify({ content: input.text?.trim() || undefined }));
+  form.append("payload_json", JSON.stringify({ content: input.text?.trim() || undefined, ...(input.allowedMentions ? { allowed_mentions: input.allowedMentions } : {}) }));
   if (input.attachment) {
     const bytes = new Uint8Array(input.attachment.data);
     form.append("files[0]", new Blob([bytes.buffer as ArrayBuffer], { type: input.attachment.mimeType }), input.attachment.filename);

@@ -10,8 +10,8 @@ const timeText=(value:Date|null)=>value?new Intl.DateTimeFormat('nl-NL',{hour:'2
 export const publishPressConference = async (candidate: Candidate, fixture: {home_team:string;away_team:string}, now=new Date()) => {
   if (candidate.status === 'ended' || candidate.eventDate < localDate(now)) return {status:'skipped' as const};
   const links=Object.entries(candidate.watchLinks).map(([name,url])=>`${name}: ${url}`).join('\n');
-  const text=[`Nieuwe persconferentie: ${fixture.home_team} - ${fixture.away_team}`,`${dateText(candidate.eventDate)} om ${timeText(candidate.startsAt)}`,links].filter(Boolean).join('\n');
-  return publishDiscord({idempotencyKey:`press-conference:${candidate.fixtureKey}:${candidate.kind}:${candidate.eventDate}`,sourceType:'press-conference',sourceId:`${candidate.fixtureKey}:${candidate.kind}:${candidate.eventDate}`,text,actorDiscordUserId:'system:press-conference'});
+  const text=[`@everyone`,`Nieuwe persconferentie: ${fixture.home_team} - ${fixture.away_team}`,`${dateText(candidate.eventDate)} om ${timeText(candidate.startsAt)}`,links].filter(Boolean).join('\n');
+  return publishDiscord({idempotencyKey:`press-conference:${candidate.fixtureKey}:${candidate.kind}:${candidate.eventDate}`,sourceType:'press-conference',sourceId:`${candidate.fixtureKey}:${candidate.kind}:${candidate.eventDate}`,text,allowedMentions:{parse:['everyone']},actorDiscordUserId:'system:press-conference'});
 };
 
 const esc=(value:string)=>value.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]!));
