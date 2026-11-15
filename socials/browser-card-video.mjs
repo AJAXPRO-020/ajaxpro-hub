@@ -11,7 +11,7 @@ const platforms=[
   {id:'spotify',color:'#42d979'},
   {id:'youtube',color:'#ff465e'},
 ];
-const featuredIds=['instagram','x','discord','spotify','youtube'];
+const featuredIds=['discord','spotify','youtube'];
 const imageFrom=async url=>{const image=new Image();image.src=url;try{await image.decode();return image}catch{throw new Error('Een logo voor de eindkaart kon niet worden geladen.')}};
 const drawIcon=(ctx,image,x,y,size,color,alpha=1)=>{const icon=document.createElement('canvas');icon.width=size;icon.height=size;const ink=icon.getContext('2d');ink.drawImage(image,0,0,size,size);ink.globalCompositeOperation='source-in';ink.fillStyle=color;ink.fillRect(0,0,size,size);ctx.save();ctx.globalAlpha=alpha;ctx.drawImage(icon,x,y);ctx.restore()};
 const rounded=(ctx,x,y,w,h,r,color)=>{ctx.fillStyle=color;ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fill()};
