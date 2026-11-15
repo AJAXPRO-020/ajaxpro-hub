@@ -1,6 +1,6 @@
 const AJAX_TEAM_ID=8593;
 const valid=value=>typeof value==="number"&&Number.isFinite(value);
-export const ajaxShots=payload=>{const raw=payload?.fotmobApi?.shots??payload?.fotmobApi?.raw?.content?.shotmap?.shots;if(!Array.isArray(raw))return [];return raw.filter(shot=>shot?.teamId===AJAX_TEAM_ID&&shot.isOwnGoal!==true&&valid(shot.x)&&valid(shot.y)&&shot.x>=0&&shot.x<=105&&shot.y>=0&&shot.y<=68)};
+export const ajaxShots=payload=>{const raw=payload?.fotmobApi?.raw?.content?.shotmap?.shots??payload?.fotmobApi?.shots;if(!Array.isArray(raw))return [];return raw.filter(shot=>shot?.teamId===AJAX_TEAM_ID&&shot.isOwnGoal!==true&&valid(shot.x)&&valid(shot.y)&&shot.x>=0&&shot.x<=105&&shot.y>=0&&shot.y<=68)};
 export const shotFieldStart=shots=>shots.length?Math.min(75,Math.floor(Math.min(...shots.map(shot=>shot.x))-6)):65;
 export const shotPosition=(shot,fieldStart=65)=>({left:Math.max(2,Math.min(98,shot.y/68*100)),top:Math.max(2,Math.min(98,(100-shot.x)/(100-fieldStart)*100))});
 export const shotDiameter=shot=>valid(shot.expectedGoals)?Math.round(Math.min(17,7+Math.sqrt(Math.max(0,shot.expectedGoals))*12)):8;

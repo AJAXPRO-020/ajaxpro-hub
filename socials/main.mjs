@@ -1,5 +1,5 @@
 import { statsFormat } from "/socials/formats/stats.mjs";
-import { shotsMapFormat, ajaxShots } from "/socials/formats/shots-map.mjs";
+import { shotsMapFormat, ajaxShots } from "/socials/formats/shots-map.mjs?v=20261115-raw-shots";
 import { notableStatFormat } from "/socials/formats/notable-stat.mjs?v=20261113-outline";
 import { cardVideoFormat } from "/socials/formats/card-video.mjs?v=20261113-no-intro";
 import { outblinkerFormat,hasUsableStats } from "/socials/formats/outblinker.mjs?v=20261023-ui-tidy";
