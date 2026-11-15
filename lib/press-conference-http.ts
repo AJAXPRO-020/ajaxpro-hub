@@ -23,6 +23,11 @@ export async function GET(request: Request) {
   if (url.searchParams.get('action') === 'staff') {
     return json({allowed:Boolean(await getSessionWithPermission(request, permissions.staffAccess))});
   }
+  if (url.searchParams.get('action') === 'test-discord') {
+    if (!await getSessionWithPermission(request, permissions.staffAccess)) return json({ error:'Forbidden' },403);
+    const publication = await publishDiscord({idempotencyKey:'press-conference-test:2026-11-15:everyone',sourceType:'press-conference-test',sourceId:'ajaxpro-everyone-test-2026-11-15',text:'@everyone\n\n[TEST] Persconferentie Ajax gepland\n\nDit is een test van de automatische persconferentiemeldingen van AjaxPro.\n\nWedstrijd: Ajax - Test FC\nDatum: fictieve testdatum\nTijd: 14.00 uur\nTe volgen via: ESPN (test)\n\nDit is geen echte persconferentie. Er vindt geen uitzending plaats.',allowedMentions:{parse:['everyone']},actorDiscordUserId:'system:press-conference-test'});
+    return json({publication});
+  }
   try {
     return publicJson(await listCurrent(productionQuery));
   } catch (error) { console.error('Press conferences unavailable',error); return json({ items: [], checkedAt: null, unavailable: true }); }
