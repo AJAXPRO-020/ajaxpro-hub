@@ -2,38 +2,6 @@ import { amsterdamLocalToUtc, normalizeTeamName } from './matchday-live';
 
 export type Fixture = { fixture_key: string; home_team: string; away_team: string; kickoff_at: Date | string };
 export type Candidate = { fixtureKey: string; kind: 'preview' | 'review'; eventDate: string; startsAt: Date | null; status: 'announced' | 'live' | 'ended'; sourceUrl: string; watchLinks: Record<string,string>; priority: number; sources?: string[] };
-export const manualEspnCandidate = (input: Record<string, unknown>, fixtures: Fixture[], now = new Date()): Candidate => {
-  const fixture = fixtures.find(row => row.fixture_key === input.fixtureKey);
-  if (!fixture) throw new RangeError('Kies een bekende Ajax-wedstrijd.');
-  const title = String(input.title ?? '').trim();
-  if (title.length > 180 || !/\bajax\b/i.test(title) || !/persconferentie|\bpersco\b/i.test(title))
-    throw new RangeError('De programmatitel moet Ajax en persconferentie of persco vermelden.');
-  const kind = input.kind;
-  if (kind !== 'preview' && kind !== 'review') throw new RangeError('Kies voor of na de wedstrijd.');
-  const channel = String(input.channel ?? '');
-  if (!/^ESPN [1-4]$/.test(channel)) throw new RangeError('Kies de bevestigde ESPN-zender.');
-  let source: URL;
-  try { source = new URL(String(input.sourceUrl ?? '')); } catch { throw new RangeError('Vul een geldige programmalink in.'); }
-  const host = source.hostname.toLowerCase();
-  if (source.protocol !== 'https:' || source.username || source.password || source.port ||
-      !['www.espn.nl','espn.nl','tv.kpn.com','www.tvgids.nl','tvgids.nl'].includes(host) || source.pathname === '/')
-    throw new RangeError('Gebruik een HTTPS-programmalink van ESPN, KPN TV of TVgids.nl.');
-  const localStart = String(input.startsAt ?? '');
-  if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(localStart)) throw new RangeError('Vul een bevestigde datum en tijd in.');
-  const [year,month,day,hour,minute] = localStart.match(/\d+/g)!.map(Number);
-  if (hour > 23 || minute > 59 || new Date(Date.UTC(year,month-1,day)).toISOString().slice(0,10) !== localStart.slice(0,10))
-    throw new RangeError('Vul een geldige datum en tijd in.');
-  const startsAt = amsterdamLocalToUtc(year,month,day,hour,minute);
-  if (startsAt.getTime() <= now.getTime() || startsAt.getTime() > now.getTime()+7*86400000)
-    throw new RangeError('De uitzending moet binnen de komende zeven dagen beginnen.');
-  const eventDate = localStart.slice(0,10);
-  if (dayKey(startsAt) !== eventDate) throw new RangeError('De lokale uitzendtijd is niet geldig.');
-  const kickoff = new Date(fixture.kickoff_at);
-  const daysFromMatch = (startsAt.getTime()-kickoff.getTime())/86400000;
-  if (kind === 'preview' ? daysFromMatch < -4 || daysFromMatch > 0 : daysFromMatch < 0 || daysFromMatch > 2)
-    throw new RangeError('De uitzending past niet bij de gekozen wedstrijd en het gekozen type.');
-  return {fixtureKey:fixture.fixture_key,kind,eventDate,startsAt,status:'announced',sourceUrl:source.toString(),watchLinks:{[`${channel} · programmagids`]:source.toString()},priority:0};
-};
 const clean = (value: string) => value.replace(/<[^>]*>/g, ' ').replace(/&(?:amp|nbsp);/g, ' ').replace(/&#39;/g, "'").replace(/\s+/g, ' ').trim();
 const dayKey = (date: Date) => new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Amsterdam', year: 'numeric', month: '2-digit', day: '2-digit' }).format(date);
 const dateFromDutch = (body: string) => {

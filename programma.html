@@ -36,20 +36,6 @@
         </div>
         <div id="panel-persconferenties" role="tabpanel" aria-labelledby="tab-persconferenties" data-program-panel="persconferenties" hidden>
           <div class="press-toolbar"><p class="program-status" data-press-status>Persconferenties laden…</p><button class="press-check" type="button" data-press-check hidden>Nu controleren</button></div>
-          <details class="press-entry" data-press-entry hidden>
-            <summary>ESPN-persconferentie toevoegen (staf)</summary>
-            <form data-press-form>
-              <p>Neem alleen een afzonderlijke, bevestigde persconferentie uit een programmagids over. Een gewone voorbeschouwing of interview telt niet.</p>
-              <label>Wedstrijd<select name="fixtureKey" required data-press-fixtures></select></label>
-              <label>Programmatitel<input name="title" required maxlength="180" placeholder="Ajax - … Persconferentie"></label>
-              <label>Type<select name="kind" required><option value="preview">Voor de wedstrijd</option><option value="review">Na de wedstrijd</option></select></label>
-              <label>Begintijd (Nederland)<input name="startsAt" type="datetime-local" required></label>
-              <label>Zender<select name="channel" required><option>ESPN 1</option><option>ESPN 2</option><option>ESPN 3</option><option>ESPN 4</option></select></label>
-              <label>Link naar programma-item<input name="sourceUrl" type="url" required placeholder="https://tv.kpn.com/details/…"></label>
-              <button class="press-check" type="submit">Toevoegen en aankondigen</button>
-              <p role="status" data-press-form-status></p>
-            </form>
-          </details>
           <div class="press-list" data-press-list></div>
           <p class="press-checked" data-press-checked></p>
         </div>

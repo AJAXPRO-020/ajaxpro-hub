@@ -5,9 +5,6 @@
   const list = document.querySelector('[data-press-list]');
   const checked = document.querySelector('[data-press-checked]');
   const button = document.querySelector('[data-press-check]');
-  const entry = document.querySelector('[data-press-entry]');
-  const form = document.querySelector('[data-press-form]');
-  const formStatus = document.querySelector('[data-press-form-status]');
   const date = value => new Intl.DateTimeFormat('nl-NL', { timeZone:'Europe/Amsterdam', weekday:'long', day:'numeric', month:'long', year:'numeric' }).format(new Date(value));
   const time = value => new Intl.DateTimeFormat('nl-NL', { timeZone:'Europe/Amsterdam', hour:'2-digit', minute:'2-digit' }).format(new Date(value));
   const node = (tag, cls, value) => { const el=document.createElement(tag); if(cls) el.className=cls; if(value != null) el.textContent=value; return el; };
@@ -42,36 +39,8 @@
   const load = (fresh = false) => fetch(`/api/press-conferences${fresh ? `?checked=${Date.now()}` : ''}`).then(r=>{if(!r.ok)throw Error();return r.json()}).then(render).catch(()=>{status.textContent='Persconferenties zijn tijdelijk niet beschikbaar.'});
   const checkStaff=()=>{button.dataset.checked='1';fetch('/api/press-conferences?action=staff').then(r=>r.json()).then(data=>{
     button.hidden=!data.allowed;
-    entry.hidden=!data.allowed;
     if (!data.allowed) return;
-    const select=form.elements.fixtureKey;
-    select.replaceChildren();
-    for(const fixture of data.fixtures||[]) {
-      const option=node('option','',`${fixture.home_team} – ${fixture.away_team} · ${date(fixture.kickoff_at)}`);
-      option.value=fixture.fixture_key;
-      select.append(option);
-    }
-    if (!select.options.length) { entry.hidden=true; }
   }).catch(()=>{});};
   button.addEventListener('click',async()=>{button.disabled=true;status.textContent='Bronnen controleren…';try{const response=await fetch('/api/press-conferences',{method:'POST',headers:{Origin:location.origin}});if(!response.ok)throw Error();await load(true);}catch{status.textContent='Controle mislukt. De bestaande gegevens blijven zichtbaar.'}finally{button.disabled=false}});
-  form.addEventListener('submit',async event=>{
-    event.preventDefault();
-    const submit=form.querySelector('[type=submit]');
-    submit.disabled=true;
-    formStatus.textContent='Persconferentie opslaan en aankondigen…';
-    try {
-      const input=Object.fromEntries(new FormData(form));
-      const response=await fetch('/api/press-conferences?action=add',{method:'POST',headers:{'Content-Type':'application/json',Origin:location.origin},body:JSON.stringify(input)});
-      const result=await response.json();
-      if (!response.ok) throw Error(result.error||'Toevoegen mislukt.');
-      const publication=result.publication?.status;
-      formStatus.textContent=publication==='sent'?'Persconferentie opgeslagen en via Discord aangekondigd.':
-        publication==='already_sent'?'Persconferentie opgeslagen; de Discord-aankondiging bestond al.':
-        `Persconferentie opgeslagen. Discord-status: ${publication||'onbekend'}. Controleer de publicatiestatus voordat je opnieuw probeert.`;
-      await load(true);
-      if(result.status==='added') form.reset();
-    } catch(error) { formStatus.textContent=error.message||'Toevoegen mislukt.'; }
-    finally { submit.disabled=false; }
-  });
   if(location.hash==='#persconferenties') open('persconferenties');
 })();

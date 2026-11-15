@@ -2,27 +2,10 @@ import { test } from 'node:test';
 import { strict as assert } from 'node:assert';
 import { createHmac } from 'node:crypto';
 import { readFileSync } from 'node:fs';
-import { allowedByRobots, sitemapLinks, dueLocalHour, daytimeLocalHour, manualEspnCandidate, mergeCandidates, parseAjaxArticle, type Fixture } from '../lib/press-conferences';
+import { allowedByRobots, sitemapLinks, dueLocalHour, daytimeLocalHour, mergeCandidates, parseAjaxArticle, type Fixture } from '../lib/press-conferences';
 import { validGitHubOidcClaims } from '../lib/github-oidc';
 import { verifyPressSchedulerRequest } from '../lib/press-scheduler-auth';
 const fixtures: Fixture[] = [{fixture_key:'ajax-atalanta',home_team:'Ajax',away_team:'Atalanta',kickoff_at:'2026-10-22T19:00:00Z'}];
-test('manual ESPN listing requires an explicit Ajax press conference and a near fixture',()=>{
- const match=[{fixture_key:'ajax-psv',home_team:'Ajax',away_team:'PSV',kickoff_at:'2026-11-17T19:00:00Z'}];
- const base={fixtureKey:'ajax-psv',kind:'preview',title:'Ajax - PSV Persconferentie',startsAt:'2026-11-16T14:00',channel:'ESPN 2',sourceUrl:'https://tv.kpn.com/details/123/espn-live'};
- const candidate=manualEspnCandidate(base,match,new Date('2026-11-15T10:00:00Z'));
- assert.equal(candidate.eventDate,'2026-11-16');
- assert.equal(candidate.startsAt?.toISOString(),'2026-11-16T13:00:00.000Z');
- assert.equal(candidate.watchLinks['ESPN 2 · programmagids'],base.sourceUrl);
- const merged=mergeCandidates([candidate,{...candidate,sourceUrl:'https://www.ajax.nl/artikelen/ajax-psv-persco/',watchLinks:{'Ajax.nl':'https://www.ajax.nl/artikelen/ajax-psv-persco/'},priority:2}]);
- assert.equal(merged.length,1);
- assert.equal(merged[0].sourceUrl,'https://www.ajax.nl/artikelen/ajax-psv-persco/');
- assert.ok(merged[0].watchLinks['ESPN 2 · programmagids']);
- assert.throws(()=>manualEspnCandidate({...base,title:'Ajax - PSV Voorbeschouwing'},match,new Date('2026-11-15T10:00:00Z')),RangeError);
- assert.throws(()=>manualEspnCandidate({...base,title:'Ajax - PSV Interviews'},match,new Date('2026-11-15T10:00:00Z')),RangeError);
- assert.throws(()=>manualEspnCandidate({...base,sourceUrl:'https://tv.kpn.com.evil.test/details/123'},match,new Date('2026-11-15T10:00:00Z')),RangeError);
- assert.throws(()=>manualEspnCandidate({...base,kind:'review'},match,new Date('2026-11-15T10:00:00Z')),RangeError);
- assert.throws(()=>manualEspnCandidate({...base,startsAt:'2026-11-25T14:00'},match,new Date('2026-11-15T10:00:00Z')),RangeError);
-});
 test('official article yields one dated match without invented time',()=>{
  const html='<h1>Ajax werkt toe naar Atalanta</h1><main>Na afloop van de training vond de persconferentie plaats. Datum: 21.10.2026</main>';
  const item=parseAjaxArticle(html,'https://www.ajax.nl/artikelen/persconferentie-atalanta/',fixtures,new Date('2026-11-06'),new Date('2026-10-21'));
