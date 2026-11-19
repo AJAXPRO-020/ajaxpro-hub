@@ -1,30 +1,6 @@
 const list = document.querySelector("[data-program-list]");
 const status = document.querySelector("[data-program-status]");
 
-const CLUB_LOGOS = {
-  ajax: "/assets/clubs/ajax.png",
-  az: "/assets/clubs/az.png",
-  excelsior: "/assets/clubs/excelsior.png",
-  "fc groningen": "/assets/clubs/fc-groningen.png",
-  "fc midtjylland": "/assets/clubs/fc-midtjylland.png",
-  "fc twente": "/assets/clubs/fc-twente.png",
-  "fortuna sittard": "/assets/clubs/fortuna-sittard.png",
-  nec: "/assets/clubs/nec.png",
-  psv: "/assets/clubs/psv.png",
-  "sc cambuur": "/assets/clubs/sc-cambuur.png",
-  "sint truidense v v": "/assets/clubs/sint-truidense.png",
-  sparta: "/assets/clubs/sparta.png",
-  telstar: "/assets/clubs/telstar.png",
-  "willem ii": "/assets/clubs/willem-ii.png",
-};
-
-const normalizeTeam = (value) => value
-  .normalize("NFD")
-  .replace(/[\u0300-\u036f]/g, "")
-  .toLowerCase()
-  .replace(/[^a-z0-9]+/g, " ")
-  .trim();
-
 const element = (tag, className, text) => {
   const node = document.createElement(tag);
   if (className) node.className = className;
@@ -44,11 +20,15 @@ const formatShortDate = (value) => new Intl.DateTimeFormat("nl-NL", {
   weekday: "short", day: "numeric", month: "short", timeZone: "Europe/Amsterdam",
 }).format(new Date(value)).replace(".", "");
 
-const logo = (team, size = "regular") => {
+const logo = (team, source, size = "regular") => {
   const wrap = element("span", `program-club-logo program-club-logo--${size}`);
-  const source = CLUB_LOGOS[normalizeTeam(team)];
+  const fallback = () => {
+    wrap.classList.add("is-fallback");
+    wrap.textContent = team.split(/\s+/).filter(Boolean).map((word) => word[0]).join("").slice(0, 3).toUpperCase() || "?";
+  };
   if (source) {
     const image = element("img");
+    image.addEventListener("error", fallback, { once: true });
     image.src = source;
     image.alt = "";
     image.width = size === "large" ? 112 : 56;
@@ -56,15 +36,14 @@ const logo = (team, size = "regular") => {
     image.loading = "eager";
     wrap.append(image);
   } else {
-    wrap.classList.add("is-fallback");
-    wrap.textContent = team.split(/\s+/).map((word) => word[0]).join("").slice(0, 3).toUpperCase();
+    fallback();
   }
   return wrap;
 };
 
-const team = (name, large = false) => {
+const team = (name, source, large = false) => {
   const node = element("div", `program-team${large ? " program-team--large" : ""}`);
-  node.append(logo(name, large ? "large" : "regular"), element("strong", "program-team__name", name));
+  node.append(logo(name, source, large ? "large" : "regular"), element("strong", "program-team__name", name));
   return node;
 };
 
@@ -83,7 +62,7 @@ const featuredFixture = (fixture) => {
   );
 
   const teams = element("div", "program-featured__teams");
-  teams.append(team(fixture.home, true), element("span", "program-featured__versus", "tegen"), team(fixture.away, true));
+  teams.append(team(fixture.home, fixture.homeLogo, true), element("span", "program-featured__versus", "tegen"), team(fixture.away, fixture.awayLogo, true));
 
   const meta = element("div", "program-meta");
   meta.append(
@@ -108,8 +87,8 @@ const previewFixture = (fixture, index) => {
   date.append(element("strong", "", formatShortDate(fixture.kickoff)), element("span", "", formatTime(fixture.kickoff)));
 
   const teams = element("div", "program-preview__teams");
-  const home = team(fixture.home);
-  const away = team(fixture.away);
+  const home = team(fixture.home, fixture.homeLogo);
+  const away = team(fixture.away, fixture.awayLogo);
   teams.append(home, element("span", "program-preview__dash", "–"), away);
 
   const details = element("p", "program-preview__details", fixture.competition || "Wedstrijd");
