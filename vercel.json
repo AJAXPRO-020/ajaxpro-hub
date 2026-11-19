@@ -28,6 +28,10 @@
   ],
   "rewrites": [
     {
+      "source": "/api/navigation-status",
+      "destination": "/api/auth/session-status?view=legacy-navigation"
+    },
+    {
       "source": "/api/press-conferences",
       "destination": "/api/club-tools?view=press-conferences"
     },

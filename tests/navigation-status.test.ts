@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { createSessionCookie } from "../lib/discord-auth";
-import { GET } from "../api/navigation-status";
+import { GET } from "../api-impl/navigation-status";
 import { clearPermissionCache } from "../lib/server-permissions";
 
 process.env.SESSION_SECRET = "test-session-secret-that-is-at-least-32-characters-long";
