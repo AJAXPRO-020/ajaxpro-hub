@@ -48,6 +48,16 @@ function drawNotableStat(ctx,H,preview){
   ctx.textAlign='left';
 }
 const statRows=preview=>[...preview.querySelectorAll('.match-numbers-preview__stat')].map(row=>({name:value(row,'span'),home:value(row,'strong:first-child'),away:value(row,'strong:last-child')}));
+function drawShotsFixture(ctx,fixture,clubs){
+  const home=fixture.home_team??'',away=fixture.away_team??'';
+  if(clubs[0])contain(ctx,clubs[0],65,133,44,44);
+  if(clubs[1])contain(ctx,clubs[1],971,133,44,44);
+  ctx.textAlign='left';fit(ctx,home,clubs[0]?125:65,171,clubs[0]?305:365,38,25,PAPER);
+  ctx.textAlign='right';fit(ctx,away,clubs[1]?955:1015,171,clubs[1]?305:365,38,25,PAPER);
+  ctx.textAlign='center';text(ctx,(fixture.goals_home??'–')+' – '+(fixture.goals_away??'–'),540,171,38,PAPER,160);
+  text(ctx,fixture.competition??'',540,211,24,MUTED,880);
+  ctx.textAlign='left';
+}
 function drawShotsMap(ctx,H,preview){
   const tall=H>1500,x=120,y=tall?335:240,w=840,h=tall?920:710,styles=getComputedStyle(preview);
   const color=name=>styles.getPropertyValue(name).trim();
@@ -166,12 +176,14 @@ export function mountPngPreviews(root,sharedState={}){
       }
       const current=++revision,H=preview.dataset.aspect==='vertical-9x16'?1920:1350;button.disabled=true;if(save)save.disabled=true;exportFrame=null;
       let photos=[];
+      const clubs=id==='shots-map'?await Promise.all([fixture?.homeLogo,fixture?.awayLogo].map(async source=>{if(!source)return null;const image=new Image();image.src=source;try{await image.decode();return image}catch{return null}})):[];
       if(id==='stats')photos=await Promise.all(['home','away'].map(side=>imageFor(preview.querySelector(`[data-stats-club-logo="${side}"]`))));
       if(id==='outblinker')photos=[await imageFor(preview.querySelector('[data-outblinker-photo]'))];
       if(id==='top-three')photos=await Promise.all([...preview.querySelectorAll('[data-top-three-photo]')].map(imageFor));
       if(id==='quote')photos=await Promise.all(['[data-quote-person-photo]','[data-quote-background-preview]','[data-quote-inset-preview]'].map(selector=>imageFor(preview.querySelector(selector))));
       const logo=await logoFor();if(current!==revision)return;await loadVisualFonts();if(current!==revision)return;
-      const frame=document.createElement('canvas');frame.width=W;frame.height=H;const ctx=frame.getContext('2d');base(ctx,H,definition.name,matchContext(preview),logo);
+      const frame=document.createElement('canvas');frame.width=W;frame.height=H;const ctx=frame.getContext('2d');base(ctx,H,definition.name,id==='shots-map'&&fixture?'':matchContext(preview),logo);
+      if(id==='shots-map'&&fixture)drawShotsFixture(ctx,fixture,clubs);
       let error=validate(id,preview,photos);if(id==='stats')drawStats(ctx,H,preview,photos);if(id==='shots-map'){drawShotsMap(ctx,H,preview);if(!preview.querySelector('.shots-map-preview__shot'))error='Geen bruikbare Ajax-schoten beschikbaar.'}if(id==='notable-stat')drawNotableStat(ctx,H,preview);if(id==='outblinker')drawOutblinker(ctx,H,preview,photos[0]);if(id==='top-three')drawTopThree(ctx,H,preview,photos);if(id==='quote')error=drawQuote(ctx,H,preview,...photos)||error;footer(ctx,H);if(current!==revision)return;
       canvas.width=W;canvas.height=H;canvas.getContext('2d').drawImage(frame,0,0);exportFrame=frame;publishKey=crypto.randomUUID();button.disabled=Boolean(error);if(save)save.disabled=Boolean(error);publish.disabled=Boolean(error);notice.textContent=error;if(saveHelp)saveHelp.textContent='';
       root.dispatchEvent(new CustomEvent('socials:png-ready',{detail:{formatId:id,ready:!error}}));
