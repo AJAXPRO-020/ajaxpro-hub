@@ -4,6 +4,9 @@
   "buildCommand": "node scripts/build-public.mjs",
   "outputDirectory": "dist-public",
   "functions": {
+    "api/club-portal.ts": {
+      "includeFiles": "index.html"
+    },
     "api/next-match.ts": {
       "maxDuration": 15
     },
@@ -28,8 +31,16 @@
   ],
   "rewrites": [
     {
+      "source": "/api/home",
+      "destination": "/api/club-portal?portalHandler=home"
+    },
+    {
+      "source": "/api/auth/session-status",
+      "destination": "/api/club-portal?portalHandler=session-status"
+    },
+    {
       "source": "/api/navigation-status",
-      "destination": "/api/auth/session-status?view=legacy-navigation"
+      "destination": "/api/club-portal?portalHandler=session-status&view=legacy-navigation"
     },
     {
       "source": "/api/press-conferences",

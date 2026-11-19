@@ -1,5 +1,8 @@
 import { cp, mkdir, readdir, readFile, rm, stat, writeFile } from "node:fs/promises";
 import { join, resolve, extname } from "node:path";
+import { checkFunctionLimit } from "./check-function-limit.mjs";
+
+await checkFunctionLimit();
 
 const root = resolve(import.meta.dirname, "..");
 const output = join(root, "dist-public");

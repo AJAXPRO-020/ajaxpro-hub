@@ -1,9 +1,9 @@
-import { readSession } from "../../lib/discord-auth";
-import { permissions, rolesHavePermission } from "../../lib/permissions.config";
+import { readSession } from "../lib/discord-auth";
+import { permissions, rolesHavePermission } from "../lib/permissions.config";
 
 export async function GET(request: Request) {
   if (new URL(request.url).searchParams.get("view") === "legacy-navigation") {
-    const { GET } = await import("../../api-impl/navigation-status");
+    const { GET } = await import("./navigation-status");
     return GET(request);
   }
   const session = await readSession(request);

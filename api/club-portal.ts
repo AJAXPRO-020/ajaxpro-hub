@@ -6,6 +6,14 @@ import { DiscordRoleCheckUnavailable } from "../lib/server-permissions";
 export async function GET(request: Request) {
   try {
     const url = new URL(request.url);
+    if (url.searchParams.get("portalHandler") === "home" || url.pathname === "/api/home") {
+      const { GET } = await import("../api-impl/home");
+      return GET(request);
+    }
+    if (url.searchParams.get("portalHandler") === "session-status" || url.pathname === "/api/auth/session-status") {
+      const { GET } = await import("../api-impl/session-status");
+      return GET(request);
+    }
     const view = url.searchParams.get("view");
     if (view === "members-match-center") {
       url.searchParams.set("view", "match-center");

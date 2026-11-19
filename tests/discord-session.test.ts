@@ -9,8 +9,8 @@ import {
 } from "../lib/discord-auth";
 import { GET as startDiscordLogin } from "../api/auth/discord-login";
 import { GET as clubPortal } from "../api/club-portal";
-import { GET as home } from "../api/home";
-import { GET as sessionStatus } from "../api/auth/session-status";
+import { GET as home } from "../api/club-portal";
+import { GET as sessionStatus } from "../api/club-portal";
 
 process.env.SESSION_SECRET = "test-session-secret-that-is-at-least-32-characters-long";
 process.env.DISCORD_REDIRECT_URI = "https://ajaxpro.example/api/auth/discord-callback";
@@ -28,7 +28,7 @@ test("publieke Inloggen-knop opent Club en niet direct Discord OAuth", () => {
 
 test("homepage toont Naar de Club bij een geldige sessie", async () => {
   const cookie = cookieValue(await createSessionCookie(user, member));
-  const response = await home(new Request("https://ajaxpro.example/", { headers: { cookie } }));
+  const response = await home(new Request("https://ajaxpro.example/api/home", { headers: { cookie } }));
   const html = await response.text();
   assert.equal(response.status, 200);
   assert.match(html, /class="header-login" href="https:\/\/ajaxpro\.fans\/club">Naar de Club<\/a>/);
@@ -36,7 +36,7 @@ test("homepage toont Naar de Club bij een geldige sessie", async () => {
 });
 
 test("homepage toont Inloggen zonder geldige sessie", async () => {
-  const response = await home(new Request("https://ajaxpro.example/"));
+  const response = await home(new Request("https://ajaxpro.example/api/home"));
   const html = await response.text();
   assert.match(html, /class="header-login" href="https:\/\/ajaxpro\.fans\/club">Inloggen<\/a>/);
 });
