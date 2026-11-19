@@ -24,6 +24,19 @@ test("Discord publisher stuurt tekst en bestand als multipart webhook-payload", 
   } finally { globalThis.fetch = originalFetch; }
 });
 
+test("alleen expliciet gemarkeerde publicaties activeren @everyone", async () => {
+  const originalFetch = globalThis.fetch;
+  try {
+    let request: Request | undefined;
+    globalThis.fetch = async (input, init) => { request = new Request(input, init); return new Response(JSON.stringify({ id: "message-2" }), { status: 200, headers: { "content-type": "application/json" } }); };
+    await sendDiscordWebhook("https://discord.com/api/webhooks/1/token", { text: "@everyone\nNieuwe persconferentie", allowedMentions: { parse: ["everyone"] } });
+    const form = await request?.formData();
+    const payload = JSON.parse(String(form?.get("payload_json")));
+    assert.deepEqual(payload.allowed_mentions, { parse: ["everyone"] });
+    assert.equal(payload.content.startsWith("@everyone"), true);
+  } finally { globalThis.fetch = originalFetch; }
+});
+
 test("Discord publisher onderscheidt permanente en onzekere fouten", async () => {
   const originalFetch = globalThis.fetch;
   try {

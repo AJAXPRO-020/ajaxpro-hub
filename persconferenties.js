@@ -5,7 +5,6 @@
   const list = document.querySelector('[data-press-list]');
   const checked = document.querySelector('[data-press-checked]');
   const button = document.querySelector('[data-press-check]');
-  const testButton = document.querySelector('[data-press-test]');
   const date = value => new Intl.DateTimeFormat('nl-NL', { timeZone:'Europe/Amsterdam', weekday:'long', day:'numeric', month:'long', year:'numeric' }).format(new Date(value));
   const time = value => new Intl.DateTimeFormat('nl-NL', { timeZone:'Europe/Amsterdam', hour:'2-digit', minute:'2-digit' }).format(new Date(value));
   const node = (tag, cls, value) => { const el=document.createElement(tag); if(cls) el.className=cls; if(value != null) el.textContent=value; return el; };
@@ -30,7 +29,7 @@
       const day=node('p','press-card__date',`${date(`${String(item.event_date).slice(0,10)}T12:00:00Z`)} · ${item.starts_at ? `${time(item.starts_at)} uur` : 'Tijd nog onbekend'}`);
       card.append(day);
       const links=node('div','press-card__links');
-      const source=node('a','', 'Officiële bron ↗'); source.href=item.source_url; source.target='_blank'; source.rel='noopener noreferrer'; links.append(source);
+      const source=node('a','', 'Bron ↗'); source.href=item.source_url; source.target='_blank'; source.rel='noopener noreferrer'; links.append(source);
       for(const [label,href] of Object.entries(item.watch_links||{})) { if(!/^https:\/\//.test(href)) continue; const a=node('a','',`${label} ↗`); a.href=href; a.target='_blank'; a.rel='noopener noreferrer'; links.append(a); }
       card.append(links,node('p','press-card__updated',`Bijgewerkt: ${date(item.updated_at)}`)); list.append(card);
     }
@@ -38,8 +37,10 @@
     list.dataset.loaded='1';
   };
   const load = (fresh = false) => fetch(`/api/press-conferences${fresh ? `?checked=${Date.now()}` : ''}`).then(r=>{if(!r.ok)throw Error();return r.json()}).then(render).catch(()=>{status.textContent='Persconferenties zijn tijdelijk niet beschikbaar.'});
-  const checkStaff=()=>{button.dataset.checked='1';fetch('/api/press-conferences?action=staff').then(r=>r.json()).then(data=>{button.hidden=!data.allowed;testButton.hidden=!data.allowed}).catch(()=>{});};
+  const checkStaff=()=>{button.dataset.checked='1';fetch('/api/press-conferences?action=staff').then(r=>r.json()).then(data=>{
+    button.hidden=!data.allowed;
+    if (!data.allowed) return;
+  }).catch(()=>{});};
   button.addEventListener('click',async()=>{button.disabled=true;status.textContent='Bronnen controleren…';try{const response=await fetch('/api/press-conferences',{method:'POST',headers:{Origin:location.origin}});if(!response.ok)throw Error();await load(true);}catch{status.textContent='Controle mislukt. De bestaande gegevens blijven zichtbaar.'}finally{button.disabled=false}});
-  testButton.addEventListener('click',async()=>{if(!window.confirm('Eén gemarkeerd testbericht met @everyone naar #socials-organisatie versturen?'))return;testButton.disabled=true;status.textContent='Discord-test wordt verstuurd…';try{const response=await fetch('/api/press-conferences?action=test-discord',{method:'POST',headers:{Origin:location.origin,Accept:'application/json'}}),payload=await response.json();if(!response.ok)throw Error(payload.error||'Discord-test mislukt.');status.textContent=payload.status==='already_sent'?'Deze test was al geplaatst.':'Test geplaatst in #socials-organisatie.'}catch(error){status.textContent=error instanceof Error?error.message:'Discord-test mislukt.'}finally{testButton.disabled=false}});
   if(location.hash==='#persconferenties') open('persconferenties');
 })();

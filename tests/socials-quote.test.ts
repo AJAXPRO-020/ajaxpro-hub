@@ -62,7 +62,7 @@ test("Quote-foto blijft lokaal en object-URL's worden opgeruimd",()=>{
 test("Quote-state leeft in een afzonderlijke formatmodule",()=>{
   const main=read("../socials/main.mjs"),page=read("../api-impl/socials/index.ts"),stats=read("../socials/formats/stats.mjs"),quote=read("../socials/formats/quote.mjs");
   assert.match(main,/quoteFormat/);
-  assert.match(page,/socials\/main\.mjs\?v=20261114-outblinker-depth/);
+  assert.match(page,/socials\/main\.mjs\?v=20261115-card-video-ui/);
   assert.match(quote,/quote-people\.mjs\?v=20260915-people/);
   assert.match(main,/formatDefinitions=\[statsFormat,shotsMapFormat,notableStatFormat,cardVideoFormat,outblinkerFormat,topThreeFormat,quoteFormat,videoFormat,ajaxVandaagFormat\]/);
   assert.match(main,/quote\.mjs\?v=20261023-ui-tidy/);

@@ -1,3 +1,5 @@
+-- Renumbered from 037_club_logo_registry.sql to avoid the existing provider
+-- snapshot migration. Statements remain idempotent for previously imported registries.
 BEGIN;
 
 CREATE TABLE IF NOT EXISTS club_logo_registry (

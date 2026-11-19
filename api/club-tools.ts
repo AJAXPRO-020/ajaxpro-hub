@@ -91,10 +91,9 @@ export async function POST(request:Request){
     if(!session)return json({error:"Geen toegang tot publiceren."},403);
     const url=new URL(request.url),origin=request.headers.get("origin");
     if(origin&&origin!==url.origin||request.headers.get("sec-fetch-site")==="cross-site")return json({error:"Ongeldige herkomst."},403);
-    const form=await request.formData(),kind=String(form.get("kind")??""),text=String(form.get("text")??"").trim(),isTest=form.get("test")==="1";
+    const form=await request.formData(),kind=String(form.get("kind")??""),text=String(form.get("text")??"").trim();
     try{
       if(kind==="video"){
-        if(isTest)return json({error:"De Discord-test gebruikt de huidige afbeelding."},400);
         const jobId=String(form.get("jobId")??"");
         if(!/^[0-9a-f-]{36}$/i.test(jobId))return json({error:"Ongeldige video."},400);
         const job=await videoService().media(jobId);
@@ -111,7 +110,7 @@ export async function POST(request:Request){
       if(!(file instanceof File)||file.size>MAX_SOCIALS_FUNCTION_UPLOAD)return json({error:"Deze afbeelding is te groot voor de publicatiefunctie."},413);
       const sourceId=String(form.get("sourceId")??"").trim(),idempotencyKey=String(form.get("idempotencyKey")??"").trim();
       if(!sourceId||!idempotencyKey)return json({error:"Publicatiegegevens ontbreken."},400);
-      return json(await publishDiscord({idempotencyKey:isTest?"socials:discord-test":idempotencyKey,sourceType:isTest?"socials-discord-test":"socials-image",sourceId:isTest?"socials-discord-test":sourceId,text:isTest?`[TEST] Social Media Generator Discord-test\n${text}`:text,actorDiscordUserId:session.userId,attachment:{data:new Uint8Array(await file.arrayBuffer()),filename:file.name,mimeType:file.type}}));
+      return json(await publishDiscord({idempotencyKey,sourceType:"socials-image",sourceId,text,actorDiscordUserId:session.userId,attachment:{data:new Uint8Array(await file.arrayBuffer()),filename:file.name,mimeType:file.type}}));
     }catch(error){
       if(error instanceof RangeError||error instanceof TypeError)return json({error:error.message},400);
       console.error("Socials Discord publication failed",error instanceof Error?error.name:"unknown");

@@ -1,7 +1,7 @@
 import { statsFormat } from "/socials/formats/stats.mjs";
-import { shotsMapFormat } from "/socials/formats/shots-map.mjs";
+import { shotsMapFormat, ajaxShots } from "/socials/formats/shots-map.mjs?v=20261115-raw-shots";
 import { notableStatFormat } from "/socials/formats/notable-stat.mjs?v=20261113-outline";
-import { cardVideoFormat } from "/socials/formats/card-video.mjs?v=20261113-no-intro";
+import { cardVideoFormat } from "/socials/formats/card-video.mjs?v=20261115-preview";
 import { outblinkerFormat,hasUsableStats } from "/socials/formats/outblinker.mjs?v=20261023-ui-tidy";
 import { topThreeFormat } from "/socials/formats/top-three.mjs?v=20261023-ui-tidy";
 import { quoteFormat } from "/socials/formats/quote.mjs?v=20261023-ui-tidy";
@@ -25,21 +25,20 @@ if(root){
   const formats=new Map(formatDefinitions.map(definition=>[definition.id,{definition,controller:definition.init(root,sharedState)}]));
   mountPngPreviews(root);
   const formatStatus=root.querySelector("[data-socials-format-status]"),statsStatus=root.querySelector("[data-socials-stats-status]"),resetFormat=root.querySelector("[data-socials-format-reset]"),previewControls=root.querySelector("[data-socials-preview-controls]");
-  const publishDialog=root.querySelector("[data-socials-publish-dialog]"),publishForm=root.querySelector("[data-socials-publish-form]"),publishStatus=root.querySelector("[data-socials-publish-status]"),publishFile=root.querySelector("[data-socials-publish-file]"),publishText=root.querySelector("#socials-publish-text"),publishCancel=root.querySelector("[data-socials-publish-cancel]"),publishSubmit=root.querySelector("[data-socials-publish-submit]"),publishTest=root.querySelector("[data-socials-publish-test]");
+  const publishDialog=root.querySelector("[data-socials-publish-dialog]"),publishForm=root.querySelector("[data-socials-publish-form]"),publishStatus=root.querySelector("[data-socials-publish-status]"),publishFile=root.querySelector("[data-socials-publish-file]"),publishText=root.querySelector("#socials-publish-text"),publishCancel=root.querySelector("[data-socials-publish-cancel]"),publishSubmit=root.querySelector("[data-socials-publish-submit]");
   let pendingPublication=null;
   const openPublishDialog=detail=>{if(!publishDialog||!publishForm)return;pendingPublication=detail;publishForm.reset();publishStatus.textContent="";publishStatus.dataset.state="";publishFile.textContent=detail.filename?`Bestand: ${detail.filename}`:"Video klaar om te plaatsen.";publishDialog.showModal()};
   root.addEventListener("socials:publish-request",event=>openPublishDialog(event.detail));
   publishCancel?.addEventListener("click",()=>publishDialog?.close());
-  publishTest?.addEventListener("click",async()=>{if(!pendingPublication||pendingPublication.kind!=="image"||!window.confirm("Eén gemarkeerd testbericht naar #socials-organisatie versturen?"))return;publishTest.disabled=true;publishStatus.textContent="Testpublicatie wordt gecontroleerd…";const data=new FormData();data.set("kind","image");data.set("test","1");data.set("text",publishText?.value.trim()||"");data.set("sourceId","socials-discord-test");data.set("idempotencyKey","socials-discord-test");data.set("file",pendingPublication.file,pendingPublication.filename);try{const response=await fetch(publishForm.action,{method:"POST",body:data,credentials:"same-origin",headers:{Accept:"application/json"}}),payload=await response.json();if(!response.ok)throw new Error(payload.error||"Discord-test mislukt.");publishStatus.textContent=payload.status==="already_sent"?"Deze test was al geplaatst.":"Test geplaatst in #socials-organisatie.";publishStatus.dataset.state="success"}catch(error){publishStatus.textContent=error instanceof Error?error.message:"Discord-test mislukt.";publishStatus.dataset.state="error"}finally{publishTest.disabled=false}});
   publishForm?.addEventListener("submit",async event=>{event.preventDefault();if(!pendingPublication)return;publishSubmit.disabled=true;publishStatus.textContent="Publicatie wordt gecontroleerd…";const data=new FormData();data.set("kind",pendingPublication.kind);data.set("text",publishText?.value.trim()||"");if(pendingPublication.kind==="video")data.set("jobId",pendingPublication.jobId);else{data.set("sourceId",pendingPublication.sourceId);data.set("idempotencyKey",pendingPublication.idempotencyKey);data.set("file",pendingPublication.file,pendingPublication.filename)}try{const response=await fetch(publishForm.action,{method:"POST",body:data,credentials:"same-origin",headers:{Accept:"application/json"}}),payload=await response.json();if(!response.ok)throw new Error(payload.error||"Publiceren naar Discord mislukt.");publishStatus.textContent=payload.status==="already_sent"?"Deze publicatie was al geplaatst.":"Geplaatst in #socials-organisatie.";publishStatus.dataset.state="success";if(payload.status==="sent"||payload.status==="already_sent")pendingPublication=null}catch(error){publishStatus.textContent=error instanceof Error?error.message:"Publiceren naar Discord mislukt.";publishStatus.dataset.state="error"}finally{publishSubmit.disabled=false}});
   const requestedFormat=new URL(location.href).searchParams.get("format");
   let activeId=root.querySelector('[data-format-id][aria-pressed="true"]')?.dataset.formatId;
   const globalDataStatus=()=>{
     const fixture=fixtures.find(item=>item.fixture_key===sharedState.selectedFixtureKey)??fixtures[0]??null;
     const payload=fixture?sharedState.getMatchStats?.(fixture.fixture_key):null;
-    const api=payload?.fotmobApi,shots=Array.isArray(api?.shots)?api.shots:Array.isArray(api?.raw?.content?.shotmap?.shots)?api.raw.content.shotmap.shots:[],lineups=api?.lineups;
+    const api=payload?.fotmobApi,lineups=api?.lineups;
     return {matchData:Boolean(fixture),matchStats:Boolean(payload),playerStats:Array.isArray(payload?.players)&&payload.players.some(hasUsableStats),
-      shotData:shots.some(shot=>Number.isFinite(shot?.x)&&Number.isFinite(shot?.y)&&Number.isFinite(shot?.expectedGoals)),
+      shotData:ajaxShots(payload).length>0,
       lineups:Boolean(lineups?.homeTeam||lineups?.awayTeam),events:Array.isArray(api?.events)&&api.events.length>0};
   };
   const renderProviderStatus=payload=>{
@@ -68,7 +67,7 @@ if(root){
     formatStatus.replaceChildren(...sources.map(([label,state,detail])=>{const item=document.createElement("span");item.dataset.state=state;item.innerHTML=`<b aria-hidden="true">${state==="available"?"✓":"—"}</b><span>${label}</span><small>${detail}</small>`;return item}));
     const fetchButton=root.querySelector("[data-socials-stats-fetch]"),fixturePlayed=Boolean(fixture&&new Date(fixture.kickoff_at).getTime()<=Date.now()),providerItems=[...root.querySelectorAll("[data-socials-provider-status] [data-provider]")],providersReady=providerItems.length===2&&providerItems.every(item=>["success","stored","partial"].includes(item.dataset.state)),allAvailable=sources.every(([,state])=>state==="available")&&providersReady;
     if(fetchButton){const loading=statsState==="loading";fetchButton.hidden=!fixturePlayed;fetchButton.disabled=!fixturePlayed||loading||allAvailable;fetchButton.setAttribute("aria-disabled",String(fetchButton.disabled));fetchButton.textContent=loading?"Statistieken verversen…":allAvailable?"Alle statistieken beschikbaar":"Statistieken verversen"}
-    formats.forEach(({definition,controller})=>{const button=root.querySelector(`[data-format-id="${definition.id}"]`),note=button?.querySelector("[data-format-availability]"),states=controller.getRequirementStatus?.()??{};if(!note||definition.availability==="planned")return;const ready=definition.requirements.every(requirement=>Boolean(states[requirement]));note.textContent=ready?"Beschikbaar met huidige data":"Nog niet beschikbaar · gegevens ontbreken";button.dataset.dataReady=String(ready)});
+    formats.forEach(({definition,controller})=>{const button=root.querySelector(`[data-format-id="${definition.id}"]`),note=button?.querySelector("[data-format-availability]"),states=controller.getRequirementStatus?.()??{};if(!note||definition.availability==="planned")return;const ready=definition.requirements.every(requirement=>Boolean(states[requirement]));note.hidden=ready;note.textContent=ready?"":"Nog niet beschikbaar · gegevens ontbreken";button.dataset.dataReady=String(ready)});
   };
   const refreshFormatStatus=()=>{
     const format=formats.get(activeId),states=format?.controller.getRequirementStatus?.()??{};
@@ -77,6 +76,15 @@ if(root){
     const workspace=root.querySelector(`[data-format-workspace="${activeId}"]`);if(workspace){workspace.dataset.formatReady=String(ready);workspace.dataset.formatDataReady=String(Boolean(states.matchData)&&(!format.definition.requirements.includes("matchStats")||Boolean(states.matchStats)))}
     if(resetFormat)resetFormat.disabled=!format;
   };
+  const syncActionToolbar=workspace=>{
+    if(!workspace)return;
+    let toolbar=workspace.querySelector(':scope > .socials-format-toolbar');
+    if(!toolbar){toolbar=document.createElement('div');toolbar.className='socials-format-toolbar';toolbar.innerHTML='<h2 class="socials-format-toolbar__title"></h2><div class="socials-format-toolbar__actions"></div>';workspace.prepend(toolbar)}
+    toolbar.querySelector('.socials-format-toolbar__title').textContent=formats.get(workspace.dataset.formatWorkspace)?.definition.title??'';
+    const actions=toolbar.querySelector('.socials-format-toolbar__actions');
+    workspace.querySelectorAll('.socials-download,.socials-publish-action').forEach(button=>{if(button.parentElement!==actions)actions.append(button)});
+  };
+  const syncAllActionToolbars=()=>root.querySelectorAll('[data-format-workspace]').forEach(syncActionToolbar);
   const activate=id=>{
     const button=root.querySelector(`[data-format-id="${id}"]`);
     const next=formats.get(id);if(!button||button.disabled||!next)return;
@@ -86,6 +94,7 @@ if(root){
     const currentUrl=new URL(location.href);currentUrl.searchParams.set("format",id);history.replaceState(null,"",currentUrl);
     root.querySelectorAll("[data-format-id]").forEach(option=>{const active=option===button;option.classList.toggle("is-active",active);option.setAttribute("aria-pressed",String(active))});
     root.querySelectorAll("[data-format-workspace]").forEach(workspace=>{workspace.hidden=workspace.dataset.formatWorkspace!==id});
+    syncAllActionToolbars();
     const preview=next.controller&&root.querySelector(`[data-format-workspace="${id}"] .socials-preview-panel`);if(preview&&previewControls){preview.querySelector(".socials-preview-heading")?.after(previewControls);previewControls.hidden=next.definition.fixedOutput===true}
     if(next.definition.requirements.includes("matchData"))matchStats.activate(id);
     next.controller.activate?.();
@@ -98,5 +107,6 @@ if(root){
   root.addEventListener("socials:match-selection",refreshFormatStatus);
   root.addEventListener("socials:format-status-change",event=>{if(event.detail?.formatId===activeId)refreshFormatStatus()});
   if(requestedFormat&&formats.has(requestedFormat)&&!root.querySelector(`[data-format-id="${requestedFormat}"]`)?.disabled)activeId=requestedFormat;
+  new MutationObserver(syncAllActionToolbars).observe(root,{subtree:true,childList:true});
   if(activeId)activate(activeId);
 }

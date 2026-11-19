@@ -1,7 +1,9 @@
-import { allowedByRobots, sitemapLinks, dueLocalHour, mergeCandidates, parseAjaxArticle, type Candidate, type Fixture } from './press-conferences';
+import { allowedByRobots, sitemapLinks, dueLocalHour, daytimeLocalHour, mergeCandidates, parseAjaxArticle, type Candidate, type Fixture } from './press-conferences';
 import { normalizeTeamName } from './matchday-live';
 import { latestCheck, loadFixtures, loadMoments, logCheck, markSourceProcessed, productionQuery, saveCandidates, sourceChanged, type Query } from './press-conference-store';
 import { publishPressConference } from './automatic-discord-publications';
+import { gunzipSync } from 'node:zlib';
+import { ESPN_XMLTV_URL, espnXmltvCandidates } from './press-conference-espn';
 
 const UA = 'AjaxPro/1.0 (+https://ajaxpro.fans/)';
 const get = async (url: string) => {
@@ -46,23 +48,39 @@ const youtubeCandidates = async (fixtures: Fixture[], now: Date, query: Query): 
   return output;
 };
 
-export const runPressConferenceCheck = async (force = false, now = new Date(), query: Query = productionQuery) => {
+export const runPressConferenceCheck = async (force = false, now = new Date(), query: Query = productionQuery, hourly = false) => {
+  if (!force && hourly && !daytimeLocalHour(now)) return { status: 'not-due', count: 0 };
   const fixtures = await loadFixtures(query,now);
   const moments = await loadMoments(query,now);
-  if (!force && !dueLocalHour(now, fixtures, moments)) return { status: 'not-due', count: 0 };
+  if (!force && !hourly && !dueLocalHour(now, fixtures, moments)) return { status: 'not-due', count: 0 };
   const recent = await latestCheck(query,'ajax.nl');
   if (!force && recent && now.getTime() - new Date(recent).getTime() < 45*60000) return { status: 'recent', count: 0 };
   const youtube = youtubeCandidates(fixtures,now,query);
+  const espn = (async () => {
+    try {
+      const response=await fetch(ESPN_XMLTV_URL,{signal:AbortSignal.timeout(10000)});
+      if (!response.ok) throw Error(`XMLTV HTTP ${response.status}`);
+      const compressed=Buffer.from(await response.arrayBuffer());
+      if (compressed.length>4*1024*1024) throw Error('XMLTV feed te groot');
+      const xml=gunzipSync(compressed,{maxOutputLength:30*1024*1024}).toString('utf8');
+      const found=espnXmltvCandidates(xml,fixtures,now);
+      await logCheck(query,'espn-xmltv','ok',null,found.length);
+      return found;
+    } catch(error) {
+      await logCheck(query,'espn-xmltv','error',String(error).slice(0,300));
+      return [];
+    }
+  })();
   const candidates: Candidate[] = [];
   try {
     const robots = await get('https://www.ajax.nl/robots.txt');
     if (!allowedByRobots(robots, '/artikelen/') || !allowedByRobots(robots, '/sitemap')) await logCheck(query,'ajax.nl','skipped','robots.txt blokkeert de sitemap of artikelen');
     else {
       const sitemap = await get('https://www.ajax.nl/sitemap');
-      const links = sitemapLinks(sitemap,new Date(now.getTime()-56*86400000));
+      const links = sitemapLinks(sitemap,new Date(now.getTime()-56*86400000),now);
       let processed=0;
-      for (let index=0; index<links.length; index+=3) {
-        const group=links.slice(index,index+3);
+      for (let index=0; index<links.length; index+=4) {
+        const group=links.slice(index,index+4);
         const changed=await Promise.all(group.map(async item=>({item,fetch:await sourceChanged(query,item.url,item.changedAt)})));
         const results=await Promise.allSettled(changed.filter(entry=>entry.fetch).map(async ({item})=>({item,article:await get(item.url)})));
         for (const result of results) {
@@ -78,6 +96,7 @@ export const runPressConferenceCheck = async (force = false, now = new Date(), q
     }
   } catch (error) { await logCheck(query,'ajax.nl','error',String(error).slice(0,300)); }
   candidates.push(...await youtube);
+  candidates.push(...await espn);
   try {
     const merged = mergeCandidates(candidates);
     const publishable=await saveCandidates(query,merged,now);

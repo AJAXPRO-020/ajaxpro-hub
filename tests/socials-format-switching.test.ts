@@ -25,6 +25,8 @@ test("de eerste render toont alleen het actieve Stats-workspace en de gedeelde i
 test("formatkaarten tonen geen extra wedstrijdcontext-tags",async()=>{
   const html=await renderSocials(session,async()=>[fixture]).then(response=>response.text());
   assert.doesNotMatch(html,/class="status"/);
+  assert.match(html,/socials-card-video\.css\?v=/);
+  assert.doesNotMatch(html,/Beschikbaar met huidige data/);
   assert.match(html,/data-match-context="required"/);
   assert.equal((html.match(/data-match-context="required"/g)??[]).length,7);
 });

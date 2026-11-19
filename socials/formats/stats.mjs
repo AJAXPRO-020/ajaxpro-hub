@@ -1,36 +1,11 @@
-const readFixtures=root=>{
-  const template=root.querySelector("template[data-socials-match-context]");
-  if(!template)return [];
-  try{const parsed=JSON.parse(template.content.textContent||"[]");return Array.isArray(parsed)?parsed:[]}catch{return []}
-};
-
+const readFixtures=root=>{const template=root.querySelector("template[data-socials-match-context]");if(!template)return [];try{const parsed=JSON.parse(template.content.textContent||"[]");return Array.isArray(parsed)?parsed:[]}catch{return []}};
 const ajaxIsHome=fixture=>String(fixture.home_team).toLocaleLowerCase("nl-NL").includes("ajax");
 const validScore=value=>value!==null&&value!==undefined&&value!==""&&Number.isInteger(Number(value))&&Number(value)>=0?Number(value):null;
-export const resolvedScore=(fixture,payload)=>({
-  home:validScore(fixture?.goals_home)??validScore(payload?.match?.homeScore),
-  away:validScore(fixture?.goals_away)??validScore(payload?.match?.awayScore),
-});
-const contextFor=(fixture,payload)=>{
-  const home=ajaxIsHome(fixture),score=resolvedScore(fixture,payload);
-  return {
-    ajaxIsHome:home,
-    homeTeam:fixture.home_team,
-    awayTeam:fixture.away_team,
-    homeScore:score.home,
-    awayScore:score.away,
-    competition:fixture.competition,
-    kickoff:fixture.kickoff_at,
-  };
-};
+export const resolvedScore=(fixture,payload)=>({home:validScore(fixture?.goals_home)??validScore(payload?.match?.homeScore),away:validScore(fixture?.goals_away)??validScore(payload?.match?.awayScore)});
+const contextFor=(fixture,payload)=>{const home=ajaxIsHome(fixture),score=resolvedScore(fixture,payload);return {ajaxIsHome:home,homeTeam:fixture.home_team,awayTeam:fixture.away_team,homeScore:score.home,awayScore:score.away,competition:fixture.competition,kickoff:fixture.kickoff_at}};
 const formatDate=value=>new Intl.DateTimeFormat("nl-NL",{day:"numeric",month:"long",year:"numeric",timeZone:"Europe/Amsterdam"}).format(new Date(value));
-const displayValue=input=>{
-  if(!input||input.value.trim()===""||!input.validity.valid)return "—";
-  if(["xg","xgot"].includes(input.dataset.statId))return Number(input.value).toFixed(2).replace(".",",");
-  const suffix=input.dataset.statId==="possession"?"%":"";
-  return `${input.value.replace(".",",")}${suffix}`;
-};
+const displayValue=input=>{if(!input||input.value.trim()===""||!input.validity.valid)return "—";if(["xg","xgot"].includes(input.dataset.statId))return Number(input.value).toFixed(2).replace(".",",");const suffix=input.dataset.statId==="possession"?"%":"";return input.value.replace(".",",")+suffix};
 const loadedTeamFields={xg:"xg",xgot:"xgot",possession:"possession",shots:"shots",shotsOnTarget:"shotsOnTarget",bigChances:"bigChances",corners:"corners"};
-
 const statPriority={xg:100,bigChances:94,shotsOnTarget:90,possession:86,xgot:82,corners:70,shots:62};
 const hasValue=value=>value!==null&&value!==undefined&&value!==""&&Number.isFinite(Number(value));
 const comparable=(payload,id)=>hasValue(payload?.teamStats?.[id])&&hasValue(payload?.opponentTeamStats?.[id]);

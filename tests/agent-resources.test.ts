@@ -96,6 +96,6 @@ test("agent discovery and 404 recovery links resolve to public local resources",
   assert.match(llms, /https:\/\/www\.ajaxpro\.fans\/openapi\.json/);
   assert.match(read("index.html"), /rel="describedby" href="\/llms.txt"/);
   assert.match(read("index.html"), /rel="service-desc" href="\/openapi.json"/);
-  assert.match(read("index.html"), /class="header-login" href="https:\/\/ajaxpro\.fans\/club">Inloggen<\/a>/);
+  assert.match(read("index.html"), /class="header-login" href="https:\/\/ajaxpro\.fans\/club">Naar de Club<\/a>/);
   assert.match(read("404.html"), /href="\/styles.css"/);
 });

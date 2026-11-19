@@ -58,7 +58,8 @@ test("Stats-preview rendert de vaste editorial hiërarchie zonder dashboardpatro
     assert.match(html,new RegExp(`data-match-stat="${id}-away"`));
   }
   assert.doesNotMatch(html,/data-preview-slot=/);
-  assert.doesNotMatch(html,/data-match-stat="bigChances-(?:home|away)"/);
+  assert.match(html,/data-match-stat="bigChances-home"/);
+  assert.match(html,/data-match-stat="bigChances-away"/);
   assert.doesNotMatch(html,/<progress|progressbar/);
   assert.doesNotMatch(html,/EXPECTED GOALS|>EINDSTAND<|AJAXPRO\.NL/);
   assert.doesNotMatch(html,/match-numbers-preview__mark/);

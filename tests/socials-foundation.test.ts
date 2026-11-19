@@ -28,12 +28,9 @@ test("Socials registreert uitsluitend de twee afgesproken outputformaten",()=>{
 test("Socials toont recente afgeronde, recent begonnen en aankomende wedstrijden uit de centrale context",()=>{
   const source=read("../lib/socials-match-context.ts");
   assert.match(source,/FROM matchday_fixtures/);
-  assert.match(source,/WITH recent_finished AS/);
-  assert.match(source,/LIMIT 2/);
-  assert.match(source,/WITH recent_finished AS[\s\S]*upcoming/);
-  assert.match(source,/recently_started AS/);
-  assert.match(source,/kickoff_at >= now\(\) - interval '72 hours'/);
-  assert.match(source,/LIMIT 3/);
+  assert.match(source,/kickoff_at > now\(\) - interval '14 days'/);
+  assert.match(source,/kickoff_at < now\(\) \+ interval '14 days'/);
+  assert.doesNotMatch(source,/LIMIT|recent_finished/);
   assert.match(source,/ORDER BY kickoff_at ASC/);
   assert.doesNotMatch(source,/INSERT|UPDATE|DELETE|CREATE TABLE/i);
 });

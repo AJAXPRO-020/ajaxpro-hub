@@ -27,5 +27,6 @@ test('Ajax-schoten volgen team-ID, sluiten eigen doelpunten uit en behouden xG a
   assert.equal(onTargetCount({teamStats:{shotsOnTarget:2}}),2);
   assert.equal(onTargetCount({teamStats:{shotsOnTarget:null}}),null);
   assert.deepEqual(shotPosition(shots[1]),{left:50,top:2});
-  assert.equal(ajaxShots({fotmobApi:{shots:raw}}).length,2);
+  assert.deepEqual(ajaxShots({fotmobApi:{shots:raw}}),shots);
+  assert.deepEqual(ajaxShots({fotmobApi:{shots:[{x:98,y:40}],raw:{content:{shotmap:{shots:raw}}}}}),shots);
 });

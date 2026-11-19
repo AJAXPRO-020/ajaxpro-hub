@@ -5,12 +5,18 @@ import { PGlite } from '@electric-sql/pglite';
 import { runPressConferenceCheck } from '../lib/press-conference-monitor';
 import { listCurrent, saveCandidates, type Query } from '../lib/press-conference-store';
 
+test('nightly scheduler invocation does not touch sources or Neon', async () => {
+  const query: Query = async () => { throw new Error('nightly check must not query Neon'); };
+  assert.deepEqual(await runPressConferenceCheck(false,new Date('2026-11-14T22:07:00Z'),query,true),{status:'not-due',count:0});
+});
+
 test('real Ajax source facts flow through monitor, Postgres schema and public query', async () => {
   const database = new PGlite();
   const query: Query = (text, params=[]) => database.query(text, params as any[]);
   await database.exec(`CREATE TABLE matchday_fixtures(fixture_key text PRIMARY KEY,home_team text NOT NULL,away_team text NOT NULL,kickoff_at timestamptz NOT NULL);`);
   await query("INSERT INTO matchday_fixtures VALUES('ajax-atalanta','Ajax','Atalanta','2026-10-22T19:00:00Z')");
   await database.exec(readFileSync(new URL('../db/migrations/036_press_conferences.sql',import.meta.url),'utf8'));
+  await database.exec(readFileSync(new URL('../db/migrations/041_press_conference_observability.sql',import.meta.url),'utf8'));
   const priorFetch = globalThis.fetch;
   const priorKey = process.env.YOUTUBE_API_KEY;
   process.env.YOUTUBE_API_KEY='local-test-key';
@@ -42,7 +48,9 @@ test('real Ajax source facts flow through monitor, Postgres schema and public qu
     assert.ok(current.checkedAt,'successful source check is visible');
     const today=new Date((await query('SELECT CURRENT_DATE AS day')).rows[0].day).toISOString().slice(0,10);
     await query("INSERT INTO matchday_fixtures VALUES('ajax-future','Ajax','FC Thun',$1)",[new Date(Date.now()+3*86400000).toISOString()]);
-    await saveCandidates(query,[{fixtureKey:'ajax-future',kind:'preview',eventDate:today,startsAt:null,status:'announced',sourceUrl:'https://www.ajax.nl/artikelen/example/',watchLinks:{'Ajax.nl':'https://www.ajax.nl/artikelen/example/'},priority:2}],new Date());
+    const newAnnouncement={fixtureKey:'ajax-future',kind:'preview' as const,eventDate:today,startsAt:null,status:'announced' as const,sourceUrl:'https://www.ajax.nl/artikelen/example/',watchLinks:{'Ajax.nl':'https://www.ajax.nl/artikelen/example/'},priority:2};
+    assert.equal((await saveCandidates(query,[newAnnouncement],new Date())).length,1,'new confirmed record is publishable');
+    assert.equal((await saveCandidates(query,[newAnnouncement],new Date())).length,0,'repeat checks cannot republish the same record');
     await saveCandidates(query,[{fixtureKey:'ajax-future',kind:'preview',eventDate:today,startsAt:null,status:'live',sourceUrl:'https://www.youtube.com/watch?v=2CIv8BQk2YI',watchLinks:{YouTube:'https://www.youtube.com/watch?v=2CIv8BQk2YI'},priority:1}],new Date());
     const visible=await listCurrent(query);
     assert.equal(visible.items.length,1);

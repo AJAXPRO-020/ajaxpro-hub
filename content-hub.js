@@ -100,8 +100,16 @@ const bindContentHub = () => {
     const submit = form.querySelector("button[type=submit]");
     if (message) { message.setAttribute("aria-live", "polite"); message.setAttribute("role", "status"); }
     const setStatus = (text) => { if (message) message.textContent = text; };
-    const valid = type === "video" ? ["video/mp4", "video/quicktime"].includes(file?.type) && file.size <= 100 * 1024 * 1024 : ["image/jpeg", "image/png", "image/webp"].includes(file?.type) && file.size <= 15 * 1024 * 1024;
-    if (!file || !valid) { setStatus("Kies een geldig bestand binnen de limiet."); return; }
+    const allowedTypes = type === "video" ? ["video/mp4", "video/quicktime"] : ["image/jpeg", "image/png", "image/webp"];
+    const allowedLabel = type === "video" ? "MP4 of MOV" : "JPG, PNG of WebP";
+    const maxSize = type === "video" ? 100 * 1024 * 1024 : 15 * 1024 * 1024;
+    if (!file) { setStatus(`Kies eerst een bestand voor het type ${type === "video" ? "Video" : "Foto"}.`); return; }
+    if (!allowedTypes.includes(file.type)) {
+      const extension = file.name.includes(".") ? file.name.slice(file.name.lastIndexOf(".")).toUpperCase() : "dit bestandstype";
+      setStatus(`Dit bestand (${extension}) is geen ${type === "video" ? "video" : "foto"}. Kies ${allowedLabel}, of wijzig Type naar ${type === "video" ? "Foto" : "Video"}.`);
+      return;
+    }
+    if (file.size > maxSize) { setStatus(`Dit bestand is te groot. ${type === "video" ? "Video's" : "Foto's"} mogen maximaal ${type === "video" ? "100 MB" : "15 MB"} zijn.`); return; }
     if (submit) { submit.disabled = true; submit.textContent = "Bezig…"; }
     let step = "Uploadsessie aanvragen bij AjaxPro";
     try {

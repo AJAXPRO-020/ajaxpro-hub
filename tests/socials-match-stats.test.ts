@@ -57,7 +57,7 @@ test("meldt duidelijk wanneer de resolver geen wedstrijd vindt",async()=>{
 test("rendert precies één handmatige Data ophalen-actie voor de bestaande context",async()=>{
   const html=await renderSocials(session,async()=>[fixture]).then(response=>response.text());
   assert.equal((html.match(/data-socials-stats-fetch/g)??[]).length,1);
-  assert.match(html,/Data ophalen/);
+  assert.match(html,/Stats ophalen/);
   assert.match(html,/Fortuna Sittard — Ajax/);
   assert.match(html,/Nog geen stats opgeslagen/);
   assert.match(html,/data-socials-provider-status/);
@@ -94,6 +94,9 @@ test("formatwissels en reset voegen geen tweede stats-fetch toe",()=>{
   const fetchSource=readFileSync(new URL("../socials/match-stats.mjs",import.meta.url),"utf8");
   const editorSource=readFileSync(new URL("../socials/main.mjs",import.meta.url),"utf8");
   assert.equal((fetchSource.match(/fetch\(`/g)??[]).length,1);
-  assert.doesNotMatch(editorSource,/fetch\(|XMLHttpRequest/);
+  assert.doesNotMatch(editorSource,/socials-match-stats&fixture=|XMLHttpRequest/);
+  const formatActions=editorSource.slice(editorSource.indexOf("const activate=id=>"));
+  assert.match(formatActions,/matchStats\.activate\(id\)/);
+  assert.doesNotMatch(formatActions,/fetch\(/);
   assert.match(editorSource,/controller\.reset/);
 });
