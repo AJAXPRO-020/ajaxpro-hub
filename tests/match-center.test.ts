@@ -39,6 +39,20 @@ test("spelerfoto gebruikt veilige naamkoppeling met fallback",()=>{
   assert.equal(registryPlayerForMatchPlayer("Onbekend",[player]),null);
 });
 
+test("clublogo's volgen centrale thuis- en uitvelden met teamnamen als fallback",()=>{
+  const active=match("ajax-ado","Ajax","ADO Den Haag",2,1);
+  active.homeLogo="/assets/clubs/ajax.png";
+  active.awayLogo="/assets/clubs/ado-den-haag.svg";
+  const html=matchCenterMarkup({matches:[active],active});
+  assert.match(html,/src="\/assets\/clubs\/ajax.png" alt="Logo Ajax"/);
+  assert.match(html,/src="\/assets\/clubs\/ado-den-haag.svg" alt="Logo ADO Den Haag"/);
+  active.awayTeam="Onbekende buitenlandse club";
+  active.awayLogo=null;
+  const fallback=matchCenterMarkup({matches:[active],active});
+  assert.match(fallback,/<strong>Onbekende buitenlandse club<\/strong>/);
+  assert.equal((fallback.match(/data-club-logo/g)??[]).length,1);
+});
+
 test("editorial statistieken houden Ajax links, ook als Ajax uit speelt",()=>{
   const active=match("groningen-ajax","FC Groningen","Ajax",1,2);
   const html=matchCenterMarkup({matches:[active],active});

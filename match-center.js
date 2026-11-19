@@ -1,5 +1,10 @@
 const root = document.querySelector(".match-center-main");
 if (root) {
+  root.querySelectorAll("[data-club-logo]").forEach((image) => {
+    const hideBrokenLogo = () => image.remove();
+    image.addEventListener("error", hideBrokenLogo, { once: true });
+    if (image.complete && !image.naturalWidth) hideBrokenLogo();
+  });
   const selector = root.querySelector("[data-match-select]");
   selector?.addEventListener("change", () => {
     const url = new URL(window.location.href);

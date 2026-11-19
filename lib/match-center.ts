@@ -7,6 +7,8 @@ export type MatchCenterFixture = {
   fixtureKey: string;
   homeTeam: string;
   awayTeam: string;
+  homeLogo?: string | null;
+  awayLogo?: string | null;
   competition: string;
   kickoffAt: string;
   homeScore: number;
@@ -52,7 +54,18 @@ export const loadMatchCenter = async (requestedFixtureKey?: string | null): Prom
     }];
   });
   if (!matches.length) return null;
-  return { matches, active: matches.find(match => match.fixtureKey === requestedFixtureKey) ?? matches[0] };
+  const active: MatchCenterFixture = matches.find(match => match.fixtureKey === requestedFixtureKey) ?? matches[0];
+  const resolveLogo = async (name: string) => {
+    try {
+      const [row] = await db()`SELECT logo_path FROM resolve_club_logo(${name}) LIMIT 1`;
+      return row?.logo_path ? String(row.logo_path) : null;
+    } catch (error) {
+      console.error("Unable to resolve Match Center club logo", name, error);
+      return null;
+    }
+  };
+  [active.homeLogo, active.awayLogo] = await Promise.all([resolveLogo(active.homeTeam), resolveLogo(active.awayTeam)]);
+  return { matches, active };
 };
 
 export const registryPlayerForMatchPlayer = (name: string | null, players: readonly PlayerRegistryRow[]) => {
@@ -68,14 +81,6 @@ export const registryPlayerForMatchPlayer = (name: string | null, players: reado
 const present = (value: number | null | undefined, digits = 0) => value == null ? "—" : Number(value).toLocaleString("nl-NL", { minimumFractionDigits: digits, maximumFractionDigits: digits });
 const date = (value: string) => new Intl.DateTimeFormat("nl-NL", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Amsterdam" }).format(new Date(value));
 const ratio = (value: number | null, other: number | null) => value == null || other == null || value + other === 0 ? null : Math.round((value / (value + other)) * 100);
-const normalizeClub = (name: string) => name.toLocaleLowerCase("nl-NL").replace(/\s+/g, " ").trim();
-const clubLogos: Readonly<Record<string, string>> = {
-  "ajax": "ajax.png", "az": "az.png", "excelsior": "excelsior.png", "fortuna sittard": "fortuna-sittard.png",
-  "fc groningen": "fc-groningen.png", "fc midtjylland": "fc-midtjylland.png", "fc twente": "fc-twente.png",
-  "nec": "nec.png", "psv": "psv.png", "sparta": "sparta.png", "sparta rotterdam": "sparta.png",
-  "sc cambuur": "sc-cambuur.png", "sint truidense": "sint-truidense.png", "telstar": "telstar.png", "willem ii": "willem-ii.png",
-};
-const clubLogo = (name: string) => clubLogos[normalizeClub(name)] ? `/assets/clubs/${clubLogos[normalizeClub(name)]}` : null;
 
 const comparison = (label: string, ajax: number | null, opponent: number | null, options: { digits?: number; suffix?: string; feature?: boolean; className?: string } = {}) => {
   if (ajax == null && opponent == null) return "";
@@ -91,7 +96,10 @@ export const matchCenterMarkup = (pageData: MatchCenterPageData | null) => {
   const { snapshot, homeTeam, awayTeam } = data;
   const opponent = snapshot.opponentTeamStats, ajax = snapshot.teamStats;
   const topThree = snapshot.players.filter(player => player.rating != null).slice().sort((a, b) => (b.rating ?? -1) - (a.rating ?? -1)).slice(0, 3);
-  const logo = (team: string) => clubLogo(team) ? `<img src="${clubLogo(team)}" alt="Logo ${esc(team)}">` : "";
+  const logo = (team: string) => {
+    const source = team === homeTeam ? data.homeLogo : data.awayLogo;
+    return source ? `<img src="${esc(source)}" alt="Logo ${esc(team)}" data-club-logo>` : "";
+  };
   const playerFacts = (player: typeof topThree[number], position: string | undefined) => {
     const isKeeper = /keeper|doelman|goalkeeper/i.test(position ?? "");
     const facts: [string, string | number | null | undefined][] = isKeeper
