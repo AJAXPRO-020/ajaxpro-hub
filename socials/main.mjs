@@ -1,4 +1,5 @@
 import { statsFormat } from "/socials/formats/stats.mjs";
+import { selectedMatchContext } from "/socials/match-context.mjs";
 import { shotsMapFormat, ajaxShots } from "/socials/formats/shots-map.mjs?v=20261115-raw-shots";
 import { notableStatFormat } from "/socials/formats/notable-stat.mjs?v=20261113-outline";
 import { cardVideoFormat } from "/socials/formats/card-video.mjs?v=20261115-preview";
@@ -22,8 +23,9 @@ if(root){
   const sharedState={};
   const matchStats=initMatchStats(root,sharedState);
   const fixtures=readFixtures(root);
+  sharedState.getMatchContext=()=>selectedMatchContext(fixtures,sharedState.selectedFixtureKey);
   const formats=new Map(formatDefinitions.map(definition=>[definition.id,{definition,controller:definition.init(root,sharedState)}]));
-  mountPngPreviews(root);
+  mountPngPreviews(root,sharedState);
   const formatStatus=root.querySelector("[data-socials-format-status]"),statsStatus=root.querySelector("[data-socials-stats-status]"),resetFormat=root.querySelector("[data-socials-format-reset]"),previewControls=root.querySelector("[data-socials-preview-controls]");
   const publishDialog=root.querySelector("[data-socials-publish-dialog]"),publishForm=root.querySelector("[data-socials-publish-form]"),publishStatus=root.querySelector("[data-socials-publish-status]"),publishFile=root.querySelector("[data-socials-publish-file]"),publishText=root.querySelector("#socials-publish-text"),publishCancel=root.querySelector("[data-socials-publish-cancel]"),publishSubmit=root.querySelector("[data-socials-publish-submit]");
   let pendingPublication=null;

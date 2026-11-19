@@ -63,10 +63,12 @@ function drawShotsMap(ctx,H,preview){
   ctx.beginPath();ctx.arc(415,ly-9,9,0,Math.PI*2);ctx.fillStyle=color('--shot-other');ctx.fill();text(ctx,'Overig schot',438,ly,27,MUTED);text(ctx,'Stipgrootte: xG',760,ly,27,MUTED);
   const sy=tall?1552:1112;for(const [i,key] of ['count','target','xg'].entries()){const sx=100+i*330;label(ctx,['Schoten','Op doel','xG'][i],sx,sy,29,MUTED);text(ctx,value(preview,`[data-shots-map-${key}]`),sx,sy+95,86,PAPER)}
 }
-function drawStats(ctx,H,preview){
+function drawStats(ctx,H,preview,clubLogos=[]){
   const tall=H>1500,home=value(preview,'[data-preview-team="home"]'),away=value(preview,'[data-preview-team="away"]');
   const scoreTop=tall?360:285,scoreBottom=tall?870:625,nameY=tall?340:270,scoreY=tall?820:580;
-  fit(ctx,home,100,nameY,385,60,37,'#fff');ctx.textAlign='right';fit(ctx,away,980,nameY,385,60,37,'#fff');ctx.textAlign='left';
+  if(clubLogos[0])contain(ctx,clubLogos[0],100,nameY-57,60,60);
+  if(clubLogos[1])contain(ctx,clubLogos[1],920,nameY-57,60,60);
+  fit(ctx,home,clubLogos[0]?180:100,nameY,clubLogos[0]?305:385,60,37,'#fff');ctx.textAlign='right';fit(ctx,away,clubLogos[1]?900:980,nameY,clubLogos[1]?305:385,60,37,'#fff');ctx.textAlign='left';
   const hs=value(preview,'[data-preview-score="home"]'),as=value(preview,'[data-preview-score="away"]');
   number(ctx,hs,95,scoreY,tall?445:350,'#fff',360);ctx.textAlign='right';number(ctx,as,985,scoreY,tall?445:350,'#fff',360);ctx.textAlign='center';label(ctx,'FT',540,scoreBottom-45,27,'#e21242');ctx.textAlign='left';
   const divider=tall?955:715,xgY=tall?1135:875;line(ctx,95,divider,985,divider);number(ctx,value(preview,'[data-match-stat="xg-home"]'),100,xgY,tall?155:135,'#fff',350);ctx.textAlign='center';label(ctx,'xG',540,xgY-22,60,'#e21242');ctx.textAlign='right';number(ctx,value(preview,'[data-match-stat="xg-away"]'),980,xgY,tall?155:135,'#fff',350);ctx.textAlign='left';
@@ -143,7 +145,7 @@ function drawQuote(ctx,H,preview,portrait,background,inset){
 }
 const filename=(id,preview)=>{const ratio=preview.dataset.aspect==='vertical-9x16'?'9x16':'4x5',home=preview.dataset.pngHome||value(preview,'[data-preview-team="home"]'),away=preview.dataset.pngAway||value(preview,'[data-preview-team="away"]'),subject=id==='outblinker'?value(preview,'[data-outblinker-name]'):value(preview,'[data-quote-preview-name]');return socialFilename({date:preview.dataset.pngDate,home,away,subject,format:FORMATS[id].slug,ratio})};
 const validate=(id,preview,images)=>{if(id==='notable-stat'&&(!preview.dataset.notableValue?.trim()||!preview.dataset.notableHeadline?.trim()))return 'Vul een cijfer en headline in.';if(id==='stats'){if(!value(preview,'[data-preview-team="home"]')||!value(preview,'[data-preview-team="away"]'))return 'Wedstrijdgegevens ontbreken.';if([value(preview,'[data-preview-score="home"]'),value(preview,'[data-preview-score="away"]')].some(v=>!/^\d+$/.test(v)))return 'Een complete uitslag is nodig.';if([...preview.querySelectorAll('[data-match-stat]')].some(n=>n.textContent.trim()==='—'))return 'Vul eerst de wedstrijdstatistieken in.'}if(id==='outblinker'){if(!images[0])return 'Voor deze speler ontbreekt een bruikbare foto.';if(![...preview.querySelectorAll('.outblinker-preview__performance [data-outblinker-preview-slot]')].some(n=>!n.hidden))return 'Kies een speler met bruikbare stats.'}if(id==='top-three'){if([...preview.querySelectorAll('[data-top-three-preview-player]')].some(n=>n.dataset.selected!=='true'))return 'Kies drie spelers.';if(images.some(image=>!image))return 'Voor één of meer spelers ontbreekt een bruikbare foto.'}if(id==='quote'){if(value(preview,'[data-quote-preview-text]')==='Vul een quote in')return 'Vul eerst een quote in.';if(!images[0])return 'Voor deze persoon ontbreekt een bruikbare foto.'}return ''};
-export function mountPngPreviews(root){
+export function mountPngPreviews(root,sharedState={}){
   for(const [id,definition] of Object.entries(FORMATS)){
     const preview=root.querySelector(definition.selector);if(!preview)continue;
     const workspace=preview.closest('[data-format-workspace]'),button=workspace.querySelector('.socials-download');if(!button)continue;
@@ -157,14 +159,20 @@ export function mountPngPreviews(root){
     const saveHelp=save?document.createElement('p'):null;if(saveHelp){saveHelp.className='socials-png-notice';save.after(saveHelp)}
     let revision=0,exportFrame=null,publishKey='';
     const render=async()=>{
+      const fixture=sharedState.getMatchContext?.();
+      if(id!=='quote'){
+        preview.dataset.pngHomeLogo=fixture?.homeLogo??'';
+        preview.dataset.pngAwayLogo=fixture?.awayLogo??'';
+      }
       const current=++revision,H=preview.dataset.aspect==='vertical-9x16'?1920:1350;button.disabled=true;if(save)save.disabled=true;exportFrame=null;
       let photos=[];
+      if(id==='stats')photos=await Promise.all(['home','away'].map(side=>imageFor(preview.querySelector(`[data-stats-club-logo="${side}"]`))));
       if(id==='outblinker')photos=[await imageFor(preview.querySelector('[data-outblinker-photo]'))];
       if(id==='top-three')photos=await Promise.all([...preview.querySelectorAll('[data-top-three-photo]')].map(imageFor));
       if(id==='quote')photos=await Promise.all(['[data-quote-person-photo]','[data-quote-background-preview]','[data-quote-inset-preview]'].map(selector=>imageFor(preview.querySelector(selector))));
       const logo=await logoFor();if(current!==revision)return;await loadVisualFonts();if(current!==revision)return;
       const frame=document.createElement('canvas');frame.width=W;frame.height=H;const ctx=frame.getContext('2d');base(ctx,H,definition.name,matchContext(preview),logo);
-      let error=validate(id,preview,photos);if(id==='stats')drawStats(ctx,H,preview);if(id==='shots-map'){drawShotsMap(ctx,H,preview);if(!preview.querySelector('.shots-map-preview__shot'))error='Geen bruikbare Ajax-schoten beschikbaar.'}if(id==='notable-stat')drawNotableStat(ctx,H,preview);if(id==='outblinker')drawOutblinker(ctx,H,preview,photos[0]);if(id==='top-three')drawTopThree(ctx,H,preview,photos);if(id==='quote')error=drawQuote(ctx,H,preview,...photos)||error;footer(ctx,H);if(current!==revision)return;
+      let error=validate(id,preview,photos);if(id==='stats')drawStats(ctx,H,preview,photos);if(id==='shots-map'){drawShotsMap(ctx,H,preview);if(!preview.querySelector('.shots-map-preview__shot'))error='Geen bruikbare Ajax-schoten beschikbaar.'}if(id==='notable-stat')drawNotableStat(ctx,H,preview);if(id==='outblinker')drawOutblinker(ctx,H,preview,photos[0]);if(id==='top-three')drawTopThree(ctx,H,preview,photos);if(id==='quote')error=drawQuote(ctx,H,preview,...photos)||error;footer(ctx,H);if(current!==revision)return;
       canvas.width=W;canvas.height=H;canvas.getContext('2d').drawImage(frame,0,0);exportFrame=frame;publishKey=crypto.randomUUID();button.disabled=Boolean(error);if(save)save.disabled=Boolean(error);publish.disabled=Boolean(error);notice.textContent=error;if(saveHelp)saveHelp.textContent='';
       root.dispatchEvent(new CustomEvent('socials:png-ready',{detail:{formatId:id,ready:!error}}));
     };

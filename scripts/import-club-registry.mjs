@@ -13,6 +13,7 @@ const variants = (name) => {
   for (const prefix of ["FC ", "SC "]) if (name.startsWith(prefix)) values.add(name.slice(prefix.length));
   if (name === "Sparta Rotterdam") values.add("Sparta");
   if (name === "ADO Den Haag") values.add("ADO");
+  if (name === "Ajax") values.add("AFC Ajax");
   if (name === "NEC") values.add("N.E.C.");
   return [...values];
 };

@@ -57,6 +57,14 @@ export const initStats=(root,sharedState)=>{
     preview.dataset.ajaxSide=context.ajaxIsHome?"home":"away";
     workspace.querySelector('[data-preview-team="home"]').textContent=context.homeTeam;
     workspace.querySelector('[data-preview-team="away"]').textContent=context.awayTeam;
+    for(const side of ['home','away']){
+      const name=workspace.querySelector(`[data-preview-team="${side}"]`);
+      let image=name.parentElement.querySelector('[data-stats-club-logo]');
+      const source=fixture[`${side}Logo`];
+      if(!source){image?.remove();continue}
+      if(!image){image=document.createElement('img');image.dataset.statsClubLogo=side;image.alt='';image.addEventListener('error',()=>image.remove(),{once:true});name.before(image)}
+      if(image.getAttribute('src')!==source)image.src=source;
+    }
     workspace.querySelector('[data-preview-score="home"]').textContent=context.homeScore??"–";
     workspace.querySelector('[data-preview-score="away"]').textContent=context.awayScore??"–";
     workspace.querySelector("[data-preview-meta]").textContent=`${context.competition} · ${formatDate(context.kickoff)}`.toLocaleUpperCase("nl-NL");

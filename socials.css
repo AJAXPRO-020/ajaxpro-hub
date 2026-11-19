@@ -93,6 +93,11 @@
 .match-numbers-preview[data-ajax-side=home] .match-numbers-preview__score{grid-template-columns:56% 44%}
 .match-numbers-preview__team{display:flex;min-width:0;flex-direction:column;justify-content:space-between;padding:4.8cqw 2cqw 2.5cqw}
 .match-numbers-preview__team[data-side=away]{align-items:flex-end;text-align:right}
+.match-numbers-preview__team{position:relative}
+.match-numbers-preview__team [data-stats-club-logo]{position:absolute;top:4.4cqw;left:2cqw;width:5.6cqw;height:5.6cqw;object-fit:contain}
+.match-numbers-preview__team[data-side=away] [data-stats-club-logo]{left:auto;right:2cqw}
+.match-numbers-preview__team:has([data-stats-club-logo]) [data-preview-team=home]{margin-left:7.2cqw;max-width:calc(100% - 7.2cqw)}
+.match-numbers-preview__team:has([data-stats-club-logo]) [data-preview-team=away]{margin-right:7.2cqw;max-width:calc(100% - 7.2cqw)}
 .match-numbers-preview__team span{max-width:100%;color:rgba(245,242,235,.58);font-family:"AjaxPro Bebas Visual","Arial Narrow",Arial,sans-serif;font-size:3.65cqw;font-weight:700;line-height:.9;letter-spacing:.025em;text-transform:uppercase}
 .match-numbers-preview__team strong{display:block;color:rgba(245,242,235,.56);font-family:"AjaxPro Refrigerator","Arial Narrow",Impact,Arial,sans-serif;font-size:27cqw;font-weight:900;line-height:.66;letter-spacing:-.035em}
 .match-numbers-preview[data-ajax-side=away] .match-numbers-preview__team[data-side=away] span,.match-numbers-preview[data-ajax-side=home] .match-numbers-preview__team[data-side=home] span{color:var(--poster-paper)}

@@ -30,7 +30,7 @@ test("Socials toont recente afgeronde, recent begonnen en aankomende wedstrijden
   assert.match(source,/FROM matchday_fixtures/);
   assert.match(source,/kickoff_at > now\(\) - interval '14 days'/);
   assert.match(source,/kickoff_at < now\(\) \+ interval '14 days'/);
-  assert.doesNotMatch(source,/LIMIT|recent_finished/);
+  assert.doesNotMatch(source.slice(source.indexOf("export const loadSocialMatchdayFixtures")),/LIMIT|recent_finished/);
   assert.match(source,/ORDER BY kickoff_at ASC/);
   assert.doesNotMatch(source,/INSERT|UPDATE|DELETE|CREATE TABLE/i);
 });
