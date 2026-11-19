@@ -37,7 +37,7 @@ if(root){
   const globalDataStatus=()=>{
     const fixture=fixtures.find(item=>item.fixture_key===sharedState.selectedFixtureKey)??fixtures[0]??null;
     const payload=fixture?sharedState.getMatchStats?.(fixture.fixture_key):null;
-    const api=payload?.fotmobApi,shots=Array.isArray(api?.shots)?api.shots:[],lineups=api?.lineups;
+    const api=payload?.fotmobApi,shots=Array.isArray(api?.shots)?api.shots:Array.isArray(api?.raw?.content?.shotmap?.shots)?api.raw.content.shotmap.shots:[],lineups=api?.lineups;
     return {matchData:Boolean(fixture),matchStats:Boolean(payload),playerStats:Array.isArray(payload?.players)&&payload.players.some(hasUsableStats),
       shotData:shots.some(shot=>Number.isFinite(shot?.x)&&Number.isFinite(shot?.y)&&Number.isFinite(shot?.expectedGoals)),
       lineups:Boolean(lineups?.homeTeam||lineups?.awayTeam),events:Array.isArray(api?.events)&&api.events.length>0};

@@ -232,6 +232,62 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .portal-brand{min-height:44px;flex:0 0 auto}
 @media(max-width:767px){.mobile-menu nav a.active{position:relative}.mobile-menu nav a.active::after{content:none}.mobile-menu__panel{inset:0;width:100%;height:100%;height:100dvh;display:flex;flex-direction:column;padding:calc(18px + env(safe-area-inset-top)) clamp(24px,7vw,42px) calc(20px + env(safe-area-inset-bottom));background:var(--bg);box-shadow:none}.mobile-menu__close{flex:0 0 auto}.mobile-menu nav{width:min(100%,620px);gap:8px;margin:auto 0}.mobile-menu nav a{position:relative;min-height:68px;padding:9px 16px;border:0;border-radius:0;background:transparent;color:#929baa;font-size:clamp(44px,11vw,52px);font-weight:900;line-height:1;letter-spacing:-.035em;transition:color 160ms ease}.mobile-menu nav a:hover,.mobile-menu nav a:focus-visible{color:#fff}.mobile-menu nav a.active{background:transparent;color:#fff}.mobile-menu nav a.active::before{content:"";position:absolute;top:50%;left:0;width:3px;height:32px;transform:translateY(-50%);border-radius:2px;background:var(--red)}.mobile-menu nav a .nav-lock{display:inline-block;margin-left:.08em;transform:translateY(-.08em);font-size:.4em;letter-spacing:0;vertical-align:middle}}
 
+/* Keep the Club shell's header aligned with the public homepage header. */
+.portal-header__inner{width:min(100% - 32px,var(--container));gap:14px}
+.portal-brand{gap:0}
+.portal-brand img{height:44px}
+.desktop-nav{gap:4px}
+@media(min-width:760px){.desktop-nav{margin-left:auto}}
+.desktop-nav a{padding-inline:13px;font-size:.86rem;font-weight:850}
+.desktop-nav a.active{position:relative;background:rgba(24,34,49,.82);color:var(--text)}
+.desktop-nav a.active:after{right:13px;left:13px}
+.profile-menu summary{padding:4px 9px 4px 5px}
+.profile-menu summary img{width:32px;height:32px}
+@media(max-width:767px){
+  .portal-header__inner{width:min(100% - 32px,var(--container));gap:10px}
+  .portal-brand img{height:40px}
+}
+@media(min-width:760px){
+  .portal-header{height:76px}
+  .portal-header__inner{width:min(100% - 64px,var(--container))}
+  .portal-brand img{height:52px}
+}
+
+/* The public header has no divider or red active underline. */
+.portal-header{border-bottom:0}
+.portal-header{background:transparent;backdrop-filter:none}
+.desktop-nav a.active:after{display:none}
+@media(max-width:767px){.mobile-menu nav a.active::before{display:none}}
+@media(max-width:767px){
+  .portal-header{background:transparent}
+  .desktop-nav{display:none}
+  .mobile-header-actions{display:flex;align-items:center;gap:10px;margin-left:auto}
+  .mobile-header-actions .mobile-avatar{display:none}
+  .profile-menu{display:none}
+  .mobile-avatar{width:34px;height:34px;border-radius:50%;object-fit:cover}
+  .menu-toggle{display:grid;place-items:center;width:44px;height:44px;border:1px solid rgba(255,255,255,.14);border-radius:12px;background:var(--surface-strong);color:var(--text);cursor:pointer}
+  .menu-toggle span,.menu-toggle span:before,.menu-toggle span:after{display:block;width:19px;height:2px;border-radius:2px;background:currentColor}
+  .menu-toggle span{position:relative}
+  .menu-toggle span:before,.menu-toggle span:after{content:"";position:absolute;left:0}
+  .menu-toggle span:before{top:-6px}.menu-toggle span:after{top:6px}
+  .mobile-menu{display:none}
+  .mobile-menu:not([hidden]){position:fixed;z-index:100;inset:0;display:block}
+  .mobile-menu__backdrop{position:absolute;inset:0;width:100%;height:100%;border:0;background:rgba(0,0,0,.64)}
+  .mobile-menu__panel{position:absolute;inset:0;width:100%;height:100dvh;display:flex;flex-direction:column;padding:calc(18px + env(safe-area-inset-top)) clamp(24px,7vw,42px) calc(20px + env(safe-area-inset-bottom));background:var(--bg);box-shadow:none}
+  .mobile-menu__close{display:grid;place-items:center;flex:0 0 auto;width:44px;height:44px;margin-left:auto;border:1px solid rgba(255,255,255,.14);border-radius:12px;background:var(--surface-strong);color:var(--text);font-size:1.8rem;line-height:1;cursor:pointer}
+  .mobile-menu nav{width:min(100%,620px);display:grid;gap:8px;margin:auto 0}
+  .mobile-menu nav a{position:relative;min-height:68px;display:flex;align-items:center;padding:9px 16px;border:0;border-radius:0;background:transparent;color:#929baa;font-size:clamp(44px,11vw,52px);font-weight:900;line-height:1;letter-spacing:-.035em;transition:color 160ms ease}
+  .mobile-menu nav a:hover,.mobile-menu nav a:focus-visible{color:#fff}
+  .mobile-menu nav a.active{background:transparent;color:#fff}
+  .mobile-menu nav a .nav-lock{display:inline-block;margin-left:.08em;transform:translateY(-.08em);font-size:.4em;letter-spacing:0;vertical-align:middle}
+  .mobile-menu__profile{display:flex;align-items:center;gap:12px;margin-top:auto;padding:16px 0;border-top:1px solid rgba(255,255,255,.1)}
+  .mobile-menu__profile img{width:40px;height:40px;border-radius:50%;object-fit:cover}
+  .mobile-menu__profile strong{display:block;font-size:1rem}
+  .mobile-menu__profile form{margin-top:4px}
+  .mobile-menu__profile button{padding:0;border:0;background:none;color:var(--muted);font-size:.85rem;cursor:pointer}
+  .mobile-menu__profile button:hover,.mobile-menu__profile button:focus-visible{color:var(--text)}
+}
+
 /* Club v32: unified Impeccable UX pass for the complete MOTM flow. */
 .motm-main:not(.socials-shell)>.page-heading .eyebrow{display:none}
 .motm-main:not(.socials-shell)>.page-heading{padding-bottom:var(--space-lg);margin-bottom:var(--space-xl)}

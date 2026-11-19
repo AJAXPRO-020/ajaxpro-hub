@@ -150,9 +150,14 @@ export function mountPngPreviews(root){
     const canvas=document.createElement('canvas');canvas.className='socials-png-canvas';canvas.setAttribute('role','img');canvas.setAttribute('aria-label',`Voorbeeld ${definition.name}`);preview.append(canvas);
     const notice=document.createElement('p');notice.className='socials-png-notice';notice.setAttribute('role','status');button.after(notice);button.textContent='Download PNG';button.disabled=true;
     const publish=document.createElement('button');publish.type='button';publish.className='button secondary socials-publish-action';publish.textContent='Plaats in Discord';publish.disabled=true;button.after(publish);
+    const mobile=matchMedia('(max-width: 600px)').matches;
+    const save=mobile?document.createElement('button'):null;
+    if(save){save.type='button';save.className='button secondary socials-download';save.textContent="Opslaan in foto's";button.after(save);save.disabled=true}
+    if(save){const actions=document.createElement('div');actions.className='socials-png-actions';button.before(actions);actions.append(button,save,publish)}
+    const saveHelp=save?document.createElement('p'):null;if(saveHelp){saveHelp.className='socials-png-notice';save.after(saveHelp)}
     let revision=0,exportFrame=null,publishKey='';
     const render=async()=>{
-      const current=++revision,H=preview.dataset.aspect==='vertical-9x16'?1920:1350;button.disabled=true;exportFrame=null;
+      const current=++revision,H=preview.dataset.aspect==='vertical-9x16'?1920:1350;button.disabled=true;if(save)save.disabled=true;exportFrame=null;
       let photos=[];
       if(id==='outblinker')photos=[await imageFor(preview.querySelector('[data-outblinker-photo]'))];
       if(id==='top-three')photos=await Promise.all([...preview.querySelectorAll('[data-top-three-photo]')].map(imageFor));
@@ -160,12 +165,21 @@ export function mountPngPreviews(root){
       const logo=await logoFor();if(current!==revision)return;await loadVisualFonts();if(current!==revision)return;
       const frame=document.createElement('canvas');frame.width=W;frame.height=H;const ctx=frame.getContext('2d');base(ctx,H,definition.name,matchContext(preview),logo);
       let error=validate(id,preview,photos);if(id==='stats')drawStats(ctx,H,preview);if(id==='shots-map'){drawShotsMap(ctx,H,preview);if(!preview.querySelector('.shots-map-preview__shot'))error='Geen bruikbare Ajax-schoten beschikbaar.'}if(id==='notable-stat')drawNotableStat(ctx,H,preview);if(id==='outblinker')drawOutblinker(ctx,H,preview,photos[0]);if(id==='top-three')drawTopThree(ctx,H,preview,photos);if(id==='quote')error=drawQuote(ctx,H,preview,...photos)||error;footer(ctx,H);if(current!==revision)return;
-      canvas.width=W;canvas.height=H;canvas.getContext('2d').drawImage(frame,0,0);exportFrame=frame;publishKey=crypto.randomUUID();button.disabled=Boolean(error);publish.disabled=Boolean(error);notice.textContent=error;
+      canvas.width=W;canvas.height=H;canvas.getContext('2d').drawImage(frame,0,0);exportFrame=frame;publishKey=crypto.randomUUID();button.disabled=Boolean(error);if(save)save.disabled=Boolean(error);publish.disabled=Boolean(error);notice.textContent=error;if(saveHelp)saveHelp.textContent='';
       root.dispatchEvent(new CustomEvent('socials:png-ready',{detail:{formatId:id,ready:!error}}));
     };
     let scheduled=false;const observer=new MutationObserver(()=>{if(scheduled)return;scheduled=true;requestAnimationFrame(()=>{scheduled=false;void render()})});observer.observe(preview,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['data-aspect','data-selected','data-variant','data-notable-value','data-notable-headline','data-notable-detail','hidden','src']});
     const exportBlob=()=>new Promise(resolve=>{if(!exportFrame)return resolve(null);exportFrame.toBlob(resolve,'image/png')});
     publish.addEventListener('click',async()=>{if(publish.disabled)return;const file=await exportBlob();if(!file){notice.textContent='PNG-export is mislukt. Probeer opnieuw.';return}const name=filename(id,preview);root.dispatchEvent(new CustomEvent('socials:publish-request',{detail:{kind:'image',file,filename:name,sourceId:`${id}:${name}`,idempotencyKey:`socials:image:${id}:${publishKey}`}}))});
-    button.addEventListener('click',()=>{if(button.disabled||!exportFrame)return;const frame=exportFrame;button.disabled=true;frame.toBlob(blob=>{button.disabled=Boolean(notice.textContent)||!exportFrame;if(!blob){notice.textContent='PNG-export is mislukt. Probeer opnieuw.';return}const url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download=filename(id,preview);link.click();setTimeout(()=>URL.revokeObjectURL(url),60000)},'image/png')});void render();
+    const download=(blob,name)=>{const url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download=name;link.click();setTimeout(()=>URL.revokeObjectURL(url),60000)};
+    button.addEventListener('click',async()=>{if(button.disabled||!exportFrame)return;button.disabled=true;try{const blob=await exportBlob();if(!blob){notice.textContent='PNG-export is mislukt. Probeer opnieuw.';return}download(blob,filename(id,preview))}finally{button.disabled=Boolean(notice.textContent)||!exportFrame}});
+    save?.addEventListener('click',async()=>{if(save.disabled||!exportFrame)return;save.disabled=true;try{const blob=await exportBlob();if(!blob){notice.textContent='PNG-export is mislukt. Probeer opnieuw.';return}const name=filename(id,preview),file=new File([blob],name,{type:'image/png'});
+      let supported=false;try{supported=typeof navigator.share==='function'&&typeof navigator.canShare==='function'&&navigator.canShare({files:[file]})}catch{}
+      if(supported){
+        try{await navigator.share({files:[file]});saveHelp.textContent='Kies in het deelmenu ‘Bewaar afbeelding’ of een vergelijkbare optie.';return}catch(error){if(error?.name==='AbortError')return}
+      }
+      download(blob,name);saveHelp.textContent='PNG gedownload. Open het bestand en bewaar de afbeelding in je foto’s.';
+    }finally{save.disabled=Boolean(notice.textContent)||!exportFrame}});
+    void render();
   }
 }

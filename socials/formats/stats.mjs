@@ -95,12 +95,8 @@ export const initStats=(root,sharedState)=>{
       const chosen=new Set(selectedStats.filter((_,slot)=>slot!==index));
       [...select.options].forEach(option=>{option.disabled=Boolean(option.value&&(chosen.has(option.value)||!hasValue(inputFor(option.value,"ajax")?.value)&&!hasValue(inputFor(option.value,"opponent")?.value)))});
     });
-    workspace.querySelectorAll("[data-preview-slot]").forEach(slot=>{slot.hidden=true;slot.querySelectorAll("[data-match-stat-home],[data-match-stat-away]").forEach(value=>value.textContent="—")});
-    selectedStats.forEach((id,index)=>{
-      const home=workspace.querySelector(`[data-preview-slot="${index}"] [data-match-stat-home]`),away=workspace.querySelector(`[data-preview-slot="${index}"] [data-match-stat-away]`),label=workspace.querySelector(`[data-preview-slot="${index}"] [data-match-stat-label]`),field=inputFor(id,"ajax");
-      const slot=workspace.querySelector(`[data-preview-slot="${index}"]`);
-      if(slot)slot.hidden=false;
-      if(label)label.textContent=field?.closest(".stats-field")?.querySelector(".stats-field-label")?.textContent??id;
+    ["xg","possession","shots","shotsOnTarget","bigChances"].forEach(id=>{
+      const home=workspace.querySelector(`[data-match-stat="${id}-home"]`),away=workspace.querySelector(`[data-match-stat="${id}-away"]`);
       if(home)home.textContent=displayForSide(id,"home",context);
       if(away)away.textContent=displayForSide(id,"away",context);
     });

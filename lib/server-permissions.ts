@@ -16,6 +16,10 @@ type AuthorizationOptions = {
 type PermissionCacheEntry = { roleIds: readonly string[]; checkedAt: number };
 const permissionCache = new Map<string, PermissionCacheEntry>();
 
+export class DiscordRoleCheckUnavailable extends Error {
+  constructor() { super("Discord-rollen konden tijdelijk niet worden gecontroleerd."); }
+}
+
 export const clearPermissionCache = () => permissionCache.clear();
 export const clearPermissionCacheForUser = (userId: string) => permissionCache.delete(userId);
 
@@ -66,9 +70,15 @@ const refreshRoles = async (
     const roleIds = await fetchRoles(userId);
     permissionCache.set(userId, { roleIds: [...roleIds], checkedAt: now });
     return roleIds;
-  } catch {
+  } catch (error) {
     permissionCache.delete(userId);
-    return null;
+    const status = (error as { status?: number }).status;
+    if (status === 404) {
+      console.info("Discord auth role check: member_not_found");
+      return null;
+    }
+    console.warn("Discord auth role check: unavailable", { status: Number.isInteger(status) ? status : "network_or_config" });
+    throw new DiscordRoleCheckUnavailable();
   }
 };
 
@@ -77,13 +87,19 @@ export const getSessionWithPermission = async (
   permission: Permission,
 ): Promise<Session | null> => {
   const session = await readSession(request);
-  if (!session) return null;
+  if (!session) {
+    console.info("Discord auth protected request: no_valid_session");
+    return null;
+  }
   return authorizeSessionPermission(session, permission);
 };
 
 export const getSessionWithCurrentRoles = async (request: Request): Promise<Session | null> => {
   const session = await readSession(request);
-  if (!session) return null;
+  if (!session) {
+    console.info("Discord auth protected request: no_valid_session");
+    return null;
+  }
   return authorizeSessionCurrentRoles(session);
 };
 

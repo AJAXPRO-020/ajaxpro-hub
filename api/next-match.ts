@@ -131,9 +131,25 @@ const storedFixtures = async () => {
   return fixtures as unknown as StoredFixture[];
 };
 
-const responseFor = (fixture: StoredFixture | undefined, now: Date) => {
+const logoFor = async (teamName: string) => {
+  try {
+    const [row] = await db()`SELECT logo_path FROM resolve_club_logo(${teamName}) LIMIT 1`;
+    return row?.logo_path ? String(row.logo_path) : null;
+  } catch (error) {
+    console.error("Unable to resolve club logo", teamName, error);
+    return null;
+  }
+};
+
+const logosFor = async (fixture: StoredFixture) => {
+  const [homeLogo, awayLogo] = await Promise.all([logoFor(fixture.home_team), logoFor(fixture.away_team)]);
+  return { homeLogo, awayLogo };
+};
+
+const responseFor = async (fixture: StoredFixture | undefined, now: Date) => {
   if (!fixture) return { match: null, message: "De volgende wedstrijd is nog niet bekend.", updatedAt: now.toISOString() };
   const isHome = normalizeTeamName(fixture.home_team).includes("ajax");
+  const logos = await logosFor(fixture);
   return {
     match: {
       home: fixture.home_team,
@@ -143,15 +159,17 @@ const responseFor = (fixture: StoredFixture | undefined, now: Date) => {
       competition: fixture.competition,
       kickoff: new Date(fixture.kickoff_at).toISOString(),
       tv: fixture.tv,
+      ...logos,
       mode: "countdown",
     },
     updatedAt: now.toISOString(),
   };
 };
 
-const programResponseFor = (fixtures: StoredFixture[], now: Date) => ({
-  fixtures: fixtures.map((fixture) => {
+const programResponseFor = async (fixtures: StoredFixture[], now: Date) => ({
+  fixtures: await Promise.all(fixtures.map(async (fixture) => {
     const isHome = normalizeTeamName(fixture.home_team).includes("ajax");
+    const logos = await logosFor(fixture);
     return {
       home: fixture.home_team,
       away: fixture.away_team,
@@ -160,11 +178,12 @@ const programResponseFor = (fixtures: StoredFixture[], now: Date) => ({
       competition: fixture.competition,
       kickoff: new Date(fixture.kickoff_at).toISOString(),
       tv: fixture.tv,
+      ...logos,
       score: fixture.goals_home != null && fixture.goals_away != null
         ? { home: fixture.goals_home, away: fixture.goals_away }
         : null,
     };
-  }),
+  })),
   updatedAt: now.toISOString(),
 });
 
@@ -219,13 +238,13 @@ export async function GET(request: Request) {
     );
     await syncSourceFixtures();
     if (view === "program") {
-      return jsonResponse(programResponseFor(await storedFixtures(), now));
+      return jsonResponse(await programResponseFor(await storedFixtures(), now));
     }
-    return jsonResponse(responseFor(await nextStoredFixture(), now));
+    return jsonResponse(await responseFor(await nextStoredFixture(), now));
   } catch (error) {
     console.error("Unable to load matchday state", error);
     if (view === "motm-announcement") return automationResponse({ error: "Announcement check failed" }, 500);
-    try { return jsonResponse(responseFor(await nextStoredFixture(), now)); }
+    try { return jsonResponse(await responseFor(await nextStoredFixture(), now)); }
     catch { return jsonResponse({ match: null, message: "De volgende wedstrijd is nog niet bekend.", updatedAt: now.toISOString() }); }
   }
 }

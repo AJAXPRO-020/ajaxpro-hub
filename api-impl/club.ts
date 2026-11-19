@@ -28,5 +28,5 @@ export async function GET(request:Request){
       else if(planned)spotlight=`<section class="club-spotlight"><div><span class="status status-planned">Gepland</span><p class="eyebrow">${esc(planned.competition)} · Man of the Match</p><h2>${esc(matchTitle(planned))}</h2><p>Opent ${esc(formatMoment(planned.scheduled_open_at))}</p></div></section>`;
     }
   }catch(error){console.error("Club MOTM spotlight failed",error);spotlight=`<section class="club-spotlight unavailable"><div><p class="eyebrow">Man of the Match</p><h2>Tijdelijk niet beschikbaar</h2><p>Probeer het later opnieuw.</p></div></section>`;}
-  return page("Club",`<main class="motm-main club-main"><header class="club-intro"><div><p class="eyebrow">Home</p><h1>Welkom, ${esc(session.username)}</h1><p class="page-intro">${esc(clubIntroForSession(session))}</p></div>${verifiedClubStatus(session)}</header>${spotlight}</main>`,"/club.js",session,"home");
+  return page("Club",`<main class="motm-main club-main"><header class="club-intro"><div><p class="eyebrow">Club</p><h1>Welkom, ${esc(session.username)}</h1><p class="page-intro">${esc(clubIntroForSession(session))}</p></div>${verifiedClubStatus(session)}</header>${spotlight}</main>`,"/club.js",session,"home");
 }

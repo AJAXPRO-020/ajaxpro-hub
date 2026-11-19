@@ -18,7 +18,7 @@ const valid=data=>{
 };
 export const videoFormat={id:'video',fixedOutput:true,requirements:['matchData','matchStats'],init(root,shared){
  const workspace=root.querySelector('[data-video-flow]');if(!workspace)return {activate(){},getRequirementStatus(){return {}}};
- const $=selector=>workspace.querySelector(selector),content=$('[data-video-content]'),panel=$('[data-video-preview-panel]'),storyboard=$('[data-video-storyboard]'),result=$('[data-video-result]'),title=$('[data-video-title]'),status=$('[data-video-status]'),mode=$('[data-video-mode]'),primary=$('[data-video-primary]'),secondary=$('[data-video-secondary]'),reset=$('[data-video-reset]'),refresh=$('[data-video-refresh]'),confirm=$('[data-video-confirm]'),confirmStart=$('[data-video-confirm-start]'),confirmCancel=$('[data-video-confirm-cancel]'),player=$('video'),download=$('[data-video-download]'),dialog=$('[data-video-dialog]');
+ const $=selector=>workspace.querySelector(selector),content=$('[data-video-content]'),panel=$('[data-video-preview-panel]'),storyboard=$('[data-video-storyboard]'),result=$('[data-video-result]'),title=$('[data-video-title]'),status=$('[data-video-status]'),mode=$('[data-video-mode]'),primary=$('[data-video-primary]'),secondary=$('[data-video-secondary]'),reset=$('[data-video-reset]'),refresh=$('[data-video-refresh]'),confirm=$('[data-video-confirm]'),confirmStart=$('[data-video-confirm-start]'),confirmCancel=$('[data-video-confirm-cancel]'),player=$('video'),download=$('[data-video-download]'),publish=$('[data-socials-publish-video]'),dialog=$('[data-video-dialog]');
  const previewMode=root.dataset.socialsLocalVideoPreview==='true';
  let active=false,request=0,poll=null,elapsedTimer=null,startedAt=null,phase='loading',source=null,data=null,approved=null,current=null,ready=false,locked=false,fixtureLoaded=null,error='',submitting=false,attempt=null;
  const fixture=()=>shared.selectedFixtureKey,done=()=>!previewMode&&locked&&current?.status==='done'&&Boolean(current.mediaUrl);
@@ -41,7 +41,8 @@ export const videoFormat={id:'video',fixedOutput:true,requirements:['matchData',
   }
   form.append(stats,field('Afsluitende tekst','followText',data.followText,34));return form;
  };
- const setJob=job=>{current=job;if(job?.status==='done'&&job.mediaUrl&&!previewMode){player.src=job.mediaUrl;download.href=job.mediaUrl+'&download=1'}else{player.pause();player.removeAttribute('src');download.removeAttribute('href')}};
+ const setJob=job=>{current=job;if(job?.status==='done'&&job.mediaUrl&&!previewMode){player.src=job.mediaUrl;download.href=job.mediaUrl+'&download=1';publish.disabled=false}else{player.pause();player.removeAttribute('src');download.removeAttribute('href');publish.disabled=true}};
+ publish?.addEventListener('click',()=>{if(!publish.disabled&&current?.id)root.dispatchEvent(new CustomEvent('socials:publish-request',{detail:{kind:'video',jobId:current.id}}))});
  const queuePoll=()=>{clearTimeout(poll);if(active&&phase==='processing'&&current?.status!=='uncertain')poll=setTimeout(load,5000)};
  const elapsedText=()=>{const seconds=Math.max(0,Math.floor((Date.now()-new Date(submitting?startedAt:current?.createdAt??startedAt??Date.now()).getTime())/1000)),minutes=Math.floor(seconds/60);return `Bezig: ${minutes?`${minutes} ${minutes===1?'minuut':'minuten'} en `:''}${seconds%60} seconden`};
  const draw=()=>{

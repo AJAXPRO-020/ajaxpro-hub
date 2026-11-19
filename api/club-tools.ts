@@ -2,7 +2,7 @@ import { handleVideo } from "../lib/socials-video-http";
 import {generateVandaagContent,vandaagMedia} from "../lib/ajax-vandaag-content";
 import { redirect } from "../lib/discord-auth";
 import { permissions } from "../lib/permissions.config";
-import { getSessionWithCurrentRoles, getSessionWithPermission } from "../lib/server-permissions";
+import { DiscordRoleCheckUnavailable, getSessionWithCurrentRoles, getSessionWithPermission } from "../lib/server-permissions";
 import { errorPage, page, pageHeader } from "../lib/motm-view";
 import { renderToolsGrid, toolsForSession } from "../lib/portal-tools.config";
 import { renderSocials } from "../api-impl/socials/index";
@@ -19,7 +19,7 @@ import { videoService } from "../lib/socials-video";
 const MAX_SOCIALS_FUNCTION_UPLOAD = 3.5 * 1024 * 1024;
 
 const json=(body:unknown,status=200)=>new Response(JSON.stringify(body),{status,headers:{"Content-Type":"application/json; charset=UTF-8","Cache-Control":"private, no-store","X-Content-Type-Options":"nosniff"}});
-export async function GET(request:Request){
+async function get(request:Request){
   const view=new URL(request.url).searchParams.get("view");
   if(view==="content-hub"||view==="content-hub-upload-session"||view==="content-hub-download"||view==="content-hub-preview"){
     const session=await getSessionWithPermission(request,permissions.toolsSocials);
@@ -74,6 +74,14 @@ export async function GET(request:Request){
   }
   const tools=toolsForSession(session);
   return page("Staff-tools",`<main class="motm-main">${pageHeader("Staff-tools","Intern")}<p class="page-intro">Hulpmiddelen die bij jouw rechten horen.</p>${tools.length?renderToolsGrid(tools):'<section class="empty"><h2>Geen tools beschikbaar</h2><p>Voor jouw rol zijn er momenteel geen afzonderlijke tools beschikbaar.</p></section>'}</main>`,"",session,"tools");
+}
+
+export async function GET(request:Request){
+  try { return await get(request); }
+  catch (error) {
+    if (!(error instanceof DiscordRoleCheckUnavailable)) throw error;
+    return new Response("Discord is tijdelijk niet bereikbaar. Probeer het later opnieuw; je sessie blijft bewaard.", { status: 503, headers: { "Content-Type": "text/plain; charset=UTF-8", "Cache-Control": "private, no-store" } });
+  }
 }
 
 export async function POST(request:Request){

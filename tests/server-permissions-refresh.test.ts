@@ -6,6 +6,7 @@ import { permissions } from "../lib/permissions.config";
 import {
   PORTAL_MEMBERSHIP_CACHE_SECONDS,
   ROLE_PERMISSION_CACHE_SECONDS,
+  DiscordRoleCheckUnavailable,
   authorizeSessionCurrentRoles,
   authorizeSessionPermission,
   clearPermissionCache,
@@ -63,14 +64,14 @@ test("ingetrokken guild-membership weigert portaltoegang na refresh", async () =
   }), null);
 });
 
-test("Discord-storing weigert portaltoegang zodra de membership-cache verlopen is", async () => {
+test("Discord-storing geeft een tijdelijke fout zodra de membership-cache verlopen is", async () => {
   const fetchRoles = async () => { throw new Error("Discord unavailable"); };
   const current = session([], 30_000, "portal-outage");
   assert.ok(await authorizeSessionPermission(current, permissions.portalAccess, { nowSeconds: 30_001, fetchRoles }));
-  assert.equal(await authorizeSessionPermission(current, permissions.portalAccess, {
+  await assert.rejects(authorizeSessionPermission(current, permissions.portalAccess, {
     nowSeconds: 30_000 + PORTAL_MEMBERSHIP_CACHE_SECONDS,
     fetchRoles,
-  }), null);
+  }), DiscordRoleCheckUnavailable);
 });
 
 test("toolrollen worden na maximaal vijftien minuten opnieuw gecontroleerd", async () => {

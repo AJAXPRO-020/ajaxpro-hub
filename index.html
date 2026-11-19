@@ -49,6 +49,8 @@
     <link rel="me" href="https://www.tiktok.com/@ajaxpro_">
     <link rel="me" href="https://www.youtube.com/@AjaxPro020">
     <link rel="stylesheet" href="styles.css?v=20261101-lineup-pause">
+    <style>.auth-status-pending .header-login{visibility:hidden}</style>
+    <script>document.documentElement.classList.add('auth-status-pending');</script>
     <script>
       window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
@@ -211,43 +213,59 @@
     </script>
   </head>
   <body>
-    <aside class="next-match-banner is-loading" data-next-match aria-label="Eerstvolgende wedstrijd van Ajax">
-      <div class="next-match-banner__inner">
-        <div class="next-match-banner__label">
-          <span class="next-match-banner__live-dot" aria-hidden="true"></span>
-          <span class="next-match-banner__state">
-            <small data-match-state>Aftrap over</small>
-            <strong data-match-clock>--D --U --M</strong>
-          </span>
-        </div>
-        <div class="next-match-banner__fixture" aria-live="polite">
-          <strong data-match-teams>Wedstrijd laden…</strong>
-          <span data-match-meta>Programma wordt gecontroleerd</span>
-        </div>
-        <div class="next-match-banner__watch">
-          <span>Live kijken</span>
-          <strong data-match-tv>Nog even geduld</strong>
-        </div>
-      </div>
-    </aside>
-
-    <header class="site-header">
+    <header class="site-header" data-public-navigation>
       <a class="brand" href="/" aria-label="AjaxPro home">
         <img src="assets/ajaxpro-logo.png" alt="AjaxPro">
       </a>
 
-      <div class="header-actions">
-        <a class="header-login" href="https://ajaxpro.fans/club">Inloggen</a>
+      <nav class="public-nav" aria-label="Hoofdnavigatie" data-public-nav-links hidden></nav>
+      <div class="header-actions" data-public-nav-actions>
+        <a class="header-login" href="https://ajaxpro.fans/club">Naar de Club</a>
         <a class="header-cta" href="https://discord.gg/fqtxTH2u2W" target="_blank" rel="noreferrer">
           Join de Discord
         </a>
       </div>
+      <button class="public-mobile-toggle" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="public-mobile-menu" data-public-mobile-toggle hidden>
+        <span aria-hidden="true"></span>
+      </button>
     </header>
+    <div class="public-mobile-menu" id="public-mobile-menu" hidden data-public-mobile-menu>
+      <button class="public-mobile-menu__backdrop" type="button" aria-label="Menu sluiten" data-public-mobile-close></button>
+      <aside class="public-mobile-menu__panel" aria-label="Mobiele hoofdnavigatie">
+        <button class="public-mobile-menu__close" type="button" aria-label="Menu sluiten" data-public-mobile-close>×</button>
+        <nav data-public-mobile-links></nav>
+      </aside>
+    </div>
 
     <main>
-      <section class="intro section-shell" aria-labelledby="page-title">
-        <h1 id="page-title">Voor Ajacieden die verder kijken.</h1>
-        <p>Ajax-nieuws, transferpraat, analyses en tools voor Ajacieden.</p>
+      <section class="intro intro-with-match section-shell" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <h1 id="page-title">Voor Ajacieden die verder kijken.</h1>
+          <p>Ajax-nieuws, transferpraat, analyses en tools voor Ajacieden.</p>
+        </div>
+        <aside class="next-match-banner is-loading" data-next-match aria-label="Eerstvolgende wedstrijd van Ajax">
+          <div class="next-match-banner__inner">
+            <div class="next-match-banner__countdown" aria-label="Aftellen tot de aftrap">
+              <span class="next-match-banner__countdown-unit"><strong data-match-days>--</strong><small>Dag</small></span>
+              <span class="next-match-banner__countdown-unit"><strong data-match-hours>--</strong><small>Uren</small></span>
+              <span class="next-match-banner__countdown-unit"><strong data-match-minutes>--</strong><small>Min</small></span>
+            </div>
+            <div class="next-match-banner__fixture" aria-live="polite">
+              <div class="next-match-banner__teams">
+                <span class="next-match-banner__club-mark next-match-banner__club-mark--home"><img src="/assets/clubs/ajax.png" alt="" data-match-home-logo></span>
+                <strong data-match-teams>Wedstrijd laden…</strong>
+                <span class="next-match-banner__club-mark next-match-banner__club-mark--away" data-match-away-logo aria-hidden="true">?</span>
+              </div>
+              <span class="next-match-banner__meta" data-match-meta>Programma wordt gecontroleerd</span>
+            </div>
+            <div class="next-match-banner__watch">
+              <span class="next-match-banner__watch-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><rect x="3" y="5" width="18" height="12" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg>
+              </span>
+              <strong data-match-tv>Nog even geduld</strong>
+            </div>
+          </div>
+        </aside>
       </section>
 
       <section class="bento section-shell" aria-label="AjaxPro tools en socials">
@@ -440,7 +458,7 @@
           <span class="support-strip__icon" aria-hidden="true">♥</span>
           <div>
             <h2 id="support-title">Steun AjaxPro</h2>
-            <p>Wil je AjaxPro steunen? Dat kan via Petje Af, maandelijks of per jaar.</p>
+            <p>Wil je AjaxPro steunen? Dat kan via Buy Me a Coffee.</p>
           </div>
         </div>
         <a
@@ -449,7 +467,7 @@
           target="_blank"
           rel="noreferrer"
         >
-          Petje Af
+          Buy Me a Coffee
         </a>
       </aside>
 

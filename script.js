@@ -1,5 +1,118 @@
 const nextMatchBanner = document.querySelector("[data-next-match]");
 
+const publicNavigation = document.querySelector("[data-public-navigation]");
+const publicNavLinks = publicNavigation?.querySelector("[data-public-nav-links]");
+const publicNavActions = publicNavigation?.querySelector("[data-public-nav-actions]");
+const publicMobileToggle = publicNavigation?.querySelector("[data-public-mobile-toggle]");
+const publicMobileMenu = document.querySelector("[data-public-mobile-menu]");
+const publicMobileLinks = publicMobileMenu?.querySelector("[data-public-mobile-links]");
+
+const closePublicMobileMenu = () => {
+  if (!publicMobileToggle || !publicMobileMenu) return;
+  publicMobileMenu.hidden = true;
+  publicMobileToggle.setAttribute("aria-expanded", "false");
+  publicMobileToggle.setAttribute("aria-label", "Menu openen");
+  document.body.classList.remove("public-menu-open");
+  publicMobileToggle.focus();
+};
+
+const openPublicMobileMenu = () => {
+  if (!publicMobileToggle || !publicMobileMenu) return;
+  publicMobileMenu.hidden = false;
+  publicMobileToggle.setAttribute("aria-expanded", "true");
+  publicMobileToggle.setAttribute("aria-label", "Menu sluiten");
+  document.body.classList.add("public-menu-open");
+  publicMobileMenu.querySelector("[data-public-mobile-close]")?.focus();
+};
+
+publicMobileToggle?.addEventListener("click", () => publicMobileToggle.getAttribute("aria-expanded") === "true" ? closePublicMobileMenu() : openPublicMobileMenu());
+publicMobileMenu?.querySelectorAll("[data-public-mobile-close]").forEach((element) => element.addEventListener("click", closePublicMobileMenu));
+document.addEventListener("keydown", (event) => { if (event.key === "Escape" && publicMobileMenu && !publicMobileMenu.hidden) closePublicMobileMenu(); });
+
+if (publicNavigation && publicNavLinks && publicNavActions) {
+  const renderPublicNavigation = (status) => {
+    if (!status?.authenticated) return;
+    const link = (href, label, locked = false) => {
+      const anchor = document.createElement("a");
+      anchor.href = href;
+      anchor.textContent = label;
+      if (window.location.pathname === href || (href === "/club" && window.location.pathname === "/club/")) {
+        anchor.classList.add("active");
+        anchor.setAttribute("aria-current", "page");
+      }
+      if (locked) {
+        const lock = document.createElement("span");
+        lock.className = "nav-lock";
+        lock.setAttribute("aria-hidden", "true");
+        lock.textContent = "🔒";
+        anchor.append(" ", lock);
+      }
+      return anchor;
+    };
+    publicNavLinks.replaceChildren(
+      link("/club", "Club"),
+      link("/club/stand", "MOTM"),
+      link("/club/members", "Members", !status.membersAccess),
+      ...(status.staffAccess ? [link("/club/tools", "Staff")] : []),
+    );
+    if (publicMobileLinks) {
+      publicMobileLinks.replaceChildren(...Array.from(publicNavLinks.children).map((anchor) => {
+        const mobileAnchor = anchor.cloneNode(true);
+        mobileAnchor.addEventListener("click", closePublicMobileMenu);
+        return mobileAnchor;
+      }));
+      const mobileProfile = document.createElement("div");
+      mobileProfile.className = "public-mobile-profile";
+      const mobileAvatar = document.createElement("img");
+      mobileAvatar.src = status.avatarUrl;
+      mobileAvatar.alt = `Discord-avatar van ${status.username}`;
+      const mobileProfileCopy = document.createElement("div");
+      const mobileUsername = document.createElement("strong");
+      mobileUsername.textContent = status.username;
+      const mobileLogout = document.createElement("form");
+      mobileLogout.action = "/api/auth/logout";
+      mobileLogout.method = "post";
+      const mobileLogoutButton = document.createElement("button");
+      mobileLogoutButton.type = "submit";
+      mobileLogoutButton.textContent = "Uitloggen";
+      mobileLogout.append(mobileLogoutButton);
+      mobileProfileCopy.append(mobileUsername, mobileLogout);
+      mobileProfile.append(mobileAvatar, mobileProfileCopy);
+      publicMobileLinks.parentElement.append(mobileProfile);
+    }
+    publicNavLinks.hidden = false;
+    const profile = document.createElement("details");
+    profile.className = "public-profile";
+    const summary = document.createElement("summary");
+    const avatar = document.createElement("img");
+    avatar.src = status.avatarUrl;
+    avatar.alt = `Discord-avatar van ${status.username}`;
+    const name = document.createElement("span");
+    name.textContent = status.username;
+    summary.append(avatar, name);
+    const menu = document.createElement("div");
+    const username = document.createElement("strong");
+    username.textContent = status.username;
+    const form = document.createElement("form");
+    form.action = "/api/auth/logout";
+    form.method = "post";
+    const logout = document.createElement("button");
+    logout.type = "submit";
+    logout.textContent = "Uitloggen";
+    form.append(logout);
+    menu.append(username, form);
+    profile.append(summary, menu);
+    publicNavActions.replaceChildren(profile);
+    publicNavigation.classList.add("is-authenticated");
+    if (publicMobileToggle) publicMobileToggle.hidden = false;
+  };
+  window.fetch("/api/auth/session-status?view=navigation", { credentials: "same-origin", headers: { Accept: "application/json" }, cache: "no-store" })
+    .then((response) => response.ok ? response.json() : Promise.reject())
+    .then(renderPublicNavigation)
+    .catch(() => {})
+    .finally(() => document.documentElement.classList.remove("auth-status-pending"));
+}
+
 const homeProgram = document.querySelector("[data-home-program]");
 if (homeProgram) {
   window.fetch("/api/next-match?view=program", { headers: { Accept: "application/json" } })
@@ -18,7 +131,12 @@ if (nextMatchBanner) {
   const metaField = nextMatchBanner.querySelector("[data-match-meta]");
   const tvField = nextMatchBanner.querySelector("[data-match-tv]");
   const stateField = nextMatchBanner.querySelector("[data-match-state]");
-  const clockField = nextMatchBanner.querySelector("[data-match-clock]");
+  const daysField = nextMatchBanner.querySelector("[data-match-days]");
+  const hoursField = nextMatchBanner.querySelector("[data-match-hours]");
+  const minutesField = nextMatchBanner.querySelector("[data-match-minutes]");
+  const competitionField = nextMatchBanner.querySelector("[data-match-competition]");
+  const homeLogoField = nextMatchBanner.querySelector("[data-match-home-logo]");
+  const awayLogoField = nextMatchBanner.querySelector("[data-match-away-logo]");
   const cacheKey = "ajaxpro-next-match";
   let currentPayload;
   let countdownTimer;
@@ -37,17 +155,22 @@ if (nextMatchBanner) {
     const days = Math.floor(totalMinutes / 1440);
     const hours = Math.floor((totalMinutes % 1440) / 60);
     const minutes = totalMinutes % 60;
-    return `${String(days).padStart(2, "0")}D ${String(hours).padStart(2, "0")}U ${String(minutes).padStart(2, "0")}M`;
+    return { days, hours, minutes };
   };
 
   const startCountdown = (kickoff) => {
     window.clearInterval(countdownTimer);
     const update = () => {
-      clockField.textContent = formatCountdown(kickoff);
+      const countdown = formatCountdown(kickoff);
+      daysField.textContent = String(countdown.days).padStart(2, "0");
+      hoursField.textContent = String(countdown.hours).padStart(2, "0");
+      minutesField.textContent = String(countdown.minutes).padStart(2, "0");
       if (kickoff.getTime() <= Date.now()) {
         window.clearInterval(countdownTimer);
-        stateField.textContent = "Programma bijwerken";
-        clockField.textContent = "AFGETRAPT";
+        if (stateField) stateField.textContent = "Programma bijwerken";
+        daysField.textContent = "–";
+        hoursField.textContent = "–";
+        minutesField.textContent = "–";
         loadMatchday();
       }
     };
@@ -77,11 +200,26 @@ if (nextMatchBanner) {
     }).format(kickoff);
 
     teamsField.textContent = `${payload.match.home} – ${payload.match.away}`;
-    metaField.textContent = `${date} · ${time} · ${payload.match.competition}`;
+    metaField.textContent = `${date} · ${time}`;
+    if (competitionField) competitionField.textContent = payload.match.competition || "Wedstrijd";
+    const renderLogo = (field, url, name, fallbackText = "?") => {
+      if (!field) return;
+      field.replaceChildren();
+      if (url) {
+      const image = document.createElement("img");
+      image.src = url;
+      image.alt = "";
+        field.append(image);
+      } else {
+        field.textContent = String(name || fallbackText).split(/\s+/).map((part) => part[0]).join("").slice(0, 3).toUpperCase();
+      }
+    };
+    renderLogo(homeLogoField, payload.match.homeLogo, payload.match.home, "AJX");
+    renderLogo(awayLogoField, payload.match.awayLogo, payload.match.away);
     tvField.textContent = payload.match.tv || "Zender nog niet bekend";
     nextMatchBanner.hidden = false;
     nextMatchBanner.classList.remove("is-loading", "is-unavailable");
-    stateField.textContent = "Aftrap over";
+    if (stateField) stateField.textContent = "Aftrap over";
     startCountdown(kickoff);
     scheduleRefresh(Math.min(5 * 60000, Math.max(15000, kickoff.getTime() - Date.now())));
   };

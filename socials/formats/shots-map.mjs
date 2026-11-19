@@ -1,7 +1,7 @@
 const AJAX_TEAM_ID=8593;
 const valid=value=>typeof value==="number"&&Number.isFinite(value);
 export const ajaxShots=payload=>{
-  const raw=payload?.fotmobApi?.raw?.content?.shotmap?.shots;
+  const raw=payload?.fotmobApi?.shots??payload?.fotmobApi?.raw?.content?.shotmap?.shots;
   if(!Array.isArray(raw))return [];
   return raw.filter(shot=>shot?.teamId===AJAX_TEAM_ID&&shot.isOwnGoal!==true&&valid(shot.x)&&valid(shot.y)&&shot.x>=0&&shot.x<=105&&shot.y>=0&&shot.y<=68);
 };

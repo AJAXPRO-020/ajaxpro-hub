@@ -305,10 +305,16 @@ export const readSession = async (request: Request): Promise<Session | null> => 
   if (!value) return null;
 
   const separator = value.lastIndexOf(".");
-  if (separator < 1) return null;
+  if (separator < 1) {
+    console.info("Discord auth session rejected: malformed_cookie");
+    return null;
+  }
   const payload = value.slice(0, separator);
   const signature = value.slice(separator + 1);
-  if (!safeEqual(signature, await sign(payload))) return null;
+  if (!safeEqual(signature, await sign(payload))) {
+    console.info("Discord auth session rejected: invalid_signature");
+    return null;
+  }
 
   try {
     const session = JSON.parse(decode(payload)) as Session;
@@ -321,13 +327,18 @@ export const readSession = async (request: Request): Promise<Session | null> => 
       !session.discordRoleIds.every(
         (roleId) => typeof roleId === "string" && Boolean(roleId),
       ) ||
-      !Number.isFinite(session.expiresAt) ||
-      session.expiresAt <= now
+      !Number.isFinite(session.expiresAt)
     ) {
+      console.info("Discord auth session rejected: invalid_payload");
+      return null;
+    }
+    if (session.expiresAt <= now) {
+      console.info("Discord auth session rejected: expired");
       return null;
     }
     return session;
   } catch {
+    console.info("Discord auth session rejected: invalid_payload");
     return null;
   }
 };

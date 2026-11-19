@@ -1,0 +1,357 @@
+{
+  "source": "Wikimedia Commons via the corresponding Wikipedia club pages",
+  "updated": "2026-11-19",
+  "clubs": [
+    {
+      "name": "ADO Den Haag",
+      "slug": "ado-den-haag",
+      "competitions": [
+        "eredivisie"
+      ],
+      "asset": "/assets/clubs/ado-den-haag.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/ADO_Den_Haag"
+    },
+    {
+      "name": "Ajax",
+      "slug": "ajax",
+      "competitions": [
+        "eredivisie"
+      ],
+      "asset": "/assets/clubs/ajax.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/AFC_Ajax"
+    },
+    {
+      "name": "AZ",
+      "slug": "az",
+      "competitions": [
+        "eredivisie"
+      ],
+      "asset": "/assets/clubs/az.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/AZ_Alkmaar"
+    },
+    {
+      "name": "SC Cambuur",
+      "slug": "sc-cambuur",
+      "competitions": [
+        "eredivisie"
+      ],
+      "asset": "/assets/clubs/sc-cambuur.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/SC_Cambuur"
+    },
+    {
+      "name": "Excelsior",
+      "slug": "excelsior",
+      "competitions": [
+        "eredivisie"
+      ],
+      "asset": "/assets/clubs/excelsior.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Excelsior_Rotterdam"
+    },
+    {
+      "name": "Feyenoord",
+      "slug": "feyenoord",
+      "competitions": [
+        "eredivisie"
+      ],
+      "asset": "/assets/clubs/feyenoord.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Feyenoord",
+      "license": "Public domain"
+    },
+    {
+      "name": "Fortuna Sittard",
+      "slug": "fortuna-sittard",
+      "competitions": [
+        "eredivisie"
+      ],
+      "asset": "/assets/clubs/fortuna-sittard.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fortuna_Sittard"
+    },
+    {
+      "name": "Go Ahead Eagles",
+      "slug": "go-ahead-eagles",
+      "competitions": [
+        "eredivisie"
+      ],
+      "asset": "/assets/clubs/go-ahead-eagles.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Go_Ahead_Eagles",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "name": "FC Groningen",
+      "slug": "fc-groningen",
+      "competitions": [
+        "eredivisie"
+      ],
+      "asset": "/assets/clubs/fc-groningen.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/FC_Groningen"
+    },
+    {
+      "name": "sc Heerenveen",
+      "slug": "sc-heerenveen",
+      "competitions": [
+        "eredivisie"
+      ],
+      "asset": "/assets/clubs/sc-heerenveen.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/SC_Heerenveen"
+    },
+    {
+      "name": "NEC",
+      "slug": "nec",
+      "competitions": [
+        "eredivisie"
+      ],
+      "asset": "/assets/clubs/nec.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NEC_Nijmegen"
+    },
+    {
+      "name": "PEC Zwolle",
+      "slug": "pec-zwolle",
+      "competitions": [
+        "eredivisie"
+      ],
+      "asset": "/assets/clubs/pec-zwolle.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/PEC_Zwolle",
+      "license": "Public domain"
+    },
+    {
+      "name": "PSV",
+      "slug": "psv",
+      "competitions": [
+        "eredivisie"
+      ],
+      "asset": "/assets/clubs/psv.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/PSV_Eindhoven"
+    },
+    {
+      "name": "Sparta Rotterdam",
+      "slug": "sparta",
+      "competitions": [
+        "eredivisie"
+      ],
+      "asset": "/assets/clubs/sparta.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sparta_Rotterdam"
+    },
+    {
+      "name": "Telstar",
+      "slug": "telstar",
+      "competitions": [
+        "eredivisie"
+      ],
+      "asset": "/assets/clubs/telstar.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/SC_Telstar"
+    },
+    {
+      "name": "FC Twente",
+      "slug": "fc-twente",
+      "competitions": [
+        "eredivisie"
+      ],
+      "asset": "/assets/clubs/fc-twente.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/FC_Twente"
+    },
+    {
+      "name": "FC Utrecht",
+      "slug": "fc-utrecht",
+      "competitions": [
+        "eredivisie"
+      ],
+      "asset": "/assets/clubs/fc-utrecht.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/FC_Utrecht",
+      "license": "Public domain"
+    },
+    {
+      "name": "Willem II",
+      "slug": "willem-ii",
+      "competitions": [
+        "eredivisie"
+      ],
+      "asset": "/assets/clubs/willem-ii.png",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Willem_II_Tilburg"
+    },
+    {
+      "name": "Almere City",
+      "slug": "almere-city",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/almere-city.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Almere_City_FC"
+    },
+    {
+      "name": "De Graafschap",
+      "slug": "de-graafschap",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/de-graafschap.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/De_Graafschap",
+      "license": "Public domain"
+    },
+    {
+      "name": "FC Den Bosch",
+      "slug": "fc-den-bosch",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/fc-den-bosch.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/FC_Den_Bosch"
+    },
+    {
+      "name": "FC Dordrecht",
+      "slug": "fc-dordrecht",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/fc-dordrecht.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/FC_Dordrecht"
+    },
+    {
+      "name": "FC Eindhoven",
+      "slug": "fc-eindhoven",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/fc-eindhoven.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/FC_Eindhoven"
+    },
+    {
+      "name": "FC Emmen",
+      "slug": "fc-emmen",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/fc-emmen.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/FC_Emmen"
+    },
+    {
+      "name": "Helmond Sport",
+      "slug": "helmond-sport",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/helmond-sport.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Helmond_Sport"
+    },
+    {
+      "name": "Heracles Almelo",
+      "slug": "heracles-almelo",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/heracles-almelo.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Heracles_Almelo"
+    },
+    {
+      "name": "MVV Maastricht",
+      "slug": "mvv-maastricht",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/mvv-maastricht.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/MVV_Maastricht"
+    },
+    {
+      "name": "NAC Breda",
+      "slug": "nac-breda",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/nac-breda.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NAC_Breda"
+    },
+    {
+      "name": "RKC Waalwijk",
+      "slug": "rkc-waalwijk",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/rkc-waalwijk.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/RKC_Waalwijk"
+    },
+    {
+      "name": "Roda JC Kerkrade",
+      "slug": "roda-jc-kerkrade",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/roda-jc-kerkrade.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Roda_JC_Kerkrade"
+    },
+    {
+      "name": "TOP Oss",
+      "slug": "top-oss",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/top-oss.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/TOP_Oss"
+    },
+    {
+      "name": "Vitesse",
+      "slug": "vitesse",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/vitesse.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/SBV_Vitesse"
+    },
+    {
+      "name": "FC Volendam",
+      "slug": "fc-volendam",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/fc-volendam.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/FC_Volendam"
+    },
+    {
+      "name": "VVV-Venlo",
+      "slug": "vvv-venlo",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/vvv-venlo.svg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/VVV-Venlo"
+    },
+    {
+      "name": "Jong Ajax",
+      "slug": "jong-ajax",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/ajax.png",
+      "aliasOf": "ajax",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jong_Ajax"
+    },
+    {
+      "name": "Jong AZ",
+      "slug": "jong-az",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/az.png",
+      "aliasOf": "az",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jong_AZ"
+    },
+    {
+      "name": "Jong PSV",
+      "slug": "jong-psv",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/psv.png",
+      "aliasOf": "psv",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jong_PSV"
+    },
+    {
+      "name": "Jong FC Utrecht",
+      "slug": "jong-fc-utrecht",
+      "competitions": [
+        "eerste-divisie"
+      ],
+      "asset": "/assets/clubs/fc-utrecht.svg",
+      "aliasOf": "fc-utrecht",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jong_FC_Utrecht"
+    }
+  ]
+}
