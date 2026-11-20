@@ -1604,66 +1604,6 @@ a {
   transform: translateY(-1px);
 }
 
-.bingo-card {
-  order: 12;
-  min-height: 142px;
-  cursor: pointer;
-  background:
-    radial-gradient(ellipse at 88% 12%, rgba(126, 155, 212, 0.11), transparent 36%),
-    linear-gradient(145deg, rgba(24, 34, 49, 0.96), rgba(10, 15, 25, 0.98) 64%);
-}
-
-.bingo-card h2 {
-  position: relative;
-  z-index: 2;
-  max-width: none;
-}
-
-.bingo-card > .status-pill {
-  position: relative;
-  z-index: 2;
-}
-
-.bingo-card__preview {
-  position: absolute;
-  top: 50%;
-  right: -10px;
-  z-index: 1;
-  display: grid;
-  width: auto;
-  height: min(72%, 240px);
-  aspect-ratio: 0.82;
-  grid-template-columns: repeat(5, 1fr);
-  align-content: start;
-  border: 1px solid rgba(246, 247, 251, 0.22);
-  border-radius: 10px;
-  padding: 13px 10px 10px;
-  background:
-    repeating-linear-gradient(0deg, transparent 0 28px, rgba(246, 247, 251, 0.16) 28px 29px),
-    repeating-linear-gradient(90deg, transparent 0 28px, rgba(246, 247, 251, 0.16) 28px 29px),
-    rgba(31, 42, 59, 0.82);
-  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.28);
-  opacity: 0.24;
-  pointer-events: none;
-  transform: translateY(-50%) rotate(5deg);
-  transition: opacity 180ms ease, transform 180ms ease;
-  mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.38) 26%, black 62%);
-}
-
-.bingo-card__preview span {
-  color: rgba(246, 247, 251, 0.9);
-  font-size: 0.72rem;
-  font-weight: 950;
-  line-height: 1;
-  text-align: center;
-}
-
-.bingo-card:hover .bingo-card__preview,
-.bingo-card:focus-visible .bingo-card__preview {
-  opacity: 0.36;
-  transform: translateY(-52%) rotate(3deg);
-}
-
 .screenshot-editor-card {
   order: 13;
   min-height: 142px;
@@ -1676,7 +1616,6 @@ a {
   max-width: 16ch;
 }
 
-.bingo-card,
 .screenshot-editor-card {
   align-content: start;
 }
@@ -1702,8 +1641,6 @@ a {
     transform 420ms cubic-bezier(0.18, 0.9, 0.22, 1) 160ms;
 }
 
-.bingo-card:hover .tool-card__fade,
-.bingo-card:focus-visible .tool-card__fade,
 .screenshot-editor-card:hover .tool-card__fade,
 .screenshot-editor-card:focus-visible .tool-card__fade {
   opacity: 1;
@@ -1735,8 +1672,6 @@ a {
     transform 180ms ease;
 }
 
-.bingo-card:hover .tool-card__cta,
-.bingo-card:focus-visible .tool-card__cta,
 .screenshot-editor-card:hover .tool-card__cta,
 .screenshot-editor-card:focus-visible .tool-card__cta {
   border-color: rgba(255, 255, 255, 0.2);
