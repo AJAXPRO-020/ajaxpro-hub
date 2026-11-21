@@ -2,8 +2,24 @@ import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
 import test from "node:test";
 import { GET } from "../api/motm-public";
+import { lineupDefaultAvailable, type PlayerRegistryRow } from "../lib/player-registry";
 
 const read=(path:string)=>readFileSync(new URL(path,import.meta.url),"utf8");
+
+test("Opstellingmaker krijgt centraal bepaalde standaardbeschikbaarheid zonder de oude API te veranderen",async()=>{
+  const base={selectionGroup:"first_team",contractForm:"owned",loanedOut:false} as PlayerRegistryRow;
+  assert.equal(lineupDefaultAvailable(base),true);
+  assert.equal(lineupDefaultAvailable({...base,contractForm:"loaned_in"}),true);
+  assert.equal(lineupDefaultAvailable({...base,loanedOut:true}),false);
+  assert.equal(lineupDefaultAvailable({...base,selectionGroup:"youth"}),false);
+  assert.equal(lineupDefaultAvailable({...base,selectionGroup:"outside",contractForm:"no_contract"}),false);
+  const response=await GET(new Request("https://ajaxpro.fans/api/motm-public?action=players&include=selection",{headers:{Origin:"https://opstelling.ajaxpro.fans"}}));
+  const payload=await response.json();
+  assert.equal(response.status,200);
+  assert.equal(response.headers.get("Access-Control-Allow-Origin"),"https://opstelling.ajaxpro.fans");
+  assert.equal(typeof payload.players[0].defaultAvailable,"boolean");
+  assert.equal("contractNote" in payload.players[0],false);
+});
 
 test("centrale spelersregistratie voedt MOTM, Socials, contracten en lineup maker",()=>{
   const migration=read("../db/migrations/012_player_registry.sql");
@@ -15,9 +31,10 @@ test("centrale spelersregistratie voedt MOTM, Socials, contracten en lineup make
   assert.match(motm,/activePlayersFromDatabase/);
   assert.match(socials,/loadPlayers/);
   assert.match(contracts,/\/api\/players\?include=contracts/);
-  assert.match(contracts,/!player\.active&&player\.loanClub/);
+  assert.match(contracts,/player\.loanedOut/);
+  assert.match(contracts,/player\.contractForm==="loaned_in"/);
   assert.match(lineup,/https:\/\/ajaxpro\.fans\/api\/players/);
-  assert.match(lineup,/const photo=current\.photo\|\|centralPhoto/);
+  assert.match(lineup,/const centralPhoto/);
 });
 
 test("huurafspraken zijn centraal opgeslagen en transparant gelabeld",()=>{

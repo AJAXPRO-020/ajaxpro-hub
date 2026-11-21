@@ -15,12 +15,13 @@ import { contentHubPost } from "../api-impl/content-hub/index";
 import { GET as pressGET, POST as pressPOST } from "../lib/press-conference-http";
 import { publishDiscord } from "../lib/discord-publisher";
 import { videoService } from "../lib/socials-video";
+import { GET as playerRegistryGET, POST as playerRegistryPOST } from "../api-impl/player-registry-manage";
 
 const MAX_SOCIALS_FUNCTION_UPLOAD = 3.5 * 1024 * 1024;
 
 const json=(body:unknown,status=200)=>new Response(JSON.stringify(body),{status,headers:{"Content-Type":"application/json; charset=UTF-8","Cache-Control":"private, no-store","X-Content-Type-Options":"nosniff"}});
 async function get(request:Request){
-  const view=new URL(request.url).searchParams.get("view");
+  const view=new URL(request.url).searchParams.get("view") ?? (new URL(request.url).pathname==='/club/tools/player-registry'?'player-registry':null);
   if(view==="content-hub"||view==="content-hub-upload-session"||view==="content-hub-download"||view==="content-hub-preview"){
     const session=await getSessionWithPermission(request,permissions.toolsSocials);
     if(!session)return redirect("/api/auth/discord-login?returnTo=/club/tools/content-hub");
@@ -72,6 +73,7 @@ async function get(request:Request){
     const cards=await loadSystemStatus();
     return page("Systeemstatus",systemStatusMarkup(cards),"/system-status.js?v=1",session,"tools",undefined,{stylesheets:["/system-status.css?v=3"]});
   }
+  if(view==="player-registry") return playerRegistryGET(request);
   const tools=toolsForSession(session);
   return page("Staff-tools",`<main class="motm-main">${pageHeader("Staff-tools","Intern")}<p class="page-intro">Hulpmiddelen die bij jouw rechten horen.</p>${tools.length?renderToolsGrid(tools):'<section class="empty"><h2>Geen tools beschikbaar</h2><p>Voor jouw rol zijn er momenteel geen afzonderlijke tools beschikbaar.</p></section>'}</main>`,"",session,"tools");
 }
@@ -85,7 +87,8 @@ export async function GET(request:Request){
 }
 
 export async function POST(request:Request){
-  const view=new URL(request.url).searchParams.get("view");
+  const view=new URL(request.url).searchParams.get("view") ?? (new URL(request.url).pathname==='/club/tools/player-registry'?'player-registry':null);
+  if(view==="player-registry") return playerRegistryPOST(request);
   if(view==="socials-publish"){
     const session=await getSessionWithPermission(request,permissions.toolsSocials);
     if(!session)return json({error:"Geen toegang tot publiceren."},403);

@@ -107,6 +107,10 @@
       "destination": "/api/club-tools"
     },
     {
+      "source": "/club/tools/player-registry",
+      "destination": "/api/club-tools?view=player-registry"
+    },
+    {
       "source": "/club/tools/socials",
       "destination": "/api/club-tools?view=socials"
     },

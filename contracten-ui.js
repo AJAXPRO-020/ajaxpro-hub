@@ -44,16 +44,17 @@ const arrivalDealPanel=(deal)=>{
 };
 
 const contractCard=(player,loan=false)=>{
-  const incoming=Boolean(!loan&&player.contractNote?.toLowerCase().startsWith("gehuurd van "));
+  const incoming=!loan&&player.contractForm==="loaned_in";
   const article=document.createElement("article");article.className=`contract-card${loan?" contract-card--loan":incoming?" contract-card--incoming":""}`;
   article.append(cardHeader(player.name,player.contractPosition||player.position,loan?"Verhuurd":incoming?"Gehuurd":"Bij Ajax",loan||incoming?"loan":"default"));
   const facts=document.createElement("div");facts.className="contract-card__facts";
   if(loan){
     facts.append(fact("Tijdelijk bij",player.loanClub||"Niet bekend"),fact("Verhuur tot",player.loanEnd?formatDate(player.loanEnd):"Niet bekend",player.loanNote),fact("Ajax-contract tot",player.contractEnd?formatDate(player.contractEnd):"Niet bekend",player.contractNote));
   }else if(incoming){
-    facts.append(fact("Gehuurd van",player.contractNote.replace(/^gehuurd van\s+/i,"")),fact("Huurperiode tot",player.contractEnd?formatDate(player.contractEnd):"Niet bekend"));
+    facts.append(fact("Gehuurd van",player.contractNote?.match(/^gehuurd van\s+(.+)/i)?.[1]||player.arrivalDeal?.fromClub||"Niet vastgelegd"),fact("Huurperiode tot",player.contractEnd?formatDate(player.contractEnd):"Niet bekend"));
   }else{
-    facts.append(fact("Contract tot",player.contractEnd?formatDate(player.contractEnd):"Nog niet bekend"));
+    facts.append(fact(player.contractForm==="no_contract"?"Contractstatus":"Contract tot",player.contractForm==="no_contract"?"Geen Ajax-contract":player.contractEnd?formatDate(player.contractEnd):"Nog niet bekend"));
+    if(player.contractNote)facts.append(fact("Opmerking",player.contractNote));
   }
   article.append(facts);
   const arrivalPanel=!loan?arrivalDealPanel(player.arrivalDeal):null;if(arrivalPanel)article.append(arrivalPanel);
@@ -92,7 +93,7 @@ const enhanceStaticCards=()=>document.querySelectorAll(".contract-card").forEach
 const renderRegistry=({players,updatedAt})=>{
   if(!Array.isArray(players)||!players.length)return;
   const content=document.querySelector(".contracts-content"),loanSection=document.querySelector(".loan-section");if(!content||!loanSection)return;
-  const active=players.filter(player=>player.active),loans=players.filter(player=>!player.active&&player.loanClub);if(!active.length)return;
+  const active=players.filter(player=>player.active),loans=players.filter(player=>player.loanedOut);if(!active.length)return;
   document.querySelectorAll(".contract-year").forEach(section=>section.remove());
   const years=new Map();active.forEach(player=>{const year=player.contractEnd?player.contractEnd.slice(0,4):"Onbekend",group=years.get(year)||[];group.push(player);years.set(year,group)});
   [...years].sort(([a],[b])=>a==="Onbekend"?1:b==="Onbekend"?-1:a.localeCompare(b)).forEach(([year,group])=>{const section=document.createElement("section");section.className="contract-year";const id=`year-${year.toLowerCase()}`;section.setAttribute("aria-labelledby",id);const heading=document.createElement("div");heading.className="contract-year__heading";const title=text("h2",year);title.id=id;heading.append(title,text("span",`${group.length} ${group.length===1?"speler":"spelers"}`));const grid=document.createElement("div");grid.className="contracts-grid";group.sort((a,b)=>a.name.localeCompare(b.name,"nl")).forEach(player=>grid.append(contractCard(player)));section.append(heading,grid);content.insertBefore(section,loanSection)});

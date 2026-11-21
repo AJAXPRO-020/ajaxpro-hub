@@ -19,7 +19,18 @@ export type PlayerRegistryRow = {
   loanNote: string | null;
   loanDeal: LoanDeal | null;
   arrivalDeal: ArrivalDeal | null;
+  selectionGroup: "first_team" | "youth" | "outside" | null;
+  contractForm: "owned" | "loaned_in" | "no_contract" | "unknown" | null;
+  loanedOut: boolean;
   updatedAt: string;
+};
+
+/** Alleen de centrale selectiestatus bepaalt de standaardbeschikbaarheid in de Opstellingmaker. */
+export const lineupDefaultAvailable = (player: PlayerRegistryRow) => player.selectionGroup === "first_team" && !player.loanedOut && player.contractForm !== "no_contract";
+export const lineupAvailabilityCategory = (player: PlayerRegistryRow) => {
+  if (lineupDefaultAvailable(player)) return "default" as const;
+  if (player.selectionGroup === "youth") return "optional" as const;
+  return "unavailable" as const;
 };
 
 export type LoanDealSource = {
@@ -100,16 +111,19 @@ const mapPlayer=(row:any):PlayerRegistryRow=>({
   loanNote:row.loan_note?String(row.loan_note):null,
   loanDeal:mapLoanDeal(row.loan_deal),
   arrivalDeal:mapArrivalDeal(row.arrival_deal),
+  selectionGroup:row.selection_group === "first_team" || row.selection_group === "youth" || row.selection_group === "outside" ? row.selection_group : null,
+  contractForm:row.contract_form === "owned" || row.contract_form === "loaned_in" || row.contract_form === "no_contract" || row.contract_form === "unknown" ? row.contract_form : null,
+  loanedOut:Boolean(row.loaned_out),
   updatedAt:new Date(row.updated_at).toISOString(),
 });
 
 export const loadPlayers=async({includeInactive=false}:{includeInactive?:boolean}={})=>{
   if(!process.env.DATABASE_URL){
     return bootstrapPlayers.filter(player=>includeInactive||player.active).map(player=>({
-      ...player,contractEnd:null,contractPosition:null,contractNote:null,loanClub:null,loanEnd:null,loanNote:null,loanDeal:null,arrivalDeal:null,updatedAt:new Date(0).toISOString(),
+      ...player,contractEnd:null,contractPosition:null,contractNote:null,loanClub:null,loanEnd:null,loanNote:null,loanDeal:null,arrivalDeal:null,selectionGroup:null,contractForm:null,loanedOut:false,updatedAt:new Date(0).toISOString(),
     }));
   }
-  const query=()=>db()`SELECT id,name,shirt_number,position,image_url,active,contract_end,contract_position,contract_note,loan_club,loan_end,loan_note,loan_deal,arrival_deal,updated_at
+  const query=()=>db()`SELECT id,name,shirt_number,position,image_url,active,contract_end,contract_position,contract_note,loan_club,loan_end,loan_note,loan_deal,arrival_deal,selection_group,contract_form,loaned_out,updated_at
     FROM ajax_players WHERE (${includeInactive} OR active=true)
     ORDER BY active DESC,shirt_number NULLS LAST,name`;
   const fallbackQuery=()=>db()`SELECT id,name,shirt_number,position,image_url,active,contract_end,contract_position,contract_note,loan_club,loan_end,loan_note,updated_at
@@ -123,7 +137,7 @@ export const loadPlayers=async({includeInactive=false}:{includeInactive?:boolean
     const message=error instanceof Error?error.message:"";
     const missingColumn=message.match(/column [\"']?([^\"']+)[\"']? does not exist/i)?.[1]??"loan_deal or arrival_deal";
     console.warn("Player registry optional schema missing; using fallback query",{missingColumn,impact:"/api/players blijft beschikbaar, maar optionele huur- en transferdata kan ontbreken."});
-    return (await fallbackQuery()).map((row)=>mapPlayer({...row,loan_deal:null,arrival_deal:null}));
+    return (await fallbackQuery()).map((row)=>mapPlayer({...row,loan_deal:null,arrival_deal:null,selection_group:null,contract_form:null,loaned_out:Boolean(row.loan_club)}));
   }
 };
 
@@ -134,4 +148,7 @@ export const toToolPlayer=(player:PlayerRegistryRow)=>({
   position:player.position,
   imageUrl:player.imageUrl,
   active:player.active,
+  selectionGroup:player.selectionGroup,
+  contractForm:player.contractForm,
+  loanedOut:player.loanedOut,
 });
