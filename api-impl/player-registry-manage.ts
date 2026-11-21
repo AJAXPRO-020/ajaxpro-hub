@@ -29,13 +29,26 @@ const statusConflicts = (row: any) => {
   return issues;
 };
 const validImageUrl = (value: string) => value.length <= 2000 && !/[\\\s]/.test(value) && (/^\/assets\//.test(value) || (() => {try {const url=new URL(value);return url.protocol==='https:'&&!url.username&&!url.password;}catch{return false;}})());
+const imageUrlIsUsable = async (request: Request, value: string) => {
+  try {
+    const target = new URL(value, request.url);
+    let response = await fetch(target, { method: "HEAD", signal: AbortSignal.timeout(5000) });
+    if (!response.ok || !/^image\//i.test(response.headers.get("content-type") ?? "")) {
+      response = await fetch(target, { headers: { Range: "bytes=0-1023" }, signal: AbortSignal.timeout(5000) });
+      response.body?.cancel();
+    }
+    return response.ok && /^image\//i.test(response.headers.get("content-type") ?? "");
+  } catch {
+    return false;
+  }
+};
 
 const photoActions = (photo: any, playerId: string) => `<details class="player-photo__menu"><summary>Acties</summary><div class="player-photo__actions">${photo.photo_type === "normal" ? `<form method="post" action="/api/club-tools?view=player-registry"><input type="hidden" name="intent" value="set-default"><input type="hidden" name="playerId" value="${esc(playerId)}"><input type="hidden" name="photoId" value="${esc(photo.id)}"><button class="button secondary" type="submit">Als standaard instellen</button></form>` : ""}<form method="post" action="/api/club-tools?view=player-registry"><input type="hidden" name="intent" value="move-photo"><input type="hidden" name="playerId" value="${esc(playerId)}"><input type="hidden" name="photoId" value="${esc(photo.id)}"><input type="hidden" name="photoType" value="${esc(photo.photo_type)}"><input type="hidden" name="direction" value="up"><button class="button secondary" type="submit">Omhoog</button></form><form method="post" action="/api/club-tools?view=player-registry"><input type="hidden" name="intent" value="move-photo"><input type="hidden" name="playerId" value="${esc(playerId)}"><input type="hidden" name="photoId" value="${esc(photo.id)}"><input type="hidden" name="photoType" value="${esc(photo.photo_type)}"><input type="hidden" name="direction" value="down"><button class="button secondary" type="submit">Omlaag</button></form><form method="post" action="/api/club-tools?view=player-registry"><input type="hidden" name="intent" value="delete-photo"><input type="hidden" name="photoId" value="${esc(photo.id)}"><button class="button danger" type="submit">Foto verwijderen</button></form></div></details>`;
-const photoCard = (photo: any, playerId: string) => `<article class="player-photo player-photo--${photo.photo_type}" data-photo-id="${esc(photo.id)}"><div class="player-photo__media"><img src="${esc(photo.image_url)}" alt="" loading="lazy"><span class="player-photo__missing" role="status" hidden>Afbeelding niet beschikbaar</span></div><div class="player-photo__copy"><strong>${photo.photo_type === "meme" ? "Meme-foto" : "Alternatieve normale foto"}</strong><small>Positie ${Number(photo.sort_order) + 1}</small></div>${photoActions(photo, playerId)}</article>`;
+const photoCard = (photo: any, playerId: string, position: number) => `<article class="player-photo player-photo--${photo.photo_type}" data-photo-id="${esc(photo.id)}"><div class="player-photo__media"><img src="${esc(photo.image_url)}" alt="" loading="lazy"><span class="player-photo__missing" role="status" hidden>Afbeelding niet beschikbaar</span></div><div class="player-photo__copy"><strong>${photo.photo_type === "meme" ? "Meme-foto" : "Alternatieve normale foto"}</strong><small>Positie ${position + 1}</small></div>${photoActions(photo, playerId)}</article>`;
 const photoCards = (photos: any[], officialUrl: string, playerId: string) => {
   const normal = photos.filter(photo => photo.photo_type === "normal");
   const memes = photos.filter(photo => photo.photo_type === "meme");
-  const group = (title: string, items: any[], className = "") => items.length ? `<section class="player-photo-group ${className}"><div class="player-photo-group__heading"><h4>${title}</h4><span>${items.length} ${items.length === 1 ? "foto" : "foto's"}</span></div><div class="player-photo-grid">${items.map(photo => photoCard(photo, playerId)).join("")}</div></section>` : "";
+  const group = (title: string, items: any[], className = "") => items.length ? `<section class="player-photo-group ${className}"><div class="player-photo-group__heading"><h4>${title}</h4><span>${items.length} ${items.length === 1 ? "foto" : "foto's"}</span></div><div class="player-photo-grid">${items.map((photo, index) => photoCard(photo, playerId, index)).join("")}</div></section>` : "";
   return `<section class="player-photo-group player-photo-group--official"><div class="player-photo-group__heading"><h4>Officiële foto</h4><span>Standaard voor alle tools</span></div><div class="player-photo-grid"><article class="player-photo player-photo--official"><div class="player-photo__media"><img src="${esc(officialUrl)}" alt="" loading="lazy"><span class="player-photo__missing" role="status" hidden>Afbeelding niet beschikbaar</span></div><div class="player-photo__copy"><strong>Officiële standaardfoto</strong><small>Gebruikt door MOTM, Match Center, Socials en Opstellingmaker</small></div><span class="player-photo__badge">Standaard</span></article></div></section>${group("Alternatieve foto's", normal, "player-photo-group--normal")}${group("Meme-foto's", memes, "player-photo-group--meme")}`;
 };
 
@@ -65,7 +78,7 @@ export async function POST(request: Request) {
   }
   if (intent === "add-photo") {
     const playerId = String(form.get("playerId") ?? ""), imageUrl = String(form.get("imageUrl") ?? "").trim(), photoType = String(form.get("photoType") ?? ""), sortOrder = Number(form.get("sortOrder") ?? 0);
-    if (!playerId || !validImageUrl(imageUrl) || !photoValues.has(photoType) || !Number.isInteger(sortOrder) || sortOrder < 0) return new Response("Ongeldige foto", { status: 400 });
+    if (!playerId || !validImageUrl(imageUrl) || !photoValues.has(photoType) || !Number.isInteger(sortOrder) || sortOrder < 0 || !(await imageUrlIsUsable(request, imageUrl))) return new Response("Afbeelding is niet bereikbaar", { status: 400 });
     const [player] = await db()`SELECT image_url FROM ajax_players WHERE id=${playerId}`;
     if (!player || player.image_url === imageUrl) return new Response("Deze foto is al de officiële standaardfoto", { status: 400 });
     await db()`INSERT INTO ajax_player_photos(player_id,photo_type,image_url,sort_order) VALUES(${playerId},${photoType},${imageUrl},${sortOrder}) ON CONFLICT (player_id,photo_type,image_url) DO UPDATE SET sort_order=EXCLUDED.sort_order,updated_at=now()`;
@@ -105,6 +118,7 @@ export async function POST(request: Request) {
         const [player] = await tx`SELECT image_url FROM ajax_players WHERE id=${playerId} FOR UPDATE`;
         const [selected] = await tx`SELECT image_url FROM ajax_player_photos WHERE id=${photoId} AND player_id=${playerId} AND photo_type='normal'`;
         if (!player || !selected) throw new Error("Foto hoort niet bij deze speler");
+        if (!(await imageUrlIsUsable(request, String(selected.image_url)))) throw new Error("Afbeelding is niet bereikbaar");
         await tx`UPDATE ajax_player_photos SET is_default=false WHERE player_id=${playerId} AND photo_type='normal' AND is_default=true`;
         await tx`DELETE FROM ajax_player_photos WHERE id=${photoId}`;
         await tx`DELETE FROM ajax_player_photos WHERE player_id=${playerId} AND photo_type='official'`;
@@ -113,7 +127,7 @@ export async function POST(request: Request) {
         await tx`INSERT INTO ajax_player_photos(player_id,photo_type,image_url,sort_order) VALUES(${playerId},'official',${selected.image_url},0)`;
       });
     } catch (error) {
-      if (error instanceof Error && error.message === "Foto hoort niet bij deze speler") return new Response(error.message, { status: 400 });
+      if (error instanceof Error && ["Foto hoort niet bij deze speler", "Afbeelding is niet bereikbaar"].includes(error.message)) return new Response(error.message, { status: 400 });
       throw error;
     }
     return redirectBack();
