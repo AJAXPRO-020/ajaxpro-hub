@@ -44,11 +44,11 @@ test("lange spelers- en wedstrijdnamen blijven schaalbaar binnen hun tekstvak", 
   assert.ok(size * "EEN ZEER LANGE WEDSTRIJDNAAM".length * .55 <= 320 || size === 38);
 });
 
-test("geen stemmen, open status of ontbrekend rugnummer leveren geen visual", () => {
+test("alleen open status en nul stemmen blokkeren de visual", () => {
   const base = { status:"closed", slug:"test", opponent:"Test FC", homeOrAway:"home", shirtNumber:8, winner };
   assert.equal(createMotmVisualData({...base,status:"open"}),null);
   assert.equal(createMotmVisualData({...base,winner:{...winner,votes:0,percentage:0}}),null);
-  assert.equal(createMotmVisualData({...base,shirtNumber:null}),null);
+  assert.equal(createMotmVisualData({...base,shirtNumber:null})?.shirtNumber,null);
 });
 
 test("Canvas-export gebruikt exact 1350 bij 1080 en wacht op fonts en afbeeldingen", () => {

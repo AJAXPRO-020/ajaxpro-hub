@@ -25,6 +25,32 @@ export type PlayerRegistryRow = {
   updatedAt: string;
 };
 
+export type PlayerMainStatus = "first_team" | "youth" | "loaned_out" | "loaned_in" | "outside" | "departed" | "review";
+export type PlayerRegistryScope = "current" | "archive" | "other";
+
+/** Registerindeling uit bestaande selectie- en contractvelden. */
+export const playerRegistryScope = (player: Pick<PlayerRegistryRow, "active" | "selectionGroup" | "contractForm" | "loanedOut">): PlayerRegistryScope => {
+  if (player.contractForm === "no_contract") return "archive";
+  if (player.loanedOut) return player.contractForm === "owned" ? "current" : "other";
+  if (player.selectionGroup === "first_team" || player.selectionGroup === "youth") return "current";
+  return "other";
+};
+
+/** Eén leesbare hoofdstatus, afgeleid uit de bestaande registryvelden. */
+export const playerMainStatus = (player: Pick<PlayerRegistryRow, "active" | "selectionGroup" | "contractForm" | "loanedOut">): PlayerMainStatus => {
+  if (playerRegistryScope(player) === "archive") return "departed";
+  if (player.loanedOut) return "loaned_out";
+  if (player.contractForm === "loaned_in") return "loaned_in";
+  if (player.selectionGroup === "first_team") return "first_team";
+  if (player.selectionGroup === "youth") return "youth";
+  if (player.selectionGroup === "outside") return "outside";
+  return "review";
+};
+
+export const playerMainStatusLabel = (status: PlayerMainStatus) => ({
+  first_team: "Eerste elftal", youth: "Jong Ajax / jeugd", loaned_out: "Verhuurd", loaned_in: "Gehuurd", outside: "Buiten selectie", departed: "Vertrokken", review: "Nog beoordelen",
+}[status]);
+
 /** Alleen de centrale selectiestatus bepaalt de standaardbeschikbaarheid in de Opstellingmaker. */
 export const lineupDefaultAvailable = (player: PlayerRegistryRow) => player.selectionGroup === "first_team" && !player.loanedOut && player.contractForm !== "no_contract";
 export const lineupAvailabilityCategory = (player: PlayerRegistryRow) => {

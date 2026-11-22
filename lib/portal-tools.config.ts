@@ -18,7 +18,7 @@ export type PortalTool = {
 
 export const portalTools: readonly PortalTool[] = [
   {id:"system-status",title:"Systeemstatus",description:"AjaxPro-systemen en automatiseringen.",href:"/club/tools?view=system-status",section:"admin",external:false,requiredPermission:permissions.staffAccess,order:0},
-  {id:"player-registry",title:"Spelersstatussen",description:"Selectie en contractstatus van de centrale spelersregistry.",href:"/club/tools/player-registry",section:"admin",external:false,requiredPermission:permissions.playerRegistryManage,order:5},
+  {id:"player-registry",title:"Spelersbeheer",description:"Beheer spelersgegevens, selectie en contractinformatie.",href:"/club/tools/player-registry",section:"admin",external:false,requiredPermission:permissions.playerRegistryManage,order:5},
   {id:"tactics",title:"Tactiekbord",description:"Wedstrijdideeën uitwerken.",href:"https://ajaxpro-tactics-board.vercel.app",section:"team",external:true,requiredPermission:permissions.toolsTactics,order:10},
   {id:"screenshot",title:"Screenshot Editor",description:"Screenshots voor publicaties.",href:"https://screenshot-bewerker.vercel.app",section:"team",external:true,requiredPermission:permissions.toolsScreenshot,order:20},
   {id:"socials",title:"Socials",description:"AjaxPro-formats maken.",href:"/club/tools/socials",section:"team",external:false,requiredPermission:permissions.toolsSocials,order:30},

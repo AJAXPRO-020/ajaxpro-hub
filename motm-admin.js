@@ -69,7 +69,7 @@ if(winnerVisual){
       }else{
         drawFitText({text:firstName,x:180,y:735,preferred:83,minimum:44,width:245,family:'AjaxPro Refrigerator',weight:700,color:'#101010',align:'center'});
       }
-      drawFitText({text:`#${winnerVisual.dataset.shirtNumber}`,x:180,y:865,preferred:83,minimum:58,width:245,family:'AjaxPro Refrigerator',weight:700,color:'#101010',align:'center'});
+      if (winnerVisual.dataset.shirtNumber) drawFitText({text:`#${winnerVisual.dataset.shirtNumber}`,x:180,y:865,preferred:83,minimum:58,width:245,family:'AjaxPro Refrigerator',weight:700,color:'#101010',align:'center'});
       drawFitText({text:`${winnerVisual.dataset.percentage}%`,x:410,y:815,preferred:205,minimum:125,width:300,family:'AjaxPro Refrigerator',weight:900,color:'#A50324'});
       drawFitText({text:'VAN DE STEMMEN',x:410,y:868,preferred:48,minimum:36,width:300,family:'AjaxPro Refrigerator',weight:400,color:'#101010'});
 

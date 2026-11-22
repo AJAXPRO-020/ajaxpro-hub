@@ -16,9 +16,10 @@ export const publishPressConference = async (candidate: Candidate, fixture: {hom
 
 const esc=(value:string)=>value.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]!));
 const dataUri=async(url:string,mime:string)=>{const response=await fetch(new URL(url,process.env.PUBLIC_APP_URL??'https://ajaxpro.fans'));if(!response.ok)throw new Error(`MOTM-asset HTTP ${response.status}`);return `data:${mime};base64,${Buffer.from(await response.arrayBuffer()).toString('base64')}`};
-export const renderMotmSvg = async (data:{matchTitle:string;firstName:string;lastName:string;shirtNumber:number;percentage:number;playerImageUrl:string}) => {
+export const renderMotmSvg = async (data:{matchTitle:string;firstName:string;lastName:string;shirtNumber:number|null;percentage:number;playerImageUrl:string}) => {
   const [template,player]=await Promise.all([dataUri('/assets/motm/MOTM-4-Blank.png','image/png'),dataUri(data.playerImageUrl,'image/png')]);
-  return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1350" height="1080" viewBox="0 0 1350 1080"><image href="${template}" width="1350" height="1080"/><image href="${player}" x="610" y="30" width="700" height="1050" preserveAspectRatio="xMidYMid meet"/><g fill="#fff" font-family="Arial,sans-serif" font-weight="700"><text x="70" y="120" font-size="48">${esc(data.matchTitle)}</text><text x="70" y="900" font-size="78">${esc(data.firstName)} ${esc(data.lastName)}</text><text x="70" y="990" font-size="54">${data.percentage}% · #${data.shirtNumber}</text></g></svg>`);
+  const resultLine=data.shirtNumber===null?`${data.percentage}%`:`${data.percentage}% · #${data.shirtNumber}`;
+  return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1350" height="1080" viewBox="0 0 1350 1080"><image href="${template}" width="1350" height="1080"/><image href="${player}" x="610" y="30" width="700" height="1050" preserveAspectRatio="xMidYMid meet"/><g fill="#fff" font-family="Arial,sans-serif" font-weight="700"><text x="70" y="120" font-size="48">${esc(data.matchTitle)}</text><text x="70" y="900" font-size="78">${esc(data.firstName)} ${esc(data.lastName)}</text><text x="70" y="990" font-size="54">${resultLine}</text></g></svg>`);
 };
 export const renderMotmPng = async (data:Parameters<typeof renderMotmSvg>[0]) => new Resvg((await renderMotmSvg(data)).toString('utf8'), { fitTo: { mode: 'original' } }).render().asPng();
 

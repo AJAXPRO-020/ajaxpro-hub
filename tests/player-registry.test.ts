@@ -2,9 +2,24 @@ import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
 import test from "node:test";
 import { GET } from "../api/motm-public";
-import { lineupDefaultAvailable, type PlayerRegistryRow } from "../lib/player-registry";
+import { lineupDefaultAvailable, playerMainStatus, playerRegistryScope, type PlayerRegistryRow } from "../lib/player-registry";
 
 const read=(path:string)=>readFileSync(new URL(path,import.meta.url),"utf8");
+
+test("Spelersbeheer deelt actuele spelers en archief afgeleid van bestaande velden in",()=>{
+  const base={active:true,selectionGroup:"first_team",contractForm:"owned",loanedOut:false} as PlayerRegistryRow;
+  assert.equal(playerRegistryScope(base),"current");
+  assert.equal(playerRegistryScope({...base,selectionGroup:"youth"}),"current");
+  assert.equal(playerRegistryScope({...base,loanedOut:true}),"current");
+  assert.equal(playerRegistryScope({...base,contractForm:"loaned_in"}),"current");
+  assert.equal(playerRegistryScope({...base,active:false}),"current");
+  assert.equal(playerRegistryScope({...base,active:false,loanedOut:true}),"current");
+  assert.equal(playerRegistryScope({...base,contractForm:"no_contract",loanedOut:true}),"archive");
+  assert.equal(playerRegistryScope({...base,contractForm:"unknown",loanedOut:true}),"other");
+  assert.equal(playerRegistryScope({...base,selectionGroup:"outside"}),"other");
+  assert.equal(playerMainStatus({...base,active:false,loanedOut:true}),"loaned_out");
+  assert.equal(playerMainStatus({...base,contractForm:"no_contract",loanedOut:true}),"departed");
+});
 
 test("Opstellingmaker krijgt centraal bepaalde standaardbeschikbaarheid zonder de oude API te veranderen",async()=>{
   const base={selectionGroup:"first_team",contractForm:"owned",loanedOut:false} as PlayerRegistryRow;
@@ -29,6 +44,7 @@ test("centrale spelersregistratie voedt MOTM, Socials, contracten en lineup make
   const lineup=read("../../opstelling-maker/script.js");
   assert.match(migration,/CREATE TABLE IF NOT EXISTS ajax_players/);
   assert.match(motm,/activePlayersFromDatabase/);
+  assert.match(motm,/players\.filter\(lineupDefaultAvailable\)\.map\(toToolPlayer\)/);
   assert.match(socials,/loadPlayers/);
   assert.match(contracts,/\/api\/players\?include=contracts/);
   assert.match(contracts,/player\.loanedOut/);

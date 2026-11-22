@@ -14,7 +14,7 @@ export type MotmVisualData = {
   matchTitle: string;
   firstName: string;
   lastName: string;
-  shirtNumber: number;
+  shirtNumber: number | null;
   percentage: number;
   playerId: string;
   playerImageUrl: string;
@@ -51,10 +51,11 @@ export const createMotmVisualData = (input: {
     input.status !== "closed" ||
     !winner ||
     winner.votes <= 0 ||
-    !Number.isInteger(input.shirtNumber) ||
-    input.shirtNumber === null ||
-    input.shirtNumber < 0 ||
-    input.shirtNumber > 99 ||
+    (input.shirtNumber !== null && (
+      !Number.isInteger(input.shirtNumber) ||
+      input.shirtNumber < 0 ||
+      input.shirtNumber > 99
+    )) ||
     !winner.player_id ||
     !winner.name_snapshot.trim() ||
     !winner.image_url_snapshot

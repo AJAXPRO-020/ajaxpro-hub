@@ -14,6 +14,9 @@ test('automatische MOTM-visual wordt server-side opgebouwd zonder Discord-verzen
     assert.match(svg.toString('utf8'),/<svg[^>]+width="1350"/);
     assert.match(svg.toString('utf8'),/AJAX-PSV/);
     assert.match(svg.toString('utf8'),/data:image\/png;base64/);
+    const withoutNumber=await renderMotmSvg({matchTitle:'AJAX-FC THUN',firstName:'YVES',lastName:'BISSOUMA',shirtNumber:null,percentage:50,playerImageUrl:'https://ajaxpro.fans/assets/player.png'});
+    assert.match(withoutNumber.toString('utf8'),/>50%<\/text>/);
+    assert.doesNotMatch(withoutNumber.toString('utf8'),/#null/);
     const png=await renderMotmPng({matchTitle:'AJAX-PSV',firstName:'Davy',lastName:'KLAASSEN',shirtNumber:10,percentage:72,playerImageUrl:'https://ajaxpro.fans/assets/player.png'});
     assert.deepEqual([...png.subarray(0,8)],[137,80,78,71,13,10,26,10]);
   } finally { globalThis.fetch=previous; }
