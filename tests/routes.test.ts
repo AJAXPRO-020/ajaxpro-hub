@@ -34,10 +34,8 @@ test("programma wordt dagelijks automatisch ververst via de bestaande match-API"
   });
 });
 
-test("MOTM-fallback gebruikt GitHub OIDC en geen extra Vercel-functie",()=>{
-  const workflow=readFileSync(new URL("../.github/workflows/motm-announcement.yml",import.meta.url),"utf8");
-  assert.match(workflow,/cron: "\*\/5 \* \* \* \*"/);
-  assert.match(workflow,/id-token: write/);
-  assert.match(workflow,/view=motm-announcement/);
+test("MOTM heeft geen automatische Discord-publicatieroute of extra Vercel-functie",()=>{
+  const source=readFileSync(new URL("../api/next-match.ts",import.meta.url),"utf8");
+  assert.doesNotMatch(source,/motm-announcement|sendAutomaticAnnouncement/);
   assert.equal(config.functions["api/motm-announcement.ts"],undefined);
 });

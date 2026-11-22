@@ -51,11 +51,6 @@ test("Discord-mededeling gebruikt webhook, allowed_mentions en eenmalige atomisc
   assert.match(migration,/announcement_sent_at/);assert.match(migration,/announcement_sent_by_discord_user_id/);
 });
 
-test("automatische mededeling hergebruikt dezelfde lock en schrijft een systeem-audit",()=>{
-  const source=readFileSync(new URL("../lib/motm-announcements.ts",import.meta.url),"utf8");
-  for(const value of ["system:auto-schedule","Automatische mededeling","trigger: \"scheduled_open\"","status !== \"open\""])assert.ok(source.includes(value),value);
-});
-
 test("alle publieke hoofdqueries filteren verwijderde stemmingen",()=>{
   for(const file of ["../api-impl/club.ts","../api-impl/motm/index.ts","../api-impl/motm/share.ts","../api-impl/motm/vote.ts","../lib/motm-scheduling.ts"]){const source=readFileSync(new URL(file,import.meta.url),"utf8");assert.match(source,/deleted_at IS NULL/,file);}
 });

@@ -3,7 +3,6 @@ import { strict as assert } from 'node:assert';
 import { createHmac } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { allowedByRobots, sitemapLinks, dueLocalHour, daytimeLocalHour, mergeCandidates, parseAjaxArticle, type Fixture } from '../lib/press-conferences';
-import { validGitHubOidcClaims } from '../lib/github-oidc';
 import { verifyPressSchedulerRequest } from '../lib/press-scheduler-auth';
 const fixtures: Fixture[] = [{fixture_key:'ajax-atalanta',home_team:'Ajax',away_team:'Atalanta',kickoff_at:'2026-10-22T19:00:00Z'}];
 test('official article yields one dated match without invented time',()=>{
@@ -82,6 +81,4 @@ test('Cloudflare cron signs only the press endpoint; stale and wrong signatures 
  const wrong=createHmac('sha256','different-secret-01234567890123456789').update(`${timestamp}\nGET\n/api/press-conferences?action=check`).digest('hex');
  assert.equal(verifyPressSchedulerRequest(new Request('https://ajaxpro.fans/api/press-conferences?action=check',{headers:{'x-ajaxpro-timestamp':timestamp,'x-ajaxpro-signature':wrong}}),Number(timestamp),secret),false);
  assert.equal((await worker.fetch()).status,404);
- const claims={iss:'https://token.actions.githubusercontent.com',aud:'ajaxpro-press-conferences',repository:'AJAXPRO-020/ajaxpro-hub',ref:'refs/heads/main',workflow_ref:'AJAXPRO-020/ajaxpro-hub/.github/workflows/press-conferences.yml@refs/heads/main',exp:Number(timestamp)+120};
- assert.equal(validGitHubOidcClaims(claims,Number(timestamp)),false);
 });

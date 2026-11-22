@@ -73,6 +73,6 @@ export const amsterdamFieldsToUtc = (date: string, time: string) => {
 };
 
 export const defaultSchedule = (kickoffAt: Date) => {
-  const openAt = new Date(kickoffAt.getTime() + 2 * 60 * 60 * 1000);
-  return { openAt, closeAt: new Date(kickoffAt.getTime() + 3 * 60 * 60 * 1000) };
+  const openAt = new Date(kickoffAt.getTime());
+  return { openAt, closeAt: new Date(kickoffAt.getTime() + 150 * 60 * 1000) };
 };

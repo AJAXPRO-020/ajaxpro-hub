@@ -4,10 +4,6 @@ import {
   normalizeTeamName,
 } from "../lib/matchday-live";
 import { consumeNextMatchRateLimit } from "../lib/next-match-rate-limit";
-import { verifyGitHubOidcRequest } from "../lib/github-oidc";
-import { sendAutomaticAnnouncement } from "../lib/motm-announcements";
-import { announcementPlan } from "../lib/motm-announcement-plan";
-import { synchronizeAllMatches } from "../lib/motm-scheduling";
 
 const AJAX_FIXTURES_URL = "https://www.ajax.nl/wedstrijden/";
 const TV_GUIDE_URL = "https://www.voetbaloptv.com/wp-json/vtv/v1/wedstrijden";
@@ -119,7 +115,6 @@ type StoredFixture = {
   fixture_key: string; home_team: string; away_team: string; competition: string; kickoff_at: Date | string; tv: string | null;
   goals_home: number | null; goals_away: number | null; finished_at: Date | string | null;
 };
-type PlannedAnnouncementMatch = { status: string; scheduled_open_at: Date | string | null; scheduled_close_at: Date | string | null };
 
 const nextStoredFixture = async () => {
   const [fixture] = await db()`SELECT * FROM matchday_fixtures WHERE kickoff_at>${new Date()} ORDER BY kickoff_at LIMIT 1`;
@@ -197,11 +192,6 @@ const jsonResponse = (body: unknown, status = 200, extraHeaders: Record<string, 
   },
 });
 
-const automationResponse = (body: unknown, status = 200) => new Response(JSON.stringify(body), {
-  status,
-  headers: { "Content-Type": "application/json; charset=UTF-8", "Cache-Control": "private, no-store" },
-});
-
 export async function GET(request: Request) {
   if (request.method !== "GET") return jsonResponse({ error: "Method not allowed" }, 405);
   const now = new Date();
@@ -212,24 +202,6 @@ export async function GET(request: Request) {
     return runContentHubCleanup(request);
   }
   try {
-    if (view === "motm-announcement") {
-      if (!await verifyGitHubOidcRequest(request)) return automationResponse({ error: "Unauthorized" }, 401);
-      // The GitHub check is also the scheduler heartbeat: catch up every due MOTM transition.
-      await synchronizeAllMatches(now);
-      if (url.searchParams.get("plan") === "1") {
-        const [match] = await db()`SELECT status,scheduled_open_at,scheduled_close_at FROM motm_matches
-          WHERE deleted_at IS NULL AND status IN ('draft','open') AND scheduled_close_at>${now}
-          ORDER BY scheduled_open_at LIMIT 1`;
-        return automationResponse(announcementPlan(match as PlannedAnnouncementMatch | undefined, now));
-      }
-      const [match] = await db()`SELECT status,scheduled_open_at,scheduled_close_at FROM motm_matches
-        WHERE deleted_at IS NULL AND status IN ('draft','open') AND scheduled_close_at>${now}
-        ORDER BY scheduled_open_at LIMIT 1`;
-      const plan = announcementPlan(match as PlannedAnnouncementMatch | undefined, now);
-      if (!plan.active || !plan.due) return automationResponse(plan);
-      const result = await sendAutomaticAnnouncement(request.url, now);
-      return automationResponse({ ...result, active: result.status !== "sent" && result.status !== "already_sent" });
-    }
     const rateLimit = await consumeNextMatchRateLimit(request);
     if (!rateLimit.allowed) return jsonResponse(
       { error: "Te veel verzoeken. Probeer het later opnieuw." },
@@ -243,7 +215,6 @@ export async function GET(request: Request) {
     return jsonResponse(await responseFor(await nextStoredFixture(), now));
   } catch (error) {
     console.error("Unable to load matchday state", error);
-    if (view === "motm-announcement") return automationResponse({ error: "Announcement check failed" }, 500);
     try { return jsonResponse(await responseFor(await nextStoredFixture(), now)); }
     catch { return jsonResponse({ match: null, message: "De volgende wedstrijd is nog niet bekend.", updatedAt: now.toISOString() }); }
   }

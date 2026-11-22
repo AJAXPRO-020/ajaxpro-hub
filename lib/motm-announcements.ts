@@ -1,5 +1,4 @@
 import { db } from "./motm-db";
-import { synchronizeAllMatches } from "./motm-scheduling";
 
 export const announcementDefault = (match: { home_or_away: string; opponent: string }) =>
   `Stem op je MOTM voor ${match.home_or_away === "home" ? `Ajax tegen ${match.opponent}` : `${match.opponent} tegen Ajax`}`;
@@ -30,21 +29,6 @@ export const sendAnnouncement = async (webhook: string, text: string, link: stri
   } catch (error) {
     return { status: "unknown", error: error instanceof Error ? error.message : "Onbekende Discord-fout" } as const;
   }
-};
-
-export const sendAutomaticAnnouncement = async (requestUrl: string, now = new Date()) => {
-  await synchronizeAllMatches(now);
-  const [candidate] = await db()`SELECT * FROM motm_matches
-    WHERE deleted_at IS NULL AND status='open'
-      AND scheduled_open_at IS NOT NULL AND scheduled_open_at<=${now}
-      AND scheduled_close_at IS NOT NULL AND scheduled_close_at>${now}
-      AND announcement_sent_at IS NULL
-    ORDER BY scheduled_open_at LIMIT 1`;
-  if (!candidate) return { status: "no_open_match" as const };
-
-  return deliverAnnouncement(candidate.id, announcementDefault(candidate as any), requestUrl, "system:auto-schedule", "Automatische mededeling", {
-    trigger: "scheduled_open", scheduledOpenAt: candidate.scheduled_open_at,
-  });
 };
 
 const staleSendingMs = 15 * 60_000;
