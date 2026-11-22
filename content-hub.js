@@ -42,6 +42,11 @@ const bindContentHub = () => {
     icon.setAttribute("aria-hidden", "true");
     action.prepend(icon);
   }));
+  root.querySelectorAll(".content-post__thumbnail-media").forEach((media) => {
+    const thumbnail = media.closest(".content-post__thumbnail");
+    const showFallback = () => { thumbnail?.classList.add("is-fallback"); media.remove(); };
+    media.addEventListener("error", showFallback, { once: true });
+  });
   root.querySelectorAll(".content-calendar__day[href], .content-calendar__toolbar a[href]").forEach((link) => link.addEventListener("click", (event) => {
     if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
