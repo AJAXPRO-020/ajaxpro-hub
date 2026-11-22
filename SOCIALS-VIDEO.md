@@ -17,11 +17,12 @@ De echte API-handlers voeren de bestaande Discord-permissionchecks uit.
 De reviewserver wordt niet als Vercel-function gedeployd en vervangt de echte
 Discord-login niet. Een volledige OAuth-login is lokaal niet end-to-end getest.
 
-De lokale `.env.local` wijst naar het afzonderlijke Neon-project **MOTM**
-(`calm-bar-43783135`), dat in Vercel aan Preview gekoppeld is. Met expliciete toestemming zijn uitsluitend
-35 wedstrijdrecords en 3 bestaande snapshots uit productie gelezen in een
-READ ONLY-transactie en naar preview gekopieerd. Er zijn geen productierecords
-gewijzigd. Het spelersregister in preview is uit bestaande repo-migraties opgebouwd.
+De voormalige lokale Preview-database **MOTM** (`calm-bar-43783135`) en de
+bijbehorende Vercel-resource zijn op 20 november 2026 verwijderd. De huidige
+productieomgeving gebruikt **MOTM-Production** (`twilight-breeze-93820218`).
+De historische MOTM-testrecords zijn lokaal geëxporteerd en via een tijdelijk
+Neon-herstelpunt bewaard; verbind de lokale omgeving niet automatisch met
+productie. Er zijn geen productierecords gewijzigd.
 
 De selector toont uitsluitend wedstrijden waarvan de aftrap minder dan
 veertien dagen geleden was of minder dan veertien dagen in de toekomst ligt.

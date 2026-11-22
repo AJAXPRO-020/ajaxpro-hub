@@ -33,12 +33,15 @@ Vercel-project `ajax-pro-tools` en de Netlify-site
 publicatiedoel gebruiken. `.vercelignore` sluit instructies/skills al uit van
 CLI-publicatie; de bestaande deploymentconfig blijft intact.
 
-Hub-production gebruikt Neon `MOTM-Production` (`twilight-breeze-93820218`),
-preview gebruikt `MOTM` (`calm-bar-43783135`). Preview-main was archived bij de
-audit. Git bewaart geen databasegegevens. Gebruik lokaal een afgesproken
-testdatabase, Discord-testconfiguratie en credentials uit hun eigen beheerplek;
-pull niet automatisch productie-env. OIDC/Actions vertrouwen op
-`AJAXPRO-020/ajaxpro-hub` en `main`: behoud die namen en bestaande workflows.
+Hub-production gebruikt Neon `MOTM-Production` (`twilight-breeze-93820218`). De
+voormalige Preview-database `MOTM` (`calm-bar-43783135`) en de bijbehorende
+Vercel-resource zijn op 20 november 2026 verwijderd. De historische export en
+het tijdelijke Neon-herstelpunt zijn uitsluitend voor herstel beschikbaar;
+Git bewaart geen databasegegevens. Gebruik lokaal een afgesproken testdatabase,
+Discord-testconfiguratie en credentials uit hun eigen beheerplek; verbind lokaal
+niet automatisch met productie-env. De MOTM-mededeling wordt uitsluitend
+handmatig vanuit het beheer verstuurd; daarvoor draait geen geplande GitHub
+Actions-workflow meer.
 
 ## Discord-toegang en rechten
 
