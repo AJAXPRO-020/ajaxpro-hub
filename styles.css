@@ -1869,7 +1869,7 @@ a {
 
 .social-card--podcast {
   grid-column: 1 / -1;
-  min-height: 142px;
+  min-height: 164px;
   grid-template-columns: 104px minmax(0, 1fr);
   align-items: stretch;
   padding: 17px 18px 18px;
@@ -1896,18 +1896,26 @@ a {
 .social-card__podcast-art {
   position: relative;
   z-index: 1;
-  display: block;
+  display: grid;
   width: 92px;
   height: 92px;
   min-height: 0;
+  place-items: center;
   align-self: center;
   aspect-ratio: 1;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 13px;
   background: var(--red);
+  background: var(--red);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+}
+
+.social-card__podcast-art img {
+  display: block;
+  width: 72px;
+  height: 72px;
   object-fit: contain;
   object-position: center;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
 }
 
 .social-card__podcast-content {
@@ -1944,7 +1952,7 @@ a {
 
   .social-card--podcast {
     grid-template-columns: 82px minmax(0, 1fr);
-    min-height: 132px;
+    min-height: 152px;
     padding: 13px;
   }
 
@@ -1956,6 +1964,11 @@ a {
   .social-card__podcast-art {
     width: 68px;
     height: 68px;
+  }
+
+  .social-card__podcast-art img {
+    width: 52px;
+    height: 52px;
   }
 
   .social-card__podcast-copy strong {
@@ -1986,6 +1999,11 @@ a {
   .social-card__podcast-art {
     width: 60px;
     height: 60px;
+  }
+
+  .social-card__podcast-art img {
+    width: 46px;
+    height: 46px;
   }
 }
 
