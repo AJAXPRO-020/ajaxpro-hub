@@ -1869,7 +1869,7 @@ a {
 .social-card--podcast {
   grid-column: 1 / -1;
   min-height: 142px;
-  grid-template-columns: 126px minmax(0, 1fr);
+  grid-template-columns: 104px minmax(0, 1fr);
   align-items: stretch;
   padding: 17px 18px 18px;
   background:
@@ -1896,9 +1896,10 @@ a {
   position: relative;
   z-index: 1;
   display: block;
-  width: 100%;
-  height: 100%;
-  min-height: 126px;
+  width: 92px;
+  height: 92px;
+  min-height: 0;
+  align-self: center;
   aspect-ratio: 1;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 13px;
@@ -1947,7 +1948,7 @@ a {
 /* Keep the artwork-led composition intact on narrow screens. */
 @media (max-width: 520px) {
   .social-card--podcast {
-    grid-template-columns: 96px minmax(0, 1fr);
+    grid-template-columns: 82px minmax(0, 1fr);
     min-height: 132px;
     padding: 13px;
   }
@@ -1958,7 +1959,8 @@ a {
   }
 
   .social-card__podcast-art {
-    min-height: 106px;
+    width: 68px;
+    height: 68px;
   }
 
   .social-card__podcast-copy strong {
@@ -1983,11 +1985,12 @@ a {
 /* Legacy one-column fallback for very narrow containers. */
 @media (max-width: 360px) {
   .social-card--podcast {
-    grid-template-columns: 84px minmax(0, 1fr);
+    grid-template-columns: 74px minmax(0, 1fr);
   }
 
   .social-card__podcast-art {
-    min-height: 96px;
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -2056,12 +2059,46 @@ a {
   flex: none;
 }
 
+.platform-icon {
+  display: inline-grid;
+  width: 18px;
+  height: 18px;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.platform-icon--spotify {
+  background: #1ed760;
+}
+
+.platform-icon--apple {
+  background: linear-gradient(145deg, #f15cff, #7b2cff);
+}
+
+.social-card__platforms .platform-icon img,
+.social-card__platforms .platform-icon svg {
+  width: 13px;
+  height: 13px;
+}
+
+.platform-icon--spotify img {
+  filter: brightness(0) invert(1);
+}
+
+.platform-icon--apple svg {
+  fill: #fff;
+}
+
 .social-card__platforms img {
   border-radius: 50%;
 }
 
 .social-card__platforms svg {
   fill: currentColor;
+}
+
+.platform-icon--apple svg {
+  fill: #fff;
 }
 
 .social-card__cta {
