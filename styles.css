@@ -1835,6 +1835,7 @@ a {
 /* Homepage social row: two light community cards plus one primary podcast card. */
 .social-row {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: 150px minmax(142px, auto);
 }
 
 .social-card {
@@ -1845,7 +1846,7 @@ a {
 
 .social-card--x,
 .social-card--instagram {
-  min-height: 116px;
+  min-height: 150px;
 }
 
 .social-card--instagram {
@@ -1923,16 +1924,6 @@ a {
   grid-template-columns: 1fr auto;
 }
 
-.social-card__podcast-content .social-card__arrow {
-  display: grid;
-  width: 34px;
-  height: 34px;
-  place-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.13);
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.05);
-}
-
 .social-card__podcast-content .social-card__podcast-copy {
   padding-block: 1px;
 }
@@ -1947,6 +1938,10 @@ a {
 
 /* Keep the artwork-led composition intact on narrow screens. */
 @media (max-width: 520px) {
+  .social-row {
+    grid-template-rows: 132px minmax(142px, auto);
+  }
+
   .social-card--podcast {
     grid-template-columns: 82px minmax(0, 1fr);
     min-height: 132px;
