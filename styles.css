@@ -1741,20 +1741,6 @@ a {
   font-size: 3.7rem;
 }
 
-.social-card--spotify::before {
-  content: "SP";
-  right: -22px;
-  bottom: -14px;
-  font-size: 3.8rem;
-}
-
-.social-card--tiktok::before {
-  content: "TT";
-  right: -18px;
-  bottom: -14px;
-  font-size: 3.8rem;
-}
-
 .social-card:hover,
 .social-card:focus-visible {
   border-color: rgba(126, 155, 212, 0.52);
@@ -1765,16 +1751,6 @@ a {
 .social-card--instagram:hover,
 .social-card--instagram:focus-visible {
   border-color: rgba(214, 91, 151, 0.58);
-}
-
-.social-card--spotify:hover,
-.social-card--spotify:focus-visible {
-  border-color: rgba(61, 208, 121, 0.55);
-}
-
-.social-card--tiktok:hover,
-.social-card--tiktok:focus-visible {
-  border-color: rgba(37, 244, 238, 0.56);
 }
 
 .social-card:hover::before,
@@ -1819,17 +1795,6 @@ a {
   background: linear-gradient(145deg, rgba(112, 72, 187, 0.55), rgba(201, 55, 112, 0.48) 58%, rgba(232, 128, 45, 0.44));
 }
 
-.social-card--spotify .social-card__icon {
-  background: rgba(30, 215, 96, 0.16);
-  color: #4bdf81;
-}
-
-.social-card--tiktok .social-card__icon {
-  background:
-    linear-gradient(145deg, rgba(37, 244, 238, 0.17), rgba(254, 44, 85, 0.17));
-  color: #f6f7fb;
-}
-
 .social-card__icon svg {
   width: 17px;
   height: 17px;
@@ -1865,6 +1830,164 @@ a {
   color: var(--text);
   font-size: 1.05rem;
   line-height: 1.1;
+}
+
+/* Homepage social row: two light community cards plus one primary podcast card. */
+.social-row {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.social-card {
+  min-width: 0;
+  gap: 10px;
+  padding: 15px 16px 16px;
+}
+
+.social-card--x,
+.social-card--instagram {
+  min-height: 116px;
+}
+
+.social-card--instagram {
+  background:
+    radial-gradient(circle at 8% 0%, rgba(205, 91, 172, 0.18), transparent 50%),
+    rgba(18, 27, 42, 0.92);
+}
+
+.social-card--x:hover,
+.social-card--x:focus-visible {
+  border-color: rgba(162, 183, 224, 0.64);
+  box-shadow: 0 12px 28px rgba(36, 56, 92, 0.2);
+}
+
+.social-card--instagram:hover,
+.social-card--instagram:focus-visible {
+  border-color: rgba(231, 112, 171, 0.68);
+  box-shadow: 0 12px 28px rgba(119, 46, 99, 0.2);
+}
+
+.social-card__description {
+  position: relative;
+  z-index: 1;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.25;
+}
+
+.social-card--podcast {
+  grid-column: 1 / -1;
+  min-height: 142px;
+  padding: 17px 18px 18px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(179, 15, 36, 0.26), transparent 45%),
+    linear-gradient(115deg, rgba(179, 15, 36, 0.12), transparent 54%),
+    rgba(18, 27, 42, 0.96);
+}
+
+.social-card--podcast:hover,
+.social-card--podcast:focus-visible {
+  border-color: rgba(225, 83, 103, 0.68);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(199, 22, 48, 0.32), transparent 45%),
+    linear-gradient(115deg, rgba(179, 15, 36, 0.16), transparent 54%),
+    rgba(24, 34, 49, 0.98);
+  box-shadow: 0 14px 32px rgba(99, 12, 28, 0.22);
+}
+
+.social-card--podcast::before {
+  content: "CAFÉ";
+  right: -8px;
+  bottom: -18px;
+  color: rgba(246, 247, 251, 0.06);
+  font-size: 4.2rem;
+  letter-spacing: -0.05em;
+}
+
+.social-card__icon--cafe {
+  background: var(--red);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-size: 0.64rem;
+  letter-spacing: -0.04em;
+}
+
+.social-card__podcast-copy {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+
+.social-card__podcast-copy strong {
+  font-size: clamp(1.18rem, 2vw, 1.48rem);
+  letter-spacing: 0.02em;
+}
+
+.social-card__podcast-copy > span {
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.25;
+}
+
+.social-card__podcast-footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 2px;
+}
+
+.social-card__platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.social-card__platforms span {
+  padding: 5px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  background: rgba(7, 9, 13, 0.28);
+  color: rgba(246, 247, 251, 0.76);
+  font-size: 0.68rem;
+  font-weight: 850;
+  line-height: 1;
+}
+
+.social-card__cta {
+  display: inline-flex;
+  flex: none;
+  min-height: 36px;
+  align-items: center;
+  gap: 7px;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-button);
+  background: rgba(7, 9, 13, 0.24);
+  color: var(--text);
+  font-size: 0.74rem;
+  font-weight: 900;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.social-card:hover .social-card__cta,
+.social-card:focus-visible .social-card__cta {
+  border-color: rgba(255, 255, 255, 0.38);
+  background: var(--red);
+}
+
+@media (max-width: 520px) {
+  .social-card__podcast-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .social-card__cta {
+    min-height: 34px;
+  }
 }
 
 .support-strip {
