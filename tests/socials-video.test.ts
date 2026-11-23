@@ -4,7 +4,7 @@ import { randomUUID } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { videoData,editableVideoData,VideoError } from "../lib/socials-video-data";
 import { videoService } from "../lib/socials-video";
-import { SubmissionUncertain,trustedVideoUrl } from "../lib/socials-video-shotstack";
+import { SubmissionUncertain,shotstackClient,trustedVideoUrl } from "../lib/socials-video-shotstack";
 import { buildVideoEdit } from "../lib/socials-video-template";
 import { handleVideo } from "../lib/socials-video-http";
 import type { VideoJob,VideoStore,ReserveInput } from "../lib/socials-video-store";
@@ -43,5 +43,20 @@ test('expired temporary links do not cause automatic rendering',async()=>{const 
 test('een oude vastgelopen render kan alleen expliciet worden vrijgegeven',async()=>{const x=setup(),j=await x.service.start(fixture.fixture_key,'staff',randomUUID());x.store.jobs[0].status='uncertain';x.store.jobs[0].created_at=new Date(now()-31*60*1000);const released=await x.service.recover(j.id);assert.equal(released.status,'failed');const retry=await x.service.start(fixture.fixture_key,'staff-2',randomUUID(),j.id);assert.notEqual(retry.id,j.id);assert.equal(x.calls(),2)});
 test('een onbekende Shotstack-status blokkeert en start geen nieuwe render',async()=>{const x=setup(),j=await x.service.start(fixture.fixture_key,'staff',randomUUID());x.client.status=async id=>({id,status:'mystery'});const overview=await x.service.overview(fixture.fixture_key);assert.equal(overview.jobs[0].status,'queued');assert.match(overview.statusWarning??'',/onbekende status/);await assert.rejects(x.service.start(fixture.fixture_key,'staff-2',randomUUID()),/onbekende status/);assert.equal(x.calls(),1);assert.equal(j.id,x.store.jobs[0].id)});
 test('video API rejects missing Discord session before data/provider access',async()=>{const {GET,POST}=await import('../api/club-tools');const get=await GET(new Request('https://ajaxpro.fans/api/club-tools?view=socials-video&fixture=test'));assert.equal(get.status,401);const post=await POST(new Request('https://ajaxpro.fans/api/club-tools?view=socials-video',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}));assert.equal(post.status,401)});
+test('Shotstack failures log safe status, code and detail without secrets while preserving the frontend error',async()=>{
+ const previous=process.env.SOCIALS_VIDEO_ENABLED,previousKey=process.env.SHOTSTACK_API_KEY,previousMusic=process.env.SHOTSTACK_MUSIC_URL;
+ process.env.SOCIALS_VIDEO_ENABLED='true';process.env.SHOTSTACK_API_KEY='test-secret-key';process.env.SHOTSTACK_MUSIC_URL='https://example.com/music.mp3';
+ const entries:any[]=[];const previousError=console.error;console.error=(...args:any[])=>entries.push(args);
+ try{
+  const client=shotstackClient(async()=>new Response(JSON.stringify({error:{code:'INSUFFICIENT_CREDITS',message:'balance=secret-token https://example.test/signed?token=abc'}}),{status:402,headers:{'Content-Type':'application/json'}}));
+  await assert.rejects(client.submit({small:true}),/Shotstack heeft de aanvraag geweigerd/);
+  assert.equal(entries.length,1);const record=entries[0][1];assert.equal(record.status,402);assert.equal(record.errorCode,'INSUFFICIENT_CREDITS');assert.equal(record.kind,'credits');assert.match(record.detail,/\[REDACTED\]/);assert.doesNotMatch(JSON.stringify(record),/test-secret-key|secret-token|example\.test/);
+ }finally{console.error=previousError;if(previous===undefined)delete process.env.SOCIALS_VIDEO_ENABLED;else process.env.SOCIALS_VIDEO_ENABLED=previous;if(previousKey===undefined)delete process.env.SHOTSTACK_API_KEY;else process.env.SHOTSTACK_API_KEY=previousKey;if(previousMusic===undefined)delete process.env.SHOTSTACK_MUSIC_URL;else process.env.SHOTSTACK_MUSIC_URL=previousMusic}
+});
+test('Shotstack authentication and invalid-request failures are classified in logs',async()=>{
+ const previous=process.env.SOCIALS_VIDEO_ENABLED,previousKey=process.env.SHOTSTACK_API_KEY,previousMusic=process.env.SHOTSTACK_MUSIC_URL;process.env.SOCIALS_VIDEO_ENABLED='true';process.env.SHOTSTACK_API_KEY='test-key';process.env.SHOTSTACK_MUSIC_URL='https://example.com/music.mp3';
+ const previousError=console.error,entries:any[]=[];console.error=(...args:any[])=>entries.push(args);
+ try{for(const [status,code,kind] of [[401,'UNAUTHORIZED','authentication'],[422,'INVALID_EDIT','invalid_request']] as const){const client=shotstackClient(async()=>new Response(JSON.stringify({code,message:'safe'}),{status}));await assert.rejects(client.submit({}));assert.equal(entries.at(-1)[1].kind,kind);assert.equal(entries.at(-1)[1].errorCode,code)}}finally{console.error=previousError;if(previous===undefined)delete process.env.SOCIALS_VIDEO_ENABLED;else process.env.SOCIALS_VIDEO_ENABLED=previous;if(previousKey===undefined)delete process.env.SHOTSTACK_API_KEY;else process.env.SHOTSTACK_API_KEY=previousKey;if(previousMusic===undefined)delete process.env.SHOTSTACK_MUSIC_URL;else process.env.SHOTSTACK_MUSIC_URL=previousMusic}
+});
 
 test('concurrent staff requests share one accepted render',async()=>{const x=setup();const [a,b]=await Promise.all([x.service.start(fixture.fixture_key,'staff-a',randomUUID()),x.service.start(fixture.fixture_key,'staff-b',randomUUID())]);assert.equal(a.id,b.id);assert.equal(x.calls(),1);assert.equal(x.store.jobs.length,1)});
