@@ -16,8 +16,10 @@ if(root){
   }
   let category='match';
   let editing=false;
+  let previewUrls=[];
   const renderCards=()=>{
     overview.querySelector('h2').textContent=category==='match'?'Beschikbare wedstrijdcontent':'Overige content';
+    previewUrls.forEach(url=>URL.revokeObjectURL(url));previewUrls=[];
     cards.replaceChildren();
     for(const id of category==='match'?matchIds:otherIds){
       const source=root.querySelector(`[data-format-id="${id}"]`);
@@ -27,7 +29,12 @@ if(root){
       const title=document.createElement('h3');title.textContent=source.querySelector('strong')?.textContent||id;
       const preview=document.createElement('div');preview.className='socials-v2-card-preview';
       const artwork=workspace.querySelector('.socials-preview-panel article, .socials-preview-panel img, .card-video-poster');
-      if(artwork){const copy=artwork.cloneNode(true);copy.removeAttribute('id');copy.querySelectorAll('canvas').forEach(canvas=>canvas.remove());preview.append(copy)}
+      if(artwork){const copy=artwork.cloneNode(true);copy.removeAttribute('id');
+        if(id==='notable-stat'){
+          const canvas=artwork.querySelector('canvas');
+          if(canvas){const image=document.createElement('img');image.alt='Voorbeeld Opvallend cijfer';copy.replaceChildren(image);canvas.toBlob(blob=>{if(blob&&image.isConnected){const url=URL.createObjectURL(blob);previewUrls.push(url);image.src=url}else if(!blob)copy.textContent='Voorbeeld beschikbaar in de editor'},'image/png')}
+        }else copy.querySelectorAll('canvas').forEach(canvas=>canvas.remove());
+        preview.append(copy)}
       else preview.textContent=id==='ajax-vandaag'?'Drie historische voorstellen':'Voorbeeld verschijnt bij bewerken';
       const status=document.createElement('p');status.className='socials-v2-card-status';
       status.textContent=id==='quote'?'Maak zelf een quote':id==='ajax-vandaag'?'Genereer op datum':source.dataset.dataReady==='false'?'Gegevens ontbreken':'Voorstel beschikbaar';
@@ -44,7 +51,7 @@ if(root){
     categoryButtons.forEach(item=>{if(item===button)item.setAttribute('aria-current','page');else item.removeAttribute('aria-current')});
     showOverview();
   }));
-  root.addEventListener('socials:match-stats',()=>{if(!editing)renderCards()});
+  root.addEventListener('socials:match-stats',()=>{if(!editing)requestAnimationFrame(()=>requestAnimationFrame(renderCards))});
   root.addEventListener('socials:match-selection',()=>{if(!editing)renderCards()});
   root.dataset.v2Editing='false';
   renderCards();
