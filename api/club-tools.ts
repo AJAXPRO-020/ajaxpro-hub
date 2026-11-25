@@ -38,7 +38,7 @@ async function get(request:Request){
       return json(await generateVandaagContent(url.searchParams.get("date")??"",Number(url.searchParams.get("variation")??0)));
     }catch(error){if(error instanceof RangeError)return json({error:error.message},400);console.error("Ajax Vandaag unavailable",error);return json({error:"Ajax Vandaag is tijdelijk niet beschikbaar."},503)}
   }
-  const returnTo=view==="socials"||view==="socials-match-stats"?"/club/tools/socials":"/club/tools";
+  const returnTo=view==="socials"||view==="socials-match-stats"?"/club/tools/socials":view==="socials-v2"?"/club/tools/socials-v2":"/club/tools";
   if(view?.startsWith("socials-video")){
     const session=await getSessionWithCurrentRoles(request);
     if(!session)return json({error:"Geen toegang tot de staffomgeving."},401);
@@ -51,12 +51,12 @@ async function get(request:Request){
   if(!session)return redirect(`/api/auth/discord-login?returnTo=${returnTo}`);
   const staff=await getSessionWithPermission(request,permissions.staffAccess);
   if(!staff)return errorPage("Geen toegang","Deze staffomgeving is alleen beschikbaar voor Moderators, Admins en de Socials-rol.",403,session,"/club/stand","motm");
-  if(view==="socials"){
+  if(view==="socials"||view==="socials-v2"){
     const allowed=await getSessionWithPermission(request,permissions.toolsSocials);
     if(!allowed)return errorPage("Geen toegang","Voor jouw Club-account is Socials niet beschikbaar.",403,session,"/club/tools","tools");
     const url=new URL(request.url);
     const localVideoPreview=process.env.NODE_ENV==="development"&&["localhost","127.0.0.1"].includes(url.hostname)&&url.searchParams.get("video-preview")==="1";
-    return renderSocials(allowed,undefined,undefined,undefined,localVideoPreview);
+    return renderSocials(allowed,undefined,undefined,undefined,localVideoPreview,undefined,view==="socials-v2");
   }
   if(view==="socials-match-stats"){
     const allowed=await getSessionWithPermission(request,permissions.toolsSocials);

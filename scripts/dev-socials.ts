@@ -18,12 +18,13 @@ const main=async()=>{
  const types:Record<string,string>={'.html':'text/html','.css':'text/css','.js':'text/javascript','.mjs':'text/javascript','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.svg':'image/svg+xml','.otf':'font/otf','.ttf':'font/ttf','.woff2':'font/woff2','.ico':'image/x-icon','.json':'application/json'};
  const server=createServer(async(req,res)=>{
   try{
+   if(req.method==='POST'){res.writeHead(403,{'Content-Type':'text/plain'});res.end('Read-only review');return}
    const url=new URL(req.url??'/', 'http://localhost:3000');let response:Response;
-   if(url.pathname==='/'||url.pathname==='/club/tools/socials'||url.pathname==='/api/club-tools'){
+   if(url.pathname==='/'||url.pathname==='/club/tools/socials'||url.pathname==='/club/tools/socials-v2'||url.pathname==='/api/club-tools'){
     const cookie=await createSessionCookie({id:'100000000000000001',username:'Lokale staffreview',avatar:null} as any,{roles:['local-socials-review']} as any);
     const headers=new Headers();for(const [k,v]of Object.entries(req.headers))if(v)headers.set(k,Array.isArray(v)?v.join(','):v);
     headers.set('cookie',cookie.split(';')[0]);
-    if(url.pathname!=='/api/club-tools'){url.pathname='/api/club-tools';url.searchParams.set('view','socials')}
+    if(url.pathname!=='/api/club-tools'){const v2=url.pathname==='/club/tools/socials-v2';url.pathname='/api/club-tools';url.searchParams.set('view',v2?'socials-v2':'socials')}
     const body=['GET','HEAD'].includes(req.method??'GET')?undefined:Readable.toWeb(req) as ReadableStream<Uint8Array>;
     const request=new Request(url,{method:req.method,headers,...(body?{body,duplex:'half'}:{})} as RequestInit);
     response=req.method==='POST'?await POST(request):await GET(request);

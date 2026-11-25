@@ -115,6 +115,10 @@
       "destination": "/api/club-tools?view=socials"
     },
     {
+      "source": "/club/tools/socials-v2",
+      "destination": "/api/club-tools?view=socials-v2"
+    },
+    {
       "source": "/club/tools/content-hub",
       "destination": "/api/club-tools?view=content-hub"
     },

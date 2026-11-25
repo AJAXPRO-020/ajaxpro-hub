@@ -41,7 +41,8 @@ test("centrale spelersregistratie voedt MOTM, Socials, contracten en lineup make
   const motm=read("../api-impl/motm/manage.ts");
   const socials=read("../api-impl/socials/index.ts");
   const contracts=read("../contracten-ui.js");
-  const lineup=read("../../opstelling-maker/script.js");
+  const adjacentLineup=new URL("../../opstelling-maker/script.js",import.meta.url);
+  const lineup=readFileSync(existsSync(adjacentLineup)?adjacentLineup:new URL("../../../../opstelling-maker/script.js",import.meta.url),"utf8");
   assert.match(migration,/CREATE TABLE IF NOT EXISTS ajax_players/);
   assert.match(motm,/activePlayersFromDatabase/);
   assert.match(motm,/players\.filter\(lineupDefaultAvailable\)\.map\(toToolPlayer\)/);

@@ -17,7 +17,7 @@ const rootFiles = [
   "persconferenties.js", "player-registry.js", "player-registry.css",
   "contracten.css", "jeugddossiers.css", "match-center.css", "members.css", "motm.css",
   "programma.css", "content-hub.css", "socials-png.css", "socials-quote-large.css", "socials-ajax-vandaag.css", "socials-hallmark.css", "socials-notable-stat.css", "socials-card-video.css",
-  "socials.css", "styles.css", "system-status.css",
+  "socials.css", "socials-v2.css", "styles.css", "system-status.css",
   "llms.txt", "openapi.json", "robots.txt", "sitemap.xml",
 ];
 const publicExtensions = new Set([".png", ".jpg", ".jpeg", ".webp", ".svg", ".woff2", ".otf", ".ico"]);

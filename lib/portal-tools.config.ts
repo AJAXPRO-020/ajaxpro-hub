@@ -22,6 +22,7 @@ export const portalTools: readonly PortalTool[] = [
   {id:"tactics",title:"Tactiekbord",description:"Wedstrijdideeën uitwerken.",href:"https://ajaxpro-tactics-board.vercel.app",section:"team",external:true,requiredPermission:permissions.toolsTactics,order:10},
   {id:"screenshot",title:"Screenshot Editor",description:"Screenshots voor publicaties.",href:"https://screenshot-bewerker.vercel.app",section:"team",external:true,requiredPermission:permissions.toolsScreenshot,order:20},
   {id:"socials",title:"Socials",description:"AjaxPro-formats maken.",href:"/club/tools/socials",section:"team",external:false,requiredPermission:permissions.toolsSocials,order:30},
+  {id:"socials-v2",title:"Socials V2 (beta)",description:"Wedstrijdcontent in één overzicht.",href:"/club/tools/socials-v2",section:"team",external:false,requiredPermission:permissions.toolsSocials,order:35},
   {id:"content-hub",title:"Content Hub",description:"Social-content plannen.",href:"/club/tools/content-hub",section:"team",external:false,requiredPermission:permissions.toolsSocials,order:40},
   {id:"jeugddossiers-admin",title:"Jeugddossiers beheren",description:"Dossierupdates controleren en publiceren.",href:"/club/tools/jeugddossiers",section:"admin",external:false,requiredPermission:permissions.jeugddossiersManage,order:20},
   {id:"motm-admin",title:"MOTM-stemmingen beheren",description:"Man of the Match beheren.",href:"/club/motm/beheer",section:"admin",external:false,requiredPermission:permissions.motmManage,order:10},
