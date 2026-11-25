@@ -82,7 +82,7 @@ if(root){
     if(!workspace)return;
     let toolbar=workspace.querySelector(':scope > .socials-format-toolbar');
     if(!toolbar){toolbar=document.createElement('div');toolbar.className='socials-format-toolbar';toolbar.innerHTML='<h2 class="socials-format-toolbar__title"></h2><div class="socials-format-toolbar__actions"></div>';workspace.prepend(toolbar)}
-    toolbar.querySelector('.socials-format-toolbar__title').textContent=formats.get(workspace.dataset.formatWorkspace)?.definition.title??'';
+    toolbar.querySelector('.socials-format-toolbar__title').textContent=formats.get(workspace.dataset.formatWorkspace)?.definition.label??'';
     const actions=toolbar.querySelector('.socials-format-toolbar__actions');
     workspace.querySelectorAll('.socials-download,.socials-publish-action').forEach(button=>{if(button.parentElement!==actions)actions.append(button)});
   };

@@ -1,58 +1,40 @@
 const root=document.querySelector('[data-socials-v2]');
 if(root){
-  const matchIds=['stats','shots-map','notable-stat','outblinker','top-three','card-video','video'];
-  const otherIds=['ajax-vandaag','quote'];
-  const cards=root.querySelector('[data-v2-cards]');
-  const overview=root.querySelector('[data-v2-overview]');
-  const back=root.querySelector('[data-v2-back]');
-  const editorTitle=root.querySelector('[data-v2-editor-title]');
-  const matchPanel=root.querySelector('.socials-data-panel');
-  const categoryButtons=[...root.querySelectorAll('[data-v2-category]')];
+  const GROUPS={match:['stats','shots-map','notable-stat','outblinker','top-three','card-video'],other:['ajax-vandaag','quote']};
+  const SAFE_ZONES={feed:{top:0,right:0,bottom:0,left:0},reel:{top:250,right:180,bottom:620,left:65},story:{top:250,right:65,bottom:340,left:65}};
+  const formatSection=root.querySelector('.socials-format-section'),firstWorkspace=root.querySelector('[data-format-workspace]');
+  const studio=document.createElement('section');studio.className='socials-v2-studio';studio.setAttribute('aria-label','Socials-editor');
+  firstWorkspace?.before(studio);if(formatSection)studio.append(formatSection);
+  root.querySelectorAll('[data-format-workspace]').forEach(workspace=>studio.append(workspace));
+  formatSection?.querySelector('.section-heading')?.remove();
+  root.querySelector('[data-format-id="video"]')?.setAttribute('hidden','');
+  root.querySelector('[data-format-workspace="video"]')?.setAttribute('hidden','');
   const providerGroup=root.querySelector('.socials-status-group--providers');
-  if(providerGroup){
-    const details=document.createElement('details');details.className='socials-v2-sources';
-    const summary=document.createElement('summary');summary.textContent='Databronnen bekijken';
-    providerGroup.replaceWith(details);details.append(summary,providerGroup);
-  }
-  let category='match';
-  let editing=false;
-  let previewUrls=[];
-  const renderCards=()=>{
-    overview.querySelector('h2').textContent=category==='match'?'Beschikbare wedstrijdcontent':'Overige content';
-    previewUrls.forEach(url=>URL.revokeObjectURL(url));previewUrls=[];
-    cards.replaceChildren();
-    for(const id of category==='match'?matchIds:otherIds){
-      const source=root.querySelector(`[data-format-id="${id}"]`);
-      const workspace=root.querySelector(`[data-format-workspace="${id}"]`);
-      if(!source||!workspace)continue;
-      const card=document.createElement('article');card.className='socials-v2-card';
-      const title=document.createElement('h3');title.textContent=source.querySelector('strong')?.textContent||id;
-      const preview=document.createElement('div');preview.className='socials-v2-card-preview';
-      const artwork=workspace.querySelector('.socials-preview-panel article, .socials-preview-panel img, .card-video-poster');
-      if(artwork){const copy=artwork.cloneNode(true);copy.removeAttribute('id');
-        if(id==='notable-stat'){
-          const canvas=artwork.querySelector('canvas');
-          if(canvas){const image=document.createElement('img');image.alt='Voorbeeld Opvallend cijfer';copy.replaceChildren(image);canvas.toBlob(blob=>{if(blob&&image.isConnected){const url=URL.createObjectURL(blob);previewUrls.push(url);image.src=url}else if(!blob)copy.textContent='Voorbeeld beschikbaar in de editor'},'image/png')}
-        }else copy.querySelectorAll('canvas').forEach(canvas=>canvas.remove());
-        preview.append(copy)}
-      else preview.textContent=id==='ajax-vandaag'?'Drie historische voorstellen':'Voorbeeld verschijnt bij bewerken';
-      const status=document.createElement('p');status.className='socials-v2-card-status';
-      status.textContent=id==='quote'?'Maak zelf een quote':id==='ajax-vandaag'?'Genereer op datum':source.dataset.dataReady==='false'?'Gegevens ontbreken':'Voorstel beschikbaar';
-      const edit=document.createElement('button');edit.type='button';edit.className='button secondary';edit.textContent='Bewerken';edit.disabled=source.disabled;
-      edit.addEventListener('click',()=>{editing=true;root.dataset.v2Editing='true';overview.hidden=true;back.hidden=false;editorTitle.textContent=title.textContent;editorTitle.hidden=false;source.click();back.scrollIntoView({block:'start'});});
-      card.append(title,preview,status,edit);cards.append(card);
-    }
-  };
-  const showOverview=()=>{editing=false;root.dataset.v2Editing='false';overview.hidden=false;back.hidden=true;editorTitle.hidden=true;renderCards();overview.scrollIntoView({block:'start'});};
-  back.addEventListener('click',showOverview);
-  categoryButtons.forEach(button=>button.addEventListener('click',()=>{
-    category=button.dataset.v2Category;
-    matchPanel.hidden=category!=='match';
-    categoryButtons.forEach(item=>{if(item===button)item.setAttribute('aria-current','page');else item.removeAttribute('aria-current')});
-    showOverview();
-  }));
-  root.addEventListener('socials:match-stats',()=>{if(!editing)requestAnimationFrame(()=>requestAnimationFrame(renderCards))});
-  root.addEventListener('socials:match-selection',()=>{if(!editing)renderCards()});
-  root.dataset.v2Editing='false';
-  renderCards();
+  if(providerGroup){const details=document.createElement('details');details.className='socials-v2-sources';details.innerHTML='<summary>Databronnen</summary>';providerGroup.replaceWith(details);details.append(providerGroup)}
+  let category='match',hydrating=false,saveTimer=0,loadedFixture='',records=new Map();
+  const activeId=()=>root.dataset.activeFormat||GROUPS[category][0];
+  const fixtureKey=()=>root.querySelector('[data-socials-match-select]')?.value||'algemeen';
+  const status=root.querySelector('[data-v2-save-status]');
+  const setStatus=(message,state='')=>{if(status){status.textContent=message;status.dataset.state=state}};
+  const inputs=workspace=>workspace?[...workspace.querySelectorAll('input,select,textarea')].filter(field=>field.type!=='file'&&field.name!=='social-output'):[];
+  const keyFor=(field,index)=>field.name||[...field.attributes].find(attr=>attr.name.startsWith('data-')&&!['data-width','data-height'].includes(attr.name))?.name||`field-${index}`;
+  const readSettings=id=>{const workspace=root.querySelector(`[data-format-workspace="${id}"]`),settings={__output:root.querySelector('[name="socials-v2-output"]:checked')?.value||'feed'};inputs(workspace).forEach((field,index)=>{settings[keyFor(field,index)]=field.type==='checkbox'||field.type==='radio'?field.checked:field.value});return settings};
+  const applySettings=(id,settings)=>{const workspace=root.querySelector(`[data-format-workspace="${id}"]`);if(!workspace||!settings)return;hydrating=true;inputs(workspace).forEach((field,index)=>{const value=settings[keyFor(field,index)];if(value===undefined)return;if(field.type==='checkbox'||field.type==='radio')field.checked=Boolean(value);else field.value=String(value);field.dispatchEvent(new Event(field.tagName==='TEXTAREA'||field.type==='text'?'input':'change',{bubbles:true}))});if(settings.__output)root.querySelector(`[name="socials-v2-output"][value="${settings.__output}"]`)?.click();hydrating=false};
+  const loadSettings=async()=>{const fixture=fixtureKey();if(fixture===loadedFixture)return;setStatus('Instellingen laden…','saving');try{const response=await fetch(`/api/club-tools?view=socials-v2-settings&fixture=${encodeURIComponent(fixture)}`,{headers:{Accept:'application/json'},credentials:'same-origin'});if(!response.ok)throw new Error();const payload=await response.json();records=new Map((payload.items||[]).map(item=>[item.generatorId,item]));loadedFixture=fixture;const record=records.get(activeId());if(record)applySettings(activeId(),record.settings);setStatus('Instellingen geladen','saved')}catch{setStatus('Instellingen konden niet worden geladen','error')}};
+  const saveSettings=async id=>{const fixture=fixtureKey();setStatus('Opslaan…','saving');const record=records.get(id);try{const response=await fetch('/api/club-tools?view=socials-v2-settings',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},credentials:'same-origin',body:JSON.stringify({fixtureKey:fixture,generatorId:id,settings:readSettings(id),baseVersion:record?.version??0})});const payload=await response.json();if(response.status===409){records.set(id,payload.current);setStatus('Nieuwere wijzigingen beschikbaar. Herlaad deze editor.','conflict');return}if(!response.ok)throw new Error();records.set(id,payload.item);setStatus(`Opgeslagen om ${new Intl.DateTimeFormat('nl-NL',{hour:'2-digit',minute:'2-digit'}).format(new Date())}`,'saved')}catch{setStatus('Opslaan mislukt. Je invoer blijft in dit scherm staan.','error')}};
+  const scheduleSave=()=>{if(hydrating)return;clearTimeout(saveTimer);const id=activeId();saveTimer=setTimeout(()=>void saveSettings(id),700)};
+  const setOutput=(value,persist=true)=>{const internal=value==='feed'?'portrait-4x5':'vertical-9x16',radio=root.querySelector(`[name="social-output"][value="${internal}"]`);if(radio&&!radio.checked){radio.checked=true;radio.dispatchEvent(new Event('change',{bubbles:true}))}root.dataset.v2Output=value;const zone=SAFE_ZONES[value];root.style.setProperty('--safe-top',`${zone.top/19.2}%`);root.style.setProperty('--safe-right',`${zone.right/10.8}%`);root.style.setProperty('--safe-bottom',`${zone.bottom/19.2}%`);root.style.setProperty('--safe-left',`${zone.left/10.8}%`);root.querySelectorAll('.socials-preview-panel article').forEach(preview=>{preview.dataset.outputFormat=value;let overlay=preview.querySelector(':scope > .socials-v2-safe-overlay');if(!overlay){overlay=document.createElement('div');overlay.className='socials-v2-safe-overlay';overlay.setAttribute('aria-hidden','true');preview.append(overlay)}});if(persist)scheduleSave()};
+  root.querySelectorAll('[name="socials-v2-output"]').forEach(radio=>radio.addEventListener('change',()=>radio.checked&&setOutput(radio.value)));
+  root.querySelector('[data-v2-safe-zones]')?.addEventListener('change',event=>root.classList.toggle('show-safe-zones',event.target.checked));
+  const setCategory=next=>{category=next;root.dataset.v2Category=next;const panel=root.querySelector('.socials-data-panel');if(panel)panel.hidden=next!=='match';root.querySelectorAll('[data-v2-category]').forEach(button=>button.toggleAttribute('aria-current',button.dataset.v2Category===next));root.querySelectorAll('[data-format-id]').forEach(button=>button.hidden=!GROUPS[next].includes(button.dataset.formatId));const current=activeId();if(!GROUPS[next].includes(current))root.querySelector(`[data-format-id="${GROUPS[next][0]}"]`)?.click();const all=root.querySelector('[data-v2-publish-all]');if(all)all.hidden=next!=='match';requestAnimationFrame(()=>applySettings(activeId(),records.get(activeId())?.settings))};
+  root.querySelectorAll('[data-v2-category]').forEach(button=>button.addEventListener('click',()=>setCategory(button.dataset.v2Category)));
+  root.querySelectorAll('[data-format-id]').forEach(button=>button.addEventListener('click',()=>requestAnimationFrame(()=>applySettings(button.dataset.formatId,records.get(button.dataset.formatId)?.settings))));
+  studio.addEventListener('input',scheduleSave);studio.addEventListener('change',scheduleSave);
+  root.addEventListener('socials:match-selection',()=>{loadedFixture='';records.clear();void loadSettings()});
+  const dialog=root.querySelector('[data-v2-package-dialog]'),list=root.querySelector('[data-v2-package-list]'),summary=root.querySelector('[data-v2-package-summary]'),packageStatus=root.querySelector('[data-v2-package-status]'),confirm=root.querySelector('[data-v2-package-confirm]');
+  let packageItems=[];
+  const openPackage=async()=>{packageItems=[];list.replaceChildren();packageStatus.textContent='Exports voorbereiden…';dialog.showModal();for(const id of GROUPS.match){const exporter=root.socialsExports?.get(id);if(!exporter?.ready())continue;const blob=await exporter.blob();if(!blob)continue;const item={id,blob,filename:exporter.filename()};packageItems.push(item);const label=document.createElement('label');label.innerHTML=`<input type="checkbox" value="${id}" checked><span><strong>${root.querySelector(`[data-format-id="${id}"] strong`)?.textContent||id}</strong><small>${item.filename}</small></span><em>Gereed</em>`;list.append(label)}summary.textContent=`${packageItems.length} beschikbare bestanden · ${root.querySelector('[name="socials-v2-output"]:checked')?.closest('label')?.innerText.trim()||''}`;packageStatus.textContent=packageItems.length?'Selecteer wat je wilt plaatsen.':'Maak eerst minimaal één geldige visual.';confirm.disabled=!packageItems.length};
+  const closePackage=()=>dialog.close();root.querySelector('[data-v2-publish-all]')?.addEventListener('click',()=>void openPackage());root.querySelector('[data-v2-package-close]')?.addEventListener('click',closePackage);root.querySelector('[data-v2-package-cancel]')?.addEventListener('click',closePackage);
+  confirm?.addEventListener('click',async()=>{const selected=packageItems.filter(item=>list.querySelector(`input[value="${item.id}"]`)?.checked);if(!selected.length)return;confirm.disabled=true;let done=0;for(const item of selected){packageStatus.textContent=`${done+1} van ${selected.length} plaatsen…`;const digest=[...new Uint8Array(await crypto.subtle.digest('SHA-256',await item.blob.arrayBuffer()))].map(byte=>byte.toString(16).padStart(2,'0')).join('');const data=new FormData();data.set('kind','image');data.set('text','');data.set('sourceId',`${item.id}:${item.filename}`);data.set('idempotencyKey',`socials:package:${fixtureKey()}:${item.id}:${digest}`);data.set('file',item.blob,item.filename);const response=await fetch('/api/club-tools?view=socials-publish',{method:'POST',body:data,headers:{Accept:'application/json'},credentials:'same-origin'});if(!response.ok){packageStatus.textContent=`Plaatsen gestopt bij ${item.filename}. Eerder geplaatste bestanden worden niet dubbel verzonden.`;confirm.disabled=false;return}done++}packageStatus.textContent=`${done} bestanden geplaatst in #socials-organisatie.`;confirm.disabled=false});
+  setCategory('match');setOutput('feed',false);void loadSettings();
 }

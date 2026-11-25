@@ -16,6 +16,7 @@ import { GET as pressGET, POST as pressPOST } from "../lib/press-conference-http
 import { publishDiscord } from "../lib/discord-publisher";
 import { videoService } from "../lib/socials-video";
 import { GET as playerRegistryGET, POST as playerRegistryPOST } from "../api-impl/player-registry-manage";
+import { loadSocialsV2Settings, saveSocialsV2Settings } from "../lib/socials-v2-settings";
 
 const MAX_SOCIALS_FUNCTION_UPLOAD = 3.5 * 1024 * 1024;
 
@@ -69,6 +70,12 @@ async function get(request:Request){
       return json({error:"Fout bij ophalen."},500);
     }
   }
+  if(view==="socials-v2-settings"){
+    const allowed=await getSessionWithPermission(request,permissions.toolsSocials);
+    if(!allowed)return json({error:"Geen toegang."},403);
+    try{return json({items:await loadSocialsV2Settings(new URL(request.url).searchParams.get("fixture")??"")});}
+    catch(error){return json({error:error instanceof Error?error.message:"Instellingen konden niet worden geladen."},error instanceof RangeError?400:503)}
+  }
   if(view==="system-status"){
     const cards=await loadSystemStatus();
     return page("Systeemstatus",systemStatusMarkup(cards),"/system-status.js?v=1",session,"tools",undefined,{stylesheets:["/system-status.css?v=3"]});
@@ -89,6 +96,16 @@ export async function GET(request:Request){
 export async function POST(request:Request){
   const view=new URL(request.url).searchParams.get("view") ?? (new URL(request.url).pathname==='/club/tools/player-registry'?'player-registry':null);
   if(view==="player-registry") return playerRegistryPOST(request);
+  if(view==="socials-v2-settings"){
+    const session=await getSessionWithPermission(request,permissions.toolsSocials);
+    if(!session)return json({error:"Geen toegang."},403);
+    const url=new URL(request.url),origin=request.headers.get("origin");
+    if(origin&&origin!==url.origin||request.headers.get("sec-fetch-site")==="cross-site")return json({error:"Ongeldige herkomst."},403);
+    try{
+      const body=await request.json(),result=await saveSocialsV2Settings({fixtureKey:String(body.fixtureKey??""),generatorId:String(body.generatorId??""),settings:body.settings&&typeof body.settings==="object"&&!Array.isArray(body.settings)?body.settings:{},baseVersion:Number.isInteger(body.baseVersion)&&body.baseVersion>=0?body.baseVersion:0,actorDiscordUserId:session.userId});
+      return json(result,'conflict' in result?409:200);
+    }catch(error){return json({error:error instanceof Error?error.message:"Instellingen konden niet worden opgeslagen."},error instanceof RangeError||error instanceof SyntaxError?400:503)}
+  }
   if(view==="socials-publish"){
     const session=await getSessionWithPermission(request,permissions.toolsSocials);
     if(!session)return json({error:"Geen toegang tot publiceren."},403);
