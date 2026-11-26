@@ -1,4 +1,5 @@
 import {Output,Mp4OutputFormat,BufferTarget,CanvasSource,Quality} from '/socials/mediabunny.mjs';
+import {outputProfile} from '/socials/output-profiles.mjs?v=20261126';
 
 const WIDTH=1080,HEIGHT=1920,FPS=30,FIRST_SECONDS=2.5,CARD_SECONDS=3,TRANSITION_SECONDS=.4,END_SECONDS=4;
 const ease=value=>{const x=Math.max(0,Math.min(1,value));return x*x*(3-2*x)};
@@ -16,35 +17,37 @@ const imageFrom=async url=>{const image=new Image();image.src=url;try{await imag
 const drawIcon=(ctx,image,x,y,size,color,alpha=1)=>{const icon=document.createElement('canvas');icon.width=size;icon.height=size;const ink=icon.getContext('2d');ink.drawImage(image,0,0,size,size);ink.globalCompositeOperation='source-in';ink.fillStyle=color;ink.fillRect(0,0,size,size);ctx.save();ctx.globalAlpha=alpha;ctx.drawImage(icon,x,y);ctx.restore()};
 const rounded=(ctx,x,y,w,h,r,color)=>{ctx.fillStyle=color;ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fill()};
 const text=(ctx,value,x,y,size,color,weight=700,maxWidth=720)=>{ctx.fillStyle=color;ctx.font=`${weight} ${size}px "AjaxPro Refrigerator"`;ctx.fillText(value,x,y,maxWidth)};
-const drawFeatured=(ctx,id,icons,youtubePreview)=>{
-  rounded(ctx,120,850,840,840,30,'#111217');
+const drawFeatured=(ctx,id,icons,youtubePreview,offset=0,bounds={left:100,right:860})=>{
+  const y=value=>value+offset;
+  const boxX=bounds.left+20,boxW=bounds.right-boxX,x=boxX+58,max=boxW-116;
+  rounded(ctx,boxX,y(850),boxW,840,30,'#111217');
   ctx.textAlign='left';const icon=icons[platforms.findIndex(item=>item.id===id)];
-  drawIcon(ctx,icon,178,914,76,'#f5f2eb');
-  text(ctx,id==='discord'?'Discord':id==='spotify'?'AjaxPro podcasts':'AjaxPro YouTube',280,976,66,'#f5f2eb');
+  drawIcon(ctx,icon,x,y(914),76,'#f5f2eb');
+  text(ctx,id==='discord'?'Discord':id==='spotify'?'AjaxPro podcasts':'AjaxPro YouTube',x+102,y(976),66,'#f5f2eb',700,max-102);
   if(id==='discord'){
     ctx.fillStyle='#f5f2eb';ctx.font='700 96px "AjaxPro Bebas Visual"';
-    ctx.fillText('Praat live mee',178,1150,724);
-    ctx.fillText('met andere Ajacieden',178,1250,724);
-    text(ctx,'Volg de wedstrijd,',178,1375,48,'#c2c5ce',400,724);
-    text(ctx,'discussieer mee en beleef',178,1440,48,'#c2c5ce',400,724);
-    text(ctx,'de momenten samen in onze Discord.',178,1505,48,'#c2c5ce',400,724);
+    ctx.fillText('Praat live mee',x,y(1150),max);
+    ctx.fillText('met andere Ajacieden',x,y(1250),max);
+    text(ctx,'Volg de wedstrijd,',x,y(1375),48,'#c2c5ce',400,max);
+    text(ctx,'discussieer mee en beleef',x,y(1440),48,'#c2c5ce',400,max);
+    text(ctx,'de momenten samen in onze Discord.',x,y(1505),48,'#c2c5ce',400,max);
     ctx.font='700 68px "AjaxPro Bebas Visual"';ctx.fillStyle='#8190ff';
-    ctx.fillText('Join onze Discord',178,1620,724);
+    ctx.fillText('Join onze Discord',x,y(1620),max);
   }else if(id==='youtube'){
-    ctx.save();ctx.beginPath();ctx.roundRect(178,1060,724,570,18);ctx.clip();
-    ctx.translate(540,1345);ctx.rotate(-8*Math.PI/180);
+    ctx.save();ctx.beginPath();ctx.roundRect(x,y(1060),max,570,18);ctx.clip();
+    ctx.translate((bounds.left+bounds.right)/2,y(1345));ctx.rotate(-8*Math.PI/180);
     ctx.drawImage(youtubePreview,145,245,1020,720,-510,-360,1020,720);
     ctx.restore();
   }else{
     ctx.fillStyle='#f5f2eb';ctx.font='700 96px "AjaxPro Bebas Visual"';
-    ctx.fillText('Mis geen aflevering',178,1150,724);
-    ctx.fillText('van AjaxPro',178,1250,724);
-    text(ctx,'Van Matchday rondom de wedstrijden',178,1340,48,'#c2c5ce',400,724);
-    text(ctx,'tot het wekelijkse AjaxPro Café.',178,1398,48,'#c2c5ce',400,724);
-    text(ctx,'Luister mee en abonneer je',178,1456,48,'#c2c5ce',400,724);
-    text(ctx,'op onze podcasts.',178,1514,48,'#c2c5ce',400,724);
+    ctx.fillText('Mis geen aflevering',x,y(1150),max);
+    ctx.fillText('van AjaxPro',x,y(1250),max);
+    text(ctx,'Van Matchday rondom de wedstrijden',x,y(1340),48,'#c2c5ce',400,max);
+    text(ctx,'tot het wekelijkse AjaxPro Café.',x,y(1398),48,'#c2c5ce',400,max);
+    text(ctx,'Luister mee en abonneer je',x,y(1456),48,'#c2c5ce',400,max);
+    text(ctx,'op onze podcasts.',x,y(1514),48,'#c2c5ce',400,max);
     ctx.font='700 68px "AjaxPro Bebas Visual"';ctx.fillStyle='#42d979';
-    ctx.fillText('Volg AjaxPro op Spotify',178,1630,724);
+    ctx.fillText('Volg AjaxPro op Spotify',x,y(1630),max);
   }
 };
 export async function createScoreIntro(match){
@@ -62,17 +65,17 @@ export async function createScoreIntro(match){
   ctx.fillStyle='#fff';ctx.font='700 58px "AjaxPro Bebas Visual"';ctx.fillText('AJAXPRO.FANS',72,1884);
   return canvas;
 }
-export async function createEndCard(featuredId=featuredIds[Math.floor(Math.random()*featuredIds.length)]){
+export async function createEndCard(featuredId=featuredIds[Math.floor(Math.random()*featuredIds.length)],output='reel'){
   if(!featuredIds.includes(featuredId))throw new Error('Onbekend platform voor de eindkaart.');
   await Promise.all([document.fonts.load('900 156px "AjaxPro Refrigerator"'),document.fonts.load('700 66px "AjaxPro Refrigerator"'),document.fonts.load('400 48px "AjaxPro Refrigerator"'),document.fonts.load('700 96px "AjaxPro Bebas Visual"')]);
   const canvas=document.createElement('canvas');canvas.width=WIDTH;canvas.height=HEIGHT;const ctx=canvas.getContext('2d');
-  canvas.dataset.featuredPlatform=featuredId;
+  const profile=outputProfile(output),offset=HEIGHT-profile.safe.bottom-1690,bounds={left:profile.safe.left,right:WIDTH-profile.safe.right};canvas.dataset.featuredPlatform=featuredId;canvas.dataset.outputFormat=profile.id;
   ctx.fillStyle='#000';ctx.fillRect(0,0,WIDTH,HEIGHT);
-  ctx.fillStyle='#fff';ctx.textAlign='center';let size=156;do{ctx.font=`900 ${size}px "AjaxPro Refrigerator"`;size-=4}while(ctx.measureText('ajaxpro.fans').width>920&&size>80);ctx.fillText('ajaxpro.fans',WIDTH/2,480);
+  ctx.fillStyle='#fff';ctx.textAlign='center';let size=156;do{ctx.font=`900 ${size}px "AjaxPro Refrigerator"`;size-=4}while(ctx.measureText('ajaxpro.fans').width>bounds.right-bounds.left&&size>80);ctx.fillText('ajaxpro.fans',(bounds.left+bounds.right)/2,profile.safe.top+150);
   const icons=await Promise.all(platforms.map(platform=>imageFrom(`/assets/icons/${platform.id}.svg`)));
   const youtubePreview=featuredId==='youtube'?await imageFrom('/assets/youtube-preview.png'):null;
-  platforms.forEach((platform,index)=>drawIcon(ctx,icons[index],113+index*150,653,104,index===platforms.findIndex(item=>item.id===featuredId)&&featuredId!=='spotify'?platform.color:'#fff',platform.id===featuredId?1:.62));
-  drawFeatured(ctx,featuredId,icons,youtubePreview);
+  const iconSize=88,iconGap=(bounds.right-bounds.left-iconSize*platforms.length)/(platforms.length-1);platforms.forEach((platform,index)=>drawIcon(ctx,icons[index],bounds.left+index*(iconSize+iconGap),profile.safe.top+300,iconSize,index===platforms.findIndex(item=>item.id===featuredId)&&featuredId!=='spotify'?platform.color:'#fff',platform.id===featuredId?1:.62));
+  drawFeatured(ctx,featuredId,icons,youtubePreview,offset,bounds);
   return canvas;
 }
 
@@ -85,14 +88,14 @@ export async function checkBrowserCardVideoSupport(){
   return 'Deze browser kan geen H.264-video op 1080 × 1920 maken. Gebruik een recente desktopbrowser.';
 }
 
-export async function renderBrowserCardVideo(canvases,{signal}={}){
+export async function renderBrowserCardVideo(canvases,{signal,output:outputFormat='reel'}={}){
   if(!Array.isArray(canvases)||canvases.length<1||canvases.length>7||canvases.some(canvas=>canvas?.width!==WIDTH||canvas?.height!==HEIGHT))throw new Error('De video heeft één tot zeven complete 9:16-kaarten nodig.');
   const unsupported=await checkBrowserCardVideoSupport();if(unsupported)throw new Error(unsupported);
   const started=performance.now(),images=[];let output,startedOutput=false;
   try{
     if(signal?.aborted)throw abortError();
     for(const card of canvases)images.push(await createImageBitmap(card));
-    images.push(await createImageBitmap(await createEndCard()));
+    images.push(await createImageBitmap(await createEndCard(undefined,outputFormat)));
     const canvas=document.createElement('canvas');canvas.width=WIDTH;canvas.height=HEIGHT;
     const ctx=canvas.getContext('2d',{alpha:false});if(!ctx)throw new Error('Canvas is niet beschikbaar.');
     const steps=canvases.map((_,index)=>(index===0?FIRST_SECONDS:CARD_SECONDS)-TRANSITION_SECONDS);
