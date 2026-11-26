@@ -4,6 +4,7 @@ import {
   normalizeTeamName,
 } from "../lib/matchday-live";
 import { consumeNextMatchRateLimit } from "../lib/next-match-rate-limit";
+import { seedMotmFromCurrentFixtures } from "../lib/motm-fixture-seeding";
 
 const AJAX_FIXTURES_URL = "https://www.ajax.nl/wedstrijden/";
 const TV_GUIDE_URL = "https://www.voetbaloptv.com/wp-json/vtv/v1/wedstrijden";
@@ -19,6 +20,10 @@ const cleanText = (value: string) => value
   .replace(/&amp;/g, "&")
   .replace(/&#39;/g, "'")
   .replace(/&nbsp;/g, " ")
+  .replace(/&#(?:x([\da-f]+)|(\d+));/gi, (entity, hex: string | undefined, decimal: string | undefined) => {
+    const code = Number.parseInt(hex ?? decimal ?? '', hex ? 16 : 10);
+    return code > 0 && code <= 0x10ffff ? String.fromCodePoint(code) : entity;
+  })
   .replace(/\s+/g, " ")
   .trim();
 
@@ -86,7 +91,7 @@ const fixtureKey = (fixture: { kickoff: Date; home: string; away: string }) => `
 const syncSourceFixtures = async () => {
   const sql = db();
   const [freshness] = await sql`SELECT max(source_checked_at) checked_at FROM matchday_fixtures`;
-  if (freshness?.checked_at && Date.now() - new Date(freshness.checked_at).getTime() < SOURCE_MAX_AGE_MS) return;
+  if (freshness?.checked_at && Date.now() - new Date(freshness.checked_at).getTime() < SOURCE_MAX_AGE_MS) return true;
   try {
     const [fixturesResponse, tvResponse] = await Promise.all([
       fetch(AJAX_FIXTURES_URL, { headers: { "User-Agent": "AjaxPro/1.0 (+https://www.ajaxpro.fans/)" }, signal: AbortSignal.timeout(10_000) }),
@@ -94,6 +99,7 @@ const syncSourceFixtures = async () => {
     ]);
     if (!fixturesResponse.ok) throw new Error(`Ajax fixtures returned ${fixturesResponse.status}`);
     const fixtures = parseAjaxFixtures(await fixturesResponse.text());
+    if (!fixtures.length) throw new Error('Ajax fixtures source contained no matches');
     let listings: Array<Record<string, string>> = [];
     if (tvResponse?.ok) {
       const payload = await tvResponse.json();
@@ -106,8 +112,10 @@ const syncSourceFixtures = async () => {
         VALUES(${fixtureKey(fixture)},${fixture.home},${fixture.away},${fixture.competition},${fixture.kickoff},${tv?.alle_zenders || tv?.hoofdzender || null},${checkedAt})
         ON CONFLICT(fixture_key) DO UPDATE SET home_team=excluded.home_team,away_team=excluded.away_team,competition=excluded.competition,kickoff_at=excluded.kickoff_at,tv=excluded.tv,source_checked_at=excluded.source_checked_at,updated_at=now()`;
     }
+    return true;
   } catch (error) {
     console.error("Unable to refresh Ajax match source", error);
+    return false;
   }
 };
 
@@ -192,29 +200,39 @@ const jsonResponse = (body: unknown, status = 200, extraHeaders: Record<string, 
   },
 });
 
+export const isMatchdayCronRequest = (request: Request, secret = process.env.CRON_SECRET?.trim()) =>
+  Boolean(secret && request.headers.get('authorization') === `Bearer ${secret}`);
+
 export async function GET(request: Request) {
   if (request.method !== "GET") return jsonResponse({ error: "Method not allowed" }, 405);
   const now = new Date();
   const url = new URL(request.url);
   const view = url.searchParams.get("view");
+  const cronRequest = view === "program" && isMatchdayCronRequest(request);
   if (view === "content-hub-cleanup") {
     const { runContentHubCleanup } = await import("../api-impl/content-hub/cleanup");
     return runContentHubCleanup(request);
   }
   try {
-    const rateLimit = await consumeNextMatchRateLimit(request);
+    const rateLimit = cronRequest ? { allowed: true, retryAfter: 0 } : await consumeNextMatchRateLimit(request);
     if (!rateLimit.allowed) return jsonResponse(
       { error: "Te veel verzoeken. Probeer het later opnieuw." },
       429,
       { "Cache-Control": "private, no-store", "Vercel-CDN-Cache-Control": "private, no-store", "Retry-After": String(rateLimit.retryAfter) },
     );
-    await syncSourceFixtures();
+    const sourceReady = await syncSourceFixtures();
     if (view === "program") {
+      if (cronRequest) {
+        if (!sourceReady) throw new Error('Wedstrijdbron kon niet worden ververst; MOTM-aanmaak overgeslagen');
+        const result = await seedMotmFromCurrentFixtures(now);
+        return jsonResponse({ ...result, updatedAt: now.toISOString() }, 200, { "Cache-Control": "private, no-store", "Vercel-CDN-Cache-Control": "private, no-store" });
+      }
       return jsonResponse(await programResponseFor(await storedFixtures(), now));
     }
     return jsonResponse(await responseFor(await nextStoredFixture(), now));
   } catch (error) {
     console.error("Unable to load matchday state", error);
+    if (cronRequest) return jsonResponse({ error: "Automatische MOTM-aanmaak mislukt." }, 503, { "Cache-Control": "private, no-store", "Vercel-CDN-Cache-Control": "private, no-store" });
     try { return jsonResponse(await responseFor(await nextStoredFixture(), now)); }
     catch { return jsonResponse({ match: null, message: "De volgende wedstrijd is nog niet bekend.", updatedAt: now.toISOString() }); }
   }

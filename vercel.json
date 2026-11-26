@@ -8,7 +8,7 @@
       "includeFiles": "index.html"
     },
     "api/next-match.ts": {
-      "maxDuration": 15
+      "maxDuration": 60
     },
     "api/club-tools.ts": {
       "maxDuration": 60,

@@ -407,5 +407,5 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
   .match-list,.manage-list{gap:10px}
   .match-row,.manage-list>a{padding:14px 16px}
   .player-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .management-search{grid-template-columns:minmax(0,1fr) auto}
+  .management-search{grid-template-columns:minmax(180px,2fr) repeat(2,minmax(135px,1fr)) auto}
 }
