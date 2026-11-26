@@ -101,6 +101,7 @@ if(root){
     if(next.definition.requirements.includes("matchData"))matchStats.activate(id);
     next.controller.activate?.();
     refreshFormatStatus();
+    root.dispatchEvent(new CustomEvent('socials:format-activated',{detail:{formatId:id}}));
   };
   root.querySelectorAll("[data-format-id]").forEach(button=>button.addEventListener("click",()=>activate(button.dataset.formatId)));
   resetFormat?.addEventListener("click",()=>{formats.get(activeId)?.controller.reset?.();refreshFormatStatus()});
@@ -109,6 +110,5 @@ if(root){
   root.addEventListener("socials:match-selection",refreshFormatStatus);
   root.addEventListener("socials:format-status-change",event=>{if(event.detail?.formatId===activeId)refreshFormatStatus()});
   if(requestedFormat&&formats.has(requestedFormat)&&!root.querySelector(`[data-format-id="${requestedFormat}"]`)?.disabled)activeId=requestedFormat;
-  new MutationObserver(syncAllActionToolbars).observe(root,{subtree:true,childList:true});
   if(activeId)activate(activeId);
 }

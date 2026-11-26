@@ -4,7 +4,8 @@ const W=1080,RED='#b00029',PAPER='#f5f2eb',MUTED='#aeb2b9';
 const value=(node,selector)=>node.querySelector(selector)?.textContent?.trim()??'';
 const font=(size,bold=false)=>`${bold?'700':'400'} ${size}px ${bold?'"AjaxPro Bebas Visual"':'"AjaxPro Refrigerator"'}, "Arial Narrow", Arial, sans-serif`;
 const numberFont=size=>`900 ${size}px "AjaxPro Refrigerator", "Arial Narrow", Arial, sans-serif`;
-const loadVisualFonts=()=>Promise.all(['700 64px "AjaxPro Bebas Visual"','400 36px "AjaxPro Refrigerator"','900 160px "AjaxPro Refrigerator"'].map(spec=>document.fonts.load(spec)));
+let visualFontsPromise;
+const loadVisualFonts=()=>visualFontsPromise??=Promise.all(['700 64px "AjaxPro Bebas Visual"','400 36px "AjaxPro Refrigerator"','900 160px "AjaxPro Refrigerator"'].map(spec=>document.fonts.load(spec)));
 const label=(ctx,text,x,y,size=30,color=PAPER,maxWidth)=>{ctx.font=font(size,true);ctx.fillStyle=color;ctx.fillText(String(text).toLocaleUpperCase('nl-NL'),x,y,maxWidth)};
 const text=(ctx,content,x,y,size=36,color=PAPER,maxWidth)=>{ctx.font=font(size);ctx.fillStyle=color;ctx.fillText(String(content),x,y,maxWidth)};
 const number=(ctx,content,x,y,size,color=PAPER,maxWidth)=>{ctx.font=numberFont(size);ctx.fillStyle=color;ctx.fillText(String(content),x,y,maxWidth)};
@@ -168,9 +169,9 @@ export function mountPngPreviews(root,sharedState={}){
     if(save){save.type='button';save.className='button secondary socials-download';save.textContent="Opslaan in foto's";button.after(save);save.disabled=true}
     if(save){const actions=document.createElement('div');actions.className='socials-png-actions';button.before(actions);actions.append(button,save,publish)}
     const saveHelp=save?document.createElement('p'):null;if(saveHelp){saveHelp.className='socials-png-notice';save.after(saveHelp)}
-    let revision=0,exportFrame=null,publishKey='';
+    let revision=0,exportFrame=null,publishKey='',dirty=true;
     const render=async()=>{
-      const fixture=sharedState.getMatchContext?.();
+      dirty=false;const fixture=sharedState.getMatchContext?.();
       if(id!=='quote'){
         preview.dataset.pngHomeLogo=fixture?.homeLogo??'';
         preview.dataset.pngAwayLogo=fixture?.awayLogo??'';
@@ -189,9 +190,10 @@ export function mountPngPreviews(root,sharedState={}){
       canvas.width=W;canvas.height=H;canvas.getContext('2d').drawImage(frame,0,0);exportFrame=frame;publishKey=crypto.randomUUID();button.disabled=Boolean(error);if(save)save.disabled=Boolean(error);publish.disabled=Boolean(error);notice.textContent=error;if(saveHelp)saveHelp.textContent='';
       root.dispatchEvent(new CustomEvent('socials:png-ready',{detail:{formatId:id,ready:!error}}));
     };
-    let scheduled=false;const observer=new MutationObserver(()=>{if(scheduled)return;scheduled=true;requestAnimationFrame(()=>{scheduled=false;void render()})});observer.observe(preview,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['data-aspect','data-selected','data-variant','data-notable-value','data-notable-headline','data-notable-detail','hidden','src']});
+    let scheduled=false;const requestRender=()=>{dirty=true;if(workspace.hidden||scheduled)return;scheduled=true;requestAnimationFrame(()=>{scheduled=false;void render()})};const observer=new MutationObserver(requestRender);observer.observe(preview,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['data-aspect','data-selected','data-variant','data-notable-value','data-notable-headline','data-notable-detail','hidden','src']});
     const exportBlob=()=>new Promise(resolve=>{if(!exportFrame)return resolve(null);exportFrame.toBlob(resolve,'image/png')});
-    root.socialsExports.set(id,{kind:'image',ready:()=>Boolean(exportFrame&&!notice.textContent),blob:exportBlob,filename:()=>filename(id,preview)});
+    root.socialsExports.set(id,{kind:'image',ready:()=>Boolean(exportFrame&&!notice.textContent),prepare:async()=>{if(dirty||!exportFrame)await render()},blob:exportBlob,filename:()=>filename(id,preview)});
+    root.addEventListener('socials:format-activated',event=>{if(event.detail?.formatId===id&&(dirty||!exportFrame))requestRender()});
     publish.addEventListener('click',async()=>{if(publish.disabled)return;const file=await exportBlob();if(!file){notice.textContent='PNG-export is mislukt. Probeer opnieuw.';return}const name=filename(id,preview);root.dispatchEvent(new CustomEvent('socials:publish-request',{detail:{kind:'image',file,filename:name,sourceId:`${id}:${name}`,idempotencyKey:`socials:image:${id}:${publishKey}`}}))});
     const download=(blob,name)=>{const url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download=name;link.click();setTimeout(()=>URL.revokeObjectURL(url),60000)};
     button.addEventListener('click',async()=>{if(button.disabled||!exportFrame)return;button.disabled=true;try{const blob=await exportBlob();if(!blob){notice.textContent='PNG-export is mislukt. Probeer opnieuw.';return}download(blob,filename(id,preview))}finally{button.disabled=Boolean(notice.textContent)||!exportFrame}});
@@ -202,6 +204,6 @@ export function mountPngPreviews(root,sharedState={}){
       }
       download(blob,name);saveHelp.textContent='PNG gedownload. Open het bestand en bewaar de afbeelding in je foto’s.';
     }finally{save.disabled=Boolean(notice.textContent)||!exportFrame}});
-    void render();
+    if(!workspace.hidden)void render();
   }
 }
