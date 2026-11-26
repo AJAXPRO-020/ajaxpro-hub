@@ -68,7 +68,7 @@ if(root){
     ];
     formatStatus.replaceChildren(...sources.map(([label,state,detail])=>{const item=document.createElement("span");item.dataset.state=state;item.innerHTML=`<b aria-hidden="true">${state==="available"?"✓":"—"}</b><span>${label}</span><small>${detail}</small>`;return item}));
     const fetchButton=root.querySelector("[data-socials-stats-fetch]"),fixturePlayed=Boolean(fixture&&new Date(fixture.kickoff_at).getTime()<=Date.now()),providerItems=[...root.querySelectorAll("[data-socials-provider-status] [data-provider]")],providersReady=providerItems.length===2&&providerItems.every(item=>["success","stored","partial"].includes(item.dataset.state)),allAvailable=sources.every(([,state])=>state==="available")&&providersReady;
-    if(fetchButton){const loading=statsState==="loading";fetchButton.hidden=!fixturePlayed;fetchButton.disabled=!fixturePlayed||loading||allAvailable;fetchButton.setAttribute("aria-disabled",String(fetchButton.disabled));fetchButton.textContent=loading?"Statistieken verversen…":allAvailable?"Alle statistieken beschikbaar":"Statistieken verversen"}
+    if(fetchButton){const loading=statsState==="loading",v2=root.hasAttribute('data-socials-v2');fetchButton.hidden=!fixturePlayed;fetchButton.disabled=!fixturePlayed||loading||(!v2&&allAvailable);fetchButton.setAttribute("aria-disabled",String(fetchButton.disabled));fetchButton.textContent=loading?"Statistieken verversen…":allAvailable?"Alle statistieken beschikbaar":"Statistieken verversen"}
     formats.forEach(({definition,controller})=>{const button=root.querySelector(`[data-format-id="${definition.id}"]`),note=button?.querySelector("[data-format-availability]"),states=controller.getRequirementStatus?.()??{};if(!note||definition.availability==="planned")return;const ready=definition.requirements.every(requirement=>Boolean(states[requirement]));note.hidden=ready;note.textContent=ready?"":"Nog niet beschikbaar · gegevens ontbreken";button.dataset.dataReady=String(ready)});
   };
   const refreshFormatStatus=()=>{
@@ -80,6 +80,12 @@ if(root){
   };
   const syncActionToolbar=workspace=>{
     if(!workspace)return;
+    if(root.hasAttribute('data-socials-v2')){
+      const preview=workspace.querySelector(':scope > .socials-preview-panel');if(!preview)return;
+      let actions=preview.querySelector(':scope > .socials-v2-preview-actions');if(!actions){actions=document.createElement('div');actions.className='socials-v2-preview-actions';preview.prepend(actions)}
+      [...workspace.querySelectorAll('.socials-download,.socials-publish-action'),...(workspace.dataset.formatWorkspace===activeId?[root.querySelector('[data-socials-format-reset]')]:[])].filter(Boolean).forEach(button=>{if(button.parentElement!==actions)actions.append(button)});
+      return;
+    }
     let toolbar=workspace.querySelector(':scope > .socials-format-toolbar');
     if(!toolbar){toolbar=document.createElement('div');toolbar.className='socials-format-toolbar';toolbar.innerHTML='<h2 class="socials-format-toolbar__title"></h2><div class="socials-format-toolbar__actions"></div>';workspace.prepend(toolbar)}
     toolbar.querySelector('.socials-format-toolbar__title').textContent=formats.get(workspace.dataset.formatWorkspace)?.definition.label??'';
@@ -97,7 +103,7 @@ if(root){
     root.querySelectorAll("[data-format-id]").forEach(option=>{const active=option===button;option.classList.toggle("is-active",active);option.setAttribute("aria-pressed",String(active))});
     root.querySelectorAll("[data-format-workspace]").forEach(workspace=>{workspace.hidden=workspace.dataset.formatWorkspace!==id});
     syncAllActionToolbars();
-    const preview=next.controller&&root.querySelector(`[data-format-workspace="${id}"] .socials-preview-panel`);if(preview&&previewControls){preview.querySelector(".socials-preview-heading")?.after(previewControls);previewControls.hidden=next.definition.fixedOutput===true}
+    const activeWorkspace=root.querySelector(`[data-format-workspace="${id}"]`),preview=next.controller&&activeWorkspace?.querySelector('.socials-preview-panel');if(preview&&previewControls){preview.querySelector(".socials-preview-heading")?.after(previewControls);previewControls.hidden=next.definition.fixedOutput===true;syncActionToolbar(activeWorkspace)}
     if(next.definition.requirements.includes("matchData"))matchStats.activate(id);
     next.controller.activate?.();
     refreshFormatStatus();

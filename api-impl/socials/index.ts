@@ -116,7 +116,7 @@ export const renderSocials = async (session:Session,fixtureLoader=loadSocialMatc
     ${pageHeader("Socials",v2?"V2 bèta":"AjaxPro staff","/club/tools","Tools")}
     ${v2?'<nav class="socials-v2-nav" aria-label="Contentsoort"><button type="button" data-v2-category="match" aria-current="page">Wedstrijdcontent</button><button type="button" data-v2-category="other">Overige content</button></nav>':''}
     ${matchStatsAction(fixtures,available,stored)}
-    ${v2?`<section class="socials-v2-toolbar" aria-label="Werkbalk"><fieldset><legend>Publicatieformaat</legend><div class="socials-v2-output">${v2OutputChoices()}</div></fieldset><label class="socials-v2-safe-toggle"><input type="checkbox" data-v2-safe-zones><span>Toon veilige zones</span></label><p class="socials-v2-save-status" data-v2-save-status role="status" aria-live="polite">Instellingen geladen</p><button class="button" type="button" data-v2-publish-all>Plaats alles in Discord</button></section>`:''}
+    ${v2?`<section class="socials-v2-toolbar" aria-label="Werkbalk"><fieldset><legend>Publicatieformaat</legend><div class="socials-v2-output">${v2OutputChoices()}</div></fieldset><label class="socials-v2-safe-toggle" hidden><input type="checkbox" data-v2-safe-zones><span>Toon veilige zones</span></label><p class="socials-v2-save-status" data-v2-save-status role="status" aria-live="polite" hidden></p><button class="button" type="button" data-v2-publish-all>Plaats alles in Discord</button></section>`:''}
     <section class="socials-format-section" aria-labelledby="socials-formats-title">
       <div class="section-heading"><h2 id="socials-formats-title">Kies een format</h2></div>
       <div class="socials-format-grid" role="group" aria-label="Socialformat">${formatButtons(fixtures)}</div>
@@ -130,5 +130,5 @@ export const renderSocials = async (session:Session,fixtureLoader=loadSocialMatc
     <template data-socials-stats-stored>${esc(JSON.stringify([...stored]))}</template>
     <template data-socials-players>${serializedPlayers(players)}</template>
   </main>`;
-  return page(v2?"Socials V2 (beta)":"Socials",body,"",session,"tools",undefined,{stylesheets:["/socials.css?v=20261023-video-heading","/socials-quote-large.css?v=20260915-quote-large-v4","/socials-png.css?v=20261119-notable-preview","/socials-ajax-vandaag.css?v=2",...(v2?[]:["/socials-hallmark.css?v=1"]),"/socials-card-video.css?v=20261115-layout",...(v2?["/socials-v2.css?v=2"]:[])],moduleScripts:["/socials/main.mjs?v=20261115-card-video-ui",...(v2?["/socials/v2.mjs?v=2"]:[])],imageSources:["blob:"],frameSources:["'self'"]});
+  return page(v2?"Socials V2 (beta)":"Socials",body,"",session,"tools",undefined,{stylesheets:["/socials.css?v=20261023-video-heading","/socials-quote-large.css?v=20260915-quote-large-v4","/socials-png.css?v=20261119-notable-preview","/socials-ajax-vandaag.css?v=2",...(v2?[]:["/socials-hallmark.css?v=1"]),"/socials-card-video.css?v=20261115-layout",...(v2?["/socials-v2.css?v=20261126-ux"]:[])],moduleScripts:v2?["/socials/main.mjs?v=20261126-ux","/socials/v2.mjs?v=20261126-ux"]:["/socials/main.mjs?v=20261115-card-video-ui"],imageSources:["blob:"],frameSources:["'self'"]});
 };
