@@ -8,8 +8,8 @@ import { topThreeFormat } from "/socials/formats/top-three.mjs?v=20261023-ui-tid
 import { quoteFormat } from "/socials/formats/quote.mjs?v=20261023-ui-tidy";
 import { videoFormat } from "/socials/formats/video.mjs?v=20261023-socials-polish";
 import { initMatchStats } from "/socials/match-stats.mjs?v=20261113-format-grid";
-import { mountPngPreviews } from "/socials/png.mjs?v=20261126-instagram";
-import { ajaxVandaagFormat } from "/socials/formats/ajax-vandaag.mjs?v=20261126-instagram";
+import { mountPngPreviews } from "/socials/png.mjs?v=20261126-visual2";
+import { ajaxVandaagFormat } from "/socials/formats/ajax-vandaag.mjs?v=20261126-visual2";
 
 const formatDefinitions=[statsFormat,shotsMapFormat,notableStatFormat,cardVideoFormat,outblinkerFormat,topThreeFormat,quoteFormat,videoFormat,ajaxVandaagFormat];
 const readFixtures=root=>{
