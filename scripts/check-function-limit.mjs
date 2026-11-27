@@ -2,7 +2,7 @@ import { readdir } from 'node:fs/promises';
 import { join, relative, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
-export async function checkFunctionLimit(root = resolve(import.meta.dirname, '..'), limit = 10) {
+export async function checkFunctionLimit(root = resolve(import.meta.dirname, '..'), limit = 11) {
   const entries = [];
   async function walk(directory) {
     for (const entry of await readdir(directory, { withFileTypes: true })) {

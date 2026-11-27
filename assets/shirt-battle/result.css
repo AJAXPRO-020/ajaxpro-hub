@@ -1,0 +1,28 @@
+@font-face{font-family:AjaxProRefrigerator;src:url('/assets/shirt-battle/ajaxpro-refrigerator-heavy.otf') format('opentype');font-weight:900;font-display:swap}
+body:has(.shirt-result){min-height:100svh;background:radial-gradient(ellipse 46% 36% at 77% 20%,rgba(151,20,43,.46),transparent 82%),radial-gradient(ellipse 68% 49% at 17% 57%,rgba(122,13,35,.29),transparent 80%),radial-gradient(ellipse 54% 36% at 83% 92%,rgba(83,9,26,.16),transparent 82%),#05070d;background-attachment:fixed}
+.street .shirt-result.scene{box-sizing:border-box;width:min(100%,540px);max-width:540px;min-height:100svh;margin:0 auto;padding:20px clamp(16px,4cqw,24px) 24px;display:flex;flex-direction:column;gap:clamp(12px,3cqw,20px);container-type:inline-size;background:transparent;color:#f6f7fb;font-family:AjaxProRefrigerator,Arial,sans-serif;overflow:visible}
+.street .shirt-result.scene:before,.street .shirt-result.scene:after{content:none}
+.shirt-result *{box-sizing:border-box}
+.shirt-result .result-masthead{display:flex;flex-direction:column;align-items:center;gap:48px;text-align:center}
+.shirt-result .result-masthead img{display:block;width:38px;height:auto}
+.shirt-result .result-masthead span{font-size:clamp(16px,4.4cqw,21px);line-height:1;text-align:center}
+.shirt-result h1{margin:0;font-size:clamp(37px,11cqw,51px);line-height:.9;letter-spacing:0;text-align:center;white-space:nowrap}
+.shirt-result .result-podium{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);justify-items:center;align-items:end;gap:clamp(12px,3cqw,22px);width:100%}
+.shirt-result .result-entry{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;width:76%;min-width:0;margin:0;text-align:center;gap:6px}
+.shirt-result .result-entry:first-child{grid-column:1/-1;width:65%;margin-bottom:2px}
+.shirt-result .result-entry img{display:block;width:100%;height:clamp(140px,42cqw,190px);object-fit:contain;object-position:center bottom;filter:drop-shadow(0 10px 12px rgba(0,0,0,.32))}
+.shirt-result .result-entry:first-child img{height:auto;max-height:37svh}
+.shirt-result .result-entry figcaption{display:flex;flex-direction:column;gap:3px;max-width:100%;white-space:normal;font-size:clamp(12px,3cqw,16px);line-height:1}
+.shirt-result .result-entry figcaption b{font-size:clamp(23px,6cqw,32px)}
+.shirt-result .result-entry:first-child figcaption b{font-size:clamp(27px,7cqw,37px)}
+.shirt-result .result-invite{text-align:center;font-size:clamp(15px,4cqw,20px);margin:auto 0 0}
+.shirt-result .result-actions{display:flex;flex-direction:column;gap:8px;margin:0}
+.shirt-result .result-actions button{width:100%;min-height:48px;padding:10px;border:1px solid #f6f7fb;border-radius:0;background:transparent;color:#f6f7fb;font:900 clamp(16px,4.4cqw,22px)/1 AjaxProRefrigerator,Arial,sans-serif;text-align:center;cursor:pointer;transition:background .18s ease,transform .18s ease}
+.shirt-result .result-actions button:active{transform:translateY(1px)}
+.shirt-result .result-actions button:focus-visible{outline:2px solid #f6f7fb;outline-offset:3px}
+.shirt-result .result-actions #share{min-height:56px;background:#f6f7fb;color:#05070d}
+.shirt-result .secondary-actions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
+.shirt-result .secondary-actions button{font-size:clamp(13px,3.1cqw,17px)}
+.shirt-result .result-actions #again{border:0;text-decoration:underline;text-underline-offset:4px}
+.shirt-result-loading{display:flex;align-items:center;justify-content:center;min-height:100svh;color:#f6f7fb;font:900 24px AjaxProRefrigerator,Arial,sans-serif}
+@media(prefers-reduced-motion:reduce){.shirt-result .result-actions button{transition:none}}

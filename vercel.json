@@ -4,6 +4,9 @@
   "buildCommand": "node scripts/build-public.mjs",
   "outputDirectory": "dist-public",
   "functions": {
+    "api/shirt-battle.mjs": {
+      "includeFiles": "{assets/shirt-battle/cutouts/**,assets/ajax-shirts/shirts.json,ajaxpro-logo.png,ajaxpro-refrigerator-heavy.otf}"
+    },
     "api/club-portal.ts": {
       "includeFiles": "index.html"
     },
@@ -29,7 +32,39 @@
       "schedule": "17 4 * * *"
     }
   ],
+  "redirects": [
+    {
+      "source": "/shirt-battle/r/:token",
+      "destination": "/shirts/r/:token",
+      "permanent": true
+    }
+  ],
   "rewrites": [
+    {
+      "source": "/shirts",
+      "has": [{"type": "query", "key": "result", "value": "(?<token>v1\\.[0-9a-z]+)"}],
+      "destination": "/api/shirt-battle?legacy=1&token=:token"
+    },
+    {
+      "source": "/shirts",
+      "destination": "/assets/shirt-battle/index.html"
+    },
+    {
+      "source": "/shirts/r/:token",
+      "destination": "/api/shirt-battle?token=:token&view=game"
+    },
+    {
+      "source": "/shirts/(.*)",
+      "destination": "/assets/shirt-battle/$1"
+    },
+    {
+      "source": "/shirt-battle/r/:token",
+      "destination": "/api/shirt-battle?token=:token"
+    },
+    {
+      "source": "/api/shirt-battle/share/:token",
+      "destination": "/api/shirt-battle?token=:token"
+    },
     {
       "source": "/api/home",
       "destination": "/api/club-portal?portalHandler=home"
@@ -172,6 +207,13 @@
     }
   ],
   "headers": [
+    {
+      "source": "/shirts(.*)",
+      "headers": [
+        {"key": "X-Robots-Tag", "value": "noindex, nofollow"},
+        {"key": "Content-Security-Policy", "value": "default-src 'none'; base-uri 'none'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; form-action 'self'"}
+      ]
+    },
     {
       "source": "/assets/players/(.*)",
       "headers": [

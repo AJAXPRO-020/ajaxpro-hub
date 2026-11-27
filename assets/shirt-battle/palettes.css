@@ -1,0 +1,27 @@
+/* Street Football × AjaxPro: colour studies, composition unchanged. */
+.street header .brand-logo{display:block;width:44px;height:44px;object-fit:contain}
+.street.palette-ajaxpro{--dark:#05070d;--lime:#f6f7fb;--red:#b30f24;--white:#f6f7fb}
+.street.palette-ajaxpro .scene,.street.palette-ajaxpro .home{background:#05070d;color:#f6f7fb}
+.street.palette-ajaxpro header b span{color:#b30f24}
+.street.palette-ajaxpro .primary,.street.palette-ajaxpro .result-actions .primary{background:#b30f24;color:#f6f7fb;border-color:#b30f24}
+.street.palette-ajaxpro .vs{background:#b30f24;color:#f6f7fb}
+.street.palette-ajaxpro .hero-copy h1{color:#f6f7fb;text-shadow:5px 5px #b30f24}
+.street.palette-ajaxpro .meter i.done{background:#b30f24}
+.street.palette-ajaxpro .contender{background:#121b2a}
+.street.palette-street{--dark:#05070d;--lime:#dfff22;--red:#b30f24;--white:#f6f7fb}
+.street.palette-street .scene,.street.palette-street .home{background:#dfff22;color:#05070d}
+.street.palette-street header b span{color:#b30f24}
+.street.palette-street .primary,.street.palette-street .result-actions .primary{background:#b30f24;color:#f6f7fb;border-color:#b30f24}
+.street.palette-street .vs{background:#b30f24;color:#f6f7fb}
+.street.palette-street .hero-copy h1{color:#05070d}
+.street.palette-street .meter i.done{background:#b30f24}
+.street.palette-street .winner>div{color:#f6f7fb}
+.street.palette-hybrid{--dark:#05070d;--lime:#f0e9dc;--red:#b30f24;--white:#f6f7fb}
+.street.palette-hybrid .scene,.street.palette-hybrid .home{background:#f0e9dc;color:#05070d}
+.street.palette-hybrid header b span{color:#b30f24}
+.street.palette-hybrid .hero-copy h1{color:#b30f24;text-shadow:4px 4px #05070d}
+.street.palette-hybrid .primary,.street.palette-hybrid .result-actions .primary{background:#05070d;color:#f6f7fb;border-color:#05070d}
+.street.palette-hybrid .vs{background:#b30f24;color:#f6f7fb}
+.street.palette-hybrid .meter i.done{background:#b30f24}
+.street.palette-hybrid .contender{background:#05070d}
+.street.palette-hybrid .winner>div{color:#f6f7fb}

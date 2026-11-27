@@ -19,10 +19,20 @@ const rootFiles = [
   "programma.css", "content-hub.css", "socials-png.css", "socials-quote-large.css", "socials-ajax-vandaag.css", "socials-hallmark.css", "socials-notable-stat.css", "socials-card-video.css",
   "socials.css", "socials-v2.css", "styles.css", "system-status.css",
   "llms.txt", "openapi.json", "robots.txt", "sitemap.xml",
+  "assets/shirt-battle/index.html", "assets/shirt-battle/app.js", "assets/shirt-battle/result-screen.js", "assets/shirt-battle/battle-logic.js", "assets/shirt-battle/concepts.css", "assets/shirt-battle/palettes.css", "assets/shirt-battle/presentation.css", "assets/shirt-battle/duel-polish.css", "assets/shirt-battle/result.css", "assets/shirt-battle/copy-polish.js", "assets/shirt-battle/motion.css", "assets/shirt-battle/ajaxpro-logo.png", "assets/shirt-battle/ajaxpro-refrigerator-heavy.otf", "assets/shirt-battle/hero-1992-home-cutout.png", "assets/shirt-battle/hero-1992-away-cutout.png", "assets/ajax-shirts/shirts.json", "ajaxpro-logo.png",
 ];
 const publicExtensions = new Set([".png", ".jpg", ".jpeg", ".webp", ".svg", ".woff2", ".otf", ".ico"]);
+const forbiddenPublicNames = /(?:^|[._-])(env|secret|credential|password|token|private|backup|dump|sqlite|database)(?:[._-]|$)/i;
+const forbiddenPublicExtensions = new Set([".pem", ".key", ".p12", ".pfx", ".crt", ".sql", ".sqlite", ".db", ".env"]);
+
+function assertSafePublicPath(relativePath) {
+  const name = relativePath.split("/").at(-1) ?? relativePath;
+  const extension = extname(name).toLowerCase();
+  if (forbiddenPublicExtensions.has(extension) || forbiddenPublicNames.test(name)) throw new Error(`Refusing sensitive-looking public asset: ${relativePath}`);
+}
 
 async function copyFile(relativePath) {
+  assertSafePublicPath(relativePath);
   const source = join(root, relativePath);
   if (!(await stat(source)).isFile()) throw new Error(`Not a regular public file: ${relativePath}`);
   const destination = join(output, relativePath);
@@ -35,6 +45,14 @@ async function copyAssets(directory) {
     const relativePath = join(directory, entry.name);
     if (entry.isDirectory()) await copyAssets(relativePath);
     else if (entry.isFile() && publicExtensions.has(extname(entry.name).toLowerCase())) await copyFile(relativePath);
+  }
+}
+
+async function assertNoSensitiveAssets(directory) {
+  for (const entry of await readdir(join(root, directory), { withFileTypes: true })) {
+    const relativePath = join(directory, entry.name);
+    if (entry.isDirectory()) await assertNoSensitiveAssets(relativePath);
+    else assertSafePublicPath(relativePath);
   }
 }
 
@@ -51,6 +69,7 @@ if (outputExists) {
 
 await mkdir(output, { recursive: true });
 await writeFile(marker, "Generated AjaxPro public assets\n");
+for (const directory of ["assets", "jeugddossiers/players"]) await assertNoSensitiveAssets(directory);
 for (const file of rootFiles) await copyFile(file);
 for (const directory of ["assets", "jeugddossiers/players"]) await copyAssets(directory);
 for (const entry of await readdir(join(root, "Favicon"), { withFileTypes: true })) {
