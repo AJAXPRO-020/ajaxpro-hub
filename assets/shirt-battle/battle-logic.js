@@ -31,7 +31,13 @@ function createBattle(ids,{seed=Date.now(),maxDuels=52,initialOrder=null}={}){
   let state={order,duels:[],cursor:0,maxDuels,stage:'initial',nodes:{},queue:[],roundWinners:[]};
   const save=()=>JSON.parse(JSON.stringify(state));
   const rebuild=(choices,rebuildOrder=order)=>{const fresh=createBattle(rebuildOrder,{seed:1,maxDuels,initialOrder:rebuildOrder});for(const choice of choices)fresh.choose(choice.winner);return fresh};
-  const pairQueue=list=>{state.queue=[];for(let i=0;i<list.length;i+=2)if(list[i+1])state.queue.push([list[i],list[i+1]])};
+  // Carry an odd participant forward as a bye. A bye is not a comparison:
+  // it is already a winner in the next round and must never disappear.
+  const pairQueue=list=>{
+    state.queue=[];
+    state.roundWinners=list.length%2?[list[list.length-1]]:[];
+    for(let i=0;i+1<list.length;i+=2)state.queue.push([list[i],list[i+1]]);
+  };
   const advance=()=>{
     if(state.queue.length)return;
     if(state.stage==='initial'){
